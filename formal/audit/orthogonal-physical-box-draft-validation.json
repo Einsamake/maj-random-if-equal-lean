@@ -1,0 +1,28 @@
+{
+  "validated_at": "2026-10-18T23:48:48.774997+08:00",
+  "source_sha256": "6491222e1366848e150435266c8188630e3e14634a14833148f8909dac6ac6ba",
+  "named_declarations": [
+    "MathResearchAnalysis.OrthogonalPhysicalBox.minX",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.maxX",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.minY",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.maxY",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.coordinate_bounds",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.unitRegion_subset_box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.frontier_subset_box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.right_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.left_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.upper_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.lower_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_frontier",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_region",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.nat_span_real",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.perimeter_eq_minimum_rectangle"
+  ],
+  "declarations_count": 16,
+  "theorems": 11,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "warnings": "four unused push_cast tactics; removed in the formal module before its separate kernel audit",
+  "scope": "Standalone snapshot, not double-counted as formal sources."
+}

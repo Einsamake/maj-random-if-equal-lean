@@ -1,0 +1,54 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+'MathResearchAnalysis.OrthogonalPerimeter.northCells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.southCells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.eastCells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.westCells' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.north_endpoint_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.north_endpoint_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.northCells_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.south_endpoint_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.south_endpoint_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.southCells_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.northCells_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.southCells_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.card_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.transpose_image_fst' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.eastCells_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.westCells_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_directional_cells' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_projection_cards' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.fst_projection_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.snd_projection_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.int_finset_eq_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.fst_projection_eq_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.snd_projection_eq_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_integer_spans' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,5 +1,5 @@
 {
-  "formal_sources_verified": 151,
+  "formal_sources_verified": 153,
   "files": {
     ".gitattributes": {
       "bytes": 73,
@@ -10,12 +10,12 @@
       "sha256": "848723863a0079aeb3ea586f4a86b4dd1fd008cf2b8373b8f487d5d0631f33a8"
     },
     "docs/VERIFICATION.md": {
-      "bytes": 1217,
-      "sha256": "39dfa0ead6f8f8fe72724eb6f6fef03d1fa24ad105a9a20bfa04336f2efdf232"
+      "bytes": 1478,
+      "sha256": "39688d1d64e63e202dc30913ee5d381aa3cabfcb6a87b741d67de7efb90a47c4"
     },
     "formal/analysis/AnalysisAxioms.lean": {
-      "bytes": 153114,
-      "sha256": "4a1be159cd8d384e8adc3f7e919dc61af6e4cbafab6450202aeced5bee1440c6"
+      "bytes": 155541,
+      "sha256": "eb51f33a6047370e201635f286413bbfe472666e67758cd546bb2dc1560fdc1b"
     },
     "formal/analysis/lake-manifest.json": {
       "bytes": 3175,
@@ -405,6 +405,14 @@
       "bytes": 6289,
       "sha256": "198a12915e95ec9404eaf9b3d9bbeaf3c34e916c7b783c77c96bc121ef152d3d"
     },
+    "formal/analysis/MathResearchAnalysis/OrthogonalPerimeter.lean": {
+      "bytes": 10309,
+      "sha256": "d94e95ff29ef1ba606cfa7df1d3f0c62be94d58804793ea19ad1089b87aa2638"
+    },
+    "formal/analysis/MathResearchAnalysis/OrthogonalPhysicalBox.lean": {
+      "bytes": 8973,
+      "sha256": "47827f9d9f9fa2c7cfa2a5699c7374a0eca17783129f5f045ad867bc243feba8"
+    },
     "formal/analysis/MathResearchAnalysis/OrthogonalVacantQuadrant.lean": {
       "bytes": 8922,
       "sha256": "a0c0c9f29acb1e764d7db8f689deeaa09339746e83a5703f488c9f022ed989ab"
@@ -598,20 +606,20 @@
       "sha256": "bb889619d413ec75a3375b6248a243399b7c2c6671d7037ba65d29bc58a48df7"
     },
     "formal/analysis/MathResearchAnalysis.lean": {
-      "bytes": 14706,
-      "sha256": "5efe7094db7a2339cde19fcc5084ec4ad20da061ef8cb26462e4c152d81a24f4"
+      "bytes": 14824,
+      "sha256": "4724498a2cfa92cc29ce4565762dd4e6338c8184d583f6d44ceee5417a27cd09"
     },
     "formal/audit/analysis-axioms.log": {
-      "bytes": 245389,
-      "sha256": "641d339e2a4e0d97583ca9fb9d0c5640c6c9a2b622dc7e6f8a8d7021692910b1"
+      "bytes": 249369,
+      "sha256": "a2719aa19e92733961959a08239b908aace4252af61cd447f3e9dea15ddcd82c"
     },
     "formal/audit/analysis-build.log": {
       "bytes": 215,
-      "sha256": "6d6f0309c4bcd3090e98260dc4459f810afeae17c2baf8db9913d6f95ca00f6b"
+      "sha256": "f55aa7f7e01b2e8cc37758c1e797404abd4e0fa41e80896a812149338582a4fe"
     },
     "formal/audit/analysis-validation.json": {
-      "bytes": 29186,
-      "sha256": "d0df0c4f0433248a30846678c09402f0cf557df27fe9675dd463fc59932c956f"
+      "bytes": 29550,
+      "sha256": "4e3d5766d7f582169c2d08b6e31fa1bc152c4e0c221b7318ad8a25dbe31384e5"
     },
     "formal/audit/core-axioms.log": {
       "bytes": 11552,
@@ -656,6 +664,50 @@
     "formal/audit/exit-area-stage-unified-validation.log": {
       "bytes": 256614,
       "sha256": "0c2f030bd46a6e24f63f649fd9ef1d22460a421997533a2098f985a91ef08cb9"
+    },
+    "formal/audit/orthogonal-box-stage-declarations-axioms.lean": {
+      "bytes": 3109,
+      "sha256": "c9e6fcaa377a8dff4838beda1539b1ecc1abbe5da4afbec8eabb07f962b783a9"
+    },
+    "formal/audit/orthogonal-box-stage-declarations-axioms.log": {
+      "bytes": 5105,
+      "sha256": "88151c484e37566e5672afc79bbc27ce4d15cf4d28cff700d5613cbadc905589"
+    },
+    "formal/audit/orthogonal-box-stage-declarations-build.log": {
+      "bytes": 237,
+      "sha256": "fe74ab61a20c82f3693de0fff755ab8286b30e84187819769bd1e5ffb45cd5aa"
+    },
+    "formal/audit/orthogonal-box-stage-declarations-validation.json": {
+      "bytes": 3390,
+      "sha256": "c64c8c87d657d58e9a2db42f207672576f4e87644e4b5d4b435acd27050a892a"
+    },
+    "formal/audit/orthogonal-box-stage-independent-evidence.json": {
+      "bytes": 45993,
+      "sha256": "dda9e97bc58412a2fa256c1e6c1532938b764038f81665002509d2d95a8ad7d1"
+    },
+    "formal/audit/orthogonal-box-stage-semantic-review.md": {
+      "bytes": 3542,
+      "sha256": "a4afc84956cf083547ec4326d759e6c0fd70f8cfd1834231e6b867918817fd72"
+    },
+    "formal/audit/orthogonal-box-stage-unified-validation.log": {
+      "bytes": 260702,
+      "sha256": "156905ae0dde1b8577452c313f5bf2da468c0f51eb0634ec6c94143788566315"
+    },
+    "formal/audit/orthogonal-perimeter-draft-validation.json": {
+      "bytes": 2004,
+      "sha256": "0dce1f4ef0ca571a0639910987e94231ba4b048c6e21326968339376e8e745a2"
+    },
+    "formal/audit/orthogonal-perimeter-draft.log": {
+      "bytes": 3102,
+      "sha256": "bc30b3b354001b7443aff7d67e88ac94569700e4307a129c97fd4fd8cd3a3e7f"
+    },
+    "formal/audit/orthogonal-physical-box-draft-validation.json": {
+      "bytes": 1542,
+      "sha256": "ee9429ffe4a65d1cd98b49afcc16c33c9981bdd253ff51267d49b8bd5a81e6d1"
+    },
+    "formal/audit/orthogonal-physical-box-draft.log": {
+      "bytes": 2824,
+      "sha256": "45263a98a904c2e193f25753578509191258ef65b5e301ff6b19300bf70882e6"
     },
     "formal/audit/protected-column-draft-validation.json": {
       "bytes": 2333,
@@ -745,6 +797,14 @@
       "bytes": 1160,
       "sha256": "fb1df3ef896c370a943a1f53bace28cc551cca08e6ffd4af16dd2cb535e344bb"
     },
+    "formal/drafts/OrthogonalPerimeter.lean": {
+      "bytes": 12108,
+      "sha256": "ce32e310054d1e431deb97bae5c36b88374146b72c5d31373caf15115dece1f0"
+    },
+    "formal/drafts/OrthogonalPhysicalBox.lean": {
+      "bytes": 10239,
+      "sha256": "6491222e1366848e150435266c8188630e3e14634a14833148f8909dac6ac6ba"
+    },
     "formal/drafts/OrthogonalVacantQuadrant.lean": {
       "bytes": 9450,
       "sha256": "234dcbd634c14ad0412287eb4d5b0d4b36fb2e74718eaaa7922075a21b9b0df2"
@@ -801,21 +861,25 @@
       "bytes": 561,
       "sha256": "78f76988572b9c3132743e35acef7c10c93ee3cd4357e322ef0645e2cc91cac5"
     },
+    "formal/PROGRESS_2026-10-18_ORTHOGONAL_BOX.md": {
+      "bytes": 2304,
+      "sha256": "5dc58eb983e09804c311d0320ebb290f212d35da878d13d02ed25fcdfa574de2"
+    },
     "formal/PROGRESS_2026-10-18_PROTECTED_EVOLUTION.md": {
       "bytes": 3185,
       "sha256": "8ffaea16716b34d4f989053be5b5e55738ba319bf294eac2bed5c83794fd595d"
     },
     "README.md": {
-      "bytes": 2646,
-      "sha256": "7e66e273b4232fcda9a52bf6d3530d89967a840794fe1d86a11734f622568781"
+      "bytes": 2756,
+      "sha256": "677cc017e926cae4141dc0c0b7aed935eed2f0655e07a00cd6a05c2a432e76a0"
     },
     "research/followup/ca_clean_proof.md": {
       "bytes": 18540,
       "sha256": "1d6d2823b20e004e2dd56ded7eabcdbe423c8b5216dc50a611ff1147fbd8ec97"
     },
     "research/followup/METHOD_LEDGER_2026-10-18.md": {
-      "bytes": 27929,
-      "sha256": "e8833823aad77a2a258c2bd7d46511b94f34e402a67a73ae154bcf5bb730f3db"
+      "bytes": 30871,
+      "sha256": "537af88e54a6264db79f90ac5bcf2cd7eeaad32092c8580dcaaa7db610706708"
     },
     "research/followup/novelty_review.md": {
       "bytes": 16731,

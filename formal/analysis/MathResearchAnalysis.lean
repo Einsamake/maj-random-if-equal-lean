@@ -148,6 +148,10 @@ public import MathResearchAnalysis.OrthogonalVacantQuadrant
 
 public import MathResearchAnalysis.ProtectedExitArea
 
+public import MathResearchAnalysis.OrthogonalPerimeter
+
+public import MathResearchAnalysis.OrthogonalPhysicalBox
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real

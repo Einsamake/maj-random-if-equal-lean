@@ -1,0 +1,6 @@
+✔ [3164/3164] Built MathResearchAnalysis.OrthogonalPhysicalBox (14s)
+Build completed successfully (3164 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -6,8 +6,8 @@
 
 当前验收（2026-10-18）：
 
-- 分析部分：1953条定理，142个证明模块；核心部分：125条定理和1个模型声明。
-- 共151份正式Lean源。新增保护演化与退出面积阶段62条定理。
+- 分析部分：1984条定理，144个证明模块；核心部分：125条定理和1个模型声明。
+- 共153份正式Lean源。本轮新增8模块93条定理，包括一般最小包围框与周长连接。
 - 统一构建及标准 `Lean --trust=0` 公理审计通过；依赖仅为 `Classical.choice`、`Quot.sound`、`propext`。
 - 保留原模型、真实概率law、含∞恢复时间、原尺寸及exact-N量词。所有记录绑定实际源SHA256。
 
@@ -19,7 +19,8 @@
 
 ## 阅读
 
-- [当前成果与精确边界](formal/PROGRESS_2026-10-18_PROTECTED_EVOLUTION.md)
+- [一般最小矩形与周长连接](formal/PROGRESS_2026-10-18_ORTHOGONAL_BOX.md)
+- [保护演化与面积阶段](formal/PROGRESS_2026-10-18_PROTECTED_EVOLUTION.md)
 - [有价值的方法、先行工作与失败路线](research/followup/METHOD_LEDGER_2026-10-18.md)
 - [候选数学证明稿（未完整形式化）](research/followup/ca_clean_proof.md)
 - [统一构建与源指纹](formal/audit/analysis-validation.json)

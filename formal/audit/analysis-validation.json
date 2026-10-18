@@ -1,10 +1,10 @@
 {
-  "validated_at": "2026-10-18T23:29:46.112117+08:00",
+  "validated_at": "2026-10-18T23:50:31.611929+08:00",
   "compiler": "Lean 4.35.0-rc4",
   "compiler_output": "Lean (version 4.35.0-rc4, x86_64-w64-windows-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
   "mathlib_commit": "54c01c3314d33d15d77893cbe4e0472ff26bb34d",
-  "public_theorems": 1953,
-  "project_lean_files": 143,
+  "public_theorems": 1984,
+  "project_lean_files": 145,
   "theorems_by_module": {
     "MathResearchAnalysis/ActualClockTail.lean": 11,
     "MathResearchAnalysis/ArrivalFiltration.lean": 18,
@@ -100,6 +100,8 @@
     "MathResearchAnalysis/NonnegativeMoment.lean": 6,
     "MathResearchAnalysis/OriginalRecoveryProfile.lean": 17,
     "MathResearchAnalysis/OrthogonalGridConvexity.lean": 10,
+    "MathResearchAnalysis/OrthogonalPerimeter.lean": 20,
+    "MathResearchAnalysis/OrthogonalPhysicalBox.lean": 11,
     "MathResearchAnalysis/OrthogonalVacantQuadrant.lean": 8,
     "MathResearchAnalysis/PathTail.lean": 2,
     "MathResearchAnalysis/PerturbationGeometry.lean": 16,
@@ -256,6 +258,8 @@
     "MathResearchAnalysis/NonnegativeMoment.lean": "8bac21f797b3ec549222aaedc1b9c57233df041b42d9e6bca4f5d1c2176d9548",
     "MathResearchAnalysis/OriginalRecoveryProfile.lean": "2539a1193042d8e7e6476edbc6ccab3e1bb9da82e14e93a5dac196e589325884",
     "MathResearchAnalysis/OrthogonalGridConvexity.lean": "198a12915e95ec9404eaf9b3d9bbeaf3c34e916c7b783c77c96bc121ef152d3d",
+    "MathResearchAnalysis/OrthogonalPerimeter.lean": "d94e95ff29ef1ba606cfa7df1d3f0c62be94d58804793ea19ad1089b87aa2638",
+    "MathResearchAnalysis/OrthogonalPhysicalBox.lean": "47827f9d9f9fa2c7cfa2a5699c7374a0eca17783129f5f045ad867bc243feba8",
     "MathResearchAnalysis/OrthogonalVacantQuadrant.lean": "a0c0c9f29acb1e764d7db8f689deeaa09339746e83a5703f488c9f022ed989ab",
     "MathResearchAnalysis/PathTail.lean": "72766cdb461b012a92b17cdd875b5d4c298bc31ac7f61e938f5d9d3c9c03ad48",
     "MathResearchAnalysis/PerturbationGeometry.lean": "61b8ac512e07c7cd8ef2b54ebb39c311293d8be7015e7c7d8b3d7b322012a637",
@@ -304,7 +308,7 @@
     "MathResearchAnalysis/UpperStoppingApprox.lean": "0003415fea73059c1988935a3ed1679697974db42ef6397e9bdd1d750fbdf0c4",
     "MathResearchAnalysis/WholeSquareClockTransport.lean": "b80fa2ba2daa24a9fe4356abf0543c6b41fd5fd12e023812730ba2ca5d0f9b8c",
     "MathResearchAnalysis/ZeroTemperature.lean": "bb889619d413ec75a3375b6248a243399b7c2c6671d7037ba65d29bc58a48df7",
-    "MathResearchAnalysis.lean": "5efe7094db7a2339cde19fcc5084ec4ad20da061ef8cb26462e4c152d81a24f4"
+    "MathResearchAnalysis.lean": "4724498a2cfa92cc29ce4565762dd4e6338c8184d583f6d44ceee5417a27cd09"
   },
   "scope": "actual clock words, rank tails, marks, finite-word PW and zero-temperature integrals; actual finite-square and infinite-grid random processes with measurable ENat recovery; exact whole-field restriction and recovery laws; translation and complemented-background laws; genuine past/future independence, synchronous restart, actual multiplicative and block tails; two-way clock/grid recovery comparisons; original minimum translated-square diameter, both homogeneous targets, exact-diameter worst ENNReal expectations, finite-pattern normalization and attained maxima for all sizes; exact size-zero/one recovery; finite strict-majority peeling with proved termination, greatest stable core and order-independent terminal deletions, connected to actual infinite-grid and finite-square single updates; actual centered clipped mask, uniform four-quadrant block counts, cleanup-stable clipped initial state and exact centered finite-square representation, including conjugacy of masked raw event words with actual finite cellUpdate; mask-preserving cleanup-after-update finite words with same-mark domination; actual finite/centered cleanup and modified-word conjugacy; different-domain same-mark finite-word comparison with event-index first loss and correctly frozen prefix; actual rate-one-clock/fair-mark droplet endpoint law, word-fiber factorization and unconditional mixture; whole-square raw endpoint equal to the original endpoint and physical-time protected-loss probability comparison; concrete CMST inner diamond and external four-neighbour boundary, exact closed band, finite protected vertices and actual original-process extinction comparison without arbitrary protected I; actual exposed half-edge geometry, exact initial sections/perimeter/bounding-box spans, initial four-connectivity and no-checkerboard, actual boundary connectivity and one full successor cycle with injective vertices, complete real segments with endpoint-only intersections, generic row-convex/four-connected no-checkerboard; actual finite occupied-region frontier equals every exposed full real segment, explicit continuous simple closed initial boundary, exact original unit-cell homeomorphism, actual minimum region/frontier rectangle, genuine Euclidean extended arc length from all finite partitions, actual initial geometric Good certificate; actual row/column-convex stable local raw and modified update classification, birth convexity/stability/connectivity/projection preservation, exact local erase and conditional two-site cleanup criteria, legal cleanup preservation of interval convexity and four-connectivity, actual perimeter insert/erase identities and majority-word Lyapunov law without shape assumptions, cumulative extra cleanup deletion budget and its exact genuine physical-clock endpoint instance; not general geometric Good contour invariance, generator or stopped-process law, quadratic-scale CMST/FSS droplet bounds or the full CA theorem",
   "build_warning_lines": [

@@ -11,6 +11,7 @@
 - 2026-10-18 后续新增四个正式模块的52个命名声明（49条定理、3个定义）已完成专项构建与标准 `--trust=0`，方法记录代理已独立核源码指纹和全部声明输出。全局统一构建与审计也已成功（2026-10-18T23:19:59+08:00）：1940条分析定理、141分析源+8核心源=149正式源、2065辅助定理、2066全局公理输出，独立逐源/逐声明核对通过；下文13条和22条均是形成过程的历史快照，不是当前阶段上限。最新范围见“局部旁路升为真实停止事件轨迹不变量”。
 - 完整目标仍是原无限二维、同步四邻、独立公平平局标记、有限扰动的最坏扩展期望恢复时间 `τ(N)=Θ(N²)`。保留无限首达值、原尺寸和 exact-N 量词。CMST/FSS 核心概率论证及最终主定理尚未验收。
 - 最新面积阶段统一成功（2026-10-18T23:29:46+08:00）：新增两模块13条定理，1953分析定理、151正式源、2078辅助定理；独立核验全部1953+126项输出和源指纹通过。前一1940阶段149源记录保留为历史快照。
+- 最新一般周长/最小框阶段统一成功（2026-10-18T23:50:31+08:00）：1984分析定理、145分析源+8core=153正式源、2109辅助定理；全部1984+126项输出与源指纹独立核对通过。151源面积阶段保留历史快照。真实最小框数值周长已闭合，一般Jordan及欧氏全分割弧长仍未证。
 - 独立 AI 审阅是额外检查；它不能替代标准内核，也不构成人类专家认证。
 
 证据：[统一审计](../../formal/audit/analysis-validation.json)、[新增声明审计](../../formal/audit/update-stage-declarations-validation.json)、[独立语义审阅](../../formal/audit/update-stage-semantic-review.md)、[独立指纹核对](../../formal/audit/update-stage-independent-evidence.json)、[几何草稿验证](../../formal/audit/protected-column-draft-validation.json)。
@@ -228,6 +229,25 @@ y<0\Rightarrow 9L<10|x+1|.
 
 来源延续CMST第8节的保护域退出/已删面积路线；“空射线阻断四邻路径”和整数方块见证是本项目具体自含实现。没有作首次发现或独立新颖性认证。详细源码scope和验证状态见[本阶段语义审阅](../../formal/audit/exit-area-stage-semantic-review.md)。
 
+
+
+## 方法六：把边界周长拆成截面端点，再接真实最小物理框
+
+[OrthogonalPerimeter](../../formal/analysis/MathResearchAnalysis/OrthogonalPerimeter.lean) 与 [OrthogonalPhysicalBox](../../formal/analysis/MathResearchAnalysis/OrthogonalPhysicalBox.lean) 已冻结，40named（31定理、9定义）专项构建与标准trust0成功（2026-10-18T23:49:33+08:00）；方法记录代理独立核两份实际源hash、完整40项输出及数学作用域，只有标准三公理、无新增Lean源码警告。全局统一于2026-10-18T23:50:31+08:00成功，全部153正式源和1984+126项输出已由方法记录代理独立核验，合2109辅助定理。本轮八模块累计93条新定理、105named；[历史草稿](../../formal/drafts/OrthogonalPhysicalBox.lean)保留独立验证边界。
+
+**第一层：用截面端点计数真实边。** 有限列总有最高/最低占据格；若列内占据区间凸，就各恰有一个暴露北/南侧边。对应投影是双射。行的东西两端同理，因此
+
+\[
+P(S)=2\bigl(|\pi_xS|+|\pi_yS|\bigr).
+\]
+
+这只需行列凸，不需连通或Stable。不能无条件把投影基数换成投影min/max跨度：分离块可能在投影中留空；实际四邻连通路径跨cut才证明投影无缺口。非空时得到精确Icc，再变成 `P=2[(maxX+1−minX)+(maxY+1−minY)]`。
+
+**第二层：用四个真实极点证明最小框。** 对任意非空有限S，不必先假设漂亮形状。最右占据格的东邻空，故真实暴露侧边确实在actual unitRegion的frontier上，并达到maxX+1/2。其余三方向同理。任何包含整frontier的轴平行闭矩形，都必须容纳四个极点，因此包含明确的box；不是只提供一个能包住的框。单位格±1/2保持原始物理尺度。
+
+最后将行列凸/连通接口接入，识别真实暴露侧边数与该最小矩形周长2(width+height)。**这还不是一般边界Euclidean弧长或Jordan单曲线证明。** 将离散边计数、投影区间、真实极点最小性和连续曲线长度分成不同接口，防止形式化中用“周长”一词混同。
+
+可能复用于有限polyomino的bbox精确证书、截面凸性刻画和边界量计算。截面端点计数与极值见证是标准几何机制，没有证据证明首次；本项目价值是将其对实际暴露边、actualunitRegion/frontier及原单位尺度做可组合的自含证明。最新状态见[阶段独立审阅](../../formal/audit/orthogonal-box-stage-semantic-review.md)和[机读证据](../../formal/audit/orthogonal-box-stage-independent-evidence.json)。
 
 ## 待检验简化路线：角点计数、净面积漂移与二次下界
 

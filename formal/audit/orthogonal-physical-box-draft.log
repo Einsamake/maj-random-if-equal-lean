@@ -1,0 +1,50 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+../drafts/OrthogonalPhysicalBox.lean:59:2: warning: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../drafts/OrthogonalPhysicalBox.lean:78:2: warning: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../drafts/OrthogonalPhysicalBox.lean:97:2: warning: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../drafts/OrthogonalPhysicalBox.lean:116:2: warning: Unused tactic linter: `push_cast` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'MathResearchAnalysis.OrthogonalPhysicalBox.minX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.maxX' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.minY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.maxY' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.box' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.coordinate_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.unitRegion_subset_box' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.frontier_subset_box' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.right_frontier_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.left_frontier_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.upper_frontier_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.lower_frontier_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_region' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.nat_span_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalBox.perimeter_eq_minimum_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

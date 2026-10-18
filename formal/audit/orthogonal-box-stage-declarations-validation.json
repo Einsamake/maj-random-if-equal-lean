@@ -1,0 +1,63 @@
+{
+  "validated_at": "2026-10-18T23:49:33.768826+08:00",
+  "modules": [
+    "OrthogonalPerimeter",
+    "OrthogonalPhysicalBox"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.OrthogonalPerimeter.northCells",
+    "MathResearchAnalysis.OrthogonalPerimeter.southCells",
+    "MathResearchAnalysis.OrthogonalPerimeter.eastCells",
+    "MathResearchAnalysis.OrthogonalPerimeter.westCells",
+    "MathResearchAnalysis.OrthogonalPerimeter.north_endpoint_exists",
+    "MathResearchAnalysis.OrthogonalPerimeter.north_endpoint_unique",
+    "MathResearchAnalysis.OrthogonalPerimeter.northCells_card",
+    "MathResearchAnalysis.OrthogonalPerimeter.south_endpoint_exists",
+    "MathResearchAnalysis.OrthogonalPerimeter.south_endpoint_unique",
+    "MathResearchAnalysis.OrthogonalPerimeter.southCells_card",
+    "MathResearchAnalysis.OrthogonalPerimeter.northCells_transpose",
+    "MathResearchAnalysis.OrthogonalPerimeter.southCells_transpose",
+    "MathResearchAnalysis.OrthogonalPerimeter.card_transpose",
+    "MathResearchAnalysis.OrthogonalPerimeter.transpose_image_fst",
+    "MathResearchAnalysis.OrthogonalPerimeter.eastCells_card",
+    "MathResearchAnalysis.OrthogonalPerimeter.westCells_card",
+    "MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_directional_cells",
+    "MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_projection_cards",
+    "MathResearchAnalysis.OrthogonalPerimeter.fst_projection_interval",
+    "MathResearchAnalysis.OrthogonalPerimeter.snd_projection_interval",
+    "MathResearchAnalysis.OrthogonalPerimeter.int_finset_eq_Icc",
+    "MathResearchAnalysis.OrthogonalPerimeter.fst_projection_eq_Icc",
+    "MathResearchAnalysis.OrthogonalPerimeter.snd_projection_eq_Icc",
+    "MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_integer_spans",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.minX",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.maxX",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.minY",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.maxY",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.coordinate_bounds",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.unitRegion_subset_box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.frontier_subset_box",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.right_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.left_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.upper_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.lower_frontier_witness",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_frontier",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.box_minimal_for_region",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.nat_span_real",
+    "MathResearchAnalysis.OrthogonalPhysicalBox.perimeter_eq_minimum_rectangle"
+  ],
+  "declarations_count": 40,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/OrthogonalPerimeter.lean": "d94e95ff29ef1ba606cfa7df1d3f0c62be94d58804793ea19ad1089b87aa2638",
+    "MathResearchAnalysis/OrthogonalPhysicalBox.lean": "47827f9d9f9fa2c7cfa2a5699c7374a0eca17783129f5f045ad867bc243feba8"
+  },
+  "new_lean_warning_lines": []
+}
