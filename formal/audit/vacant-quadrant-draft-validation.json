@@ -1,0 +1,24 @@
+{
+  "validated_at": "2026-10-18T23:25:01.470229+08:00",
+  "draft_path": "formal/drafts/OrthogonalVacantQuadrant.lean",
+  "source_sha256": "234dcbd634c14ad0412287eb4d5b0d4b36fb2e74718eaaa7922075a21b9b0df2",
+  "named_declarations": [
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_reflect",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.fourConnected_mirror",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_swap",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.path_swap",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.path_crosses_vertical_cut",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.southwest_empty",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.empty_quadrant_of_axis_witnesses",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.exists_empty_quadrant"
+  ],
+  "declarations_count": 8,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Standalone draft snapshot; corresponding formal module is separately checked and counted only by unified analysis-validation.json."
+}

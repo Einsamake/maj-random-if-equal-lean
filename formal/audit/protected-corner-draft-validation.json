@@ -1,0 +1,26 @@
+{
+  "validated_at": "2026-10-18T23:25:01.468270+08:00",
+  "draft_path": "formal/drafts/ProtectedCornerGeometry.lean",
+  "source_sha256": "9285652ace7ace539f2b11c5fffb7dce4b2e097a5f3f186d04eceee4481edba5",
+  "named_declarations": [
+    "MathResearchAnalysis.ProtectedCornerGeometry.northeast_diagonal",
+    "MathResearchAnalysis.ProtectedCornerGeometry.mirror",
+    "MathResearchAnalysis.ProtectedCornerGeometry.mem_mirror",
+    "MathResearchAnalysis.ProtectedCornerGeometry.rowConvex_mirror",
+    "MathResearchAnalysis.ProtectedCornerGeometry.columnConvex_mirror",
+    "MathResearchAnalysis.ProtectedCornerGeometry.innerDiamond_reflect_iff",
+    "MathResearchAnalysis.ProtectedCornerGeometry.protected_mirror",
+    "MathResearchAnalysis.ProtectedCornerGeometry.northwest_diagonal",
+    "MathResearchAnalysis.ProtectedCornerGeometry.southeast_diagonal",
+    "MathResearchAnalysis.ProtectedCornerGeometry.southwest_diagonal"
+  ],
+  "declarations_count": 10,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Standalone draft snapshot; corresponding formal module is separately checked and counted only by unified analysis-validation.json."
+}

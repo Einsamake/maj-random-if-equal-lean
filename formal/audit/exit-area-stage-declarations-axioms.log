@@ -1,0 +1,41 @@
+'MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_reflect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.fourConnected_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.path_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.path_crosses_vertical_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.southwest_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.empty_quadrant_of_axis_witnesses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalVacantQuadrant.exists_empty_quadrant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitArea.exists_vacant_directedBlock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitArea.quadratic_vacant_area_of_protected_missing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitArea.actual_stopped_exit_quadratic_vacant_area' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitArea.actual_stopped_area_after_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitArea.actual_stopped_area_card_decrease' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

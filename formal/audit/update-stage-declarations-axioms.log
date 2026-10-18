@@ -1,0 +1,254 @@
+'MathResearchAnalysis.ConvexLocalUpdate.mem_of_east_west' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.mem_of_north_south' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.vacant_no_east_west' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.vacant_no_north_south' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.vacant_degree4_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.vacant_localRule_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.localRule_eq_tie_of_degree_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.stable_occupied_localRule_false_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.cleanup_eq_self_of_stable' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_of_birth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_of_death' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_eq_self_of_degree_ne_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_birth_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.rawStep_death_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexLocalUpdate.modifiedStep_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.int_interval_insert_of_adjacent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.rowConvex_insert_of_horizontal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.columnConvex_insert_of_vertical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_orthogonal_neighbors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.stable_insert_of_degree_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.cleanup_insert_of_stable_degree_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.neighbors4_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.path_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.fourConnected_insert_of_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_insert_rowConvex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_insert_columnConvex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_insert_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_coordinate_witnesses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_insert_image_fst' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.vacant_degree_two_insert_image_snd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.rawStep_eq_insert_of_birth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.modifiedStep_eq_insert_of_vacant_birth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexBirthUpdate.actual_vacant_birth_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.degree4_erase_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.degree4_erase_of_not_adjacent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.degree4_erase_add_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.cleanup_eq_self_iff_stable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.stable_erase_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.cleanup_erase_eq_self_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.cleanup_erase_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.weak_neighbor_deleted_legally' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.stable_erase_pair_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.cleanup_erase_eq_pair_of_local_degrees' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridCleanupDeletion.cleanup_erase_pair_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.rowConvex_erase_of_no_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.columnConvex_erase_of_no_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.low_degree_no_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.legal_delete_preserves_convexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.legal_deletes_preserve_convexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.cleanup_preserves_convexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.cleanup_erase_convex_of_no_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConvexCleanupUpdate.actual_death_cleanup_convex' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.low_degree_neighbors_in_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.path_erase_of_degree_lt_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.fourConnected_erase_of_degree_lt_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.legal_delete_preserves_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.deletes_preserve_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupConnectivity.cleanup_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.Site' does not depend on any axioms
+'MathResearchAnalysis.GridPerimeterUpdate.neighbor_relation_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_eq_sum_exposed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.exposed_plus_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_plus_total_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.degree4_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.degree4_insert_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.occupied_neighbor_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.total_degree_insert' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.degree4_erase_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_insert_tie' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterUpdate.perimeter_erase_tie' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.delete_perimeter_drop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.delete_perimeter_card_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.deletes_perimeter_card_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.cleanup_perimeter_card_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.cleanup_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.localRule_true_degree_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.localRule_false_degree_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.rawStep_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.maskedRawStep_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.modifiedStep_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.rawWord_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.modifiedWord_perimeter_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.eventLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.wordLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.eventLoss_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.modifiedStep_perimeter_loss_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.modifiedWord_perimeter_loss_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridPerimeterDynamics.twice_wordLoss_le_perimeter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.modifiedWord_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.wordLoss_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.clockOccupied' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.clockCleanupLoss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.clockOccupied_exact_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.actual_clock_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClippedPerimeterBudget.actual_clock_cleanup_loss_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

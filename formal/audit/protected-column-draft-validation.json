@@ -1,0 +1,38 @@
+{
+  "validated_at": "2026-10-18T23:25:01.467263+08:00",
+  "draft_path": "formal/drafts/ProtectedColumnGeometry.lean",
+  "source_sha256": "db3b1a4c375714454dff0e076d2ea6d49efefd3725f48fb9dba480d316e01769",
+  "named_declarations": [
+    "MathResearchAnalysis.ProtectedColumnGeometry.column_singleton_of_missing_vertical",
+    "MathResearchAnalysis.ProtectedColumnGeometry.protected_singleton_column_bound",
+    "MathResearchAnalysis.ProtectedColumnGeometry.outward_row_axis_in_innerDiamond",
+    "MathResearchAnalysis.ProtectedColumnGeometry.outward_occupied_same_row",
+    "MathResearchAnalysis.ProtectedColumnGeometry.no_east_on_positive_singleton_column",
+    "MathResearchAnalysis.ProtectedColumnGeometry.no_singleton_column_on_axis",
+    "MathResearchAnalysis.ProtectedColumnGeometry.no_horizontal_opposites_at_positive_x",
+    "MathResearchAnalysis.ProtectedColumnGeometry.outward_row_axis_in_innerDiamond_negative",
+    "MathResearchAnalysis.ProtectedColumnGeometry.outward_occupied_same_row_negative",
+    "MathResearchAnalysis.ProtectedColumnGeometry.no_west_on_negative_singleton_column",
+    "MathResearchAnalysis.ProtectedColumnGeometry.protected_no_horizontal_opposites",
+    "MathResearchAnalysis.ProtectedColumnGeometry.innerDiamond_swap_iff",
+    "MathResearchAnalysis.ProtectedColumnGeometry.clippedDomain_swap_iff",
+    "MathResearchAnalysis.ProtectedColumnGeometry.transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.mem_transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.rowConvex_transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.columnConvex_transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.degree4_transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.stable_transpose",
+    "MathResearchAnalysis.ProtectedColumnGeometry.protected_no_vertical_opposites",
+    "MathResearchAnalysis.ProtectedColumnGeometry.protected_erase_convexity",
+    "MathResearchAnalysis.ProtectedColumnGeometry.protected_cleanup_erase_convexity"
+  ],
+  "declarations_count": 22,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Standalone draft snapshot; corresponding formal module is separately checked and counted only by unified analysis-validation.json."
+}

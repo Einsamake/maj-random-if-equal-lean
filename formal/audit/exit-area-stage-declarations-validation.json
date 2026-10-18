@@ -1,0 +1,36 @@
+{
+  "validated_at": "2026-10-18T23:28:41.171439+08:00",
+  "modules": [
+    "OrthogonalVacantQuadrant",
+    "ProtectedExitArea"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_reflect",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.fourConnected_mirror",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.neighbors_swap",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.path_swap",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.path_crosses_vertical_cut",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.southwest_empty",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.empty_quadrant_of_axis_witnesses",
+    "MathResearchAnalysis.OrthogonalVacantQuadrant.exists_empty_quadrant",
+    "MathResearchAnalysis.ProtectedExitArea.exists_vacant_directedBlock",
+    "MathResearchAnalysis.ProtectedExitArea.quadratic_vacant_area_of_protected_missing",
+    "MathResearchAnalysis.ProtectedExitArea.actual_stopped_exit_quadratic_vacant_area",
+    "MathResearchAnalysis.ProtectedExitArea.actual_stopped_area_after_exit",
+    "MathResearchAnalysis.ProtectedExitArea.actual_stopped_area_card_decrease"
+  ],
+  "declarations_count": 13,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/OrthogonalVacantQuadrant.lean": "a0c0c9f29acb1e764d7db8f689deeaa09339746e83a5703f488c9f022ed989ab",
+    "MathResearchAnalysis/ProtectedExitArea.lean": "f592704670afb00d91e74a04af6823bbda9faf1a4b21357ab57db3652472f486"
+  },
+  "new_lean_warning_lines": []
+}

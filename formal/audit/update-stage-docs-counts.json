@@ -1,0 +1,7 @@
+{
+  "summary": "分析136模块／1891条公开定理／137源；核心125条定理及1模型、8源未变，共145份正式源、2016条辅助定理。本轮新增8模块93条定理。统一构建与标准Lean --trust=0公理审计退出0（2026-10-17T10:28:33.974191+08:00）；全部98个新命名声明另逐项审计通过，仅Classical.choice、Quot.sound、propext。无占位、自定义公理或内核绕过，新源码无Lean警告，保留既有batteries本地修改提示。",
+  "formal_sources": 145,
+  "analysis_theorems": 1891,
+  "analysis_sources": 137,
+  "new_named": 98
+}

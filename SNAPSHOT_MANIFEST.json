@@ -1,0 +1,829 @@
+{
+  "formal_sources_verified": 151,
+  "files": {
+    ".gitattributes": {
+      "bytes": 73,
+      "sha256": "ba959d1b4da7f7b5bd1b06dfc012868d01ab2ec511b02090c394153c90a126f1"
+    },
+    ".gitignore": {
+      "bytes": 104,
+      "sha256": "848723863a0079aeb3ea586f4a86b4dd1fd008cf2b8373b8f487d5d0631f33a8"
+    },
+    "docs/VERIFICATION.md": {
+      "bytes": 1217,
+      "sha256": "39dfa0ead6f8f8fe72724eb6f6fef03d1fa24ad105a9a20bfa04336f2efdf232"
+    },
+    "formal/analysis/AnalysisAxioms.lean": {
+      "bytes": 153114,
+      "sha256": "4a1be159cd8d384e8adc3f7e919dc61af6e4cbafab6450202aeced5bee1440c6"
+    },
+    "formal/analysis/lake-manifest.json": {
+      "bytes": 3175,
+      "sha256": "f0efd15f3a2efb272b8b35aae44c811e834a1c785e0639ceb11231c170ba85a8"
+    },
+    "formal/analysis/lakefile.toml": {
+      "bytes": 274,
+      "sha256": "236293eac89a9ba7a59bcfc58baa7e644dc2e17c8e2bd07c0744072362bc54a7"
+    },
+    "formal/analysis/lean-toolchain": {
+      "bytes": 29,
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+    },
+    "formal/analysis/MathResearchAnalysis/ActualClockTail.lean": {
+      "bytes": 9939,
+      "sha256": "d72c4e93af41d817eac704f3f2b266f004b0a2c4a9ba1e22a59cfea6e11f840f"
+    },
+    "formal/analysis/MathResearchAnalysis/ArrivalFiltration.lean": {
+      "bytes": 9229,
+      "sha256": "3fde5a613cb7985a75b0422cc4cb2a7b5e0100af56a3005bd5fe34d23b7a93db"
+    },
+    "formal/analysis/MathResearchAnalysis/BipartiteDynamics.lean": {
+      "bytes": 14329,
+      "sha256": "055200cdc0ec6c20fdab2f38ceda699ff4a6c9af46da26037ad0c498f87fe739"
+    },
+    "formal/analysis/MathResearchAnalysis/BlockTail.lean": {
+      "bytes": 5893,
+      "sha256": "bbefea28a4df73400fb1a22c2cab39e1b3787cc268e00a8ba5639821430b9c14"
+    },
+    "formal/analysis/MathResearchAnalysis/CenteredPeelingTransport.lean": {
+      "bytes": 17612,
+      "sha256": "4c11a4fecfdf01108823505068b0dea67ff64f0e439c15eb2e1bf3bc04810a3d"
+    },
+    "formal/analysis/MathResearchAnalysis/CleanupConnectivity.lean": {
+      "bytes": 4234,
+      "sha256": "cce3b32da0e4939f6e8c11c7eed8a8b02b577af13a4d3f97d4cfb20b7e8e2e8b"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryBox.lean": {
+      "bytes": 6749,
+      "sha256": "323a307883b8da05e29e14e83072a33c8e0b85b5e1e144e38c35e1ac29bceee9"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryConnectivity.lean": {
+      "bytes": 12966,
+      "sha256": "150297ca6b3471c8b24ed494ba806801564b731cb1ca7f35a167cda0a10b11ee"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryCurve.lean": {
+      "bytes": 8882,
+      "sha256": "c5e49afe47db25126cd27928013d1c6b963c87028dc4ac5b26200c59afbaba05"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryCycle.lean": {
+      "bytes": 5038,
+      "sha256": "d239ddba9e63d9917530c81c089df2f19d2c4578db0c315bb7e9e4831ef11d8e"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryIncidence.lean": {
+      "bytes": 4799,
+      "sha256": "2a8e9472e3a337aec93022760cbb6de5afb32d4c027a6ff9f68894c33d53a478"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryPerimeter.lean": {
+      "bytes": 7809,
+      "sha256": "9623a873a07f82a6291d92932d918117328fe4cc3536738f580ecf72f81add8e"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedBoundaryPolygon.lean": {
+      "bytes": 5118,
+      "sha256": "905d573d9b7fdd75f4bf04ef3c366dd3ebc9a9abbc2e3f44c164f979f203342d"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean": {
+      "bytes": 11756,
+      "sha256": "8c092c3463aa7a736806f593028fa9eaeb9930fbfcb6fffd8979163b87baa1ef"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedGridConnectivity.lean": {
+      "bytes": 5929,
+      "sha256": "5d1ef3d82ed21c04e0a724c9ac37760ffa1bb8956cf1a85a789bc960ac91ae19"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedInitialContour.lean": {
+      "bytes": 6568,
+      "sha256": "2fb71da177e41a1f570111f3066a65560f3ec417107fdb3b4b1bc964f8bda8e7"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean": {
+      "bytes": 7996,
+      "sha256": "819ad905e638b4fdf0762b235a4e2aa63170349b329965990567efceccfe623c"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedPerimeterBudget.lean": {
+      "bytes": 2584,
+      "sha256": "55aad33d2176d67c1c1cf03209f7dcdef301b6b7c6c95f6cd6d08a249795db85"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedPhysicalBox.lean": {
+      "bytes": 5776,
+      "sha256": "05dd0e4f9a93355a4f6c93d3a744e57d090ce0b5e22a7c83f6386b0ac58dff8b"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean": {
+      "bytes": 9357,
+      "sha256": "d809d52a894b9adebd1ca33a2db3ea26489d9a4a31f13b643947c70ffd2980ea"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedRegionBox.lean": {
+      "bytes": 4783,
+      "sha256": "50ef06e0a440a1c6085ebbd6fd70a7e4bc5495875e635af5ddea3f3a02eb917c"
+    },
+    "formal/analysis/MathResearchAnalysis/ClippedSquareCoordinates.lean": {
+      "bytes": 12879,
+      "sha256": "c6cd6a6745efd54a81db2dcb0180db52614e316b6e86f36595324a7bf7f65376"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockCandidateIntervals.lean": {
+      "bytes": 13097,
+      "sha256": "8c2dac762b45ed2652aac19b857f8b94b8fb7518978fb96e11beecb7fdf9b4f5"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockCensoringKernel.lean": {
+      "bytes": 5340,
+      "sha256": "ed6374523bf05a13f6345043403446a82a5a2c07b091e413824404f0bafc8779"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockCounting.lean": {
+      "bytes": 10084,
+      "sha256": "8837b7cc97f449f7af7b065946464870fda72f69d2de173bbddc2c1d44190016"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockDeterministicResidual.lean": {
+      "bytes": 8311,
+      "sha256": "743e9375fd27a18132f4d0e87c4c1976e9964d13415116c9ca8f4faf52db1594"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockEndpointMean.lean": {
+      "bytes": 5198,
+      "sha256": "22e72ca6f055ce7884df56ca089c3b99ac8905355110342c82ec975cdca38357"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockEventOrder.lean": {
+      "bytes": 14066,
+      "sha256": "7a2a3a2e8ed626ec420794d859986ed192905a96b3bf969849c24625ae66bbd6"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockEventWord.lean": {
+      "bytes": 13985,
+      "sha256": "947bf8ea7c3a5c31d500b97f3256fa5b68f944bdb07841bd42fcea78c03a3d8e"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockExecutionLaw.lean": {
+      "bytes": 8970,
+      "sha256": "5f04bee457666f266c5e5ece51fc4c988943eb08ddc338d6dca0ee9fb1df9ecd"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockGapReset.lean": {
+      "bytes": 10592,
+      "sha256": "a072ea8f89725ec67582a9f23bef3b8fa8e37cc55152b6a046c4c39ef67c42f1"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockMaximum.lean": {
+      "bytes": 7717,
+      "sha256": "d4c3c9a3c6f21f406ec0db8d4c09cb3cac93215d0ccb0e6e3cdfd384b47a3d7c"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockNoTies.lean": {
+      "bytes": 6470,
+      "sha256": "be97ab4e0f436d756a6c2b6191e5a2be8e2cb657258398755751e60f2a1115a8"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockRankTail.lean": {
+      "bytes": 6654,
+      "sha256": "e24de872aa04e1b812d0acd8dd7afd45977cd2d9121653ce2f68c1871de364bc"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockReadiness.lean": {
+      "bytes": 9445,
+      "sha256": "a006efe43958c4c27a9b836f77aa8aa1576013de94ce6d9af41fbcc12b187703"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockRecoveryComparison.lean": {
+      "bytes": 9049,
+      "sha256": "62c57d5f428082854ac3c54247cdd487156558d08ce8ed76478606e0920a5dd4"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockSelectedMarks.lean": {
+      "bytes": 12194,
+      "sha256": "1a50b286065888d556e6314a4dff0627cf27b9c019002dee0eb2ff6cc92f6b94"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockSelectedWord.lean": {
+      "bytes": 12845,
+      "sha256": "072b3c618980494ed9d2388a2e3665e2c816bc4bcd1bbb7a177196f0f7884b52"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockStoppedResidual.lean": {
+      "bytes": 7112,
+      "sha256": "a1f0616e341d91354abc408bca771a48718dbb8776073fa5d8e5610cba0e246d"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockWaitingLimit.lean": {
+      "bytes": 11043,
+      "sha256": "e62c1afd714f92adf330a127409da378fa644a7339eac9a93c2d95ef6b79d1cb"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockWordMarks.lean": {
+      "bytes": 4301,
+      "sha256": "ff5571e8c5cc9bd355b1e13f4322e7fd072226c7abc66f29fbd4aa982de659d8"
+    },
+    "formal/analysis/MathResearchAnalysis/ConditionalMoment.lean": {
+      "bytes": 6318,
+      "sha256": "de21e9965abb0ba8cebbe7311826fa3381eac35d03d16d543f86fec5e6ad15e4"
+    },
+    "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean": {
+      "bytes": 11377,
+      "sha256": "808080d8ee9f9db9bf3e623e48295e00aa30c0ea3118015d0495fa38ee3dd950"
+    },
+    "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean": {
+      "bytes": 4976,
+      "sha256": "24395a04729955572f2866e4249c45e6a0e29bfeef5b8f84428a00b14a1040fa"
+    },
+    "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean": {
+      "bytes": 7773,
+      "sha256": "e113e6d0769162918a4eb9d13688e27cae26b169879815fbc73f2e257e7d9fc6"
+    },
+    "formal/analysis/MathResearchAnalysis/CountableClockSurvival.lean": {
+      "bytes": 11020,
+      "sha256": "c0234dade3b14c0cae5ea58d3abaebddb4f187357646e0e450c114526847b0b9"
+    },
+    "formal/analysis/MathResearchAnalysis/DropletClockLaw.lean": {
+      "bytes": 13386,
+      "sha256": "b3ce76806be0776350e772800412ca82f3ea5c50bb5d40469a033dcd31693b1f"
+    },
+    "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean": {
+      "bytes": 11265,
+      "sha256": "046830b92bf24f664d447c8121fc71047b3cbae28996d98a7d52d920a9a3d0cc"
+    },
+    "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean": {
+      "bytes": 9775,
+      "sha256": "3cf40bef3bb6e11da17d9b7d1806b2c77ce5e68acf16a81879cad5fa0f6f9a37"
+    },
+    "formal/analysis/MathResearchAnalysis/EventMeasureLimit.lean": {
+      "bytes": 2046,
+      "sha256": "d233ddff69d3eee5aec2e8c30a96957d3ab846409c81534421d302649b52196d"
+    },
+    "formal/analysis/MathResearchAnalysis/EventTrace.lean": {
+      "bytes": 11590,
+      "sha256": "40c253278c9c04c7dc1d20c65a4b71fe3e3bf6abd4eec0e893ec8656217be3a9"
+    },
+    "formal/analysis/MathResearchAnalysis/ExponentialClocks.lean": {
+      "bytes": 9315,
+      "sha256": "4fbc0b070eb0c37e1077cadf731f08b9201cdf9b434e5a090dfb39e6cc85d77b"
+    },
+    "formal/analysis/MathResearchAnalysis/ExponentialMemoryless.lean": {
+      "bytes": 7090,
+      "sha256": "4905c698c52f033a589930d31de2718eac0d23771506d5120483683b96d9f953"
+    },
+    "formal/analysis/MathResearchAnalysis/ExponentialMoment.lean": {
+      "bytes": 7647,
+      "sha256": "a4e2e1edb26ca9a6332914568afefb58aa1e6d3c70414c35f0c573861430b86c"
+    },
+    "formal/analysis/MathResearchAnalysis/ExtendedBlockTail.lean": {
+      "bytes": 8567,
+      "sha256": "801640dc71f73cb7988ed398ccab74726f3edeca08627c93264091e50d2bce04"
+    },
+    "formal/analysis/MathResearchAnalysis/ExtendedNextRing.lean": {
+      "bytes": 11179,
+      "sha256": "dd151a1ad1328b115571f26af283090c9991c67423040660244056caa0eae189"
+    },
+    "formal/analysis/MathResearchAnalysis/ExtendedRecoveryExpectation.lean": {
+      "bytes": 2754,
+      "sha256": "845ae6f5d2c03a831f6605ca7b8ce551369e116d8b22769d54e642915f350339"
+    },
+    "formal/analysis/MathResearchAnalysis/ExtendedRecoveryTime.lean": {
+      "bytes": 5602,
+      "sha256": "d8ed3fdff872ee8457e746e0f81e23d97cb976cf4c9da6ebe88523d806a845f9"
+    },
+    "formal/analysis/MathResearchAnalysis/ExtendedStoppingPath.lean": {
+      "bytes": 4516,
+      "sha256": "fd403a4f1d4805a1a3d2132580374e7c5ed09ab983a76d0eb4302bd37e6e4d8a"
+    },
+    "formal/analysis/MathResearchAnalysis/FairMarks.lean": {
+      "bytes": 6702,
+      "sha256": "9140074a94ce73943c4301a2dd545db913fcec48786c50fdfe082369f27c1e35"
+    },
+    "formal/analysis/MathResearchAnalysis/FairMarksPastFuture.lean": {
+      "bytes": 3437,
+      "sha256": "2ed9517d057f68549738528d3fcb205bc0f48a2a8b9dead25bf942eecd5c9015"
+    },
+    "formal/analysis/MathResearchAnalysis/FairMarksTransport.lean": {
+      "bytes": 1280,
+      "sha256": "b96cb9c71033a7f478e9ad992d36070cd508d15d762d75296c9e93375e893190"
+    },
+    "formal/analysis/MathResearchAnalysis/FiniteMajorityPeeling.lean": {
+      "bytes": 8492,
+      "sha256": "cfcd95ade0705db947b2739be33877a496b958df7876649b087f0ea223ace322"
+    },
+    "formal/analysis/MathResearchAnalysis/FiniteRankWitness.lean": {
+      "bytes": 12251,
+      "sha256": "6638b02a8c4d3eb7885c98cc2c369599fe9041ed8f76c6e18b7eca3a4581152a"
+    },
+    "formal/analysis/MathResearchAnalysis/FiniteTail.lean": {
+      "bytes": 10372,
+      "sha256": "411828296b5e9ba6f4427a11646a5e66a38617e56bacca0ad279a52ceb4a9039"
+    },
+    "formal/analysis/MathResearchAnalysis/FiniteWordKernel.lean": {
+      "bytes": 8882,
+      "sha256": "436329a28ef34fe20b9c0775bbbf2b8ae1a32d32262b0d255440cf51af2b3481"
+    },
+    "formal/analysis/MathResearchAnalysis/FirstLayerClock.lean": {
+      "bytes": 6947,
+      "sha256": "1f08c7e41854a253f7802566210d14a7de48989376d830cb2a60f6967cc348d5"
+    },
+    "formal/analysis/MathResearchAnalysis/FixedClockPath.lean": {
+      "bytes": 17561,
+      "sha256": "c8b6eb1ff93b2724a45294340a81ff981cca60c17cb577162c387e031b6f6cfd"
+    },
+    "formal/analysis/MathResearchAnalysis/GreedyClockChain.lean": {
+      "bytes": 10072,
+      "sha256": "f51c7eecc38278ba1b8e73b2667206f3e7ebe686d6d19eefa9960fbc566b5004"
+    },
+    "formal/analysis/MathResearchAnalysis/GridBoundaryIncidence.lean": {
+      "bytes": 6956,
+      "sha256": "ec87e3e2ad843ff56fea8fd4e4469713c8598aa2218db6575d4801874d217893"
+    },
+    "formal/analysis/MathResearchAnalysis/GridBoundaryPermutation.lean": {
+      "bytes": 7032,
+      "sha256": "00e3d3331cfd3ace1e3eb508b5fa72a6d8c2873b335bd4f47c975d354eacd8a8"
+    },
+    "formal/analysis/MathResearchAnalysis/GridBoundarySegments.lean": {
+      "bytes": 9236,
+      "sha256": "b6ccb7a6e6c7e48d35f864e5edd5377adf943462d25f285ea31e1cc6faeb0f95"
+    },
+    "formal/analysis/MathResearchAnalysis/GridCellBoundary.lean": {
+      "bytes": 9209,
+      "sha256": "6f3e543a625a5f031b2f201d65df0ea20149d5c6279c8f4717fe234e6f208a37"
+    },
+    "formal/analysis/MathResearchAnalysis/GridCellRegion.lean": {
+      "bytes": 7048,
+      "sha256": "a2e6849bd28a5a68dcf51a2cb86efc297b562197e76379c70080e20a130e8e08"
+    },
+    "formal/analysis/MathResearchAnalysis/GridCleanupDeletion.lean": {
+      "bytes": 6978,
+      "sha256": "5f424368c8f9861ca1f83e13a2cb3a0340671380de7e266f4cad3182cf925df0"
+    },
+    "formal/analysis/MathResearchAnalysis/GridContourLength.lean": {
+      "bytes": 4056,
+      "sha256": "112228aa3f672098c8c947ec855aa807defc171388458e3f17ff03500a2a5999"
+    },
+    "formal/analysis/MathResearchAnalysis/GridMajorityPeeling.lean": {
+      "bytes": 7182,
+      "sha256": "bd1c25c2e2208ffc24ea63db9eb6997da2bc669b5e327eb0cc1790f193282762"
+    },
+    "formal/analysis/MathResearchAnalysis/GridPerimeterDynamics.lean": {
+      "bytes": 6493,
+      "sha256": "db23646a82d5f377b1889ecc1dadac25b50a5e8d63c1963f0cbcf8e506b476ad"
+    },
+    "formal/analysis/MathResearchAnalysis/GridPerimeterUpdate.lean": {
+      "bytes": 4859,
+      "sha256": "7e6957ee19d47d018bd8fafe5cde7a708d32f5006714d087697eb0ea42103da3"
+    },
+    "formal/analysis/MathResearchAnalysis/GridPhysicalRegion.lean": {
+      "bytes": 6382,
+      "sha256": "8df1aa503100a745107dc2be3d3da85cbc95173b496cbcd1772eed37931e924d"
+    },
+    "formal/analysis/MathResearchAnalysis/GridRegionBoundary.lean": {
+      "bytes": 15479,
+      "sha256": "16e310f64230f382ce91742a30e343d12be9303a0f56a23435c5361f842ece5f"
+    },
+    "formal/analysis/MathResearchAnalysis/HistoryEventInvariant.lean": {
+      "bytes": 2092,
+      "sha256": "b166a0e54b5bd43964a1ecc42cee17c5cb153f30c22dd97591feb08cc2cceae3"
+    },
+    "formal/analysis/MathResearchAnalysis/HomogeneousRecoveryTime.lean": {
+      "bytes": 16165,
+      "sha256": "d0761adae03f103a3a39a0644a5e1b70c4433ee31a52a8d5098d5b64944e70de"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridComplement.lean": {
+      "bytes": 6146,
+      "sha256": "88ba8691101ae92f8d79595ab1141f3339d979f7cf66a7298b90119d367eea62"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridModel.lean": {
+      "bytes": 13303,
+      "sha256": "bece083097453bbc47b97258096fe85ba2cee656834b9a1d54071ffb64cad81a"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridRandomDynamics.lean": {
+      "bytes": 3170,
+      "sha256": "6c6deb105edc9579b4508ff0665472bd55e74f991382fe796462902d76e88714"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridRecoveryTime.lean": {
+      "bytes": 5259,
+      "sha256": "5dbf8f8f79efba1991751c97f93e4498891def8d057c62ab2a577d1a62d767b3"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridTranslation.lean": {
+      "bytes": 7410,
+      "sha256": "09e68791c9539f5f348464e2bbd79b66f30c8c6be84afcee8677070948abd383"
+    },
+    "formal/analysis/MathResearchAnalysis/InfiniteGridTranslationLaw.lean": {
+      "bytes": 4925,
+      "sha256": "4ac8e063ad77e7e579b283fb7076e01ce3ee38eed8281245ee4aa4ea6b7e36ff"
+    },
+    "formal/analysis/MathResearchAnalysis/MarkedEventTrace.lean": {
+      "bytes": 7944,
+      "sha256": "2ead356af40341ae02df3d62c9a32f63074471dce54cc22b54be93675cfa094b"
+    },
+    "formal/analysis/MathResearchAnalysis/NextRing.lean": {
+      "bytes": 11295,
+      "sha256": "9f75e38fe698c2d3ae81f184d93ff3a991ad39b3c903b16da8fd7365f39385a2"
+    },
+    "formal/analysis/MathResearchAnalysis/NonnegativeMoment.lean": {
+      "bytes": 9259,
+      "sha256": "8bac21f797b3ec549222aaedc1b9c57233df041b42d9e6bca4f5d1c2176d9548"
+    },
+    "formal/analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean": {
+      "bytes": 10350,
+      "sha256": "2539a1193042d8e7e6476edbc6ccab3e1bb9da82e14e93a5dac196e589325884"
+    },
+    "formal/analysis/MathResearchAnalysis/OrthogonalGridConvexity.lean": {
+      "bytes": 6289,
+      "sha256": "198a12915e95ec9404eaf9b3d9bbeaf3c34e916c7b783c77c96bc121ef152d3d"
+    },
+    "formal/analysis/MathResearchAnalysis/OrthogonalVacantQuadrant.lean": {
+      "bytes": 8922,
+      "sha256": "a0c0c9f29acb1e764d7db8f689deeaa09339746e83a5703f488c9f022ed989ab"
+    },
+    "formal/analysis/MathResearchAnalysis/PathTail.lean": {
+      "bytes": 3701,
+      "sha256": "72766cdb461b012a92b17cdd875b5d4c298bc31ac7f61e938f5d9d3c9c03ad48"
+    },
+    "formal/analysis/MathResearchAnalysis/PerturbationGeometry.lean": {
+      "bytes": 6995,
+      "sha256": "61b8ac512e07c7cd8ef2b54ebb39c311293d8be7015e7c7d8b3d7b322012a637"
+    },
+    "formal/analysis/MathResearchAnalysis/PerturbationNormalization.lean": {
+      "bytes": 4481,
+      "sha256": "26ed3d68f57c7d1d9672589330f21c530a280549d01c839dfcdf0254e07400e9"
+    },
+    "formal/analysis/MathResearchAnalysis/PerturbationSymmetry.lean": {
+      "bytes": 6349,
+      "sha256": "c08f325f3527efe13d0e3bf13f5814ad7faab36299cfe6fea936c90c113c0504"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean": {
+      "bytes": 16775,
+      "sha256": "9617c2e2f9e2ccf4962707d740b3579b46e0c4d82315430182449d3039f10ddc"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean": {
+      "bytes": 9446,
+      "sha256": "e5c7202e6305231efe64aaeb426e41b4366d1663a9076ef8768163ea81a6220e"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean": {
+      "bytes": 9776,
+      "sha256": "a0b8fc09acb026ad488c3c314e52e38f464fa57d63f6645f6d68e983b2b8bc56"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedDomainClockComparison.lean": {
+      "bytes": 7589,
+      "sha256": "c1e50fd47831b88d2cd285c278b6a5300747d1f7a2b059e670b74e6572d10efd"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean": {
+      "bytes": 6276,
+      "sha256": "24579cf99be9781083789e9d8d66f6d4deb2387e471adc40870c12bc15b37d8f"
+    },
+    "formal/analysis/MathResearchAnalysis/ProtectedExitArea.lean": {
+      "bytes": 4703,
+      "sha256": "f592704670afb00d91e74a04af6823bbda9faf1a4b21357ab57db3652472f486"
+    },
+    "formal/analysis/MathResearchAnalysis/RandomThresholdSurvival.lean": {
+      "bytes": 6037,
+      "sha256": "d1c3f2be1374c26f875736b7608cc20c6071f9cb4679aa02a9647fc3bdf29510"
+    },
+    "formal/analysis/MathResearchAnalysis/RankClockCensoring.lean": {
+      "bytes": 4210,
+      "sha256": "a3070c55c63a97a746740b9da7ed9cedba6adf18bfe8846fcc232826917cd395"
+    },
+    "formal/analysis/MathResearchAnalysis/RankScanEmbedding.lean": {
+      "bytes": 8756,
+      "sha256": "f7d5e7866607dc565e2eb9113e73a33ead052e7eca48194c29c4f4eb1ccf1cb5"
+    },
+    "formal/analysis/MathResearchAnalysis/RankSlotEmbedding.lean": {
+      "bytes": 13381,
+      "sha256": "65d2b9b2d920977edf3274e0c3d9efaf5d6eaa1500657d0734eba933421f6eee"
+    },
+    "formal/analysis/MathResearchAnalysis/RecoveryTimeTransport.lean": {
+      "bytes": 1505,
+      "sha256": "42962e0ff9a9dbb65405e24773e9ecb7a9c405266010378dafe583b6a1a6376a"
+    },
+    "formal/analysis/MathResearchAnalysis/SchedulingFailure.lean": {
+      "bytes": 3541,
+      "sha256": "e2dcf88cbc905335e846f6157d1363142b804fe719f664039a3fa2a1e15617ad"
+    },
+    "formal/analysis/MathResearchAnalysis/SmallDiameterRecovery.lean": {
+      "bytes": 5303,
+      "sha256": "89d0a9676d9286bc5e91e0bc75e967d152d7093753bd5ed452041327223021da"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareAttractivity.lean": {
+      "bytes": 4406,
+      "sha256": "8006495113f37f72315f503c7a76690431c3355c7b53f1c7723eebd14e856437"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareBatch.lean": {
+      "bytes": 8736,
+      "sha256": "7a86b222a1451e2544d01cb48c2692e225cb07bba9a758983e1c2d7b25cdbbca"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareDeterministicRestart.lean": {
+      "bytes": 3520,
+      "sha256": "f107e34ab69defe9402d6260a37750667085e301850711acb54da2862011672d"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareDynamics.lean": {
+      "bytes": 8552,
+      "sha256": "fa62bde0847c2463ac71e28044fed4e38483eafa7bcda714e20a2408ef38d405"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareGibbs.lean": {
+      "bytes": 7503,
+      "sha256": "f90739f28a29f7ec0a142552c5c819fc1bd096b27c2b2bf0f08b7de39519f6b7"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareGibbsLaw.lean": {
+      "bytes": 7048,
+      "sha256": "61a0bacdd80856de4442519811ca637cef13f489aaaf3c86dd25eb33411e3830"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareGreedyPaths.lean": {
+      "bytes": 11562,
+      "sha256": "16d0a6d1d65e3ef1b5190322286c743b3fa2ba0f256ff4524b9ba59577211682"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareGridEmbedding.lean": {
+      "bytes": 11092,
+      "sha256": "1103e3f8ca46020b660b40ecebafdb31d58dd1e7a3443da781691dd286b1b2fb"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareGridLaw.lean": {
+      "bytes": 13496,
+      "sha256": "6a0c98ff1273ea9c96dc3d693f91987634707fd94223fbe012894279ce492031"
+    },
+    "formal/analysis/MathResearchAnalysis/SquarePWCensoring.lean": {
+      "bytes": 5263,
+      "sha256": "336d2d14762c2d00e0352f3e514852033dfa7808cc9bd96654333701eca0a994"
+    },
+    "formal/analysis/MathResearchAnalysis/SquarePWDrop.lean": {
+      "bytes": 5406,
+      "sha256": "a5491e96b2edfa8ea0efdaa9ecbc2dbfff784b922796ea01da7eb1b06b31c062"
+    },
+    "formal/analysis/MathResearchAnalysis/SquarePWMeasure.lean": {
+      "bytes": 4419,
+      "sha256": "9375c7d10e87322640ad8bf355b6da7c105eb494feef36b5a1a33c766975da29"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareRandomComparison.lean": {
+      "bytes": 6383,
+      "sha256": "4238711116a35b46b347025884a5392a7d923f8808957e23cf5db5b9df10381d"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareRandomDynamics.lean": {
+      "bytes": 7008,
+      "sha256": "fac171ab66a054e89f3cf615d9253a4fefea1b525a0b5b5fa72a3fd9844c23aa"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareRandomRestart.lean": {
+      "bytes": 7872,
+      "sha256": "23fb4b97d6d9a8c4255e3d18d13ec9a1612e327fba5f5788ce42606224553740"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareRecoveryTime.lean": {
+      "bytes": 6344,
+      "sha256": "d646260833a8febb0c92e09fd9974cc0eaaceb578ba7ff4f71be1e5c31ffce20"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareScanKernel.lean": {
+      "bytes": 7002,
+      "sha256": "53dcf7ac8515a8f2d6c77f31f990c195529bfde1ff58e965d8157b06f7c94732"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareScanOrder.lean": {
+      "bytes": 3610,
+      "sha256": "6d8658458e291ade8f66d47e9fe4e3e2cfc975a496be504de0f3807ec9086817"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareSpin.lean": {
+      "bytes": 11090,
+      "sha256": "7fa99a6ade95ded59e17769e690a8f45aec88efce06c4e44fcff42ae71a17320"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareTasks.lean": {
+      "bytes": 11211,
+      "sha256": "6fa19cd27ac6581a44615fa1a3807934c6667d8f532ea480c8accf3c5a6e6f8b"
+    },
+    "formal/analysis/MathResearchAnalysis/SquareTaskTail.lean": {
+      "bytes": 5293,
+      "sha256": "6714c7171bcbcad60ee79e6bc975e7563bc02afbcfc55aec2cee3fd2340867c8"
+    },
+    "formal/analysis/MathResearchAnalysis/StoppingPath.lean": {
+      "bytes": 4882,
+      "sha256": "d29639fdd2695dabc750aaf17d82f8e9ed26c6d9bdb2d00347d6213bacb036d1"
+    },
+    "formal/analysis/MathResearchAnalysis/SurvivalLaw.lean": {
+      "bytes": 9560,
+      "sha256": "f85f496c025e650fe35f18a66eb4ccd9b2ace8a493ea26b450a4d147c74d0e67"
+    },
+    "formal/analysis/MathResearchAnalysis/SynchronousClockComparison.lean": {
+      "bytes": 3408,
+      "sha256": "86d2f2144df000884446f13bc166408a0f932394b4f9a825902563c6a86cf993"
+    },
+    "formal/analysis/MathResearchAnalysis/TaskClockBridge.lean": {
+      "bytes": 6434,
+      "sha256": "5cd40c9ebd3e80fdf1a9b8bf0410196ac6c37b27caf3121fe3ec742f5e6dd1c8"
+    },
+    "formal/analysis/MathResearchAnalysis/TaskPaths.lean": {
+      "bytes": 14210,
+      "sha256": "648fbb8437a5ed3bb02d8f8f9cba1adb5ab7be123a53ebb4db400a29b0f40ace"
+    },
+    "formal/analysis/MathResearchAnalysis/TaskPathTail.lean": {
+      "bytes": 11976,
+      "sha256": "957207dd151ebadc22d67b301e12d64bc305dae3b3f8f680858f054b2b0e9a56"
+    },
+    "formal/analysis/MathResearchAnalysis/UpperStoppingApprox.lean": {
+      "bytes": 6264,
+      "sha256": "0003415fea73059c1988935a3ed1679697974db42ef6397e9bdd1d750fbdf0c4"
+    },
+    "formal/analysis/MathResearchAnalysis/WholeSquareClockTransport.lean": {
+      "bytes": 6429,
+      "sha256": "b80fa2ba2daa24a9fe4356abf0543c6b41fd5fd12e023812730ba2ca5d0f9b8c"
+    },
+    "formal/analysis/MathResearchAnalysis/ZeroTemperature.lean": {
+      "bytes": 6980,
+      "sha256": "bb889619d413ec75a3375b6248a243399b7c2c6671d7037ba65d29bc58a48df7"
+    },
+    "formal/analysis/MathResearchAnalysis.lean": {
+      "bytes": 14706,
+      "sha256": "5efe7094db7a2339cde19fcc5084ec4ad20da061ef8cb26462e4c152d81a24f4"
+    },
+    "formal/audit/analysis-axioms.log": {
+      "bytes": 245389,
+      "sha256": "641d339e2a4e0d97583ca9fb9d0c5640c6c9a2b622dc7e6f8a8d7021692910b1"
+    },
+    "formal/audit/analysis-build.log": {
+      "bytes": 215,
+      "sha256": "6d6f0309c4bcd3090e98260dc4459f810afeae17c2baf8db9913d6f95ca00f6b"
+    },
+    "formal/audit/analysis-validation.json": {
+      "bytes": 29186,
+      "sha256": "d0df0c4f0433248a30846678c09402f0cf557df27fe9675dd463fc59932c956f"
+    },
+    "formal/audit/core-axioms.log": {
+      "bytes": 11552,
+      "sha256": "9e9f92fffe24e161e0cd49d79e05d517287314590d812fb579de88f8a33e6b37"
+    },
+    "formal/audit/core-build.log": {
+      "bytes": 56,
+      "sha256": "a5f7af670d375dfbf08cab54faa338975265ff93c38f7c067d963d9966ba8905"
+    },
+    "formal/audit/core-validation.json": {
+      "bytes": 1527,
+      "sha256": "f01795bc4ff47bbca4c29c4dca23d4e1cef545709144b99bc3ca987f6ea5bcb1"
+    },
+    "formal/audit/CoreAxioms.lean": {
+      "bytes": 7716,
+      "sha256": "5201d7968116632af42eca7100f6abfe424ae147530e5d87a00315f3a709e246"
+    },
+    "formal/audit/exit-area-stage-declarations-axioms.lean": {
+      "bytes": 1200,
+      "sha256": "0eb31581add0f1aed8585477c6d9da4bf377dec55282ed5457a7e230fedf5671"
+    },
+    "formal/audit/exit-area-stage-declarations-axioms.log": {
+      "bytes": 1878,
+      "sha256": "59f9d75b900e66055d2651651afcb7b4a00fba86a682e6023f111c31cc2a31f7"
+    },
+    "formal/audit/exit-area-stage-declarations-build.log": {
+      "bytes": 233,
+      "sha256": "e6de5ec4c167a672f7794b55d7110e3a577d59f643bbb6675d356e2334d1a668"
+    },
+    "formal/audit/exit-area-stage-declarations-validation.json": {
+      "bytes": 1671,
+      "sha256": "be8f8e74abad4ee0f8ed151b2de33453d76c34a1cda708482e5d3543cd23865b"
+    },
+    "formal/audit/exit-area-stage-independent-evidence.json": {
+      "bytes": 43329,
+      "sha256": "041dced9f0ff479e99b4a5fa7a6b572d18084c4a6759ff54eee6153680cf95fa"
+    },
+    "formal/audit/exit-area-stage-semantic-review.md": {
+      "bytes": 4676,
+      "sha256": "8df7a7d6669af91403794e3c7a5ed80ecf766bc3dbeccc720ce139ed45c13462"
+    },
+    "formal/audit/exit-area-stage-unified-validation.log": {
+      "bytes": 256614,
+      "sha256": "0c2f030bd46a6e24f63f649fd9ef1d22460a421997533a2098f985a91ef08cb9"
+    },
+    "formal/audit/protected-column-draft-validation.json": {
+      "bytes": 2333,
+      "sha256": "2e1547f230e67a148b69ec2c6fef31bddb77e78f91eb9dca731f2162306d1925"
+    },
+    "formal/audit/protected-column-draft.log": {
+      "bytes": 3160,
+      "sha256": "a9ab933bbbd33f325227dade475ffac8052d2ea9f05fa92272f764c5caf9c8a9"
+    },
+    "formal/audit/protected-corner-draft-validation.json": {
+      "bytes": 1251,
+      "sha256": "cd5980c5dc9f0b8d331afec82982803ef9554c1d32220e8e929a815bfd4a3d95"
+    },
+    "formal/audit/protected-corner-draft.log": {
+      "bytes": 1382,
+      "sha256": "506d5270dc34a04d86d37958c282876724a00bf0c413a98e5b53fe9545459002"
+    },
+    "formal/audit/protected-stage-declarations-axioms.lean": {
+      "bytes": 4674,
+      "sha256": "1ca983644d24271339bb2e343dcb4481276a23425cf3b664110ef897b553f3e5"
+    },
+    "formal/audit/protected-stage-declarations-axioms.log": {
+      "bytes": 7212,
+      "sha256": "b7b5f14b60ba59bd3d20b6a43ae6630d0f091c40a54c02920c4c21679a65250e"
+    },
+    "formal/audit/protected-stage-declarations-build.log": {
+      "bytes": 234,
+      "sha256": "7c1ab6bc540527a4efdbb6ddabfbd01acb50fbd8e562f563a21388467c68dbf8"
+    },
+    "formal/audit/protected-stage-declarations-validation.json": {
+      "bytes": 5085,
+      "sha256": "139ad1e734054b8d5901bbde7f706daa4afe5e3e1155968e9a075563ba5a3583"
+    },
+    "formal/audit/protected-stage-independent-evidence.json": {
+      "bytes": 47036,
+      "sha256": "61d739e403c97633866fc4886ebb9bed80b7a614995740f3051ff373911945cf"
+    },
+    "formal/audit/protected-stage-semantic-review.md": {
+      "bytes": 5613,
+      "sha256": "e38e690fa5cb3ff35a1e71f9410ba3b10293498a558112a151555abc62f232f2"
+    },
+    "formal/audit/protected-stage-unified-validation.log": {
+      "bytes": 254751,
+      "sha256": "ec0270b927b66cf6c5aea68c6a72c9a2d746f76de5c5150add42fbefc20f9106"
+    },
+    "formal/audit/update-stage-declarations-axioms.lean": {
+      "bytes": 8412,
+      "sha256": "c042274b6c41b57d2081dc25a6f7844904caf28a3216314c4ac1a7fa4a67e36d"
+    },
+    "formal/audit/update-stage-declarations-axioms.log": {
+      "bytes": 13002,
+      "sha256": "da110c85e98d43a1a797f0b037ef46fad2d85954906231f40a082d3952a74359"
+    },
+    "formal/audit/update-stage-declarations-build.log": {
+      "bytes": 165,
+      "sha256": "af3c21a3591d59374da83eee2f029fc07fdd19d77aaacea31252ecb0a7b83409"
+    },
+    "formal/audit/update-stage-declarations-validation.json": {
+      "bytes": 8892,
+      "sha256": "3c457483e759d7c1b2948b700a55eb8c340df4ee1c2c53ec8ac932cf907f1392"
+    },
+    "formal/audit/update-stage-docs-counts.json": {
+      "bytes": 596,
+      "sha256": "b96ba0fd05b9ee8bd61dcff6e3f1b15f9633b5d331deb49eb17efa03a1ba04ce"
+    },
+    "formal/audit/update-stage-independent-evidence.json": {
+      "bytes": 52609,
+      "sha256": "00f00570362188a6e2e53f48abb299a91e46b6a8bc041b0073834c4a1e45ef67"
+    },
+    "formal/audit/update-stage-route-review.md": {
+      "bytes": 6863,
+      "sha256": "7c326023e620c187a35d3f1f213f7439e233372284d10980e3d1508cc34eb079"
+    },
+    "formal/audit/update-stage-semantic-review.md": {
+      "bytes": 6071,
+      "sha256": "1a5f7c4149d95ce57b031efb5c6a55765c392962481c52dcf3d3397adc6fbdfd"
+    },
+    "formal/audit/update-stage-unified-validation.log": {
+      "bytes": 247777,
+      "sha256": "5c3c82a842266824e8eaaa3cd29f5bc5421e20796eb44ab74c0d28358a001cfe"
+    },
+    "formal/audit/vacant-quadrant-draft-validation.json": {
+      "bytes": 1141,
+      "sha256": "6af559bd9b04d766a1902f106412855aca8d7e0662171584a5027f8200716e20"
+    },
+    "formal/audit/vacant-quadrant-draft.log": {
+      "bytes": 1160,
+      "sha256": "fb1df3ef896c370a943a1f53bace28cc551cca08e6ffd4af16dd2cb535e344bb"
+    },
+    "formal/drafts/OrthogonalVacantQuadrant.lean": {
+      "bytes": 9450,
+      "sha256": "234dcbd634c14ad0412287eb4d5b0d4b36fb2e74718eaaa7922075a21b9b0df2"
+    },
+    "formal/drafts/ProtectedColumnGeometry.lean": {
+      "bytes": 18574,
+      "sha256": "db3b1a4c375714454dff0e076d2ea6d49efefd3725f48fb9dba480d316e01769"
+    },
+    "formal/drafts/ProtectedCornerGeometry.lean": {
+      "bytes": 10219,
+      "sha256": "9285652ace7ace539f2b11c5fffb7dce4b2e097a5f3f186d04eceee4481edba5"
+    },
+    "formal/lake-manifest.json": {
+      "bytes": 144,
+      "sha256": "cca9e3be8d64c12070a16997562467ec54bde4c82938464cc3957671d962672e"
+    },
+    "formal/lakefile.toml": {
+      "bytes": 111,
+      "sha256": "ed56d0bbf4aa1c13a146c4f239155ff087c4f154755ef75b17b6abc42e7654e5"
+    },
+    "formal/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    "formal/MathResearch/Dynamics.lean": {
+      "bytes": 13422,
+      "sha256": "651a38a94a53773b1b2c184dfc8554f3a54cc06f622450fdd9224300a9aded9a"
+    },
+    "formal/MathResearch/EventEmbedding.lean": {
+      "bytes": 20034,
+      "sha256": "388ec6a1bbb31b66f77b005b3faa51bafb25f8bf00268c38e078a4469a248286"
+    },
+    "formal/MathResearch/Grid.lean": {
+      "bytes": 10317,
+      "sha256": "f9d123a865652ba652782345e3ad2412154156dc6aa1768b7603d632733ca829"
+    },
+    "formal/MathResearch/Majority.lean": {
+      "bytes": 1131,
+      "sha256": "6826afa46a5b26025aaa6244d0ddac49c8b63e174454c7313c98c31956bdd194"
+    },
+    "formal/MathResearch/Readiness.lean": {
+      "bytes": 11264,
+      "sha256": "118f1733e1cefc94db8aa6833481f557404a65902ed63943587248e11ab676a5"
+    },
+    "formal/MathResearch/Scheduling.lean": {
+      "bytes": 8822,
+      "sha256": "2303988439da2075440a6ad8f408ba9f3127fb0324b9fcfcb0d6813bab677691"
+    },
+    "formal/MathResearch/Trace.lean": {
+      "bytes": 14530,
+      "sha256": "1333411ffd50db5d844784c5dd2124d6c6f68762ae3dde746975fbfdc740a5f2"
+    },
+    "formal/MathResearch.lean": {
+      "bytes": 561,
+      "sha256": "78f76988572b9c3132743e35acef7c10c93ee3cd4357e322ef0645e2cc91cac5"
+    },
+    "formal/PROGRESS_2026-10-18_PROTECTED_EVOLUTION.md": {
+      "bytes": 3185,
+      "sha256": "8ffaea16716b34d4f989053be5b5e55738ba319bf294eac2bed5c83794fd595d"
+    },
+    "README.md": {
+      "bytes": 2646,
+      "sha256": "7e66e273b4232fcda9a52bf6d3530d89967a840794fe1d86a11734f622568781"
+    },
+    "research/followup/ca_clean_proof.md": {
+      "bytes": 18540,
+      "sha256": "1d6d2823b20e004e2dd56ded7eabcdbe423c8b5216dc50a611ff1147fbd8ec97"
+    },
+    "research/followup/METHOD_LEDGER_2026-10-18.md": {
+      "bytes": 27929,
+      "sha256": "e8833823aad77a2a258c2bd7d46511b94f34e402a67a73ae154bcf5bb730f3db"
+    },
+    "research/followup/novelty_review.md": {
+      "bytes": 16731,
+      "sha256": "2b9488251619c374216469eafdbc47abaa5ea73dc771d5c358c5f2eb5d396e80"
+    },
+    "research/followup/public_resolution_check_2026-10-14.md": {
+      "bytes": 11845,
+      "sha256": "142cd57d620da97c4e2dcfda2cc3abaab112eea8f65f695f8e05d01fcb2449fe"
+    }
+  }
+}

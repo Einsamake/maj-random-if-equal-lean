@@ -1,0 +1,148 @@
+'MathResearchAnalysis.ProtectedColumnGeometry.column_singleton_of_missing_vertical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.protected_singleton_column_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.outward_row_axis_in_innerDiamond' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.outward_occupied_same_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.no_east_on_positive_singleton_column' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.no_singleton_column_on_axis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.no_horizontal_opposites_at_positive_x' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.outward_row_axis_in_innerDiamond_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.outward_occupied_same_row_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.no_west_on_negative_singleton_column' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.protected_no_horizontal_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.innerDiamond_swap_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.clippedDomain_swap_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.mem_transpose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.rowConvex_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.columnConvex_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.degree4_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.stable_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.protected_no_vertical_opposites' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.protected_erase_convexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedColumnGeometry.protected_cleanup_erase_convexity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.northeast_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.mem_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.rowConvex_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.columnConvex_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.innerDiamond_reflect_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.protected_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.northwest_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.southeast_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedCornerGeometry.southwest_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.path_erase_of_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.fourConnected_erase_of_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.neighbor_bypass_via' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.northeast_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.northwest_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.southeast_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.southwest_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.protected_neighbor_bypass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.protected_erase_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.protected_cleanup_erase_fourConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedDeathConnectivity.actual_protected_death_preserves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.Shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.clipped_shape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.actual_modifiedStep_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.modifiedTrajectory_shape_of_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.inner_preserved_before_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.modifiedTrajectory_shape_upto_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.stoppedTrajectory_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.initial_stoppedTrajectory_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedEvolution.initial_stoppedTrajectory_noCheckerboard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

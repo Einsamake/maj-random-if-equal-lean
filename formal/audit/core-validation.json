@@ -1,0 +1,30 @@
+{
+  "compiler": "Lean 4.35.0",
+  "public_theorems": 125,
+  "validated_at": "2026-10-14T21:18:34.078751+08:00",
+  "compiler_output": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "additional_model_definitions": 1,
+  "project_lean_files": 8,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axiom_audit_command": "lake env lean --trust=0 audit/CoreAxioms.lean",
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms": false,
+  "admitted_holes": false,
+  "source_sha256": {
+    "MathResearch/Dynamics.lean": "651a38a94a53773b1b2c184dfc8554f3a54cc06f622450fdd9224300a9aded9a",
+    "MathResearch/EventEmbedding.lean": "388ec6a1bbb31b66f77b005b3faa51bafb25f8bf00268c38e078a4469a248286",
+    "MathResearch/Grid.lean": "f9d123a865652ba652782345e3ad2412154156dc6aa1768b7603d632733ca829",
+    "MathResearch/Majority.lean": "6826afa46a5b26025aaa6244d0ddac49c8b63e174454c7313c98c31956bdd194",
+    "MathResearch/Readiness.lean": "118f1733e1cefc94db8aa6833481f557404a65902ed63943587248e11ab676a5",
+    "MathResearch/Scheduling.lean": "2303988439da2075440a6ad8f408ba9f3127fb0324b9fcfcb0d6813bab677691",
+    "MathResearch/Trace.lean": "1333411ffd50db5d844784c5dd2124d6c6f68762ae3dde746975fbfdc740a5f2",
+    "MathResearch.lean": "78f76988572b9c3132743e35acef7c10c93ee3cd4357e322ef0645e2cc91cac5"
+  },
+  "scope": "deterministic components, not the full quadratic probability theorem"
+}

@@ -1,0 +1,132 @@
+'MathResearch.activeColour_zero' does not depend on any axioms
+'MathResearch.activeColour_succ' does not depend on any axioms
+'MathResearch.activeColour_complement' depends on axioms: [propext]
+'MathResearch.BipartiteSystem.splitting_succ' depends on axioms: [propext]
+'MathResearch.BipartiteSystem.splitting' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.active_value' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.inactive_value' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.synchronous_zero_step' depends on axioms: [Quot.sound]
+'MathResearch.BipartiteSystem.alternating_zero_step' depends on axioms: [Quot.sound]
+'MathResearch.BipartiteSystem.synchronous_zero_persists' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.alternating_zero_persists' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.synchronous_zero_implies_alternating_next_zero' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.both_alternating_zero_implies_synchronous_zero' depends on axioms: [propext]
+'MathResearch.BipartiteSystem.eventually_zero_iff' depends on axioms: [propext, Quot.sound]
+'MathResearch.firstZero_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.firstZero_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.BipartiteSystem.absorption_times' depends on axioms: [propext, Quot.sound]
+'MathResearch.BipartiteSystem.firstZero_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.BipartiteSystem.finite_absorption_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.conflicting_slots_increase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.slotLE_trans' depends on axioms: [propext]
+'MathResearch.EventEmbedding.slotLE_total' depends on axioms: [propext]
+'MathResearch.EventEmbedding.sortBySlot_perm' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.sortBySlot_sorted' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.sortBySlot_preserves_conflicts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.sortBySlot_swapEquivalent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.execute_eq_sortBySlot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.mem_slotBatch_iff' depends on axioms: [propext]
+'MathResearch.EventEmbedding.slotBatch_same_color' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.slotBatch_pairwise_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.slotBatch_sites_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.rankChronological_preserves_ids' depends on axioms: [propext]
+'MathResearch.EventEmbedding.rankChronological_unique' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.rankChronological_positive' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.rankChronological_conflicts_increase' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.execute_eq_generated_slot_sort' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.independent_symm' does not depend on any axioms
+'MathResearch.EventEmbedding.marked_rule_eq_after_independent_update' depends on axioms: [propext]
+'MathResearch.EventEmbedding.marked_updates_commute' depends on axioms: [propext, Quot.sound]
+'MathResearch.EventEmbedding.execute_marked_eq_sortBySlot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.execute_marked_eq_sortBySlot_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.EventEmbedding.execute_marked_eq_generated_slot_sort' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearch.Grid.north_opposite' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.east_opposite' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.south_opposite' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.west_opposite' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.splitting' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.absorption_times' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.finite_absorption_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_north_east' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_north_south' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_north_west' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_east_south' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_east_west' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_south_west' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_of_state_true' does not depend on any axioms
+'MathResearch.Grid.neighbour_ones_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.inside_neighbours_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.update_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.singleSiteUpdate_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.synchronous_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Grid.alternating_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Majority.zero_fixed' does not depend on any axioms
+'MathResearch.Majority.one_fixed' does not depend on any axioms
+'MathResearch.Majority.at_most_one' does not depend on any axioms
+'MathResearch.Majority.monotone_common_mark' does not depend on any axioms
+'MathResearch.Readiness.System.completion_zero' does not depend on any axioms
+'MathResearch.Readiness.System.completion_succ' does not depend on any axioms
+'MathResearch.Readiness.System.completion_one' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.ready_lt_completion' does not depend on any axioms
+'MathResearch.Readiness.System.predecessor_lt' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.exists_neighbour' depends on axioms: [propext]
+'MathResearch.Readiness.System.same_site_two_steps' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.along_fixed_path' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.same_site_even_gap' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.same_site_even_order' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.neighbour_odd_gap' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.neighbour_odd_order' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.same_site_even_no_reuse' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.layerColour_succ' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.layerColour_eq_activeColour' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.layerColour_eq_iff' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.layerColour_ne_iff' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_predecessor' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_conflict_order' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_conflict_order_iff' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_same_site_injective' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_same_site_no_reuse' depends on axioms: [propext, Quot.sound]
+'MathResearch.Readiness.System.selected_event_injective' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.member_le_maximum' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.nextRank_positive' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.predecessor_rank_lt' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.rank_mem_conflictingRanks' depends on axioms: [propext]
+'MathResearch.Scheduling.annotate_preserves_events' depends on axioms: [propext]
+'MathResearch.Scheduling.annotated_rank_positive' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.earlier_conflict_rank_lt' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.slot_positive' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.slot_le_twice_rank' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.slot_strict_of_rank_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Scheduling.predecessor_slot_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Scheduling.earlier_conflict_slot_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Scheduling.slot_within_depth' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.slot_injective_positive' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.maximum_mem' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.maximum_map_add' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.predecessor_completion_le' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.completion_attained' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.completion_path_max' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.dyadicSum_add_one' depends on axioms: [propext, Quot.sound]
+'MathResearch.Scheduling.dyadicSum_lt_pow' depends on axioms: [propext, Quot.sound]
+'MathResearch.Trace.execute_nil' does not depend on any axioms
+'MathResearch.Trace.execute_cons' does not depend on any axioms
+'MathResearch.Trace.execute_append' does not depend on any axioms
+'MathResearch.Trace.commutes_symm' does not depend on any axioms
+'MathResearch.Trace.execute_adjacent_swap' does not depend on any axioms
+'MathResearch.Trace.execute_eq_of_swapEquivalent' does not depend on any axioms
+'MathResearch.Trace.execute_eq_of_commuting_swaps' does not depend on any axioms
+'MathResearch.Trace.swapEquivalent_perm' does not depend on any axioms
+'MathResearch.Trace.swapEquivalent_prepend' does not depend on any axioms
+'MathResearch.Trace.swapEquivalent_move_to_front' depends on axioms: [propext]
+'MathResearch.Trace.swapEquivalent_of_perm_preserving_conflicts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearch.Trace.execute_eq_of_perm_preserving_conflicts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearch.Trace.rule_eq_after_unread_update' depends on axioms: [propext]
+'MathResearch.Trace.cellUpdates_commute_of_read_write_disjoint' depends on axioms: [propext, Quot.sound]
+'MathResearch.Trace.cellUpdates_commute_of_nonadjacent' depends on axioms: [propext, Quot.sound]
+'MathResearch.Grid.system' depends on axioms: [propext, Quot.sound]
+
+EXIT_CODE=0
