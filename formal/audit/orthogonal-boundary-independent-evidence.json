@@ -1,0 +1,343 @@
+{
+  "reviewed_at": "2026-10-19T20:40:04.071616+08:00",
+  "review_agent": "/root/boundary_method_record",
+  "review_kind": "Independent AI read-only semantic review; not human certification",
+  "modules": [
+    {
+      "module": "GridRegionConnectivity",
+      "source": "formal/analysis/MathResearchAnalysis/GridRegionConnectivity.lean",
+      "observed_source_sha256": "2e2ce9908472224f4a475ff37f9b0f5f7a8ba00ea28fc54df84b011c8aec9498",
+      "theorem_count": 4,
+      "named_count_including_abbrev": 4,
+      "named_declarations_including_abbrev": [
+        "unitCell_isConnected",
+        "neighbor_unitCells_inter_nonempty",
+        "unitRegion_isPreconnected",
+        "unitRegion_isConnected"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalBoundaryConnectivity",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalBoundaryConnectivity.lean",
+      "observed_source_sha256": "406f7bd9e261eb8712e3c242f61b66148634238d1125c0ba7e9fdc6c30825239",
+      "theorem_count": 27,
+      "named_count_including_abbrev": 33,
+      "named_declarations_including_abbrev": [
+        "Touch",
+        "Step",
+        "Path",
+        "touch_symm",
+        "path_reverse",
+        "path_of_touch",
+        "interval_path",
+        "vertical_touch",
+        "horizontal_touch",
+        "vertical_run",
+        "horizontal_run",
+        "north_occupied_le",
+        "north_adjacent_path",
+        "north_path_of_le",
+        "north_path",
+        "flipDirection",
+        "flip",
+        "flip_flip",
+        "source_flip",
+        "target_flip",
+        "flip_mem_boundary",
+        "touch_flip",
+        "path_flip",
+        "mirror_mirror",
+        "south_path",
+        "south_occupied_le",
+        "sideOffset",
+        "side_boundary_iff",
+        "side_top_touch",
+        "side_bottom_touch",
+        "side_path_to_spine",
+        "spines_connected",
+        "boundary_path_between"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalBoundaryCycle",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalBoundaryCycle.lean",
+      "observed_source_sha256": "a05753330a1b9165af04e8e6e7e3f3c0fbbdab43b4f10e6e6827fbfc5df35edc",
+      "theorem_count": 15,
+      "named_count_including_abbrev": 20,
+      "named_declarations_including_abbrev": [
+        "Region",
+        "ofOrthogonal",
+        "Edges",
+        "successor",
+        "boundary_nonempty",
+        "anchor",
+        "perimeter_pos",
+        "successor_source",
+        "successor_ne_self",
+        "sameCycle_of_boundary_path",
+        "sameCycle_all",
+        "isCycle",
+        "support_eq_univ",
+        "card_edges",
+        "orderOf_successor",
+        "exists_bounded_pow",
+        "enumeration_bijective",
+        "vertex_enumeration_injective",
+        "returns_after_perimeter",
+        "consecutive_endpoints"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalBoundaryPolygon",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalBoundaryPolygon.lean",
+      "observed_source_sha256": "b9fb9047f2f9182bb39d1f771890a0e5645cb3279935579b3a32bdbb67b2e22b",
+      "theorem_count": 11,
+      "named_count_including_abbrev": 15,
+      "named_declarations_including_abbrev": [
+        "Index",
+        "facetAt",
+        "vertex",
+        "polygon",
+        "facetAt_bijective",
+        "vertex_injective",
+        "rotate_val",
+        "facetAt_next",
+        "vertex_next",
+        "nondegenerate_edges",
+        "edgePath_eq_segmentPoint",
+        "edgeSet_eq_closedSegment",
+        "mem_boundary_iff",
+        "edges_intersect_only_endpoints",
+        "nonadjacent_edges_disjoint"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalBoundaryCurve",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalBoundaryCurve.lean",
+      "observed_source_sha256": "ff828ca1e062c3b3c2133f4af08da0f703b9e32b0ef3b53df342f4be3f5c2d17",
+      "theorem_count": 14,
+      "named_count_including_abbrev": 18,
+      "named_declarations_including_abbrev": [
+        "edgeAt",
+        "pointAt",
+        "trace",
+        "trace_endpoint",
+        "trace_of_le",
+        "trace_piece",
+        "trace_piece_final",
+        "continuous_trace",
+        "trace_start",
+        "trace_closed",
+        "exists_piece",
+        "trace_injective_Ico",
+        "trace_image",
+        "curve",
+        "continuous_curve",
+        "curve_closed",
+        "curve_injective_Ico",
+        "curve_image"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalContourLength",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalContourLength.lean",
+      "observed_source_sha256": "4c3af5e0b920fa0b45ee202a542678c674a91b798e7a6784c9cc6988fcbaac2a",
+      "theorem_count": 3,
+      "named_count_including_abbrev": 4,
+      "named_declarations_including_abbrev": [
+        "unitTrace",
+        "unitTrace_piece",
+        "unitTrace_piece_variation",
+        "unitTrace_length"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "OrthogonalPhysicalContour",
+      "source": "formal/analysis/MathResearchAnalysis/OrthogonalPhysicalContour.lean",
+      "observed_source_sha256": "f48c2e4812711477e034f274587d196c613bd6caadc99e93df161a8364b775b7",
+      "theorem_count": 12,
+      "named_count_including_abbrev": 14,
+      "named_declarations_including_abbrev": [
+        "polygon_boundary_eq_frontier",
+        "physicalTrace",
+        "physicalCurve",
+        "continuous_physicalTrace",
+        "physicalTrace_closed",
+        "physicalTrace_injective_Ico",
+        "physicalTrace_image",
+        "continuous_physicalCurve",
+        "physicalCurve_closed",
+        "physicalCurve_injective_Ico",
+        "physicalCurve_image",
+        "euclidean_physicalTrace",
+        "physicalTrace_length",
+        "physicalTrace_length_eq_minimum_rectangle"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    },
+    {
+      "module": "ProtectedGeometricGood",
+      "source": "formal/analysis/MathResearchAnalysis/ProtectedGeometricGood.lean",
+      "observed_source_sha256": "6043949b0d5ff3b6001cc3a274ad06f31a6822df9b356ec8db51e18422631702",
+      "theorem_count": 6,
+      "named_count_including_abbrev": 6,
+      "named_declarations_including_abbrev": [
+        "geometricGood_of_shape",
+        "actual_modifiedStep_geometricGood",
+        "protected_preserved_before_exit",
+        "modifiedTrajectory_geometricGood_before_exit",
+        "stoppedTrajectory_geometricGood_before_exit",
+        "initial_stoppedTrajectory_geometricGood_before_exit"
+      ],
+      "source_forbidden_construct_checks": {
+        "sorry": false,
+        "admit": false,
+        "custom_axiom": false,
+        "unsafe": false,
+        "native_decide": false,
+        "implemented_by": false
+      }
+    }
+  ],
+  "source_is_final_frozen": true,
+  "semantic_review": "pass for actual boundary/cycle/full-frontier/Euclidean variation and original Good strictly-before-exit event trajectories",
+  "local_module_build_logs_observed_success": true,
+  "standard_trust0_named_audit_verified": true,
+  "unified_validation_verified": true,
+  "baseline_formal_sources": 153,
+  "baseline_analysis_theorems": 1984,
+  "region_input_fields": [
+    "ColumnConvex S",
+    "actual FourConnected S",
+    "local NoCheckerboard S",
+    "S.Nonempty"
+  ],
+  "goals_not_stored_as_region_fields": [
+    "Single cycle",
+    "Jordan/simple frontier curve",
+    "Euclidean length",
+    "Probability tail"
+  ],
+  "unproved_or_unverified_here": [
+    "Physical stopped law and generator",
+    "CMST/FSS tails",
+    "Final quadratic theorem"
+  ],
+  "lean_sources_modified_by_reviewer": false,
+  "lean_builds_started_by_reviewer": false,
+  "source_freeze_basis": "Actual current source bytes match independent snapshot, named trust0 metadata and successful unified source hashes.",
+  "good_scope": {
+    "predicate": "Existing ClippedInitialContour.GeometricGood unchanged",
+    "trajectory_time": "Actual event index n, strictly (n : ENat) < actual protected exit",
+    "infinite_exit_retained": true,
+    "at_exit_good_claimed": false,
+    "physical_stopping_law_claimed": false
+  },
+  "current_formal_sources": 161,
+  "current_analysis_sources": 153,
+  "current_analysis_theorems": 2076,
+  "current_core_sources": 8,
+  "current_core_theorems": 125,
+  "current_additional_model_definitions": 1,
+  "current_helper_theorems": 2201,
+  "current_global_axiom_outputs": 2202,
+  "new_theorems": 92,
+  "new_named_declarations_including_abbrev": 114,
+  "new_named_output_count": 114,
+  "analysis_output_count": 2076,
+  "core_output_count": 126,
+  "all_outputs_only_standard_axioms": true,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_hashes_verified": 161,
+  "old_analysis_proof_modules_unchanged": 144,
+  "old_analysis_proof_modules_changed": [],
+  "added_analysis_source_files": [
+    "MathResearchAnalysis/GridRegionConnectivity.lean",
+    "MathResearchAnalysis/OrthogonalBoundaryConnectivity.lean",
+    "MathResearchAnalysis/OrthogonalBoundaryCurve.lean",
+    "MathResearchAnalysis/OrthogonalBoundaryCycle.lean",
+    "MathResearchAnalysis/OrthogonalBoundaryPolygon.lean",
+    "MathResearchAnalysis/OrthogonalContourLength.lean",
+    "MathResearchAnalysis/OrthogonalPhysicalContour.lean",
+    "MathResearchAnalysis/ProtectedGeometricGood.lean"
+  ],
+  "core_validation_reused_with_all_eight_source_hashes_verified": true,
+  "old_entry_snapshot_matches_baseline": true,
+  "entry_changes_if_snapshot_verified": [
+    "+public import MathResearchAnalysis.OrthogonalBoundaryConnectivity",
+    "+public import MathResearchAnalysis.GridRegionConnectivity",
+    "+public import MathResearchAnalysis.OrthogonalBoundaryCycle",
+    "+public import MathResearchAnalysis.OrthogonalBoundaryPolygon",
+    "+public import MathResearchAnalysis.OrthogonalBoundaryCurve",
+    "+public import MathResearchAnalysis.OrthogonalContourLength",
+    "+public import MathResearchAnalysis.OrthogonalPhysicalContour",
+    "+public import MathResearchAnalysis.ProtectedGeometricGood"
+  ],
+  "unified_validation_timestamp": "2026-10-19T20:36:00.547274+08:00",
+  "named_validation_timestamp": "2026-10-19T20:34:58.681526+08:00",
+  "new_lean_warning_lines": [],
+  "proof_kernel_commands": {
+    "named": "lake env lean --trust=0 <workspace>/formal/audit/orthogonal-boundary-stage-declarations-axioms.lean",
+    "analysis": "lake env lean --trust=0 AnalysisAxioms.lean",
+    "core": "lake env lean --trust=0 audit/CoreAxioms.lean"
+  }
+}

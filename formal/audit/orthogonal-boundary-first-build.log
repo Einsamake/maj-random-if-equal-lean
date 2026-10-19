@@ -1,0 +1,5 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3165/3166] Built MathResearchAnalysis.OrthogonalBoundaryConnectivity (8.4s)
+✔ [3166/3166] Built MathResearchAnalysis.GridRegionConnectivity (8.0s)
+Build completed successfully (3166 jobs).

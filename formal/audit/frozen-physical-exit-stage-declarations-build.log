@@ -1,0 +1,6 @@
+✔ [3882/3882] Built MathResearchAnalysis.FrozenPhysicalExit (15s)
+Build completed successfully (3882 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

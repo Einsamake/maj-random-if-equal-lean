@@ -1,0 +1,18 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✖ [3155/3155] Building MathResearchAnalysis.DropletStoppedWord (7.8s)
+trace: .> LEAN_PATH=<workspace>\formal\analysis\.lake\packages\Cli\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\batteries\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\Qq\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\aesop\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\proofwidgets\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\importGraph\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\plausible\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\mathlib\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\build\lib\lean d:\MyWorks\Math\formal\.tools\lean-4.35.0-rc4-windows\bin\lean.exe <workspace>\formal\analysis\MathResearchAnalysis\DropletStoppedWord.lean -o <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\DropletStoppedWord.olean -i <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\DropletStoppedWord.ilean -c <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\DropletStoppedWord.c --setup <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\DropletStoppedWord.setup.json --json
+error: MathResearchAnalysis/DropletStoppedWord.lean:112:92: No goals to be solved
+error: MathResearchAnalysis/DropletStoppedWord.lean:112:36: unsolved goals
+w : List Event
+fallback : Event
+k : ℕ
+hk : k ≤ w.length
+i : ℕ
+hi1 : i < (eventPrefix (fun n => w.getD n fallback) k).length
+hi2 : i < (List.take k w).length
+hi : i < k
+⊢ i < w.length
+Some required targets logged failures:
+- MathResearchAnalysis.DropletStoppedWord
+error: build failed

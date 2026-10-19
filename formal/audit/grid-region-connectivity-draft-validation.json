@@ -1,0 +1,19 @@
+{
+  "validated_at": "2026-10-18T23:57:48.380403+08:00",
+  "source_sha256": "bbaed93d2be646d2b87e8af2982a4c6ef9503ef1c350eaf19521508f632cd4a1",
+  "named_declarations": [
+    "MathResearchAnalysis.GridRegionConnectivity.unitCell_isConnected",
+    "MathResearchAnalysis.GridRegionConnectivity.neighbor_unitCells_inter_nonempty",
+    "MathResearchAnalysis.GridRegionConnectivity.unitRegion_isPreconnected",
+    "MathResearchAnalysis.GridRegionConnectivity.unitRegion_isConnected"
+  ],
+  "declarations_count": 4,
+  "exit_code": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Standalone next-stage draft only, not in the unified153 sources/1984 analysis theorems. Actual four-neighbour connectivity implies real unitRegion preconnected, and connected if nonempty; not frontier Jordan connectedness."
+}

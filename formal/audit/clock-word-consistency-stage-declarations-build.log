@@ -1,0 +1,6 @@
+✔ [3880/3880] Built MathResearchAnalysis.ClockWordConsistency (8.5s)
+Build completed successfully (3880 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

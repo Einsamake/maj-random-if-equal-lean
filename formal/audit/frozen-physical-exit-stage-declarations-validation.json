@@ -1,0 +1,38 @@
+{
+  "validated_at": "2026-10-19T21:03:18.602661+08:00",
+  "modules": [
+    "FrozenPhysicalExit"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FrozenPhysicalExit.firstLossTime",
+    "MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_le_of_loss",
+    "MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_le_iff",
+    "MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_eq_top_iff",
+    "MathResearchAnalysis.FrozenPhysicalExit.physicalExit",
+    "MathResearchAnalysis.FrozenPhysicalExit.physicalExit_le_iff",
+    "MathResearchAnalysis.FrozenPhysicalExit.physicalExit_le_iff_ae",
+    "MathResearchAnalysis.FrozenPhysicalExit.physicalExit_eq_top_iff",
+    "MathResearchAnalysis.FrozenPhysicalExit.actual_exit_event_ae",
+    "MathResearchAnalysis.FrozenPhysicalExit.actual_exit_event_nullMeasurable",
+    "MathResearchAnalysis.FrozenPhysicalExit.original_extinction_measure_le_physical_exit",
+    "MathResearchAnalysis.FrozenPhysicalExit.quadratic_area_of_physical_exit_le",
+    "MathResearchAnalysis.FrozenPhysicalExit.physicalExit_attained",
+    "MathResearchAnalysis.FrozenPhysicalExit.frozen_at_physical_exit",
+    "MathResearchAnalysis.FrozenPhysicalExit.geometricGood_before_physical_exit",
+    "MathResearchAnalysis.FrozenPhysicalExit.actual_physicalExit_pos_ae",
+    "MathResearchAnalysis.FrozenPhysicalExit.physical_exit_measure_le_quadratic_area"
+  ],
+  "declarations_count": 17,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FrozenPhysicalExit.lean": "ee4882cce8654dca8d4207d4b20e6169a14f26e7adb80d331755ab216c5b4805"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,5 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3175/3176] Built MathResearchAnalysis.OrthogonalBoundaryPolygon (7.7s)
+✔ [3176/3176] Built MathResearchAnalysis.OrthogonalBoundaryCurve (8.5s)
+Build completed successfully (3176 jobs).

@@ -1,0 +1,41 @@
+{
+  "validated_at": "2026-10-19T20:58:27.620759+08:00",
+  "modules": [
+    "ClockWordConsistency"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ClockWordConsistency.threshold_filter_prefix",
+    "MathResearchAnalysis.ClockWordConsistency.good_mono",
+    "MathResearchAnalysis.ClockWordConsistency.reverse_word_eq_filter",
+    "MathResearchAnalysis.ClockWordConsistency.reverse_word_prefix",
+    "MathResearchAnalysis.ClockWordConsistency.markedEvents_prefix",
+    "MathResearchAnalysis.ClockWordConsistency.frozen_state_consistent",
+    "MathResearchAnalysis.ClockWordConsistency.frozen_loss_persistent",
+    "MathResearchAnalysis.ClockWordConsistency.reverse_word_prefix_ae",
+    "MathResearchAnalysis.ClockWordConsistency.marked_sample_good_ae",
+    "MathResearchAnalysis.ClockWordConsistency.frozen_state_consistent_ae",
+    "MathResearchAnalysis.ClockWordConsistency.frozen_loss_persistent_ae",
+    "MathResearchAnalysis.ClockWordConsistency.word_zero_of_positive",
+    "MathResearchAnalysis.ClockWordConsistency.stateAt_zero_of_positive",
+    "MathResearchAnalysis.ClockWordConsistency.stateAt_zero_ae",
+    "MathResearchAnalysis.ClockWordConsistency.next_event_gap",
+    "MathResearchAnalysis.ClockWordConsistency.word_eq_of_no_new_event",
+    "MathResearchAnalysis.ClockWordConsistency.word_right_locally_constant",
+    "MathResearchAnalysis.ClockWordConsistency.stateAt_right_locally_constant",
+    "MathResearchAnalysis.ClockWordConsistency.stateAt_right_locally_constant_ae",
+    "MathResearchAnalysis.ClockWordConsistency.frozen_loss_measure_mono"
+  ],
+  "declarations_count": 20,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ClockWordConsistency.lean": "fe90b1191a8ea6bc90ccf0027e51f8d2cde46eb4470199852ea06ea2add5cfcb"
+  },
+  "new_lean_warning_lines": []
+}

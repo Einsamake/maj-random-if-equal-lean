@@ -1,0 +1,10 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+../drafts/DropletStoppedWord.lean:112:95: error: Application type mismatch: The argument
+  Nat.min_le_right ?m.46 ?m.47
+has type
+  min ?m.46 ?m.47 ≤ ?m.47
+but is expected to have type
+  (List.take k w).length ≤ w.length
+in the application
+  lt_of_lt_of_le hi2 (Nat.min_le_right ?m.46 ?m.47)

@@ -1,0 +1,130 @@
+{
+  "reviewed_at": "2026-10-19T21:06:59.293082+08:00",
+  "review_agent": "/root/boundary_method_record",
+  "review_kind": "Independent AI read-only semantic and evidence review; not human certification",
+  "source": "formal/analysis/MathResearchAnalysis/FrozenPhysicalExit.lean",
+  "source_sha256": "ee4882cce8654dca8d4207d4b20e6169a14f26e7adb80d331755ab216c5b4805",
+  "theorem_count": 15,
+  "named_count": 17,
+  "named_declarations": [
+    "firstLossTime",
+    "firstLossTime_le_of_loss",
+    "firstLossTime_le_iff",
+    "firstLossTime_eq_top_iff",
+    "physicalExit",
+    "physicalExit_le_iff",
+    "physicalExit_le_iff_ae",
+    "physicalExit_eq_top_iff",
+    "actual_exit_event_ae",
+    "actual_exit_event_nullMeasurable",
+    "original_extinction_measure_le_physical_exit",
+    "quadratic_area_of_physical_exit_le",
+    "physicalExit_attained",
+    "frozen_at_physical_exit",
+    "geometricGood_before_physical_exit",
+    "actual_physicalExit_pos_ae",
+    "physical_exit_measure_le_quadratic_area"
+  ],
+  "source_forbidden_construct_checks": {
+    "sorry": false,
+    "admit": false,
+    "custom_axiom": false,
+    "unsafe": false,
+    "native_decide": false,
+    "implemented_by": false
+  },
+  "source_is_final_frozen": true,
+  "semantic_review": "pass for exact ENNReal physical exit threshold, infinity, finite attainment, freezing, pre-exit Good, completion measurability and quadratic missing-area statements",
+  "standard_trust0_named_audit_verified": true,
+  "unified_validation_verified": true,
+  "current_analysis_theorems": 2144,
+  "current_analysis_sources": 157,
+  "current_formal_sources": 165,
+  "current_helper_theorems": 2269,
+  "current_additional_model_definitions": 1,
+  "current_global_axiom_outputs": 2270,
+  "current_source_hashes_verified": 165,
+  "new_named_output_count": 17,
+  "all_four_stages_named_output_count": 192,
+  "all_four_stages": [
+    {
+      "prefix": "orthogonal-boundary-stage",
+      "modules": [
+        "GridRegionConnectivity",
+        "OrthogonalBoundaryConnectivity",
+        "OrthogonalBoundaryCycle",
+        "OrthogonalBoundaryPolygon",
+        "OrthogonalBoundaryCurve",
+        "OrthogonalContourLength",
+        "OrthogonalPhysicalContour",
+        "ProtectedGeometricGood"
+      ],
+      "named_output_count": 114,
+      "validated_at": "2026-10-19T20:34:58.681526+08:00",
+      "source_hashes_match_current": true
+    },
+    {
+      "prefix": "stopped-clock-stage",
+      "modules": [
+        "DropletStoppedWord",
+        "DropletStoppedClockLaw"
+      ],
+      "named_output_count": 41,
+      "validated_at": "2026-10-19T20:48:27.411046+08:00",
+      "source_hashes_match_current": true
+    },
+    {
+      "prefix": "clock-word-consistency-stage",
+      "modules": [
+        "ClockWordConsistency"
+      ],
+      "named_output_count": 20,
+      "validated_at": "2026-10-19T20:58:27.620759+08:00",
+      "source_hashes_match_current": true
+    },
+    {
+      "prefix": "frozen-physical-exit-stage",
+      "modules": [
+        "FrozenPhysicalExit"
+      ],
+      "named_output_count": 17,
+      "validated_at": "2026-10-19T21:03:18.602661+08:00",
+      "source_hashes_match_current": true
+    }
+  ],
+  "today_new_modules": 12,
+  "today_new_theorems": 160,
+  "old_analysis_proof_modules_unchanged_since_previous_stage": 155,
+  "old_analysis_proof_modules_unchanged_since_1984_baseline": 144,
+  "old_core_sources_unchanged": 8,
+  "analysis_output_count": 2144,
+  "core_output_count": 126,
+  "all_outputs_only_standard_axioms": true,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unified_validation_timestamp": "2026-10-19T21:03:55.267317+08:00",
+  "named_validation_timestamp": "2026-10-19T21:03:18.602661+08:00",
+  "new_lean_warning_lines": [],
+  "scope": {
+    "first_loss_in_nonnegative_physical_time": true,
+    "infinity_retained": true,
+    "threshold_le_iff_loss_on_one_common_ae_all_real_nonnegative_set": true,
+    "finite_exit_attained_requires_ne_top_before_toReal": true,
+    "frozen_after_exit": true,
+    "Good_strictly_before_exit": true,
+    "actual_exit_positive_ae_without_finiteness_claim": true,
+    "actual_threshold_event_nullMeasurableSet_only": true,
+    "original_clock_extinction_le_physical_exit_measure": true,
+    "actual_missing_area_ge_L2_over_1600_after_exit": true,
+    "filtration_IsStoppingTime_proved": false,
+    "strong_markov_proved": false,
+    "generator_or_compensator_proved": false,
+    "CMST_FSS_core_probability_proved": false,
+    "main_theorem_complete": false
+  },
+  "lean_sources_modified_by_reviewer": false,
+  "lean_builds_started_by_reviewer": false
+}

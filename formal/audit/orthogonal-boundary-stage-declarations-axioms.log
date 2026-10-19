@@ -1,0 +1,264 @@
+'MathResearchAnalysis.GridRegionConnectivity.unitCell_isConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridRegionConnectivity.neighbor_unitCells_inter_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridRegionConnectivity.unitRegion_isPreconnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GridRegionConnectivity.unitRegion_isConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.Touch' does not depend on any axioms
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.Step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.Path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.touch_symm' does not depend on any axioms
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.path_reverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.path_of_touch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.interval_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.vertical_touch' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.horizontal_touch' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.vertical_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.horizontal_run' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.north_occupied_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.north_adjacent_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.north_path_of_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.north_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.flipDirection' depends on axioms: [propext]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.flip' depends on axioms: [propext]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.flip_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.source_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.target_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.flip_mem_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.touch_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.path_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.mirror_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.south_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.south_occupied_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.sideOffset' depends on axioms: [propext]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.side_boundary_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.side_top_touch' depends on axioms: [propext]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.side_bottom_touch' depends on axioms: [propext]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.side_path_to_spine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.spines_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryConnectivity.boundary_path_between' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.Region' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.ofOrthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.Edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.successor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.boundary_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.perimeter_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.successor_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.successor_ne_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.sameCycle_of_boundary_path' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.sameCycle_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.isCycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.support_eq_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.card_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.orderOf_successor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.exists_bounded_pow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.enumeration_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.vertex_enumeration_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.returns_after_perimeter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCycle.consecutive_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.Index' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.facetAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.vertex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.polygon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.facetAt_bijective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.vertex_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.rotate_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.facetAt_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.vertex_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.nondegenerate_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.edgePath_eq_segmentPoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.edgeSet_eq_closedSegment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.mem_boundary_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.edges_intersect_only_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryPolygon.nonadjacent_edges_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.edgeAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.pointAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_piece' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_piece_final' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.continuous_trace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.exists_piece' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_injective_Ico' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.trace_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.continuous_curve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.curve_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.curve_injective_Ico' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalBoundaryCurve.curve_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalContourLength.unitTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OrthogonalContourLength.unitTrace_piece' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalContourLength.unitTrace_piece_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalContourLength.unitTrace_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.polygon_boundary_eq_frontier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.continuous_physicalTrace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace_injective_Ico' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.continuous_physicalCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalCurve_closed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalCurve_injective_Ico' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalCurve_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.euclidean_physicalTrace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OrthogonalPhysicalContour.physicalTrace_length_eq_minimum_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.geometricGood_of_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.actual_modifiedStep_geometricGood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.protected_preserved_before_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.modifiedTrajectory_geometricGood_before_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.stoppedTrajectory_geometricGood_before_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedGeometricGood.initial_stoppedTrajectory_geometricGood_before_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

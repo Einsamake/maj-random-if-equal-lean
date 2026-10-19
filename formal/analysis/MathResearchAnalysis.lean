@@ -152,6 +152,18 @@ public import MathResearchAnalysis.OrthogonalPerimeter
 
 public import MathResearchAnalysis.OrthogonalPhysicalBox
 
+public import MathResearchAnalysis.OrthogonalBoundaryConnectivity
+public import MathResearchAnalysis.GridRegionConnectivity
+public import MathResearchAnalysis.OrthogonalBoundaryCycle
+public import MathResearchAnalysis.OrthogonalBoundaryPolygon
+public import MathResearchAnalysis.OrthogonalBoundaryCurve
+public import MathResearchAnalysis.OrthogonalContourLength
+public import MathResearchAnalysis.OrthogonalPhysicalContour
+public import MathResearchAnalysis.ProtectedGeometricGood
+public import MathResearchAnalysis.DropletStoppedWord
+public import MathResearchAnalysis.DropletStoppedClockLaw
+public import MathResearchAnalysis.ClockWordConsistency
+public import MathResearchAnalysis.FrozenPhysicalExit
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real
@@ -239,8 +251,13 @@ segments. Its initial boundary has a continuous simple closed parameterization,
 which transports exactly to the original unit-cell geometry. The full Euclidean
 extended arc length is obtained from every finite partition and equals the
 actual minimum-rectangle perimeter. The actual clipped initial state satisfies
-the geometric Good conditions. General Good invariance remains unproved.
-Good contour invariance, generator and stopped-process laws, bounds at the
+the geometric Good conditions. General orthogonal connected regions now have
+a proved single actual boundary cycle and a full-frontier simple closed curve
+with genuine Euclidean extended arc length equal to their minimum-rectangle
+perimeter. Actual modified and stopped event trajectories satisfy the existing
+GeometricGood strictly before protected exit; infinity is retained, and the
+exact exit is not included in this Good conclusion. Generator and full physical
+stopped-process laws, bounds at the
 quadratic scale, the full future-vector Poisson strong Markov characterization,
 the CMST/FSS droplet theorems and the complete CA theorem remain unproved.
 -/

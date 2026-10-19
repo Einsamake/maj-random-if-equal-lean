@@ -1,0 +1,49 @@
+'MathResearchAnalysis.FrozenPhysicalExit.firstLossTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_le_of_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_le_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_eq_top_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physicalExit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physicalExit_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physicalExit_le_iff_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physicalExit_eq_top_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.actual_exit_event_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.actual_exit_event_nullMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.original_extinction_measure_le_physical_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.quadratic_area_of_physical_exit_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physicalExit_attained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.frozen_at_physical_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.geometricGood_before_physical_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.actual_physicalExit_pos_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FrozenPhysicalExit.physical_exit_measure_le_quadratic_area' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

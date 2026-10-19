@@ -1,0 +1,529 @@
+{
+  "checked_at_beijing": "2026-10-14T21:16:59.244993+08:00",
+  "audit_role": "independent AI code and semantic review; no human expert certification",
+  "analysis": {
+    "recorded_validation_at": "2026-10-14T20:56:32.633577+08:00",
+    "validation_sha256": "f5bdc9d2d1f45e37d9f4fcd1b996e2c4499d714a1c0ae614a12e7a03912a8cb3",
+    "public_theorems": 842,
+    "recorded_build_exit": 0,
+    "recorded_axiom_audit_exit": 0,
+    "public_axiom_log_entries": 842,
+    "unique_axiom_log_entries": 842,
+    "axioms_seen_independently": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sources": {
+      "MathResearchAnalysis/ActualClockTail.lean": {
+        "sha256": "d72c4e93af41d817eac704f3f2b266f004b0a2c4a9ba1e22a59cfea6e11f840f",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ArrivalFiltration.lean": {
+        "sha256": "3fde5a613cb7985a75b0422cc4cb2a7b5e0100af56a3005bd5fe34d23b7a93db",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/BipartiteDynamics.lean": {
+        "sha256": "055200cdc0ec6c20fdab2f38ceda699ff4a6c9af46da26037ad0c498f87fe739",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/BlockTail.lean": {
+        "sha256": "bbefea28a4df73400fb1a22c2cab39e1b3787cc268e00a8ba5639821430b9c14",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockCandidateIntervals.lean": {
+        "sha256": "8c2dac762b45ed2652aac19b857f8b94b8fb7518978fb96e11beecb7fdf9b4f5",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockCounting.lean": {
+        "sha256": "8837b7cc97f449f7af7b065946464870fda72f69d2de173bbddc2c1d44190016",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockDeterministicResidual.lean": {
+        "sha256": "743e9375fd27a18132f4d0e87c4c1976e9964d13415116c9ca8f4faf52db1594",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockEventOrder.lean": {
+        "sha256": "7a2a3a2e8ed626ec420794d859986ed192905a96b3bf969849c24625ae66bbd6",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockEventWord.lean": {
+        "sha256": "947bf8ea7c3a5c31d500b97f3256fa5b68f944bdb07841bd42fcea78c03a3d8e",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockExecutionLaw.lean": {
+        "sha256": "5f04bee457666f266c5e5ece51fc4c988943eb08ddc338d6dca0ee9fb1df9ecd",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockGapReset.lean": {
+        "sha256": "a072ea8f89725ec67582a9f23bef3b8fa8e37cc55152b6a046c4c39ef67c42f1",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockMaximum.lean": {
+        "sha256": "d4c3c9a3c6f21f406ec0db8d4c09cb3cac93215d0ccb0e6e3cdfd384b47a3d7c",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockNoTies.lean": {
+        "sha256": "be97ab4e0f436d756a6c2b6191e5a2be8e2cb657258398755751e60f2a1115a8",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockRankTail.lean": {
+        "sha256": "e24de872aa04e1b812d0acd8dd7afd45977cd2d9121653ce2f68c1871de364bc",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockReadiness.lean": {
+        "sha256": "a006efe43958c4c27a9b836f77aa8aa1576013de94ce6d9af41fbcc12b187703",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockSelectedMarks.lean": {
+        "sha256": "1a50b286065888d556e6314a4dff0627cf27b9c019002dee0eb2ff6cc92f6b94",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockSelectedWord.lean": {
+        "sha256": "072b3c618980494ed9d2388a2e3665e2c816bc4bcd1bbb7a177196f0f7884b52",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockStoppedResidual.lean": {
+        "sha256": "a1f0616e341d91354abc408bca771a48718dbb8776073fa5d8e5610cba0e246d",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockWaitingLimit.lean": {
+        "sha256": "e62c1afd714f92adf330a127409da378fa644a7339eac9a93c2d95ef6b79d1cb",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ClockWordMarks.lean": {
+        "sha256": "ff5571e8c5cc9bd355b1e13f4322e7fd072226c7abc66f29fbd4aa982de659d8",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ConditionalMoment.lean": {
+        "sha256": "de21e9965abb0ba8cebbe7311826fa3381eac35d03d16d543f86fec5e6ad15e4",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/CountableClockSurvival.lean": {
+        "sha256": "c0234dade3b14c0cae5ea58d3abaebddb4f187357646e0e450c114526847b0b9",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/EventMeasureLimit.lean": {
+        "sha256": "d233ddff69d3eee5aec2e8c30a96957d3ab846409c81534421d302649b52196d",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/EventTrace.lean": {
+        "sha256": "40c253278c9c04c7dc1d20c65a4b71fe3e3bf6abd4eec0e893ec8656217be3a9",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExponentialClocks.lean": {
+        "sha256": "4fbc0b070eb0c37e1077cadf731f08b9201cdf9b434e5a090dfb39e6cc85d77b",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExponentialMemoryless.lean": {
+        "sha256": "4905c698c52f033a589930d31de2718eac0d23771506d5120483683b96d9f953",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExponentialMoment.lean": {
+        "sha256": "a4e2e1edb26ca9a6332914568afefb58aa1e6d3c70414c35f0c573861430b86c",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExtendedBlockTail.lean": {
+        "sha256": "801640dc71f73cb7988ed398ccab74726f3edeca08627c93264091e50d2bce04",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExtendedNextRing.lean": {
+        "sha256": "dd151a1ad1328b115571f26af283090c9991c67423040660244056caa0eae189",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ExtendedStoppingPath.lean": {
+        "sha256": "fd403a4f1d4805a1a3d2132580374e7c5ed09ab983a76d0eb4302bd37e6e4d8a",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FairMarks.lean": {
+        "sha256": "9140074a94ce73943c4301a2dd545db913fcec48786c50fdfe082369f27c1e35",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FiniteRankWitness.lean": {
+        "sha256": "6638b02a8c4d3eb7885c98cc2c369599fe9041ed8f76c6e18b7eca3a4581152a",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FiniteTail.lean": {
+        "sha256": "411828296b5e9ba6f4427a11646a5e66a38617e56bacca0ad279a52ceb4a9039",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FiniteWordKernel.lean": {
+        "sha256": "436329a28ef34fe20b9c0775bbbf2b8ae1a32d32262b0d255440cf51af2b3481",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FirstLayerClock.lean": {
+        "sha256": "1f08c7e41854a253f7802566210d14a7de48989376d830cb2a60f6967cc348d5",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/FixedClockPath.lean": {
+        "sha256": "c8b6eb1ff93b2724a45294340a81ff981cca60c17cb577162c387e031b6f6cfd",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/GreedyClockChain.lean": {
+        "sha256": "f51c7eecc38278ba1b8e73b2667206f3e7ebe686d6d19eefa9960fbc566b5004",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/HistoryEventInvariant.lean": {
+        "sha256": "b166a0e54b5bd43964a1ecc42cee17c5cb153f30c22dd97591feb08cc2cceae3",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/MarkedEventTrace.lean": {
+        "sha256": "2ead356af40341ae02df3d62c9a32f63074471dce54cc22b54be93675cfa094b",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/NextRing.lean": {
+        "sha256": "9f75e38fe698c2d3ae81f184d93ff3a991ad39b3c903b16da8fd7365f39385a2",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/NonnegativeMoment.lean": {
+        "sha256": "8bac21f797b3ec549222aaedc1b9c57233df041b42d9e6bca4f5d1c2176d9548",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/PathTail.lean": {
+        "sha256": "72766cdb461b012a92b17cdd875b5d4c298bc31ac7f61e938f5d9d3c9c03ad48",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/RandomThresholdSurvival.lean": {
+        "sha256": "d1c3f2be1374c26f875736b7608cc20c6071f9cb4679aa02a9647fc3bdf29510",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/RankSlotEmbedding.lean": {
+        "sha256": "65d2b9b2d920977edf3274e0c3d9efaf5d6eaa1500657d0734eba933421f6eee",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SchedulingFailure.lean": {
+        "sha256": "e2dcf88cbc905335e846f6157d1363142b804fe719f664039a3fa2a1e15617ad",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareAttractivity.lean": {
+        "sha256": "8006495113f37f72315f503c7a76690431c3355c7b53f1c7723eebd14e856437",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareBatch.lean": {
+        "sha256": "7a86b222a1451e2544d01cb48c2692e225cb07bba9a758983e1c2d7b25cdbbca",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareDynamics.lean": {
+        "sha256": "fa62bde0847c2463ac71e28044fed4e38483eafa7bcda714e20a2408ef38d405",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareGibbs.lean": {
+        "sha256": "f90739f28a29f7ec0a142552c5c819fc1bd096b27c2b2bf0f08b7de39519f6b7",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareGibbsLaw.lean": {
+        "sha256": "61a0bacdd80856de4442519811ca637cef13f489aaaf3c86dd25eb33411e3830",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareGreedyPaths.lean": {
+        "sha256": "16d0a6d1d65e3ef1b5190322286c743b3fa2ba0f256ff4524b9ba59577211682",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquarePWCensoring.lean": {
+        "sha256": "336d2d14762c2d00e0352f3e514852033dfa7808cc9bd96654333701eca0a994",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquarePWDrop.lean": {
+        "sha256": "a5491e96b2edfa8ea0efdaa9ecbc2dbfff784b922796ea01da7eb1b06b31c062",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquarePWMeasure.lean": {
+        "sha256": "9375c7d10e87322640ad8bf355b6da7c105eb494feef36b5a1a33c766975da29",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareSpin.lean": {
+        "sha256": "7fa99a6ade95ded59e17769e690a8f45aec88efce06c4e44fcff42ae71a17320",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareTasks.lean": {
+        "sha256": "6fa19cd27ac6581a44615fa1a3807934c6667d8f532ea480c8accf3c5a6e6f8b",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SquareTaskTail.lean": {
+        "sha256": "6714c7171bcbcad60ee79e6bc975e7563bc02afbcfc55aec2cee3fd2340867c8",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/StoppingPath.lean": {
+        "sha256": "d29639fdd2695dabc750aaf17d82f8e9ed26c6d9bdb2d00347d6213bacb036d1",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/SurvivalLaw.lean": {
+        "sha256": "f85f496c025e650fe35f18a66eb4ccd9b2ace8a493ea26b450a4d147c74d0e67",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/TaskClockBridge.lean": {
+        "sha256": "5cd40c9ebd3e80fdf1a9b8bf0410196ac6c37b27caf3121fe3ec742f5e6dd1c8",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/TaskPaths.lean": {
+        "sha256": "648fbb8437a5ed3bb02d8f8f9cba1adb5ab7be123a53ebb4db400a29b0f40ace",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/TaskPathTail.lean": {
+        "sha256": "957207dd151ebadc22d67b301e12d64bc305dae3b3f8f680858f054b2b0e9a56",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/UpperStoppingApprox.lean": {
+        "sha256": "0003415fea73059c1988935a3ed1679697974db42ef6397e9bdd1d750fbdf0c4",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis/ZeroTemperature.lean": {
+        "sha256": "bb889619d413ec75a3375b6248a243399b7c2c6671d7037ba65d29bc58a48df7",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearchAnalysis.lean": {
+        "sha256": "de6a99dbfbd10e2b0711a22ae4fa3a7cfaeb17b66ec163f98de5ec53cf726de3",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      }
+    }
+  },
+  "core": {
+    "recorded_validation_at": null,
+    "validation_sha256": "8ef9a4257087fd84ce5bfc7995851f4da65800e5584a466929ee6dbffb095bf9",
+    "public_theorems": 125,
+    "recorded_build_exit": 0,
+    "recorded_axiom_audit_exit": 0,
+    "public_axiom_log_entries": 126,
+    "unique_axiom_log_entries": 126,
+    "axioms_seen_independently": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sources": {
+      "MathResearch/Dynamics.lean": {
+        "sha256": "651a38a94a53773b1b2c184dfc8554f3a54cc06f622450fdd9224300a9aded9a",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/EventEmbedding.lean": {
+        "sha256": "388ec6a1bbb31b66f77b005b3faa51bafb25f8bf00268c38e078a4469a248286",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/Grid.lean": {
+        "sha256": "f9d123a865652ba652782345e3ad2412154156dc6aa1768b7603d632733ca829",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/Majority.lean": {
+        "sha256": "6826afa46a5b26025aaa6244d0ddac49c8b63e174454c7313c98c31956bdd194",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/Readiness.lean": {
+        "sha256": "118f1733e1cefc94db8aa6833481f557404a65902ed63943587248e11ab676a5",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/Scheduling.lean": {
+        "sha256": "2303988439da2075440a6ad8f408ba9f3127fb0324b9fcfcb0d6813bab677691",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch/Trace.lean": {
+        "sha256": "1333411ffd50db5d844784c5dd2124d6c6f68762ae3dde746975fbfdc740a5f2",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      },
+      "MathResearch.lean": {
+        "sha256": "78f76988572b9c3132743e35acef7c10c93ee3cd4357e322ef0645e2cc91cac5",
+        "baseline_matches": true,
+        "forbidden": [],
+        "metaprogramming_to_review": []
+      }
+    }
+  },
+  "trust_zero_entrypoint": "SquarePWCensoring",
+  "trust_zero_local_import_closure_modules": [
+    "MathResearchAnalysis.ActualClockTail",
+    "MathResearchAnalysis.ArrivalFiltration",
+    "MathResearchAnalysis.ClockCandidateIntervals",
+    "MathResearchAnalysis.ClockDeterministicResidual",
+    "MathResearchAnalysis.ClockEventWord",
+    "MathResearchAnalysis.ClockExecutionLaw",
+    "MathResearchAnalysis.ClockGapReset",
+    "MathResearchAnalysis.ClockMaximum",
+    "MathResearchAnalysis.ClockNoTies",
+    "MathResearchAnalysis.ClockRankTail",
+    "MathResearchAnalysis.ClockReadiness",
+    "MathResearchAnalysis.ClockStoppedResidual",
+    "MathResearchAnalysis.ClockWaitingLimit",
+    "MathResearchAnalysis.ClockWordMarks",
+    "MathResearchAnalysis.ConditionalMoment",
+    "MathResearchAnalysis.CountableClockSurvival",
+    "MathResearchAnalysis.EventMeasureLimit",
+    "MathResearchAnalysis.EventTrace",
+    "MathResearchAnalysis.ExponentialClocks",
+    "MathResearchAnalysis.ExponentialMemoryless",
+    "MathResearchAnalysis.ExponentialMoment",
+    "MathResearchAnalysis.ExtendedNextRing",
+    "MathResearchAnalysis.ExtendedStoppingPath",
+    "MathResearchAnalysis.FairMarks",
+    "MathResearchAnalysis.FiniteRankWitness",
+    "MathResearchAnalysis.FiniteTail",
+    "MathResearchAnalysis.FiniteWordKernel",
+    "MathResearchAnalysis.FixedClockPath",
+    "MathResearchAnalysis.GreedyClockChain",
+    "MathResearchAnalysis.HistoryEventInvariant",
+    "MathResearchAnalysis.MarkedEventTrace",
+    "MathResearchAnalysis.NextRing",
+    "MathResearchAnalysis.NonnegativeMoment",
+    "MathResearchAnalysis.PathTail",
+    "MathResearchAnalysis.RandomThresholdSurvival",
+    "MathResearchAnalysis.SquareAttractivity",
+    "MathResearchAnalysis.SquareGibbs",
+    "MathResearchAnalysis.SquareGibbsLaw",
+    "MathResearchAnalysis.SquareGreedyPaths",
+    "MathResearchAnalysis.SquarePWCensoring",
+    "MathResearchAnalysis.SquarePWDrop",
+    "MathResearchAnalysis.SquarePWMeasure",
+    "MathResearchAnalysis.SquareSpin",
+    "MathResearchAnalysis.SquareTaskTail",
+    "MathResearchAnalysis.SquareTasks",
+    "MathResearchAnalysis.SurvivalLaw",
+    "MathResearchAnalysis.TaskClockBridge",
+    "MathResearchAnalysis.TaskPathTail",
+    "MathResearchAnalysis.TaskPaths",
+    "MathResearchAnalysis.UpperStoppingApprox",
+    "MathResearchAnalysis.ZeroTemperature"
+  ],
+  "trust_zero_local_import_closure_count": 51
+}

@@ -1,0 +1,4 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3272/3272] Built MathResearchAnalysis.ProtectedGeometricGood (8.4s)
+Build completed successfully (3272 jobs).

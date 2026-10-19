@@ -1,0 +1,11 @@
+import MathResearchAnalysis.SquarePWCensoring
+
+/- Read-only independent audit entry point. No new mathematical declarations. -/
+#check MathResearchAnalysis.SquarePWCensoring.warmWord_censoring
+#check MathResearchAnalysis.SquarePWCensoring.actualMajorityWordMean_censoring
+#check MathResearchAnalysis.SquarePWCensoring.chronological_fair_execution_censoring
+#check MathResearchAnalysis.SquarePWCensoring.freshExecutionLaw_censoring
+#print axioms MathResearchAnalysis.SquarePWCensoring.warmWord_censoring
+#print axioms MathResearchAnalysis.SquarePWCensoring.actualMajorityWordMean_censoring
+#print axioms MathResearchAnalysis.SquarePWCensoring.chronological_fair_execution_censoring
+#print axioms MathResearchAnalysis.SquarePWCensoring.freshExecutionLaw_censoring

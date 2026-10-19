@@ -1,0 +1,5 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3257/3258] Built MathResearchAnalysis.OrthogonalContourLength (8.5s)
+✔ [3258/3258] Built MathResearchAnalysis.OrthogonalPhysicalContour (7.8s)
+Build completed successfully (3258 jobs).

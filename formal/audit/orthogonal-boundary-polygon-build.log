@@ -1,0 +1,24 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3167/3168] Built MathResearchAnalysis.OrthogonalBoundaryCycle (7.8s)
+✖ [3168/3168] Building MathResearchAnalysis.OrthogonalBoundaryPolygon (7.7s)
+trace: .> LEAN_PATH=<workspace>\formal\analysis\.lake\packages\Cli\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\batteries\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\Qq\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\aesop\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\proofwidgets\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\importGraph\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\plausible\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\mathlib\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\build\lib\lean d:\MyWorks\Math\formal\.tools\lean-4.35.0-rc4-windows\bin\lean.exe <workspace>\formal\analysis\MathResearchAnalysis\OrthogonalBoundaryPolygon.lean -o <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\OrthogonalBoundaryPolygon.olean -i <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\OrthogonalBoundaryPolygon.ilean -c <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\OrthogonalBoundaryPolygon.c --setup <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\OrthogonalBoundaryPolygon.setup.json --json
+warning: MathResearchAnalysis/OrthogonalBoundaryPolygon.lean:47:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: MathResearchAnalysis/OrthogonalBoundaryPolygon.lean:47:20: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+error: MathResearchAnalysis/OrthogonalBoundaryPolygon.lean:47:65: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑n
+ b := ↑↑(Fin.last n)
+Some required targets logged failures:
+- MathResearchAnalysis.OrthogonalBoundaryPolygon
+error: build failed

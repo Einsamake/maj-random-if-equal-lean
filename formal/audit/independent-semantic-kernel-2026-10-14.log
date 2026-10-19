@@ -1,0 +1,66 @@
+warning: mathlib: repository has local changes:
+  .lake/packages\mathlib
+warning: plausible: repository has local changes:
+  .lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  .lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  .lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  .lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  .lake/packages\aesop
+warning: Qq: repository has local changes:
+  .lake/packages\Qq
+warning: batteries: repository has local changes:
+  .lake/packages\batteries
+warning: Cli: repository has local changes:
+  .lake/packages\Cli
+MathResearchAnalysis.SquarePWCensoring.warmWord_censoring {n : ℕ} (β : ℝ) (hβ : 0 ≤ β)
+  {short full : List (MathResearchAnalysis.SquarePWMeasure.Site n)} (sub : short.Sublist full)
+  (φ : MathResearchAnalysis.SquarePWMeasure.Config n → ℝ) (hφ : Monotone φ) :
+  MathResearchAnalysis.ZeroTemperature.warmWord β full φ (MathResearchAnalysis.SquarePWMeasure.topConfig n) ≤
+    MathResearchAnalysis.ZeroTemperature.warmWord β short φ (MathResearchAnalysis.SquarePWMeasure.topConfig n)
+MathResearchAnalysis.SquarePWCensoring.actualMajorityWordMean_censoring {n : ℕ}
+  {short full : List (MathResearchAnalysis.SquarePWMeasure.Site n)} (sub : short.Sublist full)
+  (φ : MathResearchAnalysis.SquarePWMeasure.Config n → ℝ) (hφ : Monotone φ) :
+  MathResearchAnalysis.ZeroTemperature.actualMajorityWordMean full φ
+      (MathResearchAnalysis.SquarePWMeasure.topConfig n) ≤
+    MathResearchAnalysis.ZeroTemperature.actualMajorityWordMean short φ
+      (MathResearchAnalysis.SquarePWMeasure.topConfig n)
+MathResearchAnalysis.SquarePWCensoring.chronological_fair_execution_censoring {n : ℕ}
+  {short full : List (MathResearchAnalysis.SquareSpin.Event n)} (sub : short.Sublist full) (unique : full.Nodup)
+  (φ : MathResearchAnalysis.SquarePWMeasure.Config n → ℝ) (hφ : Monotone φ) :
+  ∫ (ξ : Fin full.reverse.length → Bool),
+      φ
+        (MathResearchAnalysis.ClockExecutionLaw.freshRun full.reverse ξ
+          (MathResearchAnalysis.SquarePWMeasure.topConfig
+            n)) ∂MathResearchAnalysis.FairMarks.vectorMeasure full.reverse.length ≤
+    ∫ (ξ : Fin short.reverse.length → Bool),
+      φ
+        (MathResearchAnalysis.ClockExecutionLaw.freshRun short.reverse ξ
+          (MathResearchAnalysis.SquarePWMeasure.topConfig
+            n)) ∂MathResearchAnalysis.FairMarks.vectorMeasure short.reverse.length
+MathResearchAnalysis.SquarePWCensoring.freshExecutionLaw_censoring {n : ℕ}
+  {short full : List (MathResearchAnalysis.SquareSpin.Event n)} (sub : short.Sublist full) (unique : full.Nodup)
+  (φ : MathResearchAnalysis.SquarePWMeasure.Config n → ℝ) (hφ : Monotone φ) :
+  ∫ (f : MathResearchAnalysis.ClockExecutionLaw.Config n),
+      φ
+        f ∂MathResearchAnalysis.ClockExecutionLaw.freshExecutionLaw full.reverse
+        (MathResearchAnalysis.SquarePWMeasure.topConfig n) ≤
+    ∫ (f : MathResearchAnalysis.ClockExecutionLaw.Config n),
+      φ
+        f ∂MathResearchAnalysis.ClockExecutionLaw.freshExecutionLaw short.reverse
+        (MathResearchAnalysis.SquarePWMeasure.topConfig n)
+'MathResearchAnalysis.SquarePWCensoring.warmWord_censoring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquarePWCensoring.actualMajorityWordMean_censoring' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SquarePWCensoring.chronological_fair_execution_censoring' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SquarePWCensoring.freshExecutionLaw_censoring' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+EXIT_CODE=0
+ELAPSED_SECONDS=43.6509288
