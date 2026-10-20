@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-21T05:27:42.144195+08:00",
+  "modules": [
+    "UnrevealedMarkInvariance"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.UnrevealedMarkInvariance.replaceMark",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.history_invariant",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.stoppingTime_invariant",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.stopped_history_invariant",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipField",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipField_measurable",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipField_involutive",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipField_map",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipSample",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_measurable",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_involutive",
+    "MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_map"
+  ],
+  "declarations_count": 12,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/UnrevealedMarkInvariance.lean": "0aa824e23cdea413b5e6e4973b7a80dbea33fce53ff261b4c88a99c5f58df225"
+  },
+  "new_lean_warning_lines": []
+}

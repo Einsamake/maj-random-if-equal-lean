@@ -1,0 +1,15 @@
+import MathResearchAnalysis.StoppedMarkSlices
+
+#print axioms MathResearchAnalysis.StoppedMarkSlices.flip_slice_measure
+#print axioms MathResearchAnalysis.StoppedMarkSlices.fair_slice_factor
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_measurable
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_unique
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_flip_stoppingTime
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_flip
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_flip_iff
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_stopped_event_flip_iff
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_waiting_flip
+#print axioms MathResearchAnalysis.StoppedMarkSlices.candidate_slice_factor
+#print axioms MathResearchAnalysis.StoppedMarkSlices.stopped_history_slice_factor
+#print axioms MathResearchAnalysis.StoppedMarkSlices.stopped_waiting_slice_factor

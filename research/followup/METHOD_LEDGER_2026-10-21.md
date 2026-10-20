@@ -95,3 +95,46 @@ R=(min(ENNReal exit,T)).toReal先截断后转换，cap≠∞被点态证明；ex
 LocalObservedHistory、MarkedStoppedResidual、ProtectedExitResidual、ProtectedAreaPotential新增49theorem/54named，两个专项33+21及实际统一build、standard Lean --trust=0审计全部通过。独立代理逐字节核176正式源（168analysis+8core）的完整集合和SHA，完整2282分析及126核心公理输出与#print清单逐名顺序匹配，仅三标准公理或无公理。当前2407辅助定理及1模型、2408项全局公理输出；核心8源未变，本次未重编。
 
 原F吸收退出版本、其真实原physicalExit law/∞扩展均值、真正可依赖过去marks的单site停时后残余law、实际exit∧T无循环实例、支持正确mask面积势桥接现都已有代码和统一验收。此前待统一状态据此闭合。仍不把单site残余报成全future fresh marks/多site联合独立或完整strongMarkov；有限率代数不是物理补偿，面积可积不是恢复时间可积。UnrevealedMarkInvariance仍属后续草稿，不在这次2282/176内。
+
+
+## 待验收方法：用未揭示mark翻转对称，处理依赖过去marks的随机选择
+
+本节是下一fresh coin连接的逻辑审阅，尚不计入2282/176已验收成果。UnrevealedMarkInvariance草稿先证明：如果真正原jointF停时R在样本z上等于有限r，且r严格小于identity e的arrival，则任意替换该mark不改变r以前历史事件、R本身及F_R事件E。strict不等式不可放宽：arrival=r时mark已被揭示，R或E可以依赖它。
+
+R不变性的两方向分别使用停止事件{R≤r}和假设替换后更早s<r时的{R≤s}，都属于仍看不到e的过去；不是从“该mark看起来还没用”直接断言。真实fair infinite product的单坐标Bool.not保持measure，连同不改clock坐标给实际clock×marks保测度翻转。
+
+下一路线对每个site v、identity index k取候选A：E且R<arrival(v,k)，并且所有j<k的arrival(v,j)≤R。该候选严格选第一个R后身份，flip(v,k)时R/E/候选不变，mark=b两切片互换，故可望得到各半质量；候选唯一、AEfinite R和真实cofinal时钟给AE可数覆盖，再sum_k得到下一mark公平及停止σ独立。
+
+nextIndex可以依赖过去marks，不能直接套旧FairMarks的clock-only selection theorem。单坐标对称因非预见性保持候选，正是修复mark-dependent选择的可复用工具。当前只是候选证明路线，尚未报Lean完整实现。
+
+还需防止边界泛化：单独证明waiting独立过去、nextmark独立过去，不自动给二者pair独立。若需Exp×fair联合law，可在候选A再交{u<waiting}；翻转保持clocks和R，因此waiting也保持，候选两切片仍互换。先证明联合threshold factorization后再接旧waiting survival，可避免从两个边缘law偷推联合law。多site residual向量和first-global-ring race仍需另外证明。
+
+
+## 未揭示mark不变性：正式专项已完成
+
+UnrevealedMarkInvariance正式9theorem/12named，2026-10-21T05:27:42专项真实build及standardtrust0审计通过，零新Lean warning。独立代理逐字节核最终源码SHA、12项完整命名输出及精确语义；最终统一仍等待根代理。见[独立报告](../../formal/audit/unrevealed-mark-independent-review.md)。
+
+已证的是strict R<arrival(e)时任意替换e的mark保持过去、真正R及其停止σ事件，并且单坐标fair flip保持实际infinite product和clock×marks measure。下一candidate half-factor、完整nextmark公平以及joint(wait,mark)仍未由本模块给出；此前待验收路线仅此基础部分变为正式专项，不扩大成果范围。
+
+
+## 下一identity候选的half切片：正式专项已完成
+
+StoppedMarkSlices正式12theorem/13named，2026-10-21T05:34:35.721321+08:00实际build与standardtrust0审计通过，零新Lean warning；独立源码SHA、逐命名输出和语义核对完成，最终统一仍待证据。[独立报告](../../formal/audit/stopped-mark-slices-independent-review.md)。
+
+候选内R<有限arrival已经推出该样本R有限，所以局部flip对称不需假设未证的原物理退出AEfinite。真实保measure flip交换mark两切片，完整Bool分割给half μ(A)。不变性实际解除到停止σ事件E及E∩{u<waiting}，因此联合等待事件已经纳入对称，而不是从两个marginal独立偷推pair。完整nextMark公平和AE候选覆盖仍是下一模块，不由这13named单独给出。
+
+
+## 真正停时后的下一mark与等待联合因子化：正式专项已完成
+
+StoppedFreshMark正式18theorem/19named（含实际boundedExit三个实例），专项实际build及standardtrust0通过，独立源码指纹、19项命名输出及精确语义核对完成，零新Lean warning。连同UnrevealedMarkInvariance9/12和StoppedMarkSlices12/13，此组39theorem/44named均专项通过；最终全局统一仍等待实际证据。见[新mark独立报告](../../formal/audit/stopped-fresh-mark-independent-review.md)。
+
+方法的关键不是将选择index假装clock-only，而是在候选中翻转未揭示mark使R、停止过去和等待同时不变；真实保measure对称给half，再用互斥候选和真实cofinal/AEfinite覆盖求和。Nat.find总定义保留无future=false回退，singleton fiber公式不能遗漏这分支。拉回的是∀real r cofinal的同一概率一集合，故允许依赖past marks的随机R。
+
+最终先有E∩{u<waiting}∩{nextMark=b}的直接factorization，再接Exp survival，避免由两个marginal独立误推joint。当前精确Lean输出为联合threshold identity，尚未另包成任意Borel pair-law theorem；多site/fullfuture也不在范围。实际boundedExit下finite/nonnegative均已证，所以三个fresh-mark实例不依赖未证的原退出finite/finite mean。
+
+
+## 2026-10-21 05:39:35 fresh-mark组最终统一验收
+
+新三模块UnrevealedMarkInvariance9/12、StoppedMarkSlices12/13、StoppedFreshMark18/19，共39theorem/44named，专项与实际统一build、standard Lean --trust=0公理审计全部通过，零新Lean warning。独立代理逐字节核179正式源（171analysis+8core）的完整集合与SHA、完整2321分析和126核心公理输出与#print表逐名顺序相同，仅三标准公理或无公理。当前2446辅助定理及1模型、2447项全局公理输出；核心8源未变，本次未重编。
+
+前文待统一状态现已闭合：真实下一site identity mark的公平HasLaw、与可依赖past marks的原F_R停止σ独立、直接联合等待/mark threshold factorization、actual boundedExit三个实例均有正式代码和全局内核证据。仍没有任意Borel pair-law包装、多site residual/fullfuture strongMarkov、实际物理补偿、被禁birth累计控制或CMST/FSS二次主定理。定理数不代表主定理完成百分比；独立AI不冒充人类专家。

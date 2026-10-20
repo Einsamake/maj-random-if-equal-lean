@@ -4726,6 +4726,66 @@
 'MathResearchAnalysis.SquareTaskTail.square_prefix_eight_tail_of_law_indep' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.candidate_find' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.candidate_exists_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.nextMark_eq_of_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.nextMark_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.nextMark_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.candidate_exists_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.candidate_partition_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.marked_partition_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.invariant_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.stopped_history_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.restricted_map_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.nextMark_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.nextMark_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.stopped_waiting_mark_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.stopped_waiting_mark_survival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.boundedExit_nextMark_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.boundedExit_nextMark_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedFreshMark.boundedExit_waiting_mark_survival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.flip_slice_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.fair_slice_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_flip_stoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_flip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_flip_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_stopped_event_flip_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_waiting_flip' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.candidate_slice_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.stopped_history_slice_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppedMarkSlices.stopped_waiting_slice_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.StoppingPath.real_time_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.StoppingPath.readiness_order' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.StoppingPath.delay_known' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -4833,6 +4893,31 @@
 'MathResearchAnalysis.TaskPathTail.terminal_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.TaskPathTail.terminal_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.TaskPathTail.prefix_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.history_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.stoppingTime_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.stopped_history_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.UpperStoppingApprox.grid_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.UpperStoppingApprox.grid_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.UpperStoppingApprox.round_eq_coe' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,40 @@
+{
+  "validated_at": "2026-10-21T05:38:57.414994+08:00",
+  "modules": [
+    "StoppedFreshMark"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.StoppedFreshMark.nextMark",
+    "MathResearchAnalysis.StoppedFreshMark.candidate_find",
+    "MathResearchAnalysis.StoppedFreshMark.candidate_exists_iff",
+    "MathResearchAnalysis.StoppedFreshMark.nextMark_eq_of_candidate",
+    "MathResearchAnalysis.StoppedFreshMark.nextMark_fiber",
+    "MathResearchAnalysis.StoppedFreshMark.nextMark_measurable",
+    "MathResearchAnalysis.StoppedFreshMark.candidate_exists_ae",
+    "MathResearchAnalysis.StoppedFreshMark.candidate_partition_tsum",
+    "MathResearchAnalysis.StoppedFreshMark.marked_partition_tsum",
+    "MathResearchAnalysis.StoppedFreshMark.invariant_factor",
+    "MathResearchAnalysis.StoppedFreshMark.stopped_history_factor",
+    "MathResearchAnalysis.StoppedFreshMark.restricted_map_eq",
+    "MathResearchAnalysis.StoppedFreshMark.nextMark_hasLaw",
+    "MathResearchAnalysis.StoppedFreshMark.nextMark_independent_stopped_history",
+    "MathResearchAnalysis.StoppedFreshMark.stopped_waiting_mark_factor",
+    "MathResearchAnalysis.StoppedFreshMark.stopped_waiting_mark_survival",
+    "MathResearchAnalysis.StoppedFreshMark.boundedExit_nextMark_hasLaw",
+    "MathResearchAnalysis.StoppedFreshMark.boundedExit_nextMark_independent_stopped_history",
+    "MathResearchAnalysis.StoppedFreshMark.boundedExit_waiting_mark_survival"
+  ],
+  "declarations_count": 19,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/StoppedFreshMark.lean": "236863ed7900a27b3a8049b61bf37128989a6a016a356fb30f8fdd5475d166ff"
+  },
+  "new_lean_warning_lines": []
+}

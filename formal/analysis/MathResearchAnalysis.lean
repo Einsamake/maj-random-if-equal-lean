@@ -184,6 +184,10 @@ public import MathResearchAnalysis.ProtectedExitResidual
 
 public import MathResearchAnalysis.ProtectedAreaPotential
 
+public import MathResearchAnalysis.UnrevealedMarkInvariance
+public import MathResearchAnalysis.StoppedMarkSlices
+public import MathResearchAnalysis.StoppedFreshMark
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real

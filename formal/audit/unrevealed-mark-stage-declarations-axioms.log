@@ -1,0 +1,32 @@
+'MathResearchAnalysis.UnrevealedMarkInvariance.replaceMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.history_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.stoppingTime_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.stopped_history_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField' does not depend on any axioms
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipField_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_involutive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UnrevealedMarkInvariance.flipSample_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
