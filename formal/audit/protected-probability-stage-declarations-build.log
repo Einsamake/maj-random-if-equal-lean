@@ -1,0 +1,7 @@
+✔ [3893/3894] Built MathResearchAnalysis.ProtectedExitResidual (14s)
+✔ [3894/3894] Built MathResearchAnalysis.ProtectedAreaPotential (14s)
+Build completed successfully (3894 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

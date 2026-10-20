@@ -25,7 +25,7 @@ paths = [ROOT / name for name in ['README.md', 'HANDOFF.md', 'STATUS.md',
     'archive/disk-inventory-2026-10-16.json',
     '形式化独立核查_2026-10-14.md',
     'archive/organization-2026-10-14.json', 'deliverables/README.md',
-    'research/followup/ca_clean_proof.md', 'research/followup/METHOD_LEDGER_2026-10-18.md', 'research/followup/METHOD_LEDGER_2026-10-19.md', 'research/followup/novelty_review.md',
+    'research/followup/ca_clean_proof.md', 'research/followup/METHOD_LEDGER_2026-10-18.md', 'research/followup/METHOD_LEDGER_2026-10-19.md', 'research/followup/METHOD_LEDGER_2026-10-20.md', 'research/followup/METHOD_LEDGER_2026-10-21.md', 'research/followup/novelty_review.md',
     'research/followup/public_resolution_check_2026-10-14.md',
     'research/followup/PROGRESS_ESTIMATE_2026-10-14.md',
     'research/followup/REVIEW_DIRECTION_2026-10-14.md',
@@ -88,7 +88,7 @@ for pattern in ['clock-rank-tail-*', 'rank-slot-embedding-*', 'clock-marks-*',
                 'automation-removal.json', 'wake-0505-verification.json',
                 'grid-cell-boundary-*', 'clipped-orthogonal-sections-*',
                 'clipped-boundary-*', 'grid-boundary-*', 'clipped-grid-connectivity-*',
-                'orthogonal-grid-convexity-*', 'contour-foundation-*', 'stopped-clock-*', 'droplet-stopped-*', 'frozen-physical-exit-*', 'clock-word-consistency-*', 'orthogonal-boundary-*', 'orthogonal-physical-contour-*', 'protected-geometric-good-*', 'region-*', 'update-stage-*', 'protected-column-*', 'protected-corner-*', 'protected-stage-*', 'exit-area-stage-*', 'vacant-quadrant-*', 'orthogonal-perimeter-*', 'orthogonal-physical-box-*', 'orthogonal-box-stage-*', 'grid-region-connectivity-*', 'github-private-repository.json', 'github-snapshot-validation.json', 'convex-birth-update-*', 'grid-perimeter-update-*', 'grid-perimeter-dynamics-*', 'cleanup-connectivity-*', 'convex-local-update-*',
+                'orthogonal-grid-convexity-*', 'contour-foundation-*', 'stopped-clock-*', 'droplet-stopped-*', 'marked-clock-filtration-*', 'marked-history-words-*', 'observed-stopping-*', 'observed-frozen-*', 'observed-progressive-*', 'masked-area-generator-*', 'marked-deterministic-residual-*', 'marked-residual-stage-*', 'local-history-exit-*', 'protected-probability-*', 'protected-area-potential-*', 'protected-exit-residual-*', 'frozen-physical-exit-*', 'clock-word-consistency-*', 'orthogonal-boundary-*', 'orthogonal-physical-contour-*', 'protected-geometric-good-*', 'region-*', 'update-stage-*', 'protected-column-*', 'protected-corner-*', 'protected-stage-*', 'exit-area-stage-*', 'vacant-quadrant-*', 'orthogonal-perimeter-*', 'orthogonal-physical-box-*', 'orthogonal-box-stage-*', 'grid-region-connectivity-*', 'github-private-repository.json', 'github-snapshot-validation.json', 'convex-birth-update-*', 'grid-perimeter-update-*', 'grid-perimeter-dynamics-*', 'cleanup-connectivity-*', 'convex-local-update-*',
                 'grid-cell-region-*', 'grid-physical-region-*', 'grid-contour-length-*',
                 'clipped-region-box-*', 'clipped-physical-box-*', 'clipped-initial-contour-*',
                 'geometric-contour-*', 'wake-0505-*',
@@ -107,6 +107,7 @@ for pattern in ['clock-rank-tail-*', 'rank-slot-embedding-*', 'clock-marks-*',
     stage_audits.update(path for path in (FORMAL / 'audit').glob(pattern) if path.is_file())
 paths += sorted(stage_audits - set(paths))
 paths += sorted(path for path in (FORMAL / "drafts").rglob("*") if path.is_file())
+paths += [p for p in sorted(FORMAL.glob('PROGRESS_2026-10-2*.md')) if p not in paths]
 assert len(paths) == len(set(paths))
 assert all(path.is_file() for path in paths)
 manifest = {path.relative_to(ROOT).as_posix(): {
@@ -116,7 +117,7 @@ manifest = {path.relative_to(ROOT).as_posix(): {
 manifest_path = FORMAL / 'LEAN_MANIFEST.json'
 manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf8')
 paths.append(manifest_path)
-output = ROOT / 'deliverables' / 'Lean形式化材料_2026-10-19.zip'
+output = ROOT / 'deliverables' / 'Lean形式化材料_2026-10-21.zip'
 output.parent.mkdir(exist_ok=True)
 with zipfile.ZipFile(output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
     for path in paths:

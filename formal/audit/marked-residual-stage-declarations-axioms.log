@@ -1,0 +1,26 @@
+'MathResearchAnalysis.MarkedDeterministicResidual.fixed_marks_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.history_section_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting_jointSurvival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedDeterministicResidual.waiting_independent_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

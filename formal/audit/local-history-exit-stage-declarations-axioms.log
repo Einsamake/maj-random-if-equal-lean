@@ -1,0 +1,75 @@
+'MathResearchAnalysis.LocalObservedHistory.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.valid_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.past_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.valid_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.fiber_events_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.loss_persistent_of_valid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.next_event_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.same_past_on_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.fiber_iff_same_past' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.valid_iff_same_past' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.loss_iff_same_past' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.valid_of_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.absorbingLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.absorbingLoss_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.absorbingLoss_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.absorbingLoss_iff_same_past' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_eq_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_ae_eq_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_law_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.LocalObservedHistory.exit_extended_mean_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.fixed_marks_full_history_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.section_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.stopped_history_section_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting_jointSurvival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedStoppedResidual.waiting_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

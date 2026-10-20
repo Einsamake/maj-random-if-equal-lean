@@ -1,0 +1,19 @@
+import MathResearchAnalysis.MaskedAreaGenerator
+
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.frozenGenerator
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.cleanupRate
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.frozenGenerator_of_missing
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.modified_card_diff
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.frozen_area_generator
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.cleanupRate_nonnegative
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.raw_card_diff
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.raw_local_rate
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_exact
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.frozen_area_generator_exact
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.sum_indicator_card
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_counts
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.birthIntensity
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.birthIntensity_nonnegative
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_mask_correction
+#print axioms MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_antitone_mask

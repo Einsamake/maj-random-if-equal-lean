@@ -1,0 +1,44 @@
+{
+  "validated_at": "2026-10-21T00:40:32.718686+08:00",
+  "modules": [
+    "ProtectedExitResidual",
+    "ProtectedAreaPotential"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit",
+    "MathResearchAnalysis.ProtectedExitResidual.capped_exit_ne_top",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_nonnegative",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_ne_top",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_le_horizon",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_isStoppingTime",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_eq_capped_physicalExit",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_ae_eq_capped_physicalExit",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_wait_hasLaw",
+    "MathResearchAnalysis.ProtectedExitResidual.boundedExit_wait_independent_stopped_history",
+    "MathResearchAnalysis.ProtectedAreaPotential.stoppedStep_supported",
+    "MathResearchAnalysis.ProtectedAreaPotential.stoppedWord_supported",
+    "MathResearchAnalysis.ProtectedAreaPotential.observed_state_supported",
+    "MathResearchAnalysis.ProtectedAreaPotential.missing_area_eq_negative_card",
+    "MathResearchAnalysis.ProtectedAreaPotential.observed_area_eq_negative_card",
+    "MathResearchAnalysis.ProtectedAreaPotential.frozenGenerator_congr",
+    "MathResearchAnalysis.ProtectedAreaPotential.frozenGenerator_add_constant",
+    "MathResearchAnalysis.ProtectedAreaPotential.missing_area_generator",
+    "MathResearchAnalysis.ProtectedAreaPotential.observed_area_measurable",
+    "MathResearchAnalysis.ProtectedAreaPotential.observed_area_bounds",
+    "MathResearchAnalysis.ProtectedAreaPotential.observed_area_integrable"
+  ],
+  "declarations_count": 21,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ProtectedExitResidual.lean": "76e1446753e684463fda762ff19dfa9709b302e2bbec5b5717335bfb5c5ec236",
+    "MathResearchAnalysis/ProtectedAreaPotential.lean": "dff8b3573f48a230d7d846b19de383d6a109d349d1f390cd2e851c127b6db7d2"
+  },
+  "new_lean_warning_lines": []
+}

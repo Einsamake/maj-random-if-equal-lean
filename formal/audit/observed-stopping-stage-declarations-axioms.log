@@ -1,0 +1,65 @@
+'MathResearchAnalysis.MarkedHistoryWords.censoredArrival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.censoredArrival_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.censoredArrival_eq_of_arrived' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.ordered_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.fiber_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.chronological_ordered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.identity_word_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.indexedEvents' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.indexedEvents_eq_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.fiber_indexedEvents_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.observedLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.observedLoss_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedHistoryWords.observedLoss_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.nnHistory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rightHistory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_le_of_observed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_lt_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_strict_event_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_eq_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.rationalExit_ae_eq_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.physicalExit_aemeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.exit_law_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.extended_exit_mean_equal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RationalProtectedExit.original_extinction_measure_le_stopping_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

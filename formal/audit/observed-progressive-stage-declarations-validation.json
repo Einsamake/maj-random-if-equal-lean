@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-20T19:43:11.269765+08:00",
+  "modules": [
+    "ObservedProgressive"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ObservedProgressive.pastProduct",
+    "MathResearchAnalysis.ObservedProgressive.variable_arrival_measurable",
+    "MathResearchAnalysis.ObservedProgressive.variable_marked_arrival_measurable",
+    "MathResearchAnalysis.ObservedProgressive.ordered_horizon_iff",
+    "MathResearchAnalysis.ObservedProgressive.variable_fiber_measurable",
+    "MathResearchAnalysis.ObservedProgressive.variable_graph_measurable",
+    "MathResearchAnalysis.ObservedProgressive.state_isProgressive",
+    "MathResearchAnalysis.ObservedProgressive.state_isProgressive_nn",
+    "MathResearchAnalysis.ObservedProgressive.area_isStronglyProgressive",
+    "MathResearchAnalysis.ObservedProgressive.area_isStronglyProgressive_right",
+    "MathResearchAnalysis.ObservedProgressive.exitArea",
+    "MathResearchAnalysis.ObservedProgressive.exitArea_measurable_at_exit",
+    "MathResearchAnalysis.ObservedProgressive.exitArea_eq_of_finite",
+    "MathResearchAnalysis.ObservedProgressive.exitArea_nonnegative",
+    "MathResearchAnalysis.ObservedProgressive.exitArea_le_initial_card",
+    "MathResearchAnalysis.ObservedProgressive.actual_exitArea_quadratic_on_finite_exit"
+  ],
+  "declarations_count": 16,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ObservedProgressive.lean": "091afcc06014362c6abc357b53779e9554a2692182edd4a49cbc21caba3967df"
+  },
+  "new_lean_warning_lines": []
+}

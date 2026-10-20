@@ -1,6 +1,6 @@
 # Verification
 
-最新本地统一验证时间：2026-10-19T21:03:55.267317+08:00。分析2144条定理、157分析源；核心125定理及1模型、8源。所有正式源逐字节绑定对应audit JSON的SHA256，快照同步拒绝未验收或指纹漂移的正式源集。
+最新本地统一验证时间：2026-10-21T00:41:11.681025+08:00。分析2282条定理、168分析源；核心125定理及1模型、8源。所有正式源逐字节绑定对应audit JSON的SHA256，快照同步拒绝未验收或指纹漂移的正式源集。
 
 分析使用Lean4.35.0-rc4与固定mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d；核心使用Lean4.35.0。从各自项目目录使用Lake构建，不跨工具链复用olean。formal/scripts/validate_analysis.py会真实统一build，再以标准Lean --trust=0审计每条分析定理；核心既有证据位于formal/audit/core-validation.json。
 

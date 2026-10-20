@@ -164,6 +164,26 @@ public import MathResearchAnalysis.DropletStoppedWord
 public import MathResearchAnalysis.DropletStoppedClockLaw
 public import MathResearchAnalysis.ClockWordConsistency
 public import MathResearchAnalysis.FrozenPhysicalExit
+public import MathResearchAnalysis.MarkedClockFiltration
+public import MathResearchAnalysis.MarkedHistoryWords
+public import MathResearchAnalysis.RationalProtectedExit
+
+public import MathResearchAnalysis.ObservedFrozenProcess
+
+public import MathResearchAnalysis.ObservedProgressive
+
+public import MathResearchAnalysis.MaskedAreaGenerator
+
+public import MathResearchAnalysis.MarkedDeterministicResidual
+
+public import MathResearchAnalysis.LocalObservedHistory
+
+public import MathResearchAnalysis.MarkedStoppedResidual
+
+public import MathResearchAnalysis.ProtectedExitResidual
+
+public import MathResearchAnalysis.ProtectedAreaPotential
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real

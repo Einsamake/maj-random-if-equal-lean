@@ -193,3 +193,21 @@ ClockWordConsistency正式版已形成20条theorem，含在共同Good路径上�
 当天累计12新模块、160theorem、192个具名def/abbrev/theorem/instance逐项标准trust0通过（114+41+20+17）。最新2144分析定理、157分析源加8core=165正式源，2269辅助定理加1模型，2270项全局公理输出；独立代理已核全部165源hash、累计192新增输出和2144+126全部输出，只三标准公理。较当天1984基线144旧分析证明模块及8core源不变。三/四阶段的新物理接口不能算作CMST/FSS核心概率已完成。
 
 剩余主缺口是实际filtration适应性/停止性质、生成元或补偿/Dynkin、自含CMST/FSS二次尺度概率及最终原模型主定理。现在不能再把“尚未有物理首失守阈值或退出面积连接”当作缺口；精确已证/未证见[物理首失守独立审阅](../../formal/audit/frozen-physical-exit-independent-review.md)。
+
+## 新先导：只在响铃时揭示该identity的mark
+
+状态：`formal/drafts/MarkedClockFiltration.lean` 正在构建；独立代理只读数学核查了生成元与接口，未跑Lean、未改源码。当前日志的revealedMarks函数空间实例仍待修，不能先报kernel通过，也不增加旧2144分析/165源计数。
+
+这里的history由两种真正过去事件生成：arrival(e)≤u，以及arrival(e)≤u且mark(e)=b，均要求u≤当前t。旧“纯到时history”实际嵌入该joint history，并证明它对观察这些事件的任意其他filtration最小。没有把global Good事件、未来arrival精确值或完整mark field放进生成元。
+
+可复用的表示是 `revealedMark : Option Bool`：未响铃为none，已响铃为some实际mark。none的可测fiber是arrival未到的补集，some b的fiber恰是实际marked observation。这样将“随机标记何时可见”编码成一个精确函数，避免一开始就把全未来marks当作历史。源中ambient mark_measurable只用于证明这些生成元属于原总σ代数，不表示未来mark已经对当前history可测；目前也未证明未揭示marks的条件独立性。
+
+这是补齐实际marked filtration的基础接口，不是physicalExit已经为IsStoppingTime，也没有解决total-word fallback适应性、σ代数完备化或生成元/强马氏。区分信息结构的声明与下一步停时证明，是本先导的价值。
+
+### 观察等价已提升成全部history事件的不变性
+
+新先导第12条 `measurable_event_past_invariant` 将“全部过去arrival阈值一致、已响铃identity的marks一致”提升为任意当前history可测事件成员一致，使用generateFrom的一般点态不可区分定理。这让“不读取不可见未来”成为可复用的σ代数证书，而不只是阅读generator后的直觉；若以后取completion，null样本上的点态invariance需另加限定。Option Bool明确离散σ代数和局部history实例已解决API问题；最终16named标准内核审计仍待冻结证据。见[新历史独立审阅](../../formal/audit/marked-clock-filtration-independent-review.md)。
+
+### 最终冻结历史接口扩为14条
+
+MarkedClockFiltration实际冻结为14theorem/18named；新增完整coverage的identity可数交和localfinite的有限字可数并可测性，已经独立只读核双向证据。先导14条标准trust0零warning通过，正式专项/统一待最终证据。它证明当前localfinite fallback判据可见，却未证明global未来无碰时可见；后续仍须处理旧totalword的globalGood fallback适应性与完成化，不能把每个ring已为停时误作physicalExit已为停时。

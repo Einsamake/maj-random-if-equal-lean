@@ -1,0 +1,29 @@
+{
+  "validated_at": "2026-10-21T00:29:07.315995+08:00",
+  "modules": [
+    "MarkedDeterministicResidual"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedDeterministicResidual.fixed_marks_measurable",
+    "MathResearchAnalysis.MarkedDeterministicResidual.history_section_measurable",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting_measurable",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting_nonnegative",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting_jointSurvival",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting_hasLaw",
+    "MathResearchAnalysis.MarkedDeterministicResidual.waiting_independent_history"
+  ],
+  "declarations_count": 8,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedDeterministicResidual.lean": "d804737dd464737a0cf7ef42e287936e3f77767ef754230f6dc805973ab43a94"
+  },
+  "new_lean_warning_lines": []
+}

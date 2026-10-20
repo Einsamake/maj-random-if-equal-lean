@@ -1,0 +1,48 @@
+'MathResearchAnalysis.ObservedProgressive.pastProduct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.variable_arrival_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.variable_marked_arrival_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.ordered_horizon_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.variable_fiber_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.variable_graph_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.state_isProgressive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.state_isProgressive_nn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.area_isStronglyProgressive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.area_isStronglyProgressive_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.exitArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.exitArea_measurable_at_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.exitArea_eq_of_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.exitArea_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.exitArea_le_initial_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedProgressive.actual_exitArea_quadratic_on_finite_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

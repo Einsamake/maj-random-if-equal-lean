@@ -1,0 +1,65 @@
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.capped_exit_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_le_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_eq_capped_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_ae_eq_capped_physicalExit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_wait_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedExitResidual.boundedExit_wait_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.stoppedStep_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.stoppedWord_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.observed_state_supported' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.missing_area_eq_negative_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.observed_area_eq_negative_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.frozenGenerator_congr' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.frozenGenerator_add_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.missing_area_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.observed_area_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.observed_area_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ProtectedAreaPotential.observed_area_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

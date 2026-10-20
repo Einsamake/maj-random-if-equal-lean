@@ -1,0 +1,39 @@
+{
+  "validated_at": "2026-10-19T21:21:32.280896+08:00",
+  "modules": [
+    "MarkedClockFiltration"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedClockFiltration.arrival_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.mark_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.observations",
+    "MathResearchAnalysis.MarkedClockFiltration.history",
+    "MathResearchAnalysis.MarkedClockFiltration.arrival_event_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.marked_event_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.arrival_isStoppingTime",
+    "MathResearchAnalysis.MarkedClockFiltration.history_le_of_observations",
+    "MathResearchAnalysis.MarkedClockFiltration.markSpace",
+    "MathResearchAnalysis.MarkedClockFiltration.revealedMark",
+    "MathResearchAnalysis.MarkedClockFiltration.revealedMark_none_iff",
+    "MathResearchAnalysis.MarkedClockFiltration.revealedMark_some_iff",
+    "MathResearchAnalysis.MarkedClockFiltration.revealedMark_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.revealedMarks_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.arrival_history_le",
+    "MathResearchAnalysis.MarkedClockFiltration.measurable_event_past_invariant",
+    "MathResearchAnalysis.MarkedClockFiltration.coverage_measurable",
+    "MathResearchAnalysis.MarkedClockFiltration.finite_arrivals_measurable"
+  ],
+  "declarations_count": 18,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedClockFiltration.lean": "bb62f020596e7712eb99754909f143878696b2f8496ea73d6d7a594104f9e99c"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,48 @@
+'MathResearchAnalysis.MarkedClockFiltration.arrival_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.mark_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.observations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.arrival_event_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.marked_event_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.arrival_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.history_le_of_observations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.markSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.revealedMark' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.revealedMark_none_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.revealedMark_some_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.revealedMark_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.revealedMarks_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.arrival_history_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.measurable_event_past_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.coverage_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockFiltration.finite_arrivals_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

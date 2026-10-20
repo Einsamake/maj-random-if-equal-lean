@@ -1,0 +1,52 @@
+{
+  "validated_at": "2026-10-20T19:30:35.208431+08:00",
+  "modules": [
+    "MarkedHistoryWords",
+    "RationalProtectedExit"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedHistoryWords.censoredArrival",
+    "MathResearchAnalysis.MarkedHistoryWords.censoredArrival_measurable",
+    "MathResearchAnalysis.MarkedHistoryWords.censoredArrival_eq_of_arrived",
+    "MathResearchAnalysis.MarkedHistoryWords.ordered",
+    "MathResearchAnalysis.MarkedHistoryWords.ordered_measurable",
+    "MathResearchAnalysis.MarkedHistoryWords.fiber",
+    "MathResearchAnalysis.MarkedHistoryWords.fiber_measurable",
+    "MathResearchAnalysis.MarkedHistoryWords.chronological_ordered",
+    "MathResearchAnalysis.MarkedHistoryWords.identity_word_eq",
+    "MathResearchAnalysis.MarkedHistoryWords.indexedEvents",
+    "MathResearchAnalysis.MarkedHistoryWords.indexedEvents_eq_map",
+    "MathResearchAnalysis.MarkedHistoryWords.fiber_indexedEvents_eq",
+    "MathResearchAnalysis.MarkedHistoryWords.observedLoss",
+    "MathResearchAnalysis.MarkedHistoryWords.observedLoss_measurable",
+    "MathResearchAnalysis.MarkedHistoryWords.observedLoss_iff",
+    "MathResearchAnalysis.RationalProtectedExit.nnHistory",
+    "MathResearchAnalysis.RationalProtectedExit.rightHistory",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_le_of_observed",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_lt_iff",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_strict_event_measurable",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_isStoppingTime",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_measurable",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_eq_physicalExit",
+    "MathResearchAnalysis.RationalProtectedExit.rationalExit_ae_eq_physicalExit",
+    "MathResearchAnalysis.RationalProtectedExit.physicalExit_aemeasurable",
+    "MathResearchAnalysis.RationalProtectedExit.exit_law_equal",
+    "MathResearchAnalysis.RationalProtectedExit.extended_exit_mean_equal",
+    "MathResearchAnalysis.RationalProtectedExit.original_extinction_measure_le_stopping_exit"
+  ],
+  "declarations_count": 29,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedHistoryWords.lean": "207ea2b776b500a391f779c452aa18d81824ba6f315f428a225b77c110bb41f8",
+    "MathResearchAnalysis/RationalProtectedExit.lean": "01c980055f630b528203175abb1146508bbaa0ac52dccd8ce39db57c65973972"
+  },
+  "new_lean_warning_lines": []
+}

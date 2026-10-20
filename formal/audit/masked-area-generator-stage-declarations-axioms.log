@@ -1,0 +1,35 @@
+'MathResearchAnalysis.MaskedAreaGenerator.frozenGenerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.cleanupRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.frozenGenerator_of_missing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.modified_card_diff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.frozen_area_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.cleanupRate_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.raw_card_diff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.raw_local_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.frozen_area_generator_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.sum_indicator_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.birthIntensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.birthIntensity_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_mask_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_antitone_mask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

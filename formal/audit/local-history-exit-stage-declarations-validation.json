@@ -1,0 +1,56 @@
+{
+  "validated_at": "2026-10-21T00:35:04.861998+08:00",
+  "modules": [
+    "LocalObservedHistory",
+    "MarkedStoppedResidual"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.LocalObservedHistory.valid",
+    "MathResearchAnalysis.LocalObservedHistory.valid_measurable",
+    "MathResearchAnalysis.LocalObservedHistory.past_fiber",
+    "MathResearchAnalysis.LocalObservedHistory.valid_backward",
+    "MathResearchAnalysis.LocalObservedHistory.fiber_events_prefix",
+    "MathResearchAnalysis.LocalObservedHistory.loss_persistent_of_valid",
+    "MathResearchAnalysis.LocalObservedHistory.next_event_gap",
+    "MathResearchAnalysis.LocalObservedHistory.same_past_on_gap",
+    "MathResearchAnalysis.LocalObservedHistory.fiber_iff_same_past",
+    "MathResearchAnalysis.LocalObservedHistory.valid_iff_same_past",
+    "MathResearchAnalysis.LocalObservedHistory.loss_iff_same_past",
+    "MathResearchAnalysis.LocalObservedHistory.valid_of_good",
+    "MathResearchAnalysis.LocalObservedHistory.absorbingLoss",
+    "MathResearchAnalysis.LocalObservedHistory.absorbingLoss_measurable",
+    "MathResearchAnalysis.LocalObservedHistory.absorbingLoss_mono",
+    "MathResearchAnalysis.LocalObservedHistory.absorbingLoss_iff_same_past",
+    "MathResearchAnalysis.LocalObservedHistory.exit",
+    "MathResearchAnalysis.LocalObservedHistory.exit_le_iff",
+    "MathResearchAnalysis.LocalObservedHistory.exit_isStoppingTime",
+    "MathResearchAnalysis.LocalObservedHistory.exit_measurable",
+    "MathResearchAnalysis.LocalObservedHistory.exit_eq_physicalExit",
+    "MathResearchAnalysis.LocalObservedHistory.exit_ae_eq_physicalExit",
+    "MathResearchAnalysis.LocalObservedHistory.exit_law_equal",
+    "MathResearchAnalysis.LocalObservedHistory.exit_extended_mean_equal",
+    "MathResearchAnalysis.MarkedStoppedResidual.fixed_marks_full_history_measurable",
+    "MathResearchAnalysis.MarkedStoppedResidual.section_isStoppingTime",
+    "MathResearchAnalysis.MarkedStoppedResidual.stopped_history_section_measurable",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting_measurable",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting_nonnegative",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting_jointSurvival",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting_hasLaw",
+    "MathResearchAnalysis.MarkedStoppedResidual.waiting_independent_stopped_history"
+  ],
+  "declarations_count": 33,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/LocalObservedHistory.lean": "870b29fb567ab4288b63c35ab6a6963230c17855fed48e91f3cc88ded06777b1",
+    "MathResearchAnalysis/MarkedStoppedResidual.lean": "0fe2122bae11307b1ee2fafba5f7f6778a2d85262f5281294fdb5c5726833c06"
+  },
+  "new_lean_warning_lines": []
+}
