@@ -138,3 +138,10 @@ StoppedFreshMark正式18theorem/19named（含实际boundedExit三个实例），
 新三模块UnrevealedMarkInvariance9/12、StoppedMarkSlices12/13、StoppedFreshMark18/19，共39theorem/44named，专项与实际统一build、standard Lean --trust=0公理审计全部通过，零新Lean warning。独立代理逐字节核179正式源（171analysis+8core）的完整集合与SHA、完整2321分析和126核心公理输出与#print表逐名顺序相同，仅三标准公理或无公理。当前2446辅助定理及1模型、2447项全局公理输出；核心8源未变，本次未重编。
 
 前文待统一状态现已闭合：真实下一site identity mark的公平HasLaw、与可依赖past marks的原F_R停止σ独立、直接联合等待/mark threshold factorization、actual boundedExit三个实例均有正式代码和全局内核证据。仍没有任意Borel pair-law包装、多site residual/fullfuture strongMarkov、实际物理补偿、被禁birth累计控制或CMST/FSS二次主定理。定理数不代表主定理完成百分比；独立AI不冒充人类专家。
+
+
+## 待实现路线：把候选翻转不变性直接用于任意等待可测事件
+
+单site fresh-mark阶段已经提供比threshold更强的结构：candidate内翻转同时保持R、停止过去和实际waiting。因此对任意可测A取G=E∩waiting⁻¹'A，可以直接调用既有invariant_factor，不必重走CDF/tail唯一性。G不必属于F_R，ambient可测和candidate内不变性足够。再用Bool singleton ext和有限product measure的矩形唯一性，接已验收的waiting限制law，有望得到完整Exp×fair pairlaw及pair与F_R独立。限制measure直接保留质量μ(E)，无需除以μ(E)，因而零质量事件无需额外条件化分支。
+
+这目前是新模块的路线审查，不是新Lean验收或方法新颖性认证；需要最终源/命名/统一审计才可更新。它仍是固定site结论，物理补偿、多site强Markov和CMST/FSS核心尾未由此给出。见[独立路线审查](../../formal/audit/marked-residual-pair-independent-review.md)。

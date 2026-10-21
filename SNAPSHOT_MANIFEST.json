@@ -9,6 +9,10 @@
       "bytes": 104,
       "sha256": "848723863a0079aeb3ea586f4a86b4dd1fd008cf2b8373b8f487d5d0631f33a8"
     },
+    "docs/PROOF_GUIDE.md": {
+      "bytes": 9625,
+      "sha256": "95af2ae0b4c67fb64ff164bec29cc531efafb1fff8bb92117e4ede74cf15d56b"
+    },
     "docs/VERIFICATION.md": {
       "bytes": 1237,
       "sha256": "3afbdef48ef18bd8410941acd692155aa4e26ef9a3afa5844429ccab13461d1e"
@@ -1037,6 +1041,10 @@
       "bytes": 6166,
       "sha256": "fada1cfbac18aeb3659c2b8df40165124b51a6370d73135ed7c8148cfd0fc405"
     },
+    "formal/audit/marked-residual-pair-independent-review.md": {
+      "bytes": 1939,
+      "sha256": "af76a6706031dda8ecf74a1b416dd2877d42c385a1bac5d11f4878c6dc9d3c31"
+    },
     "formal/audit/marked-residual-stage-declarations-axioms.lean": {
       "bytes": 733,
       "sha256": "d44f343d8bfbe65a82f2d7f379c10d9aadca3be942037d76980423278f9f4ffc"
@@ -1862,8 +1870,8 @@
       "sha256": "2c2e753be0524eff01afcb1e917439e63d47a31a70a5f575881c9f3daae8e3ee"
     },
     "formal/scripts/package_lean.py": {
-      "bytes": 10615,
-      "sha256": "7fe87cbebdfff34ec219607cee14b8cb6ce97f3d75e46e4910368c44f1fc745c"
+      "bytes": 10662,
+      "sha256": "3eaf251433b6e24dccc6a7550a38205b3e981e33b345514df1d572a04301fcbe"
     },
     "formal/scripts/validate_analysis.py": {
       "bytes": 13572,
@@ -1874,8 +1882,8 @@
       "sha256": "46824eaf3120cdc66bf96f03e2505b1e3db247b6542e13a8fe1d1e0ca4ba3c93"
     },
     "README.md": {
-      "bytes": 2189,
-      "sha256": "e36c08ddb81352be0c51f46935617227df4c4f3aeda4d967500cdb65c0c63194"
+      "bytes": 5873,
+      "sha256": "0a5174e75ca710118032ac89efa644cb030cdbac45db05ee810420bdefeba3b9"
     },
     "research/followup/ca_clean_proof.md": {
       "bytes": 18540,
@@ -1894,8 +1902,8 @@
       "sha256": "1588ae183f55b58e1188da7fc444d655ee5c516d498e1d1ea478dbb693aa420a"
     },
     "research/followup/METHOD_LEDGER_2026-10-21.md": {
-      "bytes": 18527,
-      "sha256": "eab79ae8b681706b3d0367b15b3b4089a7753bc80a4f610e284b96be5d1cbf18"
+      "bytes": 19532,
+      "sha256": "d74cd04f08cec5a10e2999fe6a08386fcd76d7421d16957f9b30fceaad7323be"
     },
     "research/followup/novelty_review.md": {
       "bytes": 16731,

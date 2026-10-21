@@ -18,7 +18,7 @@ for name, base in [('core-validation.json', FORMAL),
     for source_name, expected in validation['source_sha256'].items():
         assert hashlib.sha256((base / source_name).read_bytes()).hexdigest() == expected
         checked_sources += 1
-paths = [ROOT / name for name in ['README.md', 'HANDOFF.md', 'STATUS.md',
+paths = [ROOT / name for name in ['docs/PROOF_GUIDE.md', 'docs/VERIFICATION.md', 'README.md', 'HANDOFF.md', 'STATUS.md',
     '阶段性成果_2026-10-14.md',
     '复盘与后续路线_2026-10-14.md', 'archive/README.md',
     '工作区整理与工具研究_2026-10-16.md', 'archive/cleanup-2026-10-16.json',
