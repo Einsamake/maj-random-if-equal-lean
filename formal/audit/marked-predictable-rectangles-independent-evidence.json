@@ -1,0 +1,39 @@
+{
+  "reviewed_at": "2026-10-22T02:04:08.855765+08:00",
+  "review_agent": "/root/interval_mark_factor",
+  "review_kind": "Independent AI source and complete named kernel-evidence check; not human certification",
+  "status": "independent_source_formal_named_and_unified_pass",
+  "module": "MarkedPredictableRectangles",
+  "theorems": 5,
+  "named_declarations": 5,
+  "formal_source_sha256": "f9aac06913dc852b7cf84b7e5db581217fccacf5c1dac5497c07e5a40c28e886",
+  "formal_named_validation_at": "2026-10-22T01:59:37.083260+08:00",
+  "all_named_source_table_output_orders_exact": true,
+  "build_exit_verified": 0,
+  "axiom_audit_exit_verified": 0,
+  "standard_kernel_trust_level_verified": 0,
+  "axioms_verified": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_lean_warning_lines": [],
+  "unified_verified": true,
+  "semantic_checks": {
+    "original_joint_history_at_real_coercion_of_NNReal_cutoff": true,
+    "toNNReal_strict_comparison_exact_all_paths": true,
+    "horizon_left_open_right_closed": true,
+    "real_positive_part_coefficient_not_unchecked_NNReal_subtraction": true,
+    "past_cutoff_beyond_horizon_zero": true,
+    "zero_and_beyond_horizon_rectangles_allow_nonmeasurable_sample_event": true,
+    "null_carrier_concentration_not_topological_support_used": true,
+    "no_right_continuation_substitution": true,
+    "no_full_predictable_sigma_compensation_or_ambient_measure_equality_claim": true
+  },
+  "main_quadratic_recovery_theorem_complete": false,
+  "lean_sources_modified_by_reviewer": false,
+  "review_target_builds_started_by_reviewer": false,
+  "unified_validation_at": "2026-10-22T02:01:03.158845+08:00",
+  "unified_total_formal_sources_verified": 194,
+  "unified_complete_public_axiom_outputs_verified": 2606
+}

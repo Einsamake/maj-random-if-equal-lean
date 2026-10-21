@@ -1,0 +1,16 @@
+'MathResearchAnalysis.ClockIntervalHistory.increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.cap_cutoff_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_zero_of_arrival_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_lintegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.gap_increment_lintegral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -195,6 +195,12 @@ public import MathResearchAnalysis.ClockArrivalCountTail
 public import MathResearchAnalysis.MarkedRingCount
 public import MathResearchAnalysis.ClockRingMean
 public import MathResearchAnalysis.MarkedRingMean
+public import MathResearchAnalysis.MarkedConditionalCount
+public import MathResearchAnalysis.MarkedClockPointMeasure
+public import MathResearchAnalysis.MarkedPredictableRectangles
+public import MathResearchAnalysis.MarkedIntervalFactor
+public import MathResearchAnalysis.ClockIntervalCount
+public import MathResearchAnalysis.ClockIntervalHistory
 public import MathResearchAnalysis.MarkedRingIntegrability
 
 /-!

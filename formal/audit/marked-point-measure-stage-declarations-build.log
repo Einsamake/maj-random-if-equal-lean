@@ -1,0 +1,6 @@
+✔ [3887/3887] Built MathResearchAnalysis.MarkedClockPointMeasure (12s)
+Build completed successfully (3887 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

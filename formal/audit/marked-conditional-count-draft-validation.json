@@ -1,0 +1,9 @@
+{
+  "validated_at": "2026-10-22T01:52:27.680659+08:00",
+  "source_sha256": "acddadaf3cff37550c1a0901aef2997712cd73ff420855352287578e501766b3",
+  "theorems": 14,
+  "named_declarations": 15,
+  "standard_kernel_trust_level": 0,
+  "lean_exit": 0,
+  "scope": "actual original joint-history conditional total and fair-mark count increments, extended nonnegative identities and finite AE real differences; no physical compensation or recovery bound"
+}

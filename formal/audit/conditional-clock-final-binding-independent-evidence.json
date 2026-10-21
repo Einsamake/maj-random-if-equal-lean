@@ -1,0 +1,40 @@
+{
+  "reviewed_at": "2026-10-22T02:04:08.855765+08:00",
+  "review_agent": "/root/interval_mark_factor",
+  "review_kind": "Independent other-author new-module semantics and complete actual public kernel evidence/source-set check; own factor reviewed separately by parent/peer; not a human certificate",
+  "status": "final_unified_binding_pass",
+  "analysis": {
+    "sources": 186,
+    "complete_public_axiom_outputs": 2480,
+    "all_source_sets_sha_and_public_names_orders_exact": true,
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "validation_at": "2026-10-22T02:01:03.158845+08:00",
+    "rebuild_performed_this_stage": true
+  },
+  "core": {
+    "sources": 8,
+    "complete_public_axiom_outputs": 126,
+    "all_source_sets_sha_and_public_names_orders_exact": true,
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "validation_at": "2026-10-14T21:18:34.078751+08:00",
+    "rebuild_performed_this_stage": false
+  },
+  "total_formal_sources": 194,
+  "total_public_axiom_outputs_verified": 2606,
+  "public_count_excludes_private_source_helpers": true,
+  "new_stage_theorems": 60,
+  "new_stage_named_declarations": 68,
+  "other_author_theorems_independently_semantically_reviewed": 57,
+  "other_author_named_declarations_independently_semantically_reviewed": 65,
+  "own_factor_theorems_not_self_semantically_certified": 3,
+  "main_theorem_complete": false,
+  "target_Lean_sources_modified_or_built_by_reviewer": false
+}

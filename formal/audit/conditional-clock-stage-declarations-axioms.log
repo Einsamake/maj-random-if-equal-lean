@@ -1,0 +1,109 @@
+'MathResearchAnalysis.ClockIntervalHistory.increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.cap_cutoff_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_zero_of_arrival_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.increment_lintegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalHistory.gap_increment_lintegral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_history_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_le_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_lintegral_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_toReal_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.count_toReal_eq_sub_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum_restrict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.exposure_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.exposure_increment_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.exposure_increment_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.exposure_increment_zero_of_arrived' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.sum_exposure_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_of_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_joint_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedIntervalFactor.clock_event_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedIntervalFactor.window_event_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedIntervalFactor.window_set_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.gap_increment_lintegral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.count_lintegral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.count_integral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.original_count_increment_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_le_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_finite_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_toReal_eq_sub_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.lintegral_markedCount_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_lintegral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_integral_on_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.original_marked_increment_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedConditionalCount.markedCount_toReal_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

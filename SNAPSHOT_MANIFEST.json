@@ -1,5 +1,5 @@
 {
-  "formal_sources_verified": 188,
+  "formal_sources_verified": 194,
   "files": {
     ".gitattributes": {
       "bytes": 73,
@@ -58,8 +58,8 @@
       "sha256": "19f3849c5fc904b3da20802af597131992b334a60b0dcd3fd82b57d276b92c49"
     },
     "docs/PROOF_GUIDE.md": {
-      "bytes": 5560,
-      "sha256": "29ffdd95464fea82e2757c2dc58d11d8ffa7a5195c72482b815e34e341e6f855"
+      "bytes": 5743,
+      "sha256": "c57fba86aec53af70e42635d4cb95ee173a2b7f27fe6cc2dd0f59cce59fc6014"
     },
     "docs/render_clock_timeline.py": {
       "bytes": 3654,
@@ -71,11 +71,11 @@
     },
     "docs/VERIFICATION.md": {
       "bytes": 1295,
-      "sha256": "b42db8e5381aead25a75052df6138ba68d154ea6dda8ec7b15e1335359f9d300"
+      "sha256": "5ab04ea4536f9a9d1a480a9962e117a843d395c1dc815c075262ef717bedcd92"
     },
     "formal/analysis/AnalysisAxioms.lean": {
-      "bytes": 190643,
-      "sha256": "c71f568601729786c620213cf45bff7e65c8b82e3c9f02043b31beb2bea5dabb"
+      "bytes": 195506,
+      "sha256": "104aa50b95dbdb8436df00522c68dff82b3d0ccfb4a3d97d1ca28c4d7a7bdd39"
     },
     "formal/analysis/lake-manifest.json": {
       "bytes": 3175,
@@ -220,6 +220,14 @@
     "formal/analysis/MathResearchAnalysis/ClockGapReset.lean": {
       "bytes": 10592,
       "sha256": "a072ea8f89725ec67582a9f23bef3b8fa8e37cc55152b6a046c4c39ef67c42f1"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockIntervalCount.lean": {
+      "bytes": 11365,
+      "sha256": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba"
+    },
+    "formal/analysis/MathResearchAnalysis/ClockIntervalHistory.lean": {
+      "bytes": 9439,
+      "sha256": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d"
     },
     "formal/analysis/MathResearchAnalysis/ClockMaximum.lean": {
       "bytes": 7717,
@@ -489,6 +497,14 @@
       "bytes": 8460,
       "sha256": "bb62f020596e7712eb99754909f143878696b2f8496ea73d6d7a594104f9e99c"
     },
+    "formal/analysis/MathResearchAnalysis/MarkedClockPointMeasure.lean": {
+      "bytes": 7423,
+      "sha256": "af44bef41a3eb6421e30e5181d066e7bec7fdf97981511bbfc2481028e60cbf9"
+    },
+    "formal/analysis/MathResearchAnalysis/MarkedConditionalCount.lean": {
+      "bytes": 15434,
+      "sha256": "acddadaf3cff37550c1a0901aef2997712cd73ff420855352287578e501766b3"
+    },
     "formal/analysis/MathResearchAnalysis/MarkedDeterministicResidual.lean": {
       "bytes": 4966,
       "sha256": "d804737dd464737a0cf7ef42e287936e3f77767ef754230f6dc805973ab43a94"
@@ -500,6 +516,14 @@
     "formal/analysis/MathResearchAnalysis/MarkedHistoryWords.lean": {
       "bytes": 8072,
       "sha256": "207ea2b776b500a391f779c452aa18d81824ba6f315f428a225b77c110bb41f8"
+    },
+    "formal/analysis/MathResearchAnalysis/MarkedIntervalFactor.lean": {
+      "bytes": 4404,
+      "sha256": "3921aa6da26f2387cdb9833fceadc0c51848392f78eb8c20f336396845c1b7ed"
+    },
+    "formal/analysis/MathResearchAnalysis/MarkedPredictableRectangles.lean": {
+      "bytes": 4830,
+      "sha256": "f9aac06913dc852b7cf84b7e5db581217fccacf5c1dac5497c07e5a40c28e886"
     },
     "formal/analysis/MathResearchAnalysis/MarkedResidualPair.lean": {
       "bytes": 10487,
@@ -806,20 +830,20 @@
       "sha256": "bb889619d413ec75a3375b6248a243399b7c2c6671d7037ba65d29bc58a48df7"
     },
     "formal/analysis/MathResearchAnalysis.lean": {
-      "bytes": 17214,
-      "sha256": "e5b315f132e4c4d57c7b885537c49ac7ad04cb0b1fc4da0bd5be6a3fdabca951"
+      "bytes": 17566,
+      "sha256": "a4919a0cf5f02236d886c5a84c6b7bd12b6f570c16d0c95257cf30ae9bd9ceae"
     },
     "formal/audit/analysis-axioms.log": {
-      "bytes": 306114,
-      "sha256": "4019dee9da3823b44e5f1e8bcfd573da13ba729b37f1ec320031cc257c188ff4"
+      "bytes": 313989,
+      "sha256": "87615e299b161e7a61212ed3dd2d239146ba6f537e2bd26e6177f9fbaab89d95"
     },
     "formal/audit/analysis-build.log": {
       "bytes": 215,
-      "sha256": "94b76a7613e7f17c61f05829a8d2b0a55612ecc3abfeb5131134c013aca59692"
+      "sha256": "e326363a915ff2c3d4f5c06e4fdf25df78bff0da0cc522e43b366c205389c849"
     },
     "formal/audit/analysis-validation.json": {
-      "bytes": 41877,
-      "sha256": "3ea2171ade79a2a625b3cd67c7d1c751244431d8fa18cf02949d6045926e7972"
+      "bytes": 44214,
+      "sha256": "8334cd6e3196980e28ed83c3c14df130584ee37adeabff159aaf8642170a2696"
     },
     "formal/audit/clipped-droplet-independent-evidence.json": {
       "bytes": 246790,
@@ -893,6 +917,26 @@
       "bytes": 1188,
       "sha256": "3772b789ee83431a218525d8ad06298bfae4e7e3eeac63797018029d63308c11"
     },
+    "formal/audit/clock-interval-count-draft-validation.json": {
+      "bytes": 2452,
+      "sha256": "d427bd7fc0a880f0250eba78d7ab30f6cc2b4f20a04ed4782a8f5e006c4bacce"
+    },
+    "formal/audit/clock-interval-count-draft.log": {
+      "bytes": 120,
+      "sha256": "2e3112d496a0a64f5fcba8559b1440af9436de88a81cf326b92c7814bc085b20"
+    },
+    "formal/audit/clock-interval-history-draft-named.log": {
+      "bytes": 885,
+      "sha256": "9d0c32e940f5717daaacf5b834b4a41f21f7f30ad2cda63a49e43e85ab92ba8e"
+    },
+    "formal/audit/clock-interval-history-draft-validation.json": {
+      "bytes": 1272,
+      "sha256": "91ed5cc70ccc8419bd78a1d8d11a26ce95b3f8ed4988e83331d5085f831222df"
+    },
+    "formal/audit/clock-interval-history-draft.log": {
+      "bytes": 122,
+      "sha256": "389580fce021236f46d8cf8e5ca9504d52b962c88f0e309dfa72a50adb3ffaa9"
+    },
     "formal/audit/clock-ring-mean-independent-evidence.json": {
       "bytes": 2637,
       "sha256": "9b19868d9f6a58f4a4308053b5415f694d911597f688f27685f67008f39e8944"
@@ -956,6 +1000,42 @@
     "formal/audit/clock-word-consistency-unified-run.log": {
       "bytes": 281580,
       "sha256": "52006fb7e14ef1d8369b107853d612083d5525fd63be4616f7a39ec9f343bc47"
+    },
+    "formal/audit/conditional-clock-final-binding-independent-evidence.json": {
+      "bytes": 1554,
+      "sha256": "09a59f0f6b95928d4da8a0e46ea56e2fff73ba88522e3f2510b9581c4503a3a1"
+    },
+    "formal/audit/conditional-clock-independent-evidence.json": {
+      "bytes": 8549,
+      "sha256": "f62c4ae72c0c3b6980cbd677803a73a147804be39f6f7523675e0f1ab17432e0"
+    },
+    "formal/audit/conditional-clock-independent-review.md": {
+      "bytes": 6394,
+      "sha256": "ce993967bf0e62e4c80da6a9634ac935108a522aaca5ee9351a6ff750bc16c98"
+    },
+    "formal/audit/conditional-clock-stage-declarations-axioms.lean": {
+      "bytes": 3677,
+      "sha256": "4424eecdafefe6b3fedc1e8443fa531df7ff2a1518aa12dedf471f357c9ce795"
+    },
+    "formal/audit/conditional-clock-stage-declarations-axioms.log": {
+      "bytes": 5742,
+      "sha256": "987c9b3a646320a2029713db4713ebda890c3597f399827f526634d41b40d712"
+    },
+    "formal/audit/conditional-clock-stage-declarations-build.log": {
+      "bytes": 238,
+      "sha256": "40d0892fce69cddcf2398136808f22af757947a833e0e3aed36044f66fb56023"
+    },
+    "formal/audit/conditional-clock-stage-declarations-validation.json": {
+      "bytes": 4141,
+      "sha256": "438f7b5746d69734110bae650d9bbe96b1710d9d2187862155ef32f00cee8d0a"
+    },
+    "formal/audit/conditional-clock-unified-independent-evidence.json": {
+      "bytes": 4936,
+      "sha256": "e3ffa4ac84850c2858e7a10c9552e1c414722f128db3ef3ab1e471d3901b4696"
+    },
+    "formal/audit/conditional-clock-unified-run.log": {
+      "bytes": 333685,
+      "sha256": "24123c752cac0134c650b97ca01783fa55e0a7668c5b95ae0f0bc7d0b1b1ada4"
     },
     "formal/audit/contour-foundation-declarations-validation.json": {
       "bytes": 22149,
@@ -1229,6 +1309,34 @@
       "bytes": 286382,
       "sha256": "dcf2f4bbe8a183275484a9933907ef104ba1fa6d80396c99ee67499a43690f82"
     },
+    "formal/audit/marked-clock-point-measure-draft-named.log": {
+      "bytes": 2626,
+      "sha256": "35420b7d93dbb608a0604a9036432ce32bdbd3829a970e179f320dd5e9c9c470"
+    },
+    "formal/audit/marked-clock-point-measure-draft-validation.json": {
+      "bytes": 1473,
+      "sha256": "108eb6e909aecfe65e28ea828f51459ec3c88c0311b90329d1bf4e82f5a9d6e6"
+    },
+    "formal/audit/marked-clock-point-measure-draft.log": {
+      "bytes": 122,
+      "sha256": "389580fce021236f46d8cf8e5ca9504d52b962c88f0e309dfa72a50adb3ffaa9"
+    },
+    "formal/audit/marked-conditional-count-draft-validation.json": {
+      "bytes": 452,
+      "sha256": "da294b5f023029fe48a225ee659be2ff250ad42120ccc22d49d62900dd9e5112"
+    },
+    "formal/audit/marked-conditional-count-draft.log": {
+      "bytes": 122,
+      "sha256": "389580fce021236f46d8cf8e5ca9504d52b962c88f0e309dfa72a50adb3ffaa9"
+    },
+    "formal/audit/marked-conditional-count-independent-evidence.json": {
+      "bytes": 3062,
+      "sha256": "74da42f7c89d598d98cfe7d5583196d56b2515d18c8ee858ae9299e420cfd39c"
+    },
+    "formal/audit/marked-conditional-count-independent-review.md": {
+      "bytes": 4112,
+      "sha256": "c9b7398590660b773d8cf1ecf9a81c0847b01b883d9a98d23f04f61ff56a87c5"
+    },
     "formal/audit/marked-deterministic-residual-draft.log": {
       "bytes": 107,
       "sha256": "22fc358634ccc2b62ab6186c3e79866e7b67d3ce41a394354099056766d56bf8"
@@ -1256,6 +1364,82 @@
     "formal/audit/marked-history-words-independent-review.md": {
       "bytes": 6166,
       "sha256": "fada1cfbac18aeb3659c2b8df40165124b51a6370d73135ed7c8148cfd0fc405"
+    },
+    "formal/audit/marked-interval-factor-draft-validation.json": {
+      "bytes": 997,
+      "sha256": "8ef0a83eb05ce88a46c3ad60b82e9a3a52ea80ba92abb5acfcd53caa486708a9"
+    },
+    "formal/audit/marked-interval-factor-draft.log": {
+      "bytes": 122,
+      "sha256": "389580fce021236f46d8cf8e5ca9504d52b962c88f0e309dfa72a50adb3ffaa9"
+    },
+    "formal/audit/marked-interval-factor-independent-evidence.json": {
+      "bytes": 2635,
+      "sha256": "c980ec1b257cb2279d6ca848e5c461f3f62dafac1b6268bd4a22ffc709d9f821"
+    },
+    "formal/audit/marked-interval-factor-independent-review.md": {
+      "bytes": 2978,
+      "sha256": "885d4272b3e5941695398128c80111c8a43c99f25bdfd7aee8c63f81fed851b4"
+    },
+    "formal/audit/marked-point-measure-independent-evidence.json": {
+      "bytes": 3221,
+      "sha256": "e1021b64b65a2896a354c550cfd7531a3e9e2cc3be0b0a9f6eb5137a50b1d4fd"
+    },
+    "formal/audit/marked-point-measure-independent-review.md": {
+      "bytes": 3442,
+      "sha256": "ee843c40520eeef7db1ccfef9dba2a08917771c38630d6cc9d1d94504a0526e3"
+    },
+    "formal/audit/marked-point-measure-stage-declarations-axioms.lean": {
+      "bytes": 1571,
+      "sha256": "9e69e50ba5c7c4edec7dbd523002c3b0f027fa452fcd05ee81687dc81ba09cee"
+    },
+    "formal/audit/marked-point-measure-stage-declarations-axioms.log": {
+      "bytes": 2626,
+      "sha256": "35420b7d93dbb608a0604a9036432ce32bdbd3829a970e179f320dd5e9c9c470"
+    },
+    "formal/audit/marked-point-measure-stage-declarations-build.log": {
+      "bytes": 239,
+      "sha256": "21db2dd7eeb74452d53a5ada9d55b3e51e5881eebd5beff9517dea1f1b22d9dc"
+    },
+    "formal/audit/marked-point-measure-stage-declarations-validation.json": {
+      "bytes": 1893,
+      "sha256": "c39274b09e50b16e38c2d97c632fe1e437a463519a8f6635d809437e11cfe1a6"
+    },
+    "formal/audit/marked-predictable-rectangles-draft-named.log": {
+      "bytes": 792,
+      "sha256": "de21029ceea2ee335ac77c4e1500791a0a86a32115d20e4a1ca1672c6e74e49d"
+    },
+    "formal/audit/marked-predictable-rectangles-draft-validation.json": {
+      "bytes": 1412,
+      "sha256": "c6c62ff384d4db75cccadb536887cecd14e9cc4ac45a4955a9416ea37857ee64"
+    },
+    "formal/audit/marked-predictable-rectangles-draft.log": {
+      "bytes": 122,
+      "sha256": "389580fce021236f46d8cf8e5ca9504d52b962c88f0e309dfa72a50adb3ffaa9"
+    },
+    "formal/audit/marked-predictable-rectangles-independent-evidence.json": {
+      "bytes": 1791,
+      "sha256": "500ab9448eae5e0a6daeaf5a9973cfbdbd3d1fbc85a72885837331a92c05071d"
+    },
+    "formal/audit/marked-predictable-rectangles-independent-review.md": {
+      "bytes": 3012,
+      "sha256": "72386669177328a123a51ed402f513cace61b6af4122e809d5bcba7723019299"
+    },
+    "formal/audit/marked-predictable-rectangles-stage-declarations-axioms.lean": {
+      "bytes": 474,
+      "sha256": "ff504e6abc74116b6b25455cd1bc4206a0a3bd077429255f679818f079a97bc8"
+    },
+    "formal/audit/marked-predictable-rectangles-stage-declarations-axioms.log": {
+      "bytes": 792,
+      "sha256": "de21029ceea2ee335ac77c4e1500791a0a86a32115d20e4a1ca1672c6e74e49d"
+    },
+    "formal/audit/marked-predictable-rectangles-stage-declarations-build.log": {
+      "bytes": 243,
+      "sha256": "d9a16de8c0b2164d6969e0cc819414ae5746ccf6b4fbdf8296ffd3fe0c354ea9"
+    },
+    "formal/audit/marked-predictable-rectangles-stage-declarations-validation.json": {
+      "bytes": 904,
+      "sha256": "5bea918d669b64225722820d6203c642c94a2ffa29fdc5274ff928cc56a4c74c"
     },
     "formal/audit/marked-residual-pair-draft.log": {
       "bytes": 107,
@@ -1941,6 +2125,14 @@
       "bytes": 12512,
       "sha256": "ab6dba4a5758ba812e324dd26773401675c8da3c9fcff5c2cb8dfac79d704fcd"
     },
+    "formal/drafts/ClockIntervalCount.lean": {
+      "bytes": 11365,
+      "sha256": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba"
+    },
+    "formal/drafts/ClockIntervalHistory.lean": {
+      "bytes": 9439,
+      "sha256": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d"
+    },
     "formal/drafts/DropletStoppedWord.lean": {
       "bytes": 6792,
       "sha256": "a0af04f2d51e94698c61424ecef265e09699bfd502c87ffb0bc5328ec79ed7f6"
@@ -1982,8 +2174,8 @@
       "sha256": "f0da37f31a9c74f987610d62f632c7dbe1180e511200494bcaf92af73ce4d5ea"
     },
     "formal/FORMALIZATION_MAP.md": {
-      "bytes": 4191,
-      "sha256": "71087fa5284767c7937a64755599663eb7e1805431e7e0701a9d66f5f5da7ccd"
+      "bytes": 4523,
+      "sha256": "755ee6a508eb6f10a69abd3aa680f636c42adef27bda8ec2bbb9ed220b4c92c0"
     },
     "formal/INFINITE_GRID_CONTRACT.md": {
       "bytes": 7723,
@@ -2003,7 +2195,7 @@
     },
     "formal/LEAN_README.md": {
       "bytes": 2113,
-      "sha256": "43319e07c2d18a9beff5094c120377f0b5b4a462b548c8735439a708b1fc0f7b"
+      "sha256": "0bb6f28c4495e99e130b29d84157add9563c9901f0f69240e2a954162596eb34"
     },
     "formal/MathResearch/Dynamics.lean": {
       "bytes": 13422,
@@ -2153,6 +2345,10 @@
       "bytes": 2370,
       "sha256": "f7712dcbf1e2a152aeb109b5143f07bdd7232efa9664d21d91500ae00f4dace3"
     },
+    "formal/PROGRESS_2026-10-22_CONDITIONAL_CLOCK.md": {
+      "bytes": 1908,
+      "sha256": "f95c753b94194e9c576c772496d87d2dc0d088fa94655ca3efe069ef2662b5d4"
+    },
     "formal/scripts/audit_clock_arrival_count_tail_stage.py": {
       "bytes": 2993,
       "sha256": "843f8d31ecc71897ba67ade79e5c61b3e2e35af6ac27d3943d6c9292dc56dd32"
@@ -2168,6 +2364,10 @@
     "formal/scripts/audit_clock_word_consistency_stage.py": {
       "bytes": 2975,
       "sha256": "011c6ba73ae7d3077b4b9107aa35f5a80c950bd80145dafd6abe6bfccaea2bde"
+    },
+    "formal/scripts/audit_conditional_clock_stage.py": {
+      "bytes": 2963,
+      "sha256": "b904b28c245d2e01c53468d5ed4e6750f4649206447b75d4e5c07f07bee9b547"
     },
     "formal/scripts/audit_exit_area_stage.py": {
       "bytes": 2888,
@@ -2188,6 +2388,14 @@
     "formal/scripts/audit_marked_clock_filtration_stage.py": {
       "bytes": 2969,
       "sha256": "b0aaf3ba9d219fa1ad5efab11c75af4f8ff8752911d6306644c915fae7cf84fa"
+    },
+    "formal/scripts/audit_marked_point_measure_stage.py": {
+      "bytes": 2973,
+      "sha256": "3c6b903edf8190bc54d152d111f309dce3fe29be9d85bd0d15927b43ec8214bc"
+    },
+    "formal/scripts/audit_marked_predictable_rectangles_stage.py": {
+      "bytes": 3001,
+      "sha256": "2b48a7efa815d17f8e2fc6227319ff50eeb749f9da690e46d99722110273f5b7"
     },
     "formal/scripts/audit_marked_residual_pair_stage.py": {
       "bytes": 2989,
@@ -2282,20 +2490,20 @@
       "sha256": "2c2e753be0524eff01afcb1e917439e63d47a31a70a5f575881c9f3daae8e3ee"
     },
     "formal/scripts/package_lean.py": {
-      "bytes": 11073,
-      "sha256": "7d71a66421609b45bb83d8b01fdde81ae41d8fed275e841c6ec6c1f0e7b4f2fc"
+      "bytes": 11350,
+      "sha256": "31f36fcd1d28b25d4141790b805ad3e0917bffca8239d37e84d68d14e1dfc2ff"
     },
     "formal/scripts/validate_analysis.py": {
-      "bytes": 14771,
-      "sha256": "ecc422274eb119560be66e3eb9538e60c7eca3bcec5f309a547b4dbeed0f6e65"
+      "bytes": 15999,
+      "sha256": "4a670359460bb5cbe6ccd267c87f632947f805b033a745e91c312d03e39b2bae"
     },
     "formal/scripts/validate_core.py": {
       "bytes": 4835,
       "sha256": "46824eaf3120cdc66bf96f03e2505b1e3db247b6542e13a8fe1d1e0ca4ba3c93"
     },
     "README.md": {
-      "bytes": 5213,
-      "sha256": "1c976a7fdc4b93ba6d456d723849d43474e040a59edabe404bcdc57a92fc5905"
+      "bytes": 5306,
+      "sha256": "1880a57fe1fbc034c971aa495244822dd0087b26a7e921de31d060feaea52ba5"
     },
     "research/followup/ca_clean_proof.md": {
       "bytes": 18540,
@@ -2317,6 +2525,10 @@
       "bytes": 30223,
       "sha256": "877c607148e74ac1117db5123c8966a437c39087b9fddda6100b78b60e72765b"
     },
+    "research/followup/METHOD_LEDGER_2026-10-22.md": {
+      "bytes": 6682,
+      "sha256": "02b138430f45c810891a6936ed97bf3b0bb13899353488d39bf808c10268adf4"
+    },
     "research/followup/novelty_review.md": {
       "bytes": 16731,
       "sha256": "2b9488251619c374216469eafdbc47abaa5ea73dc771d5c358c5f2eb5d396e80"
@@ -2334,8 +2546,8 @@
       "sha256": "af8311dfa887da0c0c81fc394feb468084b8983672b91a6217bf2be0e97c31a5"
     },
     "STATUS.md": {
-      "bytes": 3098,
-      "sha256": "38ad6d23acfb9fd0ae8b7ba1ad6c42ab8540852ed7799148cbcff095d54461de"
+      "bytes": 3404,
+      "sha256": "04327baa4ea82dd51c70281c774fa303f64ba54e4574fa242a0bbf979ba1af3b"
     },
     "形式化独立核查_2026-10-14.md": {
       "bytes": 3538,

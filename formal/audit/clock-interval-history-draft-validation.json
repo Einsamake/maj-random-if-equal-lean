@@ -1,0 +1,30 @@
+{
+  "validated_at": "2026-10-22T01:45:45.263066+08:00",
+  "source": "formal/drafts/ClockIntervalHistory.lean",
+  "source_sha256": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d",
+  "theorems": 5,
+  "named_declarations": 6,
+  "names": [
+    "increment",
+    "cap_cutoff_mono",
+    "increment_nonneg",
+    "increment_zero_of_arrival_le",
+    "increment_lintegral",
+    "gap_increment_lintegral_on_history"
+  ],
+  "standard_kernel_trust_level": 0,
+  "compile_and_full_named_axiom_exit": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_warning_lines": [],
+  "scope": "fixed actual clock-gap occupation increment integrated on any original common-history event equals its arrival-window mass; general V and any real s<=t; no Poisson law, conditional-count mean or compensation premise",
+  "dependency_sha256": {
+    "ClockRingMean": "0671bcfe53420b2dd5f191285e74be72015e26eff7274f18590b7138c0121e27",
+    "FutureGapHistory": "175267a0f8b2542c7277e1a021f50d928d6e9a4dbddc3ffe66019b675171fc89",
+    "ClockGapOccupation": "d8f0eaf55d63ba5cf2cccb12174e8508c8dbca369f3fc5bf2c06869652566f89",
+    "TruncatedExponential": "75dbfb03810aed08f435f90f4a5d6f1d5b46126b5d8a6fa5126dff9e19c32b9c"
+  }
+}

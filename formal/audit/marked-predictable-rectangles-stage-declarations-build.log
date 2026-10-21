@@ -1,0 +1,6 @@
+✔ [3912/3912] Built MathResearchAnalysis.MarkedPredictableRectangles (12s)
+Build completed successfully (3912 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

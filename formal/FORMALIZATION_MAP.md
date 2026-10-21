@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析179个证明模块、2420条辅助定理、180份分析源；核心125条定理及1模型、8源未变。合计188份正式源、2545条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-21T21:05:20.067211+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
+分析185个证明模块、2480条辅助定理、186份分析源；核心125条定理及1模型、8源未变。合计194份正式源、2605条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-22T02:01:03.158845+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
 
 | 内容 | 主要模块 | 当前边界 |
 |---|---|---|
@@ -21,6 +21,7 @@
 | 真正停时后的单site新标记 | UnrevealedMarkInvariance、StoppedMarkSlices、StoppedFreshMark | 实际fair law、与F_R独立、jointwaiting尾；actual exit∧T已实例化；固定single-site；MarkedResidualPair已给完整Borel pairlaw/停止历史独立性 |
 | 实际响铃计数、可积和精确平均 | MarkedRingCount、MarkedRingIntegrability、ClockGapOccupation、TruncatedExponential、ClockRingMean | ENNReal保∞、原历史可测、有限horizon可积；t≥0真实E[count_t]=t；未声称条件增量或物理补偿 |
 | 未来gap重置保持历史 | FutureGapHistory | 只需该ring仍在未来，原jointF事件保持；不是保测度/未来law |
+| 原历史条件计数与真实事件测度 | ClockIntervalHistory、ClockIntervalCount、MarkedIntervalFactor、MarkedConditionalCount、MarkedClockPointMeasure、MarkedPredictableRectangles | 原F_s上E[count(s,t]]=t-s，每色一半；真实事件sum积分与有限质量T/2、生成矩形质量；未证全可预测σ补偿 |
 | 物理补偿、CMST/FSS | 尚无完整闭合模块 | 当前主缺口，不能以这些结论作最终参数 |
 | τ(N)=Θ(N²) | 尚未验收 | 不宣称完成，不按定理条数估完成百分比 |
 

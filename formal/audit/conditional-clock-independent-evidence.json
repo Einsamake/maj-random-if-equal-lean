@@ -1,0 +1,166 @@
+{
+  "reviewed_at": "2026-10-22T02:04:08.855765+08:00",
+  "review_agent": "/root/interval_mark_factor",
+  "review_kind": "Independent AI source and existing kernel-evidence review, not a human expert certification",
+  "status": "independent_source_formal_named_and_unified_pass",
+  "modules": {
+    "ClockIntervalCount": {
+      "draft_source_sha256": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba",
+      "theorems": 18,
+      "named_declarations": 19,
+      "fully_qualified_names": [
+        "MathResearchAnalysis.ClockIntervalCount.count",
+        "MathResearchAnalysis.ClockIntervalCount.count_measurable",
+        "MathResearchAnalysis.ClockIntervalCount.count_history_measurable",
+        "MathResearchAnalysis.ClockIntervalCount.count_add",
+        "MathResearchAnalysis.ClockIntervalCount.count_le_total",
+        "MathResearchAnalysis.ClockIntervalCount.count_finite_ae",
+        "MathResearchAnalysis.ClockIntervalCount.count_lintegral_ne_top",
+        "MathResearchAnalysis.ClockIntervalCount.count_toReal_integrable",
+        "MathResearchAnalysis.ClockIntervalCount.count_toReal_eq_sub_ae",
+        "MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum",
+        "MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum_restrict",
+        "MathResearchAnalysis.ClockIntervalCount.exposure_mono",
+        "MathResearchAnalysis.ClockIntervalCount.exposure_increment_nonnegative",
+        "MathResearchAnalysis.ClockIntervalCount.exposure_increment_measurable",
+        "MathResearchAnalysis.ClockIntervalCount.exposure_increment_zero_of_arrived",
+        "MathResearchAnalysis.ClockIntervalCount.sum_exposure_increment",
+        "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_of_before",
+        "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_ae",
+        "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_joint_ae"
+      ],
+      "draft_standard_trust0_verified": true,
+      "draft_exit_zero_verified": true,
+      "new_lean_warnings": [],
+      "draft_dependency_hashes_verified": {
+        "ClockGapOccupation": "d8f0eaf55d63ba5cf2cccb12174e8508c8dbca369f3fc5bf2c06869652566f89",
+        "MarkedRingIntegrability": "2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c"
+      },
+      "formal_named_verified": true,
+      "unified_verified": true,
+      "formal_named_validation_at": "2026-10-22T01:53:06.434252+08:00",
+      "formal_source_sha256": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba"
+    },
+    "ClockIntervalHistory": {
+      "draft_source_sha256": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d",
+      "theorems": 5,
+      "named_declarations": 6,
+      "fully_qualified_names": [
+        "MathResearchAnalysis.ClockIntervalHistory.increment",
+        "MathResearchAnalysis.ClockIntervalHistory.cap_cutoff_mono",
+        "MathResearchAnalysis.ClockIntervalHistory.increment_nonneg",
+        "MathResearchAnalysis.ClockIntervalHistory.increment_zero_of_arrival_le",
+        "MathResearchAnalysis.ClockIntervalHistory.increment_lintegral",
+        "MathResearchAnalysis.ClockIntervalHistory.gap_increment_lintegral_on_history"
+      ],
+      "draft_standard_trust0_verified": true,
+      "draft_exit_zero_verified": true,
+      "new_lean_warnings": [],
+      "draft_dependency_hashes_verified": {
+        "ClockRingMean": "0671bcfe53420b2dd5f191285e74be72015e26eff7274f18590b7138c0121e27",
+        "FutureGapHistory": "175267a0f8b2542c7277e1a021f50d928d6e9a4dbddc3ffe66019b675171fc89",
+        "ClockGapOccupation": "d8f0eaf55d63ba5cf2cccb12174e8508c8dbca369f3fc5bf2c06869652566f89",
+        "TruncatedExponential": "75dbfb03810aed08f435f90f4a5d6f1d5b46126b5d8a6fa5126dff9e19c32b9c"
+      },
+      "formal_named_verified": true,
+      "unified_verified": true,
+      "formal_named_validation_at": "2026-10-22T01:53:06.434252+08:00",
+      "formal_source_sha256": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d"
+    },
+    "MarkedConditionalCount": {
+      "formal_source_sha256": "acddadaf3cff37550c1a0901aef2997712cd73ff420855352287578e501766b3",
+      "theorems": 14,
+      "named_declarations": 15,
+      "fully_qualified_names": [
+        "MathResearchAnalysis.MarkedConditionalCount.gap_increment_lintegral_on_history",
+        "MathResearchAnalysis.MarkedConditionalCount.count_lintegral_on_history",
+        "MathResearchAnalysis.MarkedConditionalCount.count_integral_on_history",
+        "MathResearchAnalysis.MarkedConditionalCount.original_count_increment_integral",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_measurable",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_le_count",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_finite_ae",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_add",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_toReal_eq_sub_ae",
+        "MathResearchAnalysis.MarkedConditionalCount.lintegral_markedCount_eq_tsum",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_lintegral_on_history",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_integral_on_history",
+        "MathResearchAnalysis.MarkedConditionalCount.original_marked_increment_integral",
+        "MathResearchAnalysis.MarkedConditionalCount.markedCount_toReal_integrable"
+      ],
+      "formal_named_verified": true,
+      "formal_named_validation_at": "2026-10-22T01:53:06.434252+08:00",
+      "unified_verified": true
+    }
+  },
+  "main_quadratic_theorem_complete": false,
+  "lean_sources_modified_by_reviewer": false,
+  "review_target_builds_started_by_reviewer": false,
+  "own_mark_factor_module_not_self_certified": true,
+  "semantic_checks": {
+    "actual_original_clock_and_mark_law_retained": true,
+    "interval_is_left_open_right_closed": true,
+    "ENNReal_counts_retain_infinity": true,
+    "real_count_difference_only_after_AE_finite": true,
+    "integrability_uses_actual_expected_total_count_bound": true,
+    "one_cofinal_AE_set_covers_all_real_times": true,
+    "history_elimination_only_on_unfinished_gap_support": true,
+    "finished_gap_increment_pointwise_zero": true,
+    "reset_not_asserted_to_preserve_probability_law": true,
+    "true_deleted_gap_product_law_used": true,
+    "scalar_increment_uses_finite_lintegral_sub_and_actual_cap_means": true,
+    "arbitrary_prior_and_negative_gap_cases_covered": true,
+    "no_Poisson_or_conditional_count_mean_input": true,
+    "no_full_future_strong_Markov_claim": true,
+    "actual_fixed_mark_sections_are_clock_past_measurable": true,
+    "actual_product_Tonelli_transports_to_original_joint_history": true,
+    "arbitrary_past_event_including_zero_mass_not_normalized": true,
+    "actual_conditional_total_and_fair_mark_increment_identities": true,
+    "fair_marks_not_actual_color_changes": true
+  },
+  "formal_named_stage": {
+    "validated_at": "2026-10-22T01:53:06.434252+08:00",
+    "all_named_outputs_checked": 43,
+    "independent_other_author_named_declarations": 40,
+    "own_module_3_named_mechanically_checked_not_self_semantic_certified": true,
+    "all_source_and_printed_name_orders_exact": true,
+    "standard_kernel_trust_level": 0,
+    "build_exit": 0,
+    "axiom_audit_exit": 0,
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "new_lean_warning_lines": [],
+    "independent_other_author_theorems": 37
+  },
+  "unified_verified": true,
+  "unified_validation_at": "2026-10-22T02:01:03.158845+08:00",
+  "global_source_and_axiom_exact_check": {
+    "analysis": {
+      "sources": 186,
+      "complete_public_axiom_outputs": 2480,
+      "all_source_sets_sha_and_public_names_orders_exact": true,
+      "axioms_verified": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "validation_at": "2026-10-22T02:01:03.158845+08:00",
+      "rebuild_performed_this_stage": true
+    },
+    "core": {
+      "sources": 8,
+      "complete_public_axiom_outputs": 126,
+      "all_source_sets_sha_and_public_names_orders_exact": true,
+      "axioms_verified": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "validation_at": "2026-10-14T21:18:34.078751+08:00",
+      "rebuild_performed_this_stage": false
+    }
+  }
+}

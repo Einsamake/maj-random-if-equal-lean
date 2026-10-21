@@ -1,0 +1,44 @@
+{
+  "validated_at": "2026-10-22T01:52:51.748119+08:00",
+  "source": "formal/drafts/MarkedClockPointMeasure.lean",
+  "source_sha256": "af44bef41a3eb6421e30e5181d066e7bec7fdf97981511bbfc2481028e60cbf9",
+  "theorems": 15,
+  "definitions": 4,
+  "named_instances": 1,
+  "named_declarations": 20,
+  "names": [
+    "window",
+    "point",
+    "measure",
+    "carrier",
+    "window_measurable",
+    "point_measurable",
+    "point_sample",
+    "point_time_of_window",
+    "arrival_positive_ae",
+    "window_measure_eq",
+    "measure_apply",
+    "carrier_measurable",
+    "point_mem_carrier",
+    "measure_compl_carrier",
+    "ae_carrier",
+    "measure_univ_eq_tsum",
+    "measure_univ_eq",
+    "finite_measure",
+    "lintegral_eq_tsum",
+    "lintegral_eq_pathwise_sum"
+  ],
+  "standard_kernel_trust_level": 0,
+  "draft_compile_exit": 0,
+  "full_named_axiom_exit": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_warning_lines": [],
+  "scope": "actual positive marked arrival point measure on NNReal x original samples up to finite horizon; measurable window/point, arbitrary measurable apply, concentration on (0,T], exact mass T/2, finite measure, actual nonnegative pathwise-sum integration; no predictable sigma, canonical dt measure, Poisson law or compensation conclusion",
+  "dependency_sha256": {
+    "MarkedRingMean": "7bdf1c47646b277ac2ff45ce1064e21d8555b0f8a2e6cb520e5dd0000e640294"
+  }
+}

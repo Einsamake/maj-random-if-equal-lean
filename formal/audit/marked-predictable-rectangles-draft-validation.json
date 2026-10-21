@@ -1,0 +1,29 @@
+{
+  "validated_at": "2026-10-22T01:58:09.878515+08:00",
+  "source": "formal/drafts/MarkedPredictableRectangles.lean",
+  "source_sha256": "f9aac06913dc852b7cf84b7e5db581217fccacf5c1dac5497c07e5a40c28e886",
+  "theorems": 5,
+  "named_declarations": 5,
+  "names": [
+    "point_time_gt_iff",
+    "future_rectangle_of_le",
+    "future_rectangle_zero",
+    "future_rectangle",
+    "zero_rectangle"
+  ],
+  "standard_kernel_trust_level": 0,
+  "draft_compile_exit": 0,
+  "full_named_axiom_exit": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_warning_lines": [],
+  "scope": "actual marked point measure mass on original-history future rectangles Ioi(s) x E equals positive-part (T-s)/2 times original E probability; zero-time rectangles and rectangles beyond horizon have zero mass even for nonmeasurable E; no canonical time measure or predictable sigma equality or full compensation",
+  "original_nnHistory_verified": "RationalProtectedExit.nnHistory is exactly original joint history restricted to NNReal; rightHistory is the separate right continuation; this module uses original MarkedClockFiltration.history directly",
+  "dependency_sha256": {
+    "MarkedClockPointMeasure": "af44bef41a3eb6421e30e5181d066e7bec7fdf97981511bbfc2481028e60cbf9",
+    "MarkedConditionalCount": "acddadaf3cff37550c1a0901aef2997712cd73ff420855352287578e501766b3"
+  }
+}

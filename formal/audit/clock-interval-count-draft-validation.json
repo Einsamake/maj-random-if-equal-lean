@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-22T01:46:05.018458+08:00",
+  "source": "formal/drafts/ClockIntervalCount.lean",
+  "source_sha256": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba",
+  "theorems": 18,
+  "named_declarations": 19,
+  "names": [
+    "MathResearchAnalysis.ClockIntervalCount.count",
+    "MathResearchAnalysis.ClockIntervalCount.count_measurable",
+    "MathResearchAnalysis.ClockIntervalCount.count_history_measurable",
+    "MathResearchAnalysis.ClockIntervalCount.count_add",
+    "MathResearchAnalysis.ClockIntervalCount.count_le_total",
+    "MathResearchAnalysis.ClockIntervalCount.count_finite_ae",
+    "MathResearchAnalysis.ClockIntervalCount.count_lintegral_ne_top",
+    "MathResearchAnalysis.ClockIntervalCount.count_toReal_integrable",
+    "MathResearchAnalysis.ClockIntervalCount.count_toReal_eq_sub_ae",
+    "MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum",
+    "MathResearchAnalysis.ClockIntervalCount.lintegral_count_eq_tsum_restrict",
+    "MathResearchAnalysis.ClockIntervalCount.exposure_mono",
+    "MathResearchAnalysis.ClockIntervalCount.exposure_increment_nonnegative",
+    "MathResearchAnalysis.ClockIntervalCount.exposure_increment_measurable",
+    "MathResearchAnalysis.ClockIntervalCount.exposure_increment_zero_of_arrived",
+    "MathResearchAnalysis.ClockIntervalCount.sum_exposure_increment",
+    "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_of_before",
+    "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_ae",
+    "MathResearchAnalysis.ClockIntervalCount.tsum_exposure_increment_joint_ae"
+  ],
+  "standard_kernel_trust_level": 0,
+  "command": "lake env lean --trust=0 ../drafts/ClockIntervalCount.lean",
+  "lean_exit": 0,
+  "new_lean_warnings": [],
+  "formal_dependency_sha256": {
+    "ClockGapOccupation": "d8f0eaf55d63ba5cf2cccb12174e8508c8dbca369f3fc5bf2c06869652566f89",
+    "MarkedRingIntegrability": "2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c"
+  },
+  "scope": "actual original-law interval (s,t] count retains infinity; history measurability, all-sample prefix-plus-interval decomposition, finite-horizon expected-count control precedes real integrability/difference; general/restricted Tonelli; clipped-gap exposure increments telescope to elapsed duration on one genuine cofinal AE set including actual joint law; no conditional mean, compensation, recovery-time or CMST/FSS result"
+}

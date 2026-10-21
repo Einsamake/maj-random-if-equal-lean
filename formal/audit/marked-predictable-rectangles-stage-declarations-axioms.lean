@@ -1,0 +1,7 @@
+import MathResearchAnalysis.MarkedPredictableRectangles
+
+#print axioms MathResearchAnalysis.MarkedPredictableRectangles.point_time_gt_iff
+#print axioms MathResearchAnalysis.MarkedPredictableRectangles.future_rectangle_of_le
+#print axioms MathResearchAnalysis.MarkedPredictableRectangles.future_rectangle_zero
+#print axioms MathResearchAnalysis.MarkedPredictableRectangles.future_rectangle
+#print axioms MathResearchAnalysis.MarkedPredictableRectangles.zero_rectangle

@@ -1,0 +1,20 @@
+{
+  "validated_at": "2026-10-22T01:45:02.245270+08:00",
+  "source": "formal/drafts/MarkedIntervalFactor.lean",
+  "source_sha256": "3921aa6da26f2387cdb9833fceadc0c51848392f78eb8c20f336396845c1b7ed",
+  "theorems": 3,
+  "names": [
+    "clock_event_factor",
+    "window_event_factor",
+    "window_set_factor"
+  ],
+  "standard_kernel_trust_level": 0,
+  "lean_exit": 0,
+  "new_lean_warnings": [],
+  "formal_dependency_sha256": {
+    "StoppedMarkSlices": "613902a397525f9fcc884d78fe3bb0f1a096965e0e5eb48614f7e10f048ac276",
+    "UnrevealedMarkInvariance": "0aa824e23cdea413b5e6e4973b7a80dbea33fce53ff261b4c88a99c5f58df225",
+    "MarkedClockFiltration": "bb62f020596e7712eb99754909f143878696b2f8496ea73d6d7a594104f9e99c"
+  },
+  "scope": "fixed actual future identity fair-mark factor under arbitrary original joint-past event and measurable clock-only event placing identity strictly in future; no conditional count, future-vector independence, compensation or recovery-time statement"
+}

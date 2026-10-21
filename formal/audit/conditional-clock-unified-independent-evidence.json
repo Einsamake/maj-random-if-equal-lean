@@ -1,0 +1,122 @@
+{
+  "reviewed_at": "2026-10-22T02:04:16.353780+08:00",
+  "review_agent": "/root/interval_count",
+  "review_kind": "Independent exact source sets, byte hashes and complete actual standard-kernel outputs; mathematical semantic review restricted to modules not authored by this reviewer; not human expert certification",
+  "status": "unified_validation_pass_final_this_stage",
+  "unified_validation_at": "2026-10-22T02:01:03.158845+08:00",
+  "analysis": {
+    "sources": 186,
+    "complete_axiom_outputs": 2480,
+    "all_source_sets_and_sha_exact": true,
+    "all_axiom_names_and_order_exact_including_apostrophes": true,
+    "names_order_sha256": "68677d22625905c781333886817ee01232e15ead814b51f63b4048d0682ead00",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "core": {
+    "sources": 8,
+    "complete_axiom_outputs": 126,
+    "all_source_sets_and_sha_exact": true,
+    "all_axiom_names_and_order_exact_including_apostrophes": true,
+    "names_order_sha256": "d6f1254dfefda23fbc8aaffb4d7c2113e39bcec2b4b72f68f3a6b92429a3a513",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "validation_at": "2026-10-14T21:18:34.078751+08:00",
+    "rebuilt_in_this_phase": false
+  },
+  "total_formal_sources": 194,
+  "complete_global_axiom_outputs_verified": 2606,
+  "new_stage_theorems": 60,
+  "new_stage_named_declarations": 68,
+  "complete_named_groups": [
+    {
+      "prefix": "conditional-clock-stage-declarations",
+      "modules": [
+        "ClockIntervalHistory",
+        "ClockIntervalCount",
+        "MarkedIntervalFactor",
+        "MarkedConditionalCount"
+      ],
+      "named_declarations": 43,
+      "validation_at": "2026-10-22T01:53:06.434252+08:00",
+      "source_sha256": {
+        "MathResearchAnalysis/ClockIntervalHistory.lean": "2c98e9461c7321981cf072f55e01dabd29fa5ef8851a13cf4d6771525e70332d",
+        "MathResearchAnalysis/ClockIntervalCount.lean": "06e16194a2eb24b3fcc9a695ea15cb3ff793fc36715e8c1800d2798eafa0f8ba",
+        "MathResearchAnalysis/MarkedIntervalFactor.lean": "3921aa6da26f2387cdb9833fceadc0c51848392f78eb8c20f336396845c1b7ed",
+        "MathResearchAnalysis/MarkedConditionalCount.lean": "acddadaf3cff37550c1a0901aef2997712cd73ff420855352287578e501766b3"
+      },
+      "count": 43,
+      "names_order_sha256": "2c9528eb78ab0a0a932459483c91fb7a74a6961fd5bd18825f369b93f9857ff8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "prefix": "marked-point-measure-stage-declarations",
+      "modules": [
+        "MarkedClockPointMeasure"
+      ],
+      "named_declarations": 20,
+      "validation_at": "2026-10-22T01:54:56.264095+08:00",
+      "source_sha256": {
+        "MathResearchAnalysis/MarkedClockPointMeasure.lean": "af44bef41a3eb6421e30e5181d066e7bec7fdf97981511bbfc2481028e60cbf9"
+      },
+      "count": 20,
+      "names_order_sha256": "ee320e3b3bbc37e88c71345509c3fce8a33ff54029f85ade5fdd53dde141edd6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "prefix": "marked-predictable-rectangles-stage-declarations",
+      "modules": [
+        "MarkedPredictableRectangles"
+      ],
+      "named_declarations": 5,
+      "validation_at": "2026-10-22T01:59:37.083260+08:00",
+      "source_sha256": {
+        "MathResearchAnalysis/MarkedPredictableRectangles.lean": "f9aac06913dc852b7cf84b7e5db581217fccacf5c1dac5497c07e5a40c28e886"
+      },
+      "count": 5,
+      "names_order_sha256": "9220acb73dba6b57d010ee601d3aece1ba5c05ee137da8d3ae4ff43558622324",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "semantic_review_by_this_agent": [
+    "MarkedIntervalFactor",
+    "MarkedConditionalCount",
+    "MarkedPredictableRectangles"
+  ],
+  "point_measure_semantics_primary_independent_report": "marked-point-measure-independent-review.md",
+  "reviewer_authored_ClockIntervalCount_not_claimed_as_independent_semantic_review": true,
+  "all_formal_sources_fingerprint_sha256": "82a831a62c6b1c62e3005eb2b3f17f5bb12e96d0a0b057b261f12aa3410b339e",
+  "compiler_and_pinned_mathlib_verified": true,
+  "build_exit_verified": 0,
+  "standard_kernel_trust0_audit_exit_verified": 0,
+  "only_three_standard_axioms": true,
+  "new_lean_warning_lines": [],
+  "main_quadratic_recovery_theorem_complete": false,
+  "remaining_scope": [
+    "equality on the full genuine predictable sigma-algebra",
+    "predictable pre-update state and physical compensation/Dynkin",
+    "cumulative forbidden-birth mask correction",
+    "self-contained CMST/FSS core contraction tails",
+    "final original exact-N quadratic recovery bounds"
+  ],
+  "lean_sources_modified_by_reviewer": false,
+  "lean_builds_started_by_reviewer": false
+}

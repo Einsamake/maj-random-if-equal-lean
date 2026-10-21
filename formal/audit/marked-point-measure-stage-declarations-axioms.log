@@ -1,0 +1,48 @@
+'MathResearchAnalysis.MarkedClockPointMeasure.window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.point' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.carrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.window_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.point_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.point_sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.point_time_of_window' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.arrival_positive_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.window_measure_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.measure_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.carrier_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.point_mem_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.measure_compl_carrier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.ae_carrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.measure_univ_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.measure_univ_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.finite_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.lintegral_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedClockPointMeasure.lintegral_eq_pathwise_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
