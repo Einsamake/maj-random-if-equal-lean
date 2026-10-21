@@ -30,6 +30,8 @@ paths = [ROOT / name for name in ['docs/PROOF_GUIDE.md', 'docs/VERIFICATION.md',
     'research/followup/PROGRESS_ESTIMATE_2026-10-14.md',
     'research/followup/REVIEW_DIRECTION_2026-10-14.md',
     'research/followup/CLEANUP_AUDIT_2026-10-14.md']]
+paths += [ROOT/'docs/render_explainer.py']
+paths += sorted(p for p in (ROOT/'docs/images').iterdir() if p.is_file())
 paths += sorted(path for path in (ROOT / 'reports' / 'initial-research').iterdir()
                 if path.is_file())
 paths += sorted(path for path in (ROOT / 'scripts').iterdir()

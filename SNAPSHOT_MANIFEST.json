@@ -9,9 +9,53 @@
       "bytes": 104,
       "sha256": "848723863a0079aeb3ea586f4a86b4dd1fd008cf2b8373b8f487d5d0631f33a8"
     },
+    "docs/images/01-rule.png": {
+      "bytes": 47587,
+      "sha256": "bf5140eaa94f5a619381575e0e1082e165e3c5b979f29efae3fcffd97d00b217"
+    },
+    "docs/images/02-evolution.png": {
+      "bytes": 52257,
+      "sha256": "dbb632ded193b529012c65d5bcdf968af778b74cf3223b92d280d3f1e3274318"
+    },
+    "docs/images/03-evolution.gif": {
+      "bytes": 194661,
+      "sha256": "b670fbca28b11ffc2b61164a34338664324e43602483c1cf76834cd043f1ad8e"
+    },
+    "docs/images/04-recovery-times.png": {
+      "bytes": 58058,
+      "sha256": "03e140eb3be5e0422c22182269317ee0eae97633cb3d546ea626cfdeb5fd165b"
+    },
+    "docs/images/05-worst-case.png": {
+      "bytes": 71338,
+      "sha256": "3aa75aca93b6e2cef12c910eefd3bb9089c4042f9d3be25c9fbee34ef8ae8219"
+    },
+    "docs/images/06-current-bridge.png": {
+      "bytes": 91142,
+      "sha256": "f41c169642c5b1b152a174cd30b6addc0f1d0091c78bb0febecc4bb99416f419"
+    },
+    "docs/images/07-fresh-coin.png": {
+      "bytes": 89991,
+      "sha256": "62cbc74e569ad7d5708317d9628c3675600eb4188c5ebe9829fb41b9bd22997f"
+    },
+    "docs/images/08-local-change.png": {
+      "bytes": 70417,
+      "sha256": "dada6cc54e784233a47b447946818f7ec7d1a952e14d021223b4fd26af4e98f1"
+    },
+    "docs/images/README.md": {
+      "bytes": 2182,
+      "sha256": "281ad71d1255ada0d88c142609afaa89c442686f050e583c0358cadb625f1b69"
+    },
+    "docs/images/simulation-data.json": {
+      "bytes": 46791,
+      "sha256": "19f3849c5fc904b3da20802af597131992b334a60b0dcd3fd82b57d276b92c49"
+    },
     "docs/PROOF_GUIDE.md": {
-      "bytes": 9625,
-      "sha256": "95af2ae0b4c67fb64ff164bec29cc531efafb1fff8bb92117e4ede74cf15d56b"
+      "bytes": 4986,
+      "sha256": "f7dffe1f4c1fadcd3ebb64bc37b276b70d891e032d3abb42a0d33f752f7c6941"
+    },
+    "docs/render_explainer.py": {
+      "bytes": 12537,
+      "sha256": "9ffd3f4fb07517110647906a1cd58221f2c95951961c82d56976b0c23f33ba36"
     },
     "docs/VERIFICATION.md": {
       "bytes": 1237,
@@ -1870,8 +1914,8 @@
       "sha256": "2c2e753be0524eff01afcb1e917439e63d47a31a70a5f575881c9f3daae8e3ee"
     },
     "formal/scripts/package_lean.py": {
-      "bytes": 10662,
-      "sha256": "3eaf251433b6e24dccc6a7550a38205b3e981e33b345514df1d572a04301fcbe"
+      "bytes": 10781,
+      "sha256": "b8d5d8c259bbd1aa50990ba25ee26b5bb5a29647712baac8a3579ccdc18d1a12"
     },
     "formal/scripts/validate_analysis.py": {
       "bytes": 13572,
@@ -1882,8 +1926,8 @@
       "sha256": "46824eaf3120cdc66bf96f03e2505b1e3db247b6542e13a8fe1d1e0ca4ba3c93"
     },
     "README.md": {
-      "bytes": 5921,
-      "sha256": "6b53733bf117c2c8b1e3143a71a68909a3b9be42955bf053162d2768d7d2de12"
+      "bytes": 4979,
+      "sha256": "867fdd2b1bda47845a34c50d2f56b338c2cf089a84520ada2ea85de2e8be4b03"
     },
     "research/followup/ca_clean_proof.md": {
       "bytes": 18540,
