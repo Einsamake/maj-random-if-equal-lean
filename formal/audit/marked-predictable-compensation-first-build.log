@@ -1,0 +1,4 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3915/3915] Built MathResearchAnalysis.MarkedPredictableCompensation (12s)
+Build completed successfully (3915 jobs).

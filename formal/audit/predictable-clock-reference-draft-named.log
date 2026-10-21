@@ -1,0 +1,39 @@
+'MathResearchAnalysis.PredictableClockReference.timeMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_Ioi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_apply_prod' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_future_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_zero_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.lintegral_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

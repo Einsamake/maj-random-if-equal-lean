@@ -50,3 +50,20 @@ MarkedPredictableRectangles把真实event pointmeasure的Ioi(s)×E_s质量改写
 可复用思路：先在真实clockHistory上证明“单gap在未来区间的平均占用=该区间到时概率”，再固定完整marks取原jointF_s的clock截面，用真实产品Fubini搬回共同历史。非负Tonelli把时间轴占用总和变成条件计数均值；全程不先建立完整Poisson强Markov向量。未来identity的fairflip保持整个过去事件与clock窗口，再给每色预配标记半系数。随后实际期望事件测度只在过去决定的未来矩形上识别质量，不能把总质量相同误当成全ambient product测度相同。
 
 对读者：看过此前全部记录，后面的平均响铃速度仍每格每单位时间一次；预配硬币标记各一半。这是下一步累计面积变化的计数基础，并没有证明整块小岛何时消失。[条件计数独立报告](../../formal/audit/marked-conditional-count-independent-review.md) · [最终全局证据](../../formal/audit/conditional-clock-unified-independent-evidence.json)。
+
+## 06:42续阶段：真实补偿的实现路线与当前核查边界
+
+本轮将先前原过去条件下的生成矩形质量推广到mathlib标准nnHistory.predictable σ：canonical参考是未归一化的真实Lebesgue(0,T]时间乘原μ再乘1/2；标准σ的π生成和有限trim测度唯一性只是一般工具，实际point/reference需用原已证矩形质量实例化。随后仅对predictable可测权，经lintegral_trim前后搬运，返回真实逐identity响铃和及Real时间积分。整个ambient产品σ的测度相等不成立也不被宣称。
+
+三个模块已独立语义复核，并于本阶段最终统一验收后完成29named及全源指纹绑定。Real积分等式的非可积总定义不自动是有限期望，另需真正bounded integrability；实际pre-event面积权仍需单独证明可预测。当前仍非完整面积Dynkin或CMST/FSS界。
+
+
+## 原历史的真实可预测补偿：最终独立证据闭合
+
+2026-10-22T06:55:29.030091+08:00统一197正式源：189分析源2504公开辅助定理，另8核心旧源125定理及1模型，共2630实际公理输出。独立核查代理/root/interval_mark_factor已从全部正式源码重取公开名表，逐名逐序核对打印表和真实输出，全部source集/SHA匹配；三个新模块24theorem/29named专项也逐名同序、冻结指纹一致。分析实际build0、standardtrust0 audit0，仅三标准公理、零新Lean警告；核心只核旧源指纹相同，未重编。
+
+可复用方法：先用未归一化Lebesgue(0,T]×原μ/2建立真实参考测度；在mathlib标准原历史predictable的π生成矩形和总质量上核对两有限测度，以有限唯一性得到trim相等；lintegral_trim把结论搬回真实逐identity事件和。这样只需要此前真正证明的过去条件计数规律，不必假设全部未来向量强Markov，也不把整个ambient产品σ的等价当作输入。
+
+给读者的解释：每次真实响铃前，只用那时已经知道的信息给这次响铃记一个非负分数。所有响铃分数相加后的平均值，可以换成随真实时间连续累计的平均分数，再乘该预配公平标记的速率一半；实际改色次数不是各一半。Real有界可预测权另证真正可积，避免把不可积Bochner总定义误读成有限期望。
+
+本阶段尚未证明真实更新前图形和面积变化权本身可预测，也未完成signed逐路径面积和/Dynkin、mask禁止出生累计修正、自含CMST/FSS收缩尾或τ(N)=Θ(N²)。独立AI复核不是人类专家或新颖性认证。[最终独立绑定](../../formal/audit/predictable-compensation-final-binding-independent-evidence.json)。

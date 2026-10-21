@@ -1,0 +1,63 @@
+{
+  "reviewed_at": "2026-10-22T06:57:04.469318+08:00",
+  "review_agent": "/root/interval_mark_factor",
+  "status": "final_unified_binding_pass",
+  "review_kind": "Independent other-author mathematics and complete actual kernel evidence/source-set check; not human certification",
+  "analysis": {
+    "sources": 189,
+    "public_theorems": 2504,
+    "complete_public_axiom_outputs": 2504,
+    "validation_at": "2026-10-22T06:55:29.030091+08:00",
+    "all_source_sets_sha_public_name_table_output_orders_exact": true,
+    "validation_sha256": "0601b2e4cb4f7cdd6d3d558c0bb38b52947c938a82d26c1a7fc247cfa67189d4",
+    "public_table_sha256": "e271048e52fc0787d6a5b372ebe1c1f76ff8533b843bbdadfcbe66be03c87ad7",
+    "actual_axiom_log_sha256": "39afa6eef51162b57ca9c3fe409b89304d34d5d6464530f0e62569c165cc8c31",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rebuild_performed_this_stage": true
+  },
+  "core": {
+    "sources": 8,
+    "public_theorems": 125,
+    "complete_public_axiom_outputs": 126,
+    "validation_at": "2026-10-14T21:18:34.078751+08:00",
+    "all_source_sets_sha_public_name_table_output_orders_exact": true,
+    "validation_sha256": "f01795bc4ff47bbca4c29c4dca23d4e1cef545709144b99bc3ca987f6ea5bcb1",
+    "public_table_sha256": "5201d7968116632af42eca7100f6abfe424ae147530e5d87a00315f3a709e246",
+    "actual_axiom_log_sha256": "9e9f92fffe24e161e0cd49d79e05d517287314590d812fb579de88f8a33e6b37",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rebuild_performed_this_stage": false
+  },
+  "total_formal_sources": 197,
+  "total_public_axiom_outputs_verified": 2630,
+  "new_stage_modules": [
+    "PredictableClockReference",
+    "PredictableClockSigma",
+    "MarkedPredictableCompensation"
+  ],
+  "new_stage_theorems": 24,
+  "new_stage_named_declarations": 29,
+  "other_author_semantic_scope": "All three new modules; author of earlier factor module did not self-certify it",
+  "public_count_excludes_private_source_helpers": true,
+  "main_theorem_complete": false,
+  "target_Lean_sources_modified_or_built_by_reviewer": false,
+  "scope": "Genuine compensation of nonnegative original-history standard-predictable weights; equality only after predictable trim; actual pre-event state, signed area Dynkin, CMST/FSS and quadratic theorem still missing",
+  "metadata_scope_rebinding": {
+    "checked_at": "2026-10-22T06:58:06.343659+08:00",
+    "old_validation_sha256": "a9903a64a07552c8bac5be352c7a6e802151360fcb5bafeb585fdee3c67a6008",
+    "new_validation_sha256": "0601b2e4cb4f7cdd6d3d558c0bb38b52947c938a82d26c1a7fc247cfa67189d4",
+    "only_validation_field_changed": "scope",
+    "exact_reverse_text_reconstruction_matches_previous_full_record_sha256": true,
+    "all_197_source_hashes_unchanged": true,
+    "actual_public_tables_and_axiom_logs_unchanged": true,
+    "Lean_rebuild_required_or_started": false,
+    "change": "Clarify outstanding physical-area generator/Dynkin; actual predictable compensation remains proved"
+  }
+}

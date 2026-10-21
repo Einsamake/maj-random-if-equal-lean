@@ -1,0 +1,26 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+'MathResearchAnalysis.PredictableClockSigma.generators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.predictable_eq_generateFrom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generators_isPiSystem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generator_measurable_predictable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.predictable_le_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generator_measurable_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.trim_eq_of_rectangle_masses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.trim_apply_on_predictable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+
+EXIT_CODE=0

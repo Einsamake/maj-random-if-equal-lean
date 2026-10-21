@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-22T06:49:39.224061+08:00",
+  "source": "formal/drafts/PredictableClockReference.lean",
+  "source_sha256": "5d496e8efb5726433283141d8d7e3779aaa57b9044d919ca64fbd81c04f88fd0",
+  "theorems": 9,
+  "definitions": 2,
+  "named_instances": 2,
+  "named_declarations": 13,
+  "names": [
+    "timeMeasure",
+    "reference",
+    "timeMeasure_apply",
+    "timeMeasure_univ",
+    "timeMeasure_finite",
+    "timeMeasure_Ioi",
+    "timeMeasure_zero",
+    "reference_apply_prod",
+    "reference_univ",
+    "reference_finite",
+    "reference_future_rectangle",
+    "reference_zero_rectangle",
+    "lintegral_reference"
+  ],
+  "standard_kernel_trust_level": 0,
+  "draft_compile_exit": 0,
+  "full_named_axiom_exit": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_warning_lines": [],
+  "scope": "genuine Real Lebesgue volume restricted to (0,T] and mapped to NNReal; finite time and half-rate original-sample product measures with exact masses, future/zero rectangles, and nonnegative real-time integral formula; not equality to actual event measure, predictable sigma equality or compensation",
+  "dependency_sha256": {
+    "DropletClockLaw": "b3ce76806be0776350e772800412ca82f3ea5c50bb5d40469a033dcd31693b1f"
+  }
+}

@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析185个证明模块、2480条辅助定理、186份分析源；核心125条定理及1模型、8源未变。合计194份正式源、2605条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-22T02:01:03.158845+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
+分析188个证明模块、2504条辅助定理、189份分析源；核心125条定理及1模型、8源未变。合计197份正式源、2629条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-22T06:55:29.030091+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
 
 | 内容 | 主要模块 | 当前边界 |
 |---|---|---|
@@ -19,7 +19,7 @@
 | marked-history停时后残余等待 | MarkedStoppedResidual、ProtectedExitResidual | single-site Exp(1)与停止σ独立；实际exit∧T真正finite实例；非完整未来vector；真实单site freshmark见下行 |
 | 正确面积势与有限率代数 | MaskedAreaGenerator、ProtectedAreaPotential | mask支持、D-relative面积有界可积、精确被禁birth修正；非物理补偿 |
 | 真正停时后的单site新标记 | UnrevealedMarkInvariance、StoppedMarkSlices、StoppedFreshMark | 实际fair law、与F_R独立、jointwaiting尾；actual exit∧T已实例化；固定single-site；MarkedResidualPair已给完整Borel pairlaw/停止历史独立性 |
-| 实际响铃计数、可积和精确平均 | MarkedRingCount、MarkedRingIntegrability、ClockGapOccupation、TruncatedExponential、ClockRingMean | ENNReal保∞、原历史可测、有限horizon可积；t≥0真实E[count_t]=t；未声称条件增量或物理补偿 |
+| 实际响铃计数、可积和精确平均 | MarkedRingCount、MarkedRingIntegrability、ClockGapOccupation、TruncatedExponential、ClockRingMean | ENNReal保∞、原历史可测、有限horizon可积；t≥0真实E[count_t]=t；原历史条件增量及非负可预测贡献补偿见后续模块；未声称实际面积Dynkin |
 | 未来gap重置保持历史 | FutureGapHistory | 只需该ring仍在未来，原jointF事件保持；不是保测度/未来law |
 | 原历史条件计数与真实事件测度 | ClockIntervalHistory、ClockIntervalCount、MarkedIntervalFactor、MarkedConditionalCount、MarkedClockPointMeasure、MarkedPredictableRectangles | 原F_s上E[count(s,t]]=t-s，每色一半；真实事件sum积分与有限质量T/2、生成矩形质量；未证全可预测σ补偿 |
 | 物理补偿、CMST/FSS | 尚无完整闭合模块 | 当前主缺口，不能以这些结论作最终参数 |
@@ -30,3 +30,6 @@
 [真实停时后的新标记](PROGRESS_2026-10-21_FRESH_MARK.md)。
 
 [实际计数与精确均值](PROGRESS_2026-10-21_CLOCK_MEAN.md)。
+
+
+[真实逐次响铃的可预测补偿](PROGRESS_2026-10-22_PREDICTABLE_COMPENSATION.md)：新增3模块24定理/29命名声明；仅在标准原历史可预测σ上比较真实事件测度与时间参考测度，不是全ambient积σ等价。更新前真实状态及面积Dynkin尚待连接。

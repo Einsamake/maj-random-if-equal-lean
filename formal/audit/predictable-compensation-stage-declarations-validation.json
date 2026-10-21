@@ -1,0 +1,54 @@
+{
+  "validated_at": "2026-10-22T06:54:49.315294+08:00",
+  "modules": [
+    "PredictableClockReference",
+    "PredictableClockSigma",
+    "MarkedPredictableCompensation"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure",
+    "MathResearchAnalysis.PredictableClockReference.reference",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_apply",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_univ",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_finite",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_Ioi",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_zero",
+    "MathResearchAnalysis.PredictableClockReference.reference_apply_prod",
+    "MathResearchAnalysis.PredictableClockReference.reference_univ",
+    "MathResearchAnalysis.PredictableClockReference.reference_finite",
+    "MathResearchAnalysis.PredictableClockReference.reference_future_rectangle",
+    "MathResearchAnalysis.PredictableClockReference.reference_zero_rectangle",
+    "MathResearchAnalysis.PredictableClockReference.lintegral_reference",
+    "MathResearchAnalysis.PredictableClockSigma.generators",
+    "MathResearchAnalysis.PredictableClockSigma.predictable_eq_generateFrom",
+    "MathResearchAnalysis.PredictableClockSigma.generators_isPiSystem",
+    "MathResearchAnalysis.PredictableClockSigma.generator_measurable_predictable",
+    "MathResearchAnalysis.PredictableClockSigma.predictable_le_ambient",
+    "MathResearchAnalysis.PredictableClockSigma.generator_measurable_ambient",
+    "MathResearchAnalysis.PredictableClockSigma.trim_eq_of_rectangle_masses",
+    "MathResearchAnalysis.PredictableClockSigma.trim_apply_on_predictable",
+    "MathResearchAnalysis.MarkedPredictableCompensation.trim_eq_reference",
+    "MathResearchAnalysis.MarkedPredictableCompensation.lintegral_eq_reference",
+    "MathResearchAnalysis.MarkedPredictableCompensation.lintegral_eq_time",
+    "MathResearchAnalysis.MarkedPredictableCompensation.pathwise_lintegral_eq_time",
+    "MathResearchAnalysis.MarkedPredictableCompensation.integral_eq_reference",
+    "MathResearchAnalysis.MarkedPredictableCompensation.integrable_iff_reference",
+    "MathResearchAnalysis.MarkedPredictableCompensation.integrable_point_of_bounded",
+    "MathResearchAnalysis.MarkedPredictableCompensation.integrable_reference_of_bounded"
+  ],
+  "declarations_count": 29,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/PredictableClockReference.lean": "5d496e8efb5726433283141d8d7e3779aaa57b9044d919ca64fbd81c04f88fd0",
+    "MathResearchAnalysis/PredictableClockSigma.lean": "e1af8cf6b0142d6b696bfa0fcb44d39f900d763679e7547c1da50819d0a273a0",
+    "MathResearchAnalysis/MarkedPredictableCompensation.lean": "3bcc2868bd86a853477ef7fb671bf3aabe2df32316287442b15f5a9c4b3e6260"
+  },
+  "new_lean_warning_lines": []
+}

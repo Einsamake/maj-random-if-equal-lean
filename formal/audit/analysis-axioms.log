@@ -3389,6 +3389,30 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.MarkedIntervalFactor.window_set_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.trim_eq_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.lintegral_eq_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.lintegral_eq_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.pathwise_lintegral_eq_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.integral_eq_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.integrable_iff_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.integrable_point_of_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedPredictableCompensation.integrable_reference_of_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.MarkedPredictableRectangles.point_time_gt_iff' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -4149,6 +4173,54 @@
  Quot.sound]
 'MathResearchAnalysis.PerturbationSymmetry.difference_square' depends on axioms: [propext, Quot.sound]
 'MathResearchAnalysis.PerturbationSymmetry.distance_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_Ioi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.timeMeasure_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_apply_prod' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_future_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.reference_zero_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockReference.lintegral_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.predictable_eq_generateFrom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generators_isPiSystem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generator_measurable_predictable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.predictable_le_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.generator_measurable_ambient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.trim_eq_of_rectangle_masses' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableClockSigma.trim_apply_on_predictable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.ProtectedAreaPotential.stoppedStep_supported' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]

@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-10-22T06:57:04.469318+08:00",
+  "review_agent": "/root/interval_mark_factor",
+  "review_kind": "Independent other-author formal source semantics plus actual named and complete unified kernel evidence/source-set check; not human certification",
+  "status": "final_unified_binding_pass",
+  "module": "PredictableClockReference",
+  "reviewed_draft_source_sha256": "5d496e8efb5726433283141d8d7e3779aaa57b9044d919ca64fbd81c04f88fd0",
+  "theorems": 9,
+  "named_declarations": 13,
+  "fully_qualified_names": [
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure",
+    "MathResearchAnalysis.PredictableClockReference.reference",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_apply",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_univ",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_finite",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_Ioi",
+    "MathResearchAnalysis.PredictableClockReference.timeMeasure_zero",
+    "MathResearchAnalysis.PredictableClockReference.reference_apply_prod",
+    "MathResearchAnalysis.PredictableClockReference.reference_univ",
+    "MathResearchAnalysis.PredictableClockReference.reference_finite",
+    "MathResearchAnalysis.PredictableClockReference.reference_future_rectangle",
+    "MathResearchAnalysis.PredictableClockReference.reference_zero_rectangle",
+    "MathResearchAnalysis.PredictableClockReference.lintegral_reference"
+  ],
+  "formal_named_verified": true,
+  "unified_verified": true,
+  "main_quadratic_theorem_complete": false,
+  "Lean_sources_modified_by_reviewer": false,
+  "builds_started_by_reviewer": false,
+  "existing_draft_kernel_and_named_verified": true,
+  "formal_source_sha256": "5d496e8efb5726433283141d8d7e3779aaa57b9044d919ca64fbd81c04f88fd0",
+  "formal_named_validation_at": "2026-10-22T06:54:49.315294+08:00",
+  "formal_named_audit_validation": "predictable-compensation-stage-declarations-validation.json",
+  "formal_named_table_sha256": "53f9b012850d21220cc8fa3a3956a105e6b2bb5fadc68b5e1f746e26ccb046a5",
+  "formal_named_log_sha256": "105f8c246e0910110d8d3be8ec7dc8f1355287d7136fbf3c27d270577722d466",
+  "formal_named_source_table_output_order_exact": true,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "kernel_trust_level": 0,
+  "new_lean_warning_lines": [],
+  "unified_analysis": {
+    "sources": 189,
+    "public_theorems": 2504,
+    "complete_public_axiom_outputs": 2504,
+    "validation_at": "2026-10-22T06:55:29.030091+08:00",
+    "all_source_sets_sha_public_name_table_output_orders_exact": true,
+    "validation_sha256": "0601b2e4cb4f7cdd6d3d558c0bb38b52947c938a82d26c1a7fc247cfa67189d4",
+    "public_table_sha256": "e271048e52fc0787d6a5b372ebe1c1f76ff8533b843bbdadfcbe66be03c87ad7",
+    "actual_axiom_log_sha256": "39afa6eef51162b57ca9c3fe409b89304d34d5d6464530f0e62569c165cc8c31",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rebuild_performed_this_stage": true
+  },
+  "unchanged_core": {
+    "sources": 8,
+    "public_theorems": 125,
+    "complete_public_axiom_outputs": 126,
+    "validation_at": "2026-10-14T21:18:34.078751+08:00",
+    "all_source_sets_sha_public_name_table_output_orders_exact": true,
+    "validation_sha256": "f01795bc4ff47bbca4c29c4dca23d4e1cef545709144b99bc3ca987f6ea5bcb1",
+    "public_table_sha256": "5201d7968116632af42eca7100f6abfe424ae147530e5d87a00315f3a709e246",
+    "actual_axiom_log_sha256": "9e9f92fffe24e161e0cd49d79e05d517287314590d812fb579de88f8a33e6b37",
+    "axioms_verified": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "rebuild_performed_this_stage": false
+  },
+  "total_formal_sources": 197,
+  "total_public_axiom_outputs_verified": 2630,
+  "metadata_scope_rebinding": {
+    "checked_at": "2026-10-22T06:58:06.343659+08:00",
+    "old_validation_sha256": "a9903a64a07552c8bac5be352c7a6e802151360fcb5bafeb585fdee3c67a6008",
+    "new_validation_sha256": "0601b2e4cb4f7cdd6d3d558c0bb38b52947c938a82d26c1a7fc247cfa67189d4",
+    "only_validation_field_changed": "scope",
+    "exact_reverse_text_reconstruction_matches_previous_full_record_sha256": true,
+    "all_197_source_hashes_unchanged": true,
+    "actual_public_tables_and_axiom_logs_unchanged": true,
+    "Lean_rebuild_required_or_started": false,
+    "change": "Clarify outstanding physical-area generator/Dynkin; actual predictable compensation remains proved"
+  }
+}

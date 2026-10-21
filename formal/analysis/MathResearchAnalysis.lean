@@ -203,6 +203,11 @@ public import MathResearchAnalysis.ClockIntervalCount
 public import MathResearchAnalysis.ClockIntervalHistory
 public import MathResearchAnalysis.MarkedRingIntegrability
 
+public import MathResearchAnalysis.PredictableClockReference
+public import MathResearchAnalysis.PredictableClockSigma
+
+public import MathResearchAnalysis.MarkedPredictableCompensation
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real
@@ -295,8 +300,9 @@ a proved single actual boundary cycle and a full-frontier simple closed curve
 with genuine Euclidean extended arc length equal to their minimum-rectangle
 perimeter. Actual modified and stopped event trajectories satisfy the existing
 GeometricGood strictly before protected exit; infinity is retained, and the
-exact exit is not included in this Good conclusion. Generator and full physical
-stopped-process laws, bounds at the
+exact exit is not included in this Good conclusion. Actual nonnegative predictable event weights have a proved pathwise compensation
+formula under the original marked history. The actual pre-update state
+predictability and area Dynkin formula, bounds at the
 quadratic scale, the full future-vector Poisson strong Markov characterization,
 the CMST/FSS droplet theorems and the complete CA theorem remain unproved.
 -/

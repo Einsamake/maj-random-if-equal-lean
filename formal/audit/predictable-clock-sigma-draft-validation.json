@@ -1,0 +1,35 @@
+{
+  "validated_at": "2026-10-22T06:53:40.851597+08:00",
+  "source": "formal/drafts/PredictableClockSigma.lean",
+  "source_sha256": "e1af8cf6b0142d6b696bfa0fcb44d39f900d763679e7547c1da50819d0a273a0",
+  "theorems": 7,
+  "named_declarations": 8,
+  "names": [
+    "MathResearchAnalysis.PredictableClockSigma.generators",
+    "MathResearchAnalysis.PredictableClockSigma.predictable_eq_generateFrom",
+    "MathResearchAnalysis.PredictableClockSigma.generators_isPiSystem",
+    "MathResearchAnalysis.PredictableClockSigma.generator_measurable_predictable",
+    "MathResearchAnalysis.PredictableClockSigma.predictable_le_ambient",
+    "MathResearchAnalysis.PredictableClockSigma.generator_measurable_ambient",
+    "MathResearchAnalysis.PredictableClockSigma.trim_eq_of_rectangle_masses",
+    "MathResearchAnalysis.PredictableClockSigma.trim_apply_on_predictable"
+  ],
+  "standard_kernel_trust_level": 0,
+  "compile_exit": 0,
+  "full_named_axiom_exit": 0,
+  "compile_command": "lake env lean --trust=0 ../drafts/PredictableClockSigma.lean",
+  "named_command": "lake env lean --trust=0 ../audit/predictable-clock-sigma-draft-axioms.lean",
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_warning_lines": [],
+  "dependency_sha256": {
+    "RationalProtectedExit": "01c980055f630b528203175abb1146508bbaa0ac52dccd8ce39db57c65973972",
+    "mathlib_probability_process_predictable": "ecb4070a76335c9c5011e070fa0657551cac169c7b104c0036c71946f00be2c4",
+    "mathlib_measure_trim": "65a37dc4229368be279537f60a1ca9f6bc2099b2bf454c8c6410abbf9eed0632",
+    "mathlib_finite_measure": "ae5d31b0728c6dfdfbd38bee1cadac262c088d084e2abc34d7913dcd45b541a3"
+  },
+  "scope": "exact standard mathlib Filtration.predictable of RationalProtectedExit.nnHistory, original F reindexed to NNReal, definitionally same generator family; pi-system and ambient inclusion; generic finite-measure rectangle uniqueness after trimming; not rightHistory, not a smaller replacement sigma, not actual event/reference equality or physical compensation without separate genuine rectangle premises"
+}
