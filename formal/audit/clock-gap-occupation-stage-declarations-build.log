@@ -1,0 +1,6 @@
+✔ [3785/3785] Built MathResearchAnalysis.ClockGapOccupation (19s)
+Build completed successfully (3785 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

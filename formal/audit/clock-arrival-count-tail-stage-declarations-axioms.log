@@ -1,0 +1,16 @@
+'MathResearchAnalysis.ClockArrivalCountTail.constant_chain_le_arrival_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockArrivalCountTail.arrival_event_subset_chain_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockArrivalCountTail.arrival_measureReal_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockArrivalCountTail.arrival_measure_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

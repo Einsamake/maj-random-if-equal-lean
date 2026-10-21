@@ -1,0 +1,16 @@
+'MathResearchAnalysis.MarkedRingMean.arrival_mark_event_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_half_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingMean.integral_markedCount_eq_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

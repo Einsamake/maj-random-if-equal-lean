@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-21T20:30:16.292407+08:00",
+  "modules": [
+    "MarkedResidualPair"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedResidualPair.pair",
+    "MathResearchAnalysis.MarkedResidualPair.pair_measurable",
+    "MathResearchAnalysis.MarkedResidualPair.waiting_event_factor",
+    "MathResearchAnalysis.MarkedResidualPair.waiting_event_mark_map",
+    "MathResearchAnalysis.MarkedResidualPair.rectangle_factor",
+    "MathResearchAnalysis.MarkedResidualPair.restricted_map_eq",
+    "MathResearchAnalysis.MarkedResidualPair.pair_hasLaw",
+    "MathResearchAnalysis.MarkedResidualPair.pair_independent_stopped_history",
+    "MathResearchAnalysis.MarkedResidualPair.waiting_mark_independent",
+    "MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_hasLaw",
+    "MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_independent_stopped_history"
+  ],
+  "declarations_count": 11,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedResidualPair.lean": "ad4a5f022662d5bed6f14801d2ac60b865a93c0c63daf52654917b3e3227e140"
+  },
+  "new_lean_warning_lines": []
+}

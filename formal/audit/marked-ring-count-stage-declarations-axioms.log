@@ -1,0 +1,40 @@
+'MathResearchAnalysis.MarkedRingCount.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_history_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_history_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_le_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_eq_card_of_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_eq_finite_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_ne_top_of_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_eq_top_of_all_arrived' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.lintegral_count_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.lintegral_markedCount_eq_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.arrival_event_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.lintegral_count_eq_clock_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.count_zero_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedRingCount.markedCount_zero_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

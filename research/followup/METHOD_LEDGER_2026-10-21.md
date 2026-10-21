@@ -145,3 +145,70 @@ StoppedFreshMark正式18theorem/19named（含实际boundedExit三个实例），
 单site fresh-mark阶段已经提供比threshold更强的结构：candidate内翻转同时保持R、停止过去和实际waiting。因此对任意可测A取G=E∩waiting⁻¹'A，可以直接调用既有invariant_factor，不必重走CDF/tail唯一性。G不必属于F_R，ambient可测和candidate内不变性足够。再用Bool singleton ext和有限product measure的矩形唯一性，接已验收的waiting限制law，有望得到完整Exp×fair pairlaw及pair与F_R独立。限制measure直接保留质量μ(E)，无需除以μ(E)，因而零质量事件无需额外条件化分支。
 
 这目前是新模块的路线审查，不是新Lean验收或方法新颖性认证；需要最终源/命名/统一审计才可更新。它仍是固定site结论，物理补偿、多site强Markov和CMST/FSS核心尾未由此给出。见[独立路线审查](../../formal/audit/marked-residual-pair-independent-review.md)。
+
+
+## MarkedResidualPair草稿原文语义核对：完整联合规律可直接调用
+
+草稿10theorem/11named逐原文语义通过，SHA ad4a5f022662d5bed6f14801d2ac60b865a93c0c63daf52654917b3e3227e140，正式模块/命名专项/统一审计仍待证据，不新增验收计数。关键连接已落实在源码：任意waiting可测事件与停止过去的交集仅需ambient可测，candidate内flip保持它；Bool singleton ext给完整mark限制law，有限product矩形唯一性接已验收waiting限制Exp law，直接得到完整pair限制law及pair与F_R独立。没有由marginal独立误推joint，也未对零质量历史事件作除法。
+
+对读者的意义：下一次等待和硬币可作为一个整体交给后续证明调用，不必反复重证它们与过去的关系；这仍不是小岛消退时间的核心概率界。hfinite、hpos和原∞fallback保留，两个实际boundedExit实例无需未截断exit有限。范围固定single-site，物理补偿/多site未来/CMST-FSS尾未由此闭合。见[独立源码报告](../../formal/audit/marked-residual-pair-independent-review.md)。
+
+
+## MarkedResidualPair正式命名专项通过，统一仍待完成
+
+正式源与已审草稿SHA一致，10theorem/11named；2026-10-21T20:30:16.292407+08:00实际Lake build0、standard trust0公理审计0，11named源码/打印表/实际输出逐名逐序匹配，仅标准三公理，零新Lean warning。独立核查不改Lean不构建。最终统一待计数/tail新组一起完成，因此暂不更新旧2321/179基线。完整pair与过去记录独立已在模块中实际证明，但不推出多site未来或物理补偿；核心二次概率界仍缺。
+
+
+## 实际响铃计数与到时低尾：两组正式专项已通过，有限平均仍待下一组
+
+ClockArrivalCountTail 4theorem/4named和MarkedRingCount 20theorem/22named均经独立源码语义、正式SHA与全部named逐名逐序核查，实际build0/standardtrust0仅三标准公理，零新Lean warning；最终全局待后续可积模块一并验证。常site路径和id arrival witness给第k+1响事件包含于旧greedy-chain事件，复用a=1低尾得到P(arrival_k≤t)≤exp(t)·2^-(k+1)，没有把Poisson count law、精确均值或可积性作为输入。
+
+实际count/markedCount用ENNReal指示tsum保∞；原F_t适应由已到时/已揭示mark事件逐项证明。共同AE集合覆盖所有site、所有实t；Tonelli只用非负和环境可测，保∞。有限时刻路径有限不被当作有限平均；下一组必须真实求和到时概率级数。这些接口不是物理补偿或原二次主定理。[到时低尾核查](../../formal/audit/clock-arrival-count-tail-independent-review.md) · [原历史计数核查](../../formal/audit/marked-ring-count-independent-review.md)。
+
+
+## 实际响铃计数有限平均：草稿与同SHA正式源语义通过
+
+MarkedRingIntegrability冻结源16theorem/16named，SHA 2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c。实际draft standardtrust0退出0、依赖hash和原文均核对，正式named及全局仍待证据。关键步骤是actual到时概率级数逐项≤exp(t)·2^-(k+1)，真的把几何级数加为1，先证ENNReal扩展期望≤exp(t)<∞，然后才toReal可积。没有以AE路径有限代替有限平均。
+
+对读者：有限截止时间前的平均响铃次数有了严格上界；不超过该截止时间的随机观察也有同样控制。但这里数的是响铃次数，仍未给出整块图全白时间。随机R≤T仅由计数单调性得到扩展积分界，无需停时；实代表可积另有Measurable R。实际boundedExit.untopD只用于真正先cap再转的有限定义，未假设原退出有限。[独立审查](../../formal/audit/marked-ring-integrability-independent-review.md)。
+
+
+## 2026-10-21 20:46:21 联合概率与计数四模块最终统一验收
+
+MarkedResidualPair10/11、ClockArrivalCountTail4/4、MarkedRingCount20/22、MarkedRingIntegrability16/16，合计50theorem/53named，正式源、专项命名输出与最终统一已独立绑定。完整183源集合与全部SHA、2371分析+126核心共2497项公理输出逐名逐序匹配（包括声明名中的撇号），实际统一build0/standardtrust0 audit0，仅三标准公理、零新Lean warning。核心8源旧hash未变，本轮未重编。四组独立报告/evidence已统一通过冻结。[全局独立证据](../../formal/audit/marked-ring-integrability-unified-independent-evidence.json)。
+
+对读者：下一次等待与硬币已可作为一个整体使用；有限截止时间前的平均响铃次数也真正证明有限，允许不超过截止时间的随机观察。前者准备联合随机计算，后者排除累计更新时平均次数无限的缺口。它们仍不等于“整块图何时全白”；真实条件增量/物理补偿、辅助边界修正的累计控制及自含CMST/FSS平方时间核心界仍缺。辅助定理数不能换算主定理完成百分比，独立AI不是人类专家确认。
+
+
+## 真实gap时间占用与确定截断指数均值：独立专项核查通过
+
+ClockGapOccupation9theorem/10named与TruncatedExponential23/24均已独立原文语义、同SHA正式/草稿及专项完整命名顺序核查，实际build0/standardtrust0 audit0，仅标准三公理，零新Lean warning。最终全局仍待下一统一证据，不加入旧183/2371验收规模。
+
+第一步是时间轴的确定性望远镜：从0到t，把每个实际等待段的已用长度相加，几乎必然恰为t；只在最后调用同一全site cofinal事件覆盖全部时间。第二步先证明确定截断等待可积，再用真实指数尾的layer-cake积分得到E[min(X,a)]=P(X≤a)=1-exp(-a)，保a≥0与a=0，负输入点态clip处理。两步均不使用计数均值或补偿前提。
+
+这使“每段等待贡献多少时间”和“该次响铃是否发生”的平均关系有了可直接组合的接口；随机截断的独立性、实际计数精确均值与物理补偿仍需下一模块，不是岛屿消退时间界。见[gap独立报告](../../formal/audit/clock-gap-occupation-independent-review.md)与[截断指数独立报告](../../formal/audit/truncated-exponential-independent-review.md)。
+
+
+## 精确实际响铃均值与严格未来gap历史不变性：正式专项独立核查
+
+ClockRingMean4theorem/4named及FutureGapHistory9/10均已独立原文语义、同SHA正式/草稿、专项源码/打印表/完整输出逐名逐序核查；实际build0和standardtrust0仅标准三公理，零新Lean warning。连同ClockGapOccupation与TruncatedExponential，新四组45theorem/48named专项通过，新的统一全局仍待实际证据。
+
+平均响铃次数=t的证明先真实删除单gap，以原infinite product独立性分解为rest×Exp，再逐rest调用确定截断指数均值，最后Tonelli与时间轴占用望远镜求和。这修复“随机cutoff能否套固定指数law”的关键接口：不假设它与gap独立，而是证明它只依赖rest并实际Fubini。计数保ENNReal和∞，扩展期望有限后才取实代表。所得每site物理rate=1，不是计数Poisson law或补偿。
+
+历史模块另证明指定arrival严格晚于r已足够：无须假设其前一次arrival已经发生。reset保原clock/marked全部past事件，但不被称为保measure或future law。它为真正历史加权平均、条件增量及补偿提供连接，尚未完成这些结论。对普通读者：每格点平均每单位时间响一次已获严格依据，但图形何时全白仍缺核心概率界。[均值审查](../../formal/audit/clock-ring-mean-independent-review.md) · [未来gap审查](../../formal/audit/future-gap-history-independent-review.md)。
+
+
+## 2026-10-21 20:57:40 精确实际响铃均值四模块最终统一验收
+
+ClockGapOccupation9/10、TruncatedExponential23/24、ClockRingMean4/4与FutureGapHistory9/10，合计45theorem/48named，专项及实际统一已独立精确绑定。全部187正式源（179analysis+8core）的集合与SHA、2416分析+126核心共2542项完整公理输出逐名逐序匹配，含撇号名称；实际build0/standardtrust0 audit0，仅标准三公理、零新Lean warning。核心8源旧hash未变，本阶段未重编核心。四当前报告/evidence已更新统一通过，前文待统一叙述作为形成记录由此闭合。[统一独立证据](../../formal/audit/exact-ring-mean-unified-independent-evidence.json)。
+
+对读者：现在确知每个格点观察t单位时间平均响t次，证明从真实指数等待与时间轴分割得到；还确知强制延后任何仍未发生的指定响铃不改变过去记录。这仍不是按过去图形加权的条件增量/补偿，更没有给出整块扰动的平方消退时间界。计数/定理规模不换算完成百分比；独立AI不是人类专家认证。
+
+
+## 2026-10-21 21:05:20 本轮最终统一验收：真实总计数及两类预配标记均值
+
+全部188正式源（180analysis+8core）精确集合与SHA、2420分析+126核心共2546项实际公理输出与打印表逐名逐序独立匹配，包含撇号名称；实际build0/standardtrust0 audit0，仅标准三公理，零新增Lean warning。核心8源旧hash未变，本阶段未重编核心。ClockGapOccupation9/10、TruncatedExponential23/24、ClockRingMean4/4、FutureGapHistory9/10、MarkedRingMean4/4，共49theorem/52named专项和统一同SHA全部冻结，五报告/evidence已更新；前文待统一状态由本次闭合。[最终独立证据](../../formal/audit/marked-ring-mean-unified-independent-evidence.json)。
+
+新增两类标记均值=t/2来自每个固定identity真实clock到时事件×fair mark singleton的乘积质量，再真实非负Tonelli求和；先保ENNReal/∞，有限扩展均值后才取实代表，不用∞减法。这里预配硬币mark可在多数确定更新中被忽略，所以不是实际改黑/改白次数各半。确定时间固定site均值仍不能替代过去图形加权的条件增量或可预见补偿。
+
+对读者：现在知道观察一个格点t单位时间平均响t次、两类公平标记各t/2，时间刻度与实际随机更新的数量已正确接上；接下来要把每次更新前的图形也放入同一个平均计算，才能控制累计面积变化。辅助边界限制的累计影响和自含CMST/FSS平方时间核心界仍缺，主定理未完成。09图已实际目视核对并独立精确计算：人工例子在2.2时响2次，三段占用0.6+1.1+0.5=2.2，图像SHA匹配；它不是模拟或均值证据。独立AI不是人类专家认证，定理数不是完成百分比。本轮独立核查到此冻结，不开启新证明内容。

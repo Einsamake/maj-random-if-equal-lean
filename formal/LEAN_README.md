@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析170个证明模块、2321条辅助定理、171份分析源；核心125条定理及1模型、8源未变。合计179份正式源、2446条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-21T05:39:35.916899+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
+分析179个证明模块、2420条辅助定理、180份分析源；核心125条定理及1模型、8源未变。合计188份正式源、2545条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-21T21:05:20.067211+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
 
 核心目录formal/使用Lean4.35.0；分析目录formal/analysis/使用Lean4.35.0-rc4及mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d。沿用formal/.tools/编译器和各自.lake缓存，不跨版本复用olean，不重装依赖。
 
@@ -13,3 +13,5 @@
 scripts/validate_workspace.py核对正式source集/hash、脚本语法与文档链接；formal/scripts/package_lean.py只在验收source完全匹配时打包，并逐文件读回ZIP大小/hash及CRC。drafts保留研究草稿，不属于正式定理计数。私有审核快照由scripts/sync_private_repository.py准备，凭据、缓存、本机调度不上传；它不会自行commit/push。
 
 [真实停时后的新标记](PROGRESS_2026-10-21_FRESH_MARK.md)。
+
+[实际计数与精确均值](PROGRESS_2026-10-21_CLOCK_MEAN.md)。

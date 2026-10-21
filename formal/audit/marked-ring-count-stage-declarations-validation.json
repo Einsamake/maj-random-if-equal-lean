@@ -1,0 +1,43 @@
+{
+  "validated_at": "2026-10-21T20:34:12.610432+08:00",
+  "modules": [
+    "MarkedRingCount"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedRingCount.count",
+    "MathResearchAnalysis.MarkedRingCount.markedCount",
+    "MathResearchAnalysis.MarkedRingCount.count_history_measurable",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_history_measurable",
+    "MathResearchAnalysis.MarkedRingCount.count_measurable",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_measurable",
+    "MathResearchAnalysis.MarkedRingCount.count_mono",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_mono",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_le_count",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_split",
+    "MathResearchAnalysis.MarkedRingCount.count_eq_card_of_coverage",
+    "MathResearchAnalysis.MarkedRingCount.count_eq_finite_card",
+    "MathResearchAnalysis.MarkedRingCount.count_ne_top_of_finite",
+    "MathResearchAnalysis.MarkedRingCount.count_finite_ae",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_finite_ae",
+    "MathResearchAnalysis.MarkedRingCount.count_eq_top_of_all_arrived",
+    "MathResearchAnalysis.MarkedRingCount.lintegral_count_eq_tsum",
+    "MathResearchAnalysis.MarkedRingCount.lintegral_markedCount_eq_tsum",
+    "MathResearchAnalysis.MarkedRingCount.arrival_event_measure",
+    "MathResearchAnalysis.MarkedRingCount.lintegral_count_eq_clock_tsum",
+    "MathResearchAnalysis.MarkedRingCount.count_zero_ae",
+    "MathResearchAnalysis.MarkedRingCount.markedCount_zero_ae"
+  ],
+  "declarations_count": 22,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedRingCount.lean": "ec1099348fb11a093759362f97602b5be50c7755e874a32f9a1d9232ebe01385"
+  },
+  "new_lean_warning_lines": []
+}

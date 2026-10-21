@@ -1,0 +1,8 @@
+{
+  "validated_at": "2026-10-21T20:48:37.502669+08:00",
+  "source_sha256": "d8f0eaf55d63ba5cf2cccb12174e8508c8dbca369f3fc5bf2c06869652566f89",
+  "theorems": 9,
+  "standard_kernel_trust_level": 0,
+  "lean_exit": 0,
+  "scope": "actual clipped-gap occupation partitions each nonnegative finite horizon almost surely by clock cofinality; no expectation or compensation law input"
+}

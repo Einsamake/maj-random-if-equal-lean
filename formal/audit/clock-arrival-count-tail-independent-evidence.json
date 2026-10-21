@@ -1,0 +1,52 @@
+{
+  "reviewed_at": "2026-10-21T20:48:59.733296+08:00",
+  "review_agent": "/root/reader_progress_check",
+  "review_kind": "Independent AI source, declared-scope and complete named kernel-evidence check; not human certification",
+  "status": "formal_named_and_unified_validation_pass",
+  "module": "ClockArrivalCountTail",
+  "theorems": 4,
+  "named_declarations_verified": 4,
+  "formal_source_sha256": "234e071a8a3553b2fcf99172fed9e203b787c4362b76e0ab8861241898daa121",
+  "baseline_dependency_hashes_verified": {
+    "GreedyClockChain": "f51c7eecc38278ba1b8e73b2667206f3e7ebe686d6d19eefa9960fbc566b5004"
+  },
+  "named_source_table_and_output_order_exact": true,
+  "named_validation_at": "2026-10-21T20:33:47.945379+08:00",
+  "build_exit_verified": 0,
+  "axiom_audit_exit_verified": 0,
+  "standard_lean_trust_level_verified": 0,
+  "axioms_verified": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_lean_warning_lines": [],
+  "named_validation_verified": true,
+  "unified_validation_verified": true,
+  "scope": {
+    "real_actual_chronological_arrivals": true,
+    "zero_based_k_means_k_plus_one_ring": true,
+    "constant_site_path_witness_is_constructed": true,
+    "first_arrival_strictly_positive_is_proved_AE": true,
+    "chain_lower_tail_reused_with_a_one": true,
+    "event_inclusion_direction_arrival_implies_chain": true,
+    "nonstrict_arrival_le_t_preserved": true,
+    "event_probability_finiteness_not_count_integrability_used_for_toReal": true,
+    "bound": "P(arrival(v,k) <= t) <= ofReal(exp(t)) * (2:ENNReal)^(-(k+1))",
+    "Poisson_count_law_or_compensator_assumed": false,
+    "count_expectation_finiteness_claimed_in_this_module": false
+  },
+  "main_quadratic_recovery_theorem_complete": false,
+  "lean_sources_modified_by_reviewer": false,
+  "lean_builds_started_by_reviewer": false,
+  "kernel_trust_level_verified": 0,
+  "unified_validation_at": "2026-10-21T20:46:21.454420+08:00",
+  "unified_analysis_theorems": 2371,
+  "unified_analysis_sources": 175,
+  "unified_formal_sources": 183,
+  "complete_global_axiom_outputs_verified": 2497,
+  "all_source_sets_and_sha_exact": true,
+  "all_global_axiom_names_and_order_exact": true,
+  "core_sources_hash_matched": 8,
+  "core_rebuilt_in_this_phase": false
+}

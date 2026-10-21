@@ -1,0 +1,19 @@
+{
+  "validated_at": "2026-10-21T21:08:39.472457+08:00",
+  "source": "docs/render_clock_timeline.py",
+  "source_sha256": "69a432fbea215c82e9f9c1515bcef7be0a0afa1dc43d3d7e39291e6d1fe32346",
+  "figure": {
+    "file": "09-clock-time.png",
+    "bytes": 95739,
+    "sha256": "95392057aa7015557710e463ad1c7ab4736135e831f639ff4814e8b34fa9a06b"
+  },
+  "data_sha256": "3799a9b990be8a429d2df4bfc01e334e672a7b4c7294dd60636fb18d6a9369f6",
+  "exact_rational_partition_verified": true,
+  "sample_count_differs_from_elapsed_time": true,
+  "all_text_within_canvas_verified": true,
+  "actual_render_visually_inspected_by_primary": true,
+  "independent_AI_visual_review": true,
+  "human_comprehension_measured": false,
+  "scope": "human-readable exact arithmetic illustration of elapsed occupation, not random simulation or recovery-time proof",
+  "formal_proof_changes_caused_by_drawing": false
+}

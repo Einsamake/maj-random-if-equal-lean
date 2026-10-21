@@ -1,0 +1,12 @@
+import MathResearchAnalysis.FutureGapHistory
+
+#print axioms MathResearchAnalysis.FutureGapHistory.reset_generator_event_iff
+#print axioms MathResearchAnalysis.FutureGapHistory.reset_history_event_iff
+#print axioms MathResearchAnalysis.FutureGapHistory.prior_le_current
+#print axioms MathResearchAnalysis.FutureGapHistory.prior_future_history_event_iff
+#print axioms MathResearchAnalysis.FutureGapHistory.resetSample
+#print axioms MathResearchAnalysis.FutureGapHistory.resetSample_measurable
+#print axioms MathResearchAnalysis.FutureGapHistory.resetSample_mark_eq
+#print axioms MathResearchAnalysis.FutureGapHistory.resetSample_generator_event_iff
+#print axioms MathResearchAnalysis.FutureGapHistory.resetSample_history_event_iff
+#print axioms MathResearchAnalysis.FutureGapHistory.prior_future_marked_history_event_iff

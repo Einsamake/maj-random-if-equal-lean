@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-21T20:33:47.945379+08:00",
+  "modules": [
+    "ClockArrivalCountTail"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ClockArrivalCountTail.constant_chain_le_arrival_ae",
+    "MathResearchAnalysis.ClockArrivalCountTail.arrival_event_subset_chain_ae",
+    "MathResearchAnalysis.ClockArrivalCountTail.arrival_measureReal_le",
+    "MathResearchAnalysis.ClockArrivalCountTail.arrival_measure_le"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ClockArrivalCountTail.lean": "234e071a8a3553b2fcf99172fed9e203b787c4362b76e0ab8861241898daa121"
+  },
+  "new_lean_warning_lines": []
+}

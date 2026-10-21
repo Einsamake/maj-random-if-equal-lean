@@ -1,0 +1,35 @@
+{
+  "validated_at": "2026-10-21T20:42:11.144548+08:00",
+  "source": "formal/drafts/MarkedRingIntegrability.lean",
+  "source_sha256": "2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c",
+  "theorems": 16,
+  "named_declarations": 16,
+  "names": [
+    "geometric_shifted_half",
+    "count_lintegral_le",
+    "markedCount_lintegral_le",
+    "count_lintegral_ne_top",
+    "markedCount_lintegral_ne_top",
+    "count_toReal_integrable",
+    "markedCount_toReal_integrable",
+    "count_at_measurable",
+    "markedCount_at_measurable",
+    "count_at_lintegral_le",
+    "markedCount_at_lintegral_le",
+    "count_at_toReal_integrable",
+    "markedCount_at_toReal_integrable",
+    "boundedExit_untopD_le_horizon",
+    "boundedExit_count_toReal_integrable",
+    "boundedExit_markedCount_toReal_integrable"
+  ],
+  "standard_kernel_trust_level": 0,
+  "command": "lake env lean --trust=0 ../drafts/MarkedRingIntegrability.lean",
+  "lean_exit": 0,
+  "new_lean_warnings": [],
+  "formal_dependency_sha256": {
+    "MarkedRingCount": "ec1099348fb11a093759362f97602b5be50c7755e874a32f9a1d9232ebe01385",
+    "ClockArrivalCountTail": "234e071a8a3553b2fcf99172fed9e203b787c4362b76e0ab8861241898daa121",
+    "ProtectedExitResidual": "76e1446753e684463fda762ff19dfa9709b302e2bbec5b5717335bfb5c5ec236"
+  },
+  "scope": "actual counts at deterministic finite horizons and arbitrary measurable observation times bounded above by a finite horizon have extended expectation at most exp(horizon), hence real representatives integrable; instantiated at actual capped protected exit; not a recovery-time bound, Poisson count characterization, martingale, compensation or Dynkin theorem"
+}

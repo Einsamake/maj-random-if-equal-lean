@@ -1,0 +1,22 @@
+'MathResearchAnalysis.ClockGapOccupation.exposure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.exposure_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.exposure_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.exposure_le_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.min_gap_eq_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.exposure_eq_min_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.sum_exposure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.exposure_zero_of_horizon_le_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.tsum_exposure_of_before' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapOccupation.tsum_exposure_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

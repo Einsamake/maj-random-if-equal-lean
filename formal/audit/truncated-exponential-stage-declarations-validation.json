@@ -1,0 +1,45 @@
+{
+  "validated_at": "2026-10-21T20:51:53.387333+08:00",
+  "modules": [
+    "TruncatedExponential"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.TruncatedExponential.cap",
+    "MathResearchAnalysis.TruncatedExponential.cap_nonneg",
+    "MathResearchAnalysis.TruncatedExponential.cap_le",
+    "MathResearchAnalysis.TruncatedExponential.cap_zero",
+    "MathResearchAnalysis.TruncatedExponential.cap_eq_min",
+    "MathResearchAnalysis.TruncatedExponential.cap_measurable",
+    "MathResearchAnalysis.TruncatedExponential.cap_integrable",
+    "MathResearchAnalysis.TruncatedExponential.cap_superlevel",
+    "MathResearchAnalysis.TruncatedExponential.cap_superlevel_empty",
+    "MathResearchAnalysis.TruncatedExponential.cap_tail_real",
+    "MathResearchAnalysis.TruncatedExponential.integral_exp_neg_Ioo",
+    "MathResearchAnalysis.TruncatedExponential.cap_integral",
+    "MathResearchAnalysis.TruncatedExponential.cdf_real",
+    "MathResearchAnalysis.TruncatedExponential.cap_integral_eq_probability",
+    "MathResearchAnalysis.TruncatedExponential.cap_lintegral",
+    "MathResearchAnalysis.TruncatedExponential.cdf_measure",
+    "MathResearchAnalysis.TruncatedExponential.cap_lintegral_eq_probability",
+    "MathResearchAnalysis.TruncatedExponential.cap_integrable_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cap_integral_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cdf_real_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cap_integral_eq_probability_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cap_lintegral_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cdf_measure_of_hasLaw",
+    "MathResearchAnalysis.TruncatedExponential.cap_lintegral_eq_probability_of_hasLaw"
+  ],
+  "declarations_count": 24,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/TruncatedExponential.lean": "75dbfb03810aed08f435f90f4a5d6f1d5b46126b5d8a6fa5126dff9e19c32b9c"
+  },
+  "new_lean_warning_lines": []
+}

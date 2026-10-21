@@ -1,0 +1,48 @@
+{
+  "reviewed_at": "2026-10-21T20:48:59.770221+08:00",
+  "review_agent": "/root/reader_progress_check",
+  "unified_validated_at": "2026-10-21T20:46:21.454420+08:00",
+  "formal_source_sets_and_all_sha_exact": 183,
+  "analysis_sources": 175,
+  "analysis_theorems": 2371,
+  "core_sources_unchanged": 8,
+  "core_old_outputs_verified": 126,
+  "core_rebuilt_in_this_phase": false,
+  "global_axiom_names_exact_order_including_apostrophes": 2497,
+  "new_theorems": 50,
+  "new_named_complete": 53,
+  "modules": {
+    "MarkedResidualPair": {
+      "source_sha256": "ad4a5f022662d5bed6f14801d2ac60b865a93c0c63daf52654917b3e3227e140",
+      "theorems": 10,
+      "named_declarations": 11,
+      "stage_validated_at": "2026-10-21T20:30:16.292407+08:00"
+    },
+    "ClockArrivalCountTail": {
+      "source_sha256": "234e071a8a3553b2fcf99172fed9e203b787c4362b76e0ab8861241898daa121",
+      "theorems": 4,
+      "named_declarations": 4,
+      "stage_validated_at": "2026-10-21T20:33:47.945379+08:00"
+    },
+    "MarkedRingCount": {
+      "source_sha256": "ec1099348fb11a093759362f97602b5be50c7755e874a32f9a1d9232ebe01385",
+      "theorems": 20,
+      "named_declarations": 22,
+      "stage_validated_at": "2026-10-21T20:34:12.610432+08:00"
+    },
+    "MarkedRingIntegrability": {
+      "source_sha256": "2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c",
+      "theorems": 16,
+      "named_declarations": 16,
+      "stage_validated_at": "2026-10-21T20:44:43.228487+08:00"
+    }
+  },
+  "standard_kernel_trust": 0,
+  "unexpected_axioms": [],
+  "new_lean_warnings": [],
+  "existing_warning": "batteries local docs change only",
+  "main_theorem_complete": false,
+  "semantic_scope": "fixed-site residual full pair law and past independence; actual extended arrival/mark counts; actual geometric arrival probability bound; finite count expectations and actual capped-exit count integrability; not conditional increments, compensation, Dynkin, masked accumulated correction or quadratic recovery law",
+  "lean_sources_modified_by_reviewer": false,
+  "lean_builds_started_by_reviewer": false
+}

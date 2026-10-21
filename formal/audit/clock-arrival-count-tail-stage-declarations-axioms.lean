@@ -1,0 +1,6 @@
+import MathResearchAnalysis.ClockArrivalCountTail
+
+#print axioms MathResearchAnalysis.ClockArrivalCountTail.constant_chain_le_arrival_ae
+#print axioms MathResearchAnalysis.ClockArrivalCountTail.arrival_event_subset_chain_ae
+#print axioms MathResearchAnalysis.ClockArrivalCountTail.arrival_measureReal_le
+#print axioms MathResearchAnalysis.ClockArrivalCountTail.arrival_measure_le

@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-21T20:56:29.183992+08:00",
+  "modules": [
+    "ClockRingMean"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ClockRingMean.prior_cap_lintegral",
+    "MathResearchAnalysis.ClockRingMean.gap_exposure_lintegral_eq_arrival_measure",
+    "MathResearchAnalysis.ClockRingMean.lintegral_count_eq_time",
+    "MathResearchAnalysis.ClockRingMean.integral_count_eq_time"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ClockRingMean.lean": "0671bcfe53420b2dd5f191285e74be72015e26eff7274f18590b7138c0121e27"
+  },
+  "new_lean_warning_lines": []
+}

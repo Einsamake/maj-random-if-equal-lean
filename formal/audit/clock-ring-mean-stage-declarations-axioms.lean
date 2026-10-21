@@ -1,0 +1,6 @@
+import MathResearchAnalysis.ClockRingMean
+
+#print axioms MathResearchAnalysis.ClockRingMean.prior_cap_lintegral
+#print axioms MathResearchAnalysis.ClockRingMean.gap_exposure_lintegral_eq_arrival_measure
+#print axioms MathResearchAnalysis.ClockRingMean.lintegral_count_eq_time
+#print axioms MathResearchAnalysis.ClockRingMean.integral_count_eq_time

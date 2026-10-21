@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-21T20:44:43.228487+08:00",
+  "modules": [
+    "MarkedRingIntegrability"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedRingIntegrability.geometric_shifted_half",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_lintegral_le",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_lintegral_le",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_lintegral_ne_top",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_lintegral_ne_top",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_toReal_integrable",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_toReal_integrable",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_at_measurable",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_at_measurable",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_at_lintegral_le",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_at_lintegral_le",
+    "MathResearchAnalysis.MarkedRingIntegrability.count_at_toReal_integrable",
+    "MathResearchAnalysis.MarkedRingIntegrability.markedCount_at_toReal_integrable",
+    "MathResearchAnalysis.MarkedRingIntegrability.boundedExit_untopD_le_horizon",
+    "MathResearchAnalysis.MarkedRingIntegrability.boundedExit_count_toReal_integrable",
+    "MathResearchAnalysis.MarkedRingIntegrability.boundedExit_markedCount_toReal_integrable"
+  ],
+  "declarations_count": 16,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedRingIntegrability.lean": "2d712f00ef8f667d0367ced8e1100ec3e00c4375c6b0daa504e998c969f3289c"
+  },
+  "new_lean_warning_lines": []
+}

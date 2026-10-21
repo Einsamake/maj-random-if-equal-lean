@@ -1,0 +1,13 @@
+import MathResearchAnalysis.MarkedResidualPair
+
+#print axioms MathResearchAnalysis.MarkedResidualPair.pair
+#print axioms MathResearchAnalysis.MarkedResidualPair.pair_measurable
+#print axioms MathResearchAnalysis.MarkedResidualPair.waiting_event_factor
+#print axioms MathResearchAnalysis.MarkedResidualPair.waiting_event_mark_map
+#print axioms MathResearchAnalysis.MarkedResidualPair.rectangle_factor
+#print axioms MathResearchAnalysis.MarkedResidualPair.restricted_map_eq
+#print axioms MathResearchAnalysis.MarkedResidualPair.pair_hasLaw
+#print axioms MathResearchAnalysis.MarkedResidualPair.pair_independent_stopped_history
+#print axioms MathResearchAnalysis.MarkedResidualPair.waiting_mark_independent
+#print axioms MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_hasLaw
+#print axioms MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_independent_stopped_history

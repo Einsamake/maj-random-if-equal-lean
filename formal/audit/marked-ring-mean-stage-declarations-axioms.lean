@@ -1,0 +1,6 @@
+import MathResearchAnalysis.MarkedRingMean
+
+#print axioms MathResearchAnalysis.MarkedRingMean.arrival_mark_event_measure
+#print axioms MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_half_count
+#print axioms MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_time
+#print axioms MathResearchAnalysis.MarkedRingMean.integral_markedCount_eq_time

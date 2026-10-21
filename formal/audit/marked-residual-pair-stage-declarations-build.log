@@ -1,0 +1,6 @@
+✔ [3900/3900] Built MathResearchAnalysis.MarkedResidualPair (15s)
+Build completed successfully (3900 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

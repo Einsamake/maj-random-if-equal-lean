@@ -24,11 +24,14 @@ public import MathResearchAnalysis.ClockMaximum
 public import MathResearchAnalysis.ClockEventOrder
 public import MathResearchAnalysis.ClockCounting
 public import MathResearchAnalysis.ExponentialMemoryless
+public import MathResearchAnalysis.TruncatedExponential
 public import MathResearchAnalysis.FirstLayerClock
 public import MathResearchAnalysis.RandomThresholdSurvival
 public import MathResearchAnalysis.HistoryEventInvariant
 public import MathResearchAnalysis.ClockCandidateIntervals
 public import MathResearchAnalysis.ClockGapReset
+public import MathResearchAnalysis.FutureGapHistory
+public import MathResearchAnalysis.ClockGapOccupation
 public import MathResearchAnalysis.ClockDeterministicResidual
 public import MathResearchAnalysis.UpperStoppingApprox
 public import MathResearchAnalysis.ClockWaitingLimit
@@ -187,6 +190,12 @@ public import MathResearchAnalysis.ProtectedAreaPotential
 public import MathResearchAnalysis.UnrevealedMarkInvariance
 public import MathResearchAnalysis.StoppedMarkSlices
 public import MathResearchAnalysis.StoppedFreshMark
+public import MathResearchAnalysis.MarkedResidualPair
+public import MathResearchAnalysis.ClockArrivalCountTail
+public import MathResearchAnalysis.MarkedRingCount
+public import MathResearchAnalysis.ClockRingMean
+public import MathResearchAnalysis.MarkedRingMean
+public import MathResearchAnalysis.MarkedRingIntegrability
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.

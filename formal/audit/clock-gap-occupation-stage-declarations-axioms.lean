@@ -1,0 +1,12 @@
+import MathResearchAnalysis.ClockGapOccupation
+
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure_nonnegative
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure_measurable
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure_le_horizon
+#print axioms MathResearchAnalysis.ClockGapOccupation.min_gap_eq_difference
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure_eq_min_sub
+#print axioms MathResearchAnalysis.ClockGapOccupation.sum_exposure
+#print axioms MathResearchAnalysis.ClockGapOccupation.exposure_zero_of_horizon_le_before
+#print axioms MathResearchAnalysis.ClockGapOccupation.tsum_exposure_of_before
+#print axioms MathResearchAnalysis.ClockGapOccupation.tsum_exposure_ae

@@ -1,0 +1,28 @@
+'MathResearchAnalysis.FutureGapHistory.reset_generator_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.reset_history_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.prior_le_current' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.prior_future_history_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.resetSample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.resetSample_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.resetSample_mark_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.resetSample_generator_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.resetSample_history_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FutureGapHistory.prior_future_marked_history_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

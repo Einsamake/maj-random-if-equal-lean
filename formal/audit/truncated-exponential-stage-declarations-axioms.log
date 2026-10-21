@@ -1,0 +1,50 @@
+'MathResearchAnalysis.TruncatedExponential.cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_eq_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_superlevel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_superlevel_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_tail_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.integral_exp_neg_Ioo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cdf_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integral_eq_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_lintegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cdf_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_lintegral_eq_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integrable_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integral_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cdf_real_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_integral_eq_probability_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_lintegral_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cdf_measure_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TruncatedExponential.cap_lintegral_eq_probability_of_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

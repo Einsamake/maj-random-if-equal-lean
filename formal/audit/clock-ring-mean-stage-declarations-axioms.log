@@ -1,0 +1,10 @@
+'MathResearchAnalysis.ClockRingMean.prior_cap_lintegral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockRingMean.gap_exposure_lintegral_eq_arrival_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockRingMean.lintegral_count_eq_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockRingMean.integral_count_eq_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

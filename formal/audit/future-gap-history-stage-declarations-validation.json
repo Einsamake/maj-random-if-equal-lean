@@ -1,0 +1,31 @@
+{
+  "validated_at": "2026-10-21T20:55:38.018732+08:00",
+  "modules": [
+    "FutureGapHistory"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FutureGapHistory.reset_generator_event_iff",
+    "MathResearchAnalysis.FutureGapHistory.reset_history_event_iff",
+    "MathResearchAnalysis.FutureGapHistory.prior_le_current",
+    "MathResearchAnalysis.FutureGapHistory.prior_future_history_event_iff",
+    "MathResearchAnalysis.FutureGapHistory.resetSample",
+    "MathResearchAnalysis.FutureGapHistory.resetSample_measurable",
+    "MathResearchAnalysis.FutureGapHistory.resetSample_mark_eq",
+    "MathResearchAnalysis.FutureGapHistory.resetSample_generator_event_iff",
+    "MathResearchAnalysis.FutureGapHistory.resetSample_history_event_iff",
+    "MathResearchAnalysis.FutureGapHistory.prior_future_marked_history_event_iff"
+  ],
+  "declarations_count": 10,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FutureGapHistory.lean": "175267a0f8b2542c7277e1a021f50d928d6e9a4dbddc3ffe66019b675171fc89"
+  },
+  "new_lean_warning_lines": []
+}

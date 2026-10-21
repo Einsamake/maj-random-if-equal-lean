@@ -1,0 +1,56 @@
+{
+  "stage": "TruncatedExponential independent draft",
+  "source": "<workspace>\\formal\\drafts\\TruncatedExponential.lean",
+  "sha256": "75dbfb03810aed08f435f90f4a5d6f1d5b46126b5d8a6fa5126dff9e19c32b9c",
+  "validated_at_utc": "2026-10-21T12:50:08.161582+00:00",
+  "command": "lake env lean --trust=0 ..\\drafts\\TruncatedExponential.lean",
+  "workdir": "<workspace>\\formal\\analysis",
+  "exit_code": 0,
+  "actual_session_id": 38734,
+  "log": "<workspace>\\formal\\audit\\truncated-exponential-draft.log",
+  "theorem_count": 23,
+  "definition_count": 1,
+  "theorems": [
+    "cap_nonneg",
+    "cap_le",
+    "cap_zero",
+    "cap_eq_min",
+    "cap_measurable",
+    "cap_integrable",
+    "cap_superlevel",
+    "cap_superlevel_empty",
+    "cap_tail_real",
+    "integral_exp_neg_Ioo",
+    "cap_integral",
+    "cdf_real",
+    "cap_integral_eq_probability",
+    "cap_lintegral",
+    "cdf_measure",
+    "cap_lintegral_eq_probability",
+    "cap_integrable_of_hasLaw",
+    "cap_integral_of_hasLaw",
+    "cdf_real_of_hasLaw",
+    "cap_integral_eq_probability_of_hasLaw",
+    "cap_lintegral_of_hasLaw",
+    "cdf_measure_of_hasLaw",
+    "cap_lintegral_eq_probability_of_hasLaw"
+  ],
+  "new_source_warnings": [],
+  "preexisting_warnings": [
+    "batteries repository has local changes"
+  ],
+  "forbidden_token_scan": {
+    "\\bsorry\\b": false,
+    "\\baxiom\\b": false,
+    "\\bunsafe\\b": false,
+    "\\bnative_decide\\b": false
+  },
+  "semantic_scope": "Exact cap=min(max x 0,a) exponential mean using actual law and layer-cake tail integral; cap nonnegative and bounded for a>=0, including a=0 and exceptional negative x; real and ENNReal means equal true CDF event probability; generic HasLaw transport.",
+  "not_proved": [
+    "random cutoff independence",
+    "Poisson law",
+    "compensation identity",
+    "physical recovery-time theorem"
+  ],
+  "integration_boundary": "Only draft source and own validation files changed; parent owns formal source, entrypoint and complete declaration axiom audit."
+}

@@ -1,0 +1,27 @@
+'MathResearchAnalysis.MarkedResidualPair.pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.pair_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.waiting_event_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.waiting_event_mark_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.rectangle_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.restricted_map_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.pair_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.pair_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.waiting_mark_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedResidualPair.boundedExit_pair_independent_stopped_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

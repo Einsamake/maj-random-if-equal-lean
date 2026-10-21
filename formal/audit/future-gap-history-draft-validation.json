@@ -1,0 +1,46 @@
+{
+  "stage": "FutureGapHistory independent draft",
+  "source": "<workspace>\\formal\\drafts\\FutureGapHistory.lean",
+  "sha256": "175267a0f8b2542c7277e1a021f50d928d6e9a4dbddc3ffe66019b675171fc89",
+  "validated_at_utc": "2026-10-21T12:54:20.029077+00:00",
+  "command": "lake env lean --trust=0 ..\\drafts\\FutureGapHistory.lean",
+  "workdir": "<workspace>\\formal\\analysis",
+  "exit_code": 0,
+  "actual_session_id": 84428,
+  "log": "<workspace>\\formal\\audit\\future-gap-history-draft.log",
+  "theorem_count": 9,
+  "definition_count": 1,
+  "theorems": [
+    "reset_generator_event_iff",
+    "reset_history_event_iff",
+    "prior_le_current",
+    "prior_future_history_event_iff",
+    "resetSample_measurable",
+    "resetSample_mark_eq",
+    "resetSample_generator_event_iff",
+    "resetSample_history_event_iff",
+    "prior_future_marked_history_event_iff"
+  ],
+  "new_source_warnings": [],
+  "preexisting_warnings": [
+    "batteries repository has local changes"
+  ],
+  "forbidden_token_scan": {
+    "\\bsorry\\b": false,
+    "\\baxiom\\b": false,
+    "\\bunsafe\\b": false,
+    "\\bnative_decide\\b": false
+  },
+  "semantic_scope": "The original ClockGapReset.reset preserves all actual clockHistory events whenever the chosen arrival is >r, without requiring the previous arrival <=r. The same reset with all marks unchanged preserves all events of the original MarkedClockFiltration.history. Explicit previous-arrival>r corollaries are proved on all clipped-gap samples.",
+  "not_proved": [
+    "future law",
+    "conditional count law",
+    "compensation identity",
+    "physical recovery-time theorem"
+  ],
+  "integration_boundary": "Only draft source and own validation files changed; parent owns formal source, entrypoint and complete declaration axiom audit.",
+  "dependency_sha256": {
+    "ClockGapReset.lean": "a072ea8f89725ec67582a9f23bef3b8fa8e37cc55152b6a046c4c39ef67c42f1",
+    "MarkedClockFiltration.lean": "bb62f020596e7712eb99754909f143878696b2f8496ea73d6d7a594104f9e99c"
+  }
+}

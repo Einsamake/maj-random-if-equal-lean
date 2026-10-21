@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-21T21:04:05.768183+08:00",
+  "modules": [
+    "MarkedRingMean"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedRingMean.arrival_mark_event_measure",
+    "MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_half_count",
+    "MathResearchAnalysis.MarkedRingMean.lintegral_markedCount_eq_time",
+    "MathResearchAnalysis.MarkedRingMean.integral_markedCount_eq_time"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MarkedRingMean.lean": "7bdf1c47646b277ac2ff45ce1064e21d8555b0f8a2e6cb520e5dd0000e640294"
+  },
+  "new_lean_warning_lines": []
+}
