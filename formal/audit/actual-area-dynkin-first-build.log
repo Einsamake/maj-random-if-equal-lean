@@ -1,0 +1,62 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3925/3926] Built MathResearchAnalysis.MarkedAreaSum (21s)
+✖ [3926/3926] Building MathResearchAnalysis.ActualAreaDynkin (20s)
+trace: .> LEAN_PATH=<workspace>\formal\analysis\.lake\packages\Cli\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\batteries\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\Qq\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\aesop\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\proofwidgets\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\importGraph\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\plausible\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\mathlib\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\build\lib\lean d:\MyWorks\Math\formal\.tools\lean-4.35.0-rc4-windows\bin\lean.exe <workspace>\formal\analysis\MathResearchAnalysis\ActualAreaDynkin.lean -o <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\ActualAreaDynkin.olean -i <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\ActualAreaDynkin.ilean -c <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\ActualAreaDynkin.c --setup <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\ActualAreaDynkin.setup.json --json
+info: MathResearchAnalysis/ActualAreaDynkin.lean:48:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: MathResearchAnalysis/ActualAreaDynkin.lean:44:73: unsolved goals
+L : ℕ
+D I S : Finset Site
+T : NNReal
+z : Sample L
+⊢ ↑(D \ DropletStoppedClockLaw.stateAt L D I S (↑T) z).card =
+    ((fun z => ↑(D \ DropletStoppedClockLaw.stateAt L D I S (↑T) z).card - ↑(D \ S).card) + fun x => ↑(D \ S).card) z
+error: MathResearchAnalysis/ActualAreaDynkin.lean:125:29: Unknown identifier `measureReal_univ_eq_one`
+error: MathResearchAnalysis/ActualAreaDynkin.lean:125:2: Type mismatch: After simplification, term
+  Eq.trans (sub_eq_iff_eq_add.mp h)
+    (add_comm
+      (∑ v,
+        ∑ b,
+          1 / 2 *
+            ∫ (u : ℝ) in Set.Ioc 0 ↑T,
+              ∫ (z : Sample L),
+                PredictableAreaContribution.increment L D I S v b
+                  (u.toNNReal, z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L))
+      (∫ (a : Sample L), ↑(D \ S).card ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)))
+ has type
+  ∫ (a : Sample L),
+      ↑(D \
+            DropletStoppedClockLaw.stateAt L D I S (↑T)
+              a).card ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L) =
+    (ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)).real Set.univ • ↑(D \ S).card +
+      ∑ v,
+        ∑ b,
+          1 / 2 *
+            ∫ (u : ℝ) in Set.Ioc 0 ↑T,
+              ∫ (z : Sample L),
+                PredictableAreaContribution.increment L D I S v b
+                  (u.toNNReal, z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)
+but is expected to have type
+  ∫ (z : Sample L),
+      ↑(D \
+            DropletStoppedClockLaw.stateAt L D I S (↑T)
+              z).card ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L) =
+    ↑(D \ S).card +
+      ∑ v,
+        ∑ b,
+          1 / 2 *
+            ∫ (u : ℝ) in Set.Ioc 0 ↑T,
+              ∫ (z : Sample L),
+                PredictableAreaContribution.increment L D I S v b
+                  (u.toNNReal, z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1
+Some required targets logged failures:
+- MathResearchAnalysis.ActualAreaDynkin
+error: build failed

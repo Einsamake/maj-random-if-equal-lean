@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-23T13:20:34.067570+08:00",
+  "source": "formal/drafts/ObservedPreState.lean",
+  "source_sha256": "553f8d607041d522bc65eba2151762a7729bc4ab4c2c313419b447d483c18113",
+  "theorems": 12,
+  "named_declarations": [
+    "MathResearchAnalysis.ObservedPreState.graph",
+    "MathResearchAnalysis.ObservedPreState.rational_future_eq",
+    "MathResearchAnalysis.ObservedPreState.rational_future_measurable",
+    "MathResearchAnalysis.ObservedPreState.graph_measurable",
+    "MathResearchAnalysis.ObservedPreState.graph_unique",
+    "MathResearchAnalysis.ObservedPreState.beforeState",
+    "MathResearchAnalysis.ObservedPreState.state_eq_of_graph",
+    "MathResearchAnalysis.ObservedPreState.state_eq_iff",
+    "MathResearchAnalysis.ObservedPreState.state_fiber_measurable",
+    "MathResearchAnalysis.ObservedPreState.state_measurable",
+    "MathResearchAnalysis.ObservedPreState.observable_measurable",
+    "MathResearchAnalysis.ObservedPreState.state_zero",
+    "MathResearchAnalysis.ObservedPreState.graph_supported",
+    "MathResearchAnalysis.ObservedPreState.state_supported"
+  ],
+  "named_count": 14,
+  "draft_build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_lean_warnings": [],
+  "old_supported_connection_reused": "ProtectedAreaPotential.observed_state_supported"
+}

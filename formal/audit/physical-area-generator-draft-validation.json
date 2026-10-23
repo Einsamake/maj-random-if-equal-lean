@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-23T18:45:56.798742+08:00",
+  "source": "formal/drafts/PhysicalAreaGenerator.lean",
+  "source_sha256": "2a6eb082667a5f09bbb0b785a1fd61c9595e0fd4f597a69929bff3807334adb2",
+  "whole_draft_trust0_exit": 0,
+  "all_named_trust0_exit": 0,
+  "kernel_trust_level": 0,
+  "theorems": 10,
+  "named_declarations": [
+    "MathResearchAnalysis.PhysicalAreaGenerator.stoppedStep_of_not_mem",
+    "MathResearchAnalysis.PhysicalAreaGenerator.finite_vertex_generator_eq",
+    "MathResearchAnalysis.PhysicalAreaGenerator.area_rate_eq_generator",
+    "MathResearchAnalysis.PhysicalAreaGenerator.clipped_area_rate_eq_generator",
+    "MathResearchAnalysis.PhysicalAreaGenerator.generator_sample_integrable",
+    "MathResearchAnalysis.PhysicalAreaGenerator.expected_rate_eq_generator",
+    "MathResearchAnalysis.PhysicalAreaGenerator.generator_time_mean_integrable",
+    "MathResearchAnalysis.PhysicalAreaGenerator.area_change_dynkin_generator",
+    "MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_area_dynkin",
+    "MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_generator_raw_cleanup"
+  ],
+  "declarations_count": 10,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "new_lean_warnings": [],
+  "audit_source": "formal/audit/PhysicalAreaGeneratorDraftAxioms.lean",
+  "audit_source_sha256": "018add20888568a2624dd1f25389a679524b74c600aad8d22f0d0d1c0b3a5db5",
+  "source_exact_prefix_of_audit": true,
+  "scope": "Exact finite-clock vertex rate equals D-site frozen generator under actual finite coverage; actual clipped hL>=1 removes coverage input. Generator sample/time means are integrable. True actual clipped finite-horizon missing-area Dynkin and raw+cleanup algebra, no geometry/drift/tail assumption. Not the original synchronous process generator and not the quadratic main theorem."
+}

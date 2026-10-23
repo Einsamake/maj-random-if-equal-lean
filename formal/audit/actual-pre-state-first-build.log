@@ -1,0 +1,6 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3891/3893] Built MathResearchAnalysis.StrictClockPrefix (24s)
+✔ [3892/3893] Built MathResearchAnalysis.ObservedPreState (25s)
+✔ [3893/3893] Built MathResearchAnalysis.ActualPreState (14s)
+Build completed successfully (3893 jobs).

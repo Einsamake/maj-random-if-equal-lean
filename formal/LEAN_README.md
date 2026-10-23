@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析188个证明模块、2504条辅助定理、189份分析源；核心125条定理及1模型、8源未变。合计197份正式源、2629条辅助定理与1个模型。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-22T06:55:29.030091+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，未冒称本次重编。
+分析197个证明模块、2595条辅助定理、198份分析源；核心125条定理及1模型、8源未变。合计206份正式源、2720条辅助定理与1个模型，完整公理输出2721项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-23T18:47:57.505697+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
 
 核心目录formal/使用Lean4.35.0；分析目录formal/analysis/使用Lean4.35.0-rc4及mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d。沿用formal/.tools/编译器和各自.lake缓存，不跨版本复用olean，不重装依赖。
 
@@ -17,4 +17,7 @@ scripts/validate_workspace.py核对正式source集/hash、脚本语法与文档�
 [实际计数与精确均值](PROGRESS_2026-10-21_CLOCK_MEAN.md)。
 
 
-[真实逐次响铃的可预测补偿](PROGRESS_2026-10-22_PREDICTABLE_COMPENSATION.md)：新增3模块24定理/29命名声明；仅在标准原历史可预测σ上比较真实事件测度与时间参考测度，不是全ambient积σ等价。更新前真实状态及面积Dynkin尚待连接。
+[真实逐次响铃的可预测补偿](PROGRESS_2026-10-22_PREDICTABLE_COMPENSATION.md)：新增3模块24定理/29命名声明；仅在标准原历史可预测σ上比较真实事件测度与时间参考测度，不是全ambient积σ等价。更新前真实状态与物理面积Dynkin现已闭合，见23日验收。
+
+
+[23日真实前态、面积Dynkin与clipped生成元](PROGRESS_2026-10-23_AREA_DYNKIN.md)。原finite-clock辅助过程已给真实物理时间面积公式；主定理及定量CMST/FSS尚未完成。

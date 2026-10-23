@@ -208,6 +208,19 @@ public import MathResearchAnalysis.PredictableClockSigma
 
 public import MathResearchAnalysis.MarkedPredictableCompensation
 
+public import MathResearchAnalysis.StrictClockPrefix
+public import MathResearchAnalysis.ObservedPreState
+
+public import MathResearchAnalysis.ActualPreState
+public import MathResearchAnalysis.PredictableAreaContribution
+
+public import MathResearchAnalysis.ActualAreaTelescope
+public import MathResearchAnalysis.RealPredictableCompensation
+public import MathResearchAnalysis.MarkedAreaSum
+public import MathResearchAnalysis.ActualAreaDynkin
+
+public import MathResearchAnalysis.PhysicalAreaGenerator
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real
@@ -301,8 +314,12 @@ with genuine Euclidean extended arc length equal to their minimum-rectangle
 perimeter. Actual modified and stopped event trajectories satisfy the existing
 GeometricGood strictly before protected exit; infinity is retained, and the
 exact exit is not included in this Good conclusion. Actual nonnegative predictable event weights have a proved pathwise compensation
-formula under the original marked history. The actual pre-update state
-predictability and area Dynkin formula, bounds at the
+formula under the original marked history. Actual predictable pre-update states agree on one common full-measure set at
+all times, including random ringing times, and actual one-ring area gains
+and losses have compensation formulas. The actual signed finite-horizon area Dynkin formula is now proved under the
+original clock law, with true pathwise telescoping and integrability first.
+The compensator is identified with the actual clipped D-site generator.
+Bounds at the
 quadratic scale, the full future-vector Poisson strong Markov characterization,
 the CMST/FSS droplet theorems and the complete CA theorem remain unproved.
 -/

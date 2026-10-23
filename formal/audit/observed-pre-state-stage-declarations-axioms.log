@@ -1,0 +1,100 @@
+'MathResearchAnalysis.StrictClockPrefix.strictWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_strictly_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.word_left_locally_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.word_at_event_eq_cons_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_zero_of_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.beforeState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_of_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_fiber_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.observable_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.strictStateAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.marked_all_events_positive_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.strictStateAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_eq_strictStateAt_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_eq_strictStateAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.strictStateAt_event_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.stateAt_event_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.stateAt_all_events_update_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.observedState_all_events_update_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_increment_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_gain_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_loss_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -1,0 +1,32 @@
+'MathResearchAnalysis.ActualAreaTelescope.strictWord_eq_filter_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.stoppedWord_area_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.increment_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.sum_map_eq_sum_toFinset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.increment_eq_actual_jump' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_actual_jumps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

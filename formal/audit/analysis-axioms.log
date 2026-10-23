@@ -1,3 +1,49 @@
+'MathResearchAnalysis.ActualAreaDynkin.marked_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.total_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.area_change_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.area_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.area_change_dynkin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.time_mean_increment_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.area_change_dynkin_single_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaDynkin.expected_area_dynkin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.strictWord_eq_filter_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.stoppedWord_area_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.increment_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.sum_map_eq_sum_toFinset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.increment_eq_actual_jump' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualAreaTelescope.area_telescope_actual_jumps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.ActualClockTail.pathFiltration_eq_ready_sigma' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -27,6 +73,29 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.ActualClockTail.actual_square_eight_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.marked_all_events_positive_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.strictStateAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_eq_strictStateAt_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_eq_strictStateAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.beforeState_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.strictStateAt_event_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.stateAt_event_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualPreState.stateAt_all_events_update_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualPreState.observedState_all_events_update_ae' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.ArrivalFiltration.arrival_event_measurable' depends on axioms: [propext,
@@ -3196,6 +3265,23 @@
 'MathResearchAnalysis.LocalObservedHistory.exit_extended_mean_equal' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.eventScore_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_word_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.MarkedClockFiltration.arrival_measurable' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -3679,6 +3765,22 @@
 'MathResearchAnalysis.ObservedFrozenProcess.geometricGood_before_exit' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_of_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_fiber_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.observable_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ObservedProgressive.variable_arrival_measurable' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -4173,6 +4275,72 @@
  Quot.sound]
 'MathResearchAnalysis.PerturbationSymmetry.difference_square' depends on axioms: [propext, Quot.sound]
 'MathResearchAnalysis.PerturbationSymmetry.distance_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.stoppedStep_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.finite_vertex_generator_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.area_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.clipped_area_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.expected_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.area_change_dynkin_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_area_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_generator_raw_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_increment_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_gain_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_loss_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.PredictableClockReference.timeMeasure_apply' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -4615,6 +4783,51 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.RationalProtectedExit.original_extinction_measure_le_stopping_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.term_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.pathSum_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.norm_integral_sum_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.term_norm_sum_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.term_absolutely_summable_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.integral_pathSum_eq_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.time_product_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.integral_reference_eq_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.bounded_predictable_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.bounded_predictable_absolutely_summable_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.bounded_predictable_integral_eq_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RealPredictableCompensation.bounded_predictable_integral_eq_time' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.RecoveryTimeTransport.time_le_time_of_zero_imp' depends on axioms: [propext,
@@ -5192,6 +5405,20 @@
 'MathResearchAnalysis.StoppingPath.readiness_order' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.StoppingPath.delay_known' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.StoppingPath.stopped_path_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_strictly_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.word_left_locally_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.word_at_event_eq_cons_strict' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StrictClockPrefix.strictWord_zero_of_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.SurvivalLaw.restricted_map_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.SurvivalLaw.hasLaw_of_jointSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.SurvivalLaw.indep_of_jointSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]

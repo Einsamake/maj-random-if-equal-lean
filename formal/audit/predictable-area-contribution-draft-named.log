@@ -1,0 +1,43 @@
+'MathResearchAnalysis.PredictableAreaContribution.increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.gain_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.loss_compensation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.increment_integrable_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_increment_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_gain_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PredictableAreaContribution.event_loss_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

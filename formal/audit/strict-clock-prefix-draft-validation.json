@@ -1,0 +1,24 @@
+{
+  "validated_at": "2026-10-23T13:16:25.837291+08:00",
+  "source": "<workspace>\\formal\\drafts\\StrictClockPrefix.lean",
+  "source_sha256": "e84aeca6f4c9b6522349ea7e3f446388e33bb45bc9ddd4512ce75cc48f22334b",
+  "named_declarations": [
+    "MathResearchAnalysis.StrictClockPrefix.strictWord",
+    "MathResearchAnalysis.StrictClockPrefix.strictWord_mem_iff",
+    "MathResearchAnalysis.StrictClockPrefix.strictWord_nodup",
+    "MathResearchAnalysis.StrictClockPrefix.strictWord_strictly_decreasing",
+    "MathResearchAnalysis.StrictClockPrefix.word_left_locally_strict",
+    "MathResearchAnalysis.StrictClockPrefix.word_at_event_eq_cons_strict",
+    "MathResearchAnalysis.StrictClockPrefix.strictWord_zero_of_positive"
+  ],
+  "declarations_count": 7,
+  "kernel_trust_level": 0,
+  "exit_code": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "warning_lines": [],
+  "proof_boundary": "Deterministic true strict-past words and endpoint event identity; no predictable-state or actual Dynkin claim."
+}

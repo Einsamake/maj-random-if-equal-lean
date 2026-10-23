@@ -1,0 +1,22 @@
+'MathResearchAnalysis.MarkedAreaSum.eventScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.eventScore_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_word_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

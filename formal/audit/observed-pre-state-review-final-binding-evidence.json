@@ -1,0 +1,35 @@
+{
+  "bound_at": "2026-10-23T18:28:11.803107+08:00",
+  "review_agent": "/root/pre_state_final_audit",
+  "status": "pass_final_frozen_binding",
+  "semantic_and_mechanical_evidence_sha256": "9ba9e419c29b484abf32b31b6242ac732c2dcf03dab7db477ba69b61ca5e256a",
+  "semantic_review_sha256": "f2a9c328277774ec8fd4594b5d0be6a5e967fb1c83d9ad6964fcb7e5abf4d731",
+  "all_formal_sources_fingerprint_sha256": "9df7be1d085c23937c47155bbbe4905f7ffda0f904ac345a18037d444251c930",
+  "total_formal_sources": 201,
+  "analysis_theorems": 2543,
+  "global_complete_axiom_outputs": 2669,
+  "stage_named_declarations": 46,
+  "stage_theorems": 39,
+  "record_and_log_sha256": {
+    "analysis-validation.json": "24f3819ef4277a6956cccf849bbc99b247d5c68864546debb50c93c1bb685e7e",
+    "analysis-build.log": "786b82f8b11a3d432701a8793724eb46e9e7f2c7c61a1995f01aaa2f4181667a",
+    "analysis-axioms.log": "6fa1d194a30b7149062b7affb68d23c94882a6ff01d0ca99adc0cf5488a4afd2",
+    "core-validation.json": "f01795bc4ff47bbca4c29c4dca23d4e1cef545709144b99bc3ca987f6ea5bcb1",
+    "core-build.log": "a5f7af670d375dfbf08cab54faa338975265ff93c38f7c067d963d9966ba8905",
+    "core-axioms.log": "9e9f92fffe24e161e0cd49d79e05d517287314590d812fb579de88f8a33e6b37",
+    "observed-pre-state-stage-declarations-validation.json": "fa0a054413701ef47c96d3d210b62dff525eec643f05bfb4e7d6404cfe4c7d99",
+    "observed-pre-state-stage-declarations-build.log": "3fd7611d1fcc67272a941b9bc61eafe8d3b42e8491079e9edcf048201e295add",
+    "observed-pre-state-stage-declarations-axioms.log": "e8f3c5ba2ef6310b37383083cd8a3260803193e17e7036e7ec8ed8d7aff89021",
+    "observed-pre-state-stage-declarations-axioms.lean": "65ffdf59335e9ddfda4840b21f39cd11e73e650020a035276cdff293b8202f26",
+    "analysis/AnalysisAxioms.lean": "cb7aba57f07a93ed6935a8e1838eaa3c45ed2d281a4fc46433014cf830cbb14c"
+  },
+  "four_new_source_sha256": {
+    "MathResearchAnalysis/StrictClockPrefix.lean": "e84aeca6f4c9b6522349ea7e3f446388e33bb45bc9ddd4512ce75cc48f22334b",
+    "MathResearchAnalysis/ObservedPreState.lean": "553f8d607041d522bc65eba2151762a7729bc4ab4c2c313419b447d483c18113",
+    "MathResearchAnalysis/ActualPreState.lean": "64c40bbe747bf44922ac31f65cf0427e2c735235ba0bdad53b92ab516166e8b4",
+    "MathResearchAnalysis/PredictableAreaContribution.lean": "12d9cd2b947fafdb0ba1ec52048d486560fbea4d2ab85bba4033e5b2f871d234"
+  },
+  "all_sources_rechecked_unchanged_before_final_binding": true,
+  "independent_AI_not_human_expert_certification": true,
+  "main_quadratic_recovery_theorem_complete": false
+}

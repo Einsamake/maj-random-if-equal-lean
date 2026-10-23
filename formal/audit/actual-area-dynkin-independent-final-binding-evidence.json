@@ -1,0 +1,36 @@
+{
+  "bound_at": "2026-10-23T18:41:54.717105+08:00",
+  "review_agent": "/root/pre_state_final_audit",
+  "status": "pass_final_actual_area_dynkin_binding",
+  "semantic_and_mechanical_evidence_sha256": "482f9084e266708960a708c69f8a527bceebbc0f60f331cc6d04bfe85fcbe66c",
+  "semantic_review_sha256": "701a029f11428039dcbb41a4fe134b6c5f9817984eae0a9567f25c82cc27e00c",
+  "all_formal_sources_fingerprint_sha256": "5baa775c31f6bdcf791677c8a19b6700d73f33c0fc706dec87924073e8b0e202",
+  "total_formal_sources": 205,
+  "analysis_theorems": 2585,
+  "global_complete_axiom_outputs": 2711,
+  "stage_named_declarations": 45,
+  "stage_theorems": 42,
+  "record_and_log_sha256": {
+    "analysis-validation.json": "7837fe839cbab9d41e78bbf5254af0303a39dcde028f9520da4b8727871d7ca3",
+    "analysis-build.log": "f9989664a925dce8cbd485843fae69d95d0b6ec0dbbe91910e88bd01e789f2fb",
+    "analysis-axioms.log": "c66730a004e4d15ec3f49032ed92e1f4514e08e9489f2cf61644d6fe5b57d26c",
+    "core-validation.json": "f01795bc4ff47bbca4c29c4dca23d4e1cef545709144b99bc3ca987f6ea5bcb1",
+    "core-build.log": "a5f7af670d375dfbf08cab54faa338975265ff93c38f7c067d963d9966ba8905",
+    "core-axioms.log": "9e9f92fffe24e161e0cd49d79e05d517287314590d812fb579de88f8a33e6b37",
+    "actual-area-dynkin-stage-declarations-validation.json": "ae04653663e9689c6bafd56b9d16922ffb496aee1d3753816553da9dd4a93de9",
+    "actual-area-dynkin-stage-declarations-build.log": "29f06c0ea3c0a882005b6af8088e6a29157b7ea191ef0d14450779e92d9f6e91",
+    "actual-area-dynkin-stage-declarations-axioms.log": "f90fc4598ea893e246db1651821d646db0ec23d59b4e857eda956eb0e09b0686",
+    "actual-area-dynkin-stage-declarations-axioms.lean": "f2f129dc233f804360bf3ea8e21ac308c2e237fca3e539f80306d3435f55ecd6",
+    "analysis/AnalysisAxioms.lean": "9bce7db0254af07bd8f2d921852bb7f36048c09da9de312339be6e33a36a2728"
+  },
+  "four_new_source_sha256": {
+    "MathResearchAnalysis/ActualAreaTelescope.lean": "57690333bda6487216826deaf60d0332ec8b02568c451c45a058239e8b7279f9",
+    "MathResearchAnalysis/RealPredictableCompensation.lean": "5d1cffeb6a2ce092472ad6107c2918b1ba9ef2ae13e791505e3f66af69574937",
+    "MathResearchAnalysis/MarkedAreaSum.lean": "181d4d55564b2194bdfce05c7c8ff06a412517ab9c726d679600b57dd6b9a749",
+    "MathResearchAnalysis/ActualAreaDynkin.lean": "2444343314eb0f1a44cfa45162378f308b0f5ec91aeebfc72b168648626c136a"
+  },
+  "all_sources_rechecked_unchanged_before_final_binding": true,
+  "previous_201_stage_evidence_not_modified": true,
+  "independent_AI_not_human_expert_certification": true,
+  "main_quadratic_recovery_theorem_complete": false
+}

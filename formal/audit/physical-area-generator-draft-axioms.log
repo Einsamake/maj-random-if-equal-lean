@@ -1,0 +1,32 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+'MathResearchAnalysis.PhysicalAreaGenerator.stoppedStep_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.finite_vertex_generator_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.area_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.clipped_area_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.expected_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.area_change_dynkin_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_area_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_generator_raw_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

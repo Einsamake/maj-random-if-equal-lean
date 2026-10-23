@@ -1,0 +1,22 @@
+'MathResearchAnalysis.ObservedPreState.graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.rational_future_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.beforeState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_of_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_fiber_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.observable_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.graph_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ObservedPreState.state_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

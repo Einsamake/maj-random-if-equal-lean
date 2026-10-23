@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-23T13:21:13.750010+08:00",
+  "source": "<workspace>\\formal\\drafts\\PredictableAreaContribution.lean",
+  "source_sha256": "12d9cd2b947fafdb0ba1ec52048d486560fbea4d2ab85bba4033e5b2f871d234",
+  "named_declarations": [
+    "MathResearchAnalysis.PredictableAreaContribution.increment",
+    "MathResearchAnalysis.PredictableAreaContribution.gain",
+    "MathResearchAnalysis.PredictableAreaContribution.loss",
+    "MathResearchAnalysis.PredictableAreaContribution.increment_measurable",
+    "MathResearchAnalysis.PredictableAreaContribution.increment_stronglyMeasurable",
+    "MathResearchAnalysis.PredictableAreaContribution.increment_norm_le",
+    "MathResearchAnalysis.PredictableAreaContribution.gain_measurable",
+    "MathResearchAnalysis.PredictableAreaContribution.loss_measurable",
+    "MathResearchAnalysis.PredictableAreaContribution.gain_compensation",
+    "MathResearchAnalysis.PredictableAreaContribution.loss_compensation",
+    "MathResearchAnalysis.PredictableAreaContribution.increment_integrable_point",
+    "MathResearchAnalysis.PredictableAreaContribution.increment_integrable_reference",
+    "MathResearchAnalysis.PredictableAreaContribution.event_increment_ae",
+    "MathResearchAnalysis.PredictableAreaContribution.event_gain_ae",
+    "MathResearchAnalysis.PredictableAreaContribution.event_loss_ae"
+  ],
+  "declarations_count": 15,
+  "kernel_trust_level": 0,
+  "exit_code": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "warning_lines": [],
+  "proof_boundary": "Actual predictable before-state one-ring D-relative area contribution, bounded signed increment and true separate nonnegative compensation; no total signed telescope, Dynkin or geometric tail claim."
+}

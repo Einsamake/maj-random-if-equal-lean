@@ -1,0 +1,27 @@
+{
+  "validated_at": "2026-10-23T18:26:57.283142+08:00",
+  "source": "<workspace>\\formal\\drafts\\ActualAreaTelescope.lean",
+  "source_sha256": "57690333bda6487216826deaf60d0332ec8b02568c451c45a058239e8b7279f9",
+  "named_declarations": [
+    "MathResearchAnalysis.ActualAreaTelescope.strictWord_eq_filter_horizon",
+    "MathResearchAnalysis.ActualAreaTelescope.stoppedWord_area_telescope",
+    "MathResearchAnalysis.ActualAreaTelescope.increment_eq_horizon_filter",
+    "MathResearchAnalysis.ActualAreaTelescope.area_telescope",
+    "MathResearchAnalysis.ActualAreaTelescope.area_telescope_all_times_ae",
+    "MathResearchAnalysis.ActualAreaTelescope.sum_map_eq_sum_toFinset",
+    "MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset",
+    "MathResearchAnalysis.ActualAreaTelescope.area_telescope_finset_all_times_ae",
+    "MathResearchAnalysis.ActualAreaTelescope.increment_eq_actual_jump",
+    "MathResearchAnalysis.ActualAreaTelescope.area_telescope_actual_jumps"
+  ],
+  "declarations_count": 10,
+  "kernel_trust_level": 0,
+  "exit_code": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "warning_lines": [],
+  "proof_boundary": "Actual finite-clock identity word signed D-relative missing-area telescope, common all-horizon AE set and true event jumps. No compensation, Dynkin, drift or core tail premise; final actual theorem assumes only deterministic good positive clock sample, and AE theorem proves those from original law."
+}

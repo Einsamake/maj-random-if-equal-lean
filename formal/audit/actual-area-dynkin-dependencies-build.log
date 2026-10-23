@@ -1,0 +1,5 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+✔ [3923/3924] Built MathResearchAnalysis.ActualAreaTelescope (96s)
+✔ [3924/3924] Built MathResearchAnalysis.RealPredictableCompensation (97s)
+Build completed successfully (3924 jobs).

@@ -1,0 +1,6 @@
+✔ [3922/3922] Built MathResearchAnalysis.PredictableAreaContribution (136s)
+Build completed successfully (3922 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

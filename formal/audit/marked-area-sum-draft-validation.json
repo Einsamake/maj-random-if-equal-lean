@@ -1,0 +1,27 @@
+{
+  "validated_at": "2026-10-23T18:34:26.186318+08:00",
+  "source": "<workspace>\\formal\\drafts\\MarkedAreaSum.lean",
+  "source_sha256": "181d4d55564b2194bdfce05c7c8ff06a412517ab9c726d679600b57dd6b9a749",
+  "named_declarations": [
+    "MathResearchAnalysis.MarkedAreaSum.eventScore",
+    "MathResearchAnalysis.MarkedAreaSum.bool_sum_term",
+    "MathResearchAnalysis.MarkedAreaSum.eventScore_zero_outside_word",
+    "MathResearchAnalysis.MarkedAreaSum.eventScore_summable",
+    "MathResearchAnalysis.MarkedAreaSum.term_summable",
+    "MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_tsum_eventScore",
+    "MathResearchAnalysis.MarkedAreaSum.tsum_eventScore_eq_word_sum",
+    "MathResearchAnalysis.MarkedAreaSum.sum_pathSums_eq_word_sum",
+    "MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums",
+    "MathResearchAnalysis.MarkedAreaSum.area_eq_pathSums_all_times_ae"
+  ],
+  "declarations_count": 10,
+  "kernel_trust_level": 0,
+  "exit_code": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "warning_lines": [],
+  "proof_boundary": "Actual finite-clock identity sum equals all-site all-mark original pathSum, using true finite word support before exchanging signed sums. One common original-law full-probability set for all horizons, original marks and first-loss freeze retained. No core area Dynkin, geometry, finite recovery or tail premise."
+}

@@ -1,0 +1,6 @@
+✔ [3927/3927] Built MathResearchAnalysis.PhysicalAreaGenerator (21s)
+Build completed successfully (3927 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
