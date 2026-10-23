@@ -4295,9 +4295,9 @@
       "byte_identical_to_workspace": true
     },
     "README.md": {
-      "bytes": 5498,
-      "sha256": "9b5c6e78c754f7fd9f09a3e836810499d7bd620c68e0417c2e17f56fe1a26894",
-      "workspace_sha256": "9b5c6e78c754f7fd9f09a3e836810499d7bd620c68e0417c2e17f56fe1a26894",
+      "bytes": 5312,
+      "sha256": "2d38af3eaa2319eb49e94d6ec583e7fd5e12552da2d48e71d698085d86688a98",
+      "workspace_sha256": "2d38af3eaa2319eb49e94d6ec583e7fd5e12552da2d48e71d698085d86688a98",
       "byte_identical_to_workspace": true
     },
     "research/followup/ca_clean_proof.md": {
@@ -4367,9 +4367,9 @@
       "byte_identical_to_workspace": true
     },
     "STATUS.md": {
-      "bytes": 2636,
-      "sha256": "cee5b848dc5e8e3b2604a608e5143e714c1b6d8e2f9030d72051a76929e3088e",
-      "workspace_sha256": "cee5b848dc5e8e3b2604a608e5143e714c1b6d8e2f9030d72051a76929e3088e",
+      "bytes": 2783,
+      "sha256": "0380706aa74abe315b1eefd74e8cb8397bca388712353aad32ade05c842bb4dc",
+      "workspace_sha256": "0380706aa74abe315b1eefd74e8cb8397bca388712353aad32ade05c842bb4dc",
       "byte_identical_to_workspace": true
     },
     "形式化独立核查_2026-10-14.md": {
