@@ -1,0 +1,66 @@
+{
+  "reviewed_at": "2026-10-24T23:33:22.679962+08:00",
+  "reviewer": "/root/area_probability_review",
+  "review_type": "independent AI semantic and audit-evidence review; not human expert certification",
+  "status": "PASS for PhysicalAreaTail module only",
+  "module": "MathResearchAnalysis.PhysicalAreaTail",
+  "source_sha256": "ed1d27446e2ae29e8889e4dbcb3d19f74cc889db90b2fddd5ee36ca5ba5ba968",
+  "theorems": 8,
+  "named_declarations_checked": [
+    "MathResearchAnalysis.PhysicalAreaTail.law",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea",
+    "MathResearchAnalysis.PhysicalAreaTail.exitEvent",
+    "MathResearchAnalysis.PhysicalAreaTail.rate",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea_nonneg",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea_integrable",
+    "MathResearchAnalysis.PhysicalAreaTail.threshold_pos",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_mul_le_mean",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_mean",
+    "MathResearchAnalysis.PhysicalAreaTail.meanArea_eq_integral_rate",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_integral_rate",
+    "MathResearchAnalysis.PhysicalAreaTail.original_clock_extinction_le_integral_rate"
+  ],
+  "actual_axiom_output_names_and_order_match": true,
+  "actual_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "standard_kernel_trust": 0,
+  "stage_build_exit": 0,
+  "stage_axiom_audit_exit": 0,
+  "evidence_sha256": {
+    "physical-area-tail-stage-declarations-validation.json": "85852842fe11dfe437df7118abbc5355e1655781c4fdf564eafc214d99dadb32",
+    "physical-area-tail-stage-declarations-build.log": "1502c3af0aa113c94900cc2096a099a460b6d8966e90b77b7f6532f6f9320a45",
+    "physical-area-tail-stage-declarations-axioms.lean": "88fba3991f991e03d2cc438bb3d52049b5bdfabcd04bcf6578029c60c497dc80",
+    "physical-area-tail-stage-declarations-axioms.log": "19a5dc36df7814edfb38a4e7b1a156bcf11262d595890e6c5d92b1874862760d"
+  },
+  "examined_source_sha256": {
+    "formal/analysis/MathResearchAnalysis/PhysicalAreaTail.lean": "ed1d27446e2ae29e8889e4dbcb3d19f74cc889db90b2fddd5ee36ca5ba5ba968",
+    "formal/analysis/MathResearchAnalysis/PhysicalAreaGenerator.lean": "2a6eb082667a5f09bbb0b785a1fd61c9595e0fd4f597a69929bff3807334adb2",
+    "formal/analysis/MathResearchAnalysis/FrozenPhysicalExit.lean": "ee4882cce8654dca8d4207d4b20e6169a14f26e7adb80d331755ab216c5b4805",
+    "formal/analysis/MathResearchAnalysis/ActualAreaDynkin.lean": "2444343314eb0f1a44cfa45162378f308b0f5ec91aeebfc72b168648626c136a",
+    "formal/analysis/MathResearchAnalysis/ClockWordMarks.lean": "ff5571e8c5cc9bd355b1e13f4322e7fd072226c7abc66f29fbd4aa982de659d8",
+    "formal/analysis/MathResearchAnalysis/ClippedSquareCoordinates.lean": "c6cd6a6745efd54a81db2dcb0180db52614e316b6e86f36595324a7bf7f65376",
+    "formal/analysis/MathResearchAnalysis/DropletStoppedWord.lean": "a0af04f2d51e94698c61424ecef265e09699bfd502c87ffb0bc5328ec79ed7f6"
+  },
+  "semantic_checks": {
+    "actual_product_clock_mark_law": true,
+    "actual_clipped_initial_state_and_closed_protected_sites": true,
+    "threshold_requires_L_ge_40_and_is_strictly_positive": true,
+    "Markov_uses_actual_nonnegative_integrable_area": true,
+    "measure_toReal_uses_finite_probability_mass": true,
+    "unbounded_exit_infinity_not_excluded": true,
+    "cdf_comparison_direction_preserved": true,
+    "no_moment_bound_or_core_recovery_conclusion_as_input": true,
+    "original_clock_extinction_is_not_synchronous_recovery": true
+  },
+  "global_build_scope": "pending parent whole-project build; previous 206-source audit is not treated as validating new 207-source project",
+  "main_theorem_complete": false,
+  "remaining_gaps": [
+    "quantitative actual mean-area bound at T=cL^2",
+    "accumulated forbidden-birth control or a justified replacement potential",
+    "CMST/FSS geometry/probability core",
+    "original synchronous time conversion, upper bound and final exact-N constants"
+  ]
+}

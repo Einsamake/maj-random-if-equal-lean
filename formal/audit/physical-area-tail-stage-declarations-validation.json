@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-24T23:31:01.193756+08:00",
+  "modules": [
+    "PhysicalAreaTail"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.PhysicalAreaTail.law",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea",
+    "MathResearchAnalysis.PhysicalAreaTail.exitEvent",
+    "MathResearchAnalysis.PhysicalAreaTail.rate",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea_nonneg",
+    "MathResearchAnalysis.PhysicalAreaTail.missingArea_integrable",
+    "MathResearchAnalysis.PhysicalAreaTail.threshold_pos",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_mul_le_mean",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_mean",
+    "MathResearchAnalysis.PhysicalAreaTail.meanArea_eq_integral_rate",
+    "MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_integral_rate",
+    "MathResearchAnalysis.PhysicalAreaTail.original_clock_extinction_le_integral_rate"
+  ],
+  "declarations_count": 12,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/PhysicalAreaTail.lean": "ed1d27446e2ae29e8889e4dbcb3d19f74cc889db90b2fddd5ee36ca5ba5ba968"
+  },
+  "new_lean_warning_lines": []
+}

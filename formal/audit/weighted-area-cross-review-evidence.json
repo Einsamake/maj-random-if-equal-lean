@@ -1,0 +1,71 @@
+{
+  "reviewed_at": "2026-10-25T00:04:41.118921+08:00",
+  "reviewer": "/root/cleanup_cumulative_bound",
+  "review_kind": "independent AI semantic cross-review of other authors; not human expert certification",
+  "stage": "semantic_only_pending_final_global_binding",
+  "reviewed_target_sha256": {
+    "formal/analysis/MathResearchAnalysis/WeightedExitArea.lean": "e0199659d0ab6101af2aaecacd304f518e5259a05a3d0154634e08c441e254cb",
+    "formal/drafts/WeightedAreaTail.lean": "2b372a7b81fd8a07a63be83da3360077f17035f0efbf87f0e5ffc3a9c27768d2",
+    "formal/analysis/MathResearchAnalysis/ForbiddenBirthControl.lean": "7ed911a408ddcda06065dc1ef31269cbf377c70858ddb95adc14cfe18bf23cc2",
+    "formal/analysis/MathResearchAnalysis/ProtectedExitArea.lean": "f592704670afb00d91e74a04af6823bbda9faf1a4b21357ab57db3652472f486",
+    "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean": "24579cf99be9781083789e9d8d66f6d4deb2387e471adc40870c12bc15b37d8f",
+    "formal/analysis/MathResearchAnalysis/FrozenPhysicalExit.lean": "ee4882cce8654dca8d4207d4b20e6169a14f26e7adb80d331755ab216c5b4805",
+    "formal/analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean": "d809d52a894b9adebd1ca33a2db3ea26489d9a4a31f13b643947c70ffd2980ea",
+    "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean": "8c092c3463aa7a736806f593028fa9eaeb9930fbfcb6fffd8979163b87baa1ef"
+  },
+  "WeightedExitArea": {
+    "semantic_result": "PASS_no_gap_identified",
+    "recorded_leaf_kernel_verification": "build0 and standard Lean --trust=0 named audit0; existing logs independently matched, not rerun by this reviewer",
+    "named_declarations_checked": [
+      "MathResearchAnalysis.WeightedExitArea.smallBlock",
+      "MathResearchAnalysis.WeightedExitArea.missingWeight",
+      "MathResearchAnalysis.WeightedExitArea.half_twentieth",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_subset_directedBlock",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_card",
+      "MathResearchAnalysis.WeightedExitArea.side_le_eighty_mul_div_forty",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_quadratic_card",
+      "MathResearchAnalysis.WeightedExitArea.abs_signed_offset",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_norm_bound",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_weight_lower_bound",
+      "MathResearchAnalysis.WeightedExitArea.smallBlock_cubic_weight",
+      "MathResearchAnalysis.WeightedExitArea.missingWeight_nonnegative",
+      "MathResearchAnalysis.WeightedExitArea.mass_le_missingWeight",
+      "MathResearchAnalysis.WeightedExitArea.cubic_weight_of_protected_missing",
+      "MathResearchAnalysis.WeightedExitArea.actual_stopped_weight_after_exit",
+      "MathResearchAnalysis.WeightedExitArea.cubic_weight_of_physical_exit_le",
+      "MathResearchAnalysis.WeightedExitArea.physical_exit_measure_le_cubic_weight",
+      "MathResearchAnalysis.WeightedExitArea.original_extinction_measure_le_cubic_weight"
+    ],
+    "theorems": 16,
+    "definitions": 2,
+    "axioms_seen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "audit_file_sha256": {
+      "formal/audit/weighted-area-stage-declarations-validation.json": "618ffc7d49a3c8ade7e242cd7df3abb1165ae069292ad9d5363011af3c5c5be5",
+      "formal/audit/weighted-area-stage-declarations-axioms.log": "eeb6a504e61ecc0cf16690afeec6c133d05d134cd66b5121d52dfd7ee34c13ce",
+      "formal/audit/weighted-area-stage-declarations-build.log": "0b03409923440693e4342de09131c20417c1a3838668bef4f0feec3e74c15fe9"
+    }
+  },
+  "WeightedAreaTail": {
+    "semantic_result": "PASS_for_current_draft_pending_kernel_and_frozen_source",
+    "compiled_by_this_reviewer": false,
+    "recorded_leaf_kernel_verification": "not yet available",
+    "main_theorem_claimed": false
+  },
+  "arithmetic_sanity_check": {
+    "method": "exact rational arithmetic, separate from Lean proof",
+    "L_min": 80,
+    "L_max": 100000,
+    "cases": 99921,
+    "floor_card_weight_and_cubic_product_checks_pass": true
+  },
+  "explicit_limits": [
+    "WeightedAreaDynkin was authored by this reviewer and is NOT independently certified by this review. Its public theorem interfaces are checked only for correct use in the reviewed tail.",
+    "The original endpoint in these results is the unmodified CLOCK process, not the synchronous process.",
+    "No O(L) expanded weighted raw drift or final quadratic recovery result is certified.",
+    "Final whole-project source set and axioms binding must be added after root validation; tail draft may change before freeze."
+  ]
+}

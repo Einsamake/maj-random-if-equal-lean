@@ -1,0 +1,43 @@
+{
+  "reviewed_at": "2026-10-25T05:12:47.286430+08:00",
+  "reviewer": "/root/area_probability_review",
+  "review_type": "Independent AI mathematical semantics of two new modules; own NW dependency not independently certified here",
+  "status": "SEMANTIC_PASS; PhysicalWeightedDrift kernel and whole-project binding pending",
+  "semantic_review_modules": [
+    "WeightedRawRate",
+    "PhysicalWeightedDrift"
+  ],
+  "self_authored_dependency_excluded_from_independent_semantics": [
+    "WeightedRawContour"
+  ],
+  "source_snapshot_sha256": {
+    "formal/drafts/WeightedRawRate.lean": "152cfb27d13e5a64f5257a5356339cbb38773c0fa15bceaf0446bc0a81970c12",
+    "formal/drafts/PhysicalWeightedDrift.lean": "c32f0479af732c2521068c115b72a3e176c5bc6d01c1c14ebd10fe485ba66d48"
+  },
+  "semantic_review_sha256": "10067a412be83b7eadbedc3883c2f744e454be8b8f312c85d905439ec4074b1a",
+  "WeightedRawRate_named_kernel_status": {
+    "build_exit": 0,
+    "standard_kernel_trust": 0,
+    "axiom_audit_exit": 0,
+    "declarations": 15,
+    "validation_record_sha256": "dc8843a47c31b108714ce2b1dfecd74e439845ead17c5c034cd6cf76010290d0"
+  },
+  "PhysicalWeightedDrift_kernel_status": "not yet asserted passed; last known draft compile exit1 was mechanical and parent is repairing",
+  "whole_project_validation_scope": "previous accepted 215 sources do not cover this new two-module stage",
+  "semantic_checks": {
+    "local_death_birth_partition_exact": true,
+    "center_colour_not_added_to_majority_vote": true,
+    "actual_four_reflection_sum_not_assumed": true,
+    "perimeter_projection_bound_derived": true,
+    "raw_linear_bound_18L_plus_12_derived": true,
+    "beforeState_shape_common_ae_all_times": true,
+    "freeze_condition_supplies_actual_inner_protection": true,
+    "sample_and_time_integrability_precedes_comparison": true,
+    "genuine_elapsed_Real_time_used": true,
+    "explicit_K_12288000_and_half_CDF_derived_not_assumed": true,
+    "extended_infinite_exit_retained": true,
+    "original_clock_finite_square_not_infinite_all_black_or_synchronous": true
+  },
+  "main_theorem_complete": false,
+  "independent_AI_not_human_expert_certification": true
+}

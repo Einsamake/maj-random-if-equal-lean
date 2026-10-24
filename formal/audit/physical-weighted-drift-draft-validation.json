@@ -1,0 +1,18 @@
+{
+  "validated_at": "2026-10-25T05:09:55.551516+08:00",
+  "source": "formal/drafts/PhysicalWeightedDrift.lean",
+  "source_sha256": "c32f0479af732c2521068c115b72a3e176c5bc6d01c1c14ebd10fe485ba66d48",
+  "standard_lean_trust_level": 0,
+  "source_compile_exit": 0,
+  "theorems": 13,
+  "definitions": 1,
+  "axiom_print_audit_performed_in_this_check": false,
+  "dependent_source_sha256": {
+    "WeightedRawRate": "152cfb27d13e5a64f5257a5356339cbb38773c0fa15bceaf0446bc0a81970c12",
+    "WeightedAreaTail": "4545edb300ec1c8a22fbbb0a0e928fde54aa4b19d68feb2f566673604f5bf2df",
+    "WeightedExitArea": "e0199659d0ab6101af2aaecacd304f518e5259a05a3d0154634e08c441e254cb",
+    "WeightedAreaDynkin": "f0d5ff59d833e94e522b72de8ef8c5c88a8c28c9cb2f94dcc2aa9dbd950080b8",
+    "ActualPreState": "64c40bbe747bf44922ac31f65cf0427e2c735235ba0bdad53b92ab516166e8b4",
+    "ProtectedEvolution": "24579cf99be9781083789e9d8d66f6d4deb2387e471adc40870c12bc15b37d8f"
+  }
+}

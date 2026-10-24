@@ -1,0 +1,118 @@
+{
+  "reviewed_at": "2026-10-25T05:00:49.974087+08:00",
+  "reviewer": "/root/area_probability_review",
+  "review_kind": "independent AI semantic review of modules not authored by reviewer; not human expert certification",
+  "status": "PASS three-module semantics and named-kernel evidence",
+  "semantically_reviewed_modules": [
+    "WeightedAreaDynkin",
+    "WeightedAreaTail",
+    "WeightedExitArea"
+  ],
+  "excluded_from_independent_semantics": [
+    "WeightedRawContour"
+  ],
+  "independently_reviewed_theorems": 83,
+  "independently_reviewed_named_declarations": 96,
+  "declarations_by_module": {
+    "WeightedAreaDynkin": {
+      "theorem": 48,
+      "def": 8
+    },
+    "WeightedExitArea": {
+      "theorem": 16,
+      "def": 2
+    },
+    "WeightedAreaTail": {
+      "theorem": 19,
+      "def": 3
+    }
+  },
+  "source_sha256": {
+    "MathResearchAnalysis/WeightedAreaDynkin.lean": "f0d5ff59d833e94e522b72de8ef8c5c88a8c28c9cb2f94dcc2aa9dbd950080b8",
+    "MathResearchAnalysis/WeightedExitArea.lean": "e0199659d0ab6101af2aaecacd304f518e5259a05a3d0154634e08c441e254cb",
+    "MathResearchAnalysis/WeightedAreaTail.lean": "4545edb300ec1c8a22fbbb0a0e928fde54aa4b19d68feb2f566673604f5bf2df"
+  },
+  "stage_records": [
+    {
+      "prefix": "weighted-area-dynkin",
+      "validation_at": "2026-10-25T00:01:39.173804+08:00",
+      "full_named_outputs_checked": 56,
+      "independently_semantically_reviewed_modules": [
+        "WeightedAreaDynkin"
+      ],
+      "audit_log_also_contains_modules_not_independently_reviewed_here": [],
+      "names_and_order_exact": true,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "file_sha256": {
+        "weighted-area-dynkin-stage-declarations-validation.json": "73943ce7ce5e42c4cc6bd58c065978a6e13568fa8f668ad63ef0ce7aaf3be9d9",
+        "weighted-area-dynkin-stage-declarations-build.log": "fd620fe00d7a3410c946b2cd418ed3fea1626855829c6ddb59a32461f55fd2ae",
+        "weighted-area-dynkin-stage-declarations-axioms.lean": "66e2962ae0817e34d80de71b300170fe6d54f59b34e8fc25af5b3690f2d8f859",
+        "weighted-area-dynkin-stage-declarations-axioms.log": "83a4d964a0fd053c6fe5501c2b51063c520c873efe8263abfa7b88dce1e4d3b0"
+      }
+    },
+    {
+      "prefix": "weighted-area",
+      "validation_at": "2026-10-24T23:56:13.345988+08:00",
+      "full_named_outputs_checked": 18,
+      "independently_semantically_reviewed_modules": [
+        "WeightedExitArea"
+      ],
+      "audit_log_also_contains_modules_not_independently_reviewed_here": [],
+      "names_and_order_exact": true,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "file_sha256": {
+        "weighted-area-stage-declarations-validation.json": "618ffc7d49a3c8ade7e242cd7df3abb1165ae069292ad9d5363011af3c5c5be5",
+        "weighted-area-stage-declarations-build.log": "0b03409923440693e4342de09131c20417c1a3838668bef4f0feec3e74c15fe9",
+        "weighted-area-stage-declarations-axioms.lean": "10947c8499c53319932e2de2950ffdae5b2cee4ed3eec766df9fc5a1e945636d",
+        "weighted-area-stage-declarations-axioms.log": "eeb6a504e61ecc0cf16690afeec6c133d05d134cd66b5121d52dfd7ee34c13ce"
+      }
+    },
+    {
+      "prefix": "weighted-area-connections",
+      "validation_at": "2026-10-25T04:56:09.836656+08:00",
+      "full_named_outputs_checked": 53,
+      "independently_semantically_reviewed_modules": [
+        "WeightedAreaTail"
+      ],
+      "audit_log_also_contains_modules_not_independently_reviewed_here": [
+        "WeightedRawContour"
+      ],
+      "names_and_order_exact": true,
+      "actual_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "file_sha256": {
+        "weighted-area-connections-stage-declarations-validation.json": "1790a7a65c6c3a374a72963cfef98ab2f742384f6f6e24053e582f4688745c79",
+        "weighted-area-connections-stage-declarations-build.log": "f8c07023885a3afbfd590451d8dfc7b4be0368cf1524f7322ce67baa94d622b5",
+        "weighted-area-connections-stage-declarations-axioms.lean": "9c89bd81c0f51f8c9e884a14e5073c4d78f9714464b9b658e301e3f8615a5853",
+        "weighted-area-connections-stage-declarations-axioms.log": "36bf9cb48b15e288c2d5ed110a4f824e4ed06ad08c13c5dc06901a69b4df5056"
+      }
+    }
+  ],
+  "semantic_report_sha256": "dff5ca1255d0ca0d2f34060f50905c18558c8685a0f7b45dbbdd57fac145102d",
+  "key_semantic_checks": {
+    "finite_powerset_bound_constructed_not_assumed": true,
+    "value_missing_eq_removes_clipping_for_all_U": true,
+    "actual_formula_has_no_fbounded_or_core_moment_premise": true,
+    "common_ae_set_before_all_times": true,
+    "strict_pre_event_state_and_first_loss_update_preserved": true,
+    "signed_telescope_real_reindex_and_integrability_before_exchanges": true,
+    "actual_weighted_cleanup_paid_by_genuine_perimeter_budget": true,
+    "actual_cubic_exit_threshold_L_ge_80": true,
+    "infinite_exit_retained": true,
+    "actual_product_law_and_original_clock_not_sync": true,
+    "raw_integral_retained_without_assumed_O_L_bound": true
+  },
+  "whole_project_validation_scope": "pending new whole-project validation; previous accepted 210-source record is not claimed to cover these new modules",
+  "main_theorem_complete": false
+}

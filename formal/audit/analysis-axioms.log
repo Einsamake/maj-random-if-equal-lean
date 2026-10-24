@@ -260,6 +260,22 @@
 'MathResearchAnalysis.CenteredPeelingTransport.finiteModifiedWord_eq_foldl' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rate_eq_raw_add_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rawRate_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.expected_raw_eq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rawRate_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.meanArea_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.exit_probability_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.CleanupConnectivity.low_degree_neighbors_in_singleton' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -1722,6 +1738,85 @@
 'MathResearchAnalysis.CountableClockSurvival.countable_clock_indep' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.step_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.word_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.wordLoss_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_sum_ordered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_le_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_word_sum_eq_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.eventScore_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.sum_pathSums_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.pathSum_eq_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.pathSum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.marked_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.total_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_eq_compensator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.cleanup_compensator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.finite_vertex_rate_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_mean_score_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_rate_eq_score' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.rate_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_mean_rate_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_integral_rate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.actual_clipped_cleanup_rate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.DropletClockLaw.markedEvents_fixedVector' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -2402,6 +2497,45 @@
 'MathResearchAnalysis.FixedClockPath.prefix_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FixedClockPath.allPaths_pathWait_known' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FixedClockPath.allPaths_degree_half_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.occupied_coordinate_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.two_neighbours_in_centered_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.positive_degree_diamond_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.outside_birth_layer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.weight_nonnegative_on_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.weight_zero_at_outside_birth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.weighted_forbidden_birth_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.mass_rawStep_diff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_mask_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.clipped_rawWeightedRate_eq_expanded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.actual_rawWeightedRate_eq_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ForbiddenBirthControl.weight_upper_bound' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.FrozenPhysicalExit.firstLossTime_le_of_loss' depends on axioms: [propext,
@@ -4305,6 +4439,65 @@
 'MathResearchAnalysis.PhysicalAreaGenerator.actual_clipped_generator_raw_cleanup' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.missingArea_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.missingArea_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.threshold_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_mul_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.meanArea_eq_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.original_clock_extinction_le_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.stoppedWord_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.strictStateAt_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.beforeState_shape_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.rawContribution_le_linear_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.expected_raw_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.integral_time_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.raw_integral_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_mean_weighted_area_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_exit_probability_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.original_clock_extinction_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.quadratic_bound_le_half_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_exit_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.original_clock_extinction_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.PredictableAreaContribution.increment_measurable' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -5610,6 +5803,326 @@
  Quot.sound]
 'MathResearchAnalysis.UpperStoppingApprox.round_lt_add' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.UpperStoppingApprox.representative_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.value_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.stoppedWord_observable_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_finset_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.eventScore_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.sum_pathSums_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_eq_pathSums' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_eq_pathSums_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.marked_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.total_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.time_mean_increment_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin_single_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.expected_observable_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.expected_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.value_missing_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.missing_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_area_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_area_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weighted_generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weighted_generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.missing_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.mass_sub_of_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupRate_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupRate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupContribution_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupContribution_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanup_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanup_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_cleanup_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missing_eq_const_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missing_generator_eq_negative_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.modified_mass_diff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.negative_mass_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missing_generator_raw_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missing_generator_expanded_raw_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.rate_eq_raw_add_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.rawContribution_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.expected_raw_eq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.rawContribution_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.meanArea_eq_raw_integral_add_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.meanArea_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missingArea_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.missingArea_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.threshold_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.exit_probability_mul_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.exit_probability_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.exit_probability_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaTail.original_clock_extinction_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.half_twentieth' depends on axioms: [propext]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_subset_directedBlock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.side_le_eighty_mul_div_forty' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_quadratic_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.abs_signed_offset' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_weight_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.missingWeight_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.mass_le_missingWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.cubic_weight_of_protected_missing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.actual_stopped_weight_after_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.cubic_weight_of_physical_exit_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.physical_exit_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.original_extinction_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.northwest_previous_top_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_valley' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_valley_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_west_edges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_weight_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.westSegment_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_westSegment_subset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.rising_tops_weight_le_segment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.paired_valley_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.northwestCorner_north' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.pair_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.pair_rises' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.pairedValley_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.east_south_degree_ge_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.pairedValley_mem_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.pairedValley_injOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.northwest_unpaired_card_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.northwest_unpaired_weight_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.paired_segments_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.paired_segments_card_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.paired_weight_difference_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.valley_weight_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.paired_valley_weight_sum_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawContour.northwestCharge_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.boolean_rate_eq_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestScore_boolean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.state_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestScore_at_reflect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.raw_local_boolean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.raw_local_four_orientations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestCharge_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.sum_reflected_northwestScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_four_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.perimeter_le_clipped_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_le_perimeter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_le_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.degree4_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.degree4_at_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.stable_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.card_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.perimeter_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.shape_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.weight_reflect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedReflection.clippedDomain_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.centeredSites_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.protectedSites_reflect_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.protectedSites_subset_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.innerDiamond_subset_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.mirror_subset_clippedDomain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.rawWeightedRate_mirror' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedReflection.actual_rawWeightedRate_mirror' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.WholeSquareClockTransport.clippedConfig_image' depends on axioms: [propext,

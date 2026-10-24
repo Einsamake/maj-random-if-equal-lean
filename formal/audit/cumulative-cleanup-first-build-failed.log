@@ -1,0 +1,81 @@
+✔ [3930/3931] Built MathResearchAnalysis.CumulativeCleanupBudget (23s)
+✖ [3931/3931] Building MathResearchAnalysis.CleanupAreaTail (55s)
+trace: .> LEAN_PATH=<workspace>\formal\analysis\.lake\packages\Cli\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\batteries\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\Qq\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\aesop\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\proofwidgets\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\importGraph\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\plausible\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\packages\mathlib\.lake\build\lib\lean;<workspace>\formal\analysis\.lake\build\lib\lean d:\MyWorks\Math\formal\.tools\lean-4.35.0-rc4-windows\bin\lean.exe <workspace>\formal\analysis\MathResearchAnalysis\CleanupAreaTail.lean -o <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\CleanupAreaTail.olean -i <workspace>\formal\analysis\.lake\build\lib\lean\MathResearchAnalysis\CleanupAreaTail.ilean -c <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\CleanupAreaTail.c --setup <workspace>\formal\analysis\.lake\build\ir\MathResearchAnalysis\CleanupAreaTail.setup.json --json
+error: MathResearchAnalysis/CleanupAreaTail.lean:55:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : Sample L),
+      MaskedAreaGenerator.frozenGenerator (ClippedDiamondGeometry.clippedDomain L) ?m.41
+        (ObservedPreState.beforeState L (ClippedDiamondGeometry.clippedDomain L) ?m.41 ?m.42 u a) fun U =>
+        ↑(ClippedDiamondGeometry.clippedDomain L \
+              U).card ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L) -
+    ∫ (a : Sample L),
+      CumulativeCleanupBudget.rate (ClippedDiamondGeometry.clippedDomain L) (ClippedProtectedGeometry.protectedSites L)
+        (ObservedPreState.beforeState L (ClippedDiamondGeometry.clippedDomain L)
+          (ClippedProtectedGeometry.protectedSites L) (ClippedDiamondGeometry.clippedDomain L) u
+          a) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)
+in the target expression
+  ∫ (z : Sample L), rawRate L (u, z) ∂law L =
+    ∫ (z : Sample L), PhysicalAreaTail.rate L (u, z) ∂law L - ∫ (z : Sample L), cleanupRate L (u, z) ∂law L
+
+L : ℕ
+hL : 1 ≤ L
+u : NNReal
+⊢ ∫ (z : Sample L), rawRate L (u, z) ∂law L =
+    ∫ (z : Sample L), PhysicalAreaTail.rate L (u, z) ∂law L - ∫ (z : Sample L), cleanupRate L (u, z) ∂law L
+error: MathResearchAnalysis/CleanupAreaTail.lean:92:59: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (∫ (a : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), rawRate L (a.toNNReal, z) ∂law L) +
+    ∫ (a : ℝ) in Set.Ioc 0 ↑T,
+      ∫ (z : Sample L),
+        CumulativeCleanupBudget.rate (ClippedDiamondGeometry.clippedDomain L)
+          (ClippedProtectedGeometry.protectedSites L)
+          (ObservedPreState.beforeState L (ClippedDiamondGeometry.clippedDomain L)
+            (ClippedProtectedGeometry.protectedSites L) (ClippedDiamondGeometry.clippedDomain L) a.toNNReal
+            z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)
+in the target expression
+  ∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), PhysicalAreaTail.rate L (u.toNNReal, z) ∂law L =
+    (∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), rawRate L (u.toNNReal, z) ∂law L) +
+      ∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), cleanupRate L (u.toNNReal, z) ∂law L
+
+L : ℕ
+hL : 1 ≤ L
+T : NNReal
+hr : Integrable (fun u => ∫ (z : Sample L), rawRate L (u.toNNReal, z) ∂law L) (volume.restrict (Set.Ioc 0 ↑T))
+hc :
+  Integrable
+    (fun u =>
+      ∫ (z : Sample L),
+        CumulativeCleanupBudget.rate (ClippedDiamondGeometry.clippedDomain L)
+          (ClippedProtectedGeometry.protectedSites L)
+          (ObservedPreState.beforeState L (ClippedDiamondGeometry.clippedDomain L)
+            (ClippedProtectedGeometry.protectedSites L) (ClippedDiamondGeometry.clippedDomain L) u.toNNReal
+            z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L))
+    (volume.restrict (Set.Ioc 0 ↑T))
+⊢ ∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), PhysicalAreaTail.rate L (u.toNNReal, z) ∂law L =
+    (∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), rawRate L (u.toNNReal, z) ∂law L) +
+      ∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), cleanupRate L (u.toNNReal, z) ∂law L
+error: MathResearchAnalysis/CleanupAreaTail.lean:98:2: Type mismatch
+  add_le_add_left (CumulativeCleanupBudget.actual_clipped_cleanup_rate_le L hL T) ?m.130
+has type
+  (∫ (u : ℝ) in Set.Ioc 0 ↑T,
+        ∫ (z : Sample L),
+          CumulativeCleanupBudget.rate (ClippedDiamondGeometry.clippedDomain L)
+            (ClippedProtectedGeometry.protectedSites L)
+            (ObservedPreState.beforeState L (ClippedDiamondGeometry.clippedDomain L)
+              (ClippedProtectedGeometry.protectedSites L) (ClippedDiamondGeometry.clippedDomain L) u.toNNReal
+              z) ∂ClockWordMarks.measure (ClippedSquareCoordinates.parameter L)) +
+      ?m.130 ≤
+    4 * ↑L + 2 + ?m.130
+but is expected to have type
+  (∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), rawRate L (u.toNNReal, z) ∂law L) +
+      ∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), cleanupRate L (u.toNNReal, z) ∂law L ≤
+    (∫ (u : ℝ) in Set.Ioc 0 ↑T, ∫ (z : Sample L), rawRate L (u.toNNReal, z) ∂law L) + (4 * ↑L + 2)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 34
+  Real.instLE ↦ 2
+Some required targets logged failures:
+- MathResearchAnalysis.CleanupAreaTail
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+error: build failed
+
+EXIT_CODE=1

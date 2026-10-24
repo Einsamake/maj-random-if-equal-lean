@@ -1,0 +1,31 @@
+'MathResearchAnalysis.WeightedRawRate.northwestScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.booleanScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.booleanRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.boolean_rate_eq_scores' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestScore_boolean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.state_mirror' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestScore_at_reflect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.raw_local_boolean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.raw_local_four_orientations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.northwestCharge_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.sum_reflected_northwestScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_four_charges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.perimeter_le_clipped_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_le_perimeter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedRawRate.actual_raw_le_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

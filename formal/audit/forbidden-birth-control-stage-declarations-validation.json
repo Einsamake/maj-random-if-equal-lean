@@ -1,0 +1,37 @@
+{
+  "validated_at": "2026-10-24T23:49:40.602625+08:00",
+  "modules": [
+    "ForbiddenBirthControl"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ForbiddenBirthControl.weight",
+    "MathResearchAnalysis.ForbiddenBirthControl.occupied_coordinate_bounds",
+    "MathResearchAnalysis.ForbiddenBirthControl.two_neighbours_in_centered_square",
+    "MathResearchAnalysis.ForbiddenBirthControl.positive_degree_diamond_bound",
+    "MathResearchAnalysis.ForbiddenBirthControl.outside_birth_layer",
+    "MathResearchAnalysis.ForbiddenBirthControl.weight_nonnegative_on_domain",
+    "MathResearchAnalysis.ForbiddenBirthControl.weight_zero_at_outside_birth",
+    "MathResearchAnalysis.ForbiddenBirthControl.weighted_forbidden_birth_zero",
+    "MathResearchAnalysis.ForbiddenBirthControl.mass",
+    "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate",
+    "MathResearchAnalysis.ForbiddenBirthControl.mass_rawStep_diff",
+    "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_local",
+    "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_mask_correction",
+    "MathResearchAnalysis.ForbiddenBirthControl.clipped_rawWeightedRate_eq_expanded",
+    "MathResearchAnalysis.ForbiddenBirthControl.actual_rawWeightedRate_eq_square",
+    "MathResearchAnalysis.ForbiddenBirthControl.weight_upper_bound"
+  ],
+  "declarations_count": 16,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ForbiddenBirthControl.lean": "7ed911a408ddcda06065dc1ef31269cbf377c70858ddb95adc14cfe18bf23cc2"
+  },
+  "new_lean_warning_lines": []
+}

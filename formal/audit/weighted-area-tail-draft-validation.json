@@ -1,0 +1,20 @@
+{
+  "validated_at": "2026-10-25T04:53:03.753138+08:00",
+  "compiler_output": "Lean (version 4.35.0-rc4, x86_64-w64-windows-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "source": "formal/drafts/WeightedAreaTail.lean",
+  "source_sha256": "4545edb300ec1c8a22fbbb0a0e928fde54aa4b19d68feb2f566673604f5bf2df",
+  "standard_lean_trust_level": 0,
+  "source_compile_exit": 0,
+  "theorems": 19,
+  "definitions": 3,
+  "axiom_print_audit_performed_in_this_check": false,
+  "dependent_source_sha256": {
+    "WeightedAreaDynkin": "f0d5ff59d833e94e522b72de8ef8c5c88a8c28c9cb2f94dcc2aa9dbd950080b8",
+    "WeightedExitArea": "e0199659d0ab6101af2aaecacd304f518e5259a05a3d0154634e08c441e254cb",
+    "ForbiddenBirthControl": "7ed911a408ddcda06065dc1ef31269cbf377c70858ddb95adc14cfe18bf23cc2",
+    "CumulativeCleanupBudget": "f39bcef5b5643560992319047ee63749347eef90301bc9f12417405997e83aa5",
+    "PhysicalAreaTail": "ed1d27446e2ae29e8889e4dbcb3d19f74cc889db90b2fddd5ee36ca5ba5ba968",
+    "ProtectedAreaPotential": "dff8b3573f48a230d7d846b19de383d6a109d349d1f390cd2e851c127b6db7d2"
+  },
+  "note": "One theorem increases the elaboration heartbeat limit to 800000. This changes no logical premise, axiom, or trust setting. Official leaf and full-project audits are separate."
+}

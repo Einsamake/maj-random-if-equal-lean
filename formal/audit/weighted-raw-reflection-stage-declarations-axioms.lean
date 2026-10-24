@@ -1,0 +1,17 @@
+import MathResearchAnalysis.WeightedReflection
+
+#print axioms MathResearchAnalysis.WeightedReflection.degree4_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.degree4_at_reflect
+#print axioms MathResearchAnalysis.WeightedReflection.stable_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.card_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.perimeter_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.shape_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.weight_reflect
+#print axioms MathResearchAnalysis.WeightedReflection.clippedDomain_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.centeredSites_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.protectedSites_reflect_iff
+#print axioms MathResearchAnalysis.WeightedReflection.protectedSites_subset_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.innerDiamond_subset_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.mirror_subset_clippedDomain
+#print axioms MathResearchAnalysis.WeightedReflection.rawWeightedRate_mirror
+#print axioms MathResearchAnalysis.WeightedReflection.actual_rawWeightedRate_mirror

@@ -1,0 +1,6 @@
+✔ [3928/3928] Built MathResearchAnalysis.PhysicalAreaTail (25s)
+Build completed successfully (3928 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

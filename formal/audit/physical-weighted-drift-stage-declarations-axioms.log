@@ -1,0 +1,44 @@
+'MathResearchAnalysis.PhysicalWeightedDrift.stoppedWord_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.strictStateAt_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.beforeState_shape_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.rawContribution_le_linear_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.expected_raw_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.integral_time_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.raw_integral_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_mean_weighted_area_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_exit_probability_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.original_clock_extinction_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.quadraticHorizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.quadratic_bound_le_half_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.actual_exit_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalWeightedDrift.original_clock_extinction_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

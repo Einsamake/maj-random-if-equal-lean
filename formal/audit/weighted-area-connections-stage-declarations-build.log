@@ -1,0 +1,7 @@
+✔ [3934/3935] Built MathResearchAnalysis.WeightedRawContour (8.9s)
+✔ [3935/3935] Built MathResearchAnalysis.WeightedAreaTail (8.9s)
+Build completed successfully (3935 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

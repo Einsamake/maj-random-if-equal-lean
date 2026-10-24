@@ -220,6 +220,17 @@ public import MathResearchAnalysis.MarkedAreaSum
 public import MathResearchAnalysis.ActualAreaDynkin
 
 public import MathResearchAnalysis.PhysicalAreaGenerator
+public import MathResearchAnalysis.PhysicalAreaTail
+public import MathResearchAnalysis.CumulativeCleanupBudget
+public import MathResearchAnalysis.CleanupAreaTail
+public import MathResearchAnalysis.ForbiddenBirthControl
+public import MathResearchAnalysis.WeightedExitArea
+public import MathResearchAnalysis.WeightedAreaDynkin
+public import MathResearchAnalysis.WeightedAreaTail
+public import MathResearchAnalysis.WeightedRawContour
+public import MathResearchAnalysis.WeightedReflection
+public import MathResearchAnalysis.WeightedRawRate
+public import MathResearchAnalysis.PhysicalWeightedDrift
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.

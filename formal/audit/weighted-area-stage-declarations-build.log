@@ -1,0 +1,6 @@
+✔ [3890/3890] Built MathResearchAnalysis.WeightedExitArea (22s)
+Build completed successfully (3890 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

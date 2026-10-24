@@ -1,0 +1,36 @@
+{
+  "validated_at": "2026-10-25T04:58:09.842992+08:00",
+  "modules": [
+    "WeightedReflection"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.WeightedReflection.degree4_mirror",
+    "MathResearchAnalysis.WeightedReflection.degree4_at_reflect",
+    "MathResearchAnalysis.WeightedReflection.stable_mirror",
+    "MathResearchAnalysis.WeightedReflection.card_mirror",
+    "MathResearchAnalysis.WeightedReflection.perimeter_mirror",
+    "MathResearchAnalysis.WeightedReflection.shape_mirror",
+    "MathResearchAnalysis.WeightedReflection.weight_reflect",
+    "MathResearchAnalysis.WeightedReflection.clippedDomain_mirror",
+    "MathResearchAnalysis.WeightedReflection.centeredSites_mirror",
+    "MathResearchAnalysis.WeightedReflection.protectedSites_reflect_iff",
+    "MathResearchAnalysis.WeightedReflection.protectedSites_subset_mirror",
+    "MathResearchAnalysis.WeightedReflection.innerDiamond_subset_mirror",
+    "MathResearchAnalysis.WeightedReflection.mirror_subset_clippedDomain",
+    "MathResearchAnalysis.WeightedReflection.rawWeightedRate_mirror",
+    "MathResearchAnalysis.WeightedReflection.actual_rawWeightedRate_mirror"
+  ],
+  "declarations_count": 15,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/WeightedReflection.lean": "10c982d8f07f8f2a6296dfa36791b73ab5e5dff27f4d7a9521f0dc2753986a4a"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,134 @@
+'MathResearchAnalysis.WeightedAreaDynkin.value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.value_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.stoppedWord_observable_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.increment_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_finset' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_telescope_finset_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.eventScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.eventScore_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.sum_pathSums_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_eq_pathSums' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_eq_pathSums_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.marked_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.total_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.time_mean_increment_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin_single_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.expected_observable_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.expected_rate_eq_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.observable_change_dynkin_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.missing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.value_missing_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.missing_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_area_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_area_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weighted_generator_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weighted_generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.missing_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.mass_sub_of_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weightedLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupRate_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupRate_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupContribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupContribution_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanupContribution_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanup_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.cleanup_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_cleanup_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

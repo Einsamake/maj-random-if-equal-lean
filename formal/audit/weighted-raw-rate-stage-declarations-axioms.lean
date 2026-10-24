@@ -1,0 +1,17 @@
+import MathResearchAnalysis.WeightedRawRate
+
+#print axioms MathResearchAnalysis.WeightedRawRate.northwestScore
+#print axioms MathResearchAnalysis.WeightedRawRate.booleanScore
+#print axioms MathResearchAnalysis.WeightedRawRate.booleanRate
+#print axioms MathResearchAnalysis.WeightedRawRate.boolean_rate_eq_scores
+#print axioms MathResearchAnalysis.WeightedRawRate.northwestScore_boolean
+#print axioms MathResearchAnalysis.WeightedRawRate.state_mirror
+#print axioms MathResearchAnalysis.WeightedRawRate.northwestScore_at_reflect
+#print axioms MathResearchAnalysis.WeightedRawRate.raw_local_boolean
+#print axioms MathResearchAnalysis.WeightedRawRate.raw_local_four_orientations
+#print axioms MathResearchAnalysis.WeightedRawRate.northwestCharge_eq_sum
+#print axioms MathResearchAnalysis.WeightedRawRate.sum_reflected_northwestScore
+#print axioms MathResearchAnalysis.WeightedRawRate.actual_raw_four_charges
+#print axioms MathResearchAnalysis.WeightedRawRate.perimeter_le_clipped_square
+#print axioms MathResearchAnalysis.WeightedRawRate.actual_raw_le_perimeter
+#print axioms MathResearchAnalysis.WeightedRawRate.actual_raw_le_linear

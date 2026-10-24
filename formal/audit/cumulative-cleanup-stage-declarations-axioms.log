@@ -1,0 +1,106 @@
+'MathResearchAnalysis.CumulativeCleanupBudget.loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.wordLoss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_of_not_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.step_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.word_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.wordLoss_append' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_sum_ordered' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.loss_le_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_eq_horizon_filter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.score_word_sum_eq_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.eventScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.eventScore_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.sum_pathSums_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.pathSum_eq_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.pathSum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.marked_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.total_pathSum_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_eq_compensator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.cleanup_compensator_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.finite_vertex_rate_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_mean_score_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.expected_rate_eq_score' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.rate_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_mean_rate_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.time_integral_rate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CumulativeCleanupBudget.actual_clipped_cleanup_rate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rawRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.cleanupRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rate_eq_raw_add_cleanup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rawRate_sample_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.expected_raw_eq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.rawRate_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.meanArea_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CleanupAreaTail.exit_probability_le_raw_integral_add_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -1,0 +1,14 @@
+import MathResearchAnalysis.PhysicalAreaTail
+
+#print axioms MathResearchAnalysis.PhysicalAreaTail.law
+#print axioms MathResearchAnalysis.PhysicalAreaTail.missingArea
+#print axioms MathResearchAnalysis.PhysicalAreaTail.exitEvent
+#print axioms MathResearchAnalysis.PhysicalAreaTail.rate
+#print axioms MathResearchAnalysis.PhysicalAreaTail.missingArea_nonneg
+#print axioms MathResearchAnalysis.PhysicalAreaTail.missingArea_integrable
+#print axioms MathResearchAnalysis.PhysicalAreaTail.threshold_pos
+#print axioms MathResearchAnalysis.PhysicalAreaTail.exit_probability_mul_le_mean
+#print axioms MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_mean
+#print axioms MathResearchAnalysis.PhysicalAreaTail.meanArea_eq_integral_rate
+#print axioms MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_integral_rate
+#print axioms MathResearchAnalysis.PhysicalAreaTail.original_clock_extinction_le_integral_rate

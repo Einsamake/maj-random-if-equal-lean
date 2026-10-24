@@ -1,0 +1,79 @@
+{
+  "paper": {
+    "arxiv": "1007.3599v2",
+    "version_date": "2010-09-14",
+    "html": "https://arxiv.org/html/1007.3599v2",
+    "pdf": "https://arxiv.org/pdf/1007.3599v2",
+    "read_evidence": "HTML plus primary PDF text; web PDF screenshot cache miss; not visually inspected PDF"
+  },
+  "definition_comparison": {
+    "box": "Paper Eq(2.12), Sec3.2: integer [-L,L]^2, side 2L+1; matches local centeredSites for L>=1.",
+    "clipped_domain": "Paper Eq(8.2): box intersect norm1<=L+1; matches ClippedDiamondGeometry.clippedDomain exactly.",
+    "initial": "Sec8 all-minus in clipped domain; local S=D, true encodes minus.",
+    "outside": "Paper plus boundary outside clipped domain; local updates outside D are identity and S remains subset D.",
+    "updates": "Paper Definition7(d) and following modified process: zero-temperature heat-bath then repeated strict-majority-minus deletion, stopped at first missing protected site; local modifiedStep/stoppedStep match that convention.",
+    "protection": "Paper D norm1<=0.9L and D union external four-neighbour boundary; local innerDiamond/protectedSites."
+  },
+  "narrow_obstruction": "For tested solid clipped initial domains L=2,3,4,10,40, the literal inside-domain count has 4L occupied degree-two corners, no inside vacant sites, no cleanup after deleting one such corner, and masked raw rate 2L. Lemma7/8.14 cannot be imported from that count without an additional correction. This is a local counting issue, not a disproof of Theorem2 or a literature-status claim.",
+  "counts": [
+    {
+      "L": 2,
+      "domain_sites": 21,
+      "occupied_degree_two": 8,
+      "inside_vacant_sites": 0,
+      "cleanup_loss_after_each_corner_deletion": 0,
+      "masked_raw_rate": "4",
+      "outside_two_neighbour_sites": 4,
+      "expanded_raw_rate": "2",
+      "all_forbidden_birth_weights_zero": true
+    },
+    {
+      "L": 3,
+      "domain_sites": 37,
+      "occupied_degree_two": 12,
+      "inside_vacant_sites": 0,
+      "cleanup_loss_after_each_corner_deletion": 0,
+      "masked_raw_rate": "6",
+      "outside_two_neighbour_sites": 8,
+      "expanded_raw_rate": "2",
+      "all_forbidden_birth_weights_zero": true
+    },
+    {
+      "L": 4,
+      "domain_sites": 57,
+      "occupied_degree_two": 16,
+      "inside_vacant_sites": 0,
+      "cleanup_loss_after_each_corner_deletion": 0,
+      "masked_raw_rate": "8",
+      "outside_two_neighbour_sites": 12,
+      "expanded_raw_rate": "2",
+      "all_forbidden_birth_weights_zero": true
+    },
+    {
+      "L": 10,
+      "domain_sites": 261,
+      "occupied_degree_two": 40,
+      "inside_vacant_sites": 0,
+      "cleanup_loss_after_each_corner_deletion": 0,
+      "masked_raw_rate": "20",
+      "outside_two_neighbour_sites": 36,
+      "expanded_raw_rate": "2",
+      "all_forbidden_birth_weights_zero": true
+    },
+    {
+      "L": 40,
+      "domain_sites": 3441,
+      "occupied_degree_two": 160,
+      "inside_vacant_sites": 0,
+      "cleanup_loss_after_each_corner_deletion": 0,
+      "masked_raw_rate": "80",
+      "outside_two_neighbour_sites": 156,
+      "expanded_raw_rate": "2",
+      "all_forbidden_birth_weights_zero": true
+    }
+  ],
+  "weighted_candidate": "w_L(v)=L+2-norm1(v) is >=1 on clippedDomain. Every omitted birth of a supported state lies on norm1=L+2, so its weighted correction is exactly zero. Kernel proof draft is separate. Weighted contour O(L) drift and weighted exit Omega(L^3) threshold remain unproved.",
+  "reproduction_script": "formal/audit/forbidden-birth-source-check.py",
+  "reproduction_script_sha256": "c64757b5bc96d3ce3853896d3f774025a02ec8065cf5d680f6b6621e65bd1e25",
+  "all_L_formula_status": "The record certifies only the five exact finite computations. The apparent formulas 4L, 4(L-1), and 2L have not been proved for all L by Lean in this stage. The general zero-weight forbidden-birth result is separately kernel-checked in ForbiddenBirthControl.lean."
+}

@@ -1,0 +1,16 @@
+{
+  "validated_at": "2026-10-25T05:05:34.491828+08:00",
+  "source": "formal/drafts/WeightedRawRate.lean",
+  "source_sha256": "152cfb27d13e5a64f5257a5356339cbb38773c0fa15bceaf0446bc0a81970c12",
+  "theorems": 12,
+  "definitions": 3,
+  "lines": 258,
+  "verification": "actual lake env lean --trust=0 frozen draft; tool session21875 returned exit0",
+  "source_compile_exit": 0,
+  "kernel_trust_level": 0,
+  "new_lean_warning_lines": [],
+  "existing_batteries_local_change_warning": true,
+  "named_axiom_audit_pending": true,
+  "main_theorem_complete": false,
+  "frozen": true
+}

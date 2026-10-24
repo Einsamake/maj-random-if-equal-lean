@@ -1,0 +1,42 @@
+'MathResearchAnalysis.WeightedExitArea.smallBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.missingWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.half_twentieth' depends on axioms: [propext]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_subset_directedBlock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.side_le_eighty_mul_div_forty' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_quadratic_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.abs_signed_offset' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_weight_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.smallBlock_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.missingWeight_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.mass_le_missingWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.cubic_weight_of_protected_missing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.actual_stopped_weight_after_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.cubic_weight_of_physical_exit_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.physical_exit_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.WeightedExitArea.original_extinction_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

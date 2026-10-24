@@ -1,0 +1,28 @@
+'MathResearchAnalysis.PhysicalAreaTail.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.missingArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exitEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.missingArea_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.missingArea_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.threshold_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_mul_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.meanArea_eq_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.exit_probability_le_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PhysicalAreaTail.original_clock_extinction_le_integral_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
