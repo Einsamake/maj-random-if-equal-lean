@@ -1,0 +1,6 @@
+✔ [3833/3833] Built MathResearchAnalysis.ClockTimeNullGraph (13s)
+Build completed successfully (3833 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

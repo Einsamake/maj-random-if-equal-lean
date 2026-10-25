@@ -1,0 +1,7 @@
+✔ [3925/3926] Built MathResearchAnalysis.MachineTraceTelescope (12s)
+✔ [3926/3926] Built MathResearchAnalysis.MachineEventScores (12s)
+Build completed successfully (3926 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

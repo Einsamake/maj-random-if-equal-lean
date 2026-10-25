@@ -1,0 +1,49 @@
+{
+  "validated_at": "2026-10-26T01:16:38.360267+08:00",
+  "modules": [
+    "FiniteObservedClockState"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FiniteObservedClockState.stateSpace",
+    "MathResearchAnalysis.FiniteObservedClockState.runMarked",
+    "MathResearchAnalysis.FiniteObservedClockState.endpoint",
+    "MathResearchAnalysis.FiniteObservedClockState.execute_eq_of_marks_agree",
+    "MathResearchAnalysis.FiniteObservedClockState.runMarked_eq_execute",
+    "MathResearchAnalysis.FiniteObservedClockState.runMarked_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.fixedRun_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.endpoint_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.graph",
+    "MathResearchAnalysis.FiniteObservedClockState.graph_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.fiber_runs_eq",
+    "MathResearchAnalysis.FiniteObservedClockState.graph_unique",
+    "MathResearchAnalysis.FiniteObservedClockState.state",
+    "MathResearchAnalysis.FiniteObservedClockState.state_eq_of_graph",
+    "MathResearchAnalysis.FiniteObservedClockState.state_eq_iff",
+    "MathResearchAnalysis.FiniteObservedClockState.graph_endpoint",
+    "MathResearchAnalysis.FiniteObservedClockState.state_eq_endpoint",
+    "MathResearchAnalysis.FiniteObservedClockState.state_all_times_ae",
+    "MathResearchAnalysis.FiniteObservedClockState.variable_graph_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.ordered_joint_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.fiber_joint_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.graph_joint_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.state_fiber_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.state_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.observable_measurable",
+    "MathResearchAnalysis.FiniteObservedClockState.state_isProgressive",
+    "MathResearchAnalysis.FiniteObservedClockState.state_isProgressive_nn",
+    "MathResearchAnalysis.FiniteObservedClockState.state_joint_measurable"
+  ],
+  "declarations_count": 28,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FiniteObservedClockState.lean": "741483bed39952b2bdc80de45c2a2af9754396e41712dffa8739cac4b9e38fc0"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,21 @@
+'MathResearchAnalysis.MachineTraceTelescope.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MachineEventScores.eventScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MachineEventScores.bool_sum_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MachineEventScores.eventScore_zero_outside_word' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MachineEventScores.eventScore_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MachineEventScores.term_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_tsum_eventScore' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MachineEventScores.tsum_eventScore_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_word_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

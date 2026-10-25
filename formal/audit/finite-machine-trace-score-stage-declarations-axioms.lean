@@ -1,0 +1,12 @@
+import MathResearchAnalysis.MachineTraceTelescope
+import MathResearchAnalysis.MachineEventScores
+
+#print axioms MathResearchAnalysis.MachineTraceTelescope.telescope
+#print axioms MathResearchAnalysis.MachineEventScores.eventScore
+#print axioms MathResearchAnalysis.MachineEventScores.bool_sum_term
+#print axioms MathResearchAnalysis.MachineEventScores.eventScore_zero_outside_word
+#print axioms MathResearchAnalysis.MachineEventScores.eventScore_summable
+#print axioms MathResearchAnalysis.MachineEventScores.term_summable
+#print axioms MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_tsum_eventScore
+#print axioms MathResearchAnalysis.MachineEventScores.tsum_eventScore_eq_word_sum
+#print axioms MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_word_sum

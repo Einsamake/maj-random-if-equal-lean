@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-26T01:15:18.159129+08:00",
+  "modules": [
+    "MachineTraceTelescope",
+    "MachineEventScores"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MachineTraceTelescope.telescope",
+    "MathResearchAnalysis.MachineEventScores.eventScore",
+    "MathResearchAnalysis.MachineEventScores.bool_sum_term",
+    "MathResearchAnalysis.MachineEventScores.eventScore_zero_outside_word",
+    "MathResearchAnalysis.MachineEventScores.eventScore_summable",
+    "MathResearchAnalysis.MachineEventScores.term_summable",
+    "MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_tsum_eventScore",
+    "MathResearchAnalysis.MachineEventScores.tsum_eventScore_eq_word_sum",
+    "MathResearchAnalysis.MachineEventScores.sum_pathSums_eq_word_sum"
+  ],
+  "declarations_count": 9,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MachineTraceTelescope.lean": "a88acd449adfea75ea45613e0ff5e0d65831b169fc9a90aa81285025116adbe3",
+    "MathResearchAnalysis/MachineEventScores.lean": "2b7a4bf17d34757d13b1d6cc1242a88300efd74346336ab7c1a382a5f014f961"
+  },
+  "new_lean_warning_lines": []
+}

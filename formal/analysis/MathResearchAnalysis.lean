@@ -248,6 +248,15 @@ public import MathResearchAnalysis.FiniteExclusionGenerator
 public import MathResearchAnalysis.MixedExclusionGenerator
 public import MathResearchAnalysis.FinitePathPoincare
 
+public import MathResearchAnalysis.MachineTraceTelescope
+public import MathResearchAnalysis.MachineEventScores
+public import MathResearchAnalysis.FiniteObservedClockState
+public import MathResearchAnalysis.ClockTimeNullGraph
+public import MathResearchAnalysis.FiniteMachinePreState
+public import MathResearchAnalysis.MachineClockDynkin
+public import MathResearchAnalysis.MachineClockGenerator
+public import MathResearchAnalysis.MixedClockDynkin
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real
@@ -355,8 +364,8 @@ Theta theorem remain unproved.
 The true mixed-boundary finite rule has proved coordinate-monotone shape
 preservation, exact two-way corner flips and measurable endpoints under the
 same original clock/identity-mark field. Same-size zero-boundary endpoints are
-dominated; cross-size clock restriction, finite exclusion encoding and the
-quadratic upper probability bound remain unproved.
+dominated. The finite exclusion encoding and generator algebra are proved
+below; cross-size clock restriction and quadratic upper probabilities remain unproved.
 Actual row lengths now give a two-sided equivalence with strictly ordered M
 particles on 2M finite slots. Right-half occupied-slot counts match white
 diagonal cells. Actual corner flips produce adjacent occupied/vacant swaps,
@@ -365,11 +374,8 @@ A genuine active-corner/unequal-bond bijection now proves the full fair
 mixed-update generator equals the finite adjacent-swap generator, at rate
 one half per edge. Its one/two-coordinate algebra and covariance defect are
 proved, together with an explicit nearest-neighbour path Poincare bound.
-Actual clock Dynkin/moment laws and quadratic upper probabilities remain unproved.
+The genuine finite-state observed/predictable bridge and original-clock
+Dynkin formula are now proved, including the actual mixed/exclusion observable
+formula. Moment equations, covariance estimates, cross-size law and quadratic
+upper probabilities remain unproved.
 -/
-
-
-
-
-
-

@@ -1,0 +1,17 @@
+'MathResearchAnalysis.MixedClockDynkin.step' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.endpoint_eq_mixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.generator_eq_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.generator_at_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.observable_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.generator_time_mean_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockDynkin.expected_observable_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

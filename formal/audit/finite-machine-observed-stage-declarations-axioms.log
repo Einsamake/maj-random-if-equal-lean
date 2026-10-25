@@ -1,0 +1,70 @@
+'MathResearchAnalysis.FiniteObservedClockState.stateSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.runMarked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.execute_eq_of_marks_agree' does not depend on any axioms
+'MathResearchAnalysis.FiniteObservedClockState.runMarked_eq_execute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.runMarked_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.fixedRun_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.endpoint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.graph_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.fiber_runs_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.graph_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_eq_of_graph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.graph_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_eq_endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_all_times_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.variable_graph_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.ordered_joint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.fiber_joint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.graph_joint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_fiber_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.observable_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_isProgressive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_isProgressive_nn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteObservedClockState.state_joint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

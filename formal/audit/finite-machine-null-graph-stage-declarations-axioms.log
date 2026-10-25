@@ -1,0 +1,33 @@
+'MathResearchAnalysis.ClockTimeNullGraph.graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.graph_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.sample_section_ae_avoid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.sample_time_ae_avoid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.time_sample_ae_avoid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.product_ae_avoid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.graph_product_null' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.swapped_product_ae_avoid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.clockGraph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.clockGraph_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.clock_time_sample_ae_no_event' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.clock_product_ae_no_event' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockTimeNullGraph.clock_horizon_product_ae_no_event' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

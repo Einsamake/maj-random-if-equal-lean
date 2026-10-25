@@ -1,0 +1,28 @@
+{
+  "validated_at": "2026-10-26T01:27:44.671965+08:00",
+  "modules": [
+    "MixedClockDynkin"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedClockDynkin.step",
+    "MathResearchAnalysis.MixedClockDynkin.endpoint_eq_mixed",
+    "MathResearchAnalysis.MixedClockDynkin.generator_eq_exclusion",
+    "MathResearchAnalysis.MixedClockDynkin.generator_at_endpoint",
+    "MathResearchAnalysis.MixedClockDynkin.observable_integrable",
+    "MathResearchAnalysis.MixedClockDynkin.generator_time_mean_integrable",
+    "MathResearchAnalysis.MixedClockDynkin.expected_observable_dynkin"
+  ],
+  "declarations_count": 7,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedClockDynkin.lean": "6562734c23ac4da93d076f601a5888437dba88b8b5989d2c9ea09a3aed5692e2"
+  },
+  "new_lean_warning_lines": []
+}

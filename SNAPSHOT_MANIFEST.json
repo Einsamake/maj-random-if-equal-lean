@@ -1,5 +1,5 @@
 {
-  "formal_sources_verified": 233,
+  "formal_sources_verified": 241,
   "metadata_note": "Formal Lean bytes are exact; Markdown, JSON and log local paths may be sanitized. workspace_sha256 binds original local evidence; sha256 binds this curated snapshot. Raw local evidence hashes may differ from sanitized-log hashes.",
   "files": {
     ".gitattributes": {
@@ -101,15 +101,15 @@
       "byte_identical_to_workspace": true
     },
     "docs/VERIFICATION.md": {
-      "bytes": 2748,
-      "sha256": "84ab9cb0fcb5e2df0d77143d127e03c3d72693ab41feef063f66be3aa4eff5af",
-      "workspace_sha256": "84ab9cb0fcb5e2df0d77143d127e03c3d72693ab41feef063f66be3aa4eff5af",
+      "bytes": 1527,
+      "sha256": "9e9a45cc27befb6938a20725d3dae58a611fd78c20572e4b2bcabb8a729511d6",
+      "workspace_sha256": "9e9a45cc27befb6938a20725d3dae58a611fd78c20572e4b2bcabb8a729511d6",
       "byte_identical_to_workspace": true
     },
     "formal/analysis/AnalysisAxioms.lean": {
-      "bytes": 236305,
-      "sha256": "0b30733e7b9540dc478e4d377fd5c319832e5876f7b2f83762bb234471e2424f",
-      "workspace_sha256": "0b30733e7b9540dc478e4d377fd5c319832e5876f7b2f83762bb234471e2424f",
+      "bytes": 244461,
+      "sha256": "98fb42b81a234bfa0f0d4902ddc226842fcef82c3fa5346cad0f98e2dd7c9935",
+      "workspace_sha256": "98fb42b81a234bfa0f0d4902ddc226842fcef82c3fa5346cad0f98e2dd7c9935",
       "byte_identical_to_workspace": true
     },
     "formal/analysis/lake-manifest.json": {
@@ -418,6 +418,12 @@
       "workspace_sha256": "a1f0616e341d91354abc408bca771a48718dbb8776073fa5d8e5610cba0e246d",
       "byte_identical_to_workspace": true
     },
+    "formal/analysis/MathResearchAnalysis/ClockTimeNullGraph.lean": {
+      "bytes": 5610,
+      "sha256": "27baf73463d709c9f66a8ebd0f5e570ac9e2ada0f999bea46da127091c2d32fd",
+      "workspace_sha256": "27baf73463d709c9f66a8ebd0f5e570ac9e2ada0f999bea46da127091c2d32fd",
+      "byte_identical_to_workspace": true
+    },
     "formal/analysis/MathResearchAnalysis/ClockWaitingLimit.lean": {
       "bytes": 11043,
       "sha256": "e62c1afd714f92adf330a127409da378fa644a7339eac9a93c2d95ef6b79d1cb",
@@ -592,10 +598,22 @@
       "workspace_sha256": "dc32258b39e706e52b3c239d0ca55df6e79c4599dd7938aa853bb7b985a6302f",
       "byte_identical_to_workspace": true
     },
+    "formal/analysis/MathResearchAnalysis/FiniteMachinePreState.lean": {
+      "bytes": 18451,
+      "sha256": "7c25c9ed68e47435c266f98bd7f56ca623113bc0473c22c4ac3ea8f6ed068180",
+      "workspace_sha256": "7c25c9ed68e47435c266f98bd7f56ca623113bc0473c22c4ac3ea8f6ed068180",
+      "byte_identical_to_workspace": true
+    },
     "formal/analysis/MathResearchAnalysis/FiniteMajorityPeeling.lean": {
       "bytes": 8492,
       "sha256": "cfcd95ade0705db947b2739be33877a496b958df7876649b087f0ea223ace322",
       "workspace_sha256": "cfcd95ade0705db947b2739be33877a496b958df7876649b087f0ea223ace322",
+      "byte_identical_to_workspace": true
+    },
+    "formal/analysis/MathResearchAnalysis/FiniteObservedClockState.lean": {
+      "bytes": 18346,
+      "sha256": "741483bed39952b2bdc80de45c2a2af9754396e41712dffa8739cac4b9e38fc0",
+      "workspace_sha256": "741483bed39952b2bdc80de45c2a2af9754396e41712dffa8739cac4b9e38fc0",
       "byte_identical_to_workspace": true
     },
     "formal/analysis/MathResearchAnalysis/FinitePathPoincare.lean": {
@@ -790,6 +808,30 @@
       "workspace_sha256": "870b29fb567ab4288b63c35ab6a6963230c17855fed48e91f3cc88ded06777b1",
       "byte_identical_to_workspace": true
     },
+    "formal/analysis/MathResearchAnalysis/MachineClockDynkin.lean": {
+      "bytes": 15593,
+      "sha256": "95308d00c4ee6c6117e23570ff0b7531cda2a03665dd5be5c5282b194bbe1693",
+      "workspace_sha256": "95308d00c4ee6c6117e23570ff0b7531cda2a03665dd5be5c5282b194bbe1693",
+      "byte_identical_to_workspace": true
+    },
+    "formal/analysis/MathResearchAnalysis/MachineClockGenerator.lean": {
+      "bytes": 7917,
+      "sha256": "a5a1435f56e9f5454359f3a9afe9dbf04461b06dcaa96581326f7b480f654c1b",
+      "workspace_sha256": "a5a1435f56e9f5454359f3a9afe9dbf04461b06dcaa96581326f7b480f654c1b",
+      "byte_identical_to_workspace": true
+    },
+    "formal/analysis/MathResearchAnalysis/MachineEventScores.lean": {
+      "bytes": 6004,
+      "sha256": "2b7a4bf17d34757d13b1d6cc1242a88300efd74346336ab7c1a382a5f014f961",
+      "workspace_sha256": "2b7a4bf17d34757d13b1d6cc1242a88300efd74346336ab7c1a382a5f014f961",
+      "byte_identical_to_workspace": true
+    },
+    "formal/analysis/MathResearchAnalysis/MachineTraceTelescope.lean": {
+      "bytes": 2388,
+      "sha256": "a88acd449adfea75ea45613e0ff5e0d65831b169fc9a90aa81285025116adbe3",
+      "workspace_sha256": "a88acd449adfea75ea45613e0ff5e0d65831b169fc9a90aa81285025116adbe3",
+      "byte_identical_to_workspace": true
+    },
     "formal/analysis/MathResearchAnalysis/MarkedAreaSum.lean": {
       "bytes": 7613,
       "sha256": "181d4d55564b2194bdfce05c7c8ff06a412517ab9c726d679600b57dd6b9a749",
@@ -884,6 +926,12 @@
       "bytes": 8062,
       "sha256": "ca1740226ef45a510afac2e566a2c092b9cc308754d2220880287fb3383fdf91",
       "workspace_sha256": "ca1740226ef45a510afac2e566a2c092b9cc308754d2220880287fb3383fdf91",
+      "byte_identical_to_workspace": true
+    },
+    "formal/analysis/MathResearchAnalysis/MixedClockDynkin.lean": {
+      "bytes": 5700,
+      "sha256": "6562734c23ac4da93d076f601a5888437dba88b8b5989d2c9ea09a3aed5692e2",
+      "workspace_sha256": "6562734c23ac4da93d076f601a5888437dba88b8b5989d2c9ea09a3aed5692e2",
       "byte_identical_to_workspace": true
     },
     "formal/analysis/MathResearchAnalysis/MixedExclusionGenerator.lean": {
@@ -1475,9 +1523,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/analysis/MathResearchAnalysis.lean": {
-      "bytes": 21513,
-      "sha256": "594eefe52c69cf61b1500b0029fcd62dec124477bccebf355aecf6a48f181315",
-      "workspace_sha256": "594eefe52c69cf61b1500b0029fcd62dec124477bccebf355aecf6a48f181315",
+      "bytes": 22212,
+      "sha256": "8bc6dd089741a731f15576a4c2cbfb308f237a0619c198861de8878e1bf50923",
+      "workspace_sha256": "8bc6dd089741a731f15576a4c2cbfb308f237a0619c198861de8878e1bf50923",
       "byte_identical_to_workspace": true
     },
     "formal/audit/actual-area-dynkin-dependencies-build.log": {
@@ -1577,21 +1625,21 @@
       "byte_identical_to_workspace": false
     },
     "formal/audit/analysis-axioms.log": {
-      "bytes": 379619,
-      "sha256": "818bf3a7589873b1d54f4208f5d614a92d97490455b959388f5fdc701de8e539",
-      "workspace_sha256": "699714ce81332f6183cf6b0308b4e208efe061ca44dd502369b8dd5a55648844",
+      "bytes": 392762,
+      "sha256": "ac405a82a0dde9e75a40b9440adaed5c954a47a7597dff712a9a57e171a13155",
+      "workspace_sha256": "4b0b0a1e2318c817f5c2bc285d7ba118c4523713c4bfc1311fd47b304a2e2430",
       "byte_identical_to_workspace": false
     },
     "formal/audit/analysis-build.log": {
       "bytes": 215,
-      "sha256": "38c8b659a2d54b7406b2500595462b22cf0dca2d14e785643c2995ee2513adf9",
-      "workspace_sha256": "e9fe7c496391bb4da5d0a3eafa66f71dc70f5b450ea349e266be28f34b5fc6ab",
+      "sha256": "42610da62ac38af4690fac5a57547613f3e278eb3d5e1306689300e2607a3a7c",
+      "workspace_sha256": "e6c63089fdea3173500b3632517c9a72100f082342b415d334a8b2b03ef080e8",
       "byte_identical_to_workspace": false
     },
     "formal/audit/analysis-validation.json": {
-      "bytes": 60697,
-      "sha256": "b8d198c8ecdd5f01f7b28517f3739c10eb3e6c448e0405e12ffb9c7fd3362f7b",
-      "workspace_sha256": "b8d198c8ecdd5f01f7b28517f3739c10eb3e6c448e0405e12ffb9c7fd3362f7b",
+      "bytes": 44073,
+      "sha256": "998f26d28a1ac836b3b48accd7882f42623308f336d7dea77f15801d84362db5",
+      "workspace_sha256": "998f26d28a1ac836b3b48accd7882f42623308f336d7dea77f15801d84362db5",
       "byte_identical_to_workspace": true
     },
     "formal/audit/clipped-droplet-independent-evidence.json": {
@@ -2103,6 +2151,150 @@
       "sha256": "0c2f030bd46a6e24f63f649fd9ef1d22460a421997533a2098f985a91ef08cb9",
       "workspace_sha256": "3e04f782ad5ee085b3b13de372fa7edad1716f72e9c041c2dc151b20dae290cc",
       "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-dynkin-stage-declarations-axioms.lean": {
+      "bytes": 4908,
+      "sha256": "9b957ce350a3d4700f9f20060eeb509059369724a144f5726bc046f851ead7b8",
+      "workspace_sha256": "9b957ce350a3d4700f9f20060eeb509059369724a144f5726bc046f851ead7b8",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-dynkin-stage-declarations-axioms.log": {
+      "bytes": 7784,
+      "sha256": "343f1dc621994d6140fa359eb711ceb81a86d8474f82969f68622624ddedb5ae",
+      "workspace_sha256": "64417df89fb86e3de74610a6649fa1446127622f48241b300d54585803dd4b7c",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-dynkin-stage-declarations-build.log": {
+      "bytes": 237,
+      "sha256": "559b56cea1d150a9a8ae2dcfbaf918fc3ecdb1f1cfdaadfa8a6b4d94c3694645",
+      "workspace_sha256": "51131570e083f822f25846b2de4ca4ead979e83dc2001015912f5c6802cf700d",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-dynkin-stage-declarations-validation.json": {
+      "bytes": 5165,
+      "sha256": "f18c46434c0b8ba6d614e9c70fda9646359226b2415f9a5719fd1b3dfe6e1c15",
+      "workspace_sha256": "f18c46434c0b8ba6d614e9c70fda9646359226b2415f9a5719fd1b3dfe6e1c15",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-global-validator-console.log": {
+      "bytes": 425451,
+      "sha256": "daae8bbb3b3b72af8b513ded0aedca45654e0dd6acbc16b124d01e269c0c73e9",
+      "workspace_sha256": "1e9f9c116382891d0387ff4957fe920464cab27f4c0b99112452951cfac296e7",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-independent-bind.py": {
+      "bytes": 12317,
+      "sha256": "94dd6c286ad915355d49a482f85c68dae4a97053dfa81637437cc137b4f51c00",
+      "workspace_sha256": "94dd6c286ad915355d49a482f85c68dae4a97053dfa81637437cc137b4f51c00",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-independent-final-binding-evidence.json": {
+      "bytes": 44863,
+      "sha256": "684f107d17233076b1a5ae1d993d3d73dddeda0b95e93cb0e83ca91366e1dc05",
+      "workspace_sha256": "684f107d17233076b1a5ae1d993d3d73dddeda0b95e93cb0e83ca91366e1dc05",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-independent-review.md": {
+      "bytes": 5396,
+      "sha256": "e70e5da295d3ba97c085801125cc5af234ce4ceb40f4a6f474c8e378c3d585e3",
+      "workspace_sha256": "e70e5da295d3ba97c085801125cc5af234ce4ceb40f4a6f474c8e378c3d585e3",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-mixed-stage-declarations-axioms.lean": {
+      "bytes": 567,
+      "sha256": "c485c3225f698e36f933651f373e9766fe67c07fef862a87f878b29058981826",
+      "workspace_sha256": "c485c3225f698e36f933651f373e9766fe67c07fef862a87f878b29058981826",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-mixed-stage-declarations-axioms.log": {
+      "bytes": 964,
+      "sha256": "d5957e024ee1ed9891d32d2d3784eb2a9f615eba645e02c25b67c0150fcd69b0",
+      "workspace_sha256": "e84c702d07bfbfd1bce4c742c50c42b21db0392696b44ccf8625e664f93454ac",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-mixed-stage-declarations-build.log": {
+      "bytes": 232,
+      "sha256": "928f84cfaf918cdeab54e6ef1b44f7557360792ee368e243544974b45dcdffa7",
+      "workspace_sha256": "b1495664b81710c432dfc57d5f94b7470589d5bbd4b7a9c5fef7e9d1d2241228",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-mixed-stage-declarations-validation.json": {
+      "bytes": 972,
+      "sha256": "c5398583ed3dd818c589df3e9ba39af8f3c60e183bd5d1f9b46451a7b6a31e66",
+      "workspace_sha256": "c5398583ed3dd818c589df3e9ba39af8f3c60e183bd5d1f9b46451a7b6a31e66",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-null-graph-stage-declarations-axioms.lean": {
+      "bytes": 1038,
+      "sha256": "1da017629586df4894fff44f121f63185455bce6895929f8f4d971bbd3661dc2",
+      "workspace_sha256": "1da017629586df4894fff44f121f63185455bce6895929f8f4d971bbd3661dc2",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-null-graph-stage-declarations-axioms.log": {
+      "bytes": 1753,
+      "sha256": "6a248517d8c44a7b96dfb6654d3aa2020d2ee304a8b5feca0cf21570e6538ff9",
+      "workspace_sha256": "046ad1fb9d9c1bc46430b245b13c7222a0a007dc79e12c03886a067285a972e5",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-null-graph-stage-declarations-build.log": {
+      "bytes": 234,
+      "sha256": "92819bbda5a5754ae78d5df270cca9cae1d121c3e42ecff3175549314ab7d463",
+      "workspace_sha256": "3e5635a7100505a82e974c76858f341ea496b29cfa0c1deba3aea3eb80d8ea71",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-null-graph-stage-declarations-validation.json": {
+      "bytes": 1404,
+      "sha256": "f3cc8333f7befcb3c0fd9b24cf6fdff1f8142417af7d3d2964f171c26f1684bd",
+      "workspace_sha256": "f3cc8333f7befcb3c0fd9b24cf6fdff1f8142417af7d3d2964f171c26f1684bd",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-observed-stage-declarations-axioms.lean": {
+      "bytes": 2266,
+      "sha256": "2f49a4499752e406c178f4d05907f2dae362f1741ea3846853ca0872e409b5bb",
+      "workspace_sha256": "2f49a4499752e406c178f4d05907f2dae362f1741ea3846853ca0872e409b5bb",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-observed-stage-declarations-axioms.log": {
+      "bytes": 3695,
+      "sha256": "586f8078aa1d1c4e9084f0f0b5bf8c8464843264e0bb06fae585a8a21c42410b",
+      "workspace_sha256": "506d7e473f4ad251d527b1ad27ab88dacef4cd069a2b07423daace28e1233397",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-observed-stage-declarations-build.log": {
+      "bytes": 240,
+      "sha256": "2d6913e7b3c4cfd6a020f4f2f3e4abd33f54ee1ceea021d8734d6c31a20d92cd",
+      "workspace_sha256": "0fde53d87c6535c50c20325fb075a1390efc4acf55714e68461256c3b73c5df5",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-observed-stage-declarations-validation.json": {
+      "bytes": 2533,
+      "sha256": "d089c7bb7ed42b6f511aeee7645c9425b9a6ddb6c96a2ea76b11e1cf832f069a",
+      "workspace_sha256": "d089c7bb7ed42b6f511aeee7645c9425b9a6ddb6c96a2ea76b11e1cf832f069a",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-trace-score-stage-declarations-axioms.lean": {
+      "bytes": 782,
+      "sha256": "2f157d54af646aa5426aaf631dface721b46cbb043177660600bacbb7dace702",
+      "workspace_sha256": "2f157d54af646aa5426aaf631dface721b46cbb043177660600bacbb7dace702",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/finite-machine-trace-score-stage-declarations-axioms.log": {
+      "bytes": 1242,
+      "sha256": "660591c635c663ffea5eddf62ea131a73572cd29a19d288bf12945455c51a67e",
+      "workspace_sha256": "e8b5c55b769d40b7a02831f1dedf11120893e16651fb1670031c7cd2d3c45ea3",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-trace-score-stage-declarations-build.log": {
+      "bytes": 306,
+      "sha256": "6fe23b31da0218bbb5e3c60cee6fa084ccb9bb1ba1633bea25e57870d874a7cc",
+      "workspace_sha256": "93749ed754f096720b4e1adcade2b6e04de5cb362d71e97fdc1fdd2e5e91e370",
+      "byte_identical_to_workspace": false
+    },
+    "formal/audit/finite-machine-trace-score-stage-declarations-validation.json": {
+      "bytes": 1278,
+      "sha256": "6fd23ad05916c03acb2ad31f5efdfcaac901b93dd0c930cef49fd89d3edd1773",
+      "workspace_sha256": "6fd23ad05916c03acb2ad31f5efdfcaac901b93dd0c930cef49fd89d3edd1773",
+      "byte_identical_to_workspace": true
     },
     "formal/audit/forbidden-birth-control-draft-build.log": {
       "bytes": 107,
@@ -4709,9 +4901,9 @@
       "byte_identical_to_workspace": false
     },
     "formal/FORMALIZATION_MAP.md": {
-      "bytes": 7394,
-      "sha256": "051d3a6421571b46b83fe058cc3a467c80d15bc41380f0742a7cb54e97297d52",
-      "workspace_sha256": "1a634e813ffba87c59335674be4bdea0a5ba57b2fbab1fb893b597376a497ad8",
+      "bytes": 7494,
+      "sha256": "4e27672d73bda24c5fec945caca316c92d2b9fed8bae2897bdb80d6f8b785294",
+      "workspace_sha256": "29a471759cb294f43678f0ccffef879821e55f8524dc2e0d80d3459cdfcf3cab",
       "byte_identical_to_workspace": false
     },
     "formal/INFINITE_GRID_CONTRACT.md": {
@@ -4739,9 +4931,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/LEAN_README.md": {
-      "bytes": 3396,
-      "sha256": "65c2ddee84b00519dcd2ce092a218506151bdfad6be375e16489df177d6a219d",
-      "workspace_sha256": "7aab59734913ee77a6bedef5f6456ddc20bab5215caa83b935077c4ccdb789fe",
+      "bytes": 3496,
+      "sha256": "6ed5322230e255bef2868793caa312dbc6399b4eda1b4da31973b608e1ccdaed",
+      "workspace_sha256": "37952572c281ae1260c337514f03b0cd6e966f4f4aa18af0c3e0064f828fdbdb",
       "byte_identical_to_workspace": false
     },
     "formal/MathResearch/Dynamics.lean": {
@@ -5032,6 +5224,12 @@
       "workspace_sha256": "469c7509855af9e1ffebe15554da955d3ad498881eac6afb43990fa20bfe7c47",
       "byte_identical_to_workspace": true
     },
+    "formal/PROGRESS_2026-10-26_FINITE_MACHINE_DYNKIN.md": {
+      "bytes": 4136,
+      "sha256": "89bacb1c2b666601050a7d8a7f25576aab25e0d66f4402a6e1845091242a49fd",
+      "workspace_sha256": "89bacb1c2b666601050a7d8a7f25576aab25e0d66f4402a6e1845091242a49fd",
+      "byte_identical_to_workspace": true
+    },
     "formal/scripts/audit_actual_area_dynkin_stage.py": {
       "bytes": 2988,
       "sha256": "9b80e3db1925c804db07bfcacec506b249dc1d49a2b1e5f24556403147bd9286",
@@ -5084,6 +5282,12 @@
       "bytes": 2888,
       "sha256": "ca81b43cbd7bb7a47efd23600c041a30ae2e458c18b668900a9315559cb81896",
       "workspace_sha256": "ca81b43cbd7bb7a47efd23600c041a30ae2e458c18b668900a9315559cb81896",
+      "byte_identical_to_workspace": true
+    },
+    "formal/scripts/audit_finite_machine_stage.py": {
+      "bytes": 2989,
+      "sha256": "ba2ed0d9d322007a573d40ce6fd48393dc88ffca7ef4d6e200cb4ac1a5bda142",
+      "workspace_sha256": "ba2ed0d9d322007a573d40ce6fd48393dc88ffca7ef4d6e200cb4ac1a5bda142",
       "byte_identical_to_workspace": true
     },
     "formal/scripts/audit_forbidden_birth_stage.py": {
@@ -5351,9 +5555,15 @@
       "byte_identical_to_workspace": true
     },
     "formal/scripts/package_lean.py": {
-      "bytes": 12133,
-      "sha256": "d1a8b49284a402f7ed986c6e188d096f9bb3b78c7ca73d814affc49558f2afc5",
-      "workspace_sha256": "d1a8b49284a402f7ed986c6e188d096f9bb3b78c7ca73d814affc49558f2afc5",
+      "bytes": 12502,
+      "sha256": "5c25f58a0f6d86d0e0a4a38a50b6e09420c710f3c58a1218673ad8c175907b90",
+      "workspace_sha256": "5c25f58a0f6d86d0e0a4a38a50b6e09420c710f3c58a1218673ad8c175907b90",
+      "byte_identical_to_workspace": true
+    },
+    "formal/scripts/update_finite_machine_docs.py": {
+      "bytes": 10453,
+      "sha256": "c347af39ebb507e2dbe39711ab45438fd416cd60ee36dcfe370c3c65766da81e",
+      "workspace_sha256": "c347af39ebb507e2dbe39711ab45438fd416cd60ee36dcfe370c3c65766da81e",
       "byte_identical_to_workspace": true
     },
     "formal/scripts/update_mixed_square_docs.py": {
@@ -5369,9 +5579,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/scripts/validate_analysis.py": {
-      "bytes": 25508,
-      "sha256": "ea6c1fc7fb64c386432616c498221cc6f162592c0d35929cae00c81f18bc9cd5",
-      "workspace_sha256": "ea6c1fc7fb64c386432616c498221cc6f162592c0d35929cae00c81f18bc9cd5",
+      "bytes": 7161,
+      "sha256": "78f0fa5442e7adef6ba90ec4209e69c841f3f6ecee21d5c882bae3decffe5eb4",
+      "workspace_sha256": "78f0fa5442e7adef6ba90ec4209e69c841f3f6ecee21d5c882bae3decffe5eb4",
       "byte_identical_to_workspace": true
     },
     "formal/scripts/validate_core.py": {
@@ -5381,15 +5591,15 @@
       "byte_identical_to_workspace": true
     },
     "formal/scripts/verify_private_repository.py": {
-      "bytes": 3948,
-      "sha256": "64166641f7f4d347efff7d703597a58c0c8c9d0b9b2e2bc34edc7dc2f598b473",
-      "workspace_sha256": "64166641f7f4d347efff7d703597a58c0c8c9d0b9b2e2bc34edc7dc2f598b473",
+      "bytes": 4376,
+      "sha256": "84a22827f5da66056c880076a13b115611d49d550bfebc04d19c5aaac45ac0ff",
+      "workspace_sha256": "84a22827f5da66056c880076a13b115611d49d550bfebc04d19c5aaac45ac0ff",
       "byte_identical_to_workspace": true
     },
     "README.md": {
-      "bytes": 5532,
-      "sha256": "8c5f55a4886fbff9d118d4697bc76f20bb7f87deffccc6c589c2f1555768cca0",
-      "workspace_sha256": "8c5f55a4886fbff9d118d4697bc76f20bb7f87deffccc6c589c2f1555768cca0",
+      "bytes": 5803,
+      "sha256": "c19fffc7ed443a837f46274f71a6819bf8ee0512412ea3a47edad780c6d17690",
+      "workspace_sha256": "c19fffc7ed443a837f46274f71a6819bf8ee0512412ea3a47edad780c6d17690",
       "byte_identical_to_workspace": true
     },
     "research/followup/ca_clean_proof.md": {
@@ -5446,6 +5656,12 @@
       "workspace_sha256": "c91708e73faa27fec80542200324da0cad97ab64c3057de91b4866caad971468",
       "byte_identical_to_workspace": true
     },
+    "research/followup/METHOD_LEDGER_2026-10-26.md": {
+      "bytes": 1553,
+      "sha256": "66a33126b336264e07cbc91febbf5e4feb594274ff0e02ae3b0196c61dd30cbd",
+      "workspace_sha256": "66a33126b336264e07cbc91febbf5e4feb594274ff0e02ae3b0196c61dd30cbd",
+      "byte_identical_to_workspace": true
+    },
     "research/followup/MIXED_CLOCK_DYNKIN_ROUTE_2026-10-25.md": {
       "bytes": 13638,
       "sha256": "7b6fb7cc79a2c252096b51ccd0c68cfe55b85e242af3b0afdde4fcdb9870fdb5",
@@ -5495,9 +5711,9 @@
       "byte_identical_to_workspace": true
     },
     "STATUS.md": {
-      "bytes": 2672,
-      "sha256": "1060c7ff3754ff2408ab4c96a20dd31a63dcd97a857c613497313a17ee9f758a",
-      "workspace_sha256": "1060c7ff3754ff2408ab4c96a20dd31a63dcd97a857c613497313a17ee9f758a",
+      "bytes": 1991,
+      "sha256": "33ee21b102268ea069b6dad285f4df4e836fcaeddbfcb8d17d2bf685c361db95",
+      "workspace_sha256": "33ee21b102268ea069b6dad285f4df4e836fcaeddbfcb8d17d2bf685c361db95",
       "byte_identical_to_workspace": true
     },
     "形式化独立核查_2026-10-14.md": {

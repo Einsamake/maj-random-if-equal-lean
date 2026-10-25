@@ -1,0 +1,9 @@
+import MathResearchAnalysis.MixedClockDynkin
+
+#print axioms MathResearchAnalysis.MixedClockDynkin.step
+#print axioms MathResearchAnalysis.MixedClockDynkin.endpoint_eq_mixed
+#print axioms MathResearchAnalysis.MixedClockDynkin.generator_eq_exclusion
+#print axioms MathResearchAnalysis.MixedClockDynkin.generator_at_endpoint
+#print axioms MathResearchAnalysis.MixedClockDynkin.observable_integrable
+#print axioms MathResearchAnalysis.MixedClockDynkin.generator_time_mean_integrable
+#print axioms MathResearchAnalysis.MixedClockDynkin.expected_observable_dynkin

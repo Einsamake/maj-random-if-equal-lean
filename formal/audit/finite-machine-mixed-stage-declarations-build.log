@@ -1,0 +1,6 @@
+✔ [3942/3942] Built MathResearchAnalysis.MixedClockDynkin (12s)
+Build completed successfully (3942 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
