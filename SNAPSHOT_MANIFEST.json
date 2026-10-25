@@ -5135,9 +5135,9 @@
       "byte_identical_to_workspace": false
     },
     "formal/FORMALIZATION_MAP.md": {
-      "bytes": 7613,
-      "sha256": "04de43cab97fe3b0e7453d6120ef4b11275d32a896a653ccc4f79cc007061b36",
-      "workspace_sha256": "c4f21b6f69e7ee7ebf088123407c85552b8443ccea2f726b32d9ce940df5d3df",
+      "bytes": 7720,
+      "sha256": "cd4cc8ccd52a1e674a4dc8e0837290ede0626fe1c5bb5e01d19eacc24e1c5fbb",
+      "workspace_sha256": "6701869a417c7722fdb78cb39d386fe041c52548d35f1d71d03150a74d16bcf3",
       "byte_identical_to_workspace": false
     },
     "formal/INFINITE_GRID_CONTRACT.md": {
@@ -5165,9 +5165,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/LEAN_README.md": {
-      "bytes": 3615,
-      "sha256": "4231884c6f8640ef18432cb1a9445208c3e30ce288e757660ff8a946666da8ad",
-      "workspace_sha256": "5c29b487225a3142eb78db51634729284b12111c0cc11570d22504536a7fe898",
+      "bytes": 3722,
+      "sha256": "e0edec8fecc241c05d1abf01899064a5d1bd7682bea90551370d4bbe4729ff86",
+      "workspace_sha256": "17edf630a867fe950885a69cf7580c99817fcc64e1406630d3cd0c0b83aecf6e",
       "byte_identical_to_workspace": false
     },
     "formal/MathResearch/Dynamics.lean": {

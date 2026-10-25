@@ -31,9 +31,9 @@ scripts/validate_workspace.py核对正式source集/hash、脚本语法与文档�
 
 [25日：混合边界与真实阶梯形clock基础](PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。
 
-新增行长编码11定理见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码/二次上界仍未完成。
+行长编码的历史验收见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码现已完成，二次上界仍未完成。
 
-[粒子编码与有限算子最新验收](PROGRESS_2026-10-25_EXCLUSION.md)：真实clock矩方程与二次上界仍未证明。
+[25日粒子编码与有限算子验收](PROGRESS_2026-10-25_EXCLUSION.md)；真实矩方程和非正协方差现已完成，见[26日后续验收](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)。二次上界仍未完成。
 
 [26日：有限机器的真实时钟Dynkin与混合边界实例](PROGRESS_2026-10-26_FINITE_MACHINE_DYNKIN.md)。
 
