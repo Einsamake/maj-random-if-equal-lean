@@ -1,0 +1,40 @@
+'MathResearchAnalysis.MixedSquareModel.Config' does not depend on any axioms
+'MathResearchAnalysis.MixedSquareModel.Event' does not depend on any axioms
+'MathResearchAnalysis.MixedSquareModel.extend' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.rule' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.updateEvent' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_inside' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_outside' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_low' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_high' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_west_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_south_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_east_boundary' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_north_boundary' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.vertexOfInside_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.rule_mono_common_mark' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_same' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_other' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_mono_common_mark' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_cellUpdate_eq_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_extend_le' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_rule_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_cellUpdate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.updateEvent_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_nil' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_cons' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_append' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_mono' depends on axioms: [propext, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

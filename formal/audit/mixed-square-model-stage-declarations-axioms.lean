@@ -1,0 +1,34 @@
+import MathResearchAnalysis.MixedSquareModel
+
+#print axioms MathResearchAnalysis.MixedSquareModel.Config
+#print axioms MathResearchAnalysis.MixedSquareModel.Event
+#print axioms MathResearchAnalysis.MixedSquareModel.extend
+#print axioms MathResearchAnalysis.MixedSquareModel.rule
+#print axioms MathResearchAnalysis.MixedSquareModel.cellUpdate
+#print axioms MathResearchAnalysis.MixedSquareModel.updateEvent
+#print axioms MathResearchAnalysis.MixedSquareModel.execute
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_embed
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_inside
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_outside
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_low
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_high
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_west_boundary
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_south_boundary
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_east_boundary
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_north_boundary
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_mono
+#print axioms MathResearchAnalysis.MixedSquareModel.vertexOfInside_mono
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_monotone
+#print axioms MathResearchAnalysis.MixedSquareModel.rule_mono_common_mark
+#print axioms MathResearchAnalysis.MixedSquareModel.cellUpdate_same
+#print axioms MathResearchAnalysis.MixedSquareModel.cellUpdate_other
+#print axioms MathResearchAnalysis.MixedSquareModel.cellUpdate_mono_common_mark
+#print axioms MathResearchAnalysis.MixedSquareModel.extend_cellUpdate_eq_update
+#print axioms MathResearchAnalysis.MixedSquareModel.zeroBoundary_extend_le
+#print axioms MathResearchAnalysis.MixedSquareModel.zeroBoundary_rule_le
+#print axioms MathResearchAnalysis.MixedSquareModel.zeroBoundary_cellUpdate_le
+#print axioms MathResearchAnalysis.MixedSquareModel.updateEvent_mono
+#print axioms MathResearchAnalysis.MixedSquareModel.execute_nil
+#print axioms MathResearchAnalysis.MixedSquareModel.execute_cons
+#print axioms MathResearchAnalysis.MixedSquareModel.execute_append
+#print axioms MathResearchAnalysis.MixedSquareModel.execute_mono

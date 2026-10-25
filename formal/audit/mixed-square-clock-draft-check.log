@@ -1,0 +1,6 @@
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+..\drafts\MixedSquareClockLaw.lean:101:2: warning: Try this: intro z hz hm
+
+Note: This linter can be disabled with `set_option linter.tacticAnalysis.introMerge false`
+EXIT_CODE=0

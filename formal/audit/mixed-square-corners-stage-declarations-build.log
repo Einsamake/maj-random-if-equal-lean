@@ -1,0 +1,6 @@
+✔ [3146/3146] Built MathResearchAnalysis.MixedSquareCorners (19s)
+Build completed successfully (3146 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

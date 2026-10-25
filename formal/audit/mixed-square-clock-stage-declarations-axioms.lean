@@ -1,0 +1,15 @@
+import MathResearchAnalysis.MixedSquareClockLaw
+
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.execute_eq_of_marks_agree
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.freshRun
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.freshRun_fixedVector
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.freshRun_measurable
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.fixedRun_measurable
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.endpoint
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.endpoint_measurable
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.original_execute_le_mixed
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.original_endpoint_le_mixed
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.endpoint_mono
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.original_nonzero_probability_le_mixed
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.endpoint_monotone_shape
+#print axioms MathResearchAnalysis.MixedSquareClockLaw.all_times_top_shape

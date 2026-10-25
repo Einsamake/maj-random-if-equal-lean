@@ -1,0 +1,35 @@
+'MathResearchAnalysis.MixedSquareClockLaw.execute_eq_of_marks_agree' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.freshRun' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.freshRun_fixedVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.freshRun_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.fixedRun_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_execute_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_endpoint_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_nonzero_probability_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_monotone_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.all_times_top_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

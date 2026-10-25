@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析212个证明模块、2826条辅助定理、213份分析源；核心125条定理及1模型、8源未变。合计221份正式源、2951条辅助定理与1个模型，完整公理输出2952项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T15:11:55.361456+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
+分析215个证明模块、2878条辅助定理、216份分析源；核心125条定理及1模型、8源未变。合计224份正式源、3003条辅助定理与1个模型，完整公理输出3004项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T19:15:50.773420+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
 
 | 内容 | 主要模块 | 当前边界 |
 |---|---|---|
@@ -27,6 +27,7 @@
 | 零权出生层 | ForbiddenBirthControl | 外可能birth必在norm1=L+2，w在该层为0；真实masked/expanded weighted raw严格相等；真实整体weighted率及下界见后续 |
 | 加权真实物理二次下尾接口 | WeightedExitArea、WeightedAreaDynkin、WeightedAreaTail、WeightedRawContour、WeightedReflection、WeightedRawRate、PhysicalWeightedDrift | 真正raw≤18L+12、真实E[W_T]界；L≥12288000时T=L²/12288000处辅助exit和原clock灭绝CDF≤1/2，无核心率或概率输入 |
 | 原同步exact-N二次下界 | SyncLowerScale、ExtendedTailLower、SynchronousQuadraticTail、OriginalQuadraticLower | 真同步尾≥1/4、奇偶N支持比较、保∞期望；N≥786432000时ofReal(N²/56623104000)≤tau(N) |
+| 上界辅助模型与真实同维clock基础 | MixedSquareModel、MixedSquareCorners、MixedSquareClockLaw | 真实混合边界、精确双向翻角、空间单调形状保持、同clock/mark endpoint可测及原同维支配；非跨尺寸law或SSEP概率 |
 | 原同步二次上界 | 尚未闭合 | 有限混合边界/SSEP候选核心、真实概率与clock/sync上界连接仍待 |
 | τ(N)=Θ(N²) | 尚未验收 | 不宣称完成，不按定理条数估完成百分比 |
 
@@ -48,3 +49,5 @@
 [25日：实际加权线性率与平方时间概率界](PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。真实CLOCK结论已供给数值界；原同步τ(N)=Θ(N²)仍未完成。
 
 [25日：原同步与exact-N二次期望下界](PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。
+
+[25日：混合边界与真实阶梯形clock基础](PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。

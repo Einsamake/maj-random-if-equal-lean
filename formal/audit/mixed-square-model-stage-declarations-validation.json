@@ -1,0 +1,53 @@
+{
+  "validated_at": "2026-10-25T15:25:41.893458+08:00",
+  "modules": [
+    "MixedSquareModel"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedSquareModel.Config",
+    "MathResearchAnalysis.MixedSquareModel.Event",
+    "MathResearchAnalysis.MixedSquareModel.extend",
+    "MathResearchAnalysis.MixedSquareModel.rule",
+    "MathResearchAnalysis.MixedSquareModel.cellUpdate",
+    "MathResearchAnalysis.MixedSquareModel.updateEvent",
+    "MathResearchAnalysis.MixedSquareModel.execute",
+    "MathResearchAnalysis.MixedSquareModel.extend_embed",
+    "MathResearchAnalysis.MixedSquareModel.extend_inside",
+    "MathResearchAnalysis.MixedSquareModel.extend_outside",
+    "MathResearchAnalysis.MixedSquareModel.extend_low",
+    "MathResearchAnalysis.MixedSquareModel.extend_high",
+    "MathResearchAnalysis.MixedSquareModel.extend_west_boundary",
+    "MathResearchAnalysis.MixedSquareModel.extend_south_boundary",
+    "MathResearchAnalysis.MixedSquareModel.extend_east_boundary",
+    "MathResearchAnalysis.MixedSquareModel.extend_north_boundary",
+    "MathResearchAnalysis.MixedSquareModel.extend_mono",
+    "MathResearchAnalysis.MixedSquareModel.vertexOfInside_mono",
+    "MathResearchAnalysis.MixedSquareModel.extend_monotone",
+    "MathResearchAnalysis.MixedSquareModel.rule_mono_common_mark",
+    "MathResearchAnalysis.MixedSquareModel.cellUpdate_same",
+    "MathResearchAnalysis.MixedSquareModel.cellUpdate_other",
+    "MathResearchAnalysis.MixedSquareModel.cellUpdate_mono_common_mark",
+    "MathResearchAnalysis.MixedSquareModel.extend_cellUpdate_eq_update",
+    "MathResearchAnalysis.MixedSquareModel.zeroBoundary_extend_le",
+    "MathResearchAnalysis.MixedSquareModel.zeroBoundary_rule_le",
+    "MathResearchAnalysis.MixedSquareModel.zeroBoundary_cellUpdate_le",
+    "MathResearchAnalysis.MixedSquareModel.updateEvent_mono",
+    "MathResearchAnalysis.MixedSquareModel.execute_nil",
+    "MathResearchAnalysis.MixedSquareModel.execute_cons",
+    "MathResearchAnalysis.MixedSquareModel.execute_append",
+    "MathResearchAnalysis.MixedSquareModel.execute_mono"
+  ],
+  "declarations_count": 32,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedSquareModel.lean": "87da30c23bd77f46cd52f015921e3d8fbca31dda1ca9b82cc855958286800cd1"
+  },
+  "new_lean_warning_lines": []
+}

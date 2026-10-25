@@ -1,6 +1,6 @@
 # 验证记录
 
-分析212个证明模块、2826条辅助定理、213份分析源；核心125条定理及1模型、8源未变。合计221份正式源、2951条辅助定理与1个模型，完整公理输出2952项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T15:11:55.361456+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
+分析215个证明模块、2878条辅助定理、216份分析源；核心125条定理及1模型、8源未变。合计224份正式源、3003条辅助定理与1个模型，完整公理输出3004项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T19:15:50.773420+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
 
 分析使用Lean4.35.0-rc4、固定mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d；核心使用Lean4.35.0。分别使用原工具链与缓存，不跨版本复用olean。formal/scripts/validate_analysis.py真实统一build，再标准Lean --trust=0逐分析定理打印公理，记录完整正式source集/SHA256。核心既有build与审计见formal/audit/core-validation.json，本次只回核8源。
 
@@ -18,3 +18,5 @@
 [25日：实际加权线性率与平方时间概率界](../formal/PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。真实CLOCK结论已供给数值界；原同步τ(N)=Θ(N²)仍未完成。
 
 [25日：原同步与exact-N二次期望下界](../formal/PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。
+
+[25日：混合边界与真实阶梯形clock基础](../formal/PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。

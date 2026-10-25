@@ -1,0 +1,6 @@
+✔ [3824/3824] Built MathResearchAnalysis.MixedSquareClockLaw (15s)
+Build completed successfully (3824 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

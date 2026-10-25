@@ -1,0 +1,20 @@
+import MathResearchAnalysis.MixedSquareCorners
+
+#print axioms MathResearchAnalysis.MixedSquareCorners.true_ne_inputs
+#print axioms MathResearchAnalysis.MixedSquareCorners.false_sw_inputs
+#print axioms MathResearchAnalysis.MixedSquareCorners.grid_rule_false_iff_of_true
+#print axioms MathResearchAnalysis.MixedSquareCorners.grid_rule_true_iff_of_false
+#print axioms MathResearchAnalysis.MixedSquareCorners.strict_above_has_step
+#print axioms MathResearchAnalysis.MixedSquareCorners.strict_below_has_step
+#print axioms MathResearchAnalysis.MixedSquareCorners.grid_update_monotone
+#print axioms MathResearchAnalysis.MixedSquareCorners.finite_true_ne_inputs
+#print axioms MathResearchAnalysis.MixedSquareCorners.finite_false_sw_inputs
+#print axioms MathResearchAnalysis.MixedSquareCorners.rule_false_iff_of_true
+#print axioms MathResearchAnalysis.MixedSquareCorners.rule_true_iff_of_false
+#print axioms MathResearchAnalysis.MixedSquareCorners.removable
+#print axioms MathResearchAnalysis.MixedSquareCorners.addable
+#print axioms MathResearchAnalysis.MixedSquareCorners.cellUpdate_changes_iff
+#print axioms MathResearchAnalysis.MixedSquareCorners.cellUpdate_monotone
+#print axioms MathResearchAnalysis.MixedSquareCorners.execute_monotone
+#print axioms MathResearchAnalysis.MixedSquareCorners.execute_true_monotone
+#print axioms MathResearchAnalysis.MixedSquareCorners.execute_false_monotone

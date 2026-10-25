@@ -235,6 +235,9 @@ public import MathResearchAnalysis.SyncLowerScale
 public import MathResearchAnalysis.ExtendedTailLower
 public import MathResearchAnalysis.SynchronousQuadraticTail
 public import MathResearchAnalysis.OriginalQuadraticLower
+public import MathResearchAnalysis.MixedSquareModel
+public import MathResearchAnalysis.MixedSquareCorners
+public import MathResearchAnalysis.MixedSquareClockLaw
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
@@ -340,6 +343,12 @@ infinite recovery values are retained, proving an explicit exact-N quadratic
 worst extended expectation lower bound. The quadratic upper bound, full
 future-vector Poisson strong Markov characterization and the complete CA
 Theta theorem remain unproved.
+The true mixed-boundary finite rule has proved coordinate-monotone shape
+preservation, exact two-way corner flips and measurable endpoints under the
+same original clock/identity-mark field. Same-size zero-boundary endpoints are
+dominated; cross-size clock restriction, finite exclusion encoding and the
+quadratic upper probability bound remain unproved.
 -/
+
 
 

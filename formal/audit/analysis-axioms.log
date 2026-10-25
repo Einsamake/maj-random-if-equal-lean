@@ -3822,6 +3822,94 @@
 'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_antitone_mask' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.execute_eq_of_marks_agree' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.freshRun_fixedVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.freshRun_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.fixedRun_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_execute_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_endpoint_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.original_nonzero_probability_le_mixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.endpoint_monotone_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareClockLaw.all_times_top_shape' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.true_ne_inputs' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.false_sw_inputs' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.grid_rule_false_iff_of_true' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.grid_rule_true_iff_of_false' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.strict_above_has_step' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.strict_below_has_step' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.grid_update_monotone' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.finite_true_ne_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.finite_false_sw_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.rule_false_iff_of_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.rule_true_iff_of_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.cellUpdate_changes_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.cellUpdate_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.execute_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.execute_true_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareCorners.execute_false_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_embed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_inside' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_outside' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_low' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_high' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_west_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_south_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_east_boundary' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_north_boundary' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.vertexOfInside_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.rule_mono_common_mark' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_same' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_other' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.cellUpdate_mono_common_mark' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.extend_cellUpdate_eq_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_extend_le' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_rule_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.zeroBoundary_cellUpdate_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.updateEvent_mono' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_nil' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_cons' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_append' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedSquareModel.execute_mono' depends on axioms: [propext, Quot.sound]
 'MathResearchAnalysis.NextRing.ready_lt_nextRing' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.NextRing.nextIndex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.NextRing.nextRing_le_arrival' depends on axioms: [propext, Classical.choice, Quot.sound]

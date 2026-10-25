@@ -1,0 +1,34 @@
+{
+  "validated_at": "2026-10-25T19:15:04.444548+08:00",
+  "modules": [
+    "MixedSquareClockLaw"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedSquareClockLaw.execute_eq_of_marks_agree",
+    "MathResearchAnalysis.MixedSquareClockLaw.freshRun",
+    "MathResearchAnalysis.MixedSquareClockLaw.freshRun_fixedVector",
+    "MathResearchAnalysis.MixedSquareClockLaw.freshRun_measurable",
+    "MathResearchAnalysis.MixedSquareClockLaw.fixedRun_measurable",
+    "MathResearchAnalysis.MixedSquareClockLaw.endpoint",
+    "MathResearchAnalysis.MixedSquareClockLaw.endpoint_measurable",
+    "MathResearchAnalysis.MixedSquareClockLaw.original_execute_le_mixed",
+    "MathResearchAnalysis.MixedSquareClockLaw.original_endpoint_le_mixed",
+    "MathResearchAnalysis.MixedSquareClockLaw.endpoint_mono",
+    "MathResearchAnalysis.MixedSquareClockLaw.original_nonzero_probability_le_mixed",
+    "MathResearchAnalysis.MixedSquareClockLaw.endpoint_monotone_shape",
+    "MathResearchAnalysis.MixedSquareClockLaw.all_times_top_shape"
+  ],
+  "declarations_count": 13,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedSquareClockLaw.lean": "43d38694baab3043d3f4962e4dffec0d5fc58f7f6f4662e1203f796181c85bd9"
+  },
+  "new_lean_warning_lines": []
+}
