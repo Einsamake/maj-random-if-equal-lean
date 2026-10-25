@@ -18,7 +18,7 @@
 
 ## 怎样验证
 
-最新224份正式源已完成统一构建及标准Lean内核公理审计。独立AI审查与源指纹绑定另有记录；AI审查不等于人类专家认证。
+最新225份正式源已完成统一构建及标准Lean内核公理审计。独立AI审查与源指纹绑定另有记录；AI审查不等于人类专家认证。
 
 <details>
 <summary>显式常数与技术证据</summary>
@@ -32,3 +32,5 @@
 [从3×3例子理解问题](README.md) · [本阶段结果与验证](formal/PROGRESS_2026-10-25_SYNC_LOWER.md) · [源码与核验记录](docs/VERIFICATION.md)
 
 [已核验的上界辅助模型基础](formal/PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。
+
+行长无损编码又有11条新定理完成，见[本地新增结果](formal/PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子双向编码仍待。私有快照当前仍为224源。

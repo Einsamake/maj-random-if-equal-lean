@@ -2869,6 +2869,17 @@ import MathResearchAnalysis
 #print axioms MathResearchAnalysis.WholeSquareClockTransport.raw_endpoint_wholeSquare
 #print axioms MathResearchAnalysis.WholeSquareClockTransport.raw_endpoint_wholeSquare_law
 #print axioms MathResearchAnalysis.WholeSquareClockTransport.original_extinction_measure_le_clipped_protected_missing
+#print axioms MathResearchAnalysis.YoungRows.mem_rowZeros
+#print axioms MathResearchAnalysis.YoungRows.rowLength_le_side
+#print axioms MathResearchAnalysis.YoungRows.rowZeros_antitone
+#print axioms MathResearchAnalysis.YoungRows.rowLength_antitone
+#print axioms MathResearchAnalysis.YoungRows.false_iff_lt_rowLength
+#print axioms MathResearchAnalysis.YoungRows.true_iff_rowLength_le
+#print axioms MathResearchAnalysis.YoungRows.ext_of_rowLength_eq
+#print axioms MathResearchAnalysis.YoungRows.rowLength_all_true
+#print axioms MathResearchAnalysis.YoungRows.rowLength_all_false
+#print axioms MathResearchAnalysis.YoungRows.rowZeros_update_other_row
+#print axioms MathResearchAnalysis.YoungRows.rowLength_update_other_row
 #print axioms MathResearchAnalysis.ZeroTemperature.warmProbability_pos
 #print axioms MathResearchAnalysis.ZeroTemperature.warmProbability_lt_one
 #print axioms MathResearchAnalysis.ZeroTemperature.warmProbability_zero_temperature

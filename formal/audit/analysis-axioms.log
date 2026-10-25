@@ -6295,6 +6295,17 @@
 'MathResearchAnalysis.WholeSquareClockTransport.original_extinction_measure_le_clipped_protected_missing' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.YoungRows.mem_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowLength_le_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowZeros_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowLength_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.false_iff_lt_rowLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.true_iff_rowLength_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.ext_of_rowLength_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowLength_all_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowLength_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowZeros_update_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRows.rowLength_update_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_zero_temperature' depends on axioms: [propext,

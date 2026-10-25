@@ -1,6 +1,6 @@
 # 验证记录
 
-分析215个证明模块、2878条辅助定理、216份分析源；核心125条定理及1模型、8源未变。合计224份正式源、3003条辅助定理与1个模型，完整公理输出3004项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T19:15:50.773420+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
+分析216个证明模块、2889条辅助定理、217份分析源；核心125条定理及1模型、8源未变。合计225份正式源、3014条辅助定理与1个模型，完整公理输出3015项。最新分析统一构建和标准Lean --trust=0逐定理审计均退出0（2026-10-25T19:27:55.193600+08:00）；仅Classical.choice、Quot.sound、propext。核心8源未改，本次未重编。
 
 分析使用Lean4.35.0-rc4、固定mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d；核心使用Lean4.35.0。分别使用原工具链与缓存，不跨版本复用olean。formal/scripts/validate_analysis.py真实统一build，再标准Lean --trust=0逐分析定理打印公理，记录完整正式source集/SHA256。核心既有build与审计见formal/audit/core-validation.json，本次只回核8源。
 
@@ -20,3 +20,5 @@
 [25日：原同步与exact-N二次期望下界](../formal/PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。
 
 [25日：混合边界与真实阶梯形clock基础](../formal/PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。
+
+新增行长编码11定理见[YoungRows](../formal/PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码/二次上界仍未完成。

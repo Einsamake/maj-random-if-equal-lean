@@ -238,6 +238,7 @@ public import MathResearchAnalysis.OriginalQuadraticLower
 public import MathResearchAnalysis.MixedSquareModel
 public import MathResearchAnalysis.MixedSquareCorners
 public import MathResearchAnalysis.MixedSquareClockLaw
+public import MathResearchAnalysis.YoungRows
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
@@ -349,6 +350,7 @@ same original clock/identity-mark field. Same-size zero-boundary endpoints are
 dominated; cross-size clock restriction, finite exclusion encoding and the
 quadratic upper probability bound remain unproved.
 -/
+
 
 
 

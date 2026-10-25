@@ -1,0 +1,6 @@
+✔ [795/795] Built MathResearchAnalysis.YoungRows (9.2s)
+Build completed successfully (795 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
