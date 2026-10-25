@@ -5381,9 +5381,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/scripts/verify_private_repository.py": {
-      "bytes": 3518,
-      "sha256": "bba0786e27b8fdca10e0407f4669b349874a4cccb414344dc0d3b84970020d2f",
-      "workspace_sha256": "bba0786e27b8fdca10e0407f4669b349874a4cccb414344dc0d3b84970020d2f",
+      "bytes": 3948,
+      "sha256": "64166641f7f4d347efff7d703597a58c0c8c9d0b9b2e2bc34edc7dc2f598b473",
+      "workspace_sha256": "64166641f7f4d347efff7d703597a58c0c8c9d0b9b2e2bc34edc7dc2f598b473",
       "byte_identical_to_workspace": true
     },
     "README.md": {
@@ -5495,9 +5495,9 @@
       "byte_identical_to_workspace": true
     },
     "STATUS.md": {
-      "bytes": 2743,
-      "sha256": "1e51ee6c54082a0d1cbf007fe193291858bdeda9709d6e5905c4c8427383a4ae",
-      "workspace_sha256": "1e51ee6c54082a0d1cbf007fe193291858bdeda9709d6e5905c4c8427383a4ae",
+      "bytes": 2672,
+      "sha256": "1060c7ff3754ff2408ab4c96a20dd31a63dcd97a857c613497313a17ee9f758a",
+      "workspace_sha256": "1060c7ff3754ff2408ab4c96a20dd31a63dcd97a857c613497313a17ee9f758a",
       "byte_identical_to_workspace": true
     },
     "形式化独立核查_2026-10-14.md": {

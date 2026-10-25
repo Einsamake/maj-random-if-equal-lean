@@ -34,19 +34,21 @@ for name in ['README.md','STATUS.md']:
     assert base64.b64decode(out['content'])==(R/name).read_bytes()
 analysis=json.loads((R/'formal/audit/analysis-validation.json').read_text(encoding='utf8'))
 has_mixed='MathResearchAnalysis/MixedSquareClockLaw.lean' in analysis['source_sha256']
+has_exclusion='MathResearchAnalysis/MixedExclusionGenerator.lean' in analysis['source_sha256']
 record={'validated_at':datetime.now(timezone(timedelta(hours=8))).isoformat(),
  'url':info['url'],'is_private':True,'repository':repo,'branch':'main','commit':commit,
  'remote_files_checked':len(remote),'formal_sources_checked':count,
  'analysis_theorems':analysis['public_theorems'],'helper_theorems':analysis['public_theorems']+125,
  'additional_model_definitions':1,'all_remote_blob_hashes_match':True,
  'all_formal_Lean_bytes_identical_to_workspace':True,'snapshot_local_path':str(W),
- 'main_theorem_complete':False,'quadratic_lower_bound_complete':True,'mixed_boundary_foundation_complete':has_mixed,
+ 'main_theorem_complete':False,'quadratic_lower_bound_complete':True,'mixed_boundary_foundation_complete':has_mixed,'finite_particle_generator_algebra_complete':has_exclusion,
  'full_remote_build_or_CI_run':False,'excluded_local_automation_state':True,
  'working_tree_clean_after_push':True,'remote_readme_bytes_verified':True,
  'remote_status_bytes_verified':True,'formal_proofs_changed':True,
  'metadata_note':'Formal Lean bytes are exact; Markdown, JSON and log paths may be sanitized. Snapshot manifest records both workspace and curated hashes.',
- 'change_scope':('Actual original synchronous exact-N quadratic lower bound and actual mixed-boundary same-size clock/shape foundation; cross-size restriction, SSEP encoding and full upper/Theta unproved.' if has_mixed else 'Actual original synchronous exact-N quadratic extended-expectation lower bound; full quadratic upper bound and Theta theorem remain unproved.')}
+ 'change_scope':('Original synchronous exact-N lower bound, two-sided particle geometry, exact finite mixed/swap generator algebra and path Poincare verified; true clock Dynkin, moment/time laws, cross-size law and full upper/Theta remain unproved.' if has_exclusion else 'Actual original synchronous exact-N quadratic lower bound and actual mixed-boundary same-size clock/shape foundation; true exclusion process law, cross-size clock restriction and full upper/Theta unproved.' if has_mixed else 'Actual original synchronous exact-N quadratic extended-expectation lower bound; full quadratic upper bound and Theta theorem remain unproved.')}
 (R/'formal/audit/github-private-repository.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 print(json.dumps(record,ensure_ascii=False))
+
 
 
