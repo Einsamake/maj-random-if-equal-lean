@@ -1,0 +1,8 @@
+✔ [3946/3948] Built MathResearchAnalysis.FinitePermutationComparison (12s)
+✔ [3947/3948] Built MathResearchAnalysis.FiniteExclusionEnergy (12s)
+✔ [3948/3948] Built MathResearchAnalysis.MixedMomentEvolution (12s)
+Build completed successfully (3948 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -1,0 +1,52 @@
+{
+  "validated_at": "2026-10-26T06:27:15.077157+08:00",
+  "modules": [
+    "FiniteExclusionEnergy",
+    "FinitePermutationComparison",
+    "MixedMomentEvolution"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_add",
+    "MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_sub",
+    "MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_const",
+    "MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_mul_const",
+    "MathResearchAnalysis.FiniteExclusionEnergy.sum_oneParticle",
+    "MathResearchAnalysis.FiniteExclusionEnergy.one_edge_flux",
+    "MathResearchAnalysis.FiniteExclusionEnergy.integration_by_parts",
+    "MathResearchAnalysis.FiniteExclusionEnergy.dirichlet_identity",
+    "MathResearchAnalysis.FiniteExclusionEnergy.hasDerivAt_squareMass",
+    "MathResearchAnalysis.FiniteExclusionEnergy.hasDerivAt_total",
+    "MathResearchAnalysis.FinitePermutationComparison.rate",
+    "MathResearchAnalysis.FinitePermutationComparison.energy",
+    "MathResearchAnalysis.FinitePermutationComparison.permutation_flux_nonpos",
+    "MathResearchAnalysis.FinitePermutationComparison.rate_flux_nonpos",
+    "MathResearchAnalysis.FinitePermutationComparison.energy_nonneg",
+    "MathResearchAnalysis.FinitePermutationComparison.source_derivative_nonpos",
+    "MathResearchAnalysis.FinitePermutationComparison.hasDerivAt_energy",
+    "MathResearchAnalysis.FinitePermutationComparison.nonpos",
+    "MathResearchAnalysis.MixedMomentEvolution.rho_continuousOn",
+    "MathResearchAnalysis.MixedMomentEvolution.g_continuousOn",
+    "MathResearchAnalysis.MixedMomentEvolution.rho_rhs_continuousOn",
+    "MathResearchAnalysis.MixedMomentEvolution.g_rhs_continuousOn",
+    "MathResearchAnalysis.MixedMomentEvolution.rho_hasDerivAt",
+    "MathResearchAnalysis.MixedMomentEvolution.g_hasDerivAt",
+    "MathResearchAnalysis.MixedMomentEvolution.totalDensity_slotState_eq_card",
+    "MathResearchAnalysis.MixedMomentEvolution.occupation_totalDensity",
+    "MathResearchAnalysis.MixedMomentEvolution.rho_total_mass"
+  ],
+  "declarations_count": 27,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FiniteExclusionEnergy.lean": "d21596570a6fc66b0f84e04b5508eba06e3f82eca369c2a450295cf947e7f9eb",
+    "MathResearchAnalysis/FinitePermutationComparison.lean": "60d401a0708168d8c84cb23b8a21b91ce6d51187790747dbe06cbd94c33d0f00",
+    "MathResearchAnalysis/MixedMomentEvolution.lean": "607c3ba4bf08dae7977a2522de2069d171f63c414c9c71dd1a429b069629567e"
+  },
+  "new_lean_warning_lines": []
+}

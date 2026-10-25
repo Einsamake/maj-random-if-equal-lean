@@ -257,6 +257,22 @@ public import MathResearchAnalysis.MachineClockDynkin
 public import MathResearchAnalysis.MachineClockGenerator
 public import MathResearchAnalysis.MixedClockDynkin
 
+public import MathResearchAnalysis.PositivePartSquare
+
+public import MathResearchAnalysis.FiniteMomentRegularity
+
+public import MathResearchAnalysis.MixedClockMoments
+
+public import MathResearchAnalysis.FiniteExclusionEnergy
+
+public import MathResearchAnalysis.MixedMomentEvolution
+
+public import MathResearchAnalysis.FinitePermutationComparison
+
+public import MathResearchAnalysis.MixedMomentEnergy
+
+public import MathResearchAnalysis.MixedClockCovariance
+
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
 Nonnegative prefix integrability, extended-time finiteness, actual real
@@ -376,6 +392,8 @@ one half per edge. Its one/two-coordinate algebra and covariance defect are
 proved, together with an explicit nearest-neighbour path Poincare bound.
 The genuine finite-state observed/predictable bridge and original-clock
 Dynkin formula are now proved, including the actual mixed/exclusion observable
-formula. Moment equations, covariance estimates, cross-size law and quadratic
-upper probabilities remain unproved.
+formula. True one/two-point moment integral and positive-time derivative
+equations, off-diagonal nonpositive covariance and actual centered mean energy
+are now proved. Heat-decay/concentration bounds, cross-size clock law and
+quadratic upper probabilities remain unproved.
 -/

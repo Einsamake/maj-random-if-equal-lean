@@ -1,0 +1,66 @@
+{
+  "kind": "deterministic legal path illustration, no random waiting times",
+  "side": 5,
+  "particle_positions": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    [
+      0,
+      1,
+      2,
+      4,
+      6
+    ]
+  ],
+  "row_white_lengths_bottom_up": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "legal_adjacent_hops": [
+    [
+      4,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "source": "docs/render_particle_encoding.py",
+  "png_sha256": "bec992ae762f88b23e3a1de0c6ddc7fe0fb5de712b489c14ed07dadc867c3ee7"
+}

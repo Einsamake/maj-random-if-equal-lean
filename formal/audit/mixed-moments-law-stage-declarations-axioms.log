@@ -1,0 +1,34 @@
+'MathResearchAnalysis.MixedClockMoments.occupation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.density_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.occupation_density_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.occupation_product_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.density_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.density_product_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_diagonal_eq_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.occupation_zero_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho_zero_eq_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_zero_eq_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.expected_oneParticle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.expected_twoParticle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho_rhs_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_rhs_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.rho_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockMoments.g_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

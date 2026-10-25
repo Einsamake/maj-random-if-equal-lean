@@ -1,0 +1,30 @@
+{
+  "validated_at": "2026-10-26T06:21:20.579501+08:00",
+  "modules": [
+    "PositivePartSquare"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.PositivePartSquare.square",
+    "MathResearchAnalysis.PositivePartSquare.square_nonneg",
+    "MathResearchAnalysis.PositivePartSquare.square_eq_zero_iff",
+    "MathResearchAnalysis.PositivePartSquare.hasDerivAt_square",
+    "MathResearchAnalysis.PositivePartSquare.deriv_square",
+    "MathResearchAnalysis.PositivePartSquare.derivative_continuous",
+    "MathResearchAnalysis.PositivePartSquare.square_continuous",
+    "MathResearchAnalysis.PositivePartSquare.positivePart_correlation_nonneg",
+    "MathResearchAnalysis.PositivePartSquare.supporting_inequality"
+  ],
+  "declarations_count": 9,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/PositivePartSquare.lean": "e79122c726f1c76073da35e28e0396c7977bed04bfbff9b887c6d37190f741d4"
+  },
+  "new_lean_warning_lines": []
+}

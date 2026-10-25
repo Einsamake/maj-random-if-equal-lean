@@ -1,0 +1,18 @@
+'MathResearchAnalysis.MixedMomentEnergy.centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.squareMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.edgeEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.centered_total_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.centered_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.squareMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.edgeEnergy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.squareMass_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.squareMass_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEnergy.squareMass_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

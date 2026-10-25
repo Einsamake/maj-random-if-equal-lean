@@ -1,0 +1,19 @@
+'MathResearchAnalysis.PositivePartSquare.square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.square_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.square_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.hasDerivAt_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.deriv_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.derivative_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.square_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.positivePart_correlation_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PositivePartSquare.supporting_inequality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

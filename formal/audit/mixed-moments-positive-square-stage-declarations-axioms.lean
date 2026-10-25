@@ -1,0 +1,11 @@
+import MathResearchAnalysis.PositivePartSquare
+
+#print axioms MathResearchAnalysis.PositivePartSquare.square
+#print axioms MathResearchAnalysis.PositivePartSquare.square_nonneg
+#print axioms MathResearchAnalysis.PositivePartSquare.square_eq_zero_iff
+#print axioms MathResearchAnalysis.PositivePartSquare.hasDerivAt_square
+#print axioms MathResearchAnalysis.PositivePartSquare.deriv_square
+#print axioms MathResearchAnalysis.PositivePartSquare.derivative_continuous
+#print axioms MathResearchAnalysis.PositivePartSquare.square_continuous
+#print axioms MathResearchAnalysis.PositivePartSquare.positivePart_correlation_nonneg
+#print axioms MathResearchAnalysis.PositivePartSquare.supporting_inequality

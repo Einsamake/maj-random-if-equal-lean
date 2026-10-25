@@ -1,0 +1,31 @@
+{
+  "validated_at": "2026-10-26T06:23:00.164037+08:00",
+  "modules": [
+    "FiniteMomentRegularity"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FiniteMomentRegularity.continuousOn_of_integral_eq",
+    "MathResearchAnalysis.FiniteMomentRegularity.hasDerivAt_of_integral_eq",
+    "MathResearchAnalysis.FiniteMomentRegularity.oneParticle_continuousOn",
+    "MathResearchAnalysis.FiniteMomentRegularity.twoParticle_continuousOn",
+    "MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_continuous",
+    "MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_rhs_continuous",
+    "MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_hasDerivAt",
+    "MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_continuous",
+    "MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_rhs_continuous",
+    "MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_hasDerivAt"
+  ],
+  "declarations_count": 10,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FiniteMomentRegularity.lean": "f42002733d345aa3c3da012ee4fa64430acce9bd84d4ad224d22008bce78293e"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,34 @@
+{
+  "validated_at": "2026-10-26T06:32:14.361459+08:00",
+  "modules": [
+    "MixedClockCovariance"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedClockCovariance.Pair",
+    "MathResearchAnalysis.MixedClockCovariance.pairSwap",
+    "MathResearchAnalysis.MixedClockCovariance.pairSwap_val",
+    "MathResearchAnalysis.MixedClockCovariance.covariance",
+    "MathResearchAnalysis.MixedClockCovariance.source",
+    "MathResearchAnalysis.MixedClockCovariance.source_eq_square",
+    "MathResearchAnalysis.MixedClockCovariance.source_nonneg",
+    "MathResearchAnalysis.MixedClockCovariance.rate_covariance",
+    "MathResearchAnalysis.MixedClockCovariance.covariance_zero",
+    "MathResearchAnalysis.MixedClockCovariance.covariance_continuousOn",
+    "MathResearchAnalysis.MixedClockCovariance.covariance_hasDerivAt",
+    "MathResearchAnalysis.MixedClockCovariance.covariance_nonpos",
+    "MathResearchAnalysis.MixedClockCovariance.offdiag_moment_le_product"
+  ],
+  "declarations_count": 13,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedClockCovariance.lean": "6c6ba7d5702153a79caeca65d26b23a38778e96416103d3e338f92bce4947854"
+  },
+  "new_lean_warning_lines": []
+}
