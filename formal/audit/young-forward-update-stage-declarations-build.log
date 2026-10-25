@@ -1,0 +1,7 @@
+✔ [3148/3149] Built MathResearchAnalysis.YoungParticles (10s)
+✔ [3149/3149] Built MathResearchAnalysis.YoungRowUpdates (19s)
+Build completed successfully (3149 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

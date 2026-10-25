@@ -1,0 +1,7 @@
+✔ [3153/3154] Built MathResearchAnalysis.FinitePathPoincare (11s)
+✔ [3154/3154] Built MathResearchAnalysis.MixedExclusionGenerator (18s)
+Build completed successfully (3154 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

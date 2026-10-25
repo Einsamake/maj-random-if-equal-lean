@@ -1,0 +1,56 @@
+'MathResearchAnalysis.YoungParticles.positionNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.positionNat_lt_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.positionNat_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.encoding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particles_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_all_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.mem_particles_all_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.mem_particles_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.rightCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.diagonalZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.rightCount_le_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.right_particle_iff_diagonal_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.rightCount_eq_diagonal_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.diagonal_false_iff_lt_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.diagonal_false_iff_le_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowZeros_write_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowZeros_write_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowLength_write_false_of_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowLength_write_true_of_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_cellUpdate_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_cellUpdate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_rowLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_rowLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.cellUpdate_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_x_eq_rowLength' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_x_succ_eq_rowLength' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

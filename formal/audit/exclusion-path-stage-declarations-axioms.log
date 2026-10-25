@@ -1,0 +1,77 @@
+'MathResearchAnalysis.MixedExclusionGenerator.Slot' does not depend on any axioms
+'MathResearchAnalysis.MixedExclusionGenerator.slotState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.pathEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.active' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.active_decidable' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.unequalEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_false_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.old_particle_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_eq_swap_of_particles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_of_removable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_of_addable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_mem_unequalEdges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.removable_eq_of_row_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.addable_eq_of_row_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_injective_on_corners' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_surjective_unequalEdges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_same_mark' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_eq_of_inactive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.active_slotState_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.local_fair_contribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.actual_generator_eq_exclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.squareMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.cauchy_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.interval_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.ordered_difference_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.difference_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.centered_difference_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.centered_point_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

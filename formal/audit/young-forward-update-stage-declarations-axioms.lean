@@ -1,0 +1,37 @@
+import MathResearchAnalysis.YoungParticles
+import MathResearchAnalysis.YoungRowUpdates
+
+#print axioms MathResearchAnalysis.YoungParticles.positionNat
+#print axioms MathResearchAnalysis.YoungParticles.positionNat_lt_twice
+#print axioms MathResearchAnalysis.YoungParticles.particle
+#print axioms MathResearchAnalysis.YoungParticles.particle_val
+#print axioms MathResearchAnalysis.YoungParticles.positionNat_strictMono
+#print axioms MathResearchAnalysis.YoungParticles.particle_strictMono
+#print axioms MathResearchAnalysis.YoungParticles.particle_injective
+#print axioms MathResearchAnalysis.YoungParticles.encoding_injective
+#print axioms MathResearchAnalysis.YoungParticles.particles
+#print axioms MathResearchAnalysis.YoungParticles.particles_card
+#print axioms MathResearchAnalysis.YoungParticles.particle_all_true
+#print axioms MathResearchAnalysis.YoungParticles.particle_all_false
+#print axioms MathResearchAnalysis.YoungParticles.mem_particles_all_true
+#print axioms MathResearchAnalysis.YoungParticles.mem_particles_all_false
+#print axioms MathResearchAnalysis.YoungParticles.rightCount
+#print axioms MathResearchAnalysis.YoungParticles.diagonalZeros
+#print axioms MathResearchAnalysis.YoungParticles.rightCount_le_side
+#print axioms MathResearchAnalysis.YoungParticles.right_particle_iff_diagonal_false
+#print axioms MathResearchAnalysis.YoungParticles.rightCount_eq_diagonal_card
+#print axioms MathResearchAnalysis.YoungParticles.diagonal_false_iff_lt_rightCount
+#print axioms MathResearchAnalysis.YoungParticles.diagonal_false_iff_le_rightCount
+#print axioms MathResearchAnalysis.YoungRowUpdates.rowZeros_write_false
+#print axioms MathResearchAnalysis.YoungRowUpdates.rowZeros_write_true
+#print axioms MathResearchAnalysis.YoungRowUpdates.rowLength_write_false_of_true
+#print axioms MathResearchAnalysis.YoungRowUpdates.rowLength_write_true_of_false
+#print axioms MathResearchAnalysis.YoungRowUpdates.removable_cellUpdate_eq
+#print axioms MathResearchAnalysis.YoungRowUpdates.addable_cellUpdate_eq
+#print axioms MathResearchAnalysis.YoungRowUpdates.removable_rowZeros
+#print axioms MathResearchAnalysis.YoungRowUpdates.addable_rowZeros
+#print axioms MathResearchAnalysis.YoungRowUpdates.removable_rowLength
+#print axioms MathResearchAnalysis.YoungRowUpdates.addable_rowLength
+#print axioms MathResearchAnalysis.YoungRowUpdates.cellUpdate_other_row
+#print axioms MathResearchAnalysis.YoungRowUpdates.removable_x_eq_rowLength
+#print axioms MathResearchAnalysis.YoungRowUpdates.addable_x_succ_eq_rowLength

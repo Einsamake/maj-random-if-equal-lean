@@ -1,0 +1,43 @@
+'MathResearchAnalysis.FiniteExclusionGenerator.Config' does not depend on any axioms
+'MathResearchAnalysis.FiniteExclusionGenerator.swapConfig' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.totalDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.oneParticle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.twoParticle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.density_swapConfig' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_mul_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.totalDensity_swapConfig' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_totalDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_density_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.one_edge_product_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.product_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.product_defect_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

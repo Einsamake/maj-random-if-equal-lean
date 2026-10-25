@@ -1,0 +1,40 @@
+{
+  "validated_at": "2026-10-25T20:28:24.299718+08:00",
+  "modules": [
+    "FiniteExclusionGenerator"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.FiniteExclusionGenerator.Config",
+    "MathResearchAnalysis.FiniteExclusionGenerator.swapConfig",
+    "MathResearchAnalysis.FiniteExclusionGenerator.density",
+    "MathResearchAnalysis.FiniteExclusionGenerator.totalDensity",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator",
+    "MathResearchAnalysis.FiniteExclusionGenerator.oneParticle",
+    "MathResearchAnalysis.FiniteExclusionGenerator.twoParticle",
+    "MathResearchAnalysis.FiniteExclusionGenerator.density_swapConfig",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_const",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_add",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_mul_const",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_sub",
+    "MathResearchAnalysis.FiniteExclusionGenerator.totalDensity_swapConfig",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_totalDensity",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_density",
+    "MathResearchAnalysis.FiniteExclusionGenerator.generator_density_product",
+    "MathResearchAnalysis.FiniteExclusionGenerator.one_edge_product_defect",
+    "MathResearchAnalysis.FiniteExclusionGenerator.product_defect",
+    "MathResearchAnalysis.FiniteExclusionGenerator.product_defect_nonneg"
+  ],
+  "declarations_count": 19,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/FiniteExclusionGenerator.lean": "dc32258b39e706e52b3c239d0ca55df6e79c4599dd7938aa853bb7b985a6302f"
+  },
+  "new_lean_warning_lines": []
+}

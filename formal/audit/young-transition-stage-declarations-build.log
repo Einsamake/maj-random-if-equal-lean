@@ -1,0 +1,7 @@
+✔ [3150/3151] Built MathResearchAnalysis.YoungParticleMoves (19s)
+✔ [3151/3151] Built MathResearchAnalysis.YoungParticleHops (19s)
+Build completed successfully (3151 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

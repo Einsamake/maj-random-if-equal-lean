@@ -1,0 +1,62 @@
+'MathResearchAnalysis.YoungParticleMoves.positionNat_cellUpdate_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.particle_cellUpdate_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_positionNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_positionNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_new_ne_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_new_ne_old' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.new_vacant_of_single_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_new_vacant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_new_vacant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.particles_eq_insert_erase_of_single_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_insert_erase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_insert_erase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.rightCount_eq_rightSlotCard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.finset_image_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_image_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_image_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_south_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_rowLength_lt_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_north_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_rowLength_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.removable_of_row_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.addable_of_row_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_has_removable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_has_addable' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

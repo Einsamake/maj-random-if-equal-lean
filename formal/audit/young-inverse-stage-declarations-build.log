@@ -1,0 +1,6 @@
+✔ [797/797] Built MathResearchAnalysis.YoungParticleInverse (9.0s)
+Build completed successfully (797 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

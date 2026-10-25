@@ -1,0 +1,39 @@
+{
+  "validated_at": "2026-10-25T20:15:52.958021+08:00",
+  "modules": [
+    "YoungParticleInverse"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.YoungParticleInverse.position_lower_bound",
+    "MathResearchAnalysis.YoungParticleInverse.position_upper_bound",
+    "MathResearchAnalysis.YoungParticleInverse.offset_monotone",
+    "MathResearchAnalysis.YoungParticleInverse.fromRows",
+    "MathResearchAnalysis.YoungParticleInverse.fromRows_false_iff",
+    "MathResearchAnalysis.YoungParticleInverse.fromRows_monotone",
+    "MathResearchAnalysis.YoungParticleInverse.rowLength_fromRows",
+    "MathResearchAnalysis.YoungParticleInverse.fromRows_actual_eq",
+    "MathResearchAnalysis.YoungParticleInverse.decodedRow",
+    "MathResearchAnalysis.YoungParticleInverse.decodedRow_le_side",
+    "MathResearchAnalysis.YoungParticleInverse.decodedRow_antitone",
+    "MathResearchAnalysis.YoungParticleInverse.decode",
+    "MathResearchAnalysis.YoungParticleInverse.decode_monotone",
+    "MathResearchAnalysis.YoungParticleInverse.rowLength_decode",
+    "MathResearchAnalysis.YoungParticleInverse.decodedRow_particle",
+    "MathResearchAnalysis.YoungParticleInverse.decode_particle",
+    "MathResearchAnalysis.YoungParticleInverse.particle_decode",
+    "MathResearchAnalysis.YoungParticleInverse.encodingEquiv"
+  ],
+  "declarations_count": 18,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/YoungParticleInverse.lean": "4ba832b67dad4313943db3c9199e3134e56100dbb978db00fd25a7b4eada51d9"
+  },
+  "new_lean_warning_lines": []
+}

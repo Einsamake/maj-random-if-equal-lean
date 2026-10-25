@@ -1,0 +1,36 @@
+'MathResearchAnalysis.YoungParticleInverse.position_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.position_upper_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.offset_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.fromRows' does not depend on any axioms
+'MathResearchAnalysis.YoungParticleInverse.fromRows_false_iff' depends on axioms: [propext]
+'MathResearchAnalysis.YoungParticleInverse.fromRows_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.rowLength_fromRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.fromRows_actual_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow' does not depend on any axioms
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_le_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decode' does not depend on any axioms
+'MathResearchAnalysis.YoungParticleInverse.decode_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.rowLength_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_particle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decode_particle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.particle_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.encodingEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

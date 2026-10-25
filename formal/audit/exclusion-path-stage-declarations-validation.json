@@ -1,0 +1,58 @@
+{
+  "validated_at": "2026-10-25T20:34:06.211955+08:00",
+  "modules": [
+    "MixedExclusionGenerator",
+    "FinitePathPoincare"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedExclusionGenerator.Slot",
+    "MathResearchAnalysis.MixedExclusionGenerator.slotState",
+    "MathResearchAnalysis.MixedExclusionGenerator.pathEdges",
+    "MathResearchAnalysis.MixedExclusionGenerator.active",
+    "MathResearchAnalysis.MixedExclusionGenerator.active_decidable",
+    "MathResearchAnalysis.MixedExclusionGenerator.corners",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond",
+    "MathResearchAnalysis.MixedExclusionGenerator.unequalEdges",
+    "MathResearchAnalysis.MixedExclusionGenerator.slotState_true_iff",
+    "MathResearchAnalysis.MixedExclusionGenerator.slotState_false_iff",
+    "MathResearchAnalysis.MixedExclusionGenerator.old_particle_mem",
+    "MathResearchAnalysis.MixedExclusionGenerator.slotState_eq_swap_of_particles",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond_of_removable",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond_of_addable",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond_mem_unequalEdges",
+    "MathResearchAnalysis.MixedExclusionGenerator.removable_eq_of_row_eq",
+    "MathResearchAnalysis.MixedExclusionGenerator.addable_eq_of_row_eq",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond_injective_on_corners",
+    "MathResearchAnalysis.MixedExclusionGenerator.bond_surjective_unequalEdges",
+    "MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_same_mark",
+    "MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_eq_of_inactive",
+    "MathResearchAnalysis.MixedExclusionGenerator.active_slotState_update",
+    "MathResearchAnalysis.MixedExclusionGenerator.local_fair_contribution",
+    "MathResearchAnalysis.MixedExclusionGenerator.actual_generator_eq_exclusion",
+    "MathResearchAnalysis.FinitePathPoincare.energy",
+    "MathResearchAnalysis.FinitePathPoincare.squareMass",
+    "MathResearchAnalysis.FinitePathPoincare.energy_nonneg",
+    "MathResearchAnalysis.FinitePathPoincare.cauchy_sum",
+    "MathResearchAnalysis.FinitePathPoincare.telescope",
+    "MathResearchAnalysis.FinitePathPoincare.interval_energy_le",
+    "MathResearchAnalysis.FinitePathPoincare.ordered_difference_sq_le",
+    "MathResearchAnalysis.FinitePathPoincare.difference_sq_le",
+    "MathResearchAnalysis.FinitePathPoincare.centered_difference_sum",
+    "MathResearchAnalysis.FinitePathPoincare.centered_point_sq_le",
+    "MathResearchAnalysis.FinitePathPoincare.poincare"
+  ],
+  "declarations_count": 35,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedExclusionGenerator.lean": "38ad02176c9bcb8a3daa6112e96198c6c085b1de35bac2e6ba36a8a1727cc931",
+    "MathResearchAnalysis/FinitePathPoincare.lean": "d535b6583f18566e9b9bd15a5bdd11eec26e56e0e43911589e58df41606e375b"
+  },
+  "new_lean_warning_lines": []
+}

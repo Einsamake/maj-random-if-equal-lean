@@ -2,7 +2,7 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析216个证明模块、2889条辅助定理、217份分析源；核心125条定理及1模型、8源未变。合计225份正式源、3014条辅助定理与1个模型，完整公理输出3015项。最新分析统一构建和标准Lean --trust=0逐定理审计均退出0（2026-10-25T19:27:55.193600+08:00）；仅Classical.choice、Quot.sound、propext。核心8源未改，本次未重编。
+分析224个证明模块、2993条辅助定理、225份分析源；核心旧125条定理及1模型、8源未变且未重编。合计233份正式源、3118条辅助定理与1个模型，3119项实际公理输出。最新统一build与标准Lean --trust=0逐定理审计均退出0（2026-10-25T20:35:07.662832+08:00）；仅Classical.choice、Quot.sound、propext，零新增Lean warning。
 
 核心目录formal/使用Lean4.35.0；分析目录formal/analysis/使用Lean4.35.0-rc4及mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d。沿用formal/.tools/编译器和各自.lake缓存，不跨版本复用olean，不重装依赖。
 
@@ -32,3 +32,5 @@ scripts/validate_workspace.py核对正式source集/hash、脚本语法与文档�
 [25日：混合边界与真实阶梯形clock基础](PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。
 
 新增行长编码11定理见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码/二次上界仍未完成。
+
+[粒子编码与有限算子最新验收](PROGRESS_2026-10-25_EXCLUSION.md)：真实clock矩方程与二次上界仍未证明。

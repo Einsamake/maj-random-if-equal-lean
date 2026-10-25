@@ -1,0 +1,47 @@
+{
+  "validated_at": "2026-10-25T20:21:26.823931+08:00",
+  "modules": [
+    "YoungParticleMoves",
+    "YoungParticleHops"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.YoungParticleMoves.positionNat_cellUpdate_other",
+    "MathResearchAnalysis.YoungParticleMoves.particle_cellUpdate_other",
+    "MathResearchAnalysis.YoungParticleMoves.removable_positionNat",
+    "MathResearchAnalysis.YoungParticleMoves.addable_positionNat",
+    "MathResearchAnalysis.YoungParticleMoves.removable_new_ne_old",
+    "MathResearchAnalysis.YoungParticleMoves.addable_new_ne_old",
+    "MathResearchAnalysis.YoungParticleMoves.new_vacant_of_single_label",
+    "MathResearchAnalysis.YoungParticleMoves.removable_new_vacant",
+    "MathResearchAnalysis.YoungParticleMoves.addable_new_vacant",
+    "MathResearchAnalysis.YoungParticleMoves.particles_eq_insert_erase_of_single_label",
+    "MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_insert_erase",
+    "MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_insert_erase",
+    "MathResearchAnalysis.YoungParticleMoves.rightCount_eq_rightSlotCard",
+    "MathResearchAnalysis.YoungParticleMoves.finset_image_swap",
+    "MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_image_swap",
+    "MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_image_swap",
+    "MathResearchAnalysis.YoungParticleHops.right_hop_south_gap",
+    "MathResearchAnalysis.YoungParticleHops.right_hop_rowLength_lt_side",
+    "MathResearchAnalysis.YoungParticleHops.left_hop_north_gap",
+    "MathResearchAnalysis.YoungParticleHops.left_hop_rowLength_pos",
+    "MathResearchAnalysis.YoungParticleHops.removable_of_row_lengths",
+    "MathResearchAnalysis.YoungParticleHops.addable_of_row_lengths",
+    "MathResearchAnalysis.YoungParticleHops.right_hop_has_removable",
+    "MathResearchAnalysis.YoungParticleHops.left_hop_has_addable"
+  ],
+  "declarations_count": 24,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/YoungParticleMoves.lean": "65f5b6efd9f9799fd2d342d9245bab366cb5da9b022af5b895dc7acbbadf953d",
+    "MathResearchAnalysis/YoungParticleHops.lean": "cbb75e17575148b7e9fdd2bfb844c50094b78f48badd796d661eeaac25423666"
+  },
+  "new_lean_warning_lines": []
+}

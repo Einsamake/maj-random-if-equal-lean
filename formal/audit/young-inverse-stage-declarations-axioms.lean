@@ -1,0 +1,20 @@
+import MathResearchAnalysis.YoungParticleInverse
+
+#print axioms MathResearchAnalysis.YoungParticleInverse.position_lower_bound
+#print axioms MathResearchAnalysis.YoungParticleInverse.position_upper_bound
+#print axioms MathResearchAnalysis.YoungParticleInverse.offset_monotone
+#print axioms MathResearchAnalysis.YoungParticleInverse.fromRows
+#print axioms MathResearchAnalysis.YoungParticleInverse.fromRows_false_iff
+#print axioms MathResearchAnalysis.YoungParticleInverse.fromRows_monotone
+#print axioms MathResearchAnalysis.YoungParticleInverse.rowLength_fromRows
+#print axioms MathResearchAnalysis.YoungParticleInverse.fromRows_actual_eq
+#print axioms MathResearchAnalysis.YoungParticleInverse.decodedRow
+#print axioms MathResearchAnalysis.YoungParticleInverse.decodedRow_le_side
+#print axioms MathResearchAnalysis.YoungParticleInverse.decodedRow_antitone
+#print axioms MathResearchAnalysis.YoungParticleInverse.decode
+#print axioms MathResearchAnalysis.YoungParticleInverse.decode_monotone
+#print axioms MathResearchAnalysis.YoungParticleInverse.rowLength_decode
+#print axioms MathResearchAnalysis.YoungParticleInverse.decodedRow_particle
+#print axioms MathResearchAnalysis.YoungParticleInverse.decode_particle
+#print axioms MathResearchAnalysis.YoungParticleInverse.particle_decode
+#print axioms MathResearchAnalysis.YoungParticleInverse.encodingEquiv

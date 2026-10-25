@@ -2345,6 +2345,38 @@
 'MathResearchAnalysis.FairMarksTransport.pullback_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FairMarksTransport.map_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FairMarksTransport.pullback_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.density_swapConfig' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_mul_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.totalDensity_swapConfig' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_totalDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_density' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.generator_density_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.one_edge_product_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.product_defect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionGenerator.product_defect_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.FiniteMajorityPeeling.mem_prune' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FiniteMajorityPeeling.prune_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FiniteMajorityPeeling.degree_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -2389,6 +2421,21 @@
 'MathResearchAnalysis.FiniteMajorityPeeling.terminal_deletion_order_independent' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.cauchy_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.interval_energy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.ordered_difference_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.difference_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.centered_difference_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.centered_point_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePathPoincare.poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FiniteRankWitness.member_le_maximum' depends on axioms: [propext, Quot.sound]
 'MathResearchAnalysis.FiniteRankWitness.maximum_mem' depends on axioms: [propext, Quot.sound]
 'MathResearchAnalysis.FiniteRankWitness.maximum_mem_of_positive' depends on axioms: [propext, Quot.sound]
@@ -3820,6 +3867,54 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.MaskedAreaGenerator.rawAreaRate_antitone_mask' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_true_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_false_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.old_particle_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.slotState_eq_swap_of_particles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_of_removable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_of_addable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_mem_unequalEdges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.removable_eq_of_row_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.addable_eq_of_row_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_injective_on_corners' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.bond_surjective_unequalEdges' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_same_mark' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.cellUpdate_eq_of_inactive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.active_slotState_update' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.local_fair_contribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedExclusionGenerator.actual_generator_eq_exclusion' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.MixedSquareClockLaw.execute_eq_of_marks_agree' depends on axioms: [propext, Quot.sound]
@@ -6295,6 +6390,116 @@
 'MathResearchAnalysis.WholeSquareClockTransport.original_extinction_measure_le_clipped_protected_missing' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_south_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_rowLength_lt_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_north_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_rowLength_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.removable_of_row_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.addable_of_row_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.right_hop_has_removable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleHops.left_hop_has_addable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.position_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.position_upper_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.offset_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.fromRows_false_iff' depends on axioms: [propext]
+'MathResearchAnalysis.YoungParticleInverse.fromRows_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.rowLength_fromRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.fromRows_actual_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_le_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decode_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.rowLength_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decodedRow_particle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.decode_particle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleInverse.particle_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.positionNat_cellUpdate_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.particle_cellUpdate_other' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_positionNat' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_positionNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_new_ne_old' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_new_ne_old' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.new_vacant_of_single_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_new_vacant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_new_vacant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.particles_eq_insert_erase_of_single_label' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_insert_erase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_insert_erase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.rightCount_eq_rightSlotCard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.finset_image_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.removable_particles_eq_image_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticleMoves.addable_particles_eq_image_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.positionNat_lt_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.positionNat_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.encoding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particles_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_all_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.particle_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.mem_particles_all_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.mem_particles_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.rightCount_le_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungParticles.right_particle_iff_diagonal_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.rightCount_eq_diagonal_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.diagonal_false_iff_lt_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungParticles.diagonal_false_iff_le_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.YoungRows.mem_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.YoungRows.rowLength_le_side' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.YoungRows.rowZeros_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -6306,6 +6511,29 @@
 'MathResearchAnalysis.YoungRows.rowLength_all_false' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.YoungRows.rowZeros_update_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.YoungRows.rowLength_update_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowZeros_write_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowZeros_write_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowLength_write_false_of_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.rowLength_write_true_of_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_cellUpdate_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_cellUpdate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_rowZeros' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_rowLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_rowLength' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.cellUpdate_other_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.removable_x_eq_rowLength' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.YoungRowUpdates.addable_x_succ_eq_rowLength' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.ZeroTemperature.warmProbability_zero_temperature' depends on axioms: [propext,

@@ -239,6 +239,14 @@ public import MathResearchAnalysis.MixedSquareModel
 public import MathResearchAnalysis.MixedSquareCorners
 public import MathResearchAnalysis.MixedSquareClockLaw
 public import MathResearchAnalysis.YoungRows
+public import MathResearchAnalysis.YoungParticles
+public import MathResearchAnalysis.YoungRowUpdates
+public import MathResearchAnalysis.YoungParticleInverse
+public import MathResearchAnalysis.YoungParticleMoves
+public import MathResearchAnalysis.YoungParticleHops
+public import MathResearchAnalysis.FiniteExclusionGenerator
+public import MathResearchAnalysis.MixedExclusionGenerator
+public import MathResearchAnalysis.FinitePathPoincare
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
@@ -349,7 +357,18 @@ preservation, exact two-way corner flips and measurable endpoints under the
 same original clock/identity-mark field. Same-size zero-boundary endpoints are
 dominated; cross-size clock restriction, finite exclusion encoding and the
 quadratic upper probability bound remain unproved.
+Actual row lengths now give a two-sided equivalence with strictly ordered M
+particles on 2M finite slots. Right-half occupied-slot counts match white
+diagonal cells. Actual corner flips produce adjacent occupied/vacant swaps,
+and every admissible adjacent particle hop comes from a genuine mixed corner.
+A genuine active-corner/unequal-bond bijection now proves the full fair
+mixed-update generator equals the finite adjacent-swap generator, at rate
+one half per edge. Its one/two-coordinate algebra and covariance defect are
+proved, together with an explicit nearest-neighbour path Poincare bound.
+Actual clock Dynkin/moment laws and quadratic upper probabilities remain unproved.
 -/
+
+
 
 
 

@@ -1,0 +1,57 @@
+{
+  "validated_at": "2026-10-25T20:10:30.166928+08:00",
+  "modules": [
+    "YoungParticles",
+    "YoungRowUpdates"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.YoungParticles.positionNat",
+    "MathResearchAnalysis.YoungParticles.positionNat_lt_twice",
+    "MathResearchAnalysis.YoungParticles.particle",
+    "MathResearchAnalysis.YoungParticles.particle_val",
+    "MathResearchAnalysis.YoungParticles.positionNat_strictMono",
+    "MathResearchAnalysis.YoungParticles.particle_strictMono",
+    "MathResearchAnalysis.YoungParticles.particle_injective",
+    "MathResearchAnalysis.YoungParticles.encoding_injective",
+    "MathResearchAnalysis.YoungParticles.particles",
+    "MathResearchAnalysis.YoungParticles.particles_card",
+    "MathResearchAnalysis.YoungParticles.particle_all_true",
+    "MathResearchAnalysis.YoungParticles.particle_all_false",
+    "MathResearchAnalysis.YoungParticles.mem_particles_all_true",
+    "MathResearchAnalysis.YoungParticles.mem_particles_all_false",
+    "MathResearchAnalysis.YoungParticles.rightCount",
+    "MathResearchAnalysis.YoungParticles.diagonalZeros",
+    "MathResearchAnalysis.YoungParticles.rightCount_le_side",
+    "MathResearchAnalysis.YoungParticles.right_particle_iff_diagonal_false",
+    "MathResearchAnalysis.YoungParticles.rightCount_eq_diagonal_card",
+    "MathResearchAnalysis.YoungParticles.diagonal_false_iff_lt_rightCount",
+    "MathResearchAnalysis.YoungParticles.diagonal_false_iff_le_rightCount",
+    "MathResearchAnalysis.YoungRowUpdates.rowZeros_write_false",
+    "MathResearchAnalysis.YoungRowUpdates.rowZeros_write_true",
+    "MathResearchAnalysis.YoungRowUpdates.rowLength_write_false_of_true",
+    "MathResearchAnalysis.YoungRowUpdates.rowLength_write_true_of_false",
+    "MathResearchAnalysis.YoungRowUpdates.removable_cellUpdate_eq",
+    "MathResearchAnalysis.YoungRowUpdates.addable_cellUpdate_eq",
+    "MathResearchAnalysis.YoungRowUpdates.removable_rowZeros",
+    "MathResearchAnalysis.YoungRowUpdates.addable_rowZeros",
+    "MathResearchAnalysis.YoungRowUpdates.removable_rowLength",
+    "MathResearchAnalysis.YoungRowUpdates.addable_rowLength",
+    "MathResearchAnalysis.YoungRowUpdates.cellUpdate_other_row",
+    "MathResearchAnalysis.YoungRowUpdates.removable_x_eq_rowLength",
+    "MathResearchAnalysis.YoungRowUpdates.addable_x_succ_eq_rowLength"
+  ],
+  "declarations_count": 34,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/YoungParticles.lean": "ec769948d2d03100d2337b1c4c2cf44aaeeec7d8f4525cb370def055c793a85b",
+    "MathResearchAnalysis/YoungRowUpdates.lean": "558e07bb40a9b8b11a5b6d880a2836c265baa102656dad41836b61f8facbad80"
+  },
+  "new_lean_warning_lines": []
+}
