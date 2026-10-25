@@ -231,6 +231,10 @@ public import MathResearchAnalysis.WeightedRawContour
 public import MathResearchAnalysis.WeightedReflection
 public import MathResearchAnalysis.WeightedRawRate
 public import MathResearchAnalysis.PhysicalWeightedDrift
+public import MathResearchAnalysis.SyncLowerScale
+public import MathResearchAnalysis.ExtendedTailLower
+public import MathResearchAnalysis.SynchronousQuadraticTail
+public import MathResearchAnalysis.OriginalQuadraticLower
 
 /-!
 Machine-checked analytic implications used by the CA candidate proof.
@@ -330,8 +334,12 @@ all times, including random ringing times, and actual one-ring area gains
 and losses have compensation formulas. The actual signed finite-horizon area Dynkin formula is now proved under the
 original clock law, with true pathwise telescoping and integrability first.
 The compensator is identified with the actual clipped D-site generator.
-Bounds at the
-quadratic scale, the full future-vector Poisson strong Markov characterization,
-the CMST/FSS droplet theorems and the complete CA theorem remain unproved.
+The concrete weighted clock lower tail is now transported through the actual
+scheduling law to the original synchronous process. Odd/even original side and
+infinite recovery values are retained, proving an explicit exact-N quadratic
+worst extended expectation lower bound. The quadratic upper bound, full
+future-vector Poisson strong Markov characterization and the complete CA
+Theta theorem remain unproved.
 -/
+
 

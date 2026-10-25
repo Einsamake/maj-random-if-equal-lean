@@ -2313,6 +2313,15 @@
 'MathResearchAnalysis.ExtendedStoppingPath.extended_path_moment' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
+'MathResearchAnalysis.ExtendedTailLower.tail_mul_le_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedTailLower.expectation_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedTailLower.expectation_ge_of_quarter_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
 'MathResearchAnalysis.FairMarks.fair_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FairMarks.mark_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MathResearchAnalysis.FairMarks.marks_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -3955,6 +3964,31 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.ObservedProgressive.actual_exitArea_quadratic_on_finite_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.halfSide_large' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.oddSide_le' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.halfSide_ge_sixth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.inside_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.square_supported_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.extend_top_eq_square' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.rounds_quarter_ge_original_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.synchronous_square_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.square_expectedRecovery_quadratic_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.tau_quadratic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.exists_positive_quadratic_lower' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.OriginalRecoveryProfile.expectedRecovery_translate' depends on axioms: [propext,
@@ -5642,6 +5676,30 @@
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.SynchronousClockComparison.two_way_scheduling_scale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.clockProbability_eq_one_sub_extinction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.original_clock_survival_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.synchronous_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.quotient_ge_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.quotient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.rounds_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.quotient_mul_le_square' depends on axioms: [propext]
+'MathResearchAnalysis.SyncLowerScale.square_lt_quotient_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.rounds_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.scheduling_time_le_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.square_exponential_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.scheduling_error_le_quarter' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
 'MathResearchAnalysis.TaskClockBridge.representative_le' depends on axioms: [propext, Classical.choice, Quot.sound]

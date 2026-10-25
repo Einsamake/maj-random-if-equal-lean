@@ -1,0 +1,22 @@
+'MathResearchAnalysis.ExtendedTailLower.tail_mul_le_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedTailLower.expectation_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedTailLower.expectation_ge_of_quarter_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.clockProbability_eq_one_sub_extinction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.original_clock_survival_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SynchronousQuadraticTail.synchronous_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

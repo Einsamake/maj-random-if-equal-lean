@@ -1,0 +1,21 @@
+'MathResearchAnalysis.SyncLowerScale.quotient' depends on axioms: [propext]
+'MathResearchAnalysis.SyncLowerScale.rounds' depends on axioms: [propext]
+'MathResearchAnalysis.SyncLowerScale.quotient_ge_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.quotient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.rounds_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.quotient_mul_le_square' depends on axioms: [propext]
+'MathResearchAnalysis.SyncLowerScale.square_lt_quotient_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.rounds_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.scheduling_time_le_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.square_exponential_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncLowerScale.scheduling_error_le_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

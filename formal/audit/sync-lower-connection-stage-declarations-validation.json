@@ -1,0 +1,29 @@
+{
+  "validated_at": "2026-10-25T15:08:13.666672+08:00",
+  "modules": [
+    "ExtendedTailLower",
+    "SynchronousQuadraticTail"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ExtendedTailLower.tail_mul_le_expectation",
+    "MathResearchAnalysis.ExtendedTailLower.expectation_ge_quarter",
+    "MathResearchAnalysis.ExtendedTailLower.expectation_ge_of_quarter_tail",
+    "MathResearchAnalysis.SynchronousQuadraticTail.clockProbability_eq_one_sub_extinction",
+    "MathResearchAnalysis.SynchronousQuadraticTail.original_clock_survival_ge_half",
+    "MathResearchAnalysis.SynchronousQuadraticTail.synchronous_tail_ge_quarter"
+  ],
+  "declarations_count": 6,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ExtendedTailLower.lean": "69d9f37c4ab4e1c5eefaade5ac5d43332aba4891708957ef31a9da19944a9ccb",
+    "MathResearchAnalysis/SynchronousQuadraticTail.lean": "f72c764b9663455b26b4e87640a45d806ee85d564c1d88fb6af21e015c5c2331"
+  },
+  "new_lean_warning_lines": []
+}

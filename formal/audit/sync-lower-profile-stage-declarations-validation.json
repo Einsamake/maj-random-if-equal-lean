@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-25T15:11:17.915311+08:00",
+  "modules": [
+    "OriginalQuadraticLower"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.OriginalQuadraticLower.halfSide",
+    "MathResearchAnalysis.OriginalQuadraticLower.halfSide_large",
+    "MathResearchAnalysis.OriginalQuadraticLower.oddSide_le",
+    "MathResearchAnalysis.OriginalQuadraticLower.halfSide_ge_sixth",
+    "MathResearchAnalysis.OriginalQuadraticLower.inside_mono",
+    "MathResearchAnalysis.OriginalQuadraticLower.square_supported_mono",
+    "MathResearchAnalysis.OriginalQuadraticLower.extend_top_eq_square",
+    "MathResearchAnalysis.OriginalQuadraticLower.rounds_quarter_ge_original_square",
+    "MathResearchAnalysis.OriginalQuadraticLower.synchronous_square_tail_ge_quarter",
+    "MathResearchAnalysis.OriginalQuadraticLower.square_expectedRecovery_quadratic_lower",
+    "MathResearchAnalysis.OriginalQuadraticLower.tau_quadratic_lower_bound",
+    "MathResearchAnalysis.OriginalQuadraticLower.exists_positive_quadratic_lower"
+  ],
+  "declarations_count": 12,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/OriginalQuadraticLower.lean": "b5ab0c112b66d5b5f3afd17ded75dbc28e884d123e51eadafaf0f71ab9068752"
+  },
+  "new_lean_warning_lines": []
+}

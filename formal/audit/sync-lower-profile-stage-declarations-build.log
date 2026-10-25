@@ -1,0 +1,6 @@
+✔ [3980/3980] Built MathResearchAnalysis.OriginalQuadraticLower (14s)
+Build completed successfully (3980 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

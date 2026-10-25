@@ -1,0 +1,30 @@
+'MathResearchAnalysis.OriginalQuadraticLower.halfSide' does not depend on any axioms
+'MathResearchAnalysis.OriginalQuadraticLower.halfSide_large' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.oddSide_le' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.halfSide_ge_sixth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.inside_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.square_supported_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.extend_top_eq_square' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.rounds_quarter_ge_original_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.synchronous_square_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.square_expectedRecovery_quadratic_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.tau_quadratic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticLower.exists_positive_quadratic_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -2,12 +2,12 @@
 
 目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
 
-分析208个证明模块、2800条辅助定理、209份分析源；核心125条定理及1模型、8源未变。合计217份正式源、2925条辅助定理与1个模型，完整公理输出2926项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T05:12:24.607031+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
+分析212个证明模块、2826条辅助定理、213份分析源；核心125条定理及1模型、8源未变。合计221份正式源、2951条辅助定理与1个模型，完整公理输出2952项。最新分析统一构建和标准Lean --trust=0逐定理公理审计均退出0（2026-10-25T15:11:55.361456+08:00）；仅Classical.choice、Quot.sound、propext，无占位或自定义公理。核心沿用既有验收，8源指纹重新核对，本次未重编核心。
 
 | 内容 | 主要模块 | 当前边界 |
 |---|---|---|
 | 原无限同步模型、真实随机law、含∞首达 | InfiniteGridModel、SquareGridLaw、InfiniteGridRecoveryTime | 原四邻规则、背景、边界、time尺度保持 |
-| 原尺寸、exact-N最坏扩展期望 | PerturbationGeometry、OriginalRecoveryProfile | profile和最大值已定义/对应；一般有限与二次界未证 |
+| 原尺寸、exact-N最坏扩展期望 | PerturbationGeometry、OriginalRecoveryProfile | profile和最大值已定义/对应；二次下界已证，一般有限和二次上界未证 |
 | 真时钟任务、rank、PW/零温、两向clock比较 | ClockReadiness、ActualClockTail、ClockRankTail、SquarePWCensoring、ZeroTemperature、ClockRecoveryComparison | 工具/比较已证，不代替CMST/FSS核心尾 |
 | 同步重启和块尾 | FairMarksPastFuture、SquareRandomRestart | 真past/future law及乘法尾；二次尺度q<1未证 |
 | strict-majority清理与实际改造字 | FiniteMajorityPeeling、GridMajorityPeeling、DropletModifiedWord | 终止、最大稳定core、次序无关、实际更新共轭已证 |
@@ -24,9 +24,10 @@
 | 原历史条件计数与真实事件测度 | ClockIntervalHistory、ClockIntervalCount、MarkedIntervalFactor、MarkedConditionalCount、MarkedClockPointMeasure、MarkedPredictableRectangles | 原F_s上E[count(s,t]]=t-s，每色一半；真实事件sum积分与有限质量T/2、生成矩形质量；全可预测补偿及实际面积公式见下行 |
 | 真实前态与物理面积公式 | ObservedPreState、ActualPreState、ActualAreaDynkin、PhysicalAreaGenerator等9新模块 | 共同AE全t真实前态、signed路径和/可积、真实clipped D生成元；91新theorem/101named均标准审计 |
 | 真实面积与过早失守概率 | PhysicalAreaTail、CumulativeCleanupBudget、CleanupAreaTail | 实际Markov阈值，first-loss冻结后的累计cleanup≤4L+2，真实面积/尾概率保留masked raw积分 |
-| 零权出生层 | ForbiddenBirthControl | 外可能birth必在norm1=L+2，w在该层为0；真实masked/expanded weighted raw严格相等，未得weighted整体漂移界 |
+| 零权出生层 | ForbiddenBirthControl | 外可能birth必在norm1=L+2，w在该层为0；真实masked/expanded weighted raw严格相等；真实整体weighted率及下界见后续 |
 | 加权真实物理二次下尾接口 | WeightedExitArea、WeightedAreaDynkin、WeightedAreaTail、WeightedRawContour、WeightedReflection、WeightedRawRate、PhysicalWeightedDrift | 真正raw≤18L+12、真实E[W_T]界；L≥12288000时T=L²/12288000处辅助exit和原clock灭绝CDF≤1/2，无核心率或概率输入 |
-| 原同步二次上下界 | 尚未闭合 | 已有CLOCK结论到同步/原exact-N的数值接续、FSS上界自含核心及最终常数仍待 |
+| 原同步exact-N二次下界 | SyncLowerScale、ExtendedTailLower、SynchronousQuadraticTail、OriginalQuadraticLower | 真同步尾≥1/4、奇偶N支持比较、保∞期望；N≥786432000时ofReal(N²/56623104000)≤tau(N) |
+| 原同步二次上界 | 尚未闭合 | 有限混合边界/SSEP候选核心、真实概率与clock/sync上界连接仍待 |
 | τ(N)=Θ(N²) | 尚未验收 | 不宣称完成，不按定理条数估完成百分比 |
 
 [停时阶段](PROGRESS_2026-10-21_MARKED_STOPPING.md) · [面积阶段](PROGRESS_2026-10-21_AREA_POTENTIAL.md) · [下一阶段](../README.md)。旧PROGRESS文件按日期保留历史语境；当前状态以本文和最新统一audit为准。独立AI不是人类专家认证。
@@ -45,3 +46,5 @@
 [24日：真实清理总预算、早退出概率与零权边界层](PROGRESS_2026-10-24_CLEANUP_WEIGHT.md)。
 
 [25日：实际加权线性率与平方时间概率界](PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。真实CLOCK结论已供给数值界；原同步τ(N)=Θ(N²)仍未完成。
+
+[25日：原同步与exact-N二次期望下界](PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。

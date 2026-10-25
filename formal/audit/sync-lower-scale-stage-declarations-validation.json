@@ -1,0 +1,32 @@
+{
+  "validated_at": "2026-10-25T15:05:53.045623+08:00",
+  "modules": [
+    "SyncLowerScale"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.SyncLowerScale.quotient",
+    "MathResearchAnalysis.SyncLowerScale.rounds",
+    "MathResearchAnalysis.SyncLowerScale.quotient_ge_side",
+    "MathResearchAnalysis.SyncLowerScale.quotient_positive",
+    "MathResearchAnalysis.SyncLowerScale.rounds_succ",
+    "MathResearchAnalysis.SyncLowerScale.quotient_mul_le_square",
+    "MathResearchAnalysis.SyncLowerScale.square_lt_quotient_succ",
+    "MathResearchAnalysis.SyncLowerScale.rounds_lower_bound",
+    "MathResearchAnalysis.SyncLowerScale.scheduling_time_le_horizon",
+    "MathResearchAnalysis.SyncLowerScale.square_exponential_bound",
+    "MathResearchAnalysis.SyncLowerScale.scheduling_error_le_quarter"
+  ],
+  "declarations_count": 11,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/SyncLowerScale.lean": "d4ea9c03054c76c0bf00b2756b2acc0002f97fee430376f0316c7ed65d59e6ad"
+  },
+  "new_lean_warning_lines": []
+}
