@@ -7,7 +7,8 @@ repo='Einsamake/maj-random-if-equal-lean'
 def run(args):
     return subprocess.check_output(args,cwd=W)
 commit=run(['git','rev-parse','HEAD']).decode().strip()
-info=json.loads(run(['gh','repo','view',repo,'--json','isPrivate,url,nameWithOwner']))
+rawinfo=json.loads(run(['gh','api',f'repos/{repo}']))
+info={'isPrivate':rawinfo['private'],'url':rawinfo['html_url'],'nameWithOwner':rawinfo['full_name']}
 assert info['isPrivate'] and info['nameWithOwner']==repo
 assert run(['git','status','--porcelain'])==b''
 index={}

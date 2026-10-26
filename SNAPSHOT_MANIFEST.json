@@ -8363,9 +8363,9 @@
       "byte_identical_to_workspace": true
     },
     "formal/scripts/verify_private_repository.py": {
-      "bytes": 5165,
-      "sha256": "d8af46535dd08bf43a9315a2519843f4f0f28545d96be8649b41e3900ce4633c",
-      "workspace_sha256": "d8af46535dd08bf43a9315a2519843f4f0f28545d96be8649b41e3900ce4633c",
+      "bytes": 5234,
+      "sha256": "c3a16ea6d4c38b6912efde086eb884de98d014d542201b00e4d970241cc99d8d",
+      "workspace_sha256": "c3a16ea6d4c38b6912efde086eb884de98d014d542201b00e4d970241cc99d8d",
       "byte_identical_to_workspace": true
     },
     "README.md": {
