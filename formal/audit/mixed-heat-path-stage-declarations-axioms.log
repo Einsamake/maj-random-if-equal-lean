@@ -1,0 +1,14 @@
+'MathResearchAnalysis.FiniteSlotPoincare.pathEdges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.extend_fin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.sum_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.squareMass_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.energy_extend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteSlotPoincare.poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentPoincare.squareMass_le_edgeEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

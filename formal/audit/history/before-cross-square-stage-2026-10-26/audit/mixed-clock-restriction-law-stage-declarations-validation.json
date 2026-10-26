@@ -1,0 +1,40 @@
+{
+  "validated_at": "2026-10-26T13:27:35.659746+08:00",
+  "modules": [
+    "ClockSampleRestriction"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ClockSampleRestriction.eventι",
+    "MathResearchAnalysis.ClockSampleRestriction.eventι_injective",
+    "MathResearchAnalysis.ClockSampleRestriction.projectClock",
+    "MathResearchAnalysis.ClockSampleRestriction.projectMarks",
+    "MathResearchAnalysis.ClockSampleRestriction.projectSample",
+    "MathResearchAnalysis.ClockSampleRestriction.projectClock_measurable",
+    "MathResearchAnalysis.ClockSampleRestriction.projectMarks_measurable",
+    "MathResearchAnalysis.ClockSampleRestriction.projectSample_measurable",
+    "MathResearchAnalysis.ClockSampleRestriction.projectClock_map",
+    "MathResearchAnalysis.ClockSampleRestriction.projectMarks_map",
+    "MathResearchAnalysis.ClockSampleRestriction.projectSample_map",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_gap",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_arrival",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_chronologicalArrival",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_eventTime",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_mark",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_eventSet",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_good",
+    "MathResearchAnalysis.ClockSampleRestriction.projected_good_ae"
+  ],
+  "declarations_count": 19,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ClockSampleRestriction.lean": "4cbc584816e306a679ee3af0fcf407710c6b6cec6f334995a7e10cc33e3587ce"
+  },
+  "new_lean_warning_lines": []
+}

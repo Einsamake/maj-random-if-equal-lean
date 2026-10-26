@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-26T14:45:43.607389+08:00",
+  "modules": [
+    "SyncUpperScale"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.SyncUpperScale.layers",
+    "MathResearchAnalysis.SyncUpperScale.block",
+    "MathResearchAnalysis.SyncUpperScale.original_side",
+    "MathResearchAnalysis.SyncUpperScale.auxiliary_side",
+    "MathResearchAnalysis.SyncUpperScale.mixingTime_le_layers",
+    "MathResearchAnalysis.SyncUpperScale.log_two_ge_half",
+    "MathResearchAnalysis.SyncUpperScale.layers_le_scheduling_time",
+    "MathResearchAnalysis.SyncUpperScale.mixingTime_le_scheduling_time",
+    "MathResearchAnalysis.SyncUpperScale.layers_succ_ge_side",
+    "MathResearchAnalysis.SyncUpperScale.scheduling_error_le_eighth",
+    "MathResearchAnalysis.SyncUpperScale.block_positive",
+    "MathResearchAnalysis.SyncUpperScale.block_le_quadratic"
+  ],
+  "declarations_count": 12,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/SyncUpperScale.lean": "c757120c711baddd9ddaf5865ed0b0bbbe694c6456aa11aa722f5984407ae39a"
+  },
+  "new_lean_warning_lines": []
+}

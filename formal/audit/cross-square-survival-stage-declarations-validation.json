@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-26T14:45:51.276052+08:00",
+  "modules": [
+    "ClockEndpointSurvival"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ClockEndpointSurvival.execute_zero",
+    "MathResearchAnalysis.ClockEndpointSurvival.sample_good_ae",
+    "MathResearchAnalysis.ClockEndpointSurvival.zero_persists",
+    "MathResearchAnalysis.ClockEndpointSurvival.clockProbability_antitone"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ClockEndpointSurvival.lean": "f9315ff33ab2cee211cb52d14ff3a5efb3c4bcc9a969bd39d0faa93fa9787031"
+  },
+  "new_lean_warning_lines": []
+}

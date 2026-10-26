@@ -1,0 +1,6 @@
+✔ [3930/3931] Built MathResearchAnalysis (18s)
+Build completed successfully (3931 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

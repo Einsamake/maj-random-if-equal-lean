@@ -1,0 +1,6 @@
+✔ [2722/2722] Built MathResearchAnalysis.FiniteMomentRegularity (11s)
+Build completed successfully (2722 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

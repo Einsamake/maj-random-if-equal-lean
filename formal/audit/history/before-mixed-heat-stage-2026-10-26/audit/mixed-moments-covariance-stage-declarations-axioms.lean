@@ -1,0 +1,15 @@
+import MathResearchAnalysis.MixedClockCovariance
+
+#print axioms MathResearchAnalysis.MixedClockCovariance.Pair
+#print axioms MathResearchAnalysis.MixedClockCovariance.pairSwap
+#print axioms MathResearchAnalysis.MixedClockCovariance.pairSwap_val
+#print axioms MathResearchAnalysis.MixedClockCovariance.covariance
+#print axioms MathResearchAnalysis.MixedClockCovariance.source
+#print axioms MathResearchAnalysis.MixedClockCovariance.source_eq_square
+#print axioms MathResearchAnalysis.MixedClockCovariance.source_nonneg
+#print axioms MathResearchAnalysis.MixedClockCovariance.rate_covariance
+#print axioms MathResearchAnalysis.MixedClockCovariance.covariance_zero
+#print axioms MathResearchAnalysis.MixedClockCovariance.covariance_continuousOn
+#print axioms MathResearchAnalysis.MixedClockCovariance.covariance_hasDerivAt
+#print axioms MathResearchAnalysis.MixedClockCovariance.covariance_nonpos
+#print axioms MathResearchAnalysis.MixedClockCovariance.offdiag_moment_le_product

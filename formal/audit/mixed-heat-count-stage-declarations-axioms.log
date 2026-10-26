@@ -1,0 +1,52 @@
+'MathResearchAnalysis.MixedRightCountMoments.rightSlots' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.rightSlots_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_le_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_eq_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.mean_eq_sum_rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_square_eq_sum_products' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_square_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.second_moment_eq_sum_g' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.centered_square_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.variance_eq_second_moment_sub_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.second_moment_le_mean_square_add_bernoulli' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.variance_le_bernoulli_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.variance_le_side_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.count_memLp_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.variance_eq_standard' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountMoments.standard_variance_le_side_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

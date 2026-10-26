@@ -1,0 +1,34 @@
+'MathResearchAnalysis.FiniteMomentRegularity.continuousOn_of_integral_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.hasDerivAt_of_integral_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.oneParticle_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.twoParticle_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_rhs_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.oneParticle_system_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_rhs_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteMomentRegularity.twoParticle_system_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

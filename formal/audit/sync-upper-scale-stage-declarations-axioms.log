@@ -1,0 +1,22 @@
+'MathResearchAnalysis.SyncUpperScale.layers' depends on axioms: [propext]
+'MathResearchAnalysis.SyncUpperScale.block' depends on axioms: [propext]
+'MathResearchAnalysis.SyncUpperScale.original_side' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.auxiliary_side' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.mixingTime_le_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.log_two_ge_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.layers_le_scheduling_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.mixingTime_le_scheduling_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.layers_succ_ge_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.scheduling_error_le_eighth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.block_positive' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SyncUpperScale.block_le_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

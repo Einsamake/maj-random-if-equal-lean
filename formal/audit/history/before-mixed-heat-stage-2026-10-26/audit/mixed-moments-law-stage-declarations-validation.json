@@ -1,0 +1,45 @@
+{
+  "validated_at": "2026-10-26T06:25:10.950169+08:00",
+  "modules": [
+    "MixedClockMoments"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedClockMoments.occupation",
+    "MathResearchAnalysis.MixedClockMoments.rho",
+    "MathResearchAnalysis.MixedClockMoments.g",
+    "MathResearchAnalysis.MixedClockMoments.density_bounds",
+    "MathResearchAnalysis.MixedClockMoments.occupation_density_bounds",
+    "MathResearchAnalysis.MixedClockMoments.occupation_product_bounds",
+    "MathResearchAnalysis.MixedClockMoments.density_measurable",
+    "MathResearchAnalysis.MixedClockMoments.density_integrable",
+    "MathResearchAnalysis.MixedClockMoments.density_product_integrable",
+    "MathResearchAnalysis.MixedClockMoments.rho_nonneg",
+    "MathResearchAnalysis.MixedClockMoments.rho_le_one",
+    "MathResearchAnalysis.MixedClockMoments.g_nonneg",
+    "MathResearchAnalysis.MixedClockMoments.g_le_one",
+    "MathResearchAnalysis.MixedClockMoments.g_symm",
+    "MathResearchAnalysis.MixedClockMoments.g_diagonal_eq_rho",
+    "MathResearchAnalysis.MixedClockMoments.occupation_zero_ae",
+    "MathResearchAnalysis.MixedClockMoments.rho_zero_eq_initial",
+    "MathResearchAnalysis.MixedClockMoments.g_zero_eq_initial",
+    "MathResearchAnalysis.MixedClockMoments.expected_oneParticle",
+    "MathResearchAnalysis.MixedClockMoments.expected_twoParticle",
+    "MathResearchAnalysis.MixedClockMoments.rho_rhs_integrable",
+    "MathResearchAnalysis.MixedClockMoments.g_rhs_integrable",
+    "MathResearchAnalysis.MixedClockMoments.rho_integral",
+    "MathResearchAnalysis.MixedClockMoments.g_integral"
+  ],
+  "declarations_count": 24,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedClockMoments.lean": "aa0a21d873c640250a834fd8fc638c40eafb44f139fb7ba17d655069551dc17f"
+  },
+  "new_lean_warning_lines": []
+}

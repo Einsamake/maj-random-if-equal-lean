@@ -1,0 +1,15 @@
+{
+  "validated_at": "2026-10-17T05:32:39.187585+08:00",
+  "moved_files_verified": 22,
+  "historical_snapshots_verified": 9,
+  "deleted_files": 13,
+  "deleted_bytes": 2832442,
+  "formal_source_hashes_matched": 137,
+  "current_document_links_checked": 146,
+  "stage_audit_files_found": 37,
+  "stage_audit_json_records_parsed": 11,
+  "python_scripts_parse": true,
+  "proof_build_rerun_by_this_script": false,
+  "scope": "organization and existing audit/source consistency, not a new mathematical proof",
+  "checks_passed": true
+}

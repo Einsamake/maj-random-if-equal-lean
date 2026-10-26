@@ -1,0 +1,80 @@
+audit_exit=0
+source_sha256=947BF8EA7C3A5C31D500B97F3256FA5B68F944BDB07841BD42FCEA78C03A3D8E
+theorem_count=28
+
+'MathResearchAnalysis.ClockEventWord.word_eq_empty_of_not_good' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_decreasing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_strictly_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_reverse_strictly_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.sublist_reverse_strictly_increasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.eventTime_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.eventTime_eq_raw_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.eventTime_positive_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.eventSet_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.good_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_mem_iff_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_positive_bounded_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_mem_iff_raw_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_spec_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_eventSet_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_eventTime_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_strictly_decreasing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_word_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_getD_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.word_length_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventWord.measurableSet_word_length_ge' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+MathResearchAnalysis.ClockEventWord.eventTime.{u_1} {V : Type u_1} (ω : MathResearchAnalysis.ExponentialClocks.Sample V)
+  (e : MathResearchAnalysis.ClockEventWord.Event V) : ℝ
+MathResearchAnalysis.ClockEventWord.eventSet.{u_1} {V : Type u_1} (ω : MathResearchAnalysis.ExponentialClocks.Sample V)
+  (t : ℝ) : Set (MathResearchAnalysis.ClockEventWord.Event V)
+MathResearchAnalysis.ClockEventWord.word.{u_1} {V : Type u_1} (ω : MathResearchAnalysis.ExponentialClocks.Sample V)
+  (t : ℝ) : List (MathResearchAnalysis.ClockEventWord.Event V)
+MathResearchAnalysis.ClockEventWord.word_spec_ae.{u_1} {V : Type u_1} [Fintype V] :
+  ∀ᵐ (ω : MathResearchAnalysis.ExponentialClocks.Sample V) ∂MathResearchAnalysis.ExponentialClocks.clockMeasure V,
+    ∀ (t : ℝ),
+      (∀ (e : MathResearchAnalysis.ClockEventWord.Event V),
+          e ∈ MathResearchAnalysis.ClockEventWord.word ω t ↔ MathResearchAnalysis.ClockEventWord.eventTime ω e ≤ t) ∧
+        (MathResearchAnalysis.ClockEventWord.word ω t).Nodup ∧
+          List.Pairwise
+              (fun a b =>
+                MathResearchAnalysis.ClockEventWord.eventTime ω b < MathResearchAnalysis.ClockEventWord.eventTime ω a)
+              (MathResearchAnalysis.ClockEventWord.word ω t) ∧
+            ∀ e ∈ MathResearchAnalysis.ClockEventWord.word ω t,
+              0 < MathResearchAnalysis.ClockEventWord.eventTime ω e ∧
+                MathResearchAnalysis.ClockEventWord.eventTime ω e ≤ t
+MathResearchAnalysis.ClockEventWord.word_measurable.{u_1} {V : Type u_1} [Countable V]
+  [MeasurableSpace (List (MathResearchAnalysis.ClockEventWord.Event V))] (t : ℝ) :
+  Measurable fun ω => MathResearchAnalysis.ClockEventWord.word ω t
+MathResearchAnalysis.ClockEventWord.word_getD_measurable.{u_1} {V : Type u_1} [Countable V]
+  [MeasurableSpace (MathResearchAnalysis.ClockEventWord.Event V)]
+  [MeasurableSpace (List (MathResearchAnalysis.ClockEventWord.Event V))]
+  [MeasurableSingletonClass (List (MathResearchAnalysis.ClockEventWord.Event V))] (t : ℝ) (i : ℕ)
+  (fallback : MathResearchAnalysis.ClockEventWord.Event V) :
+  Measurable fun ω => (MathResearchAnalysis.ClockEventWord.word ω t).getD i fallback
+MathResearchAnalysis.ClockEventWord.measurableSet_word_length_ge.{u_1} {V : Type u_1} [Countable V] (t : ℝ) (r : ℕ) :
+  MeasurableSet {ω | r ≤ (MathResearchAnalysis.ClockEventWord.word ω t).length}

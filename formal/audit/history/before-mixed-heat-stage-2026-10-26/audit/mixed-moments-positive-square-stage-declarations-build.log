@@ -1,0 +1,6 @@
+✔ [2073/2073] Built MathResearchAnalysis.PositivePartSquare (10s)
+Build completed successfully (2073 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

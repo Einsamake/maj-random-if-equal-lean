@@ -1,0 +1,6 @@
+✔ [3899/3899] Built MathResearchAnalysis.ClockEndpointSurvival (16s)
+Build completed successfully (3899 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

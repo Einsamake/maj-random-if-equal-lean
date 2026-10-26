@@ -1,0 +1,18 @@
+'MathResearchAnalysis.SquareInclusion.site' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.site_fst_val' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.site_snd_val' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.site_injective' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.siteEmbedding' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.event' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.event_injective' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.Rel' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.embed_site' does not depend on any axioms
+'MathResearchAnalysis.SquareInclusion.extend_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareInclusion.rule_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareInclusion.cellUpdate_rel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareInclusion.outside_cellUpdate_rel' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SquareInclusion.initial_rel_top' does not depend on any axioms
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

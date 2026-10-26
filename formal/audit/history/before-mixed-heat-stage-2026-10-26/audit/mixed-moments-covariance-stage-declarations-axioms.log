@@ -1,0 +1,23 @@
+'MathResearchAnalysis.MixedClockCovariance.Pair' does not depend on any axioms
+'MathResearchAnalysis.MixedClockCovariance.pairSwap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.pairSwap_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.source_eq_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.source_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.rate_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.covariance_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.covariance_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.covariance_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.covariance_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedClockCovariance.offdiag_moment_le_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

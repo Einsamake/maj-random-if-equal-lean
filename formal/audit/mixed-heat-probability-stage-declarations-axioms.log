@@ -1,0 +1,20 @@
+'MathResearchAnalysis.MixedClearingProbability.failure_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClearingProbability.failure_subset_count' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClearingProbability.failure_probability_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClearingProbability.auxiliary_side' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.MixedClearingProbability.auxiliary_failure_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedClearingProbability.auxiliary_time_le_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

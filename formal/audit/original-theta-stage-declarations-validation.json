@@ -1,0 +1,24 @@
+{
+  "validated_at": "2026-10-26T14:50:57.163347+08:00",
+  "modules": [
+    "OriginalQuadraticRecovery"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.OriginalQuadraticRecovery.tau_quadratic_bounds",
+    "MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic",
+    "MathResearchAnalysis.OriginalQuadraticRecovery.expectedRecovery_lt_top"
+  ],
+  "declarations_count": 3,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/OriginalQuadraticRecovery.lean": "27e11b9ce8afaa9d41b41f001b51444a19d293dcaf880eba2064457dfb9d758b"
+  },
+  "new_lean_warning_lines": []
+}

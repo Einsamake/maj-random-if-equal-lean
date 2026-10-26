@@ -1,0 +1,53 @@
+{
+  "validated_at": "2026-10-13T16:06:54.142606+08:00",
+  "compiler": "Lean 4.35.0-rc4",
+  "compiler_output": "Lean (version 4.35.0-rc4, x86_64-w64-windows-gnu, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_commit": "54c01c3314d33d15d77893cbe4e0472ff26bb34d",
+  "public_theorems": 86,
+  "project_lean_files": 10,
+  "theorems_by_module": {
+    "MathResearchAnalysis/BlockTail.lean": 9,
+    "MathResearchAnalysis/ConditionalMoment.lean": 6,
+    "MathResearchAnalysis/ExtendedBlockTail.lean": 16,
+    "MathResearchAnalysis/FiniteTail.lean": 12,
+    "MathResearchAnalysis/NonnegativeMoment.lean": 6,
+    "MathResearchAnalysis/PathTail.lean": 2,
+    "MathResearchAnalysis/StoppingPath.lean": 4,
+    "MathResearchAnalysis/TaskPaths.lean": 23,
+    "MathResearchAnalysis/TaskPathTail.lean": 8,
+    "MathResearchAnalysis.lean": 0
+  },
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "custom_axioms": false,
+  "admitted_holes": false,
+  "source_sha256": {
+    "MathResearchAnalysis/BlockTail.lean": "bbefea28a4df73400fb1a22c2cab39e1b3787cc268e00a8ba5639821430b9c14",
+    "MathResearchAnalysis/ConditionalMoment.lean": "de21e9965abb0ba8cebbe7311826fa3381eac35d03d16d543f86fec5e6ad15e4",
+    "MathResearchAnalysis/ExtendedBlockTail.lean": "801640dc71f73cb7988ed398ccab74726f3edeca08627c93264091e50d2bce04",
+    "MathResearchAnalysis/FiniteTail.lean": "411828296b5e9ba6f4427a11646a5e66a38617e56bacca0ad279a52ceb4a9039",
+    "MathResearchAnalysis/NonnegativeMoment.lean": "8bac21f797b3ec549222aaedc1b9c57233df041b42d9e6bca4f5d1c2176d9548",
+    "MathResearchAnalysis/PathTail.lean": "72766cdb461b012a92b17cdd875b5d4c298bc31ac7f61e938f5d9d3c9c03ad48",
+    "MathResearchAnalysis/StoppingPath.lean": "d29639fdd2695dabc750aaf17d82f8e9ed26c6d9bdb2d00347d6213bacb036d1",
+    "MathResearchAnalysis/TaskPaths.lean": "648fbb8437a5ed3bb02d8f8f9cba1adb5ab7be123a53ebb4db400a29b0f40ace",
+    "MathResearchAnalysis/TaskPathTail.lean": "957207dd151ebadc22d67b301e12d64bc305dae3b3f8f680858f054b2b0e9a56",
+    "MathResearchAnalysis.lean": "d6db0fabd95284c68c36dc726c721417a17fca29c7ea77ce127b196afa4762f5"
+  },
+  "scope": "conditional analytic implications, not a full Poisson or CA theorem",
+  "build_warning_lines": [
+    "warning: mathlib: repository has local changes:",
+    "warning: plausible: repository has local changes:",
+    "warning: LeanSearchClient: repository has local changes:",
+    "warning: importGraph: repository has local changes:",
+    "warning: proofwidgets: repository has local changes:",
+    "warning: aesop: repository has local changes:",
+    "warning: Qq: repository has local changes:",
+    "warning: batteries: repository has local changes:",
+    "warning: Cli: repository has local changes:"
+  ]
+}

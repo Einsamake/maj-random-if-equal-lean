@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-26T14:47:18.005042+08:00",
+  "modules": [
+    "CrossSquareClockBound"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.CrossSquareClockBound.endpoint_rel",
+    "MathResearchAnalysis.CrossSquareClockBound.endpoint_rel_ae",
+    "MathResearchAnalysis.CrossSquareClockBound.original_nonzero_probability_le_local_failure",
+    "MathResearchAnalysis.CrossSquareClockBound.original_clock_survival_le_eighth"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/CrossSquareClockBound.lean": "3d5d343a63aa0e48288457f05824f5509dd9860d8112ca88b500d5d7faf0158a"
+  },
+  "new_lean_warning_lines": []
+}

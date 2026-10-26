@@ -1,0 +1,6 @@
+import MathResearchAnalysis.ClockEndpointSurvival
+
+#print axioms MathResearchAnalysis.ClockEndpointSurvival.execute_zero
+#print axioms MathResearchAnalysis.ClockEndpointSurvival.sample_good_ae
+#print axioms MathResearchAnalysis.ClockEndpointSurvival.zero_persists
+#print axioms MathResearchAnalysis.ClockEndpointSurvival.clockProbability_antitone

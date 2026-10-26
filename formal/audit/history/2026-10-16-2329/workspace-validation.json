@@ -1,0 +1,13 @@
+{
+  "validated_at": "2026-10-16T23:37:22.539318+08:00",
+  "moved_files_verified": 22,
+  "historical_snapshots_verified": 9,
+  "deleted_files": 13,
+  "deleted_bytes": 2832442,
+  "formal_source_hashes_matched": 116,
+  "current_document_links_checked": 125,
+  "python_scripts_parse": true,
+  "proof_build_rerun_by_this_script": false,
+  "scope": "organization and existing audit/source consistency, not a new mathematical proof",
+  "checks_passed": true
+}

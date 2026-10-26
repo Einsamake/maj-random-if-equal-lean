@@ -1,15 +1,15 @@
 # 当前形式化对应与可信边界
 
-目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整主定理尚未完成。**
+目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整渐近主定理已通过标准 Lean 内核验收。**
 
-分析240个证明模块、3173条辅助定理、241份分析源；核心旧125条定理与1模型、8源仅回核指纹未重编。共249份正式源、3299项实际公理输出。最新分析统一构建及标准Lean --trust=0审计实际退出0（2026-10-26T06:32:55.327815+08:00），仅三个标准公理，零新增Lean警告。
+分析258个证明模块、3280条辅助定理、259份分析源；核心旧125条定理与1模型、8源仅回核指纹未重编。共267份正式源、3406项实际公理输出。最新分析统一构建及标准Lean --trust=0审计实际退出0（2026-10-26T14:53:59.002869+08:00），仅三个标准公理，零新增Lean警告。
 
 | 内容 | 主要模块 | 当前边界 |
 |---|---|---|
 | 原无限同步模型、真实随机law、含∞首达 | InfiniteGridModel、SquareGridLaw、InfiniteGridRecoveryTime | 原四邻规则、背景、边界、time尺度保持 |
-| 原尺寸、exact-N最坏扩展期望 | PerturbationGeometry、OriginalRecoveryProfile | profile和最大值已定义/对应；二次下界已证，一般有限和二次上界未证 |
+| 原尺寸、exact-N最坏扩展期望 | PerturbationGeometry、OriginalRecoveryProfile | 原模型/exact-N/max对应；N≥16二次上界及有限均值、eventual两侧界已证 |
 | 真时钟任务、rank、PW/零温、两向clock比较 | ClockReadiness、ActualClockTail、ClockRankTail、SquarePWCensoring、ZeroTemperature、ClockRecoveryComparison | 工具/比较已证，不代替CMST/FSS核心尾 |
-| 同步重启和块尾 | FairMarksPastFuture、SquareRandomRestart | 真past/future law及乘法尾；二次尺度q<1未证 |
+| 同步重启和块尾 | FairMarksPastFuture、SquareRandomRestart | 真past/future law及乘法尾；真实二次尺度单块尾≤1/2已实例化 |
 | strict-majority清理与实际改造字 | FiniteMajorityPeeling、GridMajorityPeeling、DropletModifiedWord | 终止、最大稳定core、次序无关、实际更新共轭已证 |
 | 实际D∪外四邻保护域、字与clock law | ClippedProtectedGeometry、DropletStoppedWord、DropletStoppedClockLaw | 永久first loss冻结、原消失概率比较、真law已证 |
 | 一般真实连续轮廓与原Good | OrthogonalBoundary系列、OrthogonalPhysicalContour、ProtectedGeometricGood | 全frontier、简单闭curve、全分割Euclidean弧长和原Good；严格<exit才Good |
@@ -27,9 +27,9 @@
 | 零权出生层 | ForbiddenBirthControl | 外可能birth必在norm1=L+2，w在该层为0；真实masked/expanded weighted raw严格相等；真实整体weighted率及下界见后续 |
 | 加权真实物理二次下尾接口 | WeightedExitArea、WeightedAreaDynkin、WeightedAreaTail、WeightedRawContour、WeightedReflection、WeightedRawRate、PhysicalWeightedDrift | 真正raw≤18L+12、真实E[W_T]界；L≥12288000时T=L²/12288000处辅助exit和原clock灭绝CDF≤1/2，无核心率或概率输入 |
 | 原同步exact-N二次下界 | SyncLowerScale、ExtendedTailLower、SynchronousQuadraticTail、OriginalQuadraticLower | 真同步尾≥1/4、奇偶N支持比较、保∞期望；N≥786432000时ofReal(N²/56623104000)≤tau(N) |
-| 上界辅助模型与真实同维clock基础 | MixedSquareModel、MixedSquareCorners、MixedSquareClockLaw | 真实混合边界、精确双向翻角、空间单调形状保持、同clock/mark endpoint可测及原同维支配；非跨尺寸law或SSEP概率 |
-| 原同步二次上界 | 尚未闭合 | 有限混合边界/SSEP候选核心、真实概率与clock/sync上界连接仍待 |
-| τ(N)=Θ(N²) | 尚未验收 | 不宣称完成，不按定理条数估完成百分比 |
+| 上界辅助模型与真实同维clock基础 | MixedSquareModel、MixedSquareCorners、MixedSquareClockLaw | 真实混合边界、精确双向翻角、空间单调形状保持、同clock/mark endpoint可测及原同维支配；后续ClockSampleRestriction/ClockWordRestriction/CrossSquareClockBound已给实际跨尺寸law与支配 |
+| 原同步二次上界 | OriginalQuadraticUpper | N≥16时 tau≤ofReal(664066N²)，无核心概率输入 |
+| τ(N)=Θ(N²) | OriginalQuadraticRecovery | 267源统一内核验收；eventual原量词两侧界，非人类专家认证 |
 
 [停时阶段](PROGRESS_2026-10-21_MARKED_STOPPING.md) · [面积阶段](PROGRESS_2026-10-21_AREA_POTENTIAL.md) · [下一阶段](../README.md)。旧PROGRESS文件按日期保留历史语境；当前状态以本文和最新统一audit为准。独立AI不是人类专家认证。
 
@@ -41,21 +41,23 @@
 [真实逐次响铃的可预测补偿](PROGRESS_2026-10-22_PREDICTABLE_COMPENSATION.md)：新增3模块24定理/29命名声明；仅在标准原历史可预测σ上比较真实事件测度与时间参考测度，不是全ambient积σ等价。更新前真实状态与物理面积Dynkin现已闭合，见23日验收。
 
 
-[23日真实前态、面积Dynkin与clipped生成元](PROGRESS_2026-10-23_AREA_DYNKIN.md)。原finite-clock辅助过程已给真实物理时间面积公式；主定理及定量CMST/FSS尚未完成。
+[23日真实前态、面积Dynkin与clipped生成元](PROGRESS_2026-10-23_AREA_DYNKIN.md)。该历史阶段给出真实物理时间面积公式；本次已用有限粒子矩路线闭合主定理所需概率界。
 
 
 [24日：真实清理总预算、早退出概率与零权边界层](PROGRESS_2026-10-24_CLEANUP_WEIGHT.md)。
 
-[25日：实际加权线性率与平方时间概率界](PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。真实CLOCK结论已供给数值界；原同步τ(N)=Θ(N²)仍未完成。
+[25日：实际加权线性率与平方时间概率界](PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。该历史阶段供给下界所需CLOCK数值界；原同步完整Θ结论见26日最终记录。
 
 [25日：原同步与exact-N二次期望下界](PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。
 
 [25日：混合边界与真实阶梯形clock基础](PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。
 
-行长编码的历史验收见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码现已完成，二次上界仍未完成。
+行长编码的历史验收见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码现已完成，二次上界现已完成，见最新主定理记录。
 
-[25日粒子编码与有限算子验收](PROGRESS_2026-10-25_EXCLUSION.md)；真实矩方程和非正协方差现已完成，见[26日后续验收](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)。二次上界仍未完成。
+[25日粒子编码与有限算子验收](PROGRESS_2026-10-25_EXCLUSION.md)；真实矩方程和非正协方差现已完成，见[26日后续验收](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)。二次上界现已完成，见最新主定理记录。
 
 [26日：有限机器的真实时钟Dynkin与混合边界实例](PROGRESS_2026-10-26_FINITE_MACHINE_DYNKIN.md)。
 
-[26日后续：真实一二矩ODE、异点非正协方差与中心能量](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)；热衰减和最终上界仍待。
+[26日后续：真实一二矩ODE、异点非正协方差与中心能量](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)；热衰减和最终上界现已完成，见最新主定理记录。
+
+[当前完整主定理与证据](PROGRESS_2026-10-26_MAIN_THEOREM.md)：此前各日期链接为历史阶段，当时未闭合的热概率、跨尺寸更新、原同步二次上界现已完成；完整经典FSS强尾和全未来vector强Markov不是此证明所需的最终输入。

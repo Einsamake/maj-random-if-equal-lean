@@ -1,0 +1,10 @@
+'MathResearchAnalysis.ClockEndpointSurvival.execute_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEndpointSurvival.sample_good_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEndpointSurvival.zero_persists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEndpointSurvival.clockProbability_antitone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

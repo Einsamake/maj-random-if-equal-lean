@@ -1,0 +1,25 @@
+'MathResearchAnalysis.ScalarHeatDecay.exponential_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ScalarHeatDecay.exp_neg_four_le_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CountLowerTail.lower_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CountLowerTail.lower_tail_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.mixingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.side_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.mixingTime_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.squareMass_differential_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.squareMass_le_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedHeatDecay.squareMass_at_mixingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountHeat.centered_right_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedRightCountHeat.mean_square_error_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedRightCountHeat.mean_at_mixingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

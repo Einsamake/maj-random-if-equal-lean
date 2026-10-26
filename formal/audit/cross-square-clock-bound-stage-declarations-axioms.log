@@ -1,0 +1,12 @@
+'MathResearchAnalysis.CrossSquareClockBound.endpoint_rel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CrossSquareClockBound.endpoint_rel_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CrossSquareClockBound.original_nonzero_probability_le_local_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CrossSquareClockBound.original_clock_survival_le_eighth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

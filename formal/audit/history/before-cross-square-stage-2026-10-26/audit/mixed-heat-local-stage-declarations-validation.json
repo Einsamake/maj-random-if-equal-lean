@@ -1,0 +1,25 @@
+{
+  "validated_at": "2026-10-26T13:27:17.564989+08:00",
+  "modules": [
+    "MixedLocalClearing"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedLocalClearing.localWhite",
+    "MathResearchAnalysis.MixedLocalClearing.localWhite_of_le_rightCount",
+    "MathResearchAnalysis.MixedLocalClearing.localWhite_iff_le_rightCount",
+    "MathResearchAnalysis.MixedLocalClearing.endpoint_localWhite_of_count_le"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedLocalClearing.lean": "0d1763b9198374a29439304d700503bb6ca778d7143616f459ad83d634b152c1"
+  },
+  "new_lean_warning_lines": []
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "Path": "<workspace>\\formal\\audit\\analysis-validation.json",
+    "Hash": "C118BCF228964696A3F50CF0BEE4ADCA5CD134C138BFB43471E9B316B394F2E2"
+  },
+  {
+    "Path": "<workspace>\\formal\\audit\\analysis-build.log",
+    "Hash": "64ACFE38B7B79178AC2405D6EF70975719FC6922F9308F553528FC24CC106387"
+  },
+  {
+    "Path": "<workspace>\\formal\\audit\\analysis-axioms.log",
+    "Hash": "46B94F1342EE06DEE61656747B34849B4075964E713A202FB99BDB75D8C72555"
+  },
+  {
+    "Path": "<workspace>\\formal\\analysis\\AnalysisAxioms.lean",
+    "Hash": "1A0D26BB2D818887362B1B837FABF008A06FE272DC98824B5B42CD6C6E544CB8"
+  },
+  {
+    "Path": "<workspace>\\formal\\analysis\\MathResearchAnalysis.lean",
+    "Hash": "DFD666AB6A9639C72AD196720EEA044605AB3CB6511851960C4F25468F58F585"
+  }
+]

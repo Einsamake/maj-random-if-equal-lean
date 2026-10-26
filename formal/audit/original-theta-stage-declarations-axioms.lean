@@ -1,0 +1,5 @@
+import MathResearchAnalysis.OriginalQuadraticRecovery
+
+#print axioms MathResearchAnalysis.OriginalQuadraticRecovery.tau_quadratic_bounds
+#print axioms MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic
+#print axioms MathResearchAnalysis.OriginalQuadraticRecovery.expectedRecovery_lt_top

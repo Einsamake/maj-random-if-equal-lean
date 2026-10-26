@@ -1,0 +1,29 @@
+{
+  "validated_at": "2026-10-17T10:40:23.875126+08:00",
+  "status": "standalone_kernel_checked_draft_not_unified",
+  "source": "formal/drafts/ProtectedColumnGeometry.lean",
+  "source_sha256": "c770ec6a0d09daee893a35362c081dffa5d04fe4f79a3216da81ef7e438c153c",
+  "named_declarations": [
+    "column_singleton_of_missing_vertical",
+    "protected_singleton_column_bound",
+    "outward_row_axis_in_innerDiamond",
+    "outward_occupied_same_row",
+    "no_east_on_positive_singleton_column",
+    "no_singleton_column_on_axis",
+    "no_horizontal_opposites_at_positive_x",
+    "outward_row_axis_in_innerDiamond_negative",
+    "outward_occupied_same_row_negative",
+    "no_west_on_negative_singleton_column",
+    "protected_no_horizontal_opposites",
+    "innerDiamond_swap_iff",
+    "clippedDomain_swap_iff"
+  ],
+  "command": "lake env lean --trust=0 ../drafts/ProtectedColumnGeometry.lean",
+  "exit_code": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "13 standalone kernel-checked lemmas; full protected horizontal opposite-neighbour exclusion L>=2 plus exact coordinate-swap invariance of actual innerDiamond/clippedDomain; vertical transport and Good death remain unproved; not unified145 sources"
+}

@@ -1,0 +1,19 @@
+warning: mathlib: repository has local changes:
+  .lake/packages\mathlib
+warning: plausible: repository has local changes:
+  .lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  .lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  .lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  .lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  .lake/packages\aesop
+warning: Qq: repository has local changes:
+  .lake/packages\Qq
+warning: batteries: repository has local changes:
+  .lake/packages\batteries
+warning: Cli: repository has local changes:
+  .lake/packages\Cli
+EXIT_CODE=0

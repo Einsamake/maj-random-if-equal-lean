@@ -1,0 +1,8 @@
+'MathResearchAnalysis.ScalarHeatDecay.exponential_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ScalarHeatDecay.exp_neg_four_le_eighth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CountLowerTail.lower_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.CountLowerTail.lower_tail_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

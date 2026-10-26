@@ -1,0 +1,37 @@
+module
+public import MathResearchAnalysis.ClockEventWord
+#print axioms MathResearchAnalysis.ClockEventWord.word_eq_empty_of_not_good
+#print axioms MathResearchAnalysis.ClockEventWord.word_perm
+#print axioms MathResearchAnalysis.ClockEventWord.word_mem_iff
+#print axioms MathResearchAnalysis.ClockEventWord.word_nodup
+#print axioms MathResearchAnalysis.ClockEventWord.word_decreasing
+#print axioms MathResearchAnalysis.ClockEventWord.word_strictly_decreasing
+#print axioms MathResearchAnalysis.ClockEventWord.word_reverse_strictly_increasing
+#print axioms MathResearchAnalysis.ClockEventWord.sublist_reverse_strictly_increasing
+#print axioms MathResearchAnalysis.ClockEventWord.eventTime_measurable
+#print axioms MathResearchAnalysis.ClockEventWord.eventTime_eq_raw_ae
+#print axioms MathResearchAnalysis.ClockEventWord.eventTime_positive_ae
+#print axioms MathResearchAnalysis.ClockEventWord.eventSet_finite_ae
+#print axioms MathResearchAnalysis.ClockEventWord.good_ae
+#print axioms MathResearchAnalysis.ClockEventWord.word_mem_iff_ae
+#print axioms MathResearchAnalysis.ClockEventWord.word_positive_bounded_ae
+#print axioms MathResearchAnalysis.ClockEventWord.word_mem_iff_raw_ae
+#print axioms MathResearchAnalysis.ClockEventWord.word_spec_ae
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_coverage
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_eventSet_finite
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_eventTime_injective
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_good
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_strictly_decreasing
+#print axioms MathResearchAnalysis.ClockEventWord.word_eq_iff
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_word_eq
+#print axioms MathResearchAnalysis.ClockEventWord.word_measurable
+#print axioms MathResearchAnalysis.ClockEventWord.word_getD_measurable
+#print axioms MathResearchAnalysis.ClockEventWord.word_length_measurable
+#print axioms MathResearchAnalysis.ClockEventWord.measurableSet_word_length_ge
+#check MathResearchAnalysis.ClockEventWord.eventTime
+#check MathResearchAnalysis.ClockEventWord.eventSet
+#check MathResearchAnalysis.ClockEventWord.word
+#check MathResearchAnalysis.ClockEventWord.word_spec_ae
+#check MathResearchAnalysis.ClockEventWord.word_measurable
+#check MathResearchAnalysis.ClockEventWord.word_getD_measurable
+#check MathResearchAnalysis.ClockEventWord.measurableSet_word_length_ge

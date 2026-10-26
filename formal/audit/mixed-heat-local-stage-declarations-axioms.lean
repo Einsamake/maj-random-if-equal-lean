@@ -1,0 +1,6 @@
+import MathResearchAnalysis.MixedLocalClearing
+
+#print axioms MathResearchAnalysis.MixedLocalClearing.localWhite
+#print axioms MathResearchAnalysis.MixedLocalClearing.localWhite_of_le_rightCount
+#print axioms MathResearchAnalysis.MixedLocalClearing.localWhite_iff_le_rightCount
+#print axioms MathResearchAnalysis.MixedLocalClearing.endpoint_localWhite_of_count_le

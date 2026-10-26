@@ -32,3 +32,7 @@ python docs/render_clock_timeline.py
 ## 粒子编码图
 
 06-particle-encoding.png由[绘图源码](../render_particle_encoding.py)生成，数据见[JSON](particle-encoding-data.json)。5×5混合边界，白色行长从全0变为(1,0,0,0,0)，再变为(2,1,0,0,0)；粒子位置和三个合法相邻跳见数据。仅为合法更新顺序示意，没有随机等待时间，不是平均速度或概率证明。
+
+## 完整上界图
+
+07-local-clearing.png由[源码](../render_mixed_clearing.py)直接绘制，设置与图片指纹见[JSON](local-clearing-data.json)。图按N=16、辅助边长129和目标边长16绘制；灰色区域不指定颜色。图中7/8概率和平方时刻来自已核验推理，不是模拟估计；下方的664066N²是原同步期望上界，辅助时钟时间与同步轮数没有混为一谈。

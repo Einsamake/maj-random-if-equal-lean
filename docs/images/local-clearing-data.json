@@ -1,0 +1,10 @@
+{
+  "kind": "drawn theorem illustration, not simulation",
+  "example_N": 16,
+  "auxiliary_side": 129,
+  "target_side": 16,
+  "time": "16(8N+1)^2 <= 1296N^2 for N>=1",
+  "probability": "auxiliary mixed local-clear failure <= 1/8 for N>=16",
+  "original_quadratic_upper_complete": true,
+  "image_sha256": "a1501e26447e8ac4b16852c048169aca12dceaf4c26125314c661fad5eb5d266"
+}

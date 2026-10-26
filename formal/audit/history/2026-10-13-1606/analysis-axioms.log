@@ -1,0 +1,172 @@
+'MathResearchAnalysis.BlockTail.truncation_le_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.value_le_block_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.blockWeight_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.measurable_blockWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_blockWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_le_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.integrable_realCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.integral_le_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.integral_mul_of_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.pathExp_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.prefixSum_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.pathExp_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.fixed_path_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.fixed_path_rate_one_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.value_le_block_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.blockWeight_indicator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurableSet_blockTail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_blockWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_ENNRealCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_blockWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_le_two_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.ae_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measure_eq_top_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_toNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measure_toNat_tail_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.ae_natCast_toNat_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_toNat_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.integrable_realToNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.integral_realToNat_le_two_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_eq_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.nonnegative_single_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_nonnegative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_nonnegative_tail_with_measurability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_eq_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail_with_measurability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.maximum_exceeds_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_maximum_exponential_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.pathSum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_path_sum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.integrable_mul_of_nonneg_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.integral_mul_of_nonneg_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.pathExp_prefix_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_exponential_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_rate_one_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PathTail.fixed_paths_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PathTail.fixed_paths_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.real_time_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.readiness_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.delay_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.stopped_path_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_paths_iff_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.paths_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_inTaskLayers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.weight_eq_forward_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_weight_le_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.completion_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.completion_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.paths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_terminalPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_exceeds_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_inTaskLayers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.predecessor_completion_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.prefixMaximum_eq_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_allPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.allPaths_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.layerMaximum_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.layerMaximum_exceeds_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.allPaths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefixSum_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefixSum_pathWait' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.allPaths_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.layer_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.terminal_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.terminal_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefix_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: mathlib: repository has local changes:
+  .lake/packages\mathlib
+warning: plausible: repository has local changes:
+  .lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  .lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  .lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  .lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  .lake/packages\aesop
+warning: Qq: repository has local changes:
+  .lake/packages\Qq
+warning: batteries: repository has local changes:
+  .lake/packages\batteries
+warning: Cli: repository has local changes:
+  .lake/packages\Cli
+
+EXIT_CODE=0

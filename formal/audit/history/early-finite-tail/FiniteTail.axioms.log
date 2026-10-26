@@ -1,0 +1,30 @@
+warning: mathlib: repository has local changes:
+  .lake/packages\mathlib
+warning: plausible: repository has local changes:
+  .lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  .lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  .lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  .lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  .lake/packages\aesop
+warning: Qq: repository has local changes:
+  .lake/packages\Qq
+warning: batteries: repository has local changes:
+  .lake/packages\batteries
+warning: Cli: repository has local changes:
+  .lake/packages\Cli
+'MathResearchAnalysis.FiniteTail.nonnegative_single_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_nonnegative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail_with_measurability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_maximum_exponential_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.pathSum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_path_sum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT_CODE=0

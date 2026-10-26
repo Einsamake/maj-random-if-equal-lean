@@ -1,0 +1,8 @@
+import MathResearchAnalysis.ClockWordRestriction
+
+#print axioms MathResearchAnalysis.ClockWordRestriction.retained
+#print axioms MathResearchAnalysis.ClockWordRestriction.retained_eq_true_iff
+#print axioms MathResearchAnalysis.ClockWordRestriction.word_map_eq_filter
+#print axioms MathResearchAnalysis.ClockWordRestriction.reverse_word_map_eq_filter
+#print axioms MathResearchAnalysis.ClockWordRestriction.word_map_eq_filter_ae
+#print axioms MathResearchAnalysis.ClockWordRestriction.marked_word_map_eq_filter_ae

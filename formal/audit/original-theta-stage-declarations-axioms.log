@@ -1,0 +1,13 @@
+'MathResearchAnalysis.OriginalQuadraticRecovery.tau_quadratic_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.OriginalQuadraticRecovery.expectedRecovery_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

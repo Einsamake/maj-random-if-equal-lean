@@ -1,0 +1,27 @@
+{
+  "validated_at": "2026-10-26T13:27:54.714352+08:00",
+  "modules": [
+    "MixedClearingProbability"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.MixedClearingProbability.failure_measurable",
+    "MathResearchAnalysis.MixedClearingProbability.failure_subset_count",
+    "MathResearchAnalysis.MixedClearingProbability.failure_probability_le",
+    "MathResearchAnalysis.MixedClearingProbability.auxiliary_side",
+    "MathResearchAnalysis.MixedClearingProbability.auxiliary_failure_quarter",
+    "MathResearchAnalysis.MixedClearingProbability.auxiliary_time_le_quadratic"
+  ],
+  "declarations_count": 6,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/MixedClearingProbability.lean": "448ac959d73c44f25af90475874ba12b452f755d6eca2ed4779c2491390172c8"
+  },
+  "new_lean_warning_lines": []
+}

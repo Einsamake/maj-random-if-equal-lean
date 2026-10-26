@@ -1,0 +1,59 @@
+'MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.oneParticle_mul_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.sum_oneParticle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.one_edge_flux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.integration_by_parts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.dirichlet_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.hasDerivAt_squareMass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteExclusionEnergy.hasDerivAt_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.permutation_flux_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.rate_flux_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.energy_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.source_derivative_nonpos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.hasDerivAt_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FinitePermutationComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.rho_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.g_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.rho_rhs_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.g_rhs_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.rho_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.g_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.totalDensity_slotState_eq_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.occupation_totalDensity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedMomentEvolution.rho_total_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

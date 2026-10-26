@@ -1,0 +1,14 @@
+'MathResearchAnalysis.MixedLocalClearing.localWhite' does not depend on any axioms
+'MathResearchAnalysis.MixedLocalClearing.localWhite_of_le_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedLocalClearing.localWhite_iff_le_rightCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.MixedLocalClearing.endpoint_localWhite_of_count_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

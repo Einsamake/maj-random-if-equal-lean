@@ -1,0 +1,6 @@
+✔ [4021/4021] Built MathResearchAnalysis.OriginalQuadraticUpper (17s)
+Build completed successfully (4021 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

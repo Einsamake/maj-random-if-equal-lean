@@ -273,127 +273,44 @@ public import MathResearchAnalysis.MixedMomentEnergy
 
 public import MathResearchAnalysis.MixedClockCovariance
 
+public import MathResearchAnalysis.FiniteSlotPoincare
+public import MathResearchAnalysis.MixedMomentPoincare
+public import MathResearchAnalysis.ScalarHeatDecay
+public import MathResearchAnalysis.CountLowerTail
+public import MathResearchAnalysis.MixedHeatDecay
+public import MathResearchAnalysis.MixedRightCountMoments
+public import MathResearchAnalysis.MixedRightCountHeat
+public import MathResearchAnalysis.MixedLocalClearing
+public import MathResearchAnalysis.MixedClearingProbability
+public import MathResearchAnalysis.ClockSampleRestriction
+public import MathResearchAnalysis.ClockWordRestriction
+
+public import MathResearchAnalysis.SquareInclusion
+public import MathResearchAnalysis.ClockRestrictedExecution
+public import MathResearchAnalysis.ClockEndpointSurvival
+public import MathResearchAnalysis.CrossSquareClockBound
+public import MathResearchAnalysis.SyncUpperScale
+public import MathResearchAnalysis.OriginalQuadraticUpper
+public import MathResearchAnalysis.OriginalQuadraticRecovery
+
 /-!
-Machine-checked analytic implications used by the CA candidate proof.
-Nonnegative prefix integrability, extended-time finiteness, actual real
-task-path expansion/counting, and conditional task-maximum tails are included.
-Concrete square geometry, genuine exponential clock streams, the common
-arrival history, strict next-ring stopping and almost-sure finiteness are included.
-Actual extended multi-layer task times, conflict order, event identity, real
-path bridges and conditional physical maximum tails are included. Counting
-adaptation, the zero-count law and deterministic exponential memorylessness
-are included.
-The actual first positive layer has an unconditional exponential waiting law
-and a physical maximum tail proved directly from the model.
-Survival factorization for thresholds measurable from all coordinates other
-than one fixed gap is proved from genuine product-coordinate independence.
-The actual single-site residual waiting law and its independence from the
-common stopped history are proved for every nonnegative almost-surely finite
-stopping time. Actual multi-layer path moments and square maximum tails
-therefore have no residual-law or independence inputs. All chronological
-arrivals have distinct event times almost surely. Actual greedy-chain moments,
-lower tails and strictly started witness domination are included.
-Actual bounded-time marked event words, a closed rank probability bound,
-computed rank/color-slot reordering with concrete final-state equality,
-fair marks for actual selected tasks, and selected-word/layer-word execution
-equality are included. Actual square-spin dynamics supplies the bipartite
-synchronous/checkerboard splitting. Finite heat-bath words converge to fair-tie
-majority kernels, and the genuine zero-boundary Gibbs energy supplies their
-local logistic probability.
-The selected chronological subword executes the actual checkerboard trajectory.
-Finite-word zero-temperature limits agree with actual fair-mark execution
-integrals. Normalized finite Gibbs masses and their one-site detailed balance
-and stationarity are proved. Explicit time/rank scales give a closed joint
-clock-scheduling failure probability.
-The actual finite-square heat bath is attractive at nonnegative inverse
-temperature. Gibbs-density evolution, the reversible one-site Dirichlet
-identity and arbitrary finite-word censoring from the top state are proved.
-The zero-temperature limit gives censoring for the actual fair-mark execution
-integrals. Genuine rank slots are completed into full color scans, whose
-operators are independent of their per-slot enumeration. Fubini and actual
-clock-wise censoring give two-way nonzero-probability comparisons between the
-physical clock endpoint and fixed finite color scans, with actual scheduling
-failure terms. Genuine independent-fair-mark synchronous and checkerboard
-processes are measurable, and the latter's law equals the finite scan kernel.
-Same-mark phase splitting gives actual probability comparisons without phase
-independence. Actual extended recovery times retain infinite values; absorption
-identifies their tails with nonzero endpoints and gives two-way finite-square
-synchronous-recovery / clock-endpoint tail comparisons. The actual integer
-grid model, proved containing-square geometry, full-configuration embeddings,
-whole-field restriction law and extended recovery-time laws are included.
-Spatial translation preserves the whole mark law, with the required odd-shift
-checkerboard phase change. Background complementation changes marks as well
-as spins and preserves their law. The actual used positive past is independent
-of the full fresh future field. Concrete synchronous restart and top-state
-domination give multiplicative and block tails in terms of the actual top
-recovery probability. The original minimum translated-square diameter, both
-homogeneous targets and worst extended expectation over exact-diameter states
-are included. For sizes at least two this optimization equals a finite pattern
-maximum, and a maximizing configuration exists for every size. Sizes zero
-and one have exact expected recovery times zero and one. Finite strict-majority
-peeling has a proved stable maximum core, finite termination and independence
-of the order of legal deletions. Actual integer-grid and finite-square single
-updates implement these deletions with the original four-input rule. The actual
-centered clipped mask, four-quadrant block counts and its initial cleanup
-stability are proved. Masked cleanup-after-update finite words have same-mark
-order comparisons and exact finite-square coordinate representations. Raw
-masked words conjugate with the actual finite single-site update. Finite cleanup
-and modified execution conjugate exactly with their centered grid versions.
-Different-domain comparison retains same marks and compares protected-set first
-loss with recovery, with frozen-state domination only before loss. The actual
-rate-one-clock marked droplet endpoint has a derived word-fiber law and countable
-mixture, and the whole-square raw endpoint equals the original clock endpoint.
-A fixed physical-time extinction/protected-loss probability comparison follows.
-The CMST inner diamond and its actual external four-neighbour boundary are
-constructed as finite sets, with exact integer/real membership and closed-band
-equivalence. Their union is concretely represented by finite protected vertices,
-initially present, and used in the actual original-process probability comparison.
-The corresponding extended first-loss event index is positive and dominated by
-the raw recovery index. No physical-time stopping law is inferred from indices.
-Actual exposed cell half-edges, orthogonal sections, clipped boundary facets,
-perimeter and bounding-box extrema are constructed. The initial boundary has
-a proved single successor orbit covering every facet, with an injective cyclic
-vertex enumeration. Actual real closed edge segments intersect only at common
-endpoints. Generic row convexity plus four-connectivity excludes checkerboards.
-The actual finite occupied-region frontier is the union of all exposed real
-segments. Its initial boundary has a continuous simple closed parameterization,
-which transports exactly to the original unit-cell geometry. The full Euclidean
-extended arc length is obtained from every finite partition and equals the
-actual minimum-rectangle perimeter. The actual clipped initial state satisfies
-the geometric Good conditions. General orthogonal connected regions now have
-a proved single actual boundary cycle and a full-frontier simple closed curve
-with genuine Euclidean extended arc length equal to their minimum-rectangle
-perimeter. Actual modified and stopped event trajectories satisfy the existing
-GeometricGood strictly before protected exit; infinity is retained, and the
-exact exit is not included in this Good conclusion. Actual nonnegative predictable event weights have a proved pathwise compensation
-formula under the original marked history. Actual predictable pre-update states agree on one common full-measure set at
-all times, including random ringing times, and actual one-ring area gains
-and losses have compensation formulas. The actual signed finite-horizon area Dynkin formula is now proved under the
-original clock law, with true pathwise telescoping and integrability first.
-The compensator is identified with the actual clipped D-site generator.
-The concrete weighted clock lower tail is now transported through the actual
-scheduling law to the original synchronous process. Odd/even original side and
-infinite recovery values are retained, proving an explicit exact-N quadratic
-worst extended expectation lower bound. The quadratic upper bound, full
-future-vector Poisson strong Markov characterization and the complete CA
-Theta theorem remain unproved.
-The true mixed-boundary finite rule has proved coordinate-monotone shape
-preservation, exact two-way corner flips and measurable endpoints under the
-same original clock/identity-mark field. Same-size zero-boundary endpoints are
-dominated. The finite exclusion encoding and generator algebra are proved
-below; cross-size clock restriction and quadratic upper probabilities remain unproved.
-Actual row lengths now give a two-sided equivalence with strictly ordered M
-particles on 2M finite slots. Right-half occupied-slot counts match white
-diagonal cells. Actual corner flips produce adjacent occupied/vacant swaps,
-and every admissible adjacent particle hop comes from a genuine mixed corner.
-A genuine active-corner/unequal-bond bijection now proves the full fair
-mixed-update generator equals the finite adjacent-swap generator, at rate
-one half per edge. Its one/two-coordinate algebra and covariance defect are
-proved, together with an explicit nearest-neighbour path Poincare bound.
-The genuine finite-state observed/predictable bridge and original-clock
-Dynkin formula are now proved, including the actual mixed/exclusion observable
-formula. True one/two-point moment integral and positive-time derivative
-equations, off-diagonal nonpositive covariance and actual centered mean energy
-are now proved. Heat-decay/concentration bounds, cross-size clock law and
-quadratic upper probabilities remain unproved.
+# Verified components and the original quadratic recovery theorem
+
+The imported modules construct the original infinite two-dimensional,
+synchronous four-neighbour majority rule with independent fair tie marks,
+its exact minimum translated-square side, two homogeneous targets, extended
+hitting time and worst extended expectation. Earlier geometry, clock laws,
+censoring comparisons, real predictable compensation, the original quadratic
+lower bound, actual mixed-boundary moment ODEs, covariance and heat decay are
+preserved. Actual sample and word restriction, real four-neighbour cross-size
+update comparison, original clock survival, scheduling and synchronous restart
+now discharge the upper probability and extended-expectation inputs.
+
+OriginalQuadraticRecovery.tau_theta_quadratic proves positive absolute c,C
+and a finite threshold for c*N^2 <= tau N <= C*N^2 in ENNReal. The explicit
+shared threshold is 786432000, c=1/56623104000 and C=664066. The upper bound
+already holds for N>=16. Infinity is retained until finite expectation follows.
+These are eventual bounds, not a claim that the displayed constants hold for
+all positive N. Independent AI review is not human peer review, and this file
+does not certify global novelty or the current public status of Question 7.4.
 -/

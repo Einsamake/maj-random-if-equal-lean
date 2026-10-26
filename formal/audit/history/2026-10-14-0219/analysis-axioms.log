@@ -1,0 +1,947 @@
+'MathResearchAnalysis.ActualClockTail.pathFiltration_eq_ready_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.listFiltration_eq_ready_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.terminal_listFiltration_eq_ready_sigma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.pathWait_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ActualClockTail.pathWait_indep_of_legal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.terminal_pathWait_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.terminal_pathWait_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.fixed_path_exponential_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.fixed_path_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.path_weight_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ActualClockTail.actual_square_eight_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.arrival_event_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.arrival_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.history_le_of_arrivals_stopping' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.extendedNextRing_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.chronologicalArrival_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.chronologicalArrival_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.chronologicalArrival_eq_raw_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.chronologicalArrival_unbounded_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_arrival_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_next_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_future_arrival_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_next_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_next_infinite_measure_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_next_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.finite_arrivals_below' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.clock_locally_finite_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.finite_clock_events' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ArrivalFiltration.finite_clock_events_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.BlockTail.truncation_le_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.value_le_block_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.blockWeight_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.measurable_blockWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_blockWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_le_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.lintegral_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.integrable_realCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.BlockTail.integral_le_two_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.before_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.before_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.arrival_eq_before_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.before_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.before_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.arrival_le_before_of_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.before_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_measurableSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_history_measurableSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_iff_find' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_pairwise_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_exists_of_future' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_exists_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_iUnion_ae_univ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.gap_positive_of_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.next_eq_arrival_of_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.after_eq_arrival_of_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.next_survival_iff_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_survival_measurableSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_survival_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.candidate_survival_pairwise_disjoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.next_survival_iUnion_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.next_survival_measure_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCandidateIntervals.next_survival_inter_measure_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_monotone_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_succ_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_lt_succ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_eq_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_measurable_of_events' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.count_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_adapted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_succ_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_lt_succ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_eq_zero_iff_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_zero_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_raw_threshold_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCount_infinite_measure_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockCounting.site_streams_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockCounting.clockCounts_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.restEvent_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.candidate_iff_rest_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.candidate_history_base_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.candidate_history_survival_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.candidate_history_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.candidate_inter_measure_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockDeterministicResidual.clock_next_joint_survival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.regular_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.predecessor_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.same_site_two_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.same_site_even_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.same_site_even_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.neighbor_odd_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.neighbor_odd_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_site_even' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_neighbor_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_conflict_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.predecessor_lt_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_conflict_order_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_layer_no_neighbor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_conflict_order_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_conflict_order_iff_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.same_site_two_steps_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.same_site_even_order_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.neighbor_odd_order_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_site_time_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.completion_eq_selected_arrival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_site_index_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_site_index_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.distinct_selected_eventId' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.distinct_selected_eventId_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_same_site_time_ne_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockEventOrder.selected_completion_eq_raw_arrival_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reconstruct_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reconstruct_other' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.rest_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reconstruct_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reconstruct_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.prior_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.prior_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.prior_rest_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.cutoff_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.cutoff_ge_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.cutoff_eq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.cutoff_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.rest_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_chosen_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_other_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.arrival_other_site_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.arrival_before_gap_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_arrival_current_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_arrival_current_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_arrival_later_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.prior_rest_eq_before' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.before_reset_eq_prior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_generator_event_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockGapReset.reset_history_event_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.squareMaximum_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockMaximum.squareMaximum_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.squareMaximum_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.real_squareLayer_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.real_squareMaximum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.representative_lt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.squareMaximum_exceeds_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockMaximum.actual_square_eight_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.exponential_singleton_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockNoTies.independent_threshold_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockNoTies.rawPrior_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.rawPrior_rest_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.arrival_eq_rawPrior_add_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockNoTies.other_arrival_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.cross_site_arrival_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.cross_site_arrival_ne_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.all_arrivals_injective_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockNoTies.all_chronological_arrivals_injective_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.finset_sup'_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.finset_sup'_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_isStoppingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_le_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.predecessor_completion_le_ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.predecessor_completion_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.arrival_cofinal_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_layer_finite_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_layer_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.completion_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.all_times_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_lt_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.ready_lt_completion_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockReadiness.square_all_times_finite_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.mesh_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.mesh_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.clock_wait_jointSurvival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.clock_wait_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.clock_wait_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.task_delay_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.task_delay_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockStoppedResidual.task_delay_indep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.after_eq_of_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.representative_lt_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.after_finite_of_cofinal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.waiting_eq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.waiting_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.after_approx_eq_of_mesh_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.waiting_approx_error_of_mesh_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.after_approx_eventually_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.waiting_approx_error_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.waiting_survival_eventually_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.survivalIndicator_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.survivalIndicator_tendsto_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockWaitingLimit.clock_survivalIndicator_tendsto_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.integral_mul_of_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.pathExp_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.prefixSum_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.pathExp_stronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.fixed_path_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ConditionalMoment.fixed_path_rate_one_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.finiteValues_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.finiteValue_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.history_slice_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.clock_waiting_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.after_eq_on_slice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.waiting_survival_iff_on_slice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.slice_measure_tsum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.slice_joint_survival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.countable_clock_jointSurvival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.countable_clock_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.CountableClockSurvival.countable_clock_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.EventMeasureLimit.event_measure_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.gap_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.gap_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.gaps_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.gap_stream_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.stream_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.stream_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.streams_joint_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.streams_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.gap_positive_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.all_gaps_positive_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_strictMono_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_gap_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_gap_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_gap_strongLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.large_sum_le_arrival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_tendsto_atTop' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialClocks.arrival_unbounded_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.tail_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.tail_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.interval_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.interval_measure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.shifted_restricted_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.normalized_residual_measure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.residual_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.survivalMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.tail_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.survival_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.residualOf_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.survivalOf_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.residualOf_exp_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMemoryless.residualOf_exp_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.weighted_density_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.integrable_expMeasure_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.integral_expMeasure_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.integral_expMeasure_one_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.integrable_of_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.integral_of_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.condExp_of_hasLaw_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.condExp_of_hasLaw_indepFun' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.condExp_half_of_hasLaw_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.fixed_path_integrable_of_hasLaw_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExponentialMoment.fixed_path_moment_of_hasLaw_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.value_le_block_tsum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.blockWeight_indicator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurableSet_blockTail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_blockWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_ENNRealCast' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_blockWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_le_two_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.ae_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measure_eq_top_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measurable_toNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.measure_toNat_tail_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.ae_natCast_toNat_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.lintegral_toNat_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.integrable_realToNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedBlockTail.integral_realToNat_le_two_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_eq_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_eq_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_ne_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_eq_top_of_ready_eq_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.ready_lt_after' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.ready_le_after' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_le_arrival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.measurableSet_ready_lt_arrival_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_isStoppingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.future_of_finite_cofinal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_ae_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.measure_after_top_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_mono_readiness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_eq_selected_arrival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.selectedIndex_lt_of_after_le_ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedNextRing.after_eq_extendedNextRing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedStoppingPath.representative_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedStoppingPath.waiting_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ExtendedStoppingPath.readiness_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedStoppingPath.waiting_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ExtendedStoppingPath.extended_path_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_eq_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.nonnegative_single_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_nonnegative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_nonnegative_tail_with_measurability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finiteExceeds_eq_exponential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_exponential_tail_with_measurability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.maximum_exceeds_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_maximum_exponential_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FiniteTail.pathSum_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FiniteTail.finite_path_sum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.chronologicalArrival_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.completion_one_eq_of_gap_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.completion_one_eq_gap_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.delay_zero_eq_gap_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.delay_zero_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.completion_one_exceeds_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.completion_one_tail_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.squareMaximum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.squareMaximum_zero_exceeds_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.actual_square_first_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FirstLayerClock.actual_square_first_area_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FixedClockPath.pathReady_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FixedClockPath.pathComplete_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FixedClockPath.ready_le_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.complete_le_next_ready' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.pathWaiting_eq_delay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.delay_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.path_times_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.fixed_path_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.pathWait_eq_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.forwardVertex_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.legal_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.listFiltration_of_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.pathWait_known_of_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.terminal_pathWait_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.terminal_degree_half_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.FixedClockPath.prefix_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.allPaths_pathWait_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.FixedClockPath.allPaths_degree_half_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.ready_eq_chainTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.fixed_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.delay_add_previous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.representative_eq_prefixSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_finite_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.representative_eq_prefixSum_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.exponential_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.exponential_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.lower_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.lower_tail_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_succ_le_arrival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.GreedyClockChain.chainTime_le_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.HistoryEventInvariant.history_event_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.HistoryEventInvariant.history_event_equivalence_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.HistoryEventInvariant.clock_event_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NextRing.ready_lt_nextRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextIndex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextRing_le_arrival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextRing_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.measurableSet_ready_lt_arrival_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NextRing.nextRing_isStoppingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextRing_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.future_arrival_of_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextRing_mono_readiness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.nextIndex_lt_of_nextRing_le_ready' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_eq_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_eq_nextRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_eq_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.ready_lt_extendedNextRing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_ne_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_ae_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.NextRing.extendedNextRing_ae_finite_of_cofinal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NextRing.measure_extendedNextRing_top_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.integrable_mul_of_nonneg_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.integral_mul_of_nonneg_condExp_const' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.pathExp_prefix_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_exponential_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_exponential_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.NonnegativeMoment.fixed_path_rate_one_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.PathTail.fixed_paths_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.PathTail.fixed_paths_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.RandomThresholdSurvival.joint_survival_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RandomThresholdSurvival.independent_random_threshold_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RandomThresholdSurvival.restCoordinates_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RandomThresholdSurvival.gap_independent_rest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.RandomThresholdSurvival.actual_gap_survival_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SquareTasks.mem_neighbors_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_iff_integer_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_symmetric' does not depend on any axioms
+'MathResearchAnalysis.SquareTasks.neighbors_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.not_adjacent_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_sum_step' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_parity' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_colour_flip' depends on axioms: [propext, Quot.sound]
+'MathResearchAnalysis.SquareTasks.adjacent_mem_candidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.neighbors_card_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.neighbors_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.vertices_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.mem_tasks_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.mem_tasks_colour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.mem_tasks_positive_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.tasks_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.tasks_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.successive_tasks_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.successive_tasks_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.predecessor_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.predecessor_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.successor_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.terminalPaths_inTaskLayers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.terminalPaths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTasks.prefixMaximum_eq_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTaskTail.square_prefix_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SquareTaskTail.four_two_coefficient_le_eight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SquareTaskTail.square_prefix_eight_tail_of_law_indep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.StoppingPath.real_time_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.readiness_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.delay_known' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.StoppingPath.stopped_path_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.restricted_map_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.hasLaw_of_jointSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.indep_of_jointSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.condExp_of_jointSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.integrable_of_jointSurvival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.jointSurvival_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.restricted_map_eq_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.hasLaw_of_jointSurvival_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.indep_of_jointSurvival_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.condExp_of_jointSurvival_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.SurvivalLaw.integrable_of_jointSurvival_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.representative_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.representative_sup'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.realCompletion_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.realReady_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.delay_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.delay_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.realReady_eq_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.delay_add_realReady' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.realCompletion_eq_pathCompletion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.realCompletion_eq_pathCompletion_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.positiveSystem_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskClockBridge.square_realCompletion_eq_pathCompletion_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_paths_iff_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.paths_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_inTaskLayers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.weight_eq_forward_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.path_weight_le_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.completion_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.completion_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.paths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_terminalPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_exceeds_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalPaths_inTaskLayers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.predecessor_completion_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.terminalMaximum_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.prefixMaximum_eq_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.mem_allPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.allPaths_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.layerMaximum_eq_path_max' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.layerMaximum_exceeds_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.TaskPaths.System.allPaths_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefixSum_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefixSum_pathWait' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.allPaths_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.layer_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.terminal_maximum_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.terminal_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.TaskPathTail.prefix_degree_half_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.grid_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.grid_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_eq_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_eq_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.exists_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_ne_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.le_round' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.approx_isStoppingTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.approx_countable_range' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.round_lt_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.UpperStoppingApprox.representative_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: mathlib: repository has local changes:
+  .lake/packages\mathlib
+warning: plausible: repository has local changes:
+  .lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  .lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  .lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  .lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  .lake/packages\aesop
+warning: Qq: repository has local changes:
+  .lake/packages\Qq
+warning: batteries: repository has local changes:
+  .lake/packages\batteries
+warning: Cli: repository has local changes:
+  .lake/packages\Cli
+
+EXIT_CODE=0

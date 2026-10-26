@@ -1,0 +1,14 @@
+'MathResearchAnalysis.ClockRestrictedExecution.execute_related_of_filter_map' depends on axioms: [propext]
+'MathResearchAnalysis.ClockRestrictedExecution.outside_site_of_not_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockRestrictedExecution.original_mixed_execute_related' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockRestrictedExecution.square_execute_rel' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

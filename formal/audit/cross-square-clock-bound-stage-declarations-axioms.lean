@@ -1,0 +1,6 @@
+import MathResearchAnalysis.CrossSquareClockBound
+
+#print axioms MathResearchAnalysis.CrossSquareClockBound.endpoint_rel
+#print axioms MathResearchAnalysis.CrossSquareClockBound.endpoint_rel_ae
+#print axioms MathResearchAnalysis.CrossSquareClockBound.original_nonzero_probability_le_local_failure
+#print axioms MathResearchAnalysis.CrossSquareClockBound.original_clock_survival_le_eighth

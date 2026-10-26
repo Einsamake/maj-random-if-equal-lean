@@ -1,0 +1,6 @@
+import MathResearchAnalysis.ClockRestrictedExecution
+
+#print axioms MathResearchAnalysis.ClockRestrictedExecution.execute_related_of_filter_map
+#print axioms MathResearchAnalysis.ClockRestrictedExecution.outside_site_of_not_retained
+#print axioms MathResearchAnalysis.ClockRestrictedExecution.original_mixed_execute_related
+#print axioms MathResearchAnalysis.ClockRestrictedExecution.square_execute_rel

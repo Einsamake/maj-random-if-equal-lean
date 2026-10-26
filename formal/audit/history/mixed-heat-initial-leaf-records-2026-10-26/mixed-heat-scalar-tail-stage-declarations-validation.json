@@ -1,0 +1,30 @@
+{
+  "validated_at": "2026-10-26T13:20:16.783003+08:00",
+  "modules": [
+    "ScalarHeatDecay",
+    "CountLowerTail"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ScalarHeatDecay.exponential_decay",
+    "MathResearchAnalysis.ScalarHeatDecay.exp_neg_four_le_eighth",
+    "MathResearchAnalysis.CountLowerTail.lower_tail",
+    "MathResearchAnalysis.CountLowerTail.lower_tail_quarter"
+  ],
+  "declarations_count": 4,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ScalarHeatDecay.lean": "816383cfbabfa6efcf8c3d05c68e59eebc3f3c455fb3e06b95b2fe90af9a4488",
+    "MathResearchAnalysis/CountLowerTail.lean": "e514a50e94a0830339b0d23398f7b31525653cd30896f42943f8651c8bdbd51f"
+  },
+  "new_lean_warning_lines": [
+    "warning: MathResearchAnalysis/ScalarHeatDecay.lean:28:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.",
+    "warning: MathResearchAnalysis/ScalarHeatDecay.lean:28:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice"
+  ]
+}

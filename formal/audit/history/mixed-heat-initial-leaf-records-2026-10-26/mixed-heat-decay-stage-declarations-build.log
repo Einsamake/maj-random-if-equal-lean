@@ -1,0 +1,31 @@
+✔ [3952/3953] Built MathResearchAnalysis.ScalarHeatDecay (9.2s)
+⚠ [3953/3953] Built MathResearchAnalysis.MixedHeatDecay (10s)
+info: MathResearchAnalysis/MixedHeatDecay.lean:43:36: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: MathResearchAnalysis/MixedHeatDecay.lean:43:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MathResearchAnalysis/MixedHeatDecay.lean:43:32: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MathResearchAnalysis/MixedHeatDecay.lean:43:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MathResearchAnalysis/MixedHeatDecay.lean:43:32: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: MathResearchAnalysis/MixedHeatDecay.lean:55:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MathResearchAnalysis/MixedHeatDecay.lean:55:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (3953 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

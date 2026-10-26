@@ -1,0 +1,45 @@
+'MathResearchAnalysis.ClockSampleRestriction.eventι' does not depend on any axioms
+'MathResearchAnalysis.ClockSampleRestriction.eventι_injective' does not depend on any axioms
+'MathResearchAnalysis.ClockSampleRestriction.projectClock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectMarks' does not depend on any axioms
+'MathResearchAnalysis.ClockSampleRestriction.projectSample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectClock_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectMarks_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectSample_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectClock_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectMarks_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projectSample_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_arrival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_chronologicalArrival' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_eventTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_mark' does not depend on any axioms
+'MathResearchAnalysis.ClockSampleRestriction.projected_eventSet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_good' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchAnalysis.ClockSampleRestriction.projected_good_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

@@ -1,0 +1,40 @@
+{
+  "validated_at": "2026-10-26T13:27:17.696498+08:00",
+  "modules": [
+    "ScalarHeatDecay",
+    "CountLowerTail",
+    "MixedHeatDecay",
+    "MixedRightCountHeat"
+  ],
+  "named_declarations": [
+    "MathResearchAnalysis.ScalarHeatDecay.exponential_decay",
+    "MathResearchAnalysis.ScalarHeatDecay.exp_neg_four_le_eighth",
+    "MathResearchAnalysis.CountLowerTail.lower_tail",
+    "MathResearchAnalysis.CountLowerTail.lower_tail_quarter",
+    "MathResearchAnalysis.MixedHeatDecay.mixingTime",
+    "MathResearchAnalysis.MixedHeatDecay.side_pos",
+    "MathResearchAnalysis.MixedHeatDecay.mixingTime_nonneg",
+    "MathResearchAnalysis.MixedHeatDecay.squareMass_differential_bound",
+    "MathResearchAnalysis.MixedHeatDecay.squareMass_le_exponential",
+    "MathResearchAnalysis.MixedHeatDecay.squareMass_at_mixingTime",
+    "MathResearchAnalysis.MixedRightCountHeat.centered_right_sum",
+    "MathResearchAnalysis.MixedRightCountHeat.mean_square_error_le_energy",
+    "MathResearchAnalysis.MixedRightCountHeat.mean_at_mixingTime"
+  ],
+  "declarations_count": 13,
+  "build_exit": 0,
+  "axiom_audit_exit": 0,
+  "kernel_trust_level": 0,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_sha256": {
+    "MathResearchAnalysis/ScalarHeatDecay.lean": "bc5f3a9b844f563fbc0c711f2a18c65f6ef06aa0b24faea1965361775715b9b6",
+    "MathResearchAnalysis/CountLowerTail.lean": "e514a50e94a0830339b0d23398f7b31525653cd30896f42943f8651c8bdbd51f",
+    "MathResearchAnalysis/MixedHeatDecay.lean": "1b6190111d5df196beba4ee4a7c168260bcbca71448e6c2327174914034c76c9",
+    "MathResearchAnalysis/MixedRightCountHeat.lean": "692240c36accdc663d54beb9eb6660a9ec47f55dab9499baf00bef5c4564c4d4"
+  },
+  "new_lean_warning_lines": []
+}

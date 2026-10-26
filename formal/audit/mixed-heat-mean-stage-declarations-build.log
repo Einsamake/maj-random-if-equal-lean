@@ -1,0 +1,7 @@
+✔ [3957/3958] Built MathResearchAnalysis.MixedHeatDecay (9.3s)
+✔ [3958/3958] Built MathResearchAnalysis.MixedRightCountHeat (9.4s)
+Build completed successfully (3958 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

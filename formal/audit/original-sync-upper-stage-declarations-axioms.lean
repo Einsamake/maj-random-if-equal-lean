@@ -1,0 +1,9 @@
+import MathResearchAnalysis.OriginalQuadraticUpper
+
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.original_clock_at_scheduling_le_eighth
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.synchronous_block_tail_le_half
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.recovery_block_tail
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.finiteExpected_le_two_blocks
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.finiteExpected_le_quadratic
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.tau_quadratic_upper_bound
+#print axioms MathResearchAnalysis.OriginalQuadraticUpper.tau_lt_top

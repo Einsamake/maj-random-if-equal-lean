@@ -1,0 +1,13 @@
+⚠ [3619/3620] Built MathResearchAnalysis.ScalarHeatDecay (10s)
+warning: MathResearchAnalysis/ScalarHeatDecay.lean:28:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: MathResearchAnalysis/ScalarHeatDecay.lean:28:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3620/3620] Built MathResearchAnalysis.CountLowerTail (11s)
+Build completed successfully (3620 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0

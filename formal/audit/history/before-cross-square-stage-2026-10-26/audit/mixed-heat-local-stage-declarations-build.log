@@ -1,0 +1,6 @@
+✔ [3950/3950] Built MathResearchAnalysis.MixedLocalClearing (8.4s)
+Build completed successfully (3950 jobs).
+warning: batteries: repository has local changes:
+  <workspace>\formal\analysis\.lake/packages\batteries
+
+EXIT_CODE=0
