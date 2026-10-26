@@ -6010,6 +6010,30 @@
       "workspace_sha256": "8e8fdefde8c4fe5853ea3ebeec4e781a10cdab213915a8cbca5bd9493d383fca",
       "byte_identical_to_workspace": true
     },
+    "formal/audit/original-theta-private-commit.log": {
+      "bytes": 40735,
+      "sha256": "8f074b15748e2955df3d858c1f19201a04c395be47b4f1a93e07ecf040084742",
+      "workspace_sha256": "8f074b15748e2955df3d858c1f19201a04c395be47b4f1a93e07ecf040084742",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/original-theta-private-diff-check.log": {
+      "bytes": 15,
+      "sha256": "db173a2d533fd2165d6f1a4a801bef3b973bd01fcb712027ce82b40693f9f0fd",
+      "workspace_sha256": "db173a2d533fd2165d6f1a4a801bef3b973bd01fcb712027ce82b40693f9f0fd",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/original-theta-private-push.log": {
+      "bytes": 112,
+      "sha256": "86e407b72a886685b252e25797b05523fb8d51f9307c3f7323c9b8aa7ba88e19",
+      "workspace_sha256": "86e407b72a886685b252e25797b05523fb8d51f9307c3f7323c9b8aa7ba88e19",
+      "byte_identical_to_workspace": true
+    },
+    "formal/audit/original-theta-private-stage.log": {
+      "bytes": 15,
+      "sha256": "db173a2d533fd2165d6f1a4a801bef3b973bd01fcb712027ce82b40693f9f0fd",
+      "workspace_sha256": "db173a2d533fd2165d6f1a4a801bef3b973bd01fcb712027ce82b40693f9f0fd",
+      "byte_identical_to_workspace": true
+    },
     "formal/audit/original-theta-stage-declarations-axioms.lean": {
       "bytes": 308,
       "sha256": "e94553eb1fa4353bc8b59e9902c1e67a7db0b0decb6d39ea99d446b490ed28fc",
