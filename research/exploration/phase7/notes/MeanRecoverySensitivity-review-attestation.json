@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS: independent other-author source and actual evidence review",
+  "blocking_findings": [],
+  "module": "MeanRecoverySensitivity",
+  "reviewer": "phase7_law_identifiability independent from module author",
+  "source_sha256": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+  "log_sha256": "4e1e17e09b181f8fd35fc50852ca4e21c25889b16d970fbbf915b3bbc5421690",
+  "olean_sha256": "7be925514527f4b9718b726f9d1582dd034c225731d3c245d2aa08980b9efc62",
+  "underlying_review": "evidence/MeanRecoverySensitivity-final-independent-review.json",
+  "underlying_sha256": "5c7459fd07dbe4d7c5b2437a1743c419044c8bee0893cc4d051fb6b653eefc63"
+}

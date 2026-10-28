@@ -1,0 +1,9 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.HiddenBranchWitness.branch_event_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.HiddenBranchWitness.half_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.one_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.same_totalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.different_hidden_laws' depends on axioms: [propext, Classical.choice, Quot.sound]

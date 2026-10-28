@@ -1,0 +1,231 @@
+{
+  "verdict": "PASS",
+  "blocking_findings": [],
+  "scope": "固定独立速率盒；逐时刻且同一合法角点的 x2、真实 CDF 与原 product-law 总等待事件概率最大性。",
+  "review_reasoning": [
+    "RateParams 只有 a、b、e、f 四个实数。RateBox 的假设只有四个区间非空、aLo/bLo 正、eLo/fLo 非负以及 eLo+fLo 正，不含极大性、CDF 比较、或待证结论。",
+    "allowedRates 是四个区间约束的合取，因而是独立笛卡尔盒。corner 在 a、b、e 取各自上端点；当 eHi≤bHi 时取 fHi，否则取 fLo。corner_mem 给出了同一选点的合法性。",
+    "allowed_valid 从下界推出 a,b>0、e,f≥0、e+f>0，故每一个允许点都生成原概率构造中的合法概率测度。",
+    "CoordinateResponseOrder 用线性响应核的差分恒等式证明 a、b、e 的逐坐标单调性。x0−x2 的核表达式给出 e 单调性所需的非负性，未额外要求 b 与 e 的先验大小关系。",
+    "x2_le_corner 先增加 a、b、e，再在已经替换后的 (bHi,eHi) 上决定 f 的方向；不要求盒内所有点落在同一 b/e 顺序区域。",
+    "TankResponse 的 gap12_kernel 说明 x1−x2 的符号由 b−e 决定，并经 delta_kernel 得到 f 的单调或反单调性。eHi=bHi 的边界选取 fHi 仍合法，且响应与 f 无关。",
+    "BranchedLaw.law 是分支 Bernoulli 与三个指数等待时间的乘积测度；分支取 true 的概率是 f/(e+f)，total=Wc+(if J then Wb+Wa else Wa)。actualLaw 未换用其他替代分布。",
+    "BranchedLaw.totalMeasure 是 law 在 total 下的推前。GeneralTankCdf.cdf_totalMeasure_eq_x2 与 total_event_eq_x2 将真实 CDF 及原乘积测度事件 {total≤t} 的概率分别等同于 x2。",
+    "IsGreatest 的首项提供 selected 的实际集合成员见证，次项比较全部 allowed points，因此是可达到最大值而非仅上确界。",
+    "selected 的定义不依赖 t，selected_maximizes_all_times 在同一 selected K 上量化所有 t≥0，满足同一角点全时刻最大。"
+  ],
+  "interpretation_limits": [
+    "结论是浓度/截止时刻完成概率/CDF 最大；按通常随机序含义，对应等待时间更快，不是等待时间最坏或最长。",
+    "仅审查固定参数、零初值和当前 TankResponse 模型；不扩张为一般时变输入或其他可行集。",
+    "本记录不构成人类读者测试、外部专家评审或新颖性认证。"
+  ],
+  "read_definitions": [
+    {
+      "file": "research/exploration/phase8/lean/RateBoxMaximum.lean",
+      "names": [
+        "RateParams",
+        "RateBox",
+        "allowedRates",
+        "fStar",
+        "corner",
+        "corner_mem",
+        "allowed_valid",
+        "x2_le_corner",
+        "Allowed",
+        "selected",
+        "actualLaw",
+        "actualTotalMeasure",
+        "actualLaw_probability",
+        "actualTotalMeasure_probability",
+        "cdfValue",
+        "eventValue",
+        "cdfValues",
+        "eventValues",
+        "cdfValue_eq_x2",
+        "eventValue_eq_x2",
+        "selected_cdf_isGreatest",
+        "selected_event_isGreatest",
+        "selected_maximizes_all_times"
+      ]
+    },
+    {
+      "file": "research/exploration/phase8/lean/CoordinateResponseOrder.lean",
+      "names": [
+        "gap02_kernel",
+        "x0_sub_x2_nonneg",
+        "x0_mono_a",
+        "delta1_a_kernel",
+        "x1_mono_a",
+        "delta2_a_kernel",
+        "x2_mono_a",
+        "delta1_b_kernel",
+        "x1_mono_b",
+        "delta2_b_kernel",
+        "x2_mono_b",
+        "delta2_e_kernel",
+        "x2_mono_e"
+      ]
+    },
+    {
+      "file": "research/exploration/phase6/lean/TankResponse.lean",
+      "names": [
+        "x0",
+        "x1",
+        "x2",
+        "x0_hasDerivAt",
+        "x1_hasDerivAt",
+        "x2_hasDerivAt",
+        "solution_unique",
+        "gap01_kernel",
+        "x0_sub_x1_nonneg",
+        "gap12_kernel",
+        "x1_sub_x2_nonneg",
+        "x1_sub_x2_nonpos",
+        "delta_kernel",
+        "x2_mono_f_of_e_le_b",
+        "x2_antitone_f_of_b_le_e",
+        "x2_eq_of_b_eq_e"
+      ]
+    },
+    {
+      "file": "research/exploration/phase6/lean/GeneralTankCdf.lean",
+      "names": [
+        "cdf_exp_eq_x0",
+        "cdf_middle_eq_x1",
+        "cdf_direct_kernel",
+        "cdf_via_kernel",
+        "weighted_kernels",
+        "cdf_totalMeasure_eq_x2",
+        "total_event_eq_cdf",
+        "total_event_eq_x2"
+      ]
+    },
+    {
+      "file": "research/exploration/phase5/lean/BranchedLaw.lean",
+      "names": [
+        "Sample",
+        "branchProb",
+        "branchMeasure",
+        "waitLaw",
+        "law",
+        "J",
+        "Wc",
+        "Wb",
+        "Wa",
+        "total",
+        "total_measurable",
+        "totalMeasure",
+        "law_probability",
+        "totalMeasure_probability",
+        "rectangle_factorization",
+        "coordinate_factorization"
+      ]
+    }
+  ],
+  "review_kind": "Independent source-level semantic review bound to final successful attempt2 artifacts",
+  "checked_at": "2026-10-28T00:04:34.3628071+08:00",
+  "reviewer": "independent subagent /root/phase8_box_independent",
+  "final_evidence": [
+    {
+      "module": "RateBoxMaximum",
+      "source": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/lean/RateBoxMaximum.lean",
+        "sha256": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f"
+      },
+      "source_snapshot": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/RateBoxMaximum-attempt2.source.lean",
+        "sha256": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f"
+      },
+      "log": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/RateBoxMaximum-attempt2.log",
+        "sha256": "7864052331c9ad2a83cb44acf4e2070c5ec634e26e6b89f706ab13d0b92a991d"
+      },
+      "build_record": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/RateBoxMaximum-attempt2.json",
+        "sha256": "f224818edd948d7115ccf431b1203ddb00577816dfd2fdf0f6196bf6760e2858"
+      },
+      "olean": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/build/RateBoxMaximum.olean",
+        "sha256": "a6f2b4e5da93bcb4d8881c8cd382ff48d36b181a46cf0d29d8df9dda9a7779e3"
+      },
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "expected_print_count": 46,
+      "actual_print_count": 46,
+      "missing_prints": [],
+      "unexpected_prints": [],
+      "current_source_matches_snapshot": true,
+      "log_has_error": false,
+      "log_has_sorryAx": false,
+      "source_has_sorry_or_admit": false,
+      "actual_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "CoordinateResponseOrder",
+      "source": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/lean/CoordinateResponseOrder.lean",
+        "sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e"
+      },
+      "source_snapshot": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/CoordinateResponseOrder-attempt2.source.lean",
+        "sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e"
+      },
+      "log": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/CoordinateResponseOrder-attempt2.log",
+        "sha256": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d"
+      },
+      "build_record": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/evidence/CoordinateResponseOrder-attempt2.json",
+        "sha256": "7a87f4ed638941ea6056e0fcb7ca8dc89e772acb92e8105dde6dda0103623521"
+      },
+      "olean": {
+        "path": "D:/MyWorks/Math/research/exploration/phase8/build/CoordinateResponseOrder.olean",
+        "sha256": "800f15545d7475d2d81a3b2358720d93981caa5e1257a5a2a6ceadde3404c61a"
+      },
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "expected_print_count": 13,
+      "actual_print_count": 13,
+      "missing_prints": [],
+      "unexpected_prints": [],
+      "current_source_matches_snapshot": true,
+      "log_has_error": false,
+      "log_has_sorryAx": false,
+      "source_has_sorry_or_admit": false,
+      "actual_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "imported_source_fingerprints": [
+    {
+      "path": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\GeneralTankCdf.lean",
+      "sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16"
+    },
+    {
+      "path": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\TankResponse.lean",
+      "sha256": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f"
+    },
+    {
+      "path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedLaw.lean",
+      "sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf"
+    }
+  ],
+  "evidence_method": [
+    "独立读取最终源码、成功 attempt2 的源码快照、完整日志及构建记录，并直接对实物重新计算 SHA-256。",
+    "逐条比较源码中的 #print axioms 名称与实际日志打印名称；检查源码不存在 sorry/admit，日志不存在 error/sorryAx。",
+    "编译由现有最终 attempt2 证据提供；本审查未另行重复运行 Lean，因此不把本记录称为第二次独立重编译。",
+    "未修改正式数学源或既存验收文件；本记录新建于 notes/box-independent-review.json。"
+  ],
+  "nonblocking_findings": [
+    "两份日志均含 batteries 仓库有本地改动的环境警告；本记录绑定当前构建产物，不声称依赖仓库无修改。",
+    "RateBoxMaximum 的废弃名称警告和 CoordinateResponseOrder 的 tactic linter 警告不改变定理声明或已核验的证明依赖。",
+    "失败的 RateBoxMaximum attempt1 不作为本次 PASS 的证据。"
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "checked_at": "2026-10-28T00:33:52.673617+08:00",
+  "status": "PASS",
+  "stage_complete": true,
+  "human_materials_and_reader_cycle_pending": false,
+  "reader_review": {
+    "reviewer": "/root/phase10_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "first_read": {
+      "role": "Independent simulated undergraduate mathematics reader; basic analysis and probability; no Lean or project background",
+      "scope": [
+        "README.md",
+        "images/common-completion-mass.png"
+      ],
+      "actual_image_viewed": true,
+      "read_source_audit_notes_external_links": false,
+      "readme_sha256": "3ACA448FAE4B592E80E2680C0FFBFC5FF370BEDD08FEC9C0A45B15867D55D1AE",
+      "image_sha256": "7234AF11479D9A8DA92D65B035A1B917222EC339599DC8372C4C9A2BE0831C72",
+      "result": "No blocking comprehension gap in the steps promised by this chapter; two nonblocking presentation issues require attention.",
+      "restatement": {
+        "goal": "比较两个随机任务的总完成时间 S；虽然内部多走一段的概率相差 1/6，但要证明任意可测时间集合 A 的概率差都被 epsilon/[6(1+epsilon)] 控制。这里 A 只可观测总时间，不能直接观测内部 J。",
+        "original_model": "四个随机量 W_c、W_a、W_b、J 相互独立，S=W_c+W_a+J W_b。W_a 的指数速率为 1，W_b 为 b=1+epsilon，W_c 为 1+f，J 为取值 0、1 且 P(J=1)=f/(1+f) 的随机量。低模型 f=1/2，高模型 f=1。",
+        "positive_mass_and_convolution": "E_r 是质量为 1 的指数分布；例如 (1/3)E_r 是非负分量，其质量为 1/3。分量相加是把各时间集合上的质量相加；卷积对应独立等待相加，质量相乘。分量不必各自是概率分布。",
+        "route_distributions": "按 J=0、J=1 分组可得 mu_L=(2/3)(E_1.5*E_1)+(1/3)(E_1.5*E_b*E_1)，mu_H=(1/2)(E_2*E_1)+(1/2)(E_2*E_b*E_1)。",
+        "exponential_identity": "正文先积分得到 E_s*E_r 在非负时间的密度 rs/(s-r) times [exp(-rt)-exp(-st)]，再把它乘 (s-r)/s 并加 (r/s)E_s 的密度，恰好得到 r exp(-rt)。因此给定的正分量恒等式可由本科积分检查。",
+        "two_decompositions": "定义 Q_L=(1/3)(E_1.5*E_1)、Q_H=(1/2)(E_2*E_1)、kappa=(1/6)(E_1.5*E_2)。把 E_1=(1/2)E_2+(1/2)(E_2*E_1) 代入 Q_L 得 Q_L=kappa+kappa*E_1；把 E_1=(2/3)E_1.5+(1/3)(E_1.5*E_1) 代入 Q_H 得 Q_H=2kappa+kappa*E_1。因此 Q_H=Q_L+kappa，2Q_L=Q_H+kappa*E_1。",
+        "common_R": "令 R=Q_H+Q_L*E_b。由于 mu_L=2Q_L+Q_L*E_b，代入 2Q_L 的式子得 mu_L=R+kappa*E_1；由于 mu_H=Q_H+Q_H*E_b，把后一项中的 Q_H 换为 Q_L+kappa，得 mu_H=R+kappa*E_b。这是输出分布的另一种表示，不改变原 J 的概率。",
+        "common_density": "b>=1 时 rho_b(t)=exp(-bt) 同时不大于 E_b 的密度 b exp(-bt) 和 E_1 的密度 exp(-t)。它的积分是 1/b，所以它是非负分量，通常并未归一化。卷积后 kappa*rho_b 同时包含在两个余下分量中，gamma=R+kappa*rho_b 的质量 c=5/6+1/(6b)。",
+        "arbitrary_events": "余下的 alpha_L=kappa*(E_1-rho_b)、alpha_H=kappa*(E_b-rho_b) 均非负且质量都是 1-c。对每个可测 A，共同 gamma(A) 抵消，而两个 alpha(A) 都在 [0,1-c]，所以差的绝对值最多为 1-c，不是 2(1-c)。这对每一个时间事件同时成立。",
+        "limits": "本章只处理一次总完成时间观测和给定参数家族；它没有证明多次独立观测的联合结论、决策可靠性、原二维自动机的新结论或新颖性。总变差采用事件概率差上确界这一约定。"
+      },
+      "hand_calculations": {
+        "branch_low": "(1/2)/(1+1/2)=(1/2)/(3/2)=1/3",
+        "branch_high": "1/(1+1)=1/2",
+        "branch_difference": "1/2-1/3=1/6",
+        "R_mass": "mass(Q_H)+mass(Q_L)*mass(E_b)=1/2+(1/3)*1=5/6",
+        "kappa_mass": "(1/6)*1*1=1/6",
+        "numeric_b": "epsilon=1/100 gives b=101/100 and 1/b=100/101",
+        "numeric_common_mass": "c=5/6+1/(6*(101/100))=505/606+100/606=605/606",
+        "numeric_remaining_mass": "1-c=1/606; equivalently (1/100)/(6*(101/100))=1/606",
+        "interval_example": "For A=[1,2], both remaining event masses belong to [0,1/606], hence |mu_H(A)-mu_L(A)|<=1/606. No integration of that particular interval is required and equality is not asserted.",
+        "percentage_points": "(1/606)*100 approximately 0.1650165 percentage points"
+      },
+      "feedback": [
+        {
+          "id": "R1",
+          "category": "terminology_and_model_wording",
+          "location": "README heading",
+          "original_quote": "两个模型，只有绕路速率不同",
+          "severity": "nonblocking",
+          "reader_problem": "依照刚读到的随机模型，绕路等待 W_b 的速率 b 在两个模型中完全相同。变化的是 f，同时造成 W_c 速率和 J=1 概率变化；若 f 被称作某种内部绕路触发速率，正文尚未定义该机制。此标题容易让我先误以为只有 W_b 参数变化。公式足以纠正此误解，故未阻断下文。",
+          "suggested_revision": "把标题改为两个模型，由参数 f 控制分岔，或直接写两个模型：f 分别取 1/2 和 1。"
+        },
+        {
+          "id": "R2",
+          "category": "undefined_figure_symbols",
+          "location": "PNG subtitle at top",
+          "original_quote": "a = e = 1, b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+          "severity": "nonblocking",
+          "reader_problem": "a 和 e 在正文均未定义，且下文推导不用它们。图片说四个随机量的原始定义见正文，但正文只给 W_a、W_b、W_c、J，不给 a、e 的单独含义。",
+          "suggested_revision": "删掉 a=e=1，保留 b=1+epsilon、epsilon>0 和两个 f 值。"
+        }
+      ],
+      "no_gap_observed": [
+        "正分量及总质量已有解释",
+        "两次指数恒等式的代入可逐项算出",
+        "R 与 kappa 的重组有正文检查步骤",
+        "rho_b 的两个密度不等式和积分均明确",
+        "剩余质量如何控制任意可测事件已闭合",
+        "数值算例与图中 605/606、1/606 一致"
+      ],
+      "deferred_proofs_or_claims": [
+        "多次独立样本联合分布和具体决策规则明确留到后续；不作为当前缺口"
+      ],
+      "image_text_agreement": "除 a=e=1 未定义外，图中低高模型、R 质量 5/6、余块质量 1/6、gamma、c 和数值例子均与正文一致。图明确声明这是总完成时间的等价新表示，原内部绕路概率仍为 1/3、1/2。",
+      "disclaimer": "This is an AI simulation of an undergraduate reader. It is not human user testing, expert review, mathematical correctness certification, or novelty certification.",
+      "reread_status": "Awaiting revised README and image before rereading final fingerprints."
+    },
+    "final_reread": {
+      "role": "Independent simulated undergraduate mathematics reader; basic analysis and probability; no Lean or prior project history",
+      "scope": [
+        "README.md",
+        "images/common-completion-mass.png"
+      ],
+      "actual_image_viewed": true,
+      "read_source_audit_other_notes_external_links": false,
+      "readme_sha256": "55841FFD1290E00320F76DCDE8DD6159F20CB1DC877CDBC00FAE3B9A99553980",
+      "image_sha256": "AE28C2B8029A9C15CC2FB19087245CFE4777886381D96FFB48CB1E562894EAC8",
+      "status": "passed_simulated_undergraduate_reader_reread",
+      "unresolved_blockers": [],
+      "unresolved_nonblocking_issues": [],
+      "feedback_resolution": [
+        {
+          "id": "R1",
+          "first_read_quote": "两个模型，只有绕路速率不同",
+          "revised_quote": "两个模型，只改变参数 $f$",
+          "result": "resolved",
+          "explanation": "新标题准确说只有参数 f 改变；正文已给 W_c 速率 1+f 和绕路概率 f/(1+f)，没有再误指固定的 W_b 速率 b。"
+        },
+        {
+          "id": "R2",
+          "first_read_quote": "a = e = 1, b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+          "revised_quote": "b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+          "result": "resolved",
+          "explanation": "实际重画后的图已删去正文未定义的 a、e，只保留正文定义并使用的 b、epsilon 和 f。"
+        }
+      ],
+      "restatement": {
+        "goal_and_observation": "目标是统一控制两个模型的每个可测完成时间事件 A 的概率差。A 只看总完成时间 S，不看 J 的内部取值。",
+        "original_model": "四个独立随机量满足 S=W_c+W_a+J W_b；W_a 速率 1，W_b 速率 b=1+epsilon，W_c 速率 1+f，P(J=1)=f/(1+f)。f 分别为 1/2、1，故原来内部绕路概率仍为 1/3、1/2。",
+        "positive_output_representation": "E_r 是质量 1 的指数分布，乘常数后可以是质量小于 1 的非负分量。卷积表示独立等待相加，分量质量相乘。两次指数等待恒等式给 Q_L=kappa+kappa*E_1，Q_H=2kappa+kappa*E_1，从而 Q_H=Q_L+kappa 和 2Q_L=Q_H+kappa*E_1。定义 R=Q_H+Q_L*E_b 后，可把相同输出分布重新写为 mu_L=R+kappa*E_1、mu_H=R+kappa*E_b。R 质量为 5/6，kappa 质量为 1/6。",
+        "hidden_branch_distinction": "这里的 1/6 是等价表示中某个正分量的质量，不是原模型 J=1 的新概率。原绕路事件依旧相差 1/6。只有观察 S 时，重新表示才足以用于比较其分布，不能据此把原内部路线也当成相同。",
+        "rho_and_common_mass": "rho_b 在 t>=0 的密度 exp(-bt)，负时间为 0。它同时被 E_1 的密度 exp(-t) 和 E_b 的密度 b exp(-bt) 包含，质量为 1/b。因此 gamma=R+kappa*rho_b 被两个输出分布共同包含，质量 c=5/6+1/(6b)。",
+        "arbitrary_event_argument": "减去 gamma 后，两边剩下非负分量 alpha_L、alpha_H，质量都为 1-c。任意可测 A 上共同 gamma(A) 抵消。两个剩余事件质量均在 [0,1-c]，所以其差的绝对值不超过 1-c=epsilon/[6(1+epsilon)]。",
+        "explicit_scope": "这是单次总时间观测的事件概率界。多次样本联合分布、具体判别规则、二维自动机的新结论和新颖性均未在本章证明。"
+      },
+      "recalculations": {
+        "low_hidden_branch": "(1/2)/(1+1/2)=1/3",
+        "high_hidden_branch": "1/(1+1)=1/2",
+        "hidden_branch_difference": "1/2-1/3=1/6",
+        "R_mass": "1/2+1/3=5/6",
+        "kappa_mass": "(1/6)*1*1=1/6",
+        "b_at_epsilon_0_01": "1+1/100=101/100",
+        "rho_mass": "1/b=100/101",
+        "common_mass": "5/6+1/(6b)=505/606+100/606=605/606",
+        "remaining_mass": "1-605/606=1/606",
+        "epsilon_formula_check": "(1/100)/(6*(101/100))=1/606",
+        "A_1_2": "|mu_H([1,2])-mu_L([1,2])|<=1/606; this is an upper guarantee and does not assert equality.",
+        "percentage_points": "(1/606)*100=0.1650165... percentage points, matching approximately 0.1650 in the figure."
+      },
+      "figure_checks": [
+        "低高两行的共同 R 质量均为 5/6",
+        "余块 kappa*E_1 与 kappa*E_b 质量均为 1/6",
+        "图明确说明等价输出表示与原内部绕路概率的区别",
+        "rho、gamma、c 的公式与正文相同",
+        "605/606、1/606 及百分数算例与正文相同",
+        "未看到裁切、遮挡或图文矛盾"
+      ],
+      "first_read_record_preserved": "notes/reader-first-feedback.json was not edited during reread; it retains the original version fingerprints.",
+      "disclaimer": "AI simulation of an undergraduate reader only; not human user testing, expert review, mathematical correctness certification, or novelty certification."
+    },
+    "reviewed_file_sha256": {
+      "README.md": "55841ffd1290e00320f76dcde8dd6159f20cb1dc877cdbc00fae3b9a99553980",
+      "images/common-completion-mass.png": "ae28c2b8029a9c15cc2fb19087245cfe4777886381d96ffb48cb1e562894eac8"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "sha256": "3aca448fae4b592e80e2680c0ffbfc5ff370bedd08fec9c0a45b15867d55d1ae",
+        "actions": [
+          "Introduced measurable completiontime events through concreteintervalexamples",
+          "Defined positive nonnormalized distributioncomponents and two exponentialresolvents",
+          "Explained equivalent outputrepresentation doesnot preserve original hiddenbranch law",
+          "Gave explicit commonmass calculation and proper TVconvention, kept finite-sample claims pending"
+        ]
+      },
+      {
+        "pass": 2,
+        "sha256": "3aca448fae4b592e80e2680c0ffbfc5ff370bedd08fec9c0a45b15867d55d1ae",
+        "actions": [
+          "Actually inspectedPNG and corrected topbar geometric lengths to1125:225=5:1",
+          "Changed fourwaitingquantities to fourrandomquantities,defined Er infigurecaption",
+          "Checked commonmass605/606 andremaining1/606 with exactFractions",
+          "Clarified commonoutput representation not hiddenJroute equivalence,positive finitecomponents not probabilitymeasures alone"
+        ]
+      },
+      {
+        "pass": 3,
+        "sha256": "55841ffd1290e00320f76dcde8dd6159f20cb1dc877cdbc00fae3b9a99553980",
+        "actions": [
+          "Independent reader could reconstruct bothpositive rewrites andcommonmass estimate, no blockers",
+          "Changed misleading detourrate heading to parameterf; Wb rateb fixedwithinpair",
+          "Removed undefineda/e symbols fromfigureheader",
+          "Defined rho density0 atnegative time explicitly"
+        ],
+        "based_on": "notes/reader-first-feedback.json"
+      }
+    ],
+    "scope": "Context-free undergraduate-background AI simulation, only text/actualPNG; nothumanexpertreview ornoveltycertification"
+  },
+  "local_links_checked": 1,
+  "mathematical_modules": 4,
+  "named_declarations": 54,
+  "new_theorems": 42,
+  "modules": {
+    "CommonSubmeasureBound": {
+      "source_sha256": "0f83d6a7e7e060cf8398bf5c3e528135081ea7ee316acb271ca55b2c6397e2b9",
+      "log_sha256": "d36ceab6e5f31c3b9c602346c3aee6dacaf38fc989653591cd0727b89ee3e349",
+      "record_sha256": "3a1db375c49721a3636c1f2c51fc8bf9aaa9472456ccdea0b07eb0aa2a01915e",
+      "review_sha256": "6fb6bbc71a04140cc0aa4e9371ddf3b025abd96d87bd690c1330865f6bd32980",
+      "named": 5,
+      "theorems": 5,
+      "olean_sha256": "851d88a594f8d26e82dd47ff7c43d0f9cd63925fb3383fa7c7dcc7e5dec35617"
+    },
+    "ExponentialMinorization": {
+      "source_sha256": "99b27e081493bb4af2ad6b5b4f1f89e912a25e13a83b6b4a39f8cd8a84f66f5e",
+      "log_sha256": "7f10ac6245129d3c85060d6d20d5f97c034d42510d126c118a915b1b3d81ee2d",
+      "record_sha256": "228b4d656eecee3fb5ac781f90fc54d2ef0d595b879da5590a5429e7cadb0ca6",
+      "review_sha256": "466e9e63920b80ba4bbba4868b72b358f2021a76446e7e3bcc662bed8ada839b",
+      "named": 10,
+      "theorems": 9,
+      "olean_sha256": "bb69b4035f896deafbdf8508b373772b3877dad10c8911f70364d3d917788ea7"
+    },
+    "PositiveWaitingDecomposition": {
+      "source_sha256": "e723d9a22b667b61a45dca03614a354b53bd4ecfadff6b0516c9356fbeed5e75",
+      "log_sha256": "2c7d67c94071f2eb909250f5521c39a9ad55776eaa9161fd97504aa272dcc971",
+      "record_sha256": "f2bef3a4b15b96d6c8a6a7d774bfa0ab2013fcaf74c37daeba4079f0336406f0",
+      "review_sha256": "306f30f1f4896277a3434fd538c93ef677a011feb7da6625e2fd272e517a7c7f",
+      "named": 30,
+      "theorems": 20,
+      "olean_sha256": "d7beddccd24daaee8c9c3d5b0dc10b9ce287c009b47af37c8041f3bb6a3c6350"
+    },
+    "ActualCompletionEventBound": {
+      "source_sha256": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+      "log_sha256": "b3395539c7e80f4eb5598a038d763c6acb851f26b8837f9f30e9969adc9c462f",
+      "record_sha256": "5d4c4778d88db2bbd4ea283827be0556c5b5af12cc336675ea21c20275fe38f8",
+      "review_sha256": "db2d60092c8ef6e0a7d1f983ec7fd13afe769a4013045be7f546d6d9fdd17beb",
+      "named": 9,
+      "theorems": 8,
+      "olean_sha256": "01d797598305432868aa4d8c173031f630ba7b11d07d5d5cfc13097524d932b3"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "d55c5825cb6d0eb7b7ff268241d37e51e298ce1f3fd9e41ddaf1fab81987eafe",
+    "log_sha256": "4b8662d35be7983391bcc71570560546482bcc4179a2bd666b44512cc06ee862",
+    "actual_prints": 54,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "original_formal_sources_unchanged": 267,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "prior_accepted_artifacts_unchanged": true,
+  "artifact_sha256": {
+    "audit-selection.json": "16e519ac53e0b950c11571787eef423057fdaf0765bf385c265312b4a194051b",
+    "audit_module.py": "f3dda442bdfc6db5b2758b664428b489c1f2f26f9950701edeb2a2efa06f5e21",
+    "draw_figures.py": "408106e670e9655320b22be64ff3a888923a7332accf281dba57bf0ddca7a94d",
+    "evidence/ActualCompletionEventBound-attempt1.json": "a1e03c21a74102b67a4d9c730aa033fe01923b100c42c3eb2a2ea5835c26a518",
+    "evidence/ActualCompletionEventBound-attempt1.log": "5556efb4a619e0805495ffa6e181eca3ef05c7f1fb75d3afc2a25c6546f0fa52",
+    "evidence/ActualCompletionEventBound-attempt1.source.lean": "18dd741826fe5c28110bfe617f487c6b2d8a860a818881dec7f64ba7b896559f",
+    "evidence/ActualCompletionEventBound-attempt2.json": "5d4c4778d88db2bbd4ea283827be0556c5b5af12cc336675ea21c20275fe38f8",
+    "evidence/ActualCompletionEventBound-attempt2.log": "b3395539c7e80f4eb5598a038d763c6acb851f26b8837f9f30e9969adc9c462f",
+    "evidence/ActualCompletionEventBound-attempt2.source.lean": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+    "evidence/CommonSubmeasureBound-attempt1.json": "e39f1dfc86f97496d7897c53e52eb2b2bfb704c44d1519d898bc310ea20bbf4b",
+    "evidence/CommonSubmeasureBound-attempt1.log": "e2b48812d365280dfe4ae6db2233556c8115b3c625927724ba46ec1d76bf0caf",
+    "evidence/CommonSubmeasureBound-attempt1.source.lean": "55f99097da5ec1cdec64095e0c6901986e044b320dd74cd82a6dfba2ff2a921c",
+    "evidence/CommonSubmeasureBound-attempt2.json": "9ab0a321a2e20f9901c204f349e60160c3c264c8ab929c3bb812e780dacabb69",
+    "evidence/CommonSubmeasureBound-attempt2.log": "9f3c4435370f504a0f1f4b0739072022936e1666273edc39abf9da89e5855f21",
+    "evidence/CommonSubmeasureBound-attempt2.source.lean": "f35f1dba22bc1ed9495ef59dbb69977e7b41e1e34a48cffe9352a780d95bb54c",
+    "evidence/CommonSubmeasureBound-attempt3.json": "3a1db375c49721a3636c1f2c51fc8bf9aaa9472456ccdea0b07eb0aa2a01915e",
+    "evidence/CommonSubmeasureBound-attempt3.log": "d36ceab6e5f31c3b9c602346c3aee6dacaf38fc989653591cd0727b89ee3e349",
+    "evidence/CommonSubmeasureBound-attempt3.source.lean": "0f83d6a7e7e060cf8398bf5c3e528135081ea7ee316acb271ca55b2c6397e2b9",
+    "evidence/ExponentialMinorization-attempt1.json": "4cdc67dc137936891e7c5acf012d60d2c397d0276e3eca789fd7fea93af96f94",
+    "evidence/ExponentialMinorization-attempt1.log": "068f635dd146cda97b2b1b76f4a5cd54caca0786a1a97d6866f9e8798cce64d1",
+    "evidence/ExponentialMinorization-attempt1.source.lean": "f674182fd8c23d78a744dc0ddb59b3e92fc2cefcf83803660e3b1c1de644e152",
+    "evidence/ExponentialMinorization-attempt2.json": "81f6ca7bfaf5674f19ccca0b0ba7a639c8aad4d887028ed1367a3286b0664b61",
+    "evidence/ExponentialMinorization-attempt2.log": "84c3018f8657c4ab772a349e0a04d69a260933fd2bfa48bd651fbaa76a2e8aaf",
+    "evidence/ExponentialMinorization-attempt2.source.lean": "097307ca4075f2f0f2e26c4189fd033de7634660c5d7cd05030f83873a29665a",
+    "evidence/ExponentialMinorization-attempt3.json": "228b4d656eecee3fb5ac781f90fc54d2ef0d595b879da5590a5429e7cadb0ca6",
+    "evidence/ExponentialMinorization-attempt3.log": "7f10ac6245129d3c85060d6d20d5f97c034d42510d126c118a915b1b3d81ee2d",
+    "evidence/ExponentialMinorization-attempt3.source.lean": "99b27e081493bb4af2ad6b5b4f1f89e912a25e13a83b6b4a39f8cd8a84f66f5e",
+    "evidence/Phase10Audit-attempt1.json": "e14210ba8af233416c6b8044f3637d7450416bb3aabac32db907a7bbd8e901b7",
+    "evidence/Phase10Audit-attempt1.log": "4b8662d35be7983391bcc71570560546482bcc4179a2bd666b44512cc06ee862",
+    "evidence/Phase10Audit-attempt1.source.lean": "d55c5825cb6d0eb7b7ff268241d37e51e298ce1f3fd9e41ddaf1fab81987eafe",
+    "evidence/PositiveWaitingDecomposition-attempt1.json": "d1f018cbc12bda73996f4166b55dd7b03a368ef27345cc99423ab48454e9af8a",
+    "evidence/PositiveWaitingDecomposition-attempt1.log": "db2cdeea62e94233c039ec728729602fe785164c42ea14d30a26c9c9c00d3cb8",
+    "evidence/PositiveWaitingDecomposition-attempt1.source.lean": "b3ae9348f742c29b5bdcd0ca7cc819db7773fcd26ade5d120417a9238d803d90",
+    "evidence/PositiveWaitingDecomposition-attempt2.json": "0dc2f065112759c904c5ac23a72229dff050d23479fbed21ea1799dc56d5eb4e",
+    "evidence/PositiveWaitingDecomposition-attempt2.log": "f89b29fc5c616b0453bef7cef4a345291b61924175cd9cd8026389d643226227",
+    "evidence/PositiveWaitingDecomposition-attempt2.source.lean": "bd0a4dd4a64c15b547fd2dc9f5b7f41aa3e1085d5b19b7b728f2b25e288d7ceb",
+    "evidence/PositiveWaitingDecomposition-attempt3.json": "a35e898df5ec1ffa80d2b147f120798d46a66fe2e94b05603344f7e3edefbf10",
+    "evidence/PositiveWaitingDecomposition-attempt3.log": "4718e0c60ced15dc49e00966ff46fb05c58e06b505bf7fcd8d3d485d33ab682b",
+    "evidence/PositiveWaitingDecomposition-attempt3.source.lean": "65a3f4533d5a55ad25dfb5e9bb38b5f9f7196f9956b8b3cab101743baed47d37",
+    "evidence/PositiveWaitingDecomposition-attempt4.json": "f2bef3a4b15b96d6c8a6a7d774bfa0ab2013fcaf74c37daeba4079f0336406f0",
+    "evidence/PositiveWaitingDecomposition-attempt4.log": "2c7d67c94071f2eb909250f5521c39a9ad55776eaa9161fd97504aa272dcc971",
+    "evidence/PositiveWaitingDecomposition-attempt4.source.lean": "e723d9a22b667b61a45dca03614a354b53bd4ecfadff6b0516c9356fbeed5e75",
+    "figure-data.json": "4cc5670cc3ba50de058e94bf0c7658c1a256a55f020c517ceb8c96832ef60158",
+    "images/common-completion-mass.png": "ae28c2b8029a9c15cc2fb19087245cfe4777886381d96ffb48cb1e562894eac8",
+    "lean/ActualCompletionEventBound.lean": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+    "lean/CommonSubmeasureBound.lean": "0f83d6a7e7e060cf8398bf5c3e528135081ea7ee316acb271ca55b2c6397e2b9",
+    "lean/ExponentialMinorization.lean": "99b27e081493bb4af2ad6b5b4f1f89e912a25e13a83b6b4a39f8cd8a84f66f5e",
+    "lean/Phase10Audit.lean": "d55c5825cb6d0eb7b7ff268241d37e51e298ce1f3fd9e41ddaf1fab81987eafe",
+    "lean/PositiveWaitingDecomposition.lean": "e723d9a22b667b61a45dca03614a354b53bd4ecfadff6b0516c9356fbeed5e75",
+    "notes/actual-event-independent-review.json": "db2d60092c8ef6e0a7d1f983ec7fd13afe769a4013045be7f546d6d9fdd17beb",
+    "notes/common-submeasure-independent-review.json": "6fb6bbc71a04140cc0aa4e9371ddf3b025abd96d87bd690c1330865f6bd32980",
+    "notes/editing-passes.json": "938bc7d8bf08001c75c207f41e0a5656c47fde49593b88eccfaaeed1cd73368b",
+    "notes/exponential-independent-review.json": "466e9e63920b80ba4bbba4868b72b358f2021a76446e7e3bcc662bed8ada839b",
+    "notes/phase9-freeze.json": "90f1af8da5af541aef1c870062c73e962b6b6dcbfc17811d8795a19df6ecde80",
+    "notes/positive-decomposition-independent-review.json": "306f30f1f4896277a3434fd538c93ef677a011feb7da6625e2fd272e517a7c7f",
+    "notes/reader-final-reread.json": "a55151116c2097b4279416ce58aa1f9305bb8dfdbe8da52c502b1fba81dbc326",
+    "notes/reader-first-feedback.json": "fff54422bac3d48b2b305c3be918706d6b11cd00d5da07ca54780ddd1659790f",
+    "reader-review.json": "8bc8ad766f173d43748fb2e9f01a9f3c02b8d25b520a92f16e3dcc14c2b673ba",
+    "README.md": "55841ffd1290e00320f76dcde8dd6159f20cb1dc877cdbc00fae3b9a99553980",
+    "RUN_STATE.json": "9144ca2662b9144ae3237a51058de0d33134f98593d746a03890bbefa5fa7ae5",
+    "source-review-binding.json": "8de1c3347c3d4231bb9517c0761c906c1fb9f32cb2abee4329f63b8f08306e3e",
+    "validate_phase10.py": "9765671c094eefc89d526d9244480a9a8bee7b1f6c119159e90e8098c27d85ab"
+  },
+  "scope": "Actualnear completion laws a=e1,b1+eps,eps>0,fLo1/2,fHi1. Positivewaiting decomposition and commonpositive submeasure prove everymeasurable completion-event absoluteprobabilitygap<=eps/[6(1+eps)], at eps1/100 bound1/606. Sup-event TVconvention, no finite-sample ororiginalautomaton inference."
+}

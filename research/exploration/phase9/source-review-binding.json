@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "kind": "Independent AI semantic/source/evidence review; not humanexpertreview",
+  "modules": {
+    "KernelUniformBounds": {
+      "source_sha256": "9512a3d8623336d18000cffcf0e59f06b1517196f434c6fc1a80ac3b3c7324d4",
+      "log_sha256": "a607b19adb9f3b3b4649371e4428ac997f478648af5215b024b4e132d0b236a6",
+      "olean_sha256": "6f3e0726dabba2401cc50dca5418d2b19dfc0a6675162572cdb63d8d005a7bad",
+      "review_file": "notes/kernel-independent-review.json",
+      "review_sha256": "b1b5c66692b297d521e32a588b6037ca18294c30084a058e8011f6aa2e905f31"
+    },
+    "UniformCdfBound": {
+      "source_sha256": "6972a1ecfeb2b8e7bef8d3fdb3556843b933c9508392ef608f913e30ee7cfc7c",
+      "log_sha256": "03c49b812edbd7e4763a4de7ad9b82cb6c045dbcc0d0981464966e9d3e0b8e77",
+      "olean_sha256": "d0c9f9297b51503394ef70507bf094c41810e07cb928976f2cad35c3163b4cd9",
+      "review_file": "notes/uniform-cdf-independent-review.json",
+      "review_sha256": "d9d8cd8ba2c8ccf0c3c99bc4e219361decf701dadc86d0617c36820721e63900"
+    },
+    "NearBlindCompletion": {
+      "source_sha256": "3a85697ee1a809a8951bce0e0f04ad1260f28ae8e59dd28490c8258a21204758",
+      "log_sha256": "3c00b7b53ef843c01e89aeedfc9f5efcf9da0ed8dfc7303ba3723641fb74c6a2",
+      "olean_sha256": "66f261798c1d937b0ba15eb1cde3bd590ac7397be586ab6df0ec68f61b860159",
+      "review_file": "notes/near-blind-independent-review.json",
+      "review_sha256": "2787c22e771877251043d3a4fbd8a40115d6a5c51c68318fba92bd332a917a59"
+    }
+  }
+}

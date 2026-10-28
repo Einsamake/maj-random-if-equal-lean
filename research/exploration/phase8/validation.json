@@ -1,0 +1,339 @@
+{
+  "checked_at": "2026-10-28T00:09:39.921860+08:00",
+  "status": "PASS",
+  "stage_complete": true,
+  "human_materials_and_reader_cycle_pending": false,
+  "reader_review": {
+    "reviewer": "/root/phase8_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "first_read": {
+      "review_kind": "simulated_mathematics_undergraduate_reader",
+      "reviewed_on": "2026-10-28",
+      "reviewed_file": "D:/MyWorks/Math/research/exploration/phase8/README.md",
+      "reviewed_file_sha256": "3B63657D2121C5815AEFF3D0E3434183701A8F4AF59863E2943F2499B725A8A5",
+      "actual_image_viewed": true,
+      "images": [
+        {
+          "path": "images/rate-box-rule.png",
+          "sha256": "AE88BA390CE62F4720D8F14F16325AEE203C4F1122668E8E272102D93175F632",
+          "actual_image_viewed": true
+        },
+        {
+          "path": "images/two-routes.png",
+          "sha256": "EF178348E80514AF982CC708DCFA7846A40A0AD88D7DDA338BB9E7F6810DBFA8",
+          "actual_image_viewed": true
+        }
+      ],
+      "scope": {
+        "inputs": [
+          "README.md",
+          "images/rate-box-rule.png",
+          "images/two-routes.png"
+        ],
+        "excluded": [
+          "mathematical source",
+          "audit material",
+          "validation.json",
+          "external links",
+          "other chapters"
+        ],
+        "simulated_background": "数学本科毕业；基础分析、代数、概率；不懂 Lean，不依靠项目背景",
+        "limitation": "这是限定阅读背景的子代理模拟，不是人类读者测试、专家评审、数学正确性认证或新颖性认证。"
+      },
+      "own_words": {
+        "goal": "四个固定速率各有独立可选区间。要找一个合法参数组合，使任务在任意给定 t 前完成的概率都至少与其他合法组合一样大，而且这个组合不随 t 改变。",
+        "objects": "先等待 Wc，其速率是 e+f；随后 J 决定走直达还是绕路。J=0 时只再等 Wa，J=1 时再等 Wb 和 Wa。Wc、Wa、Wb、J 独立，S=Wc+Wa+J Wb。绕路概率是 f/(e+f)。增加 f 一边缩短 Wc，一边增加绕路比例，所以单靠速率大不能决定 S 的大小。",
+        "probability_to_equations": "C0 是 Wa 的完成概率，C1 是 Wb+Wa 的完成概率，C2 是整个任务的完成概率。按某一段用去 t-s、余下段在 s 内完成积分，得到非负加权积分；乘指数后求导，得到三个初值为零的一阶方程。",
+        "comparison_device": "D'=G-kD 且 D(0)=0 时，D(t) 是 G(s) 的正指数权重积分。因此 G 非负时 D 非负，G 非正时 D 非正。",
+        "increasing_a": "a 增加使 C0 增加；固定其他参数时，C1、C2 的积分权重非负，所以这个增加逐层传递。",
+        "increasing_b": "令 D=C1,H-C1,L，则 D'=(bH-bL)(C0-C1,L)-bH D。因为非负等待 Wb 被加入后只会更慢，C0>=C1,L，所以 D>=0；再传到 C2。",
+        "increasing_e": "令 D=C2,H-C2,L，则 D'=(eH-eL)(C0-C2,L)-(eH+f)D。因为 S>=Wa，所以 C0>=C2,L，故 D>=0。",
+        "choosing_f": "先把 a、b、e 提到 A、B、E。H=C1-C2 满足 H'=(B-E)(C0-C1)-(E+f)H，所以 H 与 B-E 同号。再比较 fH>=fL，D=C2,H-C2,L 的驱动项是 (fH-fL)(C1-C2,L)，其符号由 B-E 决定。因此 B>E 时选 f 上限，B<E 时选下限，B=E 时任意 f 给出同分布。",
+        "scope": "最大的是每个截止时间的完成概率，并非平均值或最长等待。参数需一次任务中固定且四个区间可独立组合。不能直接推广到随时间改变的速率、联动参数或原二维自动机。均值算例只是核对，不代替逐时比较。"
+      },
+      "calculations": [
+        {
+          "row": 1,
+          "selection": "A=2,B=3,E=1，B>E，所以 f*=F=2；角点 (2,3,1,2)。",
+          "mean": "1/2+1/(1+2)+2/((1+2)*3)=1/2+1/3+2/9=9/18+6/18+4/18=19/18。"
+        },
+        {
+          "row": 2,
+          "selection": "A=2,B=1,E=3，B<E，所以 f*=f_-=1/2；角点 (2,1,3,1/2)。",
+          "mean": "1/2+1/(3+1/2)+(1/2)/((3+1/2)*1)=1/2+2/7+1/7=7/14+4/14+2/14=13/14。"
+        },
+        {
+          "derivation": "E[J Wb]=E[J]E[Wb]=f/((e+f)b)，因此正文给出的均值式可由独立性和线性期望直接重得。"
+        }
+      ],
+      "findings": [
+        {
+          "id": "R1",
+          "category": "术语未定义",
+          "severity": "optional",
+          "location": "README.md:19-26",
+          "original": "四个随机量相互独立，分布为 ... P(J=1)=f/(e+f)。",
+          "feedback": "公式只单列 J=1 的概率，未显式写 J 只取 0、1。后面的解释和路线图已清楚给出 J=0、1 两种情况，因此图文合读不阻断理解。",
+          "suggestion": "可直接写 J∈{0,1}；P(J=1)=f/(e+f)，减少只读公式时的歧义。"
+        },
+        {
+          "id": "R2",
+          "category": "符号",
+          "severity": "optional",
+          "location": "README.md:108",
+          "original": "增加 b 时，两个 C1 的差满足上述方程，G=(b_H-b_L)(C0-C1,L)。",
+          "feedback": "H、L 尚未明确约定为只改变当前速率后的高、低两组参数；这一行也未写出 D 和 k。能够自行相减补出 D=C1,H-C1,L、k=bH，e 的情形则 k=eH+f，不构成当前阻断。",
+          "suggestion": "补一句 H、L 表示只改变当前参数的较高和较低值；可展示 b 比较的一行完整差分方程。"
+        },
+        {
+          "id": "R3",
+          "category": "推理跳步",
+          "severity": "optional",
+          "location": "README.md:106、118",
+          "original": "因此只要 G(s)>=0，就有 D(t)>=0。 ... B<=E 时 H<=0。",
+          "feedback": "小事实只用文字明说了非负情况；后文非正情况能直接从同一个积分式读出，不需要额外定理。",
+          "suggestion": "在小事实后补上 G<=0 时 D<=0，使两个符号分支的引用完全显式。"
+        },
+        {
+          "id": "R4",
+          "category": "符号及结论表述",
+          "severity": "optional_precision",
+          "location": "README.md:126",
+          "original": "所以 B>=E 时，增加 f 会提高完成概率；B<=E 时，增加 f 会降低完成概率。于是前一种情况选上限 F，后一种选下限 f_-。",
+          "feedback": "两个分支都含等号，读到提高和降低时会短暂疑惑 B=E 是否同时严格提高和严格降低。第67行已明确解释此时分布不变，所以不存在实质结论冲突。",
+          "suggestion": "改为 B>E 时增加 f 不降低完成概率，B<E 时增加 f 不提高完成概率；B=E 时分布不变，约定选 F。"
+        },
+        {
+          "id": "R5",
+          "category": "图文一致性",
+          "severity": "none",
+          "location": "images/rate-box-rule.png；images/two-routes.png",
+          "original": "B>=E: f 取上限；B<E: f 取下限。两条路线都先等 Wc。",
+          "feedback": "实际两张图均已查看。上下限、两个角点、等号归属和两条路线的概率与正文一致；min 与下标 - 的记号差别正文第9行已解释。没有阻断性图文不一致。",
+          "suggestion": null
+        },
+        {
+          "id": "R6",
+          "category": "明确留后续证明及范围",
+          "severity": "none",
+          "location": "README.md:69-128、145-147",
+          "original": "为什么这个选择有效？ ... 若速率随时间改变，或实际流量与容积造成参数之间的联动，需要重新证明。",
+          "feedback": "本节的承诺是讲清当前模型的角点规则，正文已给出从概率到比较的完整主线，没有把当前关键步骤推给后续章节。随时间变化、联动参数、二维自动机被明确排除，验证链接未被用来补正文推导。未验证正文末尾关于外部数学源或审查记录的事实。",
+          "suggestion": null
+        }
+      ],
+      "blocking_gaps": [],
+      "first_read_result": "所承诺的模型、逐时比较和两个分数算例可复述并完成；没有发现当前解释的阻断缺口。建议作上述小幅澄清后复读并记录修订版 hash。",
+      "reread_required_after_revision": true
+    },
+    "final_reread": {
+      "review_kind": "simulated_mathematics_undergraduate_reader_reread",
+      "reviewed_on": "2026-10-28",
+      "status": "pass",
+      "reviewed_file": "D:/MyWorks/Math/research/exploration/phase8/README.md",
+      "reviewed_file_sha256": "92BCA59DD349C244533CED283B674DDED78A0616E708BE85F342D96F62F1F095",
+      "previous_reviewed_file_sha256": "3B63657D2121C5815AEFF3D0E3434183701A8F4AF59863E2943F2499B725A8A5",
+      "first_feedback_record": "notes/reader-first-feedback.json",
+      "actual_image_viewed": true,
+      "images": [
+        {
+          "path": "images/rate-box-rule.png",
+          "sha256": "AE88BA390CE62F4720D8F14F16325AEE203C4F1122668E8E272102D93175F632",
+          "same_hash_as_first_read": true,
+          "actual_image_viewed_again": true
+        },
+        {
+          "path": "images/two-routes.png",
+          "sha256": "EF178348E80514AF982CC708DCFA7846A40A0AD88D7DDA338BB9E7F6810DBFA8",
+          "same_hash_as_first_read": true,
+          "actual_image_viewed_again": true
+        }
+      ],
+      "scope": {
+        "reread_inputs": [
+          "README.md",
+          "images/rate-box-rule.png",
+          "images/two-routes.png"
+        ],
+        "excluded": [
+          "mathematical source",
+          "audit material",
+          "validation.json",
+          "external links",
+          "other chapters"
+        ],
+        "simulated_background": "数学本科毕业；基础分析、代数、概率；不懂 Lean，不依靠项目背景",
+        "limitation": "此 pass 仅表示限定背景的 AI 读者模拟中未发现当前解释的阻断缺口；不是人类读者测试、专家评审、数学正确性或新颖性认证。"
+      },
+      "change_checks": [
+        {
+          "feedback_id": "R1",
+          "checked_original": "$J$ 只取0和1两个值。",
+          "result": "resolved",
+          "reason": "正文已独立给出取值集合，不再需要靠图补出 J=0 的情况。"
+        },
+        {
+          "feedback_id": "R2",
+          "checked_original": "用下标 $H,L$ 分别表示较高、较低的速率及对应函数。两个 $C_1$ 的差 $D=C_{1,H}-C_{1,L}$ 满足 $D'=G-b_H D$",
+          "result": "resolved",
+          "reason": "高低速率的对应符号和 b 比较所用 D、k 已显式定义，可直接套用前面的积分公式。"
+        },
+        {
+          "feedback_id": "R3",
+          "checked_original": "若 $G(s)\\le0$，则同样得到 $D(t)\\le0$。",
+          "result": "resolved",
+          "reason": "正负两个方向均已明说，后文 H<=0 和 D<=0 的引用清楚。"
+        },
+        {
+          "feedback_id": "R4",
+          "checked_original": "$B>E$ 时，增加 $f$ 不会降低完成概率；$B<E$ 时，增加 $f$ 不会提高完成概率。 ... 若 $B=E$，则 $H$ 与 $D$ 都为0，改变 $f$ 不影响分布，约定选 $F$。",
+          "result": "resolved",
+          "reason": "已将严格大小条件与等号情形分开，且用不会降低/不会提高明确表达弱单调性。"
+        }
+      ],
+      "reread_restatement": {
+        "goal_and_objects": "任务先独立等待 Wc，再根据只取 0 或 1 的 J 选择是否多等 Wb，最后等待 Wa。关心的是每个 t 的完成概率 P(S<=t)。要在四个独立区间中选一个同样的参数组合，让它对所有 t 都达到合法组合中的最大完成概率。",
+        "probability_and_comparison": "先按各段等待分配截止时间，写出 C0、C1、C2 的概率积分，再求导成为一阶方程。两个解的差 D 等于驱动 G 的正指数权重积分，所以 G 的统一符号能控制 D 的符号。",
+        "increasing_first_three": "增大 a 提高 C0，并经非负权重提高 C1、C2。比较 b 的驱动为 (bH-bL)(C0-C1,L)，比较 e 的驱动为 (eH-eL)(C0-C2,L)；加入非负等待只会让总等待变长，因此两个括号均非负。于是先把 a、b、e 提至 A、B、E。",
+        "choosing_last_parameter": "固定 B、E 后，H=C1-C2 的驱动是 (B-E)(C0-C1)，故其符号由 B-E 决定。比较 f 的差方程驱动又是 (fH-fL)H_L，于是 B>E 选 f 上限，B<E 选下限，B=E 不依赖 f。这个选择顺序无需原盒中所有点的 b-e 同号。",
+        "scope": "结论比较完整的截止时间概率，不仅是均值。它限于一次任务中固定速率与独立区间约束；不能据此声称随时间变化、联动速率或原二维自动机的新恢复公式。"
+      },
+      "reread_examples": [
+        {
+          "row": 1,
+          "selection": "a、b、e 的上限为 2、3、1；B=3>E=1，故 f 取上限 2，得到 (2,3,1,2)。",
+          "explicit_arithmetic": "E[S]=1/2+1/(1+2)+2/((1+2)*3)=1/2+1/3+2/9=(9+6+4)/18=19/18。"
+        },
+        {
+          "row": 2,
+          "selection": "a、b、e 的上限为 2、1、3；B=1<E=3，故 f 取下限 1/2，得到 (2,1,3,1/2)。",
+          "explicit_arithmetic": "E[S]=1/2+1/(3+1/2)+(1/2)/((3+1/2)*1)=1/2+2/7+1/7=(7+4+2)/14=13/14。"
+        }
+      ],
+      "category_results": {
+        "undefined_terms": "本节对象和当前推导所需术语没有阻断缺口。",
+        "reasoning_steps": "主比较链可按给出的积分公式和差方程复述；没有借其他章节补推导。",
+        "symbols": "J、H/L、差函数与正负驱动的关系均已核对，四条反馈已解决。",
+        "figure_text_consistency": "两张图再次实际查看且 hash 未变；路线概率、角点、边界 B=E 的约定均与修订文一致。",
+        "deliberately_excluded_or_deferred": "随时间变化、参数联动和原二维自动机被明确排除；不要求本节提供这些情况的证明，也未打开验证链接评价外部审查事实。"
+      },
+      "unresolved_blockers": [],
+      "new_optional_findings": [],
+      "conclusion": "此次修订为小幅澄清，四条反馈均落实。模型、关键比较推导和两行分数算例可从正文和实际配图直接复述；读者模拟复读通过。"
+    },
+    "reviewed_file_sha256": {
+      "README.md": "92bca59dd349c244533ced283b674dded78a0616e708be85f342d96f62f1f095",
+      "images/rate-box-rule.png": "ae88ba390ce62f4720d8f14f16325aee203c4f1122668e8e272102d93175f632",
+      "images/two-routes.png": "ef178348e80514af982cc708dcfa7846a40a0ad88d7dda338bb9e7f6810dbfa8"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "sha256": "6b389096eb58963cc871d61428fcb3fb22a431f193c068105489c6a4e65037ce",
+        "actions": [
+          "Standalone actual probability model before parameter optimization",
+          "Same corner all deadlines and attainable maximum distinguished from conservative upper envelope",
+          "Compared a,b,e before selecting f by upper B,E; gave integrating-factor steps and arithmetic examples",
+          "Separated deadline probability maximum from largest waitingtime and from original automaton"
+        ]
+      },
+      {
+        "pass": 2,
+        "sha256": "3b63657d2121c5815aeff3d0e3434183701a8f4af59863e2943f2499b725a8a5",
+        "actions": [
+          "Inspected both actual PNGs, found missing Unicode subscript-minus glyphs and replaced with min labels plus definition",
+          "Made branchprobability increase weak/non-strict at e=0",
+          "Removed unexplained constant-inlet wording from model scope",
+          "Kept maximum CDF separate from maximum waitingtime"
+        ]
+      },
+      {
+        "pass": 3,
+        "sha256": "92bca59dd349c244533ced283b674dded78a0616e708be85f342d96f62f1f095",
+        "actions": [
+          "Defined Bernoulli J values0and1 explicitly",
+          "Defined H/L indices and gave actual b-difference equation",
+          "Added nonpositive forcing case for integrating-factor comparison",
+          "Separated B>E/B<E/B=E and used weak probability change wording",
+          "Rechecked examples and actual diagram domain/parameter labels"
+        ],
+        "based_on": "notes/reader-first-feedback.json"
+      }
+    ],
+    "scope": "Context-free undergraduate-background AI simulation using only text/actualPNG; no humanexpert or noveltycertification"
+  },
+  "local_links_checked": 2,
+  "mathematical_modules": 2,
+  "named_declarations": 59,
+  "new_theorems": 23,
+  "modules": {
+    "CoordinateResponseOrder": {
+      "source_sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+      "log_sha256": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d",
+      "record_sha256": "7a87f4ed638941ea6056e0fcb7ca8dc89e772acb92e8105dde6dda0103623521",
+      "review_sha256": "77659cf90b3a40dc5afac4565fa5c4426c618ed9c93068ac3f5e1d4639b9b039",
+      "named": 13,
+      "theorems": 13,
+      "olean_sha256": "800f15545d7475d2d81a3b2358720d93981caa5e1257a5a2a6ceadde3404c61a"
+    },
+    "RateBoxMaximum": {
+      "source_sha256": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f",
+      "log_sha256": "7864052331c9ad2a83cb44acf4e2070c5ec634e26e6b89f706ab13d0b92a991d",
+      "record_sha256": "f224818edd948d7115ccf431b1203ddb00577816dfd2fdf0f6196bf6760e2858",
+      "review_sha256": "44d945cbf38c56187d394d700b84dbc4a665e79466a4f706f82cd0682f55dc69",
+      "named": 46,
+      "theorems": 10,
+      "olean_sha256": "a6f2b4e5da93bcb4d8881c8cd382ff48d36b181a46cf0d29d8df9dda9a7779e3"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "3744662ef699dbd7f227de82619c42c214dfd01bd1063eebc6647f1ea48fe3dd",
+    "log_sha256": "b1027fe2da64982602d0c70c107eb5dd6ecee04c396f49d02623a25fda1f011d",
+    "actual_prints": 59,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "original_formal_sources_unchanged": 267,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "prior_accepted_artifacts_unchanged": true,
+  "artifact_sha256": {
+    "audit-selection.json": "7ea4115dc103050f9a552f1edfbc5535cc0e70ad26497f397643e76f09f7b2f2",
+    "audit_module.py": "1bb3860f11cfe73dc515cea66c3a1bbd05da3eecd169acbd954228547abf0c67",
+    "draw_figures.py": "9fe75a93970edec6da41f7a914230e4253fb9ba41121b76629c377b983166e50",
+    "evidence/CoordinateResponseOrder-attempt1.json": "1335a84f488d7634252851a917963c48b350e9924254c804a43e476586f074eb",
+    "evidence/CoordinateResponseOrder-attempt1.log": "ed87726b4836865d64110f3db3788d6c590c587aa857f6ce601703c80ee77217",
+    "evidence/CoordinateResponseOrder-attempt1.source.lean": "9212abf62d7f9c264ee138fdbea9fffb0b159b18d16e6bd658215a583e706ea0",
+    "evidence/CoordinateResponseOrder-attempt2.json": "7a87f4ed638941ea6056e0fcb7ca8dc89e772acb92e8105dde6dda0103623521",
+    "evidence/CoordinateResponseOrder-attempt2.log": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d",
+    "evidence/CoordinateResponseOrder-attempt2.source.lean": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+    "evidence/Phase8Audit-attempt1.json": "243c80f59c6e7a37f20b4206b1a3568d2647ed2ae83fc1b2ad36dded297bd5bd",
+    "evidence/Phase8Audit-attempt1.log": "b1027fe2da64982602d0c70c107eb5dd6ecee04c396f49d02623a25fda1f011d",
+    "evidence/Phase8Audit-attempt1.source.lean": "3744662ef699dbd7f227de82619c42c214dfd01bd1063eebc6647f1ea48fe3dd",
+    "evidence/RateBoxMaximum-attempt1.json": "3cc6d774b990be9a03f68f7f4a88a93a7669371d0854f42c6aef6937c219777c",
+    "evidence/RateBoxMaximum-attempt1.log": "920a981f09af05499147e0f185cfffe3b0346407e2cce624eae5b0dc56b40ce0",
+    "evidence/RateBoxMaximum-attempt1.source.lean": "73c5623c166a42f19d4755a6ac942512abf0d56a2416ecaa356f8104fced6015",
+    "evidence/RateBoxMaximum-attempt2.json": "f224818edd948d7115ccf431b1203ddb00577816dfd2fdf0f6196bf6760e2858",
+    "evidence/RateBoxMaximum-attempt2.log": "7864052331c9ad2a83cb44acf4e2070c5ec634e26e6b89f706ab13d0b92a991d",
+    "evidence/RateBoxMaximum-attempt2.source.lean": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f",
+    "figure-data.json": "de0ce371c3ec7f1524eb1e7226099b1be3da716d8530edde556d50a15cac76f0",
+    "images/rate-box-rule.png": "ae88ba390ce62f4720d8f14f16325aee203c4f1122668e8e272102d93175f632",
+    "images/two-routes.png": "ef178348e80514af982cc708dcfa7846a40a0ad88d7dda338bb9e7f6810dbfa8",
+    "lean/CoordinateResponseOrder.lean": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+    "lean/Phase8Audit.lean": "3744662ef699dbd7f227de82619c42c214dfd01bd1063eebc6647f1ea48fe3dd",
+    "lean/RateBoxMaximum.lean": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f",
+    "notes/box-independent-review.json": "44d945cbf38c56187d394d700b84dbc4a665e79466a4f706f82cd0682f55dc69",
+    "notes/coordinate-independent-review.json": "77659cf90b3a40dc5afac4565fa5c4426c618ed9c93068ac3f5e1d4639b9b039",
+    "notes/editing-passes.json": "b8c08c9193344f9971ecb2435d652fb8564f262b09e4aea82f081bf135b44a5a",
+    "notes/phase7-freeze.json": "be7bb3ca5049279af601dfddf3dbfb62e223b9a3ee92beb0b95a9ce15b3449a4",
+    "notes/reader-final-reread.json": "97698f592d8478c19b0ef20b254d8b73a9e205fb324ca71b2acd3ea03948ac69",
+    "notes/reader-first-feedback.json": "1a0228adbdc009a5ddc43c9c60f35d6123f93d6f9341f4e25b3ba946e2196ed3",
+    "reader-review.json": "77d0f8d44633f515f1a156927eec817fa584e1bb52b1a45cc316df32539b85e0",
+    "README.md": "92bca59dd349c244533ced283b674dded78a0616e708be85f342d96f62f1f095",
+    "RUN_STATE.json": "d95c73e0796ce96d9d28a33c342a1357563ca0d03c59c0b8e721d64dabe4fb5b",
+    "source-review-binding.json": "531c5e0457f519e98dbeb5ffd34b4c9425b026198cb45387576341099c1e173b",
+    "validate_math.py": "fad43b1083502d5e8d503802516add29252276159f22094f43b16b037ebf655e",
+    "validate_phase8.py": "060f1a2d0856acdd1ef7e69f0f24e5ff136bd34c806cdf2fd83df833f00be3af"
+  },
+  "scope": "Fixed nonnegative independent ratebox with positive lowera,b andelo+flo; constantinlet1, zero initialstate; same actual probability corner greatest at every nonnegative deadline. No timevarying rates, variableinputs, zero-exit realprobabilitylaw or physicalflow-volume uncertainty claim."
+}

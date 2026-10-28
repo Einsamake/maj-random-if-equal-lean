@@ -1,0 +1,32 @@
+[
+  {
+    "pass": 1,
+    "focus": "Question and exact result scope",
+    "actions": [
+      "General law and non-strict per-deadline order, not a mean-only inference.",
+      "Separate output-distribution invariance from changing internal joint law."
+    ],
+    "sha256": "045eb7d95855842aaba0e00504b6d6d01207b138306c9c7d3a6f31ec59805e6b"
+  },
+  {
+    "pass": 2,
+    "focus": "Actual figure and mathematical precision",
+    "actions": [
+      "Viewed both rendered PNGs, checked common axes and exact fraction means.",
+      "Changed figure labels to nondecreasing/nonincreasing to match proved non-strict scope.",
+      "Made distinguishability statistical, not certain from one branch observation.",
+      "Clarified common initial wait, fixed-other-rate restriction, initial zero differences and derivative scope."
+    ],
+    "sha256": "5fbdcca6af3396485488c3b60897314a36a0f0b278bb9cd326e38b7de8a9d3d3"
+  },
+  {
+    "pass": 3,
+    "focus": "Blocking independent-reader feedback",
+    "actions": [
+      "Renamed node completion probabilities C0,C1, retaining F_f exclusively for the total-time family.",
+      "Explicitly distinguished direct-channel competing rate e from conditional initial waiting rate e+f, also in the actual figure.",
+      "Clarified x2 as concentration-system output but start of the reverse dependency route."
+    ],
+    "sha256": "df57837ac285cd5783f5616ce3733d803137f7e4694983bbba61a7ecd872ed3d"
+  }
+]

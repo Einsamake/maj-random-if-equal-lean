@@ -1,0 +1,154 @@
+{
+  "checked_at": "2026-10-27T06:35:19.790232+08:00",
+  "module": "GeneralOrderedBox",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\GeneralOrderedBox.lean",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "checks": {
+    "actual_exit_zero": true,
+    "standard_trust_zero": true,
+    "source_unchanged_during_build": true,
+    "actual_names_match_expected": true,
+    "only_standard_axioms": true,
+    "no_errors_in_log": true
+  },
+  "source_sha256": "7b154ef65f6042b76e2dca806e7de9a70f746eb2c1c0c664f550dc4e56dba05c",
+  "log_sha256": "b743ee18aa85068502f654cc0fda112359e3b02f323f1d7f1769b14beec4244e",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build\\GeneralOrderedBox.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\GeneralOrderedBox.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "LEAN_PATH": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\build;D:\\MyWorks\\Math\\research\\exploration\\phase2\\build",
+  "named_declarations": [
+    "MathExploration.GeneralOrderedBox.orderedCaps",
+    "MathExploration.GeneralOrderedBox.boundedRates",
+    "MathExploration.GeneralOrderedBox.gapState",
+    "MathExploration.GeneralOrderedBox.gapMatrix",
+    "MathExploration.GeneralOrderedBox.gap_matrix_metzler",
+    "MathExploration.GeneralOrderedBox.actual_metzler_of_bounds",
+    "MathExploration.GeneralOrderedBox.upper_rates_bounded",
+    "MathExploration.GeneralOrderedBox.gapState_hasDerivAt",
+    "MathExploration.GeneralOrderedBox.gapState_zero",
+    "MathExploration.GeneralOrderedBox.gapState_continuousOn",
+    "MathExploration.GeneralOrderedBox.upper_gaps_nonneg",
+    "MathExploration.GeneralOrderedBox.upper_order_gaps",
+    "MathExploration.GeneralOrderedBox.upper_drift_domination",
+    "MathExploration.GeneralOrderedBox.solution_below_upper_trajectory",
+    "MathExploration.GeneralOrderedBox.scaled_caps_ordered",
+    "MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance"
+  ],
+  "expected_prints": [
+    "MathExploration.GeneralOrderedBox.orderedCaps",
+    "MathExploration.GeneralOrderedBox.boundedRates",
+    "MathExploration.GeneralOrderedBox.gapState",
+    "MathExploration.GeneralOrderedBox.gapMatrix",
+    "MathExploration.GeneralOrderedBox.gap_matrix_metzler",
+    "MathExploration.GeneralOrderedBox.actual_metzler_of_bounds",
+    "MathExploration.GeneralOrderedBox.upper_rates_bounded",
+    "MathExploration.GeneralOrderedBox.gapState_hasDerivAt",
+    "MathExploration.GeneralOrderedBox.gapState_zero",
+    "MathExploration.GeneralOrderedBox.gapState_continuousOn",
+    "MathExploration.GeneralOrderedBox.upper_gaps_nonneg",
+    "MathExploration.GeneralOrderedBox.upper_order_gaps",
+    "MathExploration.GeneralOrderedBox.upper_drift_domination",
+    "MathExploration.GeneralOrderedBox.solution_below_upper_trajectory",
+    "MathExploration.GeneralOrderedBox.scaled_caps_ordered",
+    "MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance"
+  ],
+  "declaration_axioms": {
+    "MathExploration.GeneralOrderedBox.orderedCaps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.boundedRates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gapState": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gapMatrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gap_matrix_metzler": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.actual_metzler_of_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.upper_rates_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gapState_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gapState_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.gapState_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.upper_gaps_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.upper_order_gaps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.upper_drift_domination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.solution_below_upper_trajectory": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.scaled_caps_ordered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "d34fb829f5338915e35a82f256f678baa63a3ad6ba02dd5c3fe1ac0b9422c3d4"
+}

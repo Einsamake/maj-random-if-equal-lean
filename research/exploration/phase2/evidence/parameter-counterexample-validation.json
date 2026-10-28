@@ -1,0 +1,222 @@
+{
+  "checked_at": "2026-10-27T01:16:36.923930+08:00",
+  "exit_code": 0,
+  "trust_level": 0,
+  "source_sha256": "3419f422203c732d928592781fb964be58b47c5786ec2a1218761e548703bff5",
+  "log_sha256": "b1c4854d3156c605b81a783bb2a2e4cf3c188f015c20fa8098a2b0e932d166f2",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\ParameterCounterexample.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "log_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\parameter-counterexample-attempt4.log",
+  "named_declarations": [
+    "MathExploration.ParameterCounterexample.inlet",
+    "MathExploration.ParameterCounterexample.response",
+    "MathExploration.ParameterCounterexample.horizon",
+    "MathExploration.ParameterCounterexample.inlet_positive",
+    "MathExploration.ParameterCounterexample.inlet_contDiff",
+    "MathExploration.ParameterCounterexample.response_contDiff",
+    "MathExploration.ParameterCounterexample.response_zero",
+    "MathExploration.ParameterCounterexample.exp_negative_mul_deriv",
+    "MathExploration.ParameterCounterexample.inlet_hasDerivAt",
+    "MathExploration.ParameterCounterexample.response_hasDerivAt",
+    "MathExploration.ParameterCounterexample.response_is_actual_C1_solution",
+    "MathExploration.ParameterCounterexample.coupled_system_certificate",
+    "MathExploration.ParameterCounterexample.horizon_positive",
+    "MathExploration.ParameterCounterexample.exp_neg_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_half_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_two_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_four_horizon",
+    "MathExploration.ParameterCounterexample.response_half_at_horizon",
+    "MathExploration.ParameterCounterexample.response_two_at_horizon",
+    "MathExploration.ParameterCounterexample.response_four_at_horizon",
+    "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints",
+    "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by",
+    "MathExploration.ParameterCounterexample.response_not_monotoneOn",
+    "MathExploration.ParameterCounterexample.response_not_antitoneOn"
+  ],
+  "actual_axiom_outputs": [
+    "MathExploration.ParameterCounterexample.inlet",
+    "MathExploration.ParameterCounterexample.response",
+    "MathExploration.ParameterCounterexample.horizon",
+    "MathExploration.ParameterCounterexample.inlet_positive",
+    "MathExploration.ParameterCounterexample.inlet_contDiff",
+    "MathExploration.ParameterCounterexample.response_contDiff",
+    "MathExploration.ParameterCounterexample.response_zero",
+    "MathExploration.ParameterCounterexample.exp_negative_mul_deriv",
+    "MathExploration.ParameterCounterexample.inlet_hasDerivAt",
+    "MathExploration.ParameterCounterexample.response_hasDerivAt",
+    "MathExploration.ParameterCounterexample.response_is_actual_C1_solution",
+    "MathExploration.ParameterCounterexample.coupled_system_certificate",
+    "MathExploration.ParameterCounterexample.horizon_positive",
+    "MathExploration.ParameterCounterexample.exp_neg_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_half_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_two_horizon",
+    "MathExploration.ParameterCounterexample.exp_neg_four_horizon",
+    "MathExploration.ParameterCounterexample.response_half_at_horizon",
+    "MathExploration.ParameterCounterexample.response_two_at_horizon",
+    "MathExploration.ParameterCounterexample.response_four_at_horizon",
+    "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints",
+    "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by",
+    "MathExploration.ParameterCounterexample.response_not_monotoneOn",
+    "MathExploration.ParameterCounterexample.response_not_antitoneOn"
+  ],
+  "declaration_axioms": {
+    "MathExploration.ParameterCounterexample.inlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.inlet_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.inlet_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_contDiff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.exp_negative_mul_deriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.inlet_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_is_actual_C1_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.coupled_system_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.horizon_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.exp_neg_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.exp_neg_half_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.exp_neg_two_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.exp_neg_four_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_half_at_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_two_at_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_four_at_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_not_monotoneOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ParameterCounterexample.response_not_antitoneOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declaration_count": 24,
+  "theorem_count": 21,
+  "checks": {
+    "actual_lean_exit_zero": true,
+    "standard_trust_zero": true,
+    "source_hash_matches_actual_build": true,
+    "log_hash_matches_actual_build": true,
+    "every_named_declaration_has_print_command": true,
+    "actual_axiom_outputs_exactly_match_all_declarations": true,
+    "only_standard_axioms_seen": true,
+    "no_unproved_source_tokens": true,
+    "no_errors_in_actual_log": true
+  },
+  "checks_passed": true,
+  "formal_original_sources_modified": false,
+  "phase1_sources_modified": false,
+  "semantic_scope": [
+    "Every real k has a time-C1 explicit solution, including the correct k=1 branch.",
+    "The common inlet exp(-t), shared zero scalar initial condition, and actual derivative equation are proved.",
+    "Equivalent two-node equations have common initial state (1,0), zero additive forcing, and only one varying internal coefficient.",
+    "At T=log(4), k=1/2,2,4 give 1/4,3/8,21/64 respectively.",
+    "The interior value exceeds the maximum of the endpoints by exactly 3/64.",
+    "The response at T is neither MonotoneOn nor AntitoneOn the interval [1/2,4].",
+    "No optimization claim for k=2, parameter continuity theorem, general uniqueness theorem, novelty certification, or real apparatus validation is made."
+  ],
+  "source_linter_warning": "One unnecessary <;> combinator at line 75; no effect on the kernel-checked theorem or axiom audit."
+}

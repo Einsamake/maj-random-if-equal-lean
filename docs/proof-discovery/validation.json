@@ -1,0 +1,527 @@
+{
+  "checked_at": "2026-10-26T20:53:58.589195+08:00",
+  "status": "PASS documentation, exact examples, links and frozen analysis source fingerprints",
+  "scope": "tutorial reconstruction and method candidates; two new teaching declarations checked separately; no rebuilt main theorem or novelty certification",
+  "project_root": "D:\\MyWorks\\Math",
+  "analysis_source_hashes_matched": 259,
+  "all_formal_source_hashes_matched": 267,
+  "prior_build_and_kernel_audit": {
+    "validated_at": "2026-10-26T14:53:59.002869+08:00",
+    "build_exit": 0,
+    "axiom_audit_exit": 0,
+    "sha256": "802ba7b37365c680f78175125fb7d2e8317244d0edaeacfa4ebbfc7d60cedd22"
+  },
+  "sealed_zip_unchanged": {
+    "sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+    "prior_package_manifest_sha256": "9e5e18a0db4dc7ba991b48eee1bdfc52739959dd82c12cc33194786f8b0d000c"
+  },
+  "local_links_checked": 65,
+  "links": [
+    {
+      "document": "00-results.md",
+      "target": "../../README.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/PROGRESS_2026-10-26_MAIN_THEOREM.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/audit/analysis-validation.json"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../VERIFICATION.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/audit/original-theta-independent-review.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/audit/original-theta-independent-final-binding-evidence.json"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../deliverables/README.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../formal/audit/package-validation.json"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../../research/followup/NOVELTY_CHECK_2026-10-26.md"
+    },
+    {
+      "document": "00-results.md",
+      "target": "../PROOF_GUIDE.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/METHOD_LEDGER_2026-10-22.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/MIXED_CLOCK_DYNKIN_ROUTE_2026-10-25.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedClockDynkin.lean"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/WEIGHTED_ROUTE_2026-10-24.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/METHOD_LEDGER_2026-10-25.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/UPPER_FINITE_SEP_ROUTE_2026-10-25.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/METHOD_LEDGER_2026-10-26_FINAL.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../research/followup/METHOD_LEDGER_2026-10-26_MOMENTS.md"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/PositivePartSquare.lean"
+    },
+    {
+      "document": "01-route.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/FinitePermutationComparison.lean"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "images/boundary-weight.png"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "../../formal/audit/forbidden-birth-source-comparison.json"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/ForbiddenBirthControl.lean"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "images/protected-threshold.png"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/OriginalQuadraticLower.lean"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "render_figures.py"
+    },
+    {
+      "document": "02-boundary-weight.md",
+      "target": "toy-checks.json"
+    },
+    {
+      "document": "03-positive-energy.md",
+      "target": "images/positive-energy.png"
+    },
+    {
+      "document": "03-positive-energy.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/PositivePartSquare.lean"
+    },
+    {
+      "document": "03-positive-energy.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/FinitePermutationComparison.lean"
+    },
+    {
+      "document": "03-positive-energy.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedClockCovariance.lean"
+    },
+    {
+      "document": "03-positive-energy.md",
+      "target": "06-first-reuse.md"
+    },
+    {
+      "document": "04-enough-probability.md",
+      "target": "images/particle-count.png"
+    },
+    {
+      "document": "04-enough-probability.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/YoungParticles.lean"
+    },
+    {
+      "document": "04-enough-probability.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedLocalClearing.lean"
+    },
+    {
+      "document": "04-enough-probability.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/ForbiddenBirthControl.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/FinitePermutationComparison.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "06-first-reuse.md"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedRightCountMoments.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/FiniteMachinePreState.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/MixedClockDynkin.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/ExtendedRecoveryTime.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../formal/analysis/MathResearchAnalysis/ExtendedBlockTail.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "ReuseExample.lean"
+    },
+    {
+      "document": "05-candidates.md",
+      "target": "../../research/followup/NOVELTY_CHECK_2026-10-26.md"
+    },
+    {
+      "document": "06-first-reuse.md",
+      "target": "ReuseExample.lean"
+    },
+    {
+      "document": "06-first-reuse.md",
+      "target": "reuse-validation.json"
+    },
+    {
+      "document": "06-first-reuse.md",
+      "target": "reuse-kernel.log"
+    },
+    {
+      "document": "06-first-reuse.md",
+      "target": "ReuseExample.lean"
+    },
+    {
+      "document": "README.md",
+      "target": "00-results.md"
+    },
+    {
+      "document": "README.md",
+      "target": "01-route.md"
+    },
+    {
+      "document": "README.md",
+      "target": "02-boundary-weight.md"
+    },
+    {
+      "document": "README.md",
+      "target": "03-positive-energy.md"
+    },
+    {
+      "document": "README.md",
+      "target": "04-enough-probability.md"
+    },
+    {
+      "document": "README.md",
+      "target": "05-candidates.md"
+    },
+    {
+      "document": "README.md",
+      "target": "06-first-reuse.md"
+    },
+    {
+      "document": "README.md",
+      "target": "images/boundary-weight.png"
+    },
+    {
+      "document": "README.md",
+      "target": "validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "reuse-validation.json"
+    },
+    {
+      "document": "README.md",
+      "target": "reviews/round-1.md"
+    },
+    {
+      "document": "README.md",
+      "target": "reader-review.json"
+    }
+  ],
+  "claim_anchors": {
+    "OriginalQuadraticRecovery": {
+      "sha256": "27e11b9ce8afaa9d41b41f001b51444a19d293dcaf880eba2064457dfb9d758b",
+      "declarations": [
+        "tau_theta_quadratic",
+        "tau_quadratic_bounds"
+      ]
+    },
+    "ForbiddenBirthControl": {
+      "sha256": "7ed911a408ddcda06065dc1ef31269cbf377c70858ddb95adc14cfe18bf23cc2",
+      "declarations": [
+        "outside_birth_layer",
+        "weight_zero_at_outside_birth",
+        "actual_rawWeightedRate_eq_square"
+      ]
+    },
+    "PhysicalWeightedDrift": {
+      "sha256": "c32f0479af732c2521068c115b72a3e176c5bc6d01c1c14ebd10fe485ba66d48",
+      "declarations": [
+        "actual_mean_weighted_area_le",
+        "actual_exit_probability_le_linear_time"
+      ]
+    },
+    "PositivePartSquare": {
+      "sha256": "e79122c726f1c76073da35e28e0396c7977bed04bfbff9b887c6d37190f741d4",
+      "declarations": [
+        "hasDerivAt_square",
+        "supporting_inequality"
+      ]
+    },
+    "FinitePermutationComparison": {
+      "sha256": "60d401a0708168d8c84cb23b8a21b91ce6d51187790747dbe06cbd94c33d0f00",
+      "declarations": [
+        "permutation_flux_nonpos",
+        "nonpos"
+      ]
+    },
+    "MixedClockCovariance": {
+      "sha256": "6c6ba7d5702153a79caeca65d26b23a38778e96416103d3e338f92bce4947854",
+      "declarations": [
+        "covariance_nonpos",
+        "offdiag_moment_le_product"
+      ]
+    },
+    "YoungParticles": {
+      "sha256": "ec769948d2d03100d2337b1c4c2cf44aaeeec7d8f4525cb370def055c793a85b",
+      "declarations": [
+        "rightCount_eq_diagonal_card"
+      ]
+    },
+    "MixedLocalClearing": {
+      "sha256": "0d1763b9198374a29439304d700503bb6ca778d7143616f459ad83d634b152c1",
+      "declarations": [
+        "localWhite_iff_le_rightCount"
+      ]
+    },
+    "MixedClearingProbability": {
+      "sha256": "448ac959d73c44f25af90475874ba12b452f755d6eca2ed4779c2491390172c8",
+      "declarations": [
+        "failure_probability_le",
+        "auxiliary_failure_quarter"
+      ]
+    }
+  },
+  "history_sha256": {
+    "research/followup/METHOD_LEDGER_2026-10-22.md": "3c81fe746f1133de826fea616526e0649111b0f6ee821c93763fca34c263b2e7",
+    "research/followup/METHOD_LEDGER_2026-10-24.md": "2a2d878ffc3de798ba2cc1bd349ba2d1503e5fc9f19f0f61434d9f800356c762",
+    "research/followup/METHOD_LEDGER_2026-10-25.md": "c91708e73faa27fec80542200324da0cad97ab64c3057de91b4866caad971468",
+    "research/followup/METHOD_LEDGER_2026-10-26_MOMENTS.md": "d0cdaee9f70c001acee9a4a35e603e96174190ac93c6efc41500ca0ebef41134",
+    "research/followup/METHOD_LEDGER_2026-10-26_FINAL.md": "3aa166e36ddb12b6790688324db88eaae6a766f57b780862503fde8489434dcd",
+    "research/followup/WEIGHTED_ROUTE_2026-10-24.md": "a4f22dc30328e7035eaac49b3401cee850bb52d787fa5798e347be96e19570d4",
+    "research/followup/MIXED_CLOCK_DYNKIN_ROUTE_2026-10-25.md": "7b6fb7cc79a2c252096b51ccd0c68cfe55b85e242af3b0afdde4fcdb9870fdb5",
+    "formal/audit/forbidden-birth-source-comparison.json": "2ec318d330012a458820d7ed0fb000c787ccd40358fbdfc693bff4309a7e862e",
+    "research/followup/NOVELTY_CHECK_2026-10-26.md": "31e8d4c6017522bf490add47d233691dbfba5d77279b63f7a759918552e9047f"
+  },
+  "artifact_sha256": {
+    "00-results.md": "f90fe8b164c427b4579b00d5c663a03ebb3ae8be92f0157d4c4fb5b9d78f7836",
+    "01-route.md": "e3e706ce30680e574a2752b2a668c5d146083dba406907aea90927aca300551f",
+    "02-boundary-weight.md": "69fcdc60731db66a5caadc7b9c41a09e935e4223cb263a27b9389fa9ae2afc29",
+    "03-positive-energy.md": "41c561c1ee95363ad70c3be5f7a8116f29c56b08d9dbac9f0f70059560cc02a4",
+    "04-enough-probability.md": "467ad54b871f57824f1285affd2b220b2671bee7f237c901344c53253996a91d",
+    "05-candidates.md": "e80326293432fd9b664c7622f5cd84fb64cd2328b5dd6a5ac204d34c4ef1ebb1",
+    "06-first-reuse.md": "2ecc5b9c210ff0359e044f472768a4bdc529ad73bd4b287dcad4b3118b2fcbf5",
+    "images/boundary-weight.png": "867741601cb64c3eed2f4fe492ac6d0104636df38679956a7a3190b28f1ec5ce",
+    "images/particle-count.png": "5907fcd30af60185d74d8a0c4464ee12a964680aa5a73714df0d5f6fc7ad06b8",
+    "images/positive-energy.png": "5f9e117cb36394aee3da29228181c60fe73b5e9770be2d90036c190defcab1b9",
+    "images/protected-threshold.png": "ebdc1c0728e2b806d23f428fa9551115844c23e0ec92969ecd1c0f905c665a36",
+    "reader-review.json": "922127ab20fdaed14d100c3026444de6af13c3f0027ff4a17b8b52566f2f82bc",
+    "README.md": "069fd17268a83950f38f3e90900fbab6d17ef0e4e712297174b01ca6ef60c299",
+    "render_figures.py": "c04a119fd4a784c9378b53990d33779ac797dd70784e9b98c7c6a1619128515d",
+    "reuse-kernel.log": "bf2a99b20ed3c2b215cf375ea87df00e1e5528abd8da379b88acb098ab99d8d5",
+    "reuse-validation.json": "40abcdac7577933abfc32d7ef3be22e118873e3543e351cbca4a8ed3020001fd",
+    "ReuseExample.lean": "0419222d222b83b93769836a38da1d065990effb3cd0ba60656a2b1772891ce3",
+    "reviews/round-1.md": "556dbe9fc1313d0b0e2eab5a7d81278e873c2e259ed4ce398370c6ccc317faaa",
+    "reviews/round-2.md": "7fb949aaea8b8233a90e457c1f5374f9b063e5b738fc286c3c686b81086502b2",
+    "toy-checks.json": "c49847895d840b4b42f04498989a9d42b7932329fd6ffc4c052f0d643647602e",
+    "validate_material.py": "e1f333a5d34fb32611f2959c1e370de52233d2bd6499ee27654528ec5a4f4f60"
+  },
+  "examples": {
+    "kind": "exact finite checks and deterministic teaching diagrams; not new Lean proofs",
+    "ordinary_and_weighted_initial_rates": [
+      {
+        "L": 2,
+        "domain_sites": 21,
+        "outside_birth_sites": 4,
+        "ordinary_masked": "4",
+        "ordinary_expanded": "2",
+        "weighted_masked": "4",
+        "weighted_expanded": "4"
+      },
+      {
+        "L": 3,
+        "domain_sites": 37,
+        "outside_birth_sites": 8,
+        "ordinary_masked": "6",
+        "ordinary_expanded": "2",
+        "weighted_masked": "6",
+        "weighted_expanded": "6"
+      },
+      {
+        "L": 4,
+        "domain_sites": 57,
+        "outside_birth_sites": 12,
+        "ordinary_masked": "8",
+        "ordinary_expanded": "2",
+        "weighted_masked": "8",
+        "weighted_expanded": "8"
+      },
+      {
+        "L": 10,
+        "domain_sites": 261,
+        "outside_birth_sites": 36,
+        "ordinary_masked": "20",
+        "ordinary_expanded": "2",
+        "weighted_masked": "20",
+        "weighted_expanded": "20"
+      },
+      {
+        "L": 40,
+        "domain_sites": 3441,
+        "outside_birth_sites": 156,
+        "ordinary_masked": "80",
+        "ordinary_expanded": "2",
+        "weighted_masked": "80",
+        "weighted_expanded": "80"
+      }
+    ],
+    "selected_state_zero_boundary_checks": 912,
+    "state_sampling": "all 512 subsets for L=1; 200 seeded subsets each for L=2,3; seed 20261026",
+    "supporting_inequality_rational_pairs": 1369,
+    "permutation_flux_checks": 18,
+    "exhaustive_encoding_profiles_M_1_through_5": 350,
+    "particle_figure": {
+      "M": 5,
+      "row_lengths_bottom_up": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "positions": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "right_count": 2,
+      "white_cells": 10
+    },
+    "protected_figure": {
+      "L": 160,
+      "loss_point": [
+        145,
+        0
+      ],
+      "offsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "block_cells": 16,
+      "min_weight": 9,
+      "block_weight": 192,
+      "kind": "conditional geometry; not a trajectory"
+    },
+    "figures": {
+      "boundary-weight.png": "867741601cb64c3eed2f4fe492ac6d0104636df38679956a7a3190b28f1ec5ce",
+      "particle-count.png": "5907fcd30af60185d74d8a0c4464ee12a964680aa5a73714df0d5f6fc7ad06b8",
+      "positive-energy.png": "5f9e117cb36394aee3da29228181c60fe73b5e9770be2d90036c190defcab1b9",
+      "protected-threshold.png": "ebdc1c0728e2b806d23f428fa9551115844c23e0ec92969ecd1c0f905c665a36"
+    }
+  },
+  "teaching_reuse_actual_audit": {
+    "observed_completed_at": "2026-10-26T20:29:42.049258+08:00",
+    "execution_session_id": 86665,
+    "exit_code": 0,
+    "trust_level": 0,
+    "compiler": "Lean 4.35.0-rc4 (existing analysis toolchain)",
+    "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+    "invocation": [
+      "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+      "env",
+      "lean",
+      "--trust=0",
+      "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\docs\\proof-discovery",
+      "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\docs\\proof-discovery\\ReuseExample.lean"
+    ],
+    "source_sha256": "0419222d222b83b93769836a38da1d065990effb3cd0ba60656a2b1772891ce3",
+    "log_sha256": "bf2a99b20ed3c2b215cf375ea87df00e1e5528abd8da379b88acb098ab99d8d5",
+    "log_kind": "concatenation of actual returned output chunks; standard trailing whitespace removed",
+    "axioms_seen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": [
+      "ProofDiscovery.ReuseExample.three_cell_order",
+      "ProofDiscovery.ReuseExample.nonbijective_flux_positive"
+    ],
+    "diagnostics": "only pre-existing batteries local-changes warning",
+    "scope": "two teaching examples only; original 267-source formal set not modified or rebuilt"
+  },
+  "undergraduate_reader_simulation": {
+    "reviewer": "/root/fresh_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "两处修改已复核，未产生新歧义：初始黑格包含关系明确，动态编码证明与本课展开的静态编码步骤明确分开。结合此前对指定八篇正文及四张图的评读，认可其在已声明输入下的教学范围。本次仅复核两处修改并实际计算当前文件SHA256；未读取源码、验证文件、评读记录或外链。这是模拟本科读者验收，不是实际人类理解认证、专家认证或完整主定理证明核验。路径相对于docs/proof-discovery。",
+    "reviewed_files": 12,
+    "review_record_sha256": "922127ab20fdaed14d100c3026444de6af13c3f0027ff4a17b8b52566f2f82bc",
+    "is_actual_human_test": false
+  },
+  "editing": [
+    "pass 1: source and dated-history fidelity",
+    "pass 2: reader sequence, concrete examples and figure inspection",
+    "pass 3: claim scope, edge conditions and final link/fingerprint validation"
+  ],
+  "manual_semantic_review": "root author compared displayed formulae with linked sources; not independent expert review",
+  "visual_review": "four rendered PNGs inspected using view_image before deployment; fourth is conditional geometry, not a trajectory",
+  "remaining": [
+    "full proof tutorial",
+    "method-specific literature comparison",
+    "second substantive Lean application"
+  ]
+}

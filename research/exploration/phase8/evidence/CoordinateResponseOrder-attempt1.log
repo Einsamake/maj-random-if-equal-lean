@@ -1,0 +1,49 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:14:8: error: `fun_prop` was unable to prove `Continuous fun s => a * rexp (-a * s) + f * (x0 a s - x1 a b s)`
+
+Issues:
+  No theorems found for `MathExploration.TankResponse.x0` in order to prove `Continuous fun t => x0 a t`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:43:72: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:43:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:62:80: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:62:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:83:72: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:83:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:101:80: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:101:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:120:80: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase8\lean\CoordinateResponseOrder.lean:120:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.TankResponse.gap02_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_sub_x2_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_mono_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta1_a_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_mono_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta2_a_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta1_b_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_mono_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta2_b_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta2_e_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_e' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

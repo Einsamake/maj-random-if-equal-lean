@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-27T11:27:51.547128+08:00",
+  "module": "ExponentialCdfConvolution",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "c7177f7185d00b0ced96be3b4fdcf050c0760bd46c6d7ecf449678d1839c2b55",
+  "log_sha256": "d311c6b3470889430b5c2f5322c59cae33bdb1e96153b1d1e8b5943ba60d4e72",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ExponentialCdfConvolution.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ExponentialCdfConvolution.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral",
+    "MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock",
+    "MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral"
+  ],
+  "expected_prints": [
+    "MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral",
+    "MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock",
+    "MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

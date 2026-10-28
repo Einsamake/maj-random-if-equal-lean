@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-27T11:27:01.360517+08:00",
+  "module": "LinearResponseKernel",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "20d016b62f5d0afc5122f390047ad25babc88a7e72beb90bbe54c7c499a1eb35",
+  "log_sha256": "d4ec6c3e4fadc3cf070c732f4d872e68d0e7fe6344d8d8bb04d124564afdc205",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\LinearResponseKernel.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\LinearResponseKernel.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.LinearResponseKernel.kernel",
+    "MathExploration.LinearResponseKernel.ode_to_kernel",
+    "MathExploration.LinearResponseKernel.kernel_eq_negative",
+    "MathExploration.LinearResponseKernel.low_continuous",
+    "MathExploration.LinearResponseKernel.high_continuous",
+    "MathExploration.LinearResponseKernel.low_zero_exp",
+    "MathExploration.LinearResponseKernel.high_zero_exp",
+    "MathExploration.LinearResponseKernel.low_middle_kernel",
+    "MathExploration.LinearResponseKernel.high_middle_kernel",
+    "MathExploration.LinearResponseKernel.low_outlet_kernel",
+    "MathExploration.LinearResponseKernel.high_outlet_kernel"
+  ],
+  "expected_prints": [
+    "MathExploration.LinearResponseKernel.kernel",
+    "MathExploration.LinearResponseKernel.ode_to_kernel",
+    "MathExploration.LinearResponseKernel.kernel_eq_negative",
+    "MathExploration.LinearResponseKernel.low_continuous",
+    "MathExploration.LinearResponseKernel.high_continuous",
+    "MathExploration.LinearResponseKernel.low_zero_exp",
+    "MathExploration.LinearResponseKernel.high_zero_exp",
+    "MathExploration.LinearResponseKernel.low_middle_kernel",
+    "MathExploration.LinearResponseKernel.high_middle_kernel",
+    "MathExploration.LinearResponseKernel.low_outlet_kernel",
+    "MathExploration.LinearResponseKernel.high_outlet_kernel"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

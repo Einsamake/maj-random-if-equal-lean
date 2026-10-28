@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-27T11:29:14.998869+08:00",
+  "module": "ExponentialMean",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+  "log_sha256": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ExponentialMean.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ExponentialMean.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ExponentialMean.weighted_density_eq",
+    "MathExploration.ExponentialMean.gamma_density_integrable",
+    "MathExploration.ExponentialMean.gamma_density_integral",
+    "MathExploration.ExponentialMean.integrable_id",
+    "MathExploration.ExponentialMean.integral_id"
+  ],
+  "expected_prints": [
+    "MathExploration.ExponentialMean.weighted_density_eq",
+    "MathExploration.ExponentialMean.gamma_density_integrable",
+    "MathExploration.ExponentialMean.gamma_density_integral",
+    "MathExploration.ExponentialMean.integrable_id",
+    "MathExploration.ExponentialMean.integral_id"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "a20660f72d63a0161c954e9b8702dc26c055507816e37d487906070b3324ab94"
+}

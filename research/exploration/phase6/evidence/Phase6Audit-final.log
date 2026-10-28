@@ -1,0 +1,85 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ResponseKernelCalculus.kernel_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_eq_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.solution_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap01_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_sub_x1_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap12_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_f_of_e_le_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_antitone_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_exp_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_exp_eq_x0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_middle_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_middle_eq_x1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_direct_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_via_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.weighted_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_totalMeasure_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2_all_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.GeneralTankCdf.cdf_totalMeasure_hasDerivAt_of_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.GeneralTankCdf.total_event_eq_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.total_event_eq_x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralTankCdf.total_event_eq_x2_all_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CompletionTimeOrder.cdf_mono_f_of_e_le_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CompletionTimeOrder.cdf_antitone_f_of_b_le_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.cdf_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CompletionTimeOrder.totalMeasure_eq_of_b_eq_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_mono_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_antitone_f_of_b_le_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_eq_of_b_eq_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.HiddenBranchWitness.branch_event_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.HiddenBranchWitness.half_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.one_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.same_totalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.HiddenBranchWitness.different_hidden_laws' depends on axioms: [propext, Classical.choice, Quot.sound]

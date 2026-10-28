@@ -1,0 +1,9 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.BranchedCdfMixture.map_nested_product_via' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.map_nested_product_direct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.map_bernoulli_nested_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

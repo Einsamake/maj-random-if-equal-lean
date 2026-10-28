@@ -1,0 +1,133 @@
+{
+  "checked_at": "2026-10-27T01:43:30.858116+08:00",
+  "status": "PASS",
+  "named_declarations": 85,
+  "new_theorems": 65,
+  "modules": {
+    "ImprovedOriginalLower": {
+      "source_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "log_sha256": "cc772e99553e755ad8cfad883ef55967ea43aaf83accce5727d3f763a0032f04",
+      "record_sha256": "7b978814517080d97f9b099f47bf1ab5fd47bb5997cf5fcd4c81a09e1ddba76e",
+      "review_sha256": "002ef4c5281e8ad3df279c8b94c722f1b52a0f203f50ee3cc1aa5960c5536376",
+      "named": 24,
+      "theorems": 22
+    },
+    "ParameterCounterexample": {
+      "source_sha256": "3419f422203c732d928592781fb964be58b47c5786ec2a1218761e548703bff5",
+      "log_sha256": "b1c4854d3156c605b81a783bb2a2e4cf3c188f015c20fa8098a2b0e932d166f2",
+      "record_sha256": "47a27b007bde88be2fb9feffe18a87e5eee0fc2dbe75e3bc40fdc468ef780015",
+      "review_sha256": "f0ee9de4c2ec673b55297169e49514fc52d7e2e66bc229721cf6c4d34d69bf35",
+      "named": 24,
+      "theorems": 21
+    },
+    "RobustNetworkBounds": {
+      "source_sha256": "3d2ed3289bf003e3c4a8c278b56c29a79a2428c56bd2b1f1c798e848cc46779f",
+      "log_sha256": "ef135d7017edda867af97e4760fc2b5f0d47f73053fc91e5203bd474bd524b58",
+      "record_sha256": "62f73e403552ab708da4477fd47c35f4e1c66589a8f2d19feb0e7e250919f2aa",
+      "review_sha256": "24221065d4c0d8ad30bff7d0c16a30b00a4c8b49ad20825f7a2500349870ce27",
+      "named": 16,
+      "theorems": 11
+    },
+    "RobustTankCertificate": {
+      "source_sha256": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+      "log_sha256": "81f1639f705613989c277795303b0af4c7d5149314dc6a1124972c66a4698f2c",
+      "record_sha256": "aac0c2df75fb964235f6b131ba02605688f1b816f86c211d89e8150fbaf7f855",
+      "review_sha256": "639d1d991a890672e8b5a3c8f1385ebe1df40125fdaced8f32121dee82e01fc2",
+      "named": 21,
+      "theorems": 11
+    }
+  },
+  "reader_review": {
+    "reviewer": "/root/phase2_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "本科读者模拟复读，不是实际人类测试、专家评审、数学正确性或新颖性认证。仅从磁盘重新读取两篇正文和两张PNG；未看源码、验证、笔记或外链。一般比较原理和原格子完整概率证明按正文说明作为已证输入。",
+    "changes_after_first_read": [
+      "恢复明确为首次扰动消失，齐次背景保持不变",
+      "N按容纳的格点列数计算，并给(0,0)/(2,1)的N=3算例",
+      "区分先求期望再取最坏与单条含无穷轨迹",
+      "残差说明分清矩阵元素与向量坐标",
+      "紫图使用精确分数再给近似值，统一归一化时间"
+    ],
+    "demonstrated_comprehension": [
+      "复算单箱三个精确值与内点超过两端3/64，不误称k=2最优",
+      "从M/H的负号与非负真实状态推残差非负",
+      "复算q(t*)=1/2、17/192、7/64和28077/109744<13/50",
+      "区分保守上界与可达最大值、固定系数与任意时变矩阵",
+      "复算98.304系数比，并明确最坏初态下界不是所有初态下界"
+    ],
+    "reviewed_file_sha256": {
+      "README.md": "12becc4231fb9c9efb83d55267e987cd611d9d80607a9af6bc0a7d9ed76b2efe",
+      "INTERVAL_CERTIFICATE.md": "0dd52fab60c0d6b88d7cc8ff89c4a8562adaccd1b1b5717921aed5099ce306e3",
+      "images/parameter-counterexample.png": "82b43aba6525a8f0024900e3db3e0683ad782565dfe07a0568c767101ad3ed35",
+      "images/robust-envelope.png": "0a06c7954d727693dcfcc4100601ab49b354a643efc1ca7c096b6a108d9d3524"
+    },
+    "actual_human_test": false
+  },
+  "local_links_checked": 8,
+  "original_formal_sources_unchanged": 267,
+  "phase1_math_sources_unchanged": true,
+  "sealed_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "artifact_sha256": {
+    "audit_module.py": "6c53f2963ae23963d739750ca4f7f2756ada3d625038fc66f2e01ddc5789dc30",
+    "evidence/full-block-threshold-cache-build.exit.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "evidence/full-block-threshold-cache-build.json": "a3ceefe9431a3891130bb2f89a0c98d951b669f4db09bdf7520b648ffaf54938",
+    "evidence/full-block-threshold-cache-build.log": "0d61e35c7ae8636d5417422f3b110921943f2997a2c2bf19fe156669171e1754",
+    "evidence/improved-original-lower-final-binding.json": "9902fdfe2060c6895baee3e501a551a351f9421f5e6be8ab0156591e07a07bed",
+    "evidence/improved-original-lower-kernel.exit.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "evidence/improved-original-lower-kernel.log": "cc772e99553e755ad8cfad883ef55967ea43aaf83accce5727d3f763a0032f04",
+    "evidence/improved-original-lower-validation.json": "7b978814517080d97f9b099f47bf1ab5fd47bb5997cf5fcd4c81a09e1ddba76e",
+    "evidence/network-dependency-build.json": "f0b1a05dae129b6d2f57639c20edcdaa33bcfb01eba83546f614d68c59dd0b9d",
+    "evidence/network-dependency-build.log": "aaa9506c64b03be99f79dc2474dc957bffdf192c5c4392762d0bf72f31243f71",
+    "evidence/parameter-counterexample-attempt1.json": "2e37f1892eecd975276944c9cea869dbe9582eeaf63326094a452252e13bd65f",
+    "evidence/parameter-counterexample-attempt1.log": "52dd3ece1793c3ff2cfb4d0dbe95bfa066ac24dc3aa4e8603eb864740a7b43e8",
+    "evidence/parameter-counterexample-attempt2.json": "8e75c4ec0d8e3fe7be7fd545d6ed7ffeede7f6158e2f7b87fedb0eee765e5aaa",
+    "evidence/parameter-counterexample-attempt2.log": "b3db40c3f5f47e146e76f3e53f3a1254ae85831d42c27a63665bb0fdb545f0f9",
+    "evidence/parameter-counterexample-attempt3.json": "4e7f1d6040cdfc80fda096763ddd2baf523e9d9869e16ee5df5ca0b4a43a902c",
+    "evidence/parameter-counterexample-attempt3.log": "ce847dab3fb5fc9f73df1a00b5868978dce958a3eeba1578125911e423e78b7a",
+    "evidence/parameter-counterexample-attempt4.json": "2f4e1cda716895a8ce4f6cfc78b20ae9a2d154a31d9102f8b8184dfa0f003888",
+    "evidence/parameter-counterexample-attempt4.log": "b1c4854d3156c605b81a783bb2a2e4cf3c188f015c20fa8098a2b0e932d166f2",
+    "evidence/parameter-counterexample-validation.json": "47a27b007bde88be2fb9feffe18a87e5eee0fc2dbe75e3bc40fdc468ef780015",
+    "evidence/robust-network-attempt1.json": "1f7ef6ef4e49541bd89d63a486dcc5a6b0c5af2be4b67f2982cbd5db45229ecc",
+    "evidence/robust-network-attempt1.log": "58be1931825d5cac3f7a624fca37ca60ed168302a74e845c8067bbf044aa6d7f",
+    "evidence/robust-network-attempt2.json": "8aeb78579c11db54cb6ec935c37f2d02dbdb9fda19582592b8b6939869cb6f1a",
+    "evidence/robust-network-attempt2.log": "4e7fe1443529ba9a840b2c29bf937b21fa624b73e90eb6a2d5acf5161c6867a1",
+    "evidence/robust-network-attempt3.json": "b151f77aee3cfecd3f825207cbb95985b6ce9db644c0af62e4e90eda188f7413",
+    "evidence/robust-network-attempt3.log": "ef135d7017edda867af97e4760fc2b5f0d47f73053fc91e5203bd474bd524b58",
+    "evidence/RobustNetworkBounds-final-cache.json": "62f73e403552ab708da4477fd47c35f4e1c66589a8f2d19feb0e7e250919f2aa",
+    "evidence/RobustNetworkBounds-final-cache.log": "ef135d7017edda867af97e4760fc2b5f0d47f73053fc91e5203bd474bd524b58",
+    "evidence/RobustTankCertificate-attempt1.json": "1dbc6b8b22b135769df237aaf38c52d14b4d50a8fe89483981de7a0fae8179d5",
+    "evidence/RobustTankCertificate-attempt1.log": "ba854440fa3a3e063f568a3e8dd4556ea9178ce29870ee94cb9b6d3cce43b071",
+    "evidence/RobustTankCertificate-final.json": "aac0c2df75fb964235f6b131ba02605688f1b816f86c211d89e8150fbaf7f855",
+    "evidence/RobustTankCertificate-final.log": "81f1639f705613989c277795303b0af4c7d5149314dc6a1124972c66a4698f2c",
+    "figure-data.json": "648d7a1f5bf08c8772b82ce16de35d106f656e1269375fae6abaca027acc587e",
+    "images/parameter-counterexample.png": "82b43aba6525a8f0024900e3db3e0683ad782565dfe07a0568c767101ad3ed35",
+    "images/robust-envelope.png": "0a06c7954d727693dcfcc4100601ab49b354a643efc1ca7c096b6a108d9d3524",
+    "INTERVAL_CERTIFICATE.md": "0dd52fab60c0d6b88d7cc8ff89c4a8562adaccd1b1b5717921aed5099ce306e3",
+    "lean/ImprovedOriginalLower.lean": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+    "lean/ParameterCounterexample.lean": "3419f422203c732d928592781fb964be58b47c5786ec2a1218761e548703bff5",
+    "lean/RobustNetworkBounds.lean": "3d2ed3289bf003e3c4a8c278b56c29a79a2428c56bd2b1f1c798e848cc46779f",
+    "lean/RobustTankCertificate.lean": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+    "notes/improved-lower-source-review.json": "002ef4c5281e8ad3df279c8b94c722f1b52a0f203f50ee3cc1aa5960c5536376",
+    "notes/interval_prior_art_2026-10-27.json": "ebdadbc60fa9dec7b21c5bf7e2e45cf23d888e3eb3dbefa462f0c5f3d11d48b9",
+    "notes/parameter-counterexample-source-review.json": "f0ee9de4c2ec673b55297169e49514fc52d7e2e66bc229721cf6c4d34d69bf35",
+    "notes/robust-network-source-review.json": "24221065d4c0d8ad30bff7d0c16a30b00a4c8b49ad20825f7a2500349870ce27",
+    "notes/robust-network-source-review.pending.json": "f67a0522557ce22a40ccd2e445c082e32a9a0e0be66fcc1635cc43785fcd2c3a",
+    "notes/robust-tank-source-review.json": "639d1d991a890672e8b5a3c8f1385ebe1df40125fdaced8f32121dee82e01fc2",
+    "notes/robust-tank-source-review.pending.json": "3ad2c4a0b06be60edc99f7526e2e0f12025af0d6a9b6173292ca287986d51d84",
+    "notes/robust_three_tank_explicit_solution_check.json": "a7ff343ffb353413905d3764f16d2311747ab42da9b8a281d01cb270429ed3c1",
+    "reader-review.json": "ccdc0876b7e20f3b6546111efe8eb16749bccb96e3291d98568395a824c852d0",
+    "README.md": "12becc4231fb9c9efb83d55267e987cd611d9d80607a9af6bc0a7d9ed76b2efe",
+    "render_results.py": "5bdf35fd3f9e0f94f550f6375f08447ff862541abf1553f30f7384b19456a618",
+    "validate_phase2.py": "b1ac739c90f1a6e0a828ce095246ecd8b40c0e7b47f59f58222a5e89188a2c0b"
+  },
+  "claims": {
+    "new_original_lower_denominator": 576000000,
+    "new_original_lower_threshold": 500001,
+    "upper_constant_unchanged": 664066,
+    "parameter_endpoints_can_miss_interior": true,
+    "five_percent_ode_coefficient_robust_bound": "28077/109744 at (20/19)log2",
+    "new_field_or_global_novelty_certified": false,
+    "actual_human_test": false
+  }
+}

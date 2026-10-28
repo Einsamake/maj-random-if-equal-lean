@@ -1,0 +1,106 @@
+{
+  "checked_at": "2026-10-28T08:21:20.095908+08:00",
+  "reviewer": "independent agent /root/phase11_common_iid; not ObservationContrast source author",
+  "module": "ObservationContrast",
+  "attempt_reviewed": "attempt1",
+  "verdict": "PASS",
+  "status": "PASS",
+  "review_mode": "Independent mathematical source review plus actual successful trust=0 log/cache and dependency fingerprint checks; no additional compilation claimed",
+  "source_sha256": "41f71bb570d1225f2b7d314444a02bdd9b7ac9889ab140a7087c48e468287f28",
+  "log_sha256": "6781f003cf733928a65b36681eac11b2dee480ec6cfb13b70853736f7cf31997",
+  "olean_sha256": "d15c8aef807a0d30b529e93f7aae9cbd17fe305610d2eb9389b1eb8fb58eb194",
+  "named_declarations": [
+    "MathExploration.ObservationContrast.branchSuccess",
+    "MathExploration.ObservationContrast.timeSuccess",
+    "MathExploration.ObservationContrast.branchSuccess_ge",
+    "MathExploration.ObservationContrast.timeSuccess_eq",
+    "MathExploration.ObservationContrast.timeSuccess_le",
+    "MathExploration.ObservationContrast.advantage_ge",
+    "MathExploration.ObservationContrast.branch_strictly_better"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "checks": {
+    "source_matches_snapshot": true,
+    "source_hash_matches_actual_metadata": true,
+    "log_hash_matches_actual_metadata": true,
+    "cache_hash_matches_actual_metadata": true,
+    "all_named_declarations_printed": true,
+    "actual_prints_match_source_and_metadata": true,
+    "standard_axioms_only": true,
+    "no_proof_escape_or_custom_axiom_tokens": true,
+    "accepted_log_no_errors_or_sorryAx": true,
+    "actual_kernel_trust_zero_success": true,
+    "exact_rational_gap": true,
+    "dependencies_match_actual_accepted_source_and_cache": true
+  },
+  "dependencies": [
+    {
+      "module": "ActualBranchMoments",
+      "accepted_attempt": "attempt2",
+      "source_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+      "olean_sha256": "7cd89fb22792926bc650d05b391d837eda3c80a196affb1d8aa8b35d823cdb1d",
+      "current_source_and_cache_match_actual_accepted_evidence": true
+    },
+    {
+      "module": "BranchThresholdTesting",
+      "accepted_attempt": "attempt2",
+      "source_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+      "olean_sha256": "96b1aba0c169ce239ea2cbe0e8f0e71faecda743edac2d00055fe7a3213b832a",
+      "current_source_and_cache_match_actual_accepted_evidence": true
+    },
+    {
+      "module": "ObservationMaps",
+      "accepted_attempt": "attempt1",
+      "source_sha256": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+      "olean_sha256": "6e92b3167ed296c5e6a7908c1533c3a49b7bb13adab12e9b6e03865fb22bb820",
+      "current_source_and_cache_match_actual_accepted_evidence": true
+    }
+  ],
+  "mathematical_findings": [
+    {
+      "declaration": "branchSuccess",
+      "finding": "Fixes the actual branch-count threshold test on 100 independent draws from the original joint law, at eps=1/100. It uses BranchThresholdTesting.testSuccess, not an abstract accuracy variable."
+    },
+    {
+      "declaration": "timeSuccess",
+      "finding": "Uses exactly ActualBranchMoments.lowJoint/highJoint with the same n and eps, and restricts the decision event to a measurable event pulled back through the coordinate total-time map. Branch and time observers therefore share the same underlying trials."
+    },
+    {
+      "declaration": "branchSuccess_ge",
+      "finding": "Instantiates the proved standard-Chebyshev branch threshold certificate at n100 with equal priors, giving 33/50."
+    },
+    {
+      "declaration": "timeSuccess_eq",
+      "finding": "Uses ObservationMaps.time_test_success to identify the actual original-joint pullback experiment with the verified phase11 completion-time IID law; definitional equality identifies ObservationMaps.joint and ActualBranchMoments.lowJoint/highJoint."
+    },
+    {
+      "declaration": "timeSuccess_le",
+      "finding": "Applies the proved phase11 all-measurable-event bound for the same time observation law, giving 353/606."
+    },
+    {
+      "declaration": "advantage_ge",
+      "finding": "Combines a lower bound on the one branch test with an upper bound valid for every measurable deterministic time-only event. Independent exact rational arithmetic confirms 33/50-353/606=587/7575."
+    },
+    {
+      "declaration": "branch_strictly_better",
+      "finding": "Strict positivity of the exact gap gives timeSuccess(A)<branchSuccess for every measurable A. The inequality direction and quantifier scope are correct."
+    }
+  ],
+  "claim_scope": [
+    "n=100",
+    "eps=1/100",
+    "equal model priors one-half",
+    "one concrete deterministic branch-count test",
+    "all measurable deterministic decision events depending only on the full time vector",
+    "same actual original joint IID laws"
+  ],
+  "blocking_findings": [],
+  "limitations": [
+    "No claim of optimal branch testing, exact Bayes risk, randomized-test optimality, unequal-prior testing, or novelty is established by this module.",
+    "The separately computed exact branch-risk candidate remains outside this phase12 proof certificate."
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "checked_at": "2026-10-27T12:27:06.431311+08:00",
+  "status": "PASS",
+  "mathematical_modules": 6,
+  "audit_driver_modules": 1,
+  "named_declarations": 75,
+  "new_theorems": 63,
+  "modules": {
+    "ExponentialMean": {
+      "source_sha256": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+      "log_sha256": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+      "record_sha256": "ccaa2853468eca3dd3e0dc89d625f98f1bcfd8bc9ec1c7d051e4847669724c6a",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e",
+      "named": 5,
+      "theorems": 5,
+      "olean_sha256": "a20660f72d63a0161c954e9b8702dc26c055507816e37d487906070b3324ab94"
+    },
+    "BranchedLaw": {
+      "source_sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+      "log_sha256": "2d4af4f605c8cba3d7a150b125e6d08b5f23828ea3b49632d569be9dbc1b3163",
+      "record_sha256": "09931243a37df694fc5ddb35fae9a34119694d4e4056f30378de3978ba302231",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e",
+      "named": 30,
+      "theorems": 19,
+      "olean_sha256": "c51e473cba3d90c4e5fba2e6f247e08f266a3ad563bf364683ae666f86c7a23a"
+    },
+    "BranchedCdfMixture": {
+      "source_sha256": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+      "log_sha256": "b0a75cd939f893f8f6aa8d4e1957c3ba897d7c0b61b7c97cd54e33d2375bfe2b",
+      "record_sha256": "d31208df0051a341ca6a5116a6360cc9a4a7dad9ca193e96e5eff7f1677e7d67",
+      "review_sha256": "626b09a54800be07ea11d0d5194e2b313556dc39bd964aabb14dd4e41b4b1349",
+      "named": 6,
+      "theorems": 6,
+      "olean_sha256": "72a1c6b0e9bedef734d2b544a24427561677408f5244fde8608b5a2b9f1f1ed8"
+    },
+    "ExponentialCdfConvolution": {
+      "source_sha256": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+      "log_sha256": "31977f1811ef7a63fab3b166b00d372f5ab558d3ba192f72b4d854c4dd96f95d",
+      "record_sha256": "17488303ad177b837e8b23927207a67c194679383a874a7efa6494d47a56dbb5",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e",
+      "named": 4,
+      "theorems": 4,
+      "olean_sha256": "de4181e27843213a4e07c294cebc519c4f812c97ca53e480ff1ee75d3343e02c"
+    },
+    "LinearResponseKernel": {
+      "source_sha256": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+      "log_sha256": "1dc68fb744fb99c16945ee402344dfb9b64ad6411097fa1e356d926f9f37b8fb",
+      "record_sha256": "8d5dda7665dd2c218a60dd99d24b529b900dedfd63f1dd8869dc112fb22e88c4",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e",
+      "named": 11,
+      "theorems": 10,
+      "olean_sha256": "e0c9c0c0ff87efd9e0acb81456c173cbf0f1ca74ecd95c577efa709a62891383"
+    },
+    "ActualTankCdf": {
+      "source_sha256": "abcd4039dbc979c714395074a392a575dc8f7927ed663bbe6a7e84346ebdcb99",
+      "log_sha256": "6a2dbab9417b118228f7c3cce8dbae826e1dc1155b38f708f166c97158e15ba2",
+      "record_sha256": "d4fd5b2abc410855de367d6906bafb763e70a99130acc3e972ecf2a6c43f8236",
+      "review_sha256": "9eac3a4ce7c0deaad8d5a27fc9db407807c8104e926a556d4dcc844e249a12a3",
+      "named": 19,
+      "theorems": 19,
+      "olean_sha256": "5011fd0bfa3e82bab8548377827eccba4f0810a5d1982d4e211573ca8a4f665d"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "71fe843369f79a458411b0322c8844649dd74f17d4b3ca05e342d64bf1f32405",
+    "log_sha256": "3347d38fd5e5bad07afe449dec47ae66ffe78adab15ea917d88e9c67f4533f29",
+    "actual_prints": 75,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "reader_review": {
+    "reviewer": "/root/phase5_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "Context-free simulated mathematics undergraduate; read only README and actually viewed both PNGs. No sources/audits/notes/links used. Neither human testing, expert review, mathematical correctness nor novelty certification.",
+    "first_read": {
+      "reviewer": "/root/phase5_undergraduate_reader",
+      "type": "context-free undergraduate reader simulation only",
+      "status": "pass_with_two_optional_precision_edits",
+      "unresolved_blockers": [],
+      "reviewed_file_sha256": {
+        "README.md": "8cfeef29b98368951841486c742b156908d48c33cb62b16a143a29a034c9cda1",
+        "images/waiting-route.png": "7f9c9f72efc7ea4c31707eba1f31e9cbe950a1989df2f8226395206500bcb18e",
+        "images/cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5"
+      },
+      "actual_images_viewed": true,
+      "retelling": [
+        "S=Wc+Wa+J Wb, independently draw all four, unused Wb when J=0.",
+        "Condition on first wait u, then s=t-u to obtain real probability convolution; branching weights e/c,f/c times c become e,f.",
+        "Integrating factors successively identify F0=x0,F1=x1,F=x2; no target equality assumed.",
+        "General mean/law are formalized for all allowed parameters, actual all-time CDF equality only for the two specific examples; not a new original-automaton formula."
+      ],
+      "worked_examples": {
+        "means": [
+          "2/5+(1/5)*2+1=9/5",
+          "1/3+(1/3)*2+1=2"
+        ],
+        "probabilities": [
+          "1-1/4-1/4+1/64=33/64",
+          "1-1/8-2/5+3/640=307/640"
+        ],
+        "difference": "33/64-307/640=23/640=0.0359375, 3.59375 percentage points"
+      },
+      "feedback": [
+        {
+          "quote": "等待超过t的概率是e^{-kt}",
+          "category": "symbol ambiguity",
+          "blocking": false,
+          "issue": "e is both a rate parameter and natural exponent base.",
+          "change": "Use exp consistently for the natural exponential."
+        },
+        {
+          "quote": "平均绕路等待",
+          "category": "figure wording",
+          "blocking": false,
+          "issue": "Table shows unconditional p*2 contribution, while conditional wait is2.",
+          "change": "Rename to 绕路对均值的贡献."
+        }
+      ],
+      "scope_limit": "Read only README and two actual PNGs, no source/audit/notes/links; not human testing, expert review, correctness or novelty certification."
+    },
+    "final_reread": {
+      "status": "pass",
+      "unresolved_blockers": [],
+      "actual_images_viewed": true,
+      "changes_confirmed": [
+        "All natural exponentials consistently use exp, avoiding rate-parameter e ambiguity.",
+        "Figure1 table now labels unconditional detour contribution and preserves conditional wait2."
+      ],
+      "worked_examples": {
+        "mean_half": "2/5+(1/5)*2+1=9/5=1.8",
+        "mean_one": "1/3+(1/3)*2+1=2",
+        "low_probability": "1-1/4-1/4+1/64=33/64",
+        "high_probability": "1-1/8-2/5+3/640=307/640",
+        "difference": "23/640=3.59375 percentage points"
+      },
+      "scope_confirmed": [
+        "F0=x0,F1=x1,F=x2 via actual independent waiting integrals and integrating factors.",
+        "All-time machine CDF identification is only two parameter examples; general actual-law mean separate.",
+        "No physical reversed water flow or new original-automaton mean formula; mean ordering alone not CDF order."
+      ]
+    },
+    "reviewed_file_sha256": {
+      "README.md": "fdc11e208ec2ed3b6a1ef788ae9803a88fa00e254c65848efecb3ec27bed72f9",
+      "images/waiting-route.png": "dfa33c4a02fb8369033425b6e75935d3ed20579be91a5ce3bbf52a20f1a7a927",
+      "images/cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "focus": "Concrete question and evidence boundary",
+        "sha256": "8d0ed79d92d4c56afe0728d03c580583a0b00ecc8ba30736080602d2e2d4ddb0",
+        "actions": [
+          "Route and worked means precede calculus.",
+          "General mean separated from two-example formalCDF identity.",
+          "Reverse dependency path explicitly distinguished from physical water transport.",
+          "Classical background and original automaton scope explicit."
+        ]
+      },
+      {
+        "pass": 2,
+        "focus": "Figure and inference clarity",
+        "sha256": "7a6fe992816ad6ab3b92b3f135a58dceb2344e7196c5a727241631d5858fa261",
+        "actions": [
+          "Actually viewed both PNGs. Moved curve legend outside plotting area to uncover trajectories.",
+          "Clarified t-s as a change of integration variable, not an imposed waiting constraint."
+        ]
+      },
+      {
+        "pass": 3,
+        "focus": "First independent reader feedback",
+        "sha256": "eeba81f8d599ceee849c897cc0db644dff0fc50e2412f35b627b9082fa3e2670",
+        "actions": [
+          "Replaced all natural exponent bases e with exp to avoid confusing the rate parameter e.",
+          "Changed route table heading from average detour wait to detour contribution to the mean, distinguishing unconditional contribution from conditional wait.",
+          "Preserved all exact values and probability-vs-mean and formal-scope boundaries."
+        ]
+      }
+    ]
+  },
+  "local_links_checked": 2,
+  "original_formal_sources_unchanged": 267,
+  "phase1_math_sources_unchanged": true,
+  "prior_accepted_artifacts_unchanged": true,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "artifact_sha256": {
+    "audit-selection.json": "5ae6a1cfee762ca1986d79c4b5e95fe153624d02d0557b0139d91f83e5adc0d9",
+    "audit_module.py": "8237441f518972e7b8b27ce1045f89c0e5ca09a37c1df8811c6c1d1a2c5d05cb",
+    "evidence/ActualTankCdf-attempt1.json": "b98b502e755f0387c956f1f0b41d19c87ff10e74c2b76a6aa91b2b53b536347f",
+    "evidence/ActualTankCdf-attempt1.log": "e3df00ae257d208f75a1c833ea72f0befc57132a65c083adf0281d6a09bcc468",
+    "evidence/ActualTankCdf-attempt1.source.lean": "d06f826ffda24356195096019c203e1b571b397451bb7b960e522087cd223074",
+    "evidence/ActualTankCdf-attempt2.json": "ee5532db62c352cffd0182dbff10b66230f14b4b37f635eb05db3fa32434b2ec",
+    "evidence/ActualTankCdf-attempt2.log": "a8ee2dca8c38c4f2892051c9ad936d39d881249fc97ba8608e1a2efeeab39462",
+    "evidence/ActualTankCdf-attempt2.source.lean": "af24b30c64ef3dcb91d9cbec8fe6985adb4e26e3763fd5b3730c7d381c3958c7",
+    "evidence/ActualTankCdf-attempt3.json": "d4fd5b2abc410855de367d6906bafb763e70a99130acc3e972ecf2a6c43f8236",
+    "evidence/ActualTankCdf-attempt3.log": "6a2dbab9417b118228f7c3cce8dbae826e1dc1155b38f708f166c97158e15ba2",
+    "evidence/ActualTankCdf-attempt3.source.lean": "abcd4039dbc979c714395074a392a575dc8f7927ed663bbe6a7e84346ebdcb99",
+    "evidence/BranchedCdfMixture-attempt1.json": "36f429331b870446078a6c587502cddf7f852ec384cd6d5ebcedb6f604af21b1",
+    "evidence/BranchedCdfMixture-attempt1.log": "f5a5146ba3522d0f17a5b23dceeec6e7f6e53da43269f5bd53fcacc920b81c2d",
+    "evidence/BranchedCdfMixture-attempt2.json": "8c2c61db8529b7077a8f0d6b6ded48db77dfe1319ff08719026a8a648da35594",
+    "evidence/BranchedCdfMixture-attempt2.log": "a7a1960b8c77ae20728ee8db465ea7e1cc55167cf8916e5f1bd6b8f14ef0b575",
+    "evidence/BranchedCdfMixture-attempt2.source.lean": "fe9f64c1b40d298d2b3b3c651ffc6c4957ccc84b380e87b26816f5473c8f8d04",
+    "evidence/BranchedCdfMixture-attempt3.json": "f7b2986efa48219dc434756cf82949aa61ff9d17074dddd5ead4beaccbc935dd",
+    "evidence/BranchedCdfMixture-attempt3.log": "6ebffa1b3922f5370ceee0f56c328aac08acfa0d6f56a6c8ee14cdae388a11ac",
+    "evidence/BranchedCdfMixture-attempt3.source.lean": "53b1d81c71845421f691cfe3b186ad34ffecbee0937f96b9bac9bbb03ef8f386",
+    "evidence/BranchedCdfMixture-attempt4.json": "d31208df0051a341ca6a5116a6360cc9a4a7dad9ca193e96e5eff7f1677e7d67",
+    "evidence/BranchedCdfMixture-attempt4.log": "b0a75cd939f893f8f6aa8d4e1957c3ba897d7c0b61b7c97cd54e33d2375bfe2b",
+    "evidence/BranchedCdfMixture-attempt4.source.lean": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+    "evidence/BranchedLaw-attempt1.json": "e59da4897695f02dbb412f9806dcfa95c984b6a241478d30b5322f7ee5bc0768",
+    "evidence/BranchedLaw-attempt1.log": "189f563b0910a54cc2c56a8bebbfff4d8f28f388985114e0b86bd8e1df16d55d",
+    "evidence/BranchedLaw-attempt1.source.lean": "eaba49897da78961c050d684b9284acc19155e5516b88ccd0d8c27eec60668a1",
+    "evidence/BranchedLaw-attempt2.json": "8550f51758ffcb8c08e9c64e6688420a7b6750e61977120fcc3438609c87a8dc",
+    "evidence/BranchedLaw-attempt2.log": "c910c1e79b79b6c98c2fad759531202215c2fdb4c40053f2dc48dab6557322ae",
+    "evidence/BranchedLaw-attempt2.source.lean": "6a6d968fd2da57601d91be4e309bbb3b8c8f676fa8ffcb6e1bc45aac280da0bc",
+    "evidence/BranchedLaw-attempt3.json": "1a0d49933cb5e53ee49b0bf211c1c51a4af9236079db39ed914110bce8fe311f",
+    "evidence/BranchedLaw-attempt3.log": "47be563ad6064ea4e4191349f3ff0afab99147e853c7ebb49cda878cc83a352e",
+    "evidence/BranchedLaw-attempt3.source.lean": "0a5f3b4851c286daa9ceb25ee9b89e9381765aef0f944aa8023844d121dec73f",
+    "evidence/BranchedLaw-attempt4.json": "09931243a37df694fc5ddb35fae9a34119694d4e4056f30378de3978ba302231",
+    "evidence/BranchedLaw-attempt4.log": "2d4af4f605c8cba3d7a150b125e6d08b5f23828ea3b49632d569be9dbc1b3163",
+    "evidence/BranchedLaw-attempt4.source.lean": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+    "evidence/ExponentialCdfConvolution-attempt1.json": "3d2ac59eb8f3bae97ff8c45e304544248e0760445c0843c307f27c4421249b84",
+    "evidence/ExponentialCdfConvolution-attempt1.log": "d311c6b3470889430b5c2f5322c59cae33bdb1e96153b1d1e8b5943ba60d4e72",
+    "evidence/ExponentialCdfConvolution-attempt1.source.lean": "c7177f7185d00b0ced96be3b4fdcf050c0760bd46c6d7ecf449678d1839c2b55",
+    "evidence/ExponentialCdfConvolution-attempt2.json": "4caa878de00d3ca3b16dfedc2f6732dc3630ffcf6f2050f9f90be004fb92da2f",
+    "evidence/ExponentialCdfConvolution-attempt2.log": "d311c6b3470889430b5c2f5322c59cae33bdb1e96153b1d1e8b5943ba60d4e72",
+    "evidence/ExponentialCdfConvolution-attempt2.source.lean": "c7177f7185d00b0ced96be3b4fdcf050c0760bd46c6d7ecf449678d1839c2b55",
+    "evidence/ExponentialCdfConvolution-attempt3.json": "fc46a61c107a44c02d38b2f8363fee8337aba392f9e1ed2fb4ec14f45e3273b6",
+    "evidence/ExponentialCdfConvolution-attempt3.log": "5bc15f5537f9fdb8d033c04dcb8b058081a5fe703481f207ebc69eeeb85fdd38",
+    "evidence/ExponentialCdfConvolution-attempt3.source.lean": "a0a34c98716361cac5aeeaa8bbf690bad83038baa04534f649d0d61c4b32f69a",
+    "evidence/ExponentialCdfConvolution-attempt4.json": "36c7b142ad3778b71f387da8a74b8124352b91eb8f688a6dffb818fcfd6839b9",
+    "evidence/ExponentialCdfConvolution-attempt4.log": "1dd6f696965eee506ff056581be190df85d7db68d50a780d870c00eb7ebc7b74",
+    "evidence/ExponentialCdfConvolution-attempt4.source.lean": "d44f4f2de50ed815712d505961fe1d40edbd286f86d6d6cefe2076c4bff57d76",
+    "evidence/ExponentialCdfConvolution-attempt5.json": "17488303ad177b837e8b23927207a67c194679383a874a7efa6494d47a56dbb5",
+    "evidence/ExponentialCdfConvolution-attempt5.log": "31977f1811ef7a63fab3b166b00d372f5ab558d3ba192f72b4d854c4dd96f95d",
+    "evidence/ExponentialCdfConvolution-attempt5.source.lean": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+    "evidence/ExponentialMean-attempt1.json": "c21ebb7d6c4db4c5cfa2b400655fe569ba1dde6e35648b8c9fc7e02054dc4172",
+    "evidence/ExponentialMean-attempt1.log": "58da67779d13b725915eec5e086d57760e4066478c9c329777aeda46d3d00091",
+    "evidence/ExponentialMean-attempt1.source.lean": "8de1f8fc78ac95ece018bc52ee21596281308cd9c4abc1127827d33c171e8f73",
+    "evidence/ExponentialMean-attempt2.json": "c39e4592c4e5d0371064e792f97d46b4061ae899ac841b0d9f127ab34d13a26f",
+    "evidence/ExponentialMean-attempt2.log": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+    "evidence/ExponentialMean-attempt2.source.lean": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+    "evidence/ExponentialMean-final.json": "ccaa2853468eca3dd3e0dc89d625f98f1bcfd8bc9ec1c7d051e4847669724c6a",
+    "evidence/ExponentialMean-final.log": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+    "evidence/ExponentialMean-final.source.lean": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+    "evidence/LinearResponseKernel-attempt1.json": "4e72c9afa147811cd9b6862a58f9f0b97c693ea46856a37813b98eac1530f20d",
+    "evidence/LinearResponseKernel-attempt1.log": "d4ec6c3e4fadc3cf070c732f4d872e68d0e7fe6344d8d8bb04d124564afdc205",
+    "evidence/LinearResponseKernel-attempt1.source.lean": "20d016b62f5d0afc5122f390047ad25babc88a7e72beb90bbe54c7c499a1eb35",
+    "evidence/LinearResponseKernel-attempt2.json": "b53ecb1fbedbb930fe70123f0faac70bc6fc8b37694e45dea724c8bb251cb1da",
+    "evidence/LinearResponseKernel-attempt2.log": "817a23dbdfa2a503fa54ed4f92d27e54a8ea7289b9987bffc216323f5d15fe28",
+    "evidence/LinearResponseKernel-attempt2.source.lean": "b97bd03792b6a11c735a5ed985c69525d38e0fdb25d6fed56185393b65c9a99a",
+    "evidence/LinearResponseKernel-attempt3.json": "8d5dda7665dd2c218a60dd99d24b529b900dedfd63f1dd8869dc112fb22e88c4",
+    "evidence/LinearResponseKernel-attempt3.log": "1dc68fb744fb99c16945ee402344dfb9b64ad6411097fa1e356d926f9f37b8fb",
+    "evidence/LinearResponseKernel-attempt3.source.lean": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+    "evidence/phase5-independent-source-review.json": "f4c58384aa3702ea23fa44cf7f0b92101be5b25909134e52445110284a9b980e",
+    "evidence/Phase5Audit-final.json": "3e845e46b6cb8ffff6adadca87018f9fea25fbdb5945cf4da31784fa41054c30",
+    "evidence/Phase5Audit-final.log": "3347d38fd5e5bad07afe449dec47ae66ffe78adab15ea917d88e9c67f4533f29",
+    "evidence/Phase5Audit-final.source.lean": "71fe843369f79a458411b0322c8844649dd74f17d4b3ca05e342d64bf1f32405",
+    "figure-data.json": "66ff12461d14a7f85f4dc35895a49730041eaceff18b71613c459eb43780b047",
+    "images/cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5",
+    "images/waiting-route.png": "dfa33c4a02fb8369033425b6e75935d3ed20579be91a5ce3bbf52a20f1a7a927",
+    "lean/ActualTankCdf.lean": "abcd4039dbc979c714395074a392a575dc8f7927ed663bbe6a7e84346ebdcb99",
+    "lean/BranchedCdfMixture.lean": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+    "lean/BranchedLaw.lean": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+    "lean/ExponentialCdfConvolution.lean": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+    "lean/ExponentialMean.lean": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+    "lean/LinearResponseKernel.lean": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+    "lean/Phase5Audit.lean": "71fe843369f79a458411b0322c8844649dd74f17d4b3ca05e342d64bf1f32405",
+    "notes/actual-cdf-root-review.json": "9eac3a4ce7c0deaad8d5a27fc9db407807c8104e926a556d4dcc844e249a12a3",
+    "notes/editing-passes.json": "bc40d280384e1c9278696d046f6876a885900798fb1a1ea8e81eb1c4fd39e97d",
+    "notes/independent-review-attestation.json": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e",
+    "notes/mixture-root-review.json": "626b09a54800be07ea11d0d5194e2b313556dc39bd964aabb14dd4e41b4b1349",
+    "notes/phase-type-primary-source-check.json": "9a25b6a69bc54d0bf678644cf5bb1586546df84e7b44898eaf9ffc1c20590b7b",
+    "notes/prior-accepted-freeze.json": "da5504178c3ef8ed31d6324a0ff63ceee77162a647d2cc9bc54dd3e5935b5171",
+    "notes/reader-first-read.json": "68a70d73af610410f228536ca98cc16875f8fc759097486947dd74d67fca0c12",
+    "notes/readme-pass1.md": "58236a87c32442a7890d61a212f57ed15486a780b2b98858e8731df23dec86a8",
+    "notes/readme-pass2.md": "8cfeef29b98368951841486c742b156908d48c33cb62b16a143a29a034c9cda1",
+    "notes/readme-pass3.md": "fdc11e208ec2ed3b6a1ef788ae9803a88fa00e254c65848efecb3ec27bed72f9",
+    "reader-review.json": "274221cae215ee992d09d568b8e1bd01fefe66af98996cd5ea39b7c800945d7f",
+    "README.md": "fdc11e208ec2ed3b6a1ef788ae9803a88fa00e254c65848efecb3ec27bed72f9",
+    "render_results.py": "c01a5df71a52087701edd3ca5cffce157ec4fe7cbc317c98019cd8d66441437b",
+    "RUN_STATE.json": "50488b74a38fa027d81de939c9a01d7fbcc349aae756c893b09cb5248d0e7a55",
+    "source-review-binding.json": "96b625d2de6ff904ef9a9aa2f1d061f577aa1a175ab3d53a9a88e8aaf4b2ac26",
+    "validate_phase5.py": "e070aec01737834afc56f0a427c7378ff4697547680c724d4660b1d568e2a739"
+  },
+  "claims": {
+    "actual_product_law": true,
+    "actual_total_integrable_and_mean": true,
+    "mean": "1/a+1/(e+f)+f/((e+f)*b)",
+    "example_means": [
+      "9/5",
+      "2"
+    ],
+    "actual_CDF_matches_existing_outlet_for_two_examples_for_all_nonnegative_time": true,
+    "actual_event_probabilities_at_2log2": [
+      "33/64",
+      "307/640"
+    ],
+    "general_parameter_CDF_identification_formalized": false,
+    "original_automaton_new_mean_formula": false,
+    "new_field_or_novelty_certification": false,
+    "reader_simulation_not_human_test": true
+  }
+}

@@ -1,0 +1,57 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:68:41: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:70:53: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:68:41: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:70:53: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:97:66: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:97:70: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:97:70: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:117:72: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:117:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:142:80: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:142:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.TankResponse.x0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.solution_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap01_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_sub_x1_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap12_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_f_of_e_le_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_antitone_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]

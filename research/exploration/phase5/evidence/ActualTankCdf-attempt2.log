@@ -1,0 +1,64 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:21:54: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:32:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:46:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:60:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:61:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:93:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:93:6: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:93:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'MathExploration.ActualTankCdf.cdf_exp_one_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_exp_one_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_direct_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_via_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.weighted_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_mixture_is_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.high_mixture_is_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]

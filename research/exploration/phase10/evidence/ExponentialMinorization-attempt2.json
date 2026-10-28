@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-28T00:24:00.129170+08:00",
+  "module": "ExponentialMinorization",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "097307ca4075f2f0f2e26c4189fd033de7634660c5d7cd05030f83873a29665a",
+  "source_unchanged_during_build": true,
+  "log_sha256": "84c3018f8657c4ab772a349e0a04d69a260933fd2bfa48bd651fbaa76a2e8aaf",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\build\\ExponentialMinorization.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean\\ExponentialMinorization.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ExponentialMinorization.rho",
+    "MathExploration.ExponentialMinorization.rho_eq_withDensity",
+    "MathExploration.ExponentialMinorization.scaled_pdf_le_one",
+    "MathExploration.ExponentialMinorization.rho_le_exp_same",
+    "MathExploration.ExponentialMinorization.rho_le_exp_one",
+    "MathExploration.ExponentialMinorization.rho_mass",
+    "MathExploration.ExponentialMinorization.rho_mass_real",
+    "MathExploration.ExponentialMinorization.rho_finite",
+    "MathExploration.ExponentialMinorization.common_submeasure",
+    "MathExploration.ExponentialMinorization.near_common_submeasure"
+  ],
+  "expected_prints": [
+    "MathExploration.ExponentialMinorization.rho",
+    "MathExploration.ExponentialMinorization.rho_eq_withDensity",
+    "MathExploration.ExponentialMinorization.scaled_pdf_le_one",
+    "MathExploration.ExponentialMinorization.rho_le_exp_same",
+    "MathExploration.ExponentialMinorization.rho_le_exp_one",
+    "MathExploration.ExponentialMinorization.rho_mass",
+    "MathExploration.ExponentialMinorization.rho_mass_real",
+    "MathExploration.ExponentialMinorization.rho_finite",
+    "MathExploration.ExponentialMinorization.common_submeasure",
+    "MathExploration.ExponentialMinorization.near_common_submeasure"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

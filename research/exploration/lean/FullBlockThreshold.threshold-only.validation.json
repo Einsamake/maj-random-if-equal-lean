@@ -1,0 +1,33 @@
+{
+  "schema": "math-exploration-validation-v1",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean",
+  "source_sha256": "65d1d980de0e6c486c00ca37bc25b20518c47f21ec065cb04d1196a1a86c6faf",
+  "source_bytes": 9776,
+  "toolchain": "D:/MyWorks/Math/formal/.tools/lean-4.35.0-rc4-windows/bin/lake.exe",
+  "workdir": "D:/MyWorks/Math/formal/analysis",
+  "arguments": [
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean",
+    "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean"
+  ],
+  "exit_code": 0,
+  "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.validation.log",
+  "log_sha256": "0611af2e8644bccf01fd2488e1da2a909ed5f33ead500acbf38d13fa3158b881",
+  "declaration_count": 14,
+  "printed_axiom_count": 14,
+  "source_forbidden_token_hits": 0,
+  "validation_error_or_sorryAx_hits": 0,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "first_four_attempts": "Preserved as FullBlockThreshold.attempt1.log through attempt4.log; all exited 1 and are not acceptance evidence.",
+  "baseline_mutations": "No formal source or sealed package edited. Existing compiled imports were used; main project was not rebuilt.",
+  "proof_status": "kernel_checked_exploratory_extension",
+  "independent_source_review": "no_blocking_mathematical_issue_found; see FullBlockThreshold.source-review.json",
+  "human_document_reader_review": "not_applicable_to_formal_source; parent owns final human-facing materials",
+  "created_utc": "2026-10-26T16:18:22.1253253Z"
+}

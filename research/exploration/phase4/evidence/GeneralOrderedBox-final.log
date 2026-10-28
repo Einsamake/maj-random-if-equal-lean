@@ -1,0 +1,22 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.GeneralOrderedBox.orderedCaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.boundedRates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gap_matrix_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.actual_metzler_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_rates_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_gaps_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_order_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_drift_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.solution_below_upper_trajectory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.GeneralOrderedBox.scaled_caps_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

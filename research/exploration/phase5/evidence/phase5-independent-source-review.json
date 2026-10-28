@@ -1,0 +1,568 @@
+{
+  "schema": "phase5-independent-source-review-v1",
+  "reviewed_at": "2026-10-27T12:23:29.684920+08:00",
+  "reviewer_task": "/root/phase5_mixture_repair",
+  "review_kind": "Internal agent source-level semantic review plus independent verification of recorded artifact bindings",
+  "independent_scope": [
+    "ExponentialMean",
+    "BranchedLaw",
+    "LinearResponseKernel",
+    "ExponentialCdfConvolution"
+  ],
+  "independent_scope_declarations": 50,
+  "owned_module_audited": "BranchedCdfMixture",
+  "owned_module_declarations": 6,
+  "all_artifact_checks_passed": true,
+  "semantic_finding": "No mismatch found between the inspected source and the bounded proved statements listed in this record.",
+  "blocking_semantic_findings": [],
+  "artifact_bindings": {
+    "ExponentialMean": {
+      "attempt": "attempt2",
+      "role": "independent_source_review",
+      "source_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ExponentialMean.lean",
+      "source_sha256": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+      "snapshot_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialMean-attempt2.source.lean",
+      "metadata_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialMean-attempt2.json",
+      "metadata_sha256": "c39e4592c4e5d0371064e792f97d46b4061ae899ac841b0d9f127ab34d13a26f",
+      "log_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialMean-attempt2.log",
+      "log_sha256": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+      "olean_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ExponentialMean.olean",
+      "olean_sha256": "a20660f72d63a0161c954e9b8702dc26c055507816e37d487906070b3324ab94",
+      "source_unchanged_during_build_recorded": null,
+      "declaration_count": 5,
+      "declarations": [
+        {
+          "name": "weighted_density_eq",
+          "line": 9
+        },
+        {
+          "name": "gamma_density_integrable",
+          "line": 23
+        },
+        {
+          "name": "gamma_density_integral",
+          "line": 30
+        },
+        {
+          "name": "integrable_id",
+          "line": 37
+        },
+        {
+          "name": "integral_id",
+          "line": 47
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "metadata_passed": true,
+        "exit_zero": true,
+        "trust_zero": true,
+        "current_source_matches_metadata": true,
+        "snapshot_matches_metadata": true,
+        "log_matches_metadata": true,
+        "olean_matches_metadata": true,
+        "all_source_declarations_audited": true,
+        "actual_prints_match_source": true,
+        "actual_prints_match_metadata": true,
+        "only_standard_axioms": true,
+        "no_forbidden_source_token": true
+      }
+    },
+    "BranchedLaw": {
+      "attempt": "attempt4",
+      "role": "independent_source_review",
+      "source_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedLaw.lean",
+      "source_sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+      "snapshot_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedLaw-attempt4.source.lean",
+      "metadata_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedLaw-attempt4.json",
+      "metadata_sha256": "09931243a37df694fc5ddb35fae9a34119694d4e4056f30378de3978ba302231",
+      "log_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedLaw-attempt4.log",
+      "log_sha256": "2d4af4f605c8cba3d7a150b125e6d08b5f23828ea3b49632d569be9dbc1b3163",
+      "olean_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\BranchedLaw.olean",
+      "olean_sha256": "c51e473cba3d90c4e5fba2e6f247e08f266a3ad563bf364683ae666f86c7a23a",
+      "source_unchanged_during_build_recorded": true,
+      "declaration_count": 30,
+      "declarations": [
+        {
+          "name": "Sample",
+          "line": 12
+        },
+        {
+          "name": "branchProb",
+          "line": 14
+        },
+        {
+          "name": "branchMeasure",
+          "line": 18
+        },
+        {
+          "name": "waitLaw",
+          "line": 21
+        },
+        {
+          "name": "law",
+          "line": 24
+        },
+        {
+          "name": "J",
+          "line": 27
+        },
+        {
+          "name": "Wc",
+          "line": 29
+        },
+        {
+          "name": "Wb",
+          "line": 31
+        },
+        {
+          "name": "Wa",
+          "line": 33
+        },
+        {
+          "name": "total",
+          "line": 35
+        },
+        {
+          "name": "J_measurable",
+          "line": 37
+        },
+        {
+          "name": "Wc_measurable",
+          "line": 39
+        },
+        {
+          "name": "Wb_measurable",
+          "line": 40
+        },
+        {
+          "name": "Wa_measurable",
+          "line": 42
+        },
+        {
+          "name": "total_measurable",
+          "line": 44
+        },
+        {
+          "name": "totalMeasure",
+          "line": 49
+        },
+        {
+          "name": "total_hasLaw",
+          "line": 52
+        },
+        {
+          "name": "waitLaw_probability",
+          "line": 56
+        },
+        {
+          "name": "law_probability",
+          "line": 64
+        },
+        {
+          "name": "totalMeasure_probability",
+          "line": 71
+        },
+        {
+          "name": "J_hasLaw",
+          "line": 78
+        },
+        {
+          "name": "Wc_hasLaw",
+          "line": 84
+        },
+        {
+          "name": "Wb_hasLaw",
+          "line": 95
+        },
+        {
+          "name": "Wa_hasLaw",
+          "line": 107
+        },
+        {
+          "name": "rectangle_factorization",
+          "line": 119
+        },
+        {
+          "name": "coordinate_factorization",
+          "line": 133
+        },
+        {
+          "name": "total_integrable",
+          "line": 154
+        },
+        {
+          "name": "total_mean",
+          "line": 175
+        },
+        {
+          "name": "example_half",
+          "line": 220
+        },
+        {
+          "name": "example_one",
+          "line": 226
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "metadata_passed": true,
+        "exit_zero": true,
+        "trust_zero": true,
+        "current_source_matches_metadata": true,
+        "snapshot_matches_metadata": true,
+        "log_matches_metadata": true,
+        "olean_matches_metadata": true,
+        "all_source_declarations_audited": true,
+        "actual_prints_match_source": true,
+        "actual_prints_match_metadata": true,
+        "only_standard_axioms": true,
+        "no_forbidden_source_token": true
+      }
+    },
+    "LinearResponseKernel": {
+      "attempt": "attempt3",
+      "role": "independent_source_review",
+      "source_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\LinearResponseKernel.lean",
+      "source_sha256": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+      "snapshot_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\LinearResponseKernel-attempt3.source.lean",
+      "metadata_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\LinearResponseKernel-attempt3.json",
+      "metadata_sha256": "8d5dda7665dd2c218a60dd99d24b529b900dedfd63f1dd8869dc112fb22e88c4",
+      "log_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\LinearResponseKernel-attempt3.log",
+      "log_sha256": "1dc68fb744fb99c16945ee402344dfb9b64ad6411097fa1e356d926f9f37b8fb",
+      "olean_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\LinearResponseKernel.olean",
+      "olean_sha256": "e0c9c0c0ff87efd9e0acb81456c173cbf0f1ca74ecd95c577efa709a62891383",
+      "source_unchanged_during_build_recorded": true,
+      "declaration_count": 11,
+      "declarations": [
+        {
+          "name": "kernel",
+          "line": 11
+        },
+        {
+          "name": "ode_to_kernel",
+          "line": 14
+        },
+        {
+          "name": "kernel_eq_negative",
+          "line": 32
+        },
+        {
+          "name": "low_continuous",
+          "line": 39
+        },
+        {
+          "name": "high_continuous",
+          "line": 42
+        },
+        {
+          "name": "low_zero_exp",
+          "line": 45
+        },
+        {
+          "name": "high_zero_exp",
+          "line": 54
+        },
+        {
+          "name": "low_middle_kernel",
+          "line": 58
+        },
+        {
+          "name": "high_middle_kernel",
+          "line": 67
+        },
+        {
+          "name": "low_outlet_kernel",
+          "line": 76
+        },
+        {
+          "name": "high_outlet_kernel",
+          "line": 88
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "metadata_passed": true,
+        "exit_zero": true,
+        "trust_zero": true,
+        "current_source_matches_metadata": true,
+        "snapshot_matches_metadata": true,
+        "log_matches_metadata": true,
+        "olean_matches_metadata": true,
+        "all_source_declarations_audited": true,
+        "actual_prints_match_source": true,
+        "actual_prints_match_metadata": true,
+        "only_standard_axioms": true,
+        "no_forbidden_source_token": true
+      }
+    },
+    "ExponentialCdfConvolution": {
+      "attempt": "attempt5",
+      "role": "independent_source_review",
+      "source_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ExponentialCdfConvolution.lean",
+      "source_sha256": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+      "snapshot_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialCdfConvolution-attempt5.source.lean",
+      "metadata_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialCdfConvolution-attempt5.json",
+      "metadata_sha256": "17488303ad177b837e8b23927207a67c194679383a874a7efa6494d47a56dbb5",
+      "log_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\ExponentialCdfConvolution-attempt5.log",
+      "log_sha256": "31977f1811ef7a63fab3b166b00d372f5ab558d3ba192f72b4d854c4dd96f95d",
+      "olean_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ExponentialCdfConvolution.olean",
+      "olean_sha256": "de4181e27843213a4e07c294cebc519c4f812c97ca53e480ff1ee75d3343e02c",
+      "source_unchanged_during_build_recorded": true,
+      "declaration_count": 4,
+      "declarations": [
+        {
+          "name": "cdf_conv_eq_integral",
+          "line": 15
+        },
+        {
+          "name": "cdf_exp_conv_eq_integral_clock",
+          "line": 35
+        },
+        {
+          "name": "cdf_exp_conv_eq_integral",
+          "line": 65
+        },
+        {
+          "name": "cdf_exp_conv_eq_zero_of_neg",
+          "line": 75
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "metadata_passed": true,
+        "exit_zero": true,
+        "trust_zero": true,
+        "current_source_matches_metadata": true,
+        "snapshot_matches_metadata": true,
+        "log_matches_metadata": true,
+        "olean_matches_metadata": true,
+        "all_source_declarations_audited": true,
+        "actual_prints_match_source": true,
+        "actual_prints_match_metadata": true,
+        "only_standard_axioms": true,
+        "no_forbidden_source_token": true
+      }
+    },
+    "BranchedCdfMixture": {
+      "attempt": "attempt4",
+      "role": "owned_module_build_audit",
+      "source_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedCdfMixture.lean",
+      "source_sha256": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+      "snapshot_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedCdfMixture-attempt4.source.lean",
+      "metadata_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedCdfMixture-attempt4.json",
+      "metadata_sha256": "d31208df0051a341ca6a5116a6360cc9a4a7dad9ca193e96e5eff7f1677e7d67",
+      "log_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\evidence\\BranchedCdfMixture-attempt4.log",
+      "log_sha256": "b0a75cd939f893f8f6aa8d4e1957c3ba897d7c0b61b7c97cd54e33d2375bfe2b",
+      "olean_path": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\BranchedCdfMixture.olean",
+      "olean_sha256": "72a1c6b0e9bedef734d2b544a24427561677408f5244fde8608b5a2b9f1f1ed8",
+      "source_unchanged_during_build_recorded": true,
+      "declaration_count": 6,
+      "declarations": [
+        {
+          "name": "map_nested_product_via",
+          "line": 14
+        },
+        {
+          "name": "map_nested_product_direct",
+          "line": 25
+        },
+        {
+          "name": "map_bernoulli_nested_product",
+          "line": 35
+        },
+        {
+          "name": "totalMeasure_eq_mixture",
+          "line": 56
+        },
+        {
+          "name": "cdf_totalMeasure_eq",
+          "line": 75
+        },
+        {
+          "name": "cdf_totalMeasure_eq_rates",
+          "line": 90
+        }
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "metadata_passed": true,
+        "exit_zero": true,
+        "trust_zero": true,
+        "current_source_matches_metadata": true,
+        "snapshot_matches_metadata": true,
+        "log_matches_metadata": true,
+        "olean_matches_metadata": true,
+        "all_source_declarations_audited": true,
+        "actual_prints_match_source": true,
+        "actual_prints_match_metadata": true,
+        "only_standard_axioms": true,
+        "no_forbidden_source_token": true
+      }
+    }
+  },
+  "semantic_review": {
+    "ExponentialMean": {
+      "parameters": [
+        "r > 0; expMeasure r uses rate r, not scale"
+      ],
+      "proved": [
+        "Pointwise x times the exponential density equals (1/r) times the Gamma(shape=2, rate=r) density, including the negative half-line.",
+        "The Gamma density is integrable and integrates to one using mathlib normalization.",
+        "The identity random variable is Integrable under the actual expMeasure r, and its Bochner integral is 1/r."
+      ],
+      "proof_route": "Density weighting and Gamma normalization; integrability is established before interpreting the mean.",
+      "core_probability_conclusion_supplied_as_parameter": false,
+      "scope_limits": [
+        "No claim for nonpositive rates."
+      ]
+    },
+    "BranchedLaw": {
+      "parameters": [
+        "a > 0",
+        "b > 0",
+        "e >= 0",
+        "f >= 0",
+        "c = e+f > 0"
+      ],
+      "actual_objects": {
+        "sample": "Bool x (Real x (Real x Real))",
+        "law": "Bernoulli(true,false,p) product Exp(c) product Exp(b) product Exp(a), with p=f/c",
+        "total": "Wc + (if J then Wb + Wa else Wa)",
+        "totalMeasure": "Actual pushforward law.map total"
+      },
+      "proved": [
+        "Probability normalization of the wait law, full law and totalMeasure.",
+        "Measurability and four coordinate HasLaw statements with the intended Bernoulli/exponential marginals.",
+        "Rectangular event measure factorization and factorization into four coordinate event probabilities.",
+        "Integrability of total, then its actual integral equals 1/a + 1/c + f/(c*b).",
+        "Exact actual-law mean examples: a=1,b=1/2,e=2,f=1/2 gives 9/5; f=1 gives 2."
+      ],
+      "proof_route": "Product measures supply marginals and rectangular independence; piecewise integrability, Fubini, Bernoulli integration and ExponentialMean.integral_id supply the mean.",
+      "core_probability_conclusion_supplied_as_parameter": false,
+      "scope_limits": [
+        "The explicit product construction and rectangle factorization establish the listed independence content; no separate iIndepFun theorem is exported.",
+        "total_hasLaw is the map-law identity; probability normalization and mean are separately proved.",
+        "No separate AE-positivity theorem for total is exported.",
+        "This constructs the specified law; physical tank-response identification belongs to the later ActualTankCdf module."
+      ]
+    },
+    "LinearResponseKernel": {
+      "parameters": [
+        "Generic c is an arbitrary real.",
+        "Generic ode_to_kernel assumes Continuous F, Y(0)=0, and the displayed derivative equation for every real argument."
+      ],
+      "proved": [
+        "For all real t, Y(t)=integral(0..t) exp(c*(s-t))*F(s) under the displayed analytic hypotheses.",
+        "Equivalent negative-exponent notation exp(-c*(t-s)).",
+        "Actual phase4 low/high upstream, middle and outlet response formulas are specialized from their existing actualMatrix derivative and zero-initial-value theorems."
+      ],
+      "specialized_scalar_equations": [
+        "middle derivative = (1/2)*upstream - (1/2)*middle",
+        "low outlet derivative = 2*upstream + (1/2)*middle - (5/2)*outlet",
+        "high outlet derivative = 2*upstream + middle - 3*outlet"
+      ],
+      "proof_route": "Integrating factor and the fundamental theorem of calculus; specializations discharge hypotheses from the frozen actual ODE solutions.",
+      "core_probability_conclusion_supplied_as_parameter": false,
+      "scope_limits": [
+        "All-real statements use oriented interval integrals.",
+        "The module alone does not identify negative-time analytic states with a probability CDF.",
+        "Generic ode_to_kernel is conditional on its explicitly displayed analytic hypotheses."
+      ]
+    },
+    "ExponentialCdfConvolution": {
+      "parameters": [
+        "Generic convolution CDF identity requires both measures to be probability measures.",
+        "Exponential kernel identities require c>0, probability input mu, cdf(mu,x)=0 for x<0, and t>=0."
+      ],
+      "proved": [
+        "The actual convolution CDF equals integral cdf(mu,t-u) with respect to nu for every real t.",
+        "For exponential nu and nonnegative input support, the actual CDF is the clock-order or response-order exponential integral on 0..t for t>=0.",
+        "The same actual exponential convolution has zero CDF at negative times."
+      ],
+      "proof_route": "Bounded event indicator, product-measure convolution/Fubini, actual exponential density, support truncation and interval substitution.",
+      "core_probability_conclusion_supplied_as_parameter": false,
+      "scope_limits": [
+        "The generic negative-support premise must be discharged for each concrete input measure.",
+        "The nonnegative-time restriction is explicit; the response-order identity is not asserted for negative times.",
+        "The module does not by itself prove the concrete tank-state CDF identities."
+      ]
+    },
+    "BranchedCdfMixture": {
+      "role": "Author-side build and scope audit; not an independent source review of this module.",
+      "parameters": [
+        "a>0,b>0,e>=0,f>=0,e+f>0; actual CDF mixture identities hold for every real t"
+      ],
+      "proved": [
+        "Three general map/product/convolution identities.",
+        "The actual totalMeasure is direct convolution Exp(c)*Exp(a) with weight e/c plus via convolution Exp(c)*(Exp(b)*Exp(a)) with weight f/c.",
+        "The actual totalMeasure CDF has the same two weights, first in complementary-probability form and then explicitly as e/c and f/c."
+      ],
+      "proof_route": "Bernoulli atomic decomposition, product map identities, then finite-measure real evaluation of the two weighted probability convolutions.",
+      "core_probability_conclusion_supplied_as_parameter": false,
+      "scope_limits": [
+        "No lowState/highState identification is asserted in this module.",
+        "attempt3 failed because simp did not unfold a bare mapped total function; attempt4 explicitly changes to the coordinate map and passes. Failed evidence is preserved."
+      ]
+    }
+  },
+  "exact_rational_sanity_checks": [
+    {
+      "a": "1",
+      "b": "1/2",
+      "e": "2",
+      "f": "1/2",
+      "c": "5/2",
+      "direct_weight": "4/5",
+      "via_weight": "1/5",
+      "weight_sum": "1",
+      "mean": "9/5"
+    },
+    {
+      "a": "1",
+      "b": "1/2",
+      "e": "2",
+      "f": "1",
+      "c": "3",
+      "direct_weight": "2/3",
+      "via_weight": "1/3",
+      "weight_sum": "1",
+      "mean": "2"
+    }
+  ],
+  "verification_limits": [
+    "This is an internal agent review, not a human learner test, external expert review or novelty certification.",
+    "Formal proof acceptance remains the separate matching trust=0 build and axiom records; this semantic review does not replace kernel checking.",
+    "Only propext, Classical.choice and Quot.sound occur; this is not a claim of zero axioms.",
+    "Current files, source snapshots, logs, metadata and caches are bound by hashes. This review does not reconstruct historical dependency-load events or rebuild the existing frozen phases/mathlib.",
+    "ExponentialMean attempt2 predates the source-unchanged-during-build metadata field; its current source, saved snapshot and recorded source hash do match.",
+    "This review produced a machine-readable evidence record; no new tutorial or human-facing mathematical exposition was authored."
+  ],
+  "environment_observed": {
+    "mathlib_head": "54c01c3314d33d15d77893cbe4e0472ff26bb34d",
+    "batteries_head": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+    "batteries_status": "T docs/README.md; no Lean source edit appeared in the inspected status",
+    "reviewer_modified_dependencies": false,
+    "reviewer_modified_formal_or_frozen_phases": false
+  }
+}

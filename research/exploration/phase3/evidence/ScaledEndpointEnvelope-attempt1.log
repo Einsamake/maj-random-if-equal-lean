@@ -1,0 +1,44 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\ScaledEndpointEnvelope.lean:28:5: warning: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.ScaledEndpointEnvelope.timeScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.boundedRates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.timeScale_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.timeScale_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.actual_metzler_of_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.bounded_actual_metzler' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.upper_rates_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.endpoint_drift_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_zero_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_gaps_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaled_drift_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.solution_below_scaled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_actual_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_attainable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

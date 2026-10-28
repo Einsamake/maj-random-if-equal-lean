@@ -1,0 +1,30 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase7\lean\MeanRecoverySensitivity.lean:39:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase7\lean\MeanRecoverySensitivity.lean:39:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.MeanRecoverySensitivity.lowMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRecoverySensitivity.highMean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRecoverySensitivity.low_total_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRecoverySensitivity.high_total_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRecoverySensitivity.total_mean_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRecoverySensitivity.total_mean_gap_pos_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRecoverySensitivity.parameter_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRecoverySensitivity.lowMean_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRecoverySensitivity.highMean_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRecoverySensitivity.total_mean_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

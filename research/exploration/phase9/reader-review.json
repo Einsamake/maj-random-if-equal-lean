@@ -1,0 +1,166 @@
+{
+  "reviewer": "/root/phase9_undergraduate_reader",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "first_read": {
+    "review_type": "AI模拟数学本科背景读者；不是人类用户测试、专家评审、数学正确性认证或新颖性认证",
+    "allowed_inputs": [
+      "README.md正文",
+      "images/hidden-route-vs-deadline.png实际图片"
+    ],
+    "other_inputs_used": false,
+    "actual_image_viewed": true,
+    "reviewed_file": "D:/MyWorks/Math/research/exploration/phase9/README.md",
+    "reviewed_file_sha256": "1BCEAD3FEC11A4AB6FF52D66C066C481B22B2848DD59318244203FD4CAD12643",
+    "status": "passed_no_blocking_gaps",
+    "unresolved_blockers": [],
+    "own_words": {
+      "question": "如果两种系统内部是否绕路的概率相差固定的1/6，只观察是否在一个截止时间前完成，每个截止时间的完成概率能否同时很接近？正文构造了一系列模型对，回答可以，并给出统一上界。",
+      "actual_model": "一次试验独立抽取Wa、Wb、Wc和J。先等待Wc，再按J决定是否多等Wb，最后等Wa。总时间为Wc+Wa+J Wb。Wa、Wb、Wc分别是速率a、b、e+f的指数随机量；J取1的概率为f/(e+f)。比较时a=e=1、b=1+epsilon在同一对中相同，只有f从1/2改成1；不同模型不是同一次试验中的联合比较。",
+      "two_integral_steps": "C0是最后一段的完成概率，C1是绕路加最后一段的完成概率，C2是全部任务的完成概率。先把独立等待的卷积和分支概率写成积分，得到三个初值为0的微分方程。令H01=C0-C1、H12=C1-C2，因为多加非负等待使完成更难，0<=H01<=1。把C1'减C2'，并用C0-C2=H01+H12，得到H12'=(b-e)H01-(e+f)H12。积分因子给出H12=K_(e+f)[(b-e)H01]，因此|H12|<=|b-e|/(e+f)。再比较fH与fL，D=C2H-C2L满足D'=(fH-fL)H12,L-(e+fH)D。对这条方程使用相同积分因子以及前一个上界，得到|D|<=(fH-fL)|b-e|/((e+fL)(e+fH))。这两个分母来自先控制单个模型的H12，再控制两个模型之间的D。",
+      "conclusion": "例子中差分子为epsilon/2，分母为3，所以每个非负截止时间的概率差至多epsilon/6；b-e为正，使两次积分均非负，所以差的方向是FH>=FL。负截止时间两个概率都为0。选择epsilon=6 eta即可让所有截止时间的绝对差不超过eta，而绕路概率差仍为1/6。",
+      "limits": "任意缩小界时需要改变两模型共同使用的b，不能把b固定在1.01仍宣称可任意缩小同一对的差。该结论控制单个阈值事件，不等同于任意事件或总变差接近；不说明有限次观测的检验成功率、所需样本数或参数能否由大量观测恢复；也不认证新颖性。"
+    },
+    "independent_calculations": {
+      "branch_probabilities": "(1/2)/(1+1/2)=1/3，1/(1+1)=1/2，1/2-1/3=(3-2)/6=1/6。",
+      "general_bound_substitution": "Delta f=1/2，|b-e|=epsilon，e+fL=3/2，e+fH=2，所以((1/2)epsilon)/((3/2)*2)=epsilon/6。",
+      "epsilon_1_over_100": "epsilon/6=1/600=0.0016666667；乘100换成百分点为1/6=0.16666667个百分点，不是0.001667个百分点。",
+      "epsilon_1_over_1000": "epsilon/6=1/6000=0.0001666667，对应约0.01666667个百分点。",
+      "eta_choice": "给定eta>0，取epsilon=6 eta>0，则b=1+6 eta，epsilon/6=eta；两模型中的b相同，f值固定，绕路概率差仍为1/6。"
+    },
+    "localized_feedback": [
+      {
+        "type": "symbol_scope",
+        "severity": "optional_nonblocking",
+        "original_quote": "对 $c>0$，把指数加权积分简写成",
+        "feedback": "可加上t>=0，让K定义的使用范围更显式。紧前部分已明确只对非负时间推导，后面也把负时间单独处理，故这不是理解障碍。"
+      },
+      {
+        "type": "terminology",
+        "severity": "no_blocker",
+        "original_quote": "$\\mathrm{Exp}(k)$ 是速率为 $k$ 的指数等待，平均时长为 $1/k$。",
+        "feedback": "关键分布、速率、绕路指示量、分布函数和百分点均有定义；基础概率背景足以理解。"
+      },
+      {
+        "type": "derivation",
+        "severity": "no_blocker",
+        "original_quote": "由前面的微分方程相减",
+        "feedback": "可独立补出C0-C2=H01+H12这一行代数，从而重现H12微分式；这是本科水平的短计算，不需要源码或外部定理补缺口。第二次D方程也可逐项相减复现。"
+      },
+      {
+        "type": "image_text_consistency",
+        "severity": "no_blocker",
+        "original_quote": "右侧是证明给出的上界，不是测得的实际差",
+        "feedback": "已查看实际PNG。条形图的1/3、1/2及1/6差，右侧epsilon表的1/60、1/600、1/6000和小数，底部关于改变共同b及统计限制的文字，与正文一致；图中没有把上界画成测量值。"
+      },
+      {
+        "type": "explicitly_out_of_scope",
+        "severity": "no_blocker",
+        "original_quote": "因此实际能否通过大量观测恢复路线参数，仍需另外的统计分析。",
+        "feedback": "这里明确把统计恢复问题留在正文结论之外；没有承诺本节完成这个证明，不能算作当前章节缺口。"
+      }
+    ],
+    "reread_required_after_material_revision": true,
+    "review_boundary": "本反馈只检验正文及实际图片是否支持模拟本科读者复述与算例，不替代数学源、内核审计、外链检查或人类专家评审。"
+  },
+  "final_reread": {
+    "review_type": "AI模拟数学本科背景读者；不是人类测试、专家评审、数学正确性或新颖性认证",
+    "allowed_inputs": [
+      "README.md正文",
+      "images/hidden-route-vs-deadline.png实际图片"
+    ],
+    "other_inputs_used": false,
+    "status": "pass",
+    "unresolved_blockers": [],
+    "reviewed_file": "D:/MyWorks/Math/research/exploration/phase9/README.md",
+    "reviewed_file_sha256": "3FA3A25A60C915F109D30B1E3076E08A0ED5218DC37DCA8015ED0D3DDDC94C56",
+    "actual_image_viewed": true,
+    "actual_image_reopened_on_reread": true,
+    "image_file": "D:/MyWorks/Math/research/exploration/phase9/images/hidden-route-vs-deadline.png",
+    "image_sha256": "0FB0BC57B33CAF72D2D11E2F5CC8A71CED5BA1917832B919F343EB846935E87F",
+    "same_image_as_first_read": "复读时实际重新显示并查看了1680x1090的PNG，视觉内容与首读一致；首读未单独保存图片SHA，不伪称已作跨版本哈希比较。",
+    "revision_mapping": [
+      {
+        "first_read_quote": "对 $c>0$，把指数加权积分简写成",
+        "final_quote": "对 $c>0$、$t\\ge0$，把指数加权积分简写成",
+        "first_read_file_sha256": "1BCEAD3FEC11A4AB6FF52D66C066C481B22B2848DD59318244203FD4CAD12643",
+        "resolution": "已落实可选建议，明确了K估计所用的非负时间范围；首读本无阻断项。"
+      }
+    ],
+    "own_words_final_reread": {
+      "goal_and_object": "给出实际的独立指数等待与伯努利绕路模型，使两系统绕路概率始终相差1/6，却能让所有截止时间的完成概率差同时不超过任意指定eta>0。每对中a=e=1、b=1+epsilon相同，只有f分别取1/2和1。",
+      "first_layer": "H01=C0-C1满足0<=H01<=1。由相减得到H12'=(b-e)H01-(e+f)H12，初值0，因此H12是核exp(-(e+f)(t-s))对(b-e)H01的积分，绝对值至多|b-e|/(e+f)。",
+      "second_layer": "比较两个f时，D'=Delta f H12,L-(e+fH)D，初值0，故D的积分输入大小至多Delta f |b-e|/(e+fL)，再经第二层积分得到额外分母e+fH。代入特例得到epsilon/6；epsilon>0使两层输入和核都非负，所以D>=0。",
+      "time_domain": "积分推导限定t>=0、c>0；由于e+fL>0且fH>=fL，两层核的速率均正。负时间的两个完成概率都是0，因而最后界覆盖全部实数截止时间。",
+      "limits": "缩小epsilon也改变一对系统共同使用的已知b；不宣称固定b=1.01仍可任意缩小同一对的差。只控制各个单阈值事件的概率，没有提供总变差界、样本量或统计可辨识性结论。"
+    },
+    "independent_recomputed_examples": {
+      "route_gap": "(1/2)/(3/2)=1/3，1/2-1/3=1/6。",
+      "bound": "((1/2)epsilon)/((3/2)*2)=epsilon/6。",
+      "epsilon_1_over_10_in_image": "1/10除以6等于1/60，约0.016667。",
+      "epsilon_1_over_100": "1/100除以6等于1/600，约0.001666667；乘100转成百分点，约0.1666667个百分点。",
+      "epsilon_1_over_1000": "1/1000除以6等于1/6000，约0.000166667，即约0.0166667个百分点。",
+      "eta": "eta>0时epsilon=6eta>0，epsilon/6=eta，b=1+6eta>1；两f与绕路概率差保持不变。"
+    },
+    "final_localized_findings": [
+      {
+        "type": "symbol_scope",
+        "quote": "对 $c>0$、$t\\ge0$，把指数加权积分简写成",
+        "result": "定义域显式，后面的核积分界与使用范围一致。"
+      },
+      {
+        "type": "derivation",
+        "quote": "再用一次同样的积分估计，就得到一般形式",
+        "result": "能用前一层H12,L的上界作为输入，再除以e+fH，独立复现一般界；没有阻断性跳步。"
+      },
+      {
+        "type": "image_text_consistency",
+        "quote": "右侧是证明给出的上界，不是测得的实际差",
+        "result": "实际图的分数、小数、百分点、固定绕路差和改变共同b的说明与正文一致。"
+      },
+      {
+        "type": "explicitly_out_of_scope",
+        "quote": "因此实际能否通过大量观测恢复路线参数，仍需另外的统计分析。",
+        "result": "是结论范围的明确限制，不是当前承诺推导中的遗漏。"
+      }
+    ],
+    "acceptance_statement": "在只看最终正文与实际配图的范围内，模拟本科背景读者可复述模型、独立重现两层关键估计并完成全部所承诺算例，未发现当前承诺步骤的阻断性理解缺口。"
+  },
+  "reviewed_file_sha256": {
+    "README.md": "3fa3a25a60c915f109d30b1e3076e08a0ed5218dc37dca8015ed0d3dddc94c56",
+    "images/hidden-route-vs-deadline.png": "0fb0bc57b33caf72d2d11e2f5cc8a71ced5ba1917832b919f343eb846935e87f"
+  },
+  "editing_passes": [
+    {
+      "pass": 1,
+      "sha256": "c9807a7e217c0ef5baf8f4c9e4deadf49cf34f13862261b83e23065d0c7b8e16",
+      "actions": [
+        "Standalone actual waitlaw and internalbranch fixedcontrast",
+        "Separated simultaneous deadline-probability closeness from mean-only,TV and finite-sample claims",
+        "Included two positive-kernel error estimates, exact example and varying-known-b interpretation",
+        "Math remains candidate until actual audits/independentreview pass"
+      ]
+    },
+    {
+      "pass": 2,
+      "sha256": "1bcead3fec11a4ab6ff52d66c066c481b22b2848dd59318244203fd4cad12643",
+      "actions": [
+        "Actually inspected renderedPNG: exactbars lengths1/3and1/2,alltimeboundtable,unitsandlabels match",
+        "Explicitly required nonnegativeM in positivekernel normbound",
+        "Distinguished epsfamily changing knownb acrosspairs from fixed-b comparison",
+        "Retained thresholdCDF vs TV/statistical guarantees limits and exact百分点conversion"
+      ]
+    },
+    {
+      "pass": 3,
+      "sha256": "3fa3a25a60c915f109d30b1e3076e08a0ed5218dc37dca8015ed0d3dddc94c56",
+      "actions": [
+        "Independent context-free undergraduate reader restated both gap equations and two-layer bound without external materials",
+        "Added nonnegative time to kernel notation at first definition as suggested",
+        "Rechecked exact route probabilities,eps/6 and百分点 distinction; no blocking first-read findings"
+      ],
+      "based_on": "notes/reader-first-feedback.json"
+    }
+  ],
+  "scope": "Context-free undergraduate-background AI simulation only text/actualPNG; not realhuman testing/expert/noveltycertification"
+}

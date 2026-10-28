@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "kind": "Independent AI semantic review with actual successful source/log/cache fingerprints, not humanexpertreview",
+  "modules": {
+    "CoordinateResponseOrder": {
+      "source_sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+      "log_sha256": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d",
+      "olean_sha256": "800f15545d7475d2d81a3b2358720d93981caa5e1257a5a2a6ceadde3404c61a",
+      "review_file": "notes/coordinate-independent-review.json",
+      "review_sha256": "77659cf90b3a40dc5afac4565fa5c4426c618ed9c93068ac3f5e1d4639b9b039"
+    },
+    "RateBoxMaximum": {
+      "source_sha256": "fb46e1366e7595839c005f4887da8fb9f3886445ebf78f57f076696fe296e38f",
+      "log_sha256": "7864052331c9ad2a83cb44acf4e2070c5ec634e26e6b89f706ab13d0b92a991d",
+      "olean_sha256": "a6f2b4e5da93bcb4d8881c8cd382ff48d36b181a46cf0d29d8df9dda9a7779e3",
+      "review_file": "notes/box-independent-review.json",
+      "review_sha256": "44d945cbf38c56187d394d700b84dbc4a665e79466a4f706f82cd0682f55dc69"
+    }
+  }
+}

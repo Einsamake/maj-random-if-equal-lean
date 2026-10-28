@@ -1,0 +1,44 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustTankCertificate.lean:120:66: error: Application type mismatch: The argument
+  hk.left.right
+has type
+  k0 ≤ 21 / 20
+but is expected to have type
+  k0 * 1 ≤ ?m.171
+in the application
+  LE.le.trans (mul_le_mul_of_nonneg_left (hu s hs).right hk0) hk.left.right
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 4
+'MathExploration.RobustTankCertificate.admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actualMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.inlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperInlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actual_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upper_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actual_le_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.q_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustTankCertificate.checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.checkTime_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustTankCertificate.solution_below_upper' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustTankCertificate.outlet_robust_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

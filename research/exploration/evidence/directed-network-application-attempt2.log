@@ -1,0 +1,102 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:118:25: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.DirectedNetworkComparison.sum_edge_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_imbalance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.max_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leaked_source_flux_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance_le_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:245:2: error: Type mismatch: After simplification, term
+  HasDerivAt.exp (HasDerivAt.const_mul (-k) (hasDerivAt_id t))
+ has type
+  HasDerivAt (fun x => Real.exp (x * -k)) (-k * 1 * Real.exp (t * -k)) t
+but is expected to have type
+  HasDerivAt (fun s => Real.exp (s * -k)) (-k * Real.exp (t * -k)) t
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instMul ↦ 2
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:258:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.761 0
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ⟨0, ⋯⟩ + inlet (fun x => 1) t ⟨0, ⋯⟩ = 0 - -Real.exp (-t)
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ⟨0, ⋯⟩ + inlet (fun x => 1) t ⟨0, ⋯⟩ = 0 - -Real.exp (-t)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:263:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.1149 1
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ⟨1, ⋯⟩ + inlet (fun x => 1) t ⟨1, ⋯⟩ =
+    0 - 2 * -Real.exp (-t) + -2 * Real.exp (-2 * t)
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ⟨1, ⋯⟩ + inlet (fun x => 1) t ⟨1, ⋯⟩ =
+    0 - 2 * -Real.exp (-t) + -2 * Real.exp (-2 * t)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:271:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.1634 2
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ⟨2, ⋯⟩ + inlet (fun x => 1) t ⟨2, ⋯⟩ =
+    0 - 7 / 3 * -Real.exp (-t) + 3 / 2 * (-2 * Real.exp (-2 * t)) - 1 / 6 * (-4 * Real.exp (-4 * t))
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ⟨2, ⋯⟩ + inlet (fun x => 1) t ⟨2, ⋯⟩ =
+    0 - 7 / 3 * -Real.exp (-t) + 3 / 2 * (-2 * Real.exp (-2 * t)) - 1 / 6 * (-4 * Real.exp (-4 * t))
+'MathExploration.ThreeTankCertificate.weights_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakage_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakedRate_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.exp_negative_mul_deriv' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_continuousOn' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_upper' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.outlet_at_log_two_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.unweighted_energy_can_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

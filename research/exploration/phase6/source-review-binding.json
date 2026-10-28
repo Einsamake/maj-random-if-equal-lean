@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "modules": {
+    "ResponseKernelCalculus": {
+      "source_sha256": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+      "log_sha256": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+      "review_file": "notes/kernel-response-review-attestation.json",
+      "review_sha256": "8b57aab78a6b543c58ef5605667b43c1bb565850138c0a8a862a844283353a8d"
+    },
+    "TankResponse": {
+      "source_sha256": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+      "log_sha256": "5df4e25600c906494b4cc505f9c64f9244ae670b2c05ed4927aa1891618fd5a6",
+      "review_file": "notes/kernel-response-review-attestation.json",
+      "review_sha256": "8b57aab78a6b543c58ef5605667b43c1bb565850138c0a8a862a844283353a8d"
+    },
+    "GeneralTankCdf": {
+      "source_sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+      "log_sha256": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+      "review_file": "notes/root-independent-review.json",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941"
+    },
+    "MeanRateOrder": {
+      "source_sha256": "2369f17be56620f7b0019bf286ccc8971a603602edf26a6afe446c870b539e32",
+      "log_sha256": "893a0af8537fa86a33338e46409bbceee034ae4e56e80bc493a8b9853567e432",
+      "review_file": "notes/root-independent-review.json",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941"
+    },
+    "CompletionTimeOrder": {
+      "source_sha256": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+      "log_sha256": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+      "review_file": "notes/root-independent-review.json",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941"
+    },
+    "HiddenBranchWitness": {
+      "source_sha256": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+      "log_sha256": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+      "review_file": "notes/root-independent-review.json",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941"
+    }
+  }
+}

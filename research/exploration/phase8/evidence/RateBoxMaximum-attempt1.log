@@ -1,0 +1,105 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:46:29: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:46:58: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:49:29: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:49:58: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:74:34: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:77:34: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:141:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  cdfValue K p t
+in the target expression
+  (fun p => cdfValue K p t) p ≤ cdfValue K (selected K) t
+
+case right
+K : RateBox
+t : ℝ
+ht : 0 ≤ t
+p : Allowed K
+⊢ (fun p => cdfValue K p t) p ≤ cdfValue K (selected K) t
+D:\MyWorks\Math\research\exploration\phase8\lean\RateBoxMaximum.lean:150:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  eventValue K p t
+in the target expression
+  (fun p => eventValue K p t) p ≤ eventValue K (selected K) t
+
+case right
+K : RateBox
+t : ℝ
+ht : 0 ≤ t
+p : Allowed K
+⊢ (fun p => eventValue K p t) p ≤ eventValue K (selected K) t
+'MathExploration.RateBoxMaximum.RateParams' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.allowedRates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.fStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.corner_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.allowed_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.x2_le_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.Allowed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.actualLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.actualTotalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.actualLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.actualTotalMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RateBoxMaximum.cdfValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.eventValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.cdfValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.eventValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.cdfValue_eq_x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.eventValue_eq_x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.selected_cdf_isGreatest' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RateBoxMaximum.selected_event_isGreatest' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RateBoxMaximum.selected_maximizes_all_times' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RateBoxMaximum.RateParams.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateParams.a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateParams.b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateParams.e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateParams.f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.mk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.aLo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.aHi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.bLo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.bHi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.eLo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.eHi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.fLo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.fHi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.aLo_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.bLo_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.eLo_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.fLo_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.exitLo_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.a_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.b_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.e_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RateBoxMaximum.RateBox.f_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]

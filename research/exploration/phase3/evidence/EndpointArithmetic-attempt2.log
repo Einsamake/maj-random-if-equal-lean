@@ -1,0 +1,39 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:19:24: error(lean.invalidField): Invalid field `fun_pow`: The environment does not contain `HasFDerivAtFilter.fun_pow`, so it is not possible to project the field `fun_pow` from an expression
+  hasDerivAt_id z
+of type
+  HasFDerivAtFilter id (ContinuousLinearMap.toSpanSingleton ℝ 1) (nhds z ×ˢ pure z)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:20:24: error(lean.invalidField): Invalid field `fun_pow`: The environment does not contain `HasFDerivAtFilter.fun_pow`, so it is not possible to project the field `fun_pow` from an expression
+  hasDerivAt_id z
+of type
+  HasFDerivAtFilter id (ContinuousLinearMap.toSpanSingleton ℝ 1) (nhds z ×ˢ pure z)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:16:54: error: unsolved goals
+z : ℝ
+⊢ HasDerivAt response (-(1 - z) * (7 - 2 * z - 2 * z ^ 2) / 3) z
+'MathExploration.EndpointArithmetic.response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_antitone' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_checkDecay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_at_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_lt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

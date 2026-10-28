@@ -1,0 +1,13 @@
+{
+  "schema": "math-exploration-running-stage-v1",
+  "stage": "physical_exit_probability",
+  "status": "completed_exit_0_kernel_checked_source_frozen",
+  "session_id": 30583,
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean",
+  "source_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+  "historical_accepted_source": "FullBlockThreshold.threshold-only.lean",
+  "historical_source_sha256": "65d1d980de0e6c486c00ca37bc25b20518c47f21ec065cb04d1196a1a86c6faf",
+  "log": "FullBlockThreshold.validation.log",
+  "old_exit_file_warning": "Resolved: this stage completed and exit file is 0.",
+  "scope_limit": "Finish physical exit and original clock probability only. No synchronous or original-N propagation."
+}

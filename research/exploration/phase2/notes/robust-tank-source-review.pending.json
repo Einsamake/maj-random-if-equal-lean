@@ -1,0 +1,98 @@
+{
+  "artifact_kind": "independent_machine_source_review",
+  "reviewer": "network_transfer subagent",
+  "date": "2026-10-27",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\RobustTankCertificate.lean",
+  "source_sha256_at_review": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+  "reviewed_line_range": [
+    1,
+    164
+  ],
+  "named_declarations_reviewed": 21,
+  "definition_count": 10,
+  "theorem_count": 11,
+  "source_modified_by_reviewer": false,
+  "compiler_run_by_reviewer": false,
+  "semantic_review_result": "No blocking mathematical or hypothesis mismatch found in the reviewed source snapshot.",
+  "build_binding_status": "pending_root_actual_pass_and_hash",
+  "build_binding": null,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "lines": [
+        9,
+        19
+      ],
+      "subject": "Meaning of five percent",
+      "finding": "The uncertainty set is four fixed effective ODE coefficients k0,k10,k20,k21 in +/-5 percent intervals about (1,2,1,3). The actual negative diagonals are linked to those same rates; the zero entries remain zero. This does not certify independent five-percent uncertainties of physical flows and tank volumes."
+    },
+    {
+      "lines": [
+        18,
+        22,
+        37,
+        51
+      ],
+      "subject": "Matrix directions and Metzler property",
+      "finding": "Actual M is [[-k0,0,0],[k10,-k10,0],[k20,k21,-(k20+k21)]]. All actual off-diagonal entries are nonnegative. To prove M<=H entrywise, positive off-diagonal entries use coefficient upper bounds, while each negative diagonal uses the corresponding coefficient lower bounds. In particular -(k20+k21)<=-19/5 follows from k20+k21>=19/5."
+    },
+    {
+      "lines": [
+        24,
+        27,
+        101,
+        128
+      ],
+      "subject": "Input bound, actual positivity and initial state",
+      "finding": "The actual input at node 0 is k0*u, not u alone. k0>=0 and 0<=u<=1 give 0<=k0*u<=k0<=21/20. Other nodes have zero input. The comparison supplies actual nonnegative source and zero initial state to interval_upper, so actual x>=0 is derived inside the generic theorem. No unproved sign of x is used."
+    },
+    {
+      "lines": [
+        28,
+        35,
+        52,
+        81
+      ],
+      "subject": "Explicit upper trajectory",
+      "finding": "r=19/20 and rho=21/19 make H diagonal (-r,-2r,-4r), input rho*r, and off-diagonal coefficients (2*rho*r,rho*r,3*rho*r). q=exp(-rt) has derivative -r*q. Writing A(q)=1/4-q/3+q^4/12 and B(q)=3/4-2q+3q^2/2-q^4/4 gives y2=rho^2*A+rho^3*B. The shortcut path has rho^2 and the two-link path rho^3. All three explicit derivatives satisfy dy/dt=Hy+g, with zero initial state."
+    },
+    {
+      "lines": [
+        83,
+        98
+      ],
+      "subject": "Time and exact constant",
+      "finding": "checkTime=(20/19)*log(2)=(1/r)*log(2), so q(checkTime)=1/2. Then A=17/192, B=7/64 and y2=28077/109744. The exponent sign, r reciprocal and exact rational arithmetic are correct."
+    },
+    {
+      "lines": [
+        101,
+        140
+      ],
+      "subject": "Claimed conclusion and scope",
+      "finding": "solution_below_upper bounds every given classical trajectory at every t>=0 by the explicit upperState(t), uniformly over admissible fixed rates and pointwise 0<=u<=1. outlet_robust_bound specializes to the single time checkTime, proving x2<=28077/109744<13/50. It does not prove x2<13/50 for all time or uniformly over the interval [0,checkTime]."
+    }
+  ],
+  "exact_independent_checks": {
+    "method": "Built-in rational arithmetic; coefficient-by-coefficient polynomial ODE checks in q and affine matrix-bound sanity checks at all 16 rate-box corners.",
+    "explicit_ode_coefficients_match": true,
+    "explicit_initial_state_zero": true,
+    "matrix_bounds_at_all_rate_box_corners": true,
+    "q_at_checkTime": "1/2",
+    "shortcut_polynomial_at_half": "17/192",
+    "long_path_polynomial_at_half": "7/64",
+    "upper_outlet_at_checkTime": "28077/109744",
+    "strictly_below_13_over_50": true,
+    "not_a_replacement_for_root_kernel_build": true
+  },
+  "nonblocking_scope_limits": [
+    "H is an interval relaxation, not an admissible physical parameter choice: its row-1 off-diagonal 21/10 and diagonal -19/10 would require k10=21/10 and k10=19/10 simultaneously.",
+    "Consequently the bound is conservative and no claim of an attainable physical worst case or exact worst-case optimization follows.",
+    "The source proves a value below 0.26 at checkTime, not an all-time 0.26 bound. Monotonicity of upperState is not encoded in this module.",
+    "The four coefficients are fixed in time. Arbitrary time-varying rate uncertainty is not covered by this fixed-matrix application.",
+    "With independent +/-5 percent flow and volume errors, a flow/volume ratio can range from 19/21 to 21/19 times nominal, which extends outside the certified [19/20,21/20] rate interval. Such physical uncertainty is a different problem.",
+    "The comparison concerns supplied classical solutions. General existence or arbitrary measurable-input solution theorems are not proved here.",
+    "Interval-matrix certificates and this positive-system construction are classical methods, not novelty certification."
+  ],
+  "reader_review_status": "Machine source review only; human-facing exposition must be separately reader-tested by root."
+}

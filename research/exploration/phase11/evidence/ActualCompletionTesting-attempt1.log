@@ -1,0 +1,209 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:32:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:38:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:43:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:50:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:57:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:62:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:67:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:72:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:73:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:84:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:103:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:104:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:135:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:136:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:142:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\ActualCompletionTesting.lean:143:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ActualCompletionTesting.lowSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.missingMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_le_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_le_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.one_sub_commonMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.missing_sample_mass_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.all_test_event_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.all_test_event_gap_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_add_testError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_ge_common_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_le_common_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_ge_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_one_hundredth_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_one_hundredth_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_one_hundredth_one_hundred_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_one_hundredth_one_hundred_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

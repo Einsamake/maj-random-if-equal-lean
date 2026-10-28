@@ -1,0 +1,22 @@
+{
+  "method": "Pillow, exact accepted analytic formulas; not Monte Carlo",
+  "time_range": [
+    0,
+    5
+  ],
+  "normalization": "dimensionless time and concentration",
+  "at_T": {
+    "T": "2 log 2",
+    "low": "33/64",
+    "high": "307/640",
+    "difference": "23/640"
+  },
+  "means": {
+    "f_half": "9/5",
+    "f_one": "2"
+  },
+  "images": {
+    "cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5",
+    "waiting-route.png": "dfa33c4a02fb8369033425b6e75935d3ed20579be91a5ce3bbf52a20f1a7a927"
+  }
+}

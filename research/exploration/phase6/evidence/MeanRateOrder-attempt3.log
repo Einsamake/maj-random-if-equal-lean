@@ -1,0 +1,63 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:14:68: error: unsolved goals
+case e'_8
+a b e f : ℝ
+hb : b ≠ 0
+hc : e + f ≠ 0
+hsum : HasDerivAt (fun x => e + id x) 1 f
+hone : HasDerivAt ((fun x => 1) / fun x => e + id x) ((0 * (e + id f) - 1 * 1) / (e + id f) ^ 2) f
+hnum : HasDerivAt (id / fun y => (e + id y) * b) ((1 * ((e + id f) * b) - id f * (1 * b)) / ((e + id f) * b) ^ 2) f
+htotal :
+  HasDerivAt (((fun x => 1 / a) + (fun x => 1) / fun x => e + id x) + id / fun y => (e + id y) * b)
+    (0 + (0 * (e + id f) - 1 * 1) / (e + id f) ^ 2 + (1 * ((e + id f) * b) - id f * (1 * b)) / ((e + id f) * b) ^ 2) f
+⊢ meanFormula a b e = ((fun x => a⁻¹) + (fun x => 1) / fun x => e + x) + id / fun y => e * b + y * b
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:20:17: warning: This simp argument is unused:
+  meanFormula
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Pi.add_apply, Pi.div_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:20:30: warning: This simp argument is unused:
+  Pi.add_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [meanFormula, Pi.div_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:20:44: warning: This simp argument is unused:
+  Pi.div_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [meanFormula, Pi.add_apply, id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:29:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:29:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.MeanRateOrder.meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]

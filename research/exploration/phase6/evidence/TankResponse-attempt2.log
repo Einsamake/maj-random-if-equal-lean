@@ -1,0 +1,89 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:35:51: error: unsolved goals
+case e'_8
+a b t : ℝ
+⊢ x1 a b = kernel b fun s => b * x0 a s
+
+case e'_9
+a b t : ℝ
+⊢ b * x0 a t - b * x1 a b t = b * x0 a t - b * kernel b (fun s => b * x0 a s) t
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:48:63: error: unsolved goals
+case e'_8
+a b e f t : ℝ
+⊢ x2 a b e f = kernel (e + f) fun s => e * x0 a s + f * x1 a b s
+
+case e'_9
+a b e f t : ℝ
+⊢ e * x0 a t - e * x2 a b e f t - x2 a b e f t * f + f * x1 a b t =
+    e * x0 a t - e * kernel (e + f) (fun s => e * x0 a s + f * x1 a b s) t + f * x1 a b t -
+      f * kernel (e + f) (fun s => e * x0 a s + f * x1 a b s) t
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:59:66: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:59:70: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:59:70: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:79:72: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:79:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:104:80: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\TankResponse.lean:104:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.TankResponse.x0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_hasDerivAt' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap01_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x0_sub_x1_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.gap12_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonneg' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x1_sub_x2_nonpos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.delta_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_mono_f_of_e_le_b' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.TankResponse.x2_antitone_f_of_b_le_e' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.TankResponse.x2_eq_of_b_eq_e' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

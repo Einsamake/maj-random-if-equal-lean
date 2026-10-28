@@ -1,0 +1,17 @@
+{
+  "images": {
+    "observation-choice.png": "fbe90c5aee7666344f62d75c8f08c6856458a3317b78d842aeadc4f0817f2cd4"
+  },
+  "type": "Exact guarantee comparison on common0-100percent axes, upper/lower bounds not measuredaccuracy",
+  "actualexperiment": "Same original jointIID, fairmodelchoice once,100tasks,lowf1/2 highf1,b101/100",
+  "branch_rule": "Real count>=5*n/12, n100",
+  "exact_values": {
+    "time_success_upper": "353/606",
+    "specified_branch_success_lower": "33/50",
+    "guaranteed_advantage": "587/7575",
+    "low_error_upper_n100": "8/25",
+    "high_error_upper_n100": "9/25",
+    "equal_prior_error_upper": "17/50"
+  },
+  "checks": "Exactfractions.Fraction; percentagesillustrative"
+}

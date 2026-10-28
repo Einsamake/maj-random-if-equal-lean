@@ -1,0 +1,315 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:59:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:60:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:61:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:68:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:75:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:82:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:88:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:89:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:90:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:93:36: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite ((expMeasure (e + f)).prod ((expMeasure b).prod (expMeasure a)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:87:61: error: unsolved goals
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+this✝¹ : IsProbabilityMeasure (expMeasure a) := isProbabilityMeasure_expMeasure ha
+this✝ : IsProbabilityMeasure (expMeasure b) := isProbabilityMeasure_expMeasure hb
+this : IsProbabilityMeasure (branchMeasure e f he hf hc) := id inferInstance
+⊢ HasLaw Wc (expMeasure (e + f)) (law a b e f he hf hc)
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:98:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:99:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:100:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:103:37: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite ((expMeasure b).prod (expMeasure a))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:104:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite ((expMeasure (e + f)).prod ((expMeasure b).prod (expMeasure a)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:97:55: error: unsolved goals
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+this✝¹ : IsProbabilityMeasure (expMeasure a) := isProbabilityMeasure_expMeasure ha
+this✝ : IsProbabilityMeasure (expMeasure (e + f)) := isProbabilityMeasure_expMeasure hc
+this : IsProbabilityMeasure (branchMeasure e f he hf hc) := id inferInstance
+⊢ HasLaw Wb (expMeasure b) (law a b e f he hf hc)
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:109:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:110:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:111:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:114:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite (expMeasure a)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:114:37: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite ((expMeasure b).prod (expMeasure a))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:115:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite ((expMeasure (e + f)).prod ((expMeasure b).prod (expMeasure a)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:108:55: error: unsolved goals
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+this✝¹ : IsProbabilityMeasure (expMeasure b) := isProbabilityMeasure_expMeasure hb
+this✝ : IsProbabilityMeasure (expMeasure (e + f)) := isProbabilityMeasure_expMeasure hc
+this : IsProbabilityMeasure (branchMeasure e f he hf hc) := id inferInstance
+⊢ HasLaw Wa (expMeasure a) (law a b e f he hf hc)
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:124:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:125:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:126:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:141:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (law a b e f he hf hc) {ω | sJ (J ω)}
+in the target expression
+  (law a b e f he hf hc) {ω | J ω ∈ sJ ∧ Wc ω ∈ sC ∧ Wb ω ∈ sB ∧ Wa ω ∈ sA} =
+    (law a b e f he hf hc) {ω | J ω ∈ sJ} * (law a b e f he hf hc) {ω | Wc ω ∈ sC} *
+        (law a b e f he hf hc) {ω | Wb ω ∈ sB} *
+      (law a b e f he hf hc) {ω | Wa ω ∈ sA}
+
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+sJ : Set Bool
+sC sB sA : Set ℝ
+hJ : MeasurableSet sJ
+hC : MeasurableSet sC
+hB : MeasurableSet sB
+hA : MeasurableSet sA
+⊢ (law a b e f he hf hc) {ω | J ω ∈ sJ ∧ Wc ω ∈ sC ∧ Wb ω ∈ sB ∧ Wa ω ∈ sA} =
+    (law a b e f he hf hc) {ω | J ω ∈ sJ} * (law a b e f he hf hc) {ω | Wc ω ∈ sC} *
+        (law a b e f he hf hc) {ω | Wb ω ∈ sB} *
+      (law a b e f he hf hc) {ω | Wa ω ∈ sA}
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:156:16: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  DecidablePred fun x => x ∈ fun ω => J ω = true
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:164:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:165:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:166:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:167:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:182:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SFinite (waitLaw a b (e + f))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:163:49: error: unsolved goals
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+this✝² : IsProbabilityMeasure (expMeasure a) := isProbabilityMeasure_expMeasure ha
+this✝¹ : IsProbabilityMeasure (expMeasure b) := isProbabilityMeasure_expMeasure hb
+this✝ : IsProbabilityMeasure (expMeasure (e + f)) := isProbabilityMeasure_expMeasure hc
+this : IsProbabilityMeasure (branchMeasure e f he hf hc) := id inferInstance
+ia : Integrable (fun z => z.2.2) (waitLaw a b (e + f))
+ib : Integrable (fun z => z.2.1) (waitLaw a b (e + f))
+ic : Integrable (fun z => z.1) (waitLaw a b (e + f))
+⊢ ∫ (ω : Sample), total ω ∂law a b e f he hf hc = 1 / a + 1 / (e + f) + f / ((e + f) * b)
+'MathExploration.BranchedLaw.Sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchProb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_hasLaw' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_hasLaw' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_hasLaw' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.rectangle_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.coordinate_factorization' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedLaw.total_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_mean' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_half' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

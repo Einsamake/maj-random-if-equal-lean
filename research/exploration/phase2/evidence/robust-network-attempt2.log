@@ -1,0 +1,39 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:108:48: error(lean.invalidField): Invalid field `mp`: The environment does not contain `Function.mp`, so it is not possible to project the field `mp` from an expression
+  mul_le_mul_left ?m.393
+of type
+  ∀ (a : ?m.381), ?m.382 * a ≤ ?m.383 * a
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:108:25: error: Application type mismatch: The argument
+  Real.exp_pos (-R * t)
+has type
+  0 < Real.exp (-R * t)
+but is expected to have type
+  ?m.382 ≤ ?m.383
+in the application
+  mul_le_mul_left (Real.exp_pos (-R * t))
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLT ↦ 2
+'MathExploration.RobustNetworkBounds.linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.Metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.offDiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.rowBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.offDiag_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.row_le_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_eq_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.rate_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_mono_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.metzler_nonpos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.differential_comparison' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustNetworkBounds.positive_solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustNetworkBounds.interval_upper' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.interval_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

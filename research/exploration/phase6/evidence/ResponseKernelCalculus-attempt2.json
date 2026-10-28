@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-27T18:11:58.790902+08:00",
+  "module": "ResponseKernelCalculus",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+  "source_unchanged_during_build": true,
+  "log_sha256": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\ResponseKernelCalculus.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\ResponseKernelCalculus.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ResponseKernelCalculus.kernel_zero",
+    "MathExploration.ResponseKernelCalculus.kernel_eq_factor",
+    "MathExploration.ResponseKernelCalculus.kernel_hasDerivAt",
+    "MathExploration.ResponseKernelCalculus.kernel_continuous",
+    "MathExploration.ResponseKernelCalculus.kernel_nonneg",
+    "MathExploration.ResponseKernelCalculus.kernel_nonpos"
+  ],
+  "expected_prints": [
+    "MathExploration.ResponseKernelCalculus.kernel_zero",
+    "MathExploration.ResponseKernelCalculus.kernel_eq_factor",
+    "MathExploration.ResponseKernelCalculus.kernel_hasDerivAt",
+    "MathExploration.ResponseKernelCalculus.kernel_continuous",
+    "MathExploration.ResponseKernelCalculus.kernel_nonneg",
+    "MathExploration.ResponseKernelCalculus.kernel_nonpos"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "becf2f1902381a7d34c43bddbd8b7d812f9bc5fd1a7ee8f7ae40609930094db7"
+}

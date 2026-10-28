@@ -1,0 +1,32 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:17:48: error: unsolved goals
+case e_f.hs
+nu mu : Measure ℝ
+inst✝¹ : IsProbabilityMeasure nu
+inst✝ : IsProbabilityMeasure mu
+t : ℝ
+hint : Integrable ((Iic t).indicator 1) (nu ∗ mu)
+u : ℝ
+hfun : (fun y => (Iic t).indicator 1 (u + y)) = (Iic (t - u)).indicator 1
+⊢ MeasurableSet (Iic (t - u))
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:40:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

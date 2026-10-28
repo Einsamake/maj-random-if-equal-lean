@@ -1,0 +1,32 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:37:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  c * (s - t)
+in the target expression
+  (fun x => rexp (c * (x - t)) * F x) s = (fun x => rexp (-c * (t - x)) * F x) s
+
+c : ℝ
+F : ℝ → ℝ
+t s : ℝ
+a✝ : s ∈ uIcc 0 t
+⊢ (fun x => rexp (c * (x - t)) * F x) s = (fun x => rexp (-c * (t - x)) * F x) s
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:51:11: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:51:11: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.LinearResponseKernel.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.ode_to_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.kernel_eq_negative' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LinearResponseKernel.low_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

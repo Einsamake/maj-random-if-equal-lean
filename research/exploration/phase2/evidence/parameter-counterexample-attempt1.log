@@ -1,0 +1,221 @@
+warning: mathlib: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\mathlib
+warning: plausible: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\aesop
+warning: Qq: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\Qq
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+warning: Cli: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\Cli
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:26:36: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat (Type ?u.4) 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type ?u.4
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:26:39: error(lean.unknownIdentifier): Unknown identifier `nlet`
+
+Note: It is not possible to treat `nlet` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:34:29: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:35:4: error: `fun_prop` was unable to prove `ContDiff ℝ 1 (response 1)`
+
+Issues:
+  No theorems found for `MathExploration.ParameterCounterexample.response` in order to prove `ContDiff ℝ 1 fun t => response 1 t`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:36:25: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:36:4: error: `simp` made no progress
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:34:15: warning: This simp argument is unused:
+  response
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hk, if_pos rfl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:34:29: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [response, hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:44:34: error: unsolved goals
+case e'_8
+k t : ℝ
+⊢ (fun s => Real.exp (-(k * s))) = fun x => Real.exp (-(k * id x))
+
+case e'_9
+k t : ℝ
+⊢ -(k * Real.exp (-(k * t))) = -(k * Real.exp (-(k * id t)))
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:53:25: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:52:2: error: unsolved goals
+case e'_8
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+⊢ response 1 = id * fun s => Real.exp (-s)
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+⊢ (Real.exp (-t) - if True then t * Real.exp (-t) else 0) = Real.exp (-t) - Real.exp (-t) * id t
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:56:25: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:55:2: error: unsolved goals
+case e'_8
+k t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+hk : ¬k = 1
+hn : k - 1 ≠ 0
+⊢ response k = fun y => k * ((fun s => Real.exp (-s)) - fun s => Real.exp (-(k * s))) y * (-1 + k)⁻¹
+
+case e'_9
+k t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+hk : ¬k = 1
+hn : k - 1 ≠ 0
+⊢ k * (Real.exp (-t) - k / (k - 1) * (Real.exp (-t) - Real.exp (-k * t))) =
+    k / (k - 1) * (-Real.exp (-t) - -k * Real.exp (-k * t))
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:53:25: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [response, inlet]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:76:4: error: Type mismatch: After simplification, term
+  Real.log_pow 2 2
+ has type
+  True
+but is expected to have type
+  Real.log 4 = 2 * Real.log 2
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:92:74: error: unsolved goals
+⊢ Real.exp (-(1 / 2 * horizon)) - 1 / 4 = 1 / 4
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:95:69: error: unsolved goals
+⊢ 2 * (1 / 4 - Real.exp (-(2 * horizon))) = 3 / 8
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:98:72: error: unsolved goals
+⊢ 4 / 3 * (1 / 4 - Real.exp (-(4 * horizon))) = 21 / 64
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:118:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  response 2 horizon
+in the target expression
+  (fun k => response k horizon) 2 ≤ (fun k => response k horizon) 4
+
+h : MonotoneOn (fun k => response k horizon) (Icc (1 / 2) 4)
+he : (fun k => response k horizon) 2 ≤ (fun k => response k horizon) 4
+⊢ False
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:126:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  response (1 / 2) horizon
+in the target expression
+  (fun k => response k horizon) 2 ≤ (fun k => response k horizon) (1 / 2)
+
+h : AntitoneOn (fun k => response k horizon) (Icc (1 / 2) 4)
+he : (fun k => response k horizon) 2 ≤ (fun k => response k horizon) (1 / 2)
+⊢ False
+'MathExploration.ParameterCounterexample.inlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.inlet_positive' does not depend on any axioms
+'MathExploration.ParameterCounterexample.inlet_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response_contDiff' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_negative_mul_deriv' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_is_actual_C1_solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.horizon_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_half_horizon' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_two_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_four_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_half_at_horizon' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_two_at_horizon' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_four_at_horizon' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_not_monotoneOn' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_not_antitoneOn' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

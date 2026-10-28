@@ -1,0 +1,13 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.LawIdentifiability.totalMeasure_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LawIdentifiability.meanFormula_eq_of_totalMeasure_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LawIdentifiability.f_eq_of_totalMeasure_eq_of_b_ne_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LawIdentifiability.totalMeasure_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LawIdentifiability.totalMeasure_eq_iff_f_eq_of_b_ne_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

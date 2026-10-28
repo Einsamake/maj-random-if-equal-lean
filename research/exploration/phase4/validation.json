@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-10-27T06:41:07.983442+08:00",
+  "status": "PASS",
+  "mathematical_modules": 2,
+  "audit_driver_modules": 1,
+  "named_declarations": 43,
+  "new_theorems": 35,
+  "modules": {
+    "ConstantInletCounterexample": {
+      "source_sha256": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+      "log_sha256": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+      "record_sha256": "7edb878b4c05f89f2f17a1cae1f20851b620b16b9372b6b55a8a40cf2e057a5f",
+      "review_sha256": "df0c22fa2ef6bb2fc1f9a05fc462d0be052fda88b16aa36c15ed45650394fb5d",
+      "named": 27,
+      "theorems": 23,
+      "olean_sha256": "3b2a7bbb20f4f55aa05f0ee32719bf2498e27f536380ddb3ea17a5d9f852f2bb"
+    },
+    "GeneralOrderedBox": {
+      "source_sha256": "7b154ef65f6042b76e2dca806e7de9a70f746eb2c1c0c664f550dc4e56dba05c",
+      "log_sha256": "b743ee18aa85068502f654cc0fda112359e3b02f323f1d7f1769b14beec4244e",
+      "record_sha256": "581f2b2c1c808f0c1929d8a3985225521f6a2c8032f771c5bbcc734246847a13",
+      "review_sha256": "4c78e657d6a015246de158208f42b06529f200bed9017dacb46ef5176f4f5fbc",
+      "named": 16,
+      "theorems": 12,
+      "olean_sha256": "d34fb829f5338915e35a82f256f678baa63a3ad6ba02dd5c3fe1ac0b9422c3d4"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "87b3e88ea2c07911851c9bcaa9eba6ebbc2caedde525a93dfcaed66b2366909b",
+    "log_sha256": "0b36d38a358aaf9d7adb2812326805ed5d959dbc57b5f5a253b88654d36f2c7b",
+    "actual_prints": 43,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "reader_review": {
+    "reviewer": "/root/phase4_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "Context-free simulated mathematics undergraduate without Lean or project history. Read only the current README and actually viewed both PNGs; no source, validation files, notes, links or previous chapters. Not human testing, expert review, correctness or novelty certification.",
+    "first_read": {
+      "status": "understanding_pass_with_optional_precision_edit",
+      "readme_sha256": "c529ea80ee5ccec075ae0370ef3786aa4f2e99f6846a55a5ee7ed8ab4813b2dc",
+      "feedback": [
+        {
+          "quote": "但其余坐标仍较小",
+          "category": "first-contact precision",
+          "blocking": false,
+          "reason": "Several coordinates can first contact simultaneously; only non-exceedance is needed.",
+          "change": "Replaced with 但其余坐标都尚未超过抬高后的上界."
+        }
+      ],
+      "scope_restated": [
+        "The strict-positive constant-inlet two-point example refutes unconditional upper-endpoint maximization only.",
+        "E<=B is sufficient for ordering the given upper trajectory, not necessary or a complete classification.",
+        "Upper and actual classical solutions are given; arbitrary-cap existence is not proved."
+      ]
+    },
+    "final_reread": {
+      "status": "pass",
+      "unresolved_blockers": [],
+      "changes_confirmed": [
+        "Simultaneous first contact covered by non-exceedance wording.",
+        "Classic-background source link is optional and not needed to fill a proof gap."
+      ],
+      "worked_example": {
+        "low": "1-1/4-1/4+1/64=33/64",
+        "high": "1-1/8-2/5+3/640=307/640",
+        "difference": "23/640",
+        "middle": "1/4<307/640"
+      },
+      "gap_derivation": "g2'=B*g1-[E*(g1+g2)+F*g2]=(B-E)*g1-(E+F)*g2",
+      "key_proof_restated": [
+        "Integrating factors applied in order make all three gaps nonnegative whenE<=B.",
+        "Same-state residuals are nonnegative on the entire parameter box.",
+        "Strict epsilon*exp(t) barrier and first contact prevent crossing; epsilon tends to0.",
+        "An allowed upper trajectory attains the bound conditional on its given actual ODE and initial data."
+      ]
+    },
+    "reviewed_file_sha256": {
+      "README.md": "95decdbdc7139c58ee06a1f17a622426af7d2f862af88fa619ab05b6364538ce",
+      "images/constant-inlet-counterexample.png": "baa2a15178a4ea9a8befd81e736fbf032348950008442b70a3cd882140e580d4",
+      "images/ordered-gaps.png": "caee1744b4aefeab70b2417d57a907df73ea600487aebc74c7bc757afcdd7514"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "focus": "Evidence and scope",
+        "actions": [
+          "Separated a two-point refutation from interior maxima, whole-family monotonicity and global optimization.",
+          "Stated fixed coefficients, given classical upper and actual solutions, sufficient condition and existence boundary."
+        ]
+      },
+      {
+        "pass": 2,
+        "focus": "Readable mathematical chain and figures",
+        "actions": [
+          "Supplied exact low/high formulas, the rational calculation and gap equations.",
+          "Used a separate gap-chain figure with nonnegative drives and normalized analytic curves.",
+          "Checked actual rendered figures, equation labels and values."
+        ]
+      },
+      {
+        "pass": 3,
+        "focus": "Reader revision",
+        "actions": [
+          "Made simultaneous first-contact wording precise.",
+          "Added optional classic source attribution without delegating the proof to external reading.",
+          "Obtained final simulated reread PASS at bound file hashes."
+        ]
+      }
+    ]
+  },
+  "local_links_checked": 3,
+  "original_formal_sources_unchanged": 267,
+  "phase1_math_sources_unchanged": true,
+  "phase2_artifacts_unchanged": true,
+  "phase3_artifacts_unchanged": true,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "artifact_sha256": {
+    "audit_module.py": "d8089102081cb192e063975e476edf27bf1f3692a03ac457853793d71f8a169e",
+    "evidence/ConstantInletCounterexample-attempt1.json": "e57b61e8a89f78dbf327d2f17370d5052d7874cc66c3ecf94f552a2ebd723521",
+    "evidence/ConstantInletCounterexample-attempt1.log": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+    "evidence/ConstantInletCounterexample-final.json": "7edb878b4c05f89f2f17a1cae1f20851b620b16b9372b6b55a8a40cf2e057a5f",
+    "evidence/ConstantInletCounterexample-final.log": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+    "evidence/counterexample-audit.py": "3814c722e79dff5c2e6a93db1668af71a34a3f7cf9d68610ee3722ac9b95c040",
+    "evidence/GeneralOrderedBox-attempt1.json": "fdcf71243680805ed864096d550ad98dcc56dd58f717cf0b9992241ad0dcd3ed",
+    "evidence/GeneralOrderedBox-attempt1.log": "b743ee18aa85068502f654cc0fda112359e3b02f323f1d7f1769b14beec4244e",
+    "evidence/GeneralOrderedBox-final.json": "581f2b2c1c808f0c1929d8a3985225521f6a2c8032f771c5bbcc734246847a13",
+    "evidence/GeneralOrderedBox-final.log": "b743ee18aa85068502f654cc0fda112359e3b02f323f1d7f1769b14beec4244e",
+    "evidence/Phase4Audit-final.json": "2945dba4566c1e148a9c6a79d5de04482c5e26798af1728c8625df97b5f39625",
+    "evidence/Phase4Audit-final.log": "0b36d38a358aaf9d7adb2812326805ed5d959dbc57b5f5a253b88654d36f2c7b",
+    "figure-data.json": "b321759b5c826758aaae0050504841ae8457fa052e5a9b36e1f199b1d46de470",
+    "images/constant-inlet-counterexample.png": "baa2a15178a4ea9a8befd81e736fbf032348950008442b70a3cd882140e580d4",
+    "images/ordered-gaps.png": "caee1744b4aefeab70b2417d57a907df73ea600487aebc74c7bc757afcdd7514",
+    "lean/ConstantInletCounterexample.lean": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+    "lean/GeneralOrderedBox.lean": "7b154ef65f6042b76e2dca806e7de9a70f746eb2c1c0c664f550dc4e56dba05c",
+    "lean/Phase4Audit.lean": "87b3e88ea2c07911851c9bcaa9eba6ebbc2caedde525a93dfcaed66b2366909b",
+    "notes/constant-inlet-counterexample-source-review.json": "df0c22fa2ef6bb2fc1f9a05fc462d0be052fda88b16aa36c15ed45650394fb5d",
+    "notes/general-ordered-box-source-review.json": "4c78e657d6a015246de158208f42b06529f200bed9017dacb46ef5176f4f5fbc",
+    "reader-review.json": "20d403b52a117645521ac1e2c145071e63009cb4c5e2bd6567a9da75e5ea5654",
+    "README.md": "95decdbdc7139c58ee06a1f17a622426af7d2f862af88fa619ab05b6364538ce",
+    "render_results.py": "dd9f45b88305152556d5da5d244ae1ae7d0c2d34fe6480d8e75c026d6cba39ac",
+    "validate_phase4.py": "9ce8b99e4aa085aff20dc01961a32ac5f9a6147927a35132a16b15d086395a60"
+  },
+  "claims": {
+    "constant_inlet_strict_positive_counterexample": true,
+    "counterexample_outlets": [
+      "33/64",
+      "307/640"
+    ],
+    "counterexample_difference": "23/640",
+    "general_sufficient_condition": "nonnegative fixed caps A,B,E,F with E<=B; actual fixed nonnegative coefficients bounded componentwise",
+    "upper_ordering_derived_not_supplied": true,
+    "given_classical_upper_and_actual_solutions": true,
+    "arbitrary_cap_ODE_existence_proved": false,
+    "necessity_or_full_classification_proved": false,
+    "whole_f_monotonicity_or_global_f_maximum_proved": false,
+    "human_testing_or_new_field_certification": false
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "math-exploration-phase2-final-binding-v1",
+  "phase": "improved_original_synchronous_exact_N_lower_bound",
+  "phase_complete": true,
+  "recorded_utc": "2026-10-26T17:22:52.8661306Z",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+  "source_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+  "source_frozen_after_review": true,
+  "source_hash_matches_kernel_and_review": true,
+  "kernel_record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/evidence/improved-original-lower-validation.json",
+  "kernel_record_sha256": "7b978814517080d97f9b099f47bf1ab5fd47bb5997cf5fcd4c81a09e1ddba76e",
+  "kernel_record_matches_reviewed_record": true,
+  "kernel_record_note": "Kernel-run record is preserved exactly as independently reviewed. Its pending field is historical; the independent review and final phase acceptance are completed in this binding record.",
+  "kernel_exit_code": 0,
+  "trust_level": 0,
+  "new_declaration_count": 24,
+  "actual_axiom_output_count": 24,
+  "actual_axioms": [
+    "Classical.choice",
+    "propext",
+    "Quot.sound"
+  ],
+  "independent_source_review": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/notes/improved-lower-source-review.json",
+  "independent_source_review_sha256": "002ef4c5281e8ad3df279c8b94c722f1b52a0f203f50ee3cc1aa5960c5536376",
+  "independent_source_review_verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_source_findings_count": 0,
+  "full_stage_acceptance": true,
+  "result": {
+    "N_minimum": 500001,
+    "synchronous_tail": "For L>=250000, P(T_sync>floor(L^2/8000000)-1)>=1/4",
+    "infinity": "ENat recovery and ENNReal expectation retained throughout",
+    "lower": "ofReal(N^2/576000000)<=OriginalRecoveryProfile.tau N",
+    "old_N_minimum": 786432000,
+    "lower_coefficient_gain_exact": "12288/125=98.304",
+    "witness": "Filled N-square, every translation and either complement choice; distance exactly N",
+    "upper": "OriginalRecoveryProfile.tau N<=ofReal(664066*N^2)"
+  },
+  "invariants": [
+    "Original 267 formal source files were not edited by this task.",
+    "Both phase1 sources and sealed packages were not edited.",
+    "Only isolated phase2 Lean source, caches, evidence and machine notes were written.",
+    "The improved lower bound is for the worst exact-N expectation and the explicit square witnesses, not for every perturbation.",
+    "This is quantitative strengthening; no novelty, human-reader or expert-review certification is claimed."
+  ],
+  "supplemental_notes": "robust_three_tank_explicit_solution_check.json contains a separate paper/exact-algebra check, not a Lean certificate.",
+  "artifacts": [
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\build\\ImprovedOriginalLower.olean",
+      "sha256": "83ad6e7d37c6a279e49cc98b5a68ccfcb6ac15a6d0617773a92d21dca75b1a1d"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\improved-original-lower-kernel.log",
+      "sha256": "cc772e99553e755ad8cfad883ef55967ea43aaf83accce5727d3f763a0032f04"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\improved-original-lower-validation.json",
+      "sha256": "7b978814517080d97f9b099f47bf1ab5fd47bb5997cf5fcd4c81a09e1ddba76e"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\notes\\improved-lower-source-review.json",
+      "sha256": "002ef4c5281e8ad3df279c8b94c722f1b52a0f203f50ee3cc1aa5960c5536376"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\full-block-threshold-cache-build.json",
+      "sha256": "a3ceefe9431a3891130bb2f89a0c98d951b669f4db09bdf7520b648ffaf54938"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\full-block-threshold-cache-build.log",
+      "sha256": "0d61e35c7ae8636d5417422f3b110921943f2997a2c2bf19fe156669171e1754"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\build\\FullBlockThreshold.olean",
+      "sha256": "21a5b5f046126ebebca173024bb0b347f1014529fd49c2e6fd158bafe1b7dad4"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\notes\\robust_three_tank_explicit_solution_check.json",
+      "sha256": "a7ff343ffb353413905d3764f16d2311747ab42da9b8a281d01cb270429ed3c1"
+    }
+  ]
+}

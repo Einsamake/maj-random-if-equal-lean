@@ -1,0 +1,95 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ExponentialMean.weighted_density_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.integrable_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.integral_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchProb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.rectangle_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.coordinate_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.map_nested_product_via' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.map_nested_product_direct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.map_bernoulli_nested_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.totalMeasure_eq_mixture' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq_rates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_zero_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LinearResponseKernel.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.ode_to_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.kernel_eq_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_exp_one_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_exp_one_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_direct_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_via_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.weighted_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_mixture_is_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.high_mixture_is_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_totalMeasure_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_total_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.high_total_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_total_cdf_all_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.high_total_cdf_all_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.total_event_eq_cdf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_probability_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.high_probability_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.probability_difference_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualTankCdf.larger_link_smaller_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

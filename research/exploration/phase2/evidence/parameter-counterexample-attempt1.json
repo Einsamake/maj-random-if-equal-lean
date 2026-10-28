@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-27T01:09:52.948532+08:00",
+  "exit_code": 1,
+  "trust_level": 0,
+  "source_sha256": "85da606b2e8f4b26edd88bacfd666e598ea6905bb70420638a2e94cdaea11279",
+  "log_sha256": "52dd3ece1793c3ff2cfb4d0dbe95bfa066ac24dc3aa4e8603eb864740a7b43e8",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\ParameterCounterexample.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "log_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\parameter-counterexample-attempt1.log"
+}

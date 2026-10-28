@@ -1,0 +1,27 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.RobustTankCertificate.admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actualMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.inlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperInlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actual_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upper_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.actual_le_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.q_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustTankCertificate.checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.checkTime_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.upperState_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustTankCertificate.solution_below_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustTankCertificate.outlet_robust_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

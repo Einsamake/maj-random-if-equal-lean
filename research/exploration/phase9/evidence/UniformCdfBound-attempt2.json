@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-28T00:13:30.019884+08:00",
+  "module": "UniformCdfBound",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "6972a1ecfeb2b8e7bef8d3fdb3556843b933c9508392ef608f913e30ee7cfc7c",
+  "source_unchanged_during_build": true,
+  "log_sha256": "03c49b812edbd7e4763a4de7ad9b82cb6c045dbcc0d0981464966e9d3e0b8e77",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase9\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase9\\build\\UniformCdfBound.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase9\\lean\\UniformCdfBound.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.UniformCdfBound.x0_nonneg",
+    "MathExploration.UniformCdfBound.x0_le_one",
+    "MathExploration.UniformCdfBound.x1_nonneg",
+    "MathExploration.UniformCdfBound.gap01_abs_le_one",
+    "MathExploration.UniformCdfBound.gap12_abs_le",
+    "MathExploration.UniformCdfBound.x2_f_uniform_bound"
+  ],
+  "expected_prints": [
+    "MathExploration.UniformCdfBound.x0_nonneg",
+    "MathExploration.UniformCdfBound.x0_le_one",
+    "MathExploration.UniformCdfBound.x1_nonneg",
+    "MathExploration.UniformCdfBound.gap01_abs_le_one",
+    "MathExploration.UniformCdfBound.gap12_abs_le",
+    "MathExploration.UniformCdfBound.x2_f_uniform_bound"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "d0c9f9297b51503394ef70507bf094c41810e07cb928976f2cad35c3163b4cd9"
+}

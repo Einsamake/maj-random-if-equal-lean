@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-27T00:13:19.500323+08:00",
+  "exit_code": 1,
+  "trust_level": 0,
+  "source_sha256": "7b04a2f8cdbb0ebc5e877b79febb4b53c142798a9bca781e6b7a4fdbbb260775",
+  "log_sha256": "b6c5fed95e169a89e40f47b7090b1726afe9bf795b998256ce1ef79995286ba0",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\DirectedNetworkComparison.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis"
+}

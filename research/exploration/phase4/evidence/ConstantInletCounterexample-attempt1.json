@@ -1,0 +1,231 @@
+{
+  "checked_at": "2026-10-27T06:26:52.074255+08:00",
+  "module": "ConstantInletCounterexample",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\ConstantInletCounterexample.lean",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "checks": {
+    "actual_exit_zero": true,
+    "standard_trust_zero": true,
+    "source_unchanged_during_build": true,
+    "actual_names_match_expected": true,
+    "only_standard_axioms": true,
+    "no_errors_in_log": true
+  },
+  "source_sha256": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+  "log_sha256": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build\\ConstantInletCounterexample.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\ConstantInletCounterexample.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "LEAN_PATH": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\build;D:\\MyWorks\\Math\\research\\exploration\\phase2\\build",
+  "named_declarations": [
+    "MathExploration.ConstantInletCounterexample.r",
+    "MathExploration.ConstantInletCounterexample.lowState",
+    "MathExploration.ConstantInletCounterexample.highState",
+    "MathExploration.ConstantInletCounterexample.checkTime",
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.r_zero",
+    "MathExploration.ConstantInletCounterexample.same_upstream",
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.lowState_zero",
+    "MathExploration.ConstantInletCounterexample.highState_zero",
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.checkTime_positive",
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet",
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet",
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution",
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution"
+  ],
+  "expected_prints": [
+    "MathExploration.ConstantInletCounterexample.r",
+    "MathExploration.ConstantInletCounterexample.lowState",
+    "MathExploration.ConstantInletCounterexample.highState",
+    "MathExploration.ConstantInletCounterexample.checkTime",
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.r_zero",
+    "MathExploration.ConstantInletCounterexample.same_upstream",
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.lowState_zero",
+    "MathExploration.ConstantInletCounterexample.highState_zero",
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.checkTime_positive",
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet",
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet",
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution",
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution"
+  ],
+  "declaration_axioms": {
+    "MathExploration.ConstantInletCounterexample.r": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.same_upstream": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.checkTime_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "3b2a7bbb20f4f55aa05f0ee32719bf2498e27f536380ddb3ea17a5d9f852f2bb"
+}

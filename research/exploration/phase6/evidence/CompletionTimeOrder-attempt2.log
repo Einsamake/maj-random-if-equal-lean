@@ -1,0 +1,35 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase6\lean\CompletionTimeOrder.lean:63:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase6\lean\CompletionTimeOrder.lean:64:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.CompletionTimeOrder.cdf_mono_f_of_e_le_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CompletionTimeOrder.cdf_antitone_f_of_b_le_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.cdf_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CompletionTimeOrder.totalMeasure_eq_of_b_eq_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_mono_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_antitone_f_of_b_le_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CompletionTimeOrder.total_event_eq_of_b_eq_e' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

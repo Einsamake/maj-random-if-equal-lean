@@ -1,0 +1,167 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:28:22.1514689Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent reader; did not author EndpointArithmetic",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "kernel_evidence": {
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointArithmetic.lean",
+    "source_sha256": "b7187a52308e2c0cc12ddb68ef8ce9eb833b1fb3c05b53730440b1d5c372fdc4",
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointArithmetic-attempt3.json",
+    "record_sha256": "18282ab7be973ba67a8d59f301d81abfeaf427560ef2cac5ed1a663c2c718174",
+    "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointArithmetic-attempt3.log",
+    "log_sha256": "70e65f42749b6846bb85b77948620bbfa71d225d68df974192856719061a9179",
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointArithmetic.olean",
+    "olean_sha256": "ec9c6a9e3785a63bb3d01e18512bec2b3287d7dc891cc74f99451def8d375834",
+    "actual_exit_code": 0,
+    "actual_command_contains_trust_zero": true,
+    "actual_declaration_count": 12,
+    "actual_theorem_count": 10,
+    "actual_print_count": 12,
+    "actual_output_count": 12,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "unexpected_axioms": [],
+    "all_declarations_prints_outputs_match": true,
+    "source_unproved_tokens": 0,
+    "log_errors_or_sorryAx": 0,
+    "binding_passed": true,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.EndpointArithmetic.response",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.checkDecay",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.response_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.response_antitone",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.checkDecay_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.checkDecay_le_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.checkDecay_pow",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.rational_lower_power",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.rational_lower_checkDecay",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.response_at_rational",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.response_checkDecay_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointArithmetic.response_checkDecay_lt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "reviewer_reran_kernel": false,
+    "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+  },
+  "mathematical_checks": [
+    {
+      "lines": "11-39",
+      "finding": "p_prime(z)=-(1-z)*(7-2*z-2*z^2)/3 is the exact derivative. On[0,1],1-z>=0 and7-2*z-2*z^2>=3, hence p_prime<=0. The mean-value theorem is applied on the convex interval with actual derivative and continuity witnesses, giving AntitoneOn p.",
+      "topic": "derivative_and_antitone_direction"
+    },
+    {
+      "lines": "42-65",
+      "finding": "q=exp(-(21/19)*log2) lies in[0,1] and q^19=(1/2)^21. The proved inequality(929/2000)^19<=(1/2)^21 is therefore r^19<=q^19; both bases are nonnegative, so r<=q. No inverse exponent or reversed inequality is used.",
+      "topic": "nineteenth_power_direction"
+    },
+    {
+      "lines": "67-77",
+      "finding": "Because p is antitone and r<=q, the conclusion is p(q)<=p(r), in the correct upper-bound direction. p(929/2000)=7425545410773/32000000000000<233/1000.",
+      "topic": "rational_upper_evaluation"
+    }
+  ],
+  "independent_exact_arithmetic": {
+    "method": "BigInt rational arithmetic independent of Lean",
+    "polynomial_rational": "7425545410773/32000000000000",
+    "diagnostic_pq": 0.23172863454551101,
+    "diagnostic_scope": "Decimal evaluations are diagnostics only, not the kernel certificate.",
+    "rational_upper_decimal": 0.23204829408665625,
+    "diagnostic_q": 0.4648176775042031,
+    "power_integer_gap": "2000^19-2^21*929^19=6766407152077753280326436863785971982577649199149077718106112>0"
+  },
+  "scope_limits": [
+    "The exact maximum later identified by EndpointCertificate is p(q), not the rational upper bound p(929/2000). The rational number is not claimed attainable.",
+    "Antitonicity is proved only on[0,1]; the membership proofs for r and q are present.",
+    "The module contains exact analytic/rational claims, not a numerical root-search assumption.",
+    "Independent mathematical source reading and evidence binding; no kernel rerun, human reader acceptance, expert review or novelty certification.",
+    "Only the three requested new JSON reviews are written by this task; no Lean source, previous record, cache or sealed material is edited."
+  ]
+}

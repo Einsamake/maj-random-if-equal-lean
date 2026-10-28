@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "kind": "Nonauthor independentAI semantic andactualsource/log/cachebinding,not humanexpertreview",
+  "modules": {
+    "ActualBranchMoments": {
+      "source_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+      "log_sha256": "9d43a8733865a5df59a8706e8b241437a9ff259ed76a813b00c7def9e2be8967",
+      "olean_sha256": "7cd89fb22792926bc650d05b391d837eda3c80a196affb1d8aa8b35d823cdb1d",
+      "review_file": "notes/actual-branch-moments-root-review.json",
+      "review_sha256": "04f15bc47433fd946129161a71c30d328aa0ffbea8d305b5362da68d71d74437"
+    },
+    "BranchThresholdTesting": {
+      "source_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+      "log_sha256": "ce7ac7575ba47066a133efd84511ecc1f7506276bd351654e5589fefcd560994",
+      "olean_sha256": "96b1aba0c169ce239ea2cbe0e8f0e71faecda743edac2d00055fe7a3213b832a",
+      "review_file": "notes/branch-threshold-independent-review.json",
+      "review_sha256": "24209f67675ef26a126d2a5506025118c1794cc83dbcf37db44903d75edf3fd4"
+    },
+    "ObservationMaps": {
+      "source_sha256": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+      "log_sha256": "eb71146c71928e04de5802c4b6bf10358f418da699271fa7172b8605d4a1df71",
+      "olean_sha256": "6e92b3167ed296c5e6a7908c1533c3a49b7bb13adab12e9b6e03865fb22bb820",
+      "review_file": "notes/observation-maps-independent-review-binding.json",
+      "review_sha256": "985ab32dde91841e5fa76cb8433963b2fd63df7577b1ebcc211a2f451598c352"
+    },
+    "ObservationContrast": {
+      "source_sha256": "41f71bb570d1225f2b7d314444a02bdd9b7ac9889ab140a7087c48e468287f28",
+      "log_sha256": "6781f003cf733928a65b36681eac11b2dee480ec6cfb13b70853736f7cf31997",
+      "olean_sha256": "d15c8aef807a0d30b529e93f7aae9cbd17fe305610d2eb9389b1eb8fb58eb194",
+      "review_file": "notes/observation-contrast-independent-review.json",
+      "review_sha256": "0a23176bf3d23fab6d5063788a8d98203cdef583aa42bfdc9f061880e94a766a"
+    }
+  }
+}

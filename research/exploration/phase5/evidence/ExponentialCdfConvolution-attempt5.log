@@ -1,0 +1,30 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:40:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:78:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_zero_of_neg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

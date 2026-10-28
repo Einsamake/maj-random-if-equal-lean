@@ -1,0 +1,90 @@
+{
+  "schema": "math-barrier-residual-review-notes-v1",
+  "reviewer": "/root/strengthen_original",
+  "checked_utc": "2026-10-26T22:15:53.9971273Z",
+  "status": "independent_paper_and_source_semantics_check; no new Lean module or final kernel binding supplied by these notes",
+  "mutations": "Only this machine-readable notes file was written; no accepted source, documentation or sealed package was edited.",
+  "source_at_read": {
+    "warning": "Author was still compiling the source when it was supplied. This is an observed source version, not a claim that its current build passed.",
+    "sha256": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+    "path": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointTank.lean"
+  },
+  "general_lemma": {
+    "actual_trajectory": "x_prime=M(k)*x+f(k,u(t))",
+    "novelty_boundary": "A direct corollary of existing cooperative/Metzler differential comparison, not a proposed new mathematical comparison principle.",
+    "proof": "w=x-Y satisfies w_prime=M(k)*w-R and w(0)<=0. Apply the already audited metzler_nonpos or differential_comparison theorem with the actual matrix M(k).",
+    "initial_condition": "x(0)<=Y(0) componentwise",
+    "proposed_formal_use": "differential_comparison M hM x Y (M*x+f) dY; use linear_sub and the residual inequality to discharge its derivative-difference premise.",
+    "barrier": "Y has an actual displayed derivative dY, and residual R=dY-M(k)*Y-f(k,u(t)) is componentwise nonnegative.",
+    "existing_general_source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/RobustNetworkBounds.lean",
+    "conclusion": "x(t)<=Y(t) componentwise for every t>=0",
+    "setting": "Finite real vector space, fixed parameter k, fixed Metzler matrix M(k), additive forcing f(k,u(t)).",
+    "hypotheses_not_needed": [
+      "No componentwise order between M(k) and the endpoint matrix.",
+      "No nonnegativity assumption on the actual state x is needed for this upper comparison.",
+      "No nonnegativity assumption on f is needed once the barrier residual is verified.",
+      "Y need not be an actual solution to some other parameter model for comparison alone; actual feasibility is needed separately to certify an attained maximum."
+    ],
+    "regularity": "Each component of x,Y is continuous on[0,infinity), and has the displayed classical derivative at every t>0. This is the current Lean comparison contract; no general existence claim for arbitrary measurable inputs is included."
+  },
+  "three_tank": {
+    "gap_02": "Y0-Y2=q*(1-q)*(8-q-q^2)/6; alternatively sum the two nonnegative gaps",
+    "q": "exp(-c*t)",
+    "residual_R2": "(c-k20)*(Y0-Y2)+(3*c-k21)*(Y1-Y2)",
+    "p": "1-(7/3)*q+(3/2)*q^2-(1/6)*q^4",
+    "residual_R0": "(c-k0)*(1-Y0)+k0*(1-u(t))",
+    "gap_12": "Y1-Y2=q*(1-q)^2*(q+2)/6",
+    "sign_check": "For t>=0,0<q<=1. The upper parameter inequalities, nonnegative rates and u<=1 make every displayed residual term nonnegative.",
+    "admissible_source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/RobustTankCertificate.lean",
+    "actual_matrix": "[[-k0,0,0],[k10,-k10,0],[k20,k21,-(k20+k21)]]",
+    "barrier_input": "u_star(t)=1",
+    "gap_input": "1-Y0=q",
+    "gap_01": "Y0-Y1=q*(1-q)",
+    "residual_R1": "(2*c-k10)*(Y0-Y1)",
+    "Y": "[1-q,(1-q)^2,p(q)]",
+    "source_semantic_verdict": "The displayed endpoint_drift_domination and solution_below_endpoint use the actual fixed matrix as the comparison matrix, so they implement the residual argument correctly. No source-level blocking semantic issue found in the read version.",
+    "c": "21/20",
+    "actual_input": "[k0*u(t),0,0]",
+    "barrier_nonnegative": "Y2=(1-q)^2*(6-2*q-q^2)/6>=0 for0<=q<=1; Y1,Y0 are also nonnegative.",
+    "endpoint_parameters": "(c,2c,c,3c)=(21/20,21/10,21/20,63/20)"
+  },
+  "exact_maximum_scope": {
+    "not_each_fixed_inlet": "The maximum is over the combined parameter and bounded-input family. It does not say the endpoint parameters maximize the output for every preassigned inlet profile u(t).",
+    "feasibility": "endpoint_admissible, endpointState_hasDerivAt, endpointState_zero, endpointState_actual_solution and endpointState_attainable supply actual model membership and the witness. A merely synthetic interval matrix would not suffice for attainability.",
+    "optimization_family": "All admissible fixed rate tuples, all time-varying input functions satisfying0<=u<=1, and all given classical solutions with zero initial state.",
+    "no_uniqueness_claim": "This gives an attaining witness; it does not characterize all maximizing parameters or controls, and is not a uniqueness theorem.",
+    "physical_scope": "The coefficient-box theorem does not certify arbitrary hardware uncertainty. The all-upper tuple is compatible with uniformly scaling the nominal ideal flow network by c, but the formal optimization family is the stated coefficient model.",
+    "maximum": "For any fixed t>=0 and coordinate i, every such x_i(t)<=Y_i(t), and the single fixed endpoint tuple with the unit input produces the actual trajectory Y. Thus this pair attains the componentwise upper envelope, simultaneously for all t and all coordinates."
+  },
+  "no_conflict_with_phase2_counterexample": {
+    "matrix_order": "Increasing a transfer rate simultaneously raises an off-diagonal term and lowers a diagonal term. Positivity alone never supplies componentwise parameter monotonicity.",
+    "current_barrier": "The phase3 upper trajectory uses the constant upper inlet1. Its first residual includes the nonnegative payment k0*(1-u), and its feedforward coordinate gaps remain nonnegative. Therefore it can bound an actual decaying inlet without claiming that the actual upper-rate decaying-inlet solution dominates all other parameters.",
+    "counterexample": "At the same prescribed decaying inlet v(t)=exp(-t), y_prime=k*(v-y), y(0)=0. The fixed-time map k->y_k(log4) is neither increasing nor decreasing.",
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/ParameterCounterexample.lean",
+    "failing_residual": "If Y is the actual upper-rate response to that same v, then Y_prime-k*(v-Y)=(k_star-k)*(v-Y). The tracking gap v-Y can be negative after the inlet declines, so endpoint domination has no general sign certificate."
+  },
+  "possible_generalizations": [
+    {
+      "candidate": "Arbitrary edge-rate families with a known barrier order",
+      "statement": "For F_i=sum_j a_ij*(X_j-X_i)+source/leak terms, it suffices to certify each row residual sum along Y. Products (a_star_ij-a_ij)*(Y_j-Y_i)>=0 are a useful sufficient condition, even when matrix entries are not ordered. Individual nonnegative products are sufficient, not logically necessary: positive/negative terms can also cancel to a nonnegative row sum."
+    },
+    {
+      "candidate": "Wider boxes below the same proportional cap",
+      "statement": "For any c>0, the same polynomial barrier proves the same sign argument for0<=k0<=c,0<=k10<=2*c,0<=k20<=c,0<=k21<=3*c. The five-percent lower bounds are used only to imply nonnegative rates; the proportional cap makes the explicit barrier formula available. This is a paper generalization, not added to the current Lean source."
+    },
+    {
+      "candidate": "Nonproportional upper rate tuples",
+      "statement": "For an arbitrary nonnegative upper tuple, the step-response gaps g=Y0-Y1 and d=Y1-Y2 satisfy g_prime=Y0_prime-k10_star*g and d_prime=(k10_star-k20_star)*g-(k20_star+k21_star)*d. Thus k10_star>=k20_star and the unit-step first coordinate provide another sufficient ordering criterion without the special polynomial formula. This has not been formalized here."
+    },
+    {
+      "candidate": "Nonautonomous or nonlinear cooperative models",
+      "statement": "A residual comparison extends mathematically under suitable positive-evolution/quasimonotone hypotheses and appropriate solution regularity. The existing Lean theorem is for a fixed matrix; replacing k by k(t), or asserting arbitrary measurable/Caratheodory solutions, requires a new formal interface and is outside this checked stage."
+    }
+  ],
+  "limits": [
+    "No accepted Lean source was changed.",
+    "No kernel run was performed for this notes task.",
+    "No human-facing mathematical document or reader-acceptance artifact was created.",
+    "The exact maximum certificate depends on the model-specific residual signs; it is not a general endpoint-search rule for positive systems."
+  ]
+}

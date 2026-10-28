@@ -1,0 +1,19 @@
+{
+  "images": {
+    "testing-experiment.png": "4975abc8921f60b283cd525d16fd54b2f3dc37d7756ab7f02c680175deaa7619"
+  },
+  "type": "Exact rational experiment diagram and upper-bound bars; no empiricalaccuracy/algorithmexperiment",
+  "model_choice": "Onefairchoice, then100IID tasks conditionalonfixedselectedmodel",
+  "example": {
+    "eps": "1/100",
+    "c": "605/606",
+    "delta": "1/606",
+    "n": 100,
+    "linear_success_upper": "353/606",
+    "linear_error_lower": "253/606",
+    "success_decimal": 0.5825082508250825,
+    "sharp_success_upper_expression": "1-(605/606)^100/2",
+    "sharp_success_upper_illustrative_decimal": 0.5761179237169659
+  },
+  "checks": "Exactfractions.Fraction, power100computedexactly; displaydecimalsillustrative"
+}

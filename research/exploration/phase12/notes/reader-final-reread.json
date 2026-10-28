@@ -1,0 +1,47 @@
+{
+  "review_id": "phase12-undergraduate-reader-final",
+  "review_date_local": "2026-10-28",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "actual_image_viewed": true,
+  "reviewed_file": "D:/MyWorks/Math/research/exploration/phase12/README.md",
+  "reviewed_file_sha256": "E147B0CB9760E9F5BF8E8CA2C1D24FFBA5C6D4F2ABF7B09926DB3083E2536451",
+  "reviewed_image": "D:/MyWorks/Math/research/exploration/phase12/images/observation-choice.png",
+  "reviewed_image_sha256": "FBE90C5AEE7666344F62D75C8F08C6856458A3317B78D842AEADC4F0817F2CD4",
+  "simulated_background": "数学本科毕业，基础分析与概率，不懂Lean，无项目历史。",
+  "reread_scope": "只复读最终正文并再次调用view_image查看实际配图；未读源码、审计、其他notes、外链或其他章节。",
+  "revision_mapping": [
+    {
+      "feedback_id": "R1",
+      "original_quote": "一次任务由四个独立随机量产生：",
+      "final_quote": "给定已经选中的低或高模型后，一次任务由四个独立随机量产生：",
+      "resolution": "resolved",
+      "reread": "独立性的条件已明确；先选一次模型与给定模型后的独立同分布不再容易混淆。"
+    },
+    {
+      "feedback_id": "R2",
+      "original_quote": "任何由样本唯一决定结果的可测二选一规则都满足",
+      "final_quote": "“可测”这里只要求判断结果的概率有定义。",
+      "resolution": "resolved",
+      "reread": "该词现在有足以支撑本节阅读的轻量解释，不必借助测度论。"
+    }
+  ],
+  "final_retelling": [
+    "模型只先选一次，低高各1/2。给定模型后，单任务四随机量独立，重复任务独立同分布；每个任务同时产生S_i和J_i。",
+    "分支计数来自真实J_i，低高单次期望1/3、1/2，方差2/9、1/4。计数均值和方差分别为n/3、2n/9与n/2、n/4。",
+    "阈值5/12到两概率各距1/12。低错误N_n>=5n/12，高错误N_n<5n/12。等于阈值判高，低算错、高算对；两错误事件均可用绝对偏差至少n/12的切比雪夫事件上界。",
+    "错误上界为32/n与36/n，各半平均34/n；100次成功至少33/50。时间规则353/606的上界明确是已证输入；本节无需重证共同分布分量。",
+    "因为两观测对应相同任务、相同两模型与先验，具体分支规则和任意正文所涵盖时间规则的成功率差至少587/7575>0。保证不等于实测，不宣称阈值最优、低记录成本或一般现实系统结论。"
+  ],
+  "recomputed_examples": [
+    "5/12-1/3=1/12；1/2-5/12=1/12。",
+    "p(1-p)给2/9与1/4。",
+    "(2n/9)/(n/12)^2=32/n；(n/4)/(n/12)^2=36/n。",
+    "n=100时32/100=8/25、36/100=9/25。",
+    "(8/25+9/25)/2=17/50；1-17/50=33/50=66%。",
+    "33/50-353/606=(19998-17650)/30300=2348/30300=587/7575≈0.0774917491749175=7.74917491749175个百分点。"
+  ],
+  "image_reread_result": "图片SHA未变，首读实际查看且终读再次调用view_image。上界/下界的条形方向、数值、阈值、差值与正文一致，无必须重画项。",
+  "pass_scope": "仅通过本文已承诺的新步骤的本科读者模拟理解与算例检查；先前时间上界按已证输入理解。",
+  "limitations": "模拟不构成人类用户测试、专家评审、数学正确性、新颖性或Lean证明认证。"
+}

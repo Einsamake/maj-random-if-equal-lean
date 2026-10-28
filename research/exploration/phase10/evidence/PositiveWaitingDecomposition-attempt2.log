@@ -1,0 +1,177 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:29:6: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:29:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:39:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:40:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:43:9: error(lean.unknownIdentifier): Unknown constant `ENNReal.toReal_inj`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:44:2: error: No goals to be solved
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:78:54: error: unsolved goals
+⊢ (1 / 2) • expMeasure 2 + (1 / 2) • expMeasure 2 ∗ expMeasure 1 =
+    (1 / 2).toNNReal • expMeasure 2 + (1 / 2).toNNReal • expMeasure 2 ∗ expMeasure 1
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:84:58: error: unsolved goals
+⊢ (2 / 3) • expMeasure (3 / 2) + (1 / 3) • expMeasure (3 / 2) ∗ expMeasure 1 =
+    (2 / 3).toNNReal • expMeasure (3 / 2) + (1 / 3).toNNReal • expMeasure (3 / 2) ∗ expMeasure 1
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:113:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:118:53: error: unsolved goals
+mu nu : Measure ℝ
+inst✝¹ : IsFiniteMeasure mu
+inst✝ : IsFiniteMeasure nu
+⊢ ((Measure.map (fun x => x.1 + x.2) (mu.prod nu)) univ).toReal = (mu univ).toReal * (nu univ).toReal
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:119:37: warning: This simp argument is unused:
+  Measure.map_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [measureReal_def, Measure.conv, Measure.prod_prod, ENNReal.toReal_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:119:55: warning: This simp argument is unused:
+  Measure.prod_prod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [measureReal_def, Measure.conv, Measure.map_apply, ENNReal.toReal_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:119:73: warning: This simp argument is unused:
+  ENNReal.toReal_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [measureReal_def, Measure.conv, Measure.map_apply, Measure.prod_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:132:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:139:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:162:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\PositiveWaitingDecomposition.lean:193:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.PositiveWaitingDecomposition.prob_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.prob_three_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.prob_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.response_resolvent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_resolvent' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_one_two' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_one_three_half' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_eq_kappa_add' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_eq_two_kappa_add' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_eq_Qlo_add_kappa' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.two_Qlo_eq_Qhi_add' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_mass_real' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa_mass_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder_mass_real' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.low_measure_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.high_measure_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.low_positive_decomposition' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.high_positive_decomposition' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

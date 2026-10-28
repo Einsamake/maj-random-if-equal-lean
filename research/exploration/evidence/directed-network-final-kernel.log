@@ -1,0 +1,47 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.DirectedNetworkComparison.rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leakedRate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.sum_edge_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_imbalance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.max_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leaked_source_flux_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance_le_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.inlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.weights_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakage_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakedRate_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.exp_negative_mul_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.outlet_at_log_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.unweighted_energy_can_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

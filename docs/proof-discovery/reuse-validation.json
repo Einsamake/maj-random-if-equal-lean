@@ -1,0 +1,30 @@
+{
+  "observed_completed_at": "2026-10-26T20:29:42.049258+08:00",
+  "execution_session_id": 86665,
+  "exit_code": 0,
+  "trust_level": 0,
+  "compiler": "Lean 4.35.0-rc4 (existing analysis toolchain)",
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "invocation": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\docs\\proof-discovery",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\docs\\proof-discovery\\ReuseExample.lean"
+  ],
+  "source_sha256": "0419222d222b83b93769836a38da1d065990effb3cd0ba60656a2b1772891ce3",
+  "log_sha256": "bf2a99b20ed3c2b215cf375ea87df00e1e5528abd8da379b88acb098ab99d8d5",
+  "log_kind": "concatenation of actual returned output chunks; standard trailing whitespace removed",
+  "axioms_seen": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declarations": [
+    "ProofDiscovery.ReuseExample.three_cell_order",
+    "ProofDiscovery.ReuseExample.nonbijective_flux_positive"
+  ],
+  "diagnostics": "only pre-existing batteries local-changes warning",
+  "scope": "two teaching examples only; original 267-source formal set not modified or rebuilt"
+}

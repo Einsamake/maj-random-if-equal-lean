@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-28T08:12:09.440280+08:00",
+  "module": "ObservationMaps",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+  "source_unchanged_during_build": true,
+  "log_sha256": "eb71146c71928e04de5802c4b6bf10358f418da699271fa7172b8605d4a1df71",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase12\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase12\\build\\ObservationMaps.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase12\\lean\\ObservationMaps.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ObservationMaps.joint",
+    "MathExploration.ObservationMaps.totals",
+    "MathExploration.ObservationMaps.totals_measurable",
+    "MathExploration.ObservationMaps.low_joint_totals",
+    "MathExploration.ObservationMaps.high_joint_totals",
+    "MathExploration.ObservationMaps.low_joint_time_event",
+    "MathExploration.ObservationMaps.high_joint_time_event",
+    "MathExploration.ObservationMaps.time_test_success"
+  ],
+  "expected_prints": [
+    "MathExploration.ObservationMaps.joint",
+    "MathExploration.ObservationMaps.totals",
+    "MathExploration.ObservationMaps.totals_measurable",
+    "MathExploration.ObservationMaps.low_joint_totals",
+    "MathExploration.ObservationMaps.high_joint_totals",
+    "MathExploration.ObservationMaps.low_joint_time_event",
+    "MathExploration.ObservationMaps.high_joint_time_event",
+    "MathExploration.ObservationMaps.time_test_success"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "6e92b3167ed296c5e6a7908c1533c3a49b7bb13adab12e9b6e03865fb22bb820"
+}

@@ -1,0 +1,120 @@
+{
+  "review_kind": "simulated_mathematics_undergraduate_reader",
+  "reviewed_on": "2026-10-28",
+  "reviewed_file": "D:/MyWorks/Math/research/exploration/phase8/README.md",
+  "reviewed_file_sha256": "3B63657D2121C5815AEFF3D0E3434183701A8F4AF59863E2943F2499B725A8A5",
+  "actual_image_viewed": true,
+  "images": [
+    {
+      "path": "images/rate-box-rule.png",
+      "sha256": "AE88BA390CE62F4720D8F14F16325AEE203C4F1122668E8E272102D93175F632",
+      "actual_image_viewed": true
+    },
+    {
+      "path": "images/two-routes.png",
+      "sha256": "EF178348E80514AF982CC708DCFA7846A40A0AD88D7DDA338BB9E7F6810DBFA8",
+      "actual_image_viewed": true
+    }
+  ],
+  "scope": {
+    "inputs": [
+      "README.md",
+      "images/rate-box-rule.png",
+      "images/two-routes.png"
+    ],
+    "excluded": [
+      "mathematical source",
+      "audit material",
+      "validation.json",
+      "external links",
+      "other chapters"
+    ],
+    "simulated_background": "数学本科毕业；基础分析、代数、概率；不懂 Lean，不依靠项目背景",
+    "limitation": "这是限定阅读背景的子代理模拟，不是人类读者测试、专家评审、数学正确性认证或新颖性认证。"
+  },
+  "own_words": {
+    "goal": "四个固定速率各有独立可选区间。要找一个合法参数组合，使任务在任意给定 t 前完成的概率都至少与其他合法组合一样大，而且这个组合不随 t 改变。",
+    "objects": "先等待 Wc，其速率是 e+f；随后 J 决定走直达还是绕路。J=0 时只再等 Wa，J=1 时再等 Wb 和 Wa。Wc、Wa、Wb、J 独立，S=Wc+Wa+J Wb。绕路概率是 f/(e+f)。增加 f 一边缩短 Wc，一边增加绕路比例，所以单靠速率大不能决定 S 的大小。",
+    "probability_to_equations": "C0 是 Wa 的完成概率，C1 是 Wb+Wa 的完成概率，C2 是整个任务的完成概率。按某一段用去 t-s、余下段在 s 内完成积分，得到非负加权积分；乘指数后求导，得到三个初值为零的一阶方程。",
+    "comparison_device": "D'=G-kD 且 D(0)=0 时，D(t) 是 G(s) 的正指数权重积分。因此 G 非负时 D 非负，G 非正时 D 非正。",
+    "increasing_a": "a 增加使 C0 增加；固定其他参数时，C1、C2 的积分权重非负，所以这个增加逐层传递。",
+    "increasing_b": "令 D=C1,H-C1,L，则 D'=(bH-bL)(C0-C1,L)-bH D。因为非负等待 Wb 被加入后只会更慢，C0>=C1,L，所以 D>=0；再传到 C2。",
+    "increasing_e": "令 D=C2,H-C2,L，则 D'=(eH-eL)(C0-C2,L)-(eH+f)D。因为 S>=Wa，所以 C0>=C2,L，故 D>=0。",
+    "choosing_f": "先把 a、b、e 提到 A、B、E。H=C1-C2 满足 H'=(B-E)(C0-C1)-(E+f)H，所以 H 与 B-E 同号。再比较 fH>=fL，D=C2,H-C2,L 的驱动项是 (fH-fL)(C1-C2,L)，其符号由 B-E 决定。因此 B>E 时选 f 上限，B<E 时选下限，B=E 时任意 f 给出同分布。",
+    "scope": "最大的是每个截止时间的完成概率，并非平均值或最长等待。参数需一次任务中固定且四个区间可独立组合。不能直接推广到随时间改变的速率、联动参数或原二维自动机。均值算例只是核对，不代替逐时比较。"
+  },
+  "calculations": [
+    {
+      "row": 1,
+      "selection": "A=2,B=3,E=1，B>E，所以 f*=F=2；角点 (2,3,1,2)。",
+      "mean": "1/2+1/(1+2)+2/((1+2)*3)=1/2+1/3+2/9=9/18+6/18+4/18=19/18。"
+    },
+    {
+      "row": 2,
+      "selection": "A=2,B=1,E=3，B<E，所以 f*=f_-=1/2；角点 (2,1,3,1/2)。",
+      "mean": "1/2+1/(3+1/2)+(1/2)/((3+1/2)*1)=1/2+2/7+1/7=7/14+4/14+2/14=13/14。"
+    },
+    {
+      "derivation": "E[J Wb]=E[J]E[Wb]=f/((e+f)b)，因此正文给出的均值式可由独立性和线性期望直接重得。"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "category": "术语未定义",
+      "severity": "optional",
+      "location": "README.md:19-26",
+      "original": "四个随机量相互独立，分布为 ... P(J=1)=f/(e+f)。",
+      "feedback": "公式只单列 J=1 的概率，未显式写 J 只取 0、1。后面的解释和路线图已清楚给出 J=0、1 两种情况，因此图文合读不阻断理解。",
+      "suggestion": "可直接写 J∈{0,1}；P(J=1)=f/(e+f)，减少只读公式时的歧义。"
+    },
+    {
+      "id": "R2",
+      "category": "符号",
+      "severity": "optional",
+      "location": "README.md:108",
+      "original": "增加 b 时，两个 C1 的差满足上述方程，G=(b_H-b_L)(C0-C1,L)。",
+      "feedback": "H、L 尚未明确约定为只改变当前速率后的高、低两组参数；这一行也未写出 D 和 k。能够自行相减补出 D=C1,H-C1,L、k=bH，e 的情形则 k=eH+f，不构成当前阻断。",
+      "suggestion": "补一句 H、L 表示只改变当前参数的较高和较低值；可展示 b 比较的一行完整差分方程。"
+    },
+    {
+      "id": "R3",
+      "category": "推理跳步",
+      "severity": "optional",
+      "location": "README.md:106、118",
+      "original": "因此只要 G(s)>=0，就有 D(t)>=0。 ... B<=E 时 H<=0。",
+      "feedback": "小事实只用文字明说了非负情况；后文非正情况能直接从同一个积分式读出，不需要额外定理。",
+      "suggestion": "在小事实后补上 G<=0 时 D<=0，使两个符号分支的引用完全显式。"
+    },
+    {
+      "id": "R4",
+      "category": "符号及结论表述",
+      "severity": "optional_precision",
+      "location": "README.md:126",
+      "original": "所以 B>=E 时，增加 f 会提高完成概率；B<=E 时，增加 f 会降低完成概率。于是前一种情况选上限 F，后一种选下限 f_-。",
+      "feedback": "两个分支都含等号，读到提高和降低时会短暂疑惑 B=E 是否同时严格提高和严格降低。第67行已明确解释此时分布不变，所以不存在实质结论冲突。",
+      "suggestion": "改为 B>E 时增加 f 不降低完成概率，B<E 时增加 f 不提高完成概率；B=E 时分布不变，约定选 F。"
+    },
+    {
+      "id": "R5",
+      "category": "图文一致性",
+      "severity": "none",
+      "location": "images/rate-box-rule.png；images/two-routes.png",
+      "original": "B>=E: f 取上限；B<E: f 取下限。两条路线都先等 Wc。",
+      "feedback": "实际两张图均已查看。上下限、两个角点、等号归属和两条路线的概率与正文一致；min 与下标 - 的记号差别正文第9行已解释。没有阻断性图文不一致。",
+      "suggestion": null
+    },
+    {
+      "id": "R6",
+      "category": "明确留后续证明及范围",
+      "severity": "none",
+      "location": "README.md:69-128、145-147",
+      "original": "为什么这个选择有效？ ... 若速率随时间改变，或实际流量与容积造成参数之间的联动，需要重新证明。",
+      "feedback": "本节的承诺是讲清当前模型的角点规则，正文已给出从概率到比较的完整主线，没有把当前关键步骤推给后续章节。随时间变化、联动参数、二维自动机被明确排除，验证链接未被用来补正文推导。未验证正文末尾关于外部数学源或审查记录的事实。",
+      "suggestion": null
+    }
+  ],
+  "blocking_gaps": [],
+  "first_read_result": "所承诺的模型、逐时比较和两个分数算例可复述并完成；没有发现当前解释的阻断缺口。建议作上述小幅澄清后复读并记录修订版 hash。",
+  "reread_required_after_revision": true
+}

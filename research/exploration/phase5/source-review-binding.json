@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "modules": {
+    "ExponentialMean": {
+      "source_sha256": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+      "log_sha256": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+      "review_file": "notes/independent-review-attestation.json",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e"
+    },
+    "BranchedLaw": {
+      "source_sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+      "log_sha256": "2d4af4f605c8cba3d7a150b125e6d08b5f23828ea3b49632d569be9dbc1b3163",
+      "review_file": "notes/independent-review-attestation.json",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e"
+    },
+    "BranchedCdfMixture": {
+      "source_sha256": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+      "log_sha256": "b0a75cd939f893f8f6aa8d4e1957c3ba897d7c0b61b7c97cd54e33d2375bfe2b",
+      "review_file": "notes/mixture-root-review.json",
+      "review_sha256": "626b09a54800be07ea11d0d5194e2b313556dc39bd964aabb14dd4e41b4b1349"
+    },
+    "ExponentialCdfConvolution": {
+      "source_sha256": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+      "log_sha256": "31977f1811ef7a63fab3b166b00d372f5ab558d3ba192f72b4d854c4dd96f95d",
+      "review_file": "notes/independent-review-attestation.json",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e"
+    },
+    "LinearResponseKernel": {
+      "source_sha256": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+      "log_sha256": "1dc68fb744fb99c16945ee402344dfb9b64ad6411097fa1e356d926f9f37b8fb",
+      "review_file": "notes/independent-review-attestation.json",
+      "review_sha256": "74ad5319a5f8f1a0f1b85bda368347e8e34637e021dbba5c55ded57e7f59ef3e"
+    },
+    "ActualTankCdf": {
+      "source_sha256": "abcd4039dbc979c714395074a392a575dc8f7927ed663bbe6a7e84346ebdcb99",
+      "log_sha256": "6a2dbab9417b118228f7c3cce8dbae826e1dc1155b38f708f166c97158e15ba2",
+      "review_file": "notes/actual-cdf-root-review.json",
+      "review_sha256": "9eac3a4ce7c0deaad8d5a27fc9db407807c8104e926a556d4dcc844e249a12a3"
+    }
+  }
+}

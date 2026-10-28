@@ -1,0 +1,19 @@
+{
+  "status": "PASS current documentation claims against existing accepted source and evidence",
+  "reviewer": "/root/documentation_factcheck",
+  "review_scope": "Read-only nonauthor AI scientific factcheck. No proof rebuild, human expert review, or novelty certification in this documentation update.",
+  "source_checks": {
+    "original": "OriginalQuadraticRecovery.tau_quadratic_bounds and tau_theta_quadratic; original extended exact-N size, both backgrounds, original constants and threshold",
+    "improved_lower": "phase2 ImprovedOriginalLower.tau_quadratic_bounds: N>=500001, lower N^2/576000000; original sealed theorem unchanged",
+    "probability_representation": "phase6 GeneralTankCdf plus fixed positive a,b, nonnegative e,f and e+f>0; true independent product waiting law, general CDF and phase5 mean",
+    "identifiability": "phase7 LawIdentifiability.totalMeasure_eq_iff; fixed a,b,e, only f varies; no joint unknown-parameter claim",
+    "box_corner": "phase8 RateBoxMaximum.selected_maximizes_all_times; independent fixed-rate intervals and endpoint conditions",
+    "all_event_difference": "phase10 ActualCompletionEventBound.all_output_event_gap; completion observation only, not hidden joint events",
+    "time_testing": "phase11 ActualCompletionTesting.testSuccess_le_common_power and linear bound; single equal-prior model selection followed by conditional IID observations; deterministic measurable rules",
+    "same_joint_comparison": "phase12 ObservationMaps and ObservationContrast; actual original samples, branch rule lower bound versus all covered time-only rules upper bound"
+  },
+  "exact_arithmetic": {"delta_at_epsilon_one_hundredth":"1/606","time_linear_upper":"353/606","branch_lower":"33/50","difference_lower":"587/7575"},
+  "unproved_next_work": "Actual branch vector and count distribution plus exact finite tails. About 95.6158 percent remains an internal candidate, not an accepted result.",
+  "checks_not_performed_here": ["new Lean compilation", "human expert review", "novelty certification"],
+  "blocking_findings": []
+}

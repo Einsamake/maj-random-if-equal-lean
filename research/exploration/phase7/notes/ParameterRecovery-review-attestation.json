@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS: independent other-author source and actual evidence review",
+  "blocking_findings": [],
+  "module": "ParameterRecovery",
+  "reviewer": "phase7_law_identifiability independent from module author",
+  "source_sha256": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+  "log_sha256": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+  "olean_sha256": "3cc86cb084e4c135952f892e9f432c322326395ce0d45d89328a10d833926d6a",
+  "underlying_review": "evidence/ParameterRecovery-independent-review.json",
+  "underlying_sha256": "fc85e0cbb09992a9a57cc19c8441b8c6abbae2d633ceae759c972dc573456abd"
+}

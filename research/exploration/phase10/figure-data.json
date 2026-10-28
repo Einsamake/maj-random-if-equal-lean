@@ -1,0 +1,15 @@
+{
+  "images": {
+    "common-completion-mass.png": "ae28c2b8029a9c15cc2fb19087245cfe4777886381d96ffb48cb1e562894eac8"
+  },
+  "type": "Exact positive-component mass diagram; topbars toscale5/6versus1/6, no samples",
+  "parameters": "a=e=1,b=1+eps,eps>0,fLow1/2,fHigh1",
+  "example": {
+    "eps": "1/100",
+    "b": "101/100",
+    "commonmass": "605/606",
+    "remainingmass": "1/606",
+    "percentagepoints_approx": "0.1650"
+  },
+  "checks": "Exactfractions.Fraction; representation is outputlawonly, not originalroutechoice"
+}

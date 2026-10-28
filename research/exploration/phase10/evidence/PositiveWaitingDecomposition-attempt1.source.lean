@@ -1,0 +1,130 @@
+module
+public import NearBlindCompletion
+public import Mathlib.MeasureTheory.Measure.WithDensity
+set_option autoImplicit false
+@[expose] public noncomputable section
+namespace MathExploration.PositiveWaitingDecomposition
+open MeasureTheory ProbabilityTheory Real Set
+open MathExploration.TankResponse MathExploration.LinearResponseKernel
+
+local instance prob_one : IsProbabilityMeasure (expMeasure (1:Real)) :=
+  isProbabilityMeasure_expMeasure (by norm_num)
+local instance prob_three_half : IsProbabilityMeasure (expMeasure (3/2:Real)) :=
+  isProbabilityMeasure_expMeasure (by norm_num)
+local instance prob_two : IsProbabilityMeasure (expMeasure (2:Real)) :=
+  isProbabilityMeasure_expMeasure (by norm_num)
+
+theorem response_resolvent (r s t : Real) (hs : s≠0) :
+    x0 r t=(r/s)*x0 s t+((s-r)/s)*x1 r s t := by
+  have h := ode_to_kernel s
+    (fun u => x0 r u-((r/s)*x0 s u+((s-r)/s)*x1 r s u))
+    (fun _ => 0) continuous_const (by simp [x0_zero,x1_zero])
+    (by
+      intro u
+      have hd := (x0_hasDerivAt r u).sub
+        (((x0_hasDerivAt s u).const_mul (r/s)).add
+          ((x1_hasDerivAt r s u).const_mul ((s-r)/s)))
+      convert hd using 1
+      field_simp [hs]
+      <;> ring) t
+  have hk : kernel s (fun _ => 0) t=0 := by simp [kernel]
+  rw [hk] at h
+  linarith
+
+theorem exponential_resolvent (r s : Real) (hr : 0<r) (hs : 0<s) (hrs : r≤s) :
+    expMeasure r=
+      (⟨r/s,div_nonneg hr.le hs.le⟩:NNReal) • expMeasure s+
+      (⟨(s-r)/s,div_nonneg (sub_nonneg.mpr hrs) hs.le⟩:NNReal) •
+        (expMeasure s ∗ expMeasure r) := by
+  letI := isProbabilityMeasure_expMeasure hr
+  letI := isProbabilityMeasure_expMeasure hs
+  apply Measure.ext_of_Iic
+  intro t
+  apply (ENNReal.toReal_inj (measure_ne_top _ _) (measure_ne_top _ _)).mp
+  change (expMeasure r).real (Iic t)=_
+  rw [measureReal_add_apply]
+  simp only [measureReal_nnreal_smul_apply,NNReal.coe_mk]
+  rw [← cdf_eq_real,← cdf_eq_real,← cdf_eq_real]
+  by_cases ht : 0≤t
+  · rw [GeneralTankCdf.cdf_exp_eq_x0 r hr t ht,
+      GeneralTankCdf.cdf_exp_eq_x0 s hs t ht,
+      GeneralTankCdf.cdf_middle_eq_x1 r s hr hs t ht]
+    exact response_resolvent r s t hs.ne'
+  · rw [GeneralTankCdf.cdf_exp_negative r hr t (lt_of_not_ge ht),
+      GeneralTankCdf.cdf_exp_negative s hs t (lt_of_not_ge ht),
+      GeneralTankCdf.cdf_middle_negative r s hr hs t (lt_of_not_ge ht)]
+    ring
+
+theorem conv_nnreal_smul_left (c : NNReal) (mu nu : Measure Real) [SFinite nu] :
+    (c • mu) ∗ nu=c • (mu ∗ nu) := by
+  simpa only [NNReal.smul_def] using Measure.conv_smul_left mu nu (c:ENNReal)
+
+theorem conv_nnreal_smul_right (c : NNReal) (mu nu : Measure Real) [SFinite nu] :
+    mu ∗ (c • nu)=c • (mu ∗ nu) := by
+  simpa only [NNReal.smul_def] using Measure.conv_smul_right mu nu (c:ENNReal)
+
+def Qlo : Measure Real := (1/3:NNReal) • (expMeasure (3/2) ∗ expMeasure 1)
+def Qhi : Measure Real := (1/2:NNReal) • (expMeasure 2 ∗ expMeasure 1)
+def kappa : Measure Real := (1/6:NNReal) • (expMeasure (3/2) ∗ expMeasure 2)
+def remainder (b : Real) : Measure Real := Qhi+Qlo ∗ expMeasure b
+
+instance Qlo_finite : IsFiniteMeasure Qlo := by unfold Qlo; infer_instance
+instance Qhi_finite : IsFiniteMeasure Qhi := by unfold Qhi; infer_instance
+instance kappa_finite : IsFiniteMeasure kappa := by unfold kappa; infer_instance
+
+theorem exponential_one_two :
+    expMeasure (1:Real)=(1/2:NNReal) • expMeasure 2+
+      (1/2:NNReal) • (expMeasure 2 ∗ expMeasure 1) := by
+  convert exponential_resolvent 1 2 (by norm_num) (by norm_num) (by norm_num) using 1
+  <;> norm_num
+
+theorem exponential_one_three_half :
+    expMeasure (1:Real)=(2/3:NNReal) • expMeasure (3/2)+
+      (1/3:NNReal) • (expMeasure (3/2) ∗ expMeasure 1) := by
+  convert exponential_resolvent 1 (3/2) (by norm_num) (by norm_num) (by norm_num) using 1
+  <;> norm_num
+
+theorem Qlo_eq_kappa_add : Qlo=kappa+kappa ∗ expMeasure 1 := by
+  change (1/3:NNReal) • (expMeasure (3/2) ∗ expMeasure 1)=_
+  rw [exponential_one_two]
+  norm_num only [Measure.conv_add,conv_nnreal_smul_right,smul_add,smul_smul,
+    kappa,conv_nnreal_smul_left,Measure.conv_assoc]
+
+theorem Qhi_eq_two_kappa_add : Qhi=(2:NNReal) • kappa+kappa ∗ expMeasure 1 := by
+  change (1/2:NNReal) • (expMeasure 2 ∗ expMeasure 1)=_
+  rw [exponential_one_three_half]
+  simp only [Measure.conv_add,conv_nnreal_smul_right,smul_add,smul_smul,
+    kappa,conv_nnreal_smul_left,← Measure.conv_assoc,
+    Measure.conv_comm (expMeasure 2) (expMeasure (3/2))]
+  norm_num
+
+theorem Qhi_eq_Qlo_add_kappa : Qhi=Qlo+kappa := by
+  rw [Qlo_eq_kappa_add,Qhi_eq_two_kappa_add,two_smul]
+  ac_rfl
+
+theorem two_Qlo_eq_Qhi_add : (2:NNReal) • Qlo=Qhi+kappa ∗ expMeasure 1 := by
+  rw [Qlo_eq_kappa_add,Qhi_eq_two_kappa_add]
+  simp only [two_smul]
+  ac_rfl
+
+end MathExploration.PositiveWaitingDecomposition
+#print axioms MathExploration.PositiveWaitingDecomposition.prob_one
+#print axioms MathExploration.PositiveWaitingDecomposition.prob_three_half
+#print axioms MathExploration.PositiveWaitingDecomposition.prob_two
+#print axioms MathExploration.PositiveWaitingDecomposition.response_resolvent
+#print axioms MathExploration.PositiveWaitingDecomposition.exponential_resolvent
+#print axioms MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_left
+#print axioms MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_right
+#print axioms MathExploration.PositiveWaitingDecomposition.Qlo
+#print axioms MathExploration.PositiveWaitingDecomposition.Qhi
+#print axioms MathExploration.PositiveWaitingDecomposition.kappa
+#print axioms MathExploration.PositiveWaitingDecomposition.remainder
+#print axioms MathExploration.PositiveWaitingDecomposition.Qlo_finite
+#print axioms MathExploration.PositiveWaitingDecomposition.Qhi_finite
+#print axioms MathExploration.PositiveWaitingDecomposition.kappa_finite
+#print axioms MathExploration.PositiveWaitingDecomposition.exponential_one_two
+#print axioms MathExploration.PositiveWaitingDecomposition.exponential_one_three_half
+#print axioms MathExploration.PositiveWaitingDecomposition.Qlo_eq_kappa_add
+#print axioms MathExploration.PositiveWaitingDecomposition.Qhi_eq_two_kappa_add
+#print axioms MathExploration.PositiveWaitingDecomposition.Qhi_eq_Qlo_add_kappa
+#print axioms MathExploration.PositiveWaitingDecomposition.two_Qlo_eq_Qhi_add

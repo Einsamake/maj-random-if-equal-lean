@@ -1,0 +1,272 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:19:11.5833669Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent source reader; did not author EndpointTank. No agent was spawned and no compilation was run for this review.",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointTank.lean",
+  "source_sha256": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "mathematical_checks": [
+    {
+      "lines": "11-19,36-56",
+      "finding": "Endpoint parameters are(c,2c,c,3c) with c=21/20. They are an admissible actual tuple, not the synthetic interval upperMatrix. Y=[1-q,(1-q)^2,p(q)], q=exp(-c*t), solves Y0_prime=c*(1-Y0), Y1_prime=2*c*(Y0-Y1), Y2_prime=c*(Y0-Y2)+3*c*(Y1-Y2) with unit input. The polynomial derivative gives c*((7/3)*q-3*q^2+(2/3)*q^4), equal to the third actual row.",
+      "topic": "actual_endpoint_model_and_derivative",
+      "status": "pass"
+    },
+    {
+      "lines": "25-34,58-96",
+      "finding": "q(0)=1 gives Y(0)=0. For t>=0,0<q<=1. The identities1-Y0=q, Y0-Y1=q*(1-q), Y1-Y2=q*(1-q)^2*(q+2)/6 have the correct signs. Y0-Y2 is the sum of the two nonnegative gaps. Continuity follows from the actually proved component derivatives.",
+      "topic": "initial_values_and_gap_signs",
+      "status": "pass"
+    },
+    {
+      "lines": "98-118",
+      "finding": "The residual of the endpoint derivative over the actual drift, evaluated along Y, is R0=(c-k0)*(1-Y0)+k0*(1-u); R1=(2*c-k10)*(Y0-Y1); R2=(c-k20)*(Y0-Y2)+(3*c-k21)*(Y1-Y2). Each term is nonnegative under the actual upper bounds, k0>=0, u<=1, and the gap identities. This is drift domination along Y, not an assertion that the endpoint matrix is componentwise above the actual matrix.",
+      "topic": "residual",
+      "status": "pass"
+    },
+    {
+      "lines": "120-140",
+      "finding": "The comparison matrix passed to differential_comparison is the actual fixed matrix M(k). For w=x-Y, the established residual gives w_prime=M(k)*w-R<=M(k)*w. This is the correct direction and avoids any need for a nonexistent entrywise matrix order. The proof does not assume x<=Y or use the desired bound as a premise; it also does not need an unproved positivity assumption on the actual state.",
+      "topic": "comparison_matrix_direction",
+      "status": "pass"
+    },
+    {
+      "lines": "120-140",
+      "finding": "The four parameters are fixed outside the time quantifier; u may vary with time. hu requires0<=u(t)<=1 at every t>0. x is continuous on[0,infinity) and has the displayed derivative at every positive time, with zero initial state. The conclusion holds for every t>=0 and every coordinate. There is no hidden restriction to constant or monotone actual inputs.",
+      "topic": "time_and_input_quantifiers",
+      "status": "pass"
+    },
+    {
+      "lines": "142-163",
+      "finding": "endpointState_actual_solution packages admissibility, continuous trajectory, the actual ODE, the unit-input bound and zero initial state. endpointState_attainable explicitly chooses x=endpointState. Together with solution_below_endpoint this gives an attained componentwise maximum over the stated combined parameter/input/classical-trajectory family, simultaneously at all nonnegative times. It is not merely a synthetic supersolution with no admissible model witness.",
+      "topic": "actual_feasibility_and_attainment",
+      "status": "pass"
+    }
+  ],
+  "scope_limits": [
+    "The maximum is over all admissible fixed tuples and all permitted bounded inputs. It does not say the upper tuple maximizes the response for every preassigned time-varying inlet curve.",
+    "The certificate supplies an attaining tuple/control, not uniqueness or a characterization of every maximizer.",
+    "The phase2 decaying-inlet counterexample is consistent: for a barrier using that same decaying inlet, the gap inlet-Y can be negative. This module instead compares to a constant unit-inlet barrier and pays k0*(1-u)>=0.",
+    "The interface is for given classical trajectories: continuity on the closed nonnegative half-line and actual derivatives at every positive time. It does not prove existence for arbitrary measurable or discontinuous inputs, nor an almost-everywhere or Caratheodory formulation.",
+    "No time-varying parameter or coefficient-matrix theorem is proved. Pointwise residual algebra alone does not change the fixed-matrix comparison interface.",
+    "The uncertainty is the imported fixed rate-coefficient family, with inlet gain tied to k0 and the displayed matching diagonal losses. Independent uncertainty of physical volumes and water flows, arbitrary matrix intervals or a real apparatus are not certified.",
+    "No optimization functional or uniqueness theorem is defined in this module, but the upper comparison plus complete actual witness suffice for the stated attained-maximum interpretation.",
+    "This source review does not replace the recorded kernel run, undergraduate document acceptance, human testing, expert review or novelty certification."
+  ],
+  "kernel_evidence": {
+    "reviewer_reran_kernel": false,
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-attempt1.json",
+    "record_sha256": "af70d6a76ab44b9560fc3c2410c351ab6f1a6dfa40b0c1d17e0aa68c28b5fbc9",
+    "actual_log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-attempt1.log",
+    "actual_log_sha256": "c98d019c9f9b97757ee97f31f888f06450456cbd875dca815cc44d5a4e670ab9",
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointTank.olean",
+    "olean_sha256": "188d051747df8fdfa9365dab341580a816dda5cd44f96577efa4265e11243677",
+    "actual_exit_zero": true,
+    "actual_command_has_trust_zero": true,
+    "source_hash_matches": true,
+    "log_hash_matches": true,
+    "olean_hash_matches": true,
+    "actual_declaration_count": 21,
+    "actual_theorem_count": 17,
+    "actual_print_count": 21,
+    "actual_output_count": 21,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "unexpected_axioms": [],
+    "source_unproved_tokens": 0,
+    "log_errors_or_sorryAx": 0,
+    "all_declarations_prints_outputs_match": true,
+    "actual_per_declaration_axioms_match_record": true,
+    "independent_binding_passed": true,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.EndpointTank.c",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.p",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpoint_admissible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q_pos",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.q_le_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState_continuousOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.one_sub_endpoint_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpoint_zero_sub_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpoint_one_sub_two",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpoint_gaps_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpoint_drift_domination",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.solution_below_endpoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState_actual_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointTank.endpointState_attainable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "warning": "Actual log contains the existing batteries checkout-local-change warning; no pristine-dependency claim was made and no source linter warning or error was observed in this log."
+  },
+  "imported_model_binding": {
+    "dependency_olean_sha256": "99fbdb820707db44c9a6e7941c445559eacfb68f97414ea56117289f7a028607",
+    "C_and_D_source_equal": true,
+    "dependency_record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/RobustTankCertificate-dependency-cache.json",
+    "dependency_olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/RobustTankCertificate.olean",
+    "inspected_C_source_sha256": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+    "inspected_D_source": "D:\\MyWorks\\Math\\research\\exploration\\phase2\\lean\\RobustTankCertificate.lean",
+    "resolution": "EndpointTank uses phase3/build first in LEAN_PATH. RobustTankCertificate.olean is actually present there and is hash-bound to the frozen D phase2 source; the second D phase2/build path need not contain that particular cache.",
+    "inspected_C_source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/RobustTankCertificate.lean",
+    "inspected_D_source_sha256": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+    "dependency_olean_matches_cache_record": true,
+    "dependency_source_matches_cache_record": true
+  },
+  "mutation_scope": "Only this new endpoint-tank-source-review.json was written for this review. No accepted Lean source, old formal source, prior notes or sealed package was edited."
+}

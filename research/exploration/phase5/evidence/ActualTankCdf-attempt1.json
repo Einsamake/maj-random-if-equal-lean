@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-27T12:18:17.109583+08:00",
+  "module": "ActualTankCdf",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "d06f826ffda24356195096019c203e1b571b397451bb7b960e522087cd223074",
+  "source_unchanged_during_build": true,
+  "log_sha256": "e3df00ae257d208f75a1c833ea72f0befc57132a65c083adf0281d6a09bcc468",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ActualTankCdf.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ActualTankCdf.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ActualTankCdf.cdf_exp_one_negative",
+    "MathExploration.ActualTankCdf.cdf_exp_one_nonnegative",
+    "MathExploration.ActualTankCdf.cdf_middle_negative",
+    "MathExploration.ActualTankCdf.cdf_middle_low",
+    "MathExploration.ActualTankCdf.cdf_direct_kernel",
+    "MathExploration.ActualTankCdf.cdf_via_kernel",
+    "MathExploration.ActualTankCdf.weighted_kernels",
+    "MathExploration.ActualTankCdf.low_mixture_is_outlet",
+    "MathExploration.ActualTankCdf.high_mixture_is_outlet"
+  ],
+  "expected_prints": [
+    "MathExploration.ActualTankCdf.cdf_exp_one_negative",
+    "MathExploration.ActualTankCdf.cdf_exp_one_nonnegative",
+    "MathExploration.ActualTankCdf.cdf_middle_negative",
+    "MathExploration.ActualTankCdf.cdf_middle_low",
+    "MathExploration.ActualTankCdf.cdf_direct_kernel",
+    "MathExploration.ActualTankCdf.cdf_via_kernel",
+    "MathExploration.ActualTankCdf.weighted_kernels",
+    "MathExploration.ActualTankCdf.low_mixture_is_outlet",
+    "MathExploration.ActualTankCdf.high_mixture_is_outlet"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

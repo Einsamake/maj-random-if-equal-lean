@@ -1,0 +1,72 @@
+warning: mathlib: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\mathlib
+warning: plausible: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\plausible
+warning: LeanSearchClient: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\LeanSearchClient
+warning: importGraph: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\importGraph
+warning: proofwidgets: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\proofwidgets
+warning: aesop: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\aesop
+warning: Qq: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\Qq
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+warning: Cli: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\Cli
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:75:6: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\ParameterCounterexample.lean:75:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.ParameterCounterexample.inlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.inlet_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.inlet_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_negative_mul_deriv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.inlet_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.response_is_actual_C1_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.coupled_system_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.horizon_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_half_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_two_horizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterCounterexample.exp_neg_four_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_half_at_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_two_at_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_four_at_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_not_monotoneOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ParameterCounterexample.response_not_antitoneOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

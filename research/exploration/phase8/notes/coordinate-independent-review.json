@@ -1,0 +1,35 @@
+{
+  "reviewed_at": "2026-10-28T00:01:08.593098+08:00",
+  "reviewer": "/root/phase8_box_repair",
+  "independence": "Reviewer did not author CoordinateResponseOrder; reviewer repaired only RateBoxMaximum. This is an independent AI source/evidence review, not a human expert review.",
+  "verdict": "PASS_INDEPENDENT_AI_SOURCE_AND_ACTUAL_EVIDENCE",
+  "blocking_findings": [],
+  "module": "CoordinateResponseOrder",
+  "source_sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+  "log_sha256": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d",
+  "olean_sha256": "800f15545d7475d2d81a3b2358720d93981caa5e1257a5a2a6ceadde3404c61a",
+  "actual_evidence": "evidence/CoordinateResponseOrder-attempt2.json",
+  "actual_named_declarations_checked": 13,
+  "actual_standard_trust_level": 0,
+  "checks": {
+    "source_snapshot_log_cache_match": true,
+    "source_unchanged_during_actual_build": true,
+    "all_prints_full_names_and_order_match": true,
+    "axioms_only_standard_three": true,
+    "no_placeholders_custom_axioms_unsafe_or_native_decide": true
+  },
+  "semantic_checks": [
+    "gap02 is the exact all-real ODE difference x0-x2: derivative = a*exp(-a*t)+f*(x0-x1)-(e+f)*(x0-x2), zero at0. ode_to_kernel uses the actual constructed response derivatives, not a positivity assumption.",
+    "For nonnegative time and a,f>=0 the integrand is nonnegative using the previously proved x0-x1>=0 and the positive exponential kernel. The claim is positivity of the gap, not positivity of its derivative.",
+    "a-coordinate comparison uses actual x0 exponential order, propagates through x1 with b>=0, then through x2 with e,f>=0; all required signs appear explicitly.",
+    "b-coordinate difference x1_high-x1_low has forcing (bhi-blo)*(x0-x1_low) and decay bhi. It is nonnegative for a>=0 and blo<=bhi, then propagates into x2 with f>=0.",
+    "e-coordinate difference x2_high-x2_low has forcing (ehi-elo)*(x0-x2_low) and decay ehi+f. Previously proved gap02 positivity supplies its sign under a,f>=0.",
+    "The weaker real-ODE lemmas allow some negative other rates because kernel positivity itself does not require positive decay; actual probability applications must impose their own a,b>0, e,f>=0, e+f>0. RateBoxMaximum does impose these through allowed_valid.",
+    "All comparison results use constant step input1 and zero initial state through TankResponse definitions; they do not assert arbitrary input, time-varying rates or coupled physical uncertainty."
+  ],
+  "limitations": [
+    "No originality certification.",
+    "No original automaton result is changed.",
+    "No sign claim for the derivative of a nonnegative gap."
+  ]
+}

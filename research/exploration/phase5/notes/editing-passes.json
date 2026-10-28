@@ -1,0 +1,32 @@
+[
+  {
+    "pass": 1,
+    "focus": "Concrete question and evidence boundary",
+    "sha256": "8d0ed79d92d4c56afe0728d03c580583a0b00ecc8ba30736080602d2e2d4ddb0",
+    "actions": [
+      "Route and worked means precede calculus.",
+      "General mean separated from two-example formalCDF identity.",
+      "Reverse dependency path explicitly distinguished from physical water transport.",
+      "Classical background and original automaton scope explicit."
+    ]
+  },
+  {
+    "pass": 2,
+    "focus": "Figure and inference clarity",
+    "sha256": "7a6fe992816ad6ab3b92b3f135a58dceb2344e7196c5a727241631d5858fa261",
+    "actions": [
+      "Actually viewed both PNGs. Moved curve legend outside plotting area to uncover trajectories.",
+      "Clarified t-s as a change of integration variable, not an imposed waiting constraint."
+    ]
+  },
+  {
+    "pass": 3,
+    "focus": "First independent reader feedback",
+    "sha256": "eeba81f8d599ceee849c897cc0db644dff0fc50e2412f35b627b9082fa3e2670",
+    "actions": [
+      "Replaced all natural exponent bases e with exp to avoid confusing the rate parameter e.",
+      "Changed route table heading from average detour wait to detour contribution to the mean, distinguishing unconditional contribution from conditional wait.",
+      "Preserved all exact values and probability-vs-mean and formal-scope boundaries."
+    ]
+  }
+]

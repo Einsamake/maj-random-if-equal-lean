@@ -1,0 +1,4 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'ProofDiscovery.ReuseExample.three_cell_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ProofDiscovery.ReuseExample.nonbijective_flux_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

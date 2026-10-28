@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-27T01:18:08.207146+08:00",
+  "exit_code": 0,
+  "source_sha256": "3d2ed3289bf003e3c4a8c278b56c29a79a2428c56bd2b1f1c798e848cc46779f",
+  "log_sha256": "ef135d7017edda867af97e4760fc2b5f0d47f73053fc91e5203bd474bd524b58",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\RobustNetworkBounds.lean"
+  ]
+}

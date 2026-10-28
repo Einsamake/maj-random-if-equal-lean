@@ -1,0 +1,57 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:118:25: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.DirectedNetworkComparison.sum_edge_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_imbalance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.max_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leaked_source_flux_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance_le_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:260:91: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:265:91: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:260:91: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:265:91: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.ThreeTankCertificate.weights_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakage_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakedRate_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.exp_negative_mul_deriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.outlet_at_log_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.unweighted_energy_can_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

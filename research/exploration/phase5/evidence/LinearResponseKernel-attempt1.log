@@ -1,0 +1,98 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:28:66: error(lean.invalidField): Invalid field `exp`: The environment does not contain `Continuous.exp`, so it is not possible to project the field `exp` from an expression
+  Continuous.mul continuous_const (Continuous.sub continuous_id continuous_const)
+of type
+  Continuous ((fun x => ?m.469) * (id - fun x => ?m.492))
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:37:2: warning: Unused tactic linter: `congr 1` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:38:2: warning: Unused tactic linter: `congr 1` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:50:9: error: ambiguous term, use fully qualified name, possible interpretations [ConstantInletCounterexample.r,
+ RobustTankCertificate.r]
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:62:2: error: Tactic `apply` failed: could not unify the conclusion of `ode_to_kernel (1 / 2) ?m.36 (fun x => ?m.47 * lowState x 0)
+  (Continuous.const_mul (low_continuous 0) ?m.47) ?m.50`
+  ?m.36 ?t = kernel (1 / 2) (fun x => ?m.47 * lowState x 0) ?t
+with the goal
+  lowState t 1 = kernel (1 / 2) (fun s => 1 / 2 * lowState s 0) t
+
+Note: The full type of `ode_to_kernel (1 / 2) ?m.36 (fun x => ?m.47 * lowState x 0)
+  (Continuous.const_mul (low_continuous 0) ?m.47) ?m.50` is
+  (∀ (s : ℝ), HasDerivAt ?m.36 (?m.47 * lowState s 0 - 1 / 2 * ?m.36 s) s) →
+    ∀ (t : ℝ), ?m.36 t = kernel (1 / 2) (fun x => ?m.47 * lowState x 0) t
+
+t : ℝ
+⊢ lowState t 1 = kernel (1 / 2) (fun s => 1 / 2 * lowState s 0) t
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:70:2: error: Tactic `apply` failed: could not unify the conclusion of `ode_to_kernel (1 / 2) ?m.36 (fun x => ?m.47 * highState x 0)
+  (Continuous.const_mul (high_continuous 0) ?m.47) ?m.50`
+  ?m.36 ?t = kernel (1 / 2) (fun x => ?m.47 * highState x 0) ?t
+with the goal
+  highState t 1 = kernel (1 / 2) (fun s => 1 / 2 * highState s 0) t
+
+Note: The full type of `ode_to_kernel (1 / 2) ?m.36 (fun x => ?m.47 * highState x 0)
+  (Continuous.const_mul (high_continuous 0) ?m.47) ?m.50` is
+  (∀ (s : ℝ), HasDerivAt ?m.36 (?m.47 * highState s 0 - 1 / 2 * ?m.36 s) s) →
+    ∀ (t : ℝ), ?m.36 t = kernel (1 / 2) (fun x => ?m.47 * highState x 0) t
+
+t : ℝ
+⊢ highState t 1 = kernel (1 / 2) (fun s => 1 / 2 * highState s 0) t
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:79:2: error: Tactic `apply` failed: could not unify the conclusion of `ode_to_kernel (5 / 2) ?m.49
+  ((fun x => 2 * lowState x 0) + fun x => 1 / 2 * lowState x 1)
+  (Continuous.add (Continuous.const_mul (low_continuous 0) 2) (Continuous.const_mul (low_continuous 1) (1 / 2))) ?m.89`
+  ?m.49 ?t = kernel (5 / 2) ((fun x => 2 * lowState x 0) + fun x => 1 / 2 * lowState x 1) ?t
+with the goal
+  lowState t 2 = kernel (5 / 2) (fun s => 2 * lowState s 0 + 1 / 2 * lowState s 1) t
+
+Note: The full type of `ode_to_kernel (5 / 2) ?m.49 ((fun x => 2 * lowState x 0) + fun x => 1 / 2 * lowState x 1)
+  (Continuous.add (Continuous.const_mul (low_continuous 0) 2) (Continuous.const_mul (low_continuous 1) (1 / 2)))
+  ?m.89` is
+  (∀ (s : ℝ), HasDerivAt ?m.49 (((fun x => 2 * lowState x 0) + fun x => 1 / 2 * lowState x 1) s - 5 / 2 * ?m.49 s) s) →
+    ∀ (t : ℝ), ?m.49 t = kernel (5 / 2) ((fun x => 2 * lowState x 0) + fun x => 1 / 2 * lowState x 1) t
+
+t : ℝ
+⊢ lowState t 2 = kernel (5 / 2) (fun s => 2 * lowState s 0 + 1 / 2 * lowState s 1) t
+D:\MyWorks\Math\research\exploration\phase5\lean\LinearResponseKernel.lean:89:2: error: Tactic `apply` failed: could not unify the conclusion of `ode_to_kernel 3 ?m.25
+  ((fun x => 2 * highState x 0) + fun t => highState t 1)
+  (Continuous.add (Continuous.const_mul (high_continuous 0) 2) (high_continuous 1)) ?m.50`
+  ?m.25 ?t = kernel 3 ((fun x => 2 * highState x 0) + fun t => highState t 1) ?t
+with the goal
+  highState t 2 = kernel 3 (fun s => 2 * highState s 0 + highState s 1) t
+
+Note: The full type of `ode_to_kernel 3 ?m.25 ((fun x => 2 * highState x 0) + fun t => highState t 1)
+  (Continuous.add (Continuous.const_mul (high_continuous 0) 2) (high_continuous 1)) ?m.50` is
+  (∀ (s : ℝ), HasDerivAt ?m.25 (((fun x => 2 * highState x 0) + fun t => highState t 1) s - 3 * ?m.25 s) s) →
+    ∀ (t : ℝ), ?m.25 t = kernel 3 ((fun x => 2 * highState x 0) + fun t => highState t 1) t
+
+t : ℝ
+⊢ highState t 2 = kernel 3 (fun s => 2 * highState s 0 + highState s 1) t
+'MathExploration.LinearResponseKernel.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.ode_to_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.kernel_eq_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_zero_exp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_zero_exp' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_middle_kernel' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LinearResponseKernel.high_middle_kernel' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LinearResponseKernel.low_outlet_kernel' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.LinearResponseKernel.high_outlet_kernel' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

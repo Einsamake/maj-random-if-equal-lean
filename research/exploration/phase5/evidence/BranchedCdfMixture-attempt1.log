@@ -1,0 +1,38 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:22:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  muC.prod (Measure.map (Prod.fst + Prod.snd) (muB.prod muA))
+in the target expression
+  Measure.map (fun x => x.1 + (x.2.1 + x.2.2)) (muC.prod (muB.prod muA)) =
+    Measure.map (fun x => x.1 + x.2) (muC.prod (Measure.map (fun x => x.1 + x.2) (muB.prod muA)))
+
+muC muB muA : Measure ℝ
+inst✝¹ : SFinite muB
+inst✝ : SFinite muA
+hp :
+  muC.prod (Measure.map (Prod.fst + Prod.snd) (muB.prod muA)) =
+    Measure.map (Prod.map id (Prod.fst + Prod.snd)) (muC.prod (muB.prod muA))
+⊢ Measure.map (fun x => x.1 + (x.2.1 + x.2.2)) (muC.prod (muB.prod muA)) =
+    Measure.map (fun x => x.1 + x.2) (muC.prod (Measure.map (fun x => x.1 + x.2) (muB.prod muA)))
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:43:4: error: `fun_prop` was unable to prove `Measurable fun x => x.2.1 + if x.1 = true then x.2.2.1 + x.2.2.2 else x.2.2.2`
+
+Issues:
+  No theorems found for `ite` in order to prove `Measurable fun i => if i.1 = true then i.2.2.1 + i.2.2.2 else i.2.2.2`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:49:32: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_def, reduceIte, Bool.false_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MathExploration.BranchedCdfMixture.map_nested_product_via' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.map_nested_product_direct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.map_bernoulli_nested_product' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

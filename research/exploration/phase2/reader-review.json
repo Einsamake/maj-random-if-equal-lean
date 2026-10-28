@@ -1,0 +1,27 @@
+{
+  "reviewer": "/root/phase2_undergraduate_reader",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "scope_limit": "本科读者模拟复读，不是实际人类测试、专家评审、数学正确性或新颖性认证。仅从磁盘重新读取两篇正文和两张PNG；未看源码、验证、笔记或外链。一般比较原理和原格子完整概率证明按正文说明作为已证输入。",
+  "changes_after_first_read": [
+    "恢复明确为首次扰动消失，齐次背景保持不变",
+    "N按容纳的格点列数计算，并给(0,0)/(2,1)的N=3算例",
+    "区分先求期望再取最坏与单条含无穷轨迹",
+    "残差说明分清矩阵元素与向量坐标",
+    "紫图使用精确分数再给近似值，统一归一化时间"
+  ],
+  "demonstrated_comprehension": [
+    "复算单箱三个精确值与内点超过两端3/64，不误称k=2最优",
+    "从M/H的负号与非负真实状态推残差非负",
+    "复算q(t*)=1/2、17/192、7/64和28077/109744<13/50",
+    "区分保守上界与可达最大值、固定系数与任意时变矩阵",
+    "复算98.304系数比，并明确最坏初态下界不是所有初态下界"
+  ],
+  "reviewed_file_sha256": {
+    "README.md": "12becc4231fb9c9efb83d55267e987cd611d9d80607a9af6bc0a7d9ed76b2efe",
+    "INTERVAL_CERTIFICATE.md": "0dd52fab60c0d6b88d7cc8ff89c4a8562adaccd1b1b5717921aed5099ce306e3",
+    "images/parameter-counterexample.png": "82b43aba6525a8f0024900e3db3e0683ad782565dfe07a0568c767101ad3ed35",
+    "images/robust-envelope.png": "0a06c7954d727693dcfcc4100601ab49b354a643efc1ca7c096b6a108d9d3524"
+  },
+  "actual_human_test": false
+}

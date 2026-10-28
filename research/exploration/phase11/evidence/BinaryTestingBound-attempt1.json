@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-28T08:03:32.963897+08:00",
+  "module": "BinaryTestingBound",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+  "source_unchanged_during_build": true,
+  "log_sha256": "4535d6b3e0bc57b6673ffc0be7eb4f43198678dad39a32dc8ae8576af54a26b8",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase11\\build\\BinaryTestingBound.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean\\BinaryTestingBound.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.BinaryTestingBound.success",
+    "MathExploration.BinaryTestingBound.error",
+    "MathExploration.BinaryTestingBound.success_add_error",
+    "MathExploration.BinaryTestingBound.error_ge_common_mass",
+    "MathExploration.BinaryTestingBound.success_le_of_common_mass"
+  ],
+  "expected_prints": [
+    "MathExploration.BinaryTestingBound.success",
+    "MathExploration.BinaryTestingBound.error",
+    "MathExploration.BinaryTestingBound.success_add_error",
+    "MathExploration.BinaryTestingBound.error_ge_common_mass",
+    "MathExploration.BinaryTestingBound.success_le_of_common_mass"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "17053f84b44b6d2393ce02d48f7be8b0dccffd29b30c8a0d261eeb6b7921126d"
+}

@@ -1,0 +1,32 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:19:4: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (x : ?m.68), (Iic ?m.73).indicator (fun x => 1) x ∂?m.46 ∗ ?m.47
+in the target expression
+  ∫ (x : ℝ), (Iic t).indicator 1 x ∂nu ∗ mu = ∫ (u : ℝ), ↑(cdf mu) (t - u) ∂nu
+
+nu mu : Measure ℝ
+inst✝¹ : IsProbabilityMeasure nu
+inst✝ : IsProbabilityMeasure mu
+t : ℝ
+⊢ ∫ (x : ℝ), (Iic t).indicator 1 x ∂nu ∗ mu = ∫ (u : ℝ), ↑(cdf mu) (t - u) ∂nu
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialCdfConvolution.lean:38:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ExponentialCdfConvolution.cdf_conv_eq_integral' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral_clock' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialCdfConvolution.cdf_exp_conv_eq_integral' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

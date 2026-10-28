@@ -1,0 +1,30 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:20:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:20:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:27:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:27:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:43:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase7\lean\ParameterRecovery.lean:43:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.ParameterRecovery.delta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.recover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.delta_meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.delta_meanFormula_sub_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.delta_meanFormula_ne_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.recover_meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.meanFormula_injective_f' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.delta_total_mean_sub_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.delta_total_mean_ne_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ParameterRecovery.recover_total_mean' depends on axioms: [propext, Classical.choice, Quot.sound]

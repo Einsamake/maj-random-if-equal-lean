@@ -1,0 +1,442 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:28:22.1553038Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent reader; did not author EndpointCertificate",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "kernel_evidence": {
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointCertificate.lean",
+    "source_sha256": "67f46495f764b7e7a5ee7974268558153cde24b08a491e6bfc46e01ce490b5c9",
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointCertificate-final.json",
+    "record_sha256": "2125972ba425161df3802cba85d90ccb24e3cd2b037bb87b5806ef156745c599",
+    "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointCertificate-final.log",
+    "log_sha256": "4028feadf68a3d18f9627f1798e267451b198274f649935b536d7715a7b74670",
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointCertificate.olean",
+    "olean_sha256": "bba010cab76794fff8eba5d16ac6f1fee1fd697df67f6d75fa54b1a198c6afa2",
+    "actual_exit_code": 0,
+    "actual_command_contains_trust_zero": true,
+    "actual_declaration_count": 6,
+    "actual_theorem_count": 5,
+    "actual_print_count": 6,
+    "actual_output_count": 6,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "unexpected_axioms": [],
+    "all_declarations_prints_outputs_match": true,
+    "source_unproved_tokens": 0,
+    "log_errors_or_sorryAx": 0,
+    "binding_passed": true,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.EndpointCertificate.outletValues",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointCertificate.greatest_outlet",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointCertificate.q_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointCertificate.endpoint_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointCertificate.exact_maximum_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.EndpointCertificate.every_outlet_at_checkTime_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "reviewer_reran_kernel": false,
+    "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+  },
+  "imported_bindings": [
+    {
+      "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointTank.lean",
+      "source_sha256": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+      "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-final.json",
+      "record_sha256": "40e61f137ba8c4392e3c8af29436912619e7495b5fead0b648dc9903ad412722",
+      "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-final.log",
+      "log_sha256": "c98d019c9f9b97757ee97f31f888f06450456cbd875dca815cc44d5a4e670ab9",
+      "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointTank.olean",
+      "olean_sha256": "188d051747df8fdfa9365dab341580a816dda5cd44f96577efa4265e11243677",
+      "actual_exit_code": 0,
+      "actual_command_contains_trust_zero": true,
+      "actual_declaration_count": 21,
+      "actual_theorem_count": 17,
+      "actual_print_count": 21,
+      "actual_output_count": 21,
+      "actual_axioms": [
+        "Classical.choice",
+        "propext",
+        "Quot.sound"
+      ],
+      "unexpected_axioms": [],
+      "all_declarations_prints_outputs_match": true,
+      "source_unproved_tokens": 0,
+      "log_errors_or_sorryAx": 0,
+      "binding_passed": true,
+      "declaration_axioms": [
+        {
+          "name": "MathExploration.EndpointTank.c",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.p",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.one_sub_endpoint_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_zero_sub_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_one_sub_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_gaps_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_drift_domination",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.solution_below_endpoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_actual_solution",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_attainable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "reviewer_reran_kernel": false,
+      "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+    },
+    {
+      "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointArithmetic.lean",
+      "source_sha256": "b7187a52308e2c0cc12ddb68ef8ce9eb833b1fb3c05b53730440b1d5c372fdc4",
+      "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointArithmetic-attempt3.json",
+      "record_sha256": "18282ab7be973ba67a8d59f301d81abfeaf427560ef2cac5ed1a663c2c718174",
+      "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointArithmetic-attempt3.log",
+      "log_sha256": "70e65f42749b6846bb85b77948620bbfa71d225d68df974192856719061a9179",
+      "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointArithmetic.olean",
+      "olean_sha256": "ec9c6a9e3785a63bb3d01e18512bec2b3287d7dc891cc74f99451def8d375834",
+      "actual_exit_code": 0,
+      "actual_command_contains_trust_zero": true,
+      "actual_declaration_count": 12,
+      "actual_theorem_count": 10,
+      "actual_print_count": 12,
+      "actual_output_count": 12,
+      "actual_axioms": [
+        "Classical.choice",
+        "propext",
+        "Quot.sound"
+      ],
+      "unexpected_axioms": [],
+      "all_declarations_prints_outputs_match": true,
+      "source_unproved_tokens": 0,
+      "log_errors_or_sorryAx": 0,
+      "binding_passed": true,
+      "declaration_axioms": [
+        {
+          "name": "MathExploration.EndpointArithmetic.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.checkDecay",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.response_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.response_antitone",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.checkDecay_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.checkDecay_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.checkDecay_pow",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.rational_lower_power",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.rational_lower_checkDecay",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.response_at_rational",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.response_checkDecay_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointArithmetic.response_checkDecay_lt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "reviewer_reran_kernel": false,
+      "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+    }
+  ],
+  "mathematical_checks": [
+    {
+      "lines": "11-19",
+      "finding": "outletValues retains four fixed admissible parameters, an actual trajectory continuous on the nonnegative half-line, the displayed classical derivative at every positive time, a time-varying inlet with0<=u<=1, zero initial state, and the actual coordinate z=x(t,2). The desired comparison or upper number is not inserted into set membership.",
+      "topic": "actual_outlet_set"
+    },
+    {
+      "lines": "21-29",
+      "finding": "The membership part constructs the actual upper tuple, explicit endpointState and unit inlet, supplying every admissibility, continuity, derivative, input and initial-state condition. The upper-bound part eliminates an arbitrary member and invokes the already proved actual-model comparison. Thus IsGreatest includes a real attaining member, not only a supremum bound.",
+      "topic": "IsGreatest_membership_and_upper_bound"
+    },
+    {
+      "lines": "31-45",
+      "finding": "The imported checkTime is(20/19)*log2 and endpoint c=21/20, so q(checkTime)=exp(-(21/19)*log2). The outlet polynomial is exactly the same response p in EndpointArithmetic. checkTime_nonnegative discharges the nonnegative-time condition before greatest_outlet is used.",
+      "topic": "time_and_polynomial_binding"
+    },
+    {
+      "lines": "47-53",
+      "finding": "Every member is first bounded by the exact greatest value p(q); the rational upper bound and the strict0.233 and0.24 bounds follow by transitivity. No rounding estimate is used as a proof premise.",
+      "topic": "uniform_quantitative_bounds"
+    }
+  ],
+  "scope_limits": [
+    "Final source is bound to EndpointCertificate-final.json and final.log, with source67f46495..., not the older attempt1 source.",
+    "The greatest value is over the combined fixed-parameter and bounded-input family of given classical solutions. It does not assert that upper parameters maximize every preassigned inlet curve.",
+    "Only t>=0 is used by greatest_outlet; the definition alone has no maximum claim for negative times.",
+    "No optimizer uniqueness, general existence for arbitrary measurable controls, parameter-varying-in-time model, or physical-apparatus claim is made.",
+    "Independent mathematical source reading and evidence binding; no kernel rerun, human reader acceptance, expert review or novelty certification.",
+    "Only the three requested new JSON reviews are written by this task; no Lean source, previous record, cache or sealed material is edited."
+  ]
+}

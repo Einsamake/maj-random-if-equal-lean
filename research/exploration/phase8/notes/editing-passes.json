@@ -1,0 +1,34 @@
+[
+  {
+    "pass": 1,
+    "sha256": "6b389096eb58963cc871d61428fcb3fb22a431f193c068105489c6a4e65037ce",
+    "actions": [
+      "Standalone actual probability model before parameter optimization",
+      "Same corner all deadlines and attainable maximum distinguished from conservative upper envelope",
+      "Compared a,b,e before selecting f by upper B,E; gave integrating-factor steps and arithmetic examples",
+      "Separated deadline probability maximum from largest waitingtime and from original automaton"
+    ]
+  },
+  {
+    "pass": 2,
+    "sha256": "3b63657d2121c5815aeff3d0e3434183701a8f4af59863e2943f2499b725a8a5",
+    "actions": [
+      "Inspected both actual PNGs, found missing Unicode subscript-minus glyphs and replaced with min labels plus definition",
+      "Made branchprobability increase weak/non-strict at e=0",
+      "Removed unexplained constant-inlet wording from model scope",
+      "Kept maximum CDF separate from maximum waitingtime"
+    ]
+  },
+  {
+    "pass": 3,
+    "sha256": "92bca59dd349c244533ced283b674dded78a0616e708be85f342d96f62f1f095",
+    "actions": [
+      "Defined Bernoulli J values0and1 explicitly",
+      "Defined H/L indices and gave actual b-difference equation",
+      "Added nonpositive forcing case for integrating-factor comparison",
+      "Separated B>E/B<E/B=E and used weak probability change wording",
+      "Rechecked examples and actual diagram domain/parameter labels"
+    ],
+    "based_on": "notes/reader-first-feedback.json"
+  }
+]

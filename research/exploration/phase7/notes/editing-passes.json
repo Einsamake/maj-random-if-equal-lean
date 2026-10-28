@@ -1,0 +1,32 @@
+[
+  {
+    "pass": 1,
+    "focus": "Population-mean recovery and exact scope",
+    "sha256": "9f3c4e11f8d5fc15be03cc28ae7479489ee51a3801cc04fc37e3eb270f63a0b7",
+    "actions": [
+      "Known a,b,e and exact population mean stated before inverse.",
+      "Included self-contained integral explanation of neutral equal distribution, not a mean-based shortcut.",
+      "Finite normalized difference quotient distinguished from relative error and sample-estimation guarantees."
+    ]
+  },
+  {
+    "pass": 2,
+    "focus": "Visual and inference precision",
+    "actions": [
+      "Actually viewed plotted exact means and rational table; no clipping.",
+      "Expanded one inverse-formula worked example and clarified303 as a two-point finite quotient, not a derivative or relative-error factor.",
+      "Figure numerical-table title now describes an exact comparison instead of suggesting a plotted zoom."
+    ],
+    "sha256": "5bc3a01e1876077a5a79ca7f1b72fe272e61da12c44df2dab812c7502ff41062"
+  },
+  {
+    "pass": 3,
+    "focus": "Independent reader feedback",
+    "actions": [
+      "Removed undefined forcing-term jargon; supplied C0/C1 continuity and FTC reason directly.",
+      "Removed still to make the model introduction standalone.",
+      "Specified positive-time derivative domain, preserving initial continuity at0 and all distribution claims."
+    ],
+    "sha256": "ee6f8a50227b686199f0c8da8337b7cc7b5bd6e4daf420817d2e09da106cdb38"
+  }
+]

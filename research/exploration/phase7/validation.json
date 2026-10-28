@@ -1,0 +1,214 @@
+{
+  "checked_at": "2026-10-27T18:41:01.702349+08:00",
+  "status": "PASS",
+  "mathematical_modules": 3,
+  "audit_driver_modules": 1,
+  "named_declarations": 26,
+  "new_theorems": 22,
+  "modules": {
+    "ParameterRecovery": {
+      "source_sha256": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+      "log_sha256": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+      "record_sha256": "ea07a5bd826c2a01b57cd6cb8b8616bd154435838e84911b197b59777f8895fb",
+      "review_sha256": "815e28b1b038c39fb99cb5f12158bb56d6b50d243cd1be7240eb136216df30b0",
+      "named": 10,
+      "theorems": 8,
+      "olean_sha256": "3cc86cb084e4c135952f892e9f432c322326395ce0d45d89328a10d833926d6a"
+    },
+    "MeanRecoverySensitivity": {
+      "source_sha256": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+      "log_sha256": "4e1e17e09b181f8fd35fc50852ca4e21c25889b16d970fbbf915b3bbc5421690",
+      "record_sha256": "ae36c5d1f5ea42fee8067ab16f316b5ca9a6795a979ecc336feef0acdfc94a31",
+      "review_sha256": "7048d4bfc33f49c2ae02fcbdb6d4d8a0bd39504a579a533358f545e051018020",
+      "named": 11,
+      "theorems": 9,
+      "olean_sha256": "7be925514527f4b9718b726f9d1582dd034c225731d3c245d2aa08980b9efc62"
+    },
+    "LawIdentifiability": {
+      "source_sha256": "77254c0755759041298a99d6ef9fae146a9f4d3d8486ec73a88cdd67eb0bba14",
+      "log_sha256": "a1bc249fed6fc317951450d5e8c9644d3970584901df2c189a3dd5ee084f2e10",
+      "record_sha256": "54def842d2f606db9f3816046e0956e0a73eb488d9b2f60f37b8cab124aabdb1",
+      "review_sha256": "c3a8ac44a0bcff0205b27dd0d960d945b6eb09293d5b5732da2ef59f3bd2d459",
+      "named": 5,
+      "theorems": 5,
+      "olean_sha256": "16da188d2fc6715e4b6b56d77506b45b29a62dcbcee5043733c01439c31b4c81"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "0f93cfb5324ced99feeb7c07c932ea01dea0c76372775de42063e19cd7705cdc",
+    "log_sha256": "8652e7d36ad68575be9be5ba6211b26c344fa582e5de1395ac0699c7a52a0de5",
+    "actual_prints": 26,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "reader_review": {
+    "reviewer": "/root/phase7_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "Context-free undergraduate mathematics simulation, README and actualPNG only, no source/audits/notes/priorchapters/links. Neither human testing, expert review, correctness nor novelty certification.",
+    "first_read": {
+      "reviewer": "/root/phase7_undergraduate_reader",
+      "status": "pass_with_two_optional_clarity_edits",
+      "unresolved_blockers": [],
+      "reviewed_file_sha256": {
+        "README.md": "5bc3a01e1876077a5a79ca7f1b72fe272e61da12c44df2dab812c7502ff41062",
+        "images/mean-recovery.png": "6d848f8b693d1df2d1528b4d7e0a900bee0805c1ef31dc9cec15cc55579a96d0"
+      },
+      "actual_image_viewed": true,
+      "restatement": [
+        "Known fixed a,b,e; onlyf unknown, m is actual population expectation, not one observation or finite sample average.",
+        "d=b(m-1/a) gives inverse(b-ed)/(d-1); denominator(b-e)/(e+f) nonzero iff b!=e.",
+        "At b=e, actual CDF equality follows from Dprime=-(b+f)D andzero initial, not fromequalmeans.",
+        "Equal outputlaws withb!=e forceequalmeans andhenceequalf; no simultaneous all-rate recovery.",
+        "Nearfamily variesknownb acrossmodels while fixed within eachpair, fixed fgap1/2 gives arbitrarily smallmean gap.",
+        "303 is a normalized two-point absolute difference quotient, not a derivative or relative-percent factor."
+      ],
+      "worked_examples": {
+        "inverse_from9/5": "d2/5,numerator-3/10,denominator-3/5 ->f1/2",
+        "inverse_from2": "d1/2,numerator-1/2,denominator-1/2 ->f1",
+        "near_low_mean": "1+(151/100)/(303/200)=605/303",
+        "near_high_mean": "1+(201/100)/(202/100)=403/202",
+        "gap": "1210/606-1209/606=1/606",
+        "quotient": "(1/2)*606=303",
+        "epsilon": "[2(3+2eps)-3(2+eps)]/[6(1+eps)]=eps/[6(1+eps)]"
+      },
+      "feedback": [
+        {
+          "quote": "两个积分的强迫项连续",
+          "category": "undefined term",
+          "blocking": false,
+          "change": "Removed jargon, explained C0/C1continuity andFTC."
+        },
+        {
+          "quote": "总等待时间仍由四个独立随机量构成",
+          "category": "standalone entry",
+          "blocking": false,
+          "change": "Removed still."
+        }
+      ],
+      "scope": "No source/audits/notes/priorchapters/links used. Undergraduate simulation, not human testing, expert review or correctness/novelty certification."
+    },
+    "final_reread": {
+      "status": "pass",
+      "changes_confirmed": [
+        "Undefined forcing-term jargon replaced by explicit C0/C1 continuity, integrating factor and FTC on positive time.",
+        "Removed still from standalone model introduction."
+      ],
+      "integral_to_ODE_restated": "exp(bt)*C1 is integral of continuous b*exp(bs)*C0, hence C1 continuous and differentiable onpositive time; same reasoning gives F_f ODE.",
+      "inverse_examples": [
+        "m9/5 ->d2/5 ->(-3/10)/(-3/5)=1/2",
+        "m2 ->d1/2 ->(-1/2)/(-1/2)=1"
+      ],
+      "near_example": "605/303-403/202=1/606, (1/2)/(1/606)=303",
+      "scope_checks": [
+        "Exact population mean, fixed knowna,b,e.",
+        "303 is a two-point normalized absolute difference quotient, not derivative, percentage multiplier or statistical guarantee.",
+        "No finite-sample confidence/sample complexity or full distribution distance bound."
+      ],
+      "figure": "Actual image viewed atfirstread; identical finalhash, no clipping/overlap."
+    },
+    "reviewed_file_sha256": {
+      "README.md": "ee6f8a50227b686199f0c8da8337b7cc7b5bd6e4daf420817d2e09da106cdb38",
+      "images/mean-recovery.png": "6d848f8b693d1df2d1528b4d7e0a900bee0805c1ef31dc9cec15cc55579a96d0"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "focus": "Population-mean recovery and exact scope",
+        "sha256": "9f3c4e11f8d5fc15be03cc28ae7479489ee51a3801cc04fc37e3eb270f63a0b7",
+        "actions": [
+          "Known a,b,e and exact population mean stated before inverse.",
+          "Included self-contained integral explanation of neutral equal distribution, not a mean-based shortcut.",
+          "Finite normalized difference quotient distinguished from relative error and sample-estimation guarantees."
+        ]
+      },
+      {
+        "pass": 2,
+        "focus": "Visual and inference precision",
+        "actions": [
+          "Actually viewed plotted exact means and rational table; no clipping.",
+          "Expanded one inverse-formula worked example and clarified303 as a two-point finite quotient, not a derivative or relative-error factor.",
+          "Figure numerical-table title now describes an exact comparison instead of suggesting a plotted zoom."
+        ],
+        "sha256": "5bc3a01e1876077a5a79ca7f1b72fe272e61da12c44df2dab812c7502ff41062"
+      },
+      {
+        "pass": 3,
+        "focus": "Independent reader feedback",
+        "actions": [
+          "Removed undefined forcing-term jargon; supplied C0/C1 continuity and FTC reason directly.",
+          "Removed still to make the model introduction standalone.",
+          "Specified positive-time derivative domain, preserving initial continuity at0 and all distribution claims."
+        ],
+        "sha256": "ee6f8a50227b686199f0c8da8337b7cc7b5bd6e4daf420817d2e09da106cdb38"
+      }
+    ]
+  },
+  "local_links_checked": 1,
+  "original_formal_sources_unchanged": 267,
+  "phase1_math_sources_unchanged": true,
+  "prior_accepted_artifacts_unchanged": true,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "artifact_sha256": {
+    "audit-selection.json": "f3ac7eefbb762dcbb85b6609707078fa929cfbc8a1bbd23477990bdff97d161d",
+    "audit_module.py": "8190d1266115c5babedf4fd2678c98407fadeb5d289933b61d932652962c1ecd",
+    "evidence/LawIdentifiability-attempt1.json": "54def842d2f606db9f3816046e0956e0a73eb488d9b2f60f37b8cab124aabdb1",
+    "evidence/LawIdentifiability-attempt1.log": "a1bc249fed6fc317951450d5e8c9644d3970584901df2c189a3dd5ee084f2e10",
+    "evidence/LawIdentifiability-attempt1.source.lean": "77254c0755759041298a99d6ef9fae146a9f4d3d8486ec73a88cdd67eb0bba14",
+    "evidence/MeanRecoverySensitivity-attempt1.json": "e29fa73b1d59a4786c4a80fcebb4d1d55fdf4e32b67cb3911c33d574b073caeb",
+    "evidence/MeanRecoverySensitivity-attempt1.log": "12a20e332f13639a0ef08c368d95b39497a0b8378ea181c16d178df085db44d4",
+    "evidence/MeanRecoverySensitivity-attempt1.source.lean": "bf4d1dbdb4b73aec9ad8640ef3dc86f8e7c0b811ae39c6f30985e50a2ac28441",
+    "evidence/MeanRecoverySensitivity-attempt2.json": "ae36c5d1f5ea42fee8067ab16f316b5ca9a6795a979ecc336feef0acdfc94a31",
+    "evidence/MeanRecoverySensitivity-attempt2.log": "4e1e17e09b181f8fd35fc50852ca4e21c25889b16d970fbbf915b3bbc5421690",
+    "evidence/MeanRecoverySensitivity-attempt2.source.lean": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+    "evidence/MeanRecoverySensitivity-final-independent-review.json": "5c7459fd07dbe4d7c5b2437a1743c419044c8bee0893cc4d051fb6b653eefc63",
+    "evidence/MeanRecoverySensitivity-independent-review.json": "b2802bbf88f1d784fcab1ba33d63a73032771de209418b822e7b34b92b261319",
+    "evidence/parameter-recovery-exact-arithmetic.json": "9932248820bf0ce09c81ce9f19e486e565b8109374bf821babf79d7df2711b48",
+    "evidence/ParameterRecovery-attempt1.json": "ea07a5bd826c2a01b57cd6cb8b8616bd154435838e84911b197b59777f8895fb",
+    "evidence/ParameterRecovery-attempt1.log": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+    "evidence/ParameterRecovery-attempt1.source.lean": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+    "evidence/ParameterRecovery-independent-review.json": "fc85e0cbb09992a9a57cc19c8441b8c6abbae2d633ceae759c972dc573456abd",
+    "evidence/Phase7Audit-final.json": "fde8ae52d1511feb490cf22dee1cad52b5a1fc1867f3a999f291f6b5aa1db68b",
+    "evidence/Phase7Audit-final.log": "8652e7d36ad68575be9be5ba6211b26c344fa582e5de1395ac0699c7a52a0de5",
+    "evidence/Phase7Audit-final.source.lean": "0f93cfb5324ced99feeb7c07c932ea01dea0c76372775de42063e19cd7705cdc",
+    "figure-data.json": "36d39a3ae6eeb561a50c831cb26acd0d916424670d471f037da0945f786c83f7",
+    "images/mean-recovery.png": "6d848f8b693d1df2d1528b4d7e0a900bee0805c1ef31dc9cec15cc55579a96d0",
+    "lean/LawIdentifiability.lean": "77254c0755759041298a99d6ef9fae146a9f4d3d8486ec73a88cdd67eb0bba14",
+    "lean/MeanRecoverySensitivity.lean": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+    "lean/ParameterRecovery.lean": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+    "lean/Phase7Audit.lean": "0f93cfb5324ced99feeb7c07c932ea01dea0c76372775de42063e19cd7705cdc",
+    "notes/editing-passes.json": "d5d2eb307e7b221ebd58923d17af2e0b18eb007bb41a4d27df8d2734b73fd1eb",
+    "notes/MeanRecoverySensitivity-review-attestation.json": "7048d4bfc33f49c2ae02fcbdb6d4d8a0bd39504a579a533358f545e051018020",
+    "notes/ParameterRecovery-review-attestation.json": "815e28b1b038c39fb99cb5f12158bb56d6b50d243cd1be7240eb136216df30b0",
+    "notes/phase6-freeze.json": "6cad4703f7a411574df3656f69357fa23a102801ad5151c54db769fbf103455f",
+    "notes/reader-first-read.json": "bb4c55ae85a2d3eaeab096232679ecc28a05c3579db1c9d1da553de98a2e3e89",
+    "notes/readme-pass1.md": "8ea38ef55c9b245ab92d0b6749ba4a88488b76a3ddca3cd588c2fc10360399e8",
+    "notes/readme-pass2.md": "5bc3a01e1876077a5a79ca7f1b72fe272e61da12c44df2dab812c7502ff41062",
+    "notes/readme-pass3.md": "ee6f8a50227b686199f0c8da8337b7cc7b5bd6e4daf420817d2e09da106cdb38",
+    "notes/root-law-independent-review.json": "c3a8ac44a0bcff0205b27dd0d960d945b6eb09293d5b5732da2ef59f3bd2d459",
+    "reader-review.json": "22e73372a99ddaa7e94a31e5ec20ab1c95bf8176f24f8e83c0f90539c7077b4f",
+    "README.md": "ee6f8a50227b686199f0c8da8337b7cc7b5bd6e4daf420817d2e09da106cdb38",
+    "render_results.py": "e7b5eab9e5a64f98eb604099c5cdb4d1c51077b71919c6cc18ab15468285cb54",
+    "RUN_STATE.json": "98ebee43c9aaaf3dcad57a955e2b2eaea9f5cc1ee7fae121ffac2b3a6081c78e",
+    "source-review-binding.json": "2335203163515b168062fed2747911db61865044577b4b7d72a2a4b1727f148c",
+    "validate_phase7.py": "a6c46b4c23d9ce1a185eb14e8a7c4930261bb39604921a949fda92d76e87b7b6"
+  },
+  "claims": {
+    "parameters": "Known fixed a,b>0,e>=0; f>=0,e+f>0",
+    "recover_f_from_actual_population_mean_when_b_ne_e": true,
+    "exact_output_law_identifiability_iff": "For valid flo,fhi, totalMeasure(flo)=totalMeasure(fhi) iff flo=fhi or b=e",
+    "near_neutral_actual_mean_gap": "a=e=1,b=1+eps, eps>0, f1/2 vs1: gap=eps/[6(1+eps)], strictly between0 andeps",
+    "exact_example_means": [
+      "605/303",
+      "403/202"
+    ],
+    "exact_example_gap": "1/606",
+    "finite_parameter_difference": "1/2",
+    "inferred_difference_ratio": 303,
+    "finite_sample_consistency_confidence_or_sample_complexity_proved": false,
+    "full_CDF_distance_bound_proved": false,
+    "other_unknown_parameters_identifiable": false,
+    "novelty_or_new_field_certification": false,
+    "reader_simulation_not_human_test": true
+  }
+}

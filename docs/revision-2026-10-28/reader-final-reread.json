@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent simulated undergraduate reader",
+  "round": "final_reread",
+  "status": "pass",
+  "reviewed_at_local_date": "2026-10-28",
+  "unresolved_blockers": [],
+  "reviewed_file_sha256": {
+    "README.md": "F13A841B86195B5C71EB6FC4632674A6517B28E27BB488C4B09F4BC9A7BE98A0",
+    "STATUS.md": "06A80E2CE8787102EC70A207AB0F9599B14404C2BE2054871694A76A52A5127D",
+    "docs/RESEARCH_RESULTS.md": "F52C75D956C01E75BEE62FF6C80873F1F515F08BA74BFA420453984B1960982C",
+    "research/exploration/README.md": "3B4426ACEA941C2FB08CF0375F1610A2B68070A528FE08BAB9A14637292AE340",
+    "docs/images/01-rule.png": "BF5140EAA94F5A619381575E0E1082E165E3C5B979F29EFAE3FCFFD97D00B217",
+    "research/exploration/phase12/images/observation-choice.png": "FBE90C5AEE7666344F62D75C8F08C6856458A3317B78D842AEADC4F0817F2CD4"
+  },
+  "hash_method": "四份正文各自一次ReadAllBytes，SHA256和UTF8正文来自同一份内存字节；两图实际view_image复看并单独取SHA256。",
+  "ai_simulation_scope": {
+    "simulated_background": "数学本科毕业，基础分析、代数、概率；无Lean知识，不依靠项目历史。",
+    "materials_actually_read": [
+      "README.md全文",
+      "STATUS.md全文",
+      "docs/RESEARCH_RESULTS.md全文",
+      "research/exploration/README.md全文",
+      "docs/images/01-rule.png实际图像",
+      "research/exploration/phase12/images/observation-choice.png实际图像"
+    ],
+    "forbidden_sources_not_used": [
+      "正式数学源码",
+      "validation文件",
+      "外部链接",
+      "链接到的教程或完整证明",
+      "审计输出"
+    ],
+    "judgement_limit": "仅检查本轮入口正文与图的可理解性和承诺算例。不是人类用户测试、专家评审、形式模型对应关系验证、数学正确性或新颖性认证。数学源、算例与链接的其他检查仍须分别完成。",
+    "contextual_bias": "复读由首读同一模拟读者进行；这轮为局部澄清，非另派无历史读者的重大重写验收。"
+  },
+  "revision_mapping": [
+    {
+      "first_feedback_id": "F1",
+      "original_location": "research/exploration/README.md:27",
+      "original_sentence": "a,b,e 的上限记作 A,B,E，f 的端点记作 f_-,F；区间非空，a_-,b_->0，e_-,f_-≥0，e_-+f_->0。",
+      "modification": "新增“a,b,e 的下端点分别记作 a_-,b_-,e_-”。",
+      "reread_result": "resolved；所有下端点符号已有定义，不需要猜符号含义。"
+    },
+    {
+      "first_feedback_id": "F2",
+      "original_location": "README.md:7; docs/RESEARCH_RESULTS.md:7",
+      "original_sentence": "最小平移轴平行方形的边长，以格为单位",
+      "modification": "README明确“单个异色格的尺寸为1，完整N×N方块的尺寸为N”。RESEARCH_RESULTS保留较简短定义。",
+      "reread_result": "resolved for reviewed four-document set；从README能确定N按格数而非坐标跨度计，不再有单格0还是1的歧义。"
+    },
+    {
+      "first_feedback_id": "F3",
+      "original_location": "research/exploration/README.md:19,23",
+      "original_sentence": "三箱线性常微分方程在持续单位输入、零初值下的出口曲线等于P(S≤t)",
+      "modification": "列明浓度x0,x1,x2、三条ODE与零初值；出口x2(t)=P(S≤t)限定t≥0，t<0只延拓CDF为0；Exp(r)补均值1/r。",
+      "reread_result": "resolved；现在不用外链就能知道所说的三箱模型和出口变量。完整CDF对应证明仍由后续推导承担，符合入口页范围。"
+    },
+    {
+      "first_feedback_id": "F4",
+      "original_location": "research/exploration/README.md:47",
+      "original_sentence": "四个等待及分支变量的独立性只在给定所选模型后成立",
+      "modification": "未修改。",
+      "reread_result": "retained_nonblocking；前文已明确列出Wa,Wb,Wc,J，因此仍可理解为合计四个变量。可选改为“三个等待变量和一个分支变量”，但不影响本轮pass。"
+    },
+    {
+      "first_feedback_id": "F5",
+      "original_location": "research/exploration/README.md:25,35,39,43",
+      "original_sentence": "同law判别、共同子测度界、n次上界和1-34/n下界的证明链接",
+      "modification": "保留条件和后续推导链接。",
+      "reread_result": "accepted；入口页只承诺给结论与适用范围，未承诺在当前页重证完整定理，不视作推理阻断。"
+    },
+    {
+      "first_feedback_id": "independent_scientific_revision",
+      "original_location": "README.md后续研究；STATUS.md；docs/RESEARCH_RESULTS.md证据范围",
+      "original_sentence": "在一组具体的双模型辨识问题中；原有267份正式源的统一构建",
+      "modification": "README补a=e=1、b=101/100、f=1/2和1、一次等先验选模型再独立生成100次；STATUS和RESEARCH_RESULTS分开259份分析源本轮统一构建与8份核心旧源本轮只复核指纹和既有审计；STATUS补截至日期。",
+      "reread_result": "clearer；模型采样设计可从首页独立复述，构建范围的自然语言更精确。模拟读者没有用审计材料核实这些数字。"
+    }
+  ],
+  "final_retelling": {
+    "original_process_and_size": "每轮所有格只读上轮四邻，自己不计票，多数选色，平票各半且跨格跨轮独立。有限扰动的恢复首达时间允许无穷；N是最小包围方形的格边长，单格N=1，完整N×N块N=N。先固定初态取随机期望，再在尺寸恰N的初态中取最坏值。",
+    "original_bounds": "两种纯色背景均包括。原下界N²/56623104000与上界664066N²在N≥786432000时共同成立；上界单独从16起；下界实心方块见证，上界所有同尺寸初态。后续独立下界N²/576000000从N≥500001起成立，未改写原封存定理。",
+    "network_relation_and_objects": "另一个独立网络中，Wa、Wb、Wc,J在参数固定后独立，S=Wa+Wc+J Wb，J决定是否加Wb。三箱浓度满足x0'=a(1-x0)、x1'=b(x0-x1)、x2'=e(x0-x2)+f(x1-x2)，均从0开始。非负t时x2是S的CDF；负t的CDF为0。这一三箱/等待对应不自动成为原元胞自动机结果，也没验证实际设备。",
+    "mean_calculation": "E[S]=1/a+1/(e+f)+[f/(e+f)]/b=1/a+(b+f)/(b(e+f))；用到E[J Wb]=E[J]E[Wb]。",
+    "fixed_f_input_and_law": "f是模型参数；分支概率为f/(e+f)。三箱单位输入是确定性输入，选模型先验各半是另一层随机选择，不能混为一谈。固定已知a,b,e且b≠e时均值可恢复f；固定a,b,e比较两模型，同S分布当且仅当f相同或b=e。b=e时所有f给同一时间分布。该条件不允许a,b,e也随意改变。",
+    "experiment_design": "先一次以各半概率选低f=1/2或高f=1，之后在选中模型下独立重复100次；a=e=1、b=101/100共用。低高J成功概率1/3与1/2。条件独立不等于模型混合后的无条件独立，Wc与J的分布随模型改变。",
+    "contrast_and_limits": "只读100个S的任何可测确定性二选一规则平均成功率≤353/606；读同组任务的100个J，以次数至少42判高的一条规则平均成功率≥33/50。上界适用于所有时间规则，下界只保证该分支规则，所以分支规则相对任何时间规则的差至少587/7575。两数不是实测准确率，也不声称最优成功率；范围受指定模型、等先验、条件IID、确定性规则限制，未研究其他采样、随机化、自适应或内部观测成本。"
+  },
+  "recomputed_examples": {
+    "difference": {
+      "steps": [
+        "33/50-353/606=(19998-17650)/30300",
+        "=2348/30300=587/7575"
+      ],
+      "success_probability_difference": "587/7575 ≈ 0.077491749",
+      "percentage_points": "7.749174917个百分点，约7.75个百分点"
+    },
+    "delta": {
+      "steps": [
+        "epsilon=0.01=1/100",
+        "delta=(1/100)/(6(101/100))=1/606"
+      ],
+      "result": "1/606 ≈ 0.001650165"
+    },
+    "linear_upper_bound": {
+      "steps": [
+        "1/2+100 delta/2=1/2+50/606",
+        "=303/606+50/606=353/606"
+      ],
+      "result": "353/606 ≈ 58.2508251%"
+    }
+  },
+  "final_image_reread": [
+    {
+      "path": "docs/images/01-rule.png",
+      "actually_viewed_again": true,
+      "result": "三个邻居配色与多数/平票规则、中心不投票、同步更新一致。"
+    },
+    {
+      "path": "research/exploration/phase12/images/observation-choice.png",
+      "actually_viewed_again": true,
+      "result": "一次选模型、同模型重复、相同原始任务的两种观测、≤与≥方向、两界差和成本限制均与最终正文一致。两图SHA未变，未发现需要重绘的图文矛盾。"
+    }
+  ],
+  "remaining_nonblocking_notes": [
+    "F4：可把“四个等待及分支变量”改成“三个等待变量和一个分支变量”，目前前文列举足以理解。",
+    "README新补的证明路线提到加权面积、零权边界、排斥过程、热衰减、非正协方差，入口页没有解释这些专门术语。我只能复述它是证明路线索引，不能只凭两句重建证明；完整教程已明确链接，这不构成当前入口承诺的阻断。"
+  ],
+  "final_conclusion": "通过本轮模拟本科读者复读：能根据四份正文与两幅实际配图复述目标、对象、关键定义、可算推导和结论边界，三个指定算例均算出。未解决阻断问题为零。"
+}

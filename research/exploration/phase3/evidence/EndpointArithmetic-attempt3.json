@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-27T06:15:42.862949+08:00",
+  "module": "EndpointArithmetic",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "b7187a52308e2c0cc12ddb68ef8ce9eb833b1fb3c05b53730440b1d5c372fdc4",
+  "log_sha256": "70e65f42749b6846bb85b77948620bbfa71d225d68df974192856719061a9179",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\build\\EndpointArithmetic.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\lean\\EndpointArithmetic.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.EndpointArithmetic.response",
+    "MathExploration.EndpointArithmetic.checkDecay",
+    "MathExploration.EndpointArithmetic.response_hasDerivAt",
+    "MathExploration.EndpointArithmetic.response_antitone",
+    "MathExploration.EndpointArithmetic.checkDecay_nonnegative",
+    "MathExploration.EndpointArithmetic.checkDecay_le_one",
+    "MathExploration.EndpointArithmetic.checkDecay_pow",
+    "MathExploration.EndpointArithmetic.rational_lower_power",
+    "MathExploration.EndpointArithmetic.rational_lower_checkDecay",
+    "MathExploration.EndpointArithmetic.response_at_rational",
+    "MathExploration.EndpointArithmetic.response_checkDecay_bound",
+    "MathExploration.EndpointArithmetic.response_checkDecay_lt"
+  ],
+  "expected_prints": [
+    "MathExploration.EndpointArithmetic.response",
+    "MathExploration.EndpointArithmetic.checkDecay",
+    "MathExploration.EndpointArithmetic.response_hasDerivAt",
+    "MathExploration.EndpointArithmetic.response_antitone",
+    "MathExploration.EndpointArithmetic.checkDecay_nonnegative",
+    "MathExploration.EndpointArithmetic.checkDecay_le_one",
+    "MathExploration.EndpointArithmetic.checkDecay_pow",
+    "MathExploration.EndpointArithmetic.rational_lower_power",
+    "MathExploration.EndpointArithmetic.rational_lower_checkDecay",
+    "MathExploration.EndpointArithmetic.response_at_rational",
+    "MathExploration.EndpointArithmetic.response_checkDecay_bound",
+    "MathExploration.EndpointArithmetic.response_checkDecay_lt"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "ec9c6a9e3785a63bb3d01e18512bec2b3287d7dc891cc74f99451def8d375834"
+}

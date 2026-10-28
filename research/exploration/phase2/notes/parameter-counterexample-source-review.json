@@ -1,0 +1,345 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T17:34:38.2300407Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent source reader; did not author ParameterCounterexample; no new agent spawned.",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/ParameterCounterexample.lean",
+  "source_sha256": "3419f422203c732d928592781fb964be58b47c5786ec2a1218761e548703bff5",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "reviewer_actions": "Read full final source, final validation JSON, actual attempt4 raw log and run record; independent algebra and declaration/axiom/hash matching. No source edits, compilation, old-project rebuild or network access.",
+  "mathematical_checks": [
+    {
+      "finding": "For k!=1, response=k/(k-1)*(exp(-t)-exp(-k*t)); its derivative equals k*(exp(-t)-response). At k=1 the separately defined t*exp(-t) has derivative exp(-t)-t*exp(-t), exactly the k=1 equation. Both branches have value0 at t=0 and are C1 in time for each fixed real k, including k=0 and k=1.",
+      "status": "pass",
+      "lines": "18-24,32-41,54-82",
+      "topic": "complete_fixed_parameter_time_response"
+    },
+    {
+      "finding": "The formal statements are ContDiff Real 1 in time t, quantified over fixed k. They do not establish continuity, C1 regularity or joint smoothness in the parameter k, nor a formal C-infinity theorem. The removable expression at k=1 is filled with the correct actual ODE solution, so the time response has no missing parameter case.",
+      "status": "pass_with_scope_limit",
+      "lines": "28-39,79-82",
+      "topic": "regularity_scope"
+    },
+    {
+      "finding": "Let X=(inlet,response k). The certified system is X_prime=[[-1,0],[k,-k]]*X with zero additive source and common initial state(1,0). Only the rate parameter k varies; it changes both the off-diagonal transfer k and its matching diagonal loss -k. Zero additive source must not be confused with zero initial state.",
+      "status": "pass",
+      "lines": "84-91",
+      "topic": "zero_additive_source_two_node_certificate"
+    },
+    {
+      "finding": "At T=log4>0, exp(-T)=1/4, exp(-T/2)=1/2, exp(-2T)=1/16, exp(-4T)=1/256. Thus response(1/2,T)=1/4, response(2,T)=3/8, response(4,T)=21/64; direct rational substitution matches all three formal statements.",
+      "status": "pass",
+      "lines": "93-134",
+      "topic": "positive_common_time_and_three_values"
+    },
+    {
+      "finding": "The positive parameter 2 lies strictly between1/2 and4. The largest endpoint value is21/64, while response(2,T)=24/64, giving the exact excess3/64. This establishes that evaluating only the two actual parameter endpoints need not give an upper envelope for the interior family.",
+      "status": "pass",
+      "lines": "136-146",
+      "topic": "endpoint_enclosure_failure"
+    },
+    {
+      "finding": "Nondecreasing monotonicity fails because2<4 but response(2,T)>response(4,T). Nonincreasing monotonicity fails because1/2<2 but response(1/2,T)<response(2,T). These are genuine MonotoneOn/AntitoneOn contradictions on the positive interval[1/2,4], without needing a parameter continuity hypothesis.",
+      "status": "pass",
+      "lines": "148-165",
+      "topic": "nonmonotone_parameter_function"
+    }
+  ],
+  "scope_limits": [
+    "No claim that k=2 is an optimizer or the actual worst-case parameter is justified by these statements. It is one explicit interior witness exceeding both endpoints.",
+    "The conclusion is at the common fixed positive time T=log4. No theorem says the parameter map is nonmonotone at every time, or characterizes all crossing times.",
+    "The common scalar inlet is decaying exp(-t), not a constant step. The counterexample does not refute monotonicity of the constant-inlet single-tank response1-exp(-k*t).",
+    "For positive k the two-node matrix is Metzler, but matrices for different k are not componentwise ordered: increasing k raises the transfer entry and lowers the diagonal entry. The counterexample does not contradict fixed-matrix initial/input comparison or componentwise interval-matrix envelopes.",
+    "All real k are algebraically covered, but only the positive interval[1/2,4] is used as a nonnegative turnover-rate example.",
+    "The code explicitly constructs an actual C1 solution for every k. It does not prove a separate general uniqueness/existence theorem, parameter differentiability theorem, physical-apparatus validation, or novelty claim.",
+    "This is mathematical source/evidence review, not a rerun of the Lean kernel, an undergraduate document reader test, human testing or expert certification."
+  ],
+  "kernel_evidence": {
+    "reviewer_reran_kernel": false,
+    "validation_record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/evidence/parameter-counterexample-validation.json",
+    "validation_record_sha256": "47a27b007bde88be2fb9feffe18a87e5eee0fc2dbe75e3bc40fdc468ef780015",
+    "run_record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/evidence/parameter-counterexample-attempt4.json",
+    "run_record_sha256": "2f4e1cda716895a8ce4f6cfc78b20ae9a2d154a31d9102f8b8184dfa0f003888",
+    "actual_log": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\parameter-counterexample-attempt4.log",
+    "actual_log_sha256": "b1c4854d3156c605b81a783bb2a2e4cf3c188f015c20fa8098a2b0e932d166f2",
+    "actual_declaration_count": 24,
+    "actual_print_command_count": 24,
+    "actual_axiom_output_count": 24,
+    "declaration_print_output_sets_all_match": true,
+    "per_declaration_actual_axioms_match_validation": true,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "unexpected_axioms": [],
+    "actual_error_or_sorryAx_count": 0,
+    "source_unproved_token_count": 0,
+    "source_hash_matches_both_records": true,
+    "log_hash_matches_both_records": true,
+    "actual_recorded_exit_zero": true,
+    "actual_command_has_trust_zero": true,
+    "independent_evidence_binding_passed": true,
+    "named_declarations": [
+      "MathExploration.ParameterCounterexample.inlet",
+      "MathExploration.ParameterCounterexample.response",
+      "MathExploration.ParameterCounterexample.horizon",
+      "MathExploration.ParameterCounterexample.inlet_positive",
+      "MathExploration.ParameterCounterexample.inlet_contDiff",
+      "MathExploration.ParameterCounterexample.response_contDiff",
+      "MathExploration.ParameterCounterexample.response_zero",
+      "MathExploration.ParameterCounterexample.exp_negative_mul_deriv",
+      "MathExploration.ParameterCounterexample.inlet_hasDerivAt",
+      "MathExploration.ParameterCounterexample.response_hasDerivAt",
+      "MathExploration.ParameterCounterexample.response_is_actual_C1_solution",
+      "MathExploration.ParameterCounterexample.coupled_system_certificate",
+      "MathExploration.ParameterCounterexample.horizon_positive",
+      "MathExploration.ParameterCounterexample.exp_neg_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_half_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_two_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_four_horizon",
+      "MathExploration.ParameterCounterexample.response_half_at_horizon",
+      "MathExploration.ParameterCounterexample.response_two_at_horizon",
+      "MathExploration.ParameterCounterexample.response_four_at_horizon",
+      "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints",
+      "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by",
+      "MathExploration.ParameterCounterexample.response_not_monotoneOn",
+      "MathExploration.ParameterCounterexample.response_not_antitoneOn"
+    ],
+    "actual_axiom_outputs": [
+      "MathExploration.ParameterCounterexample.inlet",
+      "MathExploration.ParameterCounterexample.response",
+      "MathExploration.ParameterCounterexample.horizon",
+      "MathExploration.ParameterCounterexample.inlet_positive",
+      "MathExploration.ParameterCounterexample.inlet_contDiff",
+      "MathExploration.ParameterCounterexample.response_contDiff",
+      "MathExploration.ParameterCounterexample.response_zero",
+      "MathExploration.ParameterCounterexample.exp_negative_mul_deriv",
+      "MathExploration.ParameterCounterexample.inlet_hasDerivAt",
+      "MathExploration.ParameterCounterexample.response_hasDerivAt",
+      "MathExploration.ParameterCounterexample.response_is_actual_C1_solution",
+      "MathExploration.ParameterCounterexample.coupled_system_certificate",
+      "MathExploration.ParameterCounterexample.horizon_positive",
+      "MathExploration.ParameterCounterexample.exp_neg_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_half_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_two_horizon",
+      "MathExploration.ParameterCounterexample.exp_neg_four_horizon",
+      "MathExploration.ParameterCounterexample.response_half_at_horizon",
+      "MathExploration.ParameterCounterexample.response_two_at_horizon",
+      "MathExploration.ParameterCounterexample.response_four_at_horizon",
+      "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints",
+      "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by",
+      "MathExploration.ParameterCounterexample.response_not_monotoneOn",
+      "MathExploration.ParameterCounterexample.response_not_antitoneOn"
+    ],
+    "declaration_axiom_entries": [
+      {
+        "name": "MathExploration.ParameterCounterexample.inlet",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.inlet_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.inlet_contDiff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_contDiff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.exp_negative_mul_deriv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.inlet_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_is_actual_C1_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.coupled_system_certificate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.horizon_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.exp_neg_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.exp_neg_half_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.exp_neg_two_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.exp_neg_four_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_half_at_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_two_at_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_four_at_horizon",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.interior_exceeds_both_endpoints",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.interior_exceeds_endpoint_max_by",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_not_monotoneOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ParameterCounterexample.response_not_antitoneOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "dependency_checkout_warning_packages": [
+      "mathlib",
+      "plausible",
+      "LeanSearchClient",
+      "importGraph",
+      "proofwidgets",
+      "aesop",
+      "Qq",
+      "batteries",
+      "Cli"
+    ],
+    "nonblocking_warnings": "Actual log contains local-change warnings for dependency checkouts and a source linter warning about unnecessary <;> at line75. No pristine-dependency claim is made by this review; these warnings do not alter the observed exit0 or actual standard-axiom output."
+  },
+  "frozen_improved_lower_source_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+  "review_only_mutation": "Only this new JSON review was written; ParameterCounterexample source, ImprovedOriginalLower, formal sources and packages were not edited."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "kind": "Independent AI source/semantics andactualsource/log/cache binding,not humanexpertreview",
+  "modules": {
+    "CommonIIDBound": {
+      "source_sha256": "b76d9e49be45b6740dc2393c85c98fd2a4f5ba526dbb4a28d1437dc42836eaaa",
+      "log_sha256": "b7bc0d41efc8e060675721caff1d50803a51dafd6cf371460f7ff1e730cfe4bc",
+      "olean_sha256": "6831b1f2e93129ddc834db3f9a51c336e56c605f03c9d798ce841df6b4defd5c",
+      "review_file": "notes/common-iid-independent-review.json",
+      "review_sha256": "2cbcdf8413fff5361bec8447d68b8ff867792a16260adb110018dd7204379986"
+    },
+    "BinaryTestingBound": {
+      "source_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+      "log_sha256": "4535d6b3e0bc57b6673ffc0be7eb4f43198678dad39a32dc8ae8576af54a26b8",
+      "olean_sha256": "17053f84b44b6d2393ce02d48f7be8b0dccffd29b30c8a0d261eeb6b7921126d",
+      "review_file": "notes/binary-testing-independent-review-binding.json",
+      "review_sha256": "882166ad0fe954f6ef57eadc56b50d114d3f8dd1fde1e001db61c0e2e014e278"
+    },
+    "ActualCompletionTesting": {
+      "source_sha256": "327497cb0b765c30c5aa81caecd8fe1d21e9dce0b31425418528d79155e18393",
+      "log_sha256": "d4af39bcf89a16f1194ec60c7c4b8afb7dea8b5da53265fdff0f884b1fe237cb",
+      "olean_sha256": "ed0378a3bb76f17089991a2c13ff4b51ff79fe7089f79a64568305ad68c6ccc2",
+      "review_file": "notes/actual-testing-independent-review.json",
+      "review_sha256": "fa5c76ebc91ec38804d27a00bc4043fa86940f4918214db77b1663209f344f7d"
+    }
+  }
+}

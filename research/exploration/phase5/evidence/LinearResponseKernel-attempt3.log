@@ -1,0 +1,13 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.LinearResponseKernel.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.ode_to_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.kernel_eq_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_zero_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_middle_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.low_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.LinearResponseKernel.high_outlet_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]

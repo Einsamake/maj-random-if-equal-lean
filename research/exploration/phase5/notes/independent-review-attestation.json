@@ -1,0 +1,36 @@
+{
+  "verdict": "PASS: independent other-author source reviews with exact current artifact binding",
+  "blocking_findings": [],
+  "reviewer": "/root/phase5_mixture_repair",
+  "scope": [
+    "ExponentialMean",
+    "BranchedLaw",
+    "LinearResponseKernel",
+    "ExponentialCdfConvolution"
+  ],
+  "underlying_review": "evidence/phase5-independent-source-review.json",
+  "underlying_sha256": "f4c58384aa3702ea23fa44cf7f0b92101be5b25909134e52445110284a9b980e",
+  "modules": {
+    "ExponentialMean": {
+      "source_sha256": "e4cd4502d9dee1db22cf678c7578485fe01cedd61fcbd32b840a3e3c14427b97",
+      "log_sha256": "53721d2ba431610aa3bda4a3ffba05c8924778e63441114be50ae10bfbc222b7",
+      "olean_sha256": "a20660f72d63a0161c954e9b8702dc26c055507816e37d487906070b3324ab94"
+    },
+    "BranchedLaw": {
+      "source_sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+      "log_sha256": "2d4af4f605c8cba3d7a150b125e6d08b5f23828ea3b49632d569be9dbc1b3163",
+      "olean_sha256": "c51e473cba3d90c4e5fba2e6f247e08f266a3ad563bf364683ae666f86c7a23a"
+    },
+    "LinearResponseKernel": {
+      "source_sha256": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+      "log_sha256": "1dc68fb744fb99c16945ee402344dfb9b64ad6411097fa1e356d926f9f37b8fb",
+      "olean_sha256": "e0c9c0c0ff87efd9e0acb81456c173cbf0f1ca74ecd95c577efa709a62891383"
+    },
+    "ExponentialCdfConvolution": {
+      "source_sha256": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+      "log_sha256": "31977f1811ef7a63fab3b166b00d372f5ab558d3ba192f72b4d854c4dd96f95d",
+      "olean_sha256": "de4181e27843213a4e07c294cebc519c4f812c97ca53e480ff1ee75d3343e02c"
+    }
+  },
+  "note": "ExponentialMean was rebuilt with final helper to record before/after source equality; identical source, log and cache hashes preserve the independent semantic review."
+}

@@ -1,0 +1,104 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:65:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:66:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:67:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:68:2: error: Type mismatch: After simplification, term
+  map_bernoulli_nested_product (BranchedLaw.branchProb e f he hf hc) (expMeasure (e + f)) (expMeasure b) (expMeasure a)
+ has type
+  @Eq (Measure ℝ)
+    (Measure.map (fun x => x.2.1 + if x.1 = true then x.2.2.1 + x.2.2.2 else x.2.2.2)
+      (Ber(true, false, BranchedLaw.branchProb e f he hf hc).prod
+        ((expMeasure (e + f)).prod ((expMeasure b).prod (expMeasure a)))))
+    (unitInterval.toNNReal (unitInterval.symm (BranchedLaw.branchProb e f he hf hc)) •
+        expMeasure (e + f) ∗ expMeasure a +
+      unitInterval.toNNReal (BranchedLaw.branchProb e f he hf hc) • expMeasure (e + f) ∗ expMeasure b ∗ expMeasure a)
+but is expected to have type
+  @Eq (Measure ℝ)
+    (Measure.map BranchedLaw.total
+      (Ber(true, false, BranchedLaw.branchProb e f he hf hc).prod
+        ((expMeasure (e + f)).prod ((expMeasure b).prod (expMeasure a)))))
+    (unitInterval.toNNReal (unitInterval.symm (BranchedLaw.branchProb e f he hf hc)) •
+        expMeasure (e + f) ∗ expMeasure a +
+      unitInterval.toNNReal (BranchedLaw.branchProb e f he hf hc) • expMeasure (e + f) ∗ expMeasure b ∗ expMeasure a)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 2
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:79:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:80:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:81:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:82:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:95:29: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedCdfMixture.lean:95:29: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.BranchedCdfMixture.map_nested_product_via' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedCdfMixture.map_nested_product_direct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.map_bernoulli_nested_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.totalMeasure_eq_mixture' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq_rates' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

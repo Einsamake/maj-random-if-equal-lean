@@ -1,0 +1,126 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:35:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:41:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:73:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:78:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:91:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:97:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:139:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:144:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:149:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:156:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:163:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ActualBranchMoments.lean:170:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ActualBranchMoments.lowJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.highJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.lowJoint_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.highJoint_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_eq_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]

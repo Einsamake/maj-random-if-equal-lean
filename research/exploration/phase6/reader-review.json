@@ -1,0 +1,121 @@
+{
+  "reviewer": "/root/phase6_undergraduate_reader",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "scope_limit": "Context-free undergraduate mathematics reader simulation; README plus actually viewed two PNGs only, no sources/audits/notes/links. Not human testing, expert review, correctness or novelty certification.",
+  "first_read": {
+    "reviewer": "/root/phase6_undergraduate_reader",
+    "status": "not_passed_pending_notation_fix",
+    "unresolved_blockers": [
+      "F_0/F_1 conflict: parameter f vs starting-node indices."
+    ],
+    "reviewed_file_sha256": {
+      "README.md": "14972490ed9d9ccd438d7446a5ff33441257f054da516c5c17bb6a62a41ca053",
+      "images/rate-order.png": "c6ef8ea0f1000ccaf988fb1833e3ce3ed9943244c02cd9ef8337a6b6d9b01c87",
+      "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465"
+    },
+    "actual_images_viewed": true,
+    "retelling": [
+      "Independent Wa,Wb,Wc,J generate S; f changes holding rate and branch probability simultaneously.",
+      "First-wait integrals and integrating factors connect probabilities to ODE responses; F0/F1 notational conflict blocks precise reading.",
+      "h nonnegative, g has sign direction b-e, Delta follows g; b=e gives total-time distribution independent off.",
+      "Actual formal scope is fixed other rates, nonstrict every-deadline probability order, not mean-based inference or arbitrary physical multiparameter modification."
+    ],
+    "worked_examples": {
+      "fast": [
+        "11/6",
+        "7/4",
+        "difference -1/12"
+      ],
+      "slow": [
+        "9/5",
+        "2",
+        "difference 1/5"
+      ],
+      "hidden": [
+        "branch1/3",
+        "branch1/2",
+        "means2and2",
+        "same total law but different J marginal"
+      ]
+    },
+    "feedback": [
+      {
+        "quote": "F_f(t)=P(S_f<=t);F_0(t)=P(W_a<=t);F_1(t)=P(W_b+W_a<=t)",
+        "category": "symbol",
+        "blocking": true,
+        "change": "Node probabilities renamed C0/C1 throughout."
+      },
+      {
+        "quote": "e is the speed from the start directly to node0",
+        "category": "terminology and figure",
+        "blocking": false,
+        "change": "Use competing-channel rate; explicitly initial conditional wait is still Exp(e+f), also in figure."
+      },
+      {
+        "quote": "middle node and outlet difference",
+        "category": "terminology",
+        "blocking": false,
+        "change": "Name responses x1 andx2; explain original output vs reversed-route start."
+      }
+    ],
+    "limits": "Context-free undergraduate simulation only, no source/audits/notes/links; not human testing, expert review or correctness/novelty certification."
+  },
+  "final_reread": {
+    "status": "pass",
+    "blockers_resolved": [
+      "Node probabilities C0,C1 distinguished from total family F_f.",
+      "e as competing-channel rate, initial wait remains Exp(e+f) even conditional on direct whene>0.",
+      "x2 is concentration output and reversed-route start."
+    ],
+    "final_precision_followup": "Explicit e>0 restriction added to conditional direct wait in text and actual figure; checked no clipping or overlap.",
+    "worked_examples": {
+      "fast": "11/6 to7/4; difference -1/12",
+      "slow": "9/5 to2; difference1/5",
+      "hidden": "branch1/3 vs1/2; means both2; g=0 makes entire total distribution same while J marginals differ."
+    },
+    "restatement": [
+      "Construct S from four independent quantities, with f changing waiting and branch probability.",
+      "First-wait convolution and integrating factors give C0=x0,C1=x1,F_f=x2.",
+      "h>=0, sign ofg controlled byb-e, sign ofDelta preserved bynonnegative f difference.",
+      "Fixedotherparameters, nonstrict everydeadline probabilities; no mean-to-CDF inference or arbitrary physical multiparameter generalization."
+    ]
+  },
+  "reviewed_file_sha256": {
+    "README.md": "50eb9fc8c4e55344d4fdf6c815bf42b2815ceafdf9d9dff80d748fe5692ff520",
+    "images/rate-order.png": "351705f3e8803d569c95d14511e5727679025eac3578e18f438459e1f4d93ba5",
+    "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465"
+  },
+  "editing_passes": [
+    {
+      "pass": 1,
+      "focus": "Question and exact result scope",
+      "actions": [
+        "General law and non-strict per-deadline order, not a mean-only inference.",
+        "Separate output-distribution invariance from changing internal joint law."
+      ],
+      "sha256": "045eb7d95855842aaba0e00504b6d6d01207b138306c9c7d3a6f31ec59805e6b"
+    },
+    {
+      "pass": 2,
+      "focus": "Actual figure and mathematical precision",
+      "actions": [
+        "Viewed both rendered PNGs, checked common axes and exact fraction means.",
+        "Changed figure labels to nondecreasing/nonincreasing to match proved non-strict scope.",
+        "Made distinguishability statistical, not certain from one branch observation.",
+        "Clarified common initial wait, fixed-other-rate restriction, initial zero differences and derivative scope."
+      ],
+      "sha256": "5fbdcca6af3396485488c3b60897314a36a0f0b278bb9cd326e38b7de8a9d3d3"
+    },
+    {
+      "pass": 3,
+      "focus": "Blocking independent-reader feedback",
+      "actions": [
+        "Renamed node completion probabilities C0,C1, retaining F_f exclusively for the total-time family.",
+        "Explicitly distinguished direct-channel competing rate e from conditional initial waiting rate e+f, also in the actual figure.",
+        "Clarified x2 as concentration-system output but start of the reverse dependency route."
+      ],
+      "sha256": "df57837ac285cd5783f5616ce3733d803137f7e4694983bbba61a7ecd872ed3d"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent simulated undergraduate reader",
+  "round": "first_read",
+  "reviewed_at_local_date": "2026-10-28",
+  "background_constraint": "模拟数学本科毕业背景，掌握基础分析、代数、概率；不依赖Lean或项目历史。",
+  "scope": {
+    "allowed_body_files": [
+      "README.md",
+      "STATUS.md",
+      "docs/RESEARCH_RESULTS.md",
+      "research/exploration/README.md"
+    ],
+    "actual_images_viewed": [
+      "docs/images/01-rule.png",
+      "research/exploration/phase12/images/observation-choice.png"
+    ],
+    "excluded_sources": "未打开源码、validation、外链、其他教程或证明来补正文。文中链接的完整证明只视作后续材料。",
+    "limitations": "这是模拟读者验收，不是人类用户测试、专家评审、数学正确性或新颖性认证。"
+  },
+  "snapshot": {
+    "sha256_captured_from_actual_first_read": true,
+    "original_file_bytes_archived": false,
+    "snapshot_missing": true,
+    "note": "首读全文在本轮工具输出中读取；随后独立取得6个文件的SHA256和带行号正文。未另存首读原始文件字节，因此snapshot_missing=true仅指独立字节归档缺失；首读指纹不缺失。parent后来告知正在修订，本记录固定为首读时实际取得的SHA，不使用修订后SHA替换。",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "1635968A40220BE3D4917EDD1279B9C87C45DCEF76B4E6D05FECF23029980F45"
+      },
+      {
+        "path": "STATUS.md",
+        "sha256": "D4E6678DD18490D0E696C8EB56E26F5FEE82A0D18EC179439DAC63D05F2EFA1E"
+      },
+      {
+        "path": "docs/RESEARCH_RESULTS.md",
+        "sha256": "1EFAD294617DC30D377B2251F66BF6F83087CC67EB5FBA2A5033986FC8AFF906"
+      },
+      {
+        "path": "research/exploration/README.md",
+        "sha256": "9EF1BB980E5E45A2F3E73ACED096F9D6008493FE7014E237B65324B681BD6B9A"
+      },
+      {
+        "path": "docs/images/01-rule.png",
+        "sha256": "BF5140EAA94F5A619381575E0E1082E165E3C5B979F29EFAE3FCFFD97D00B217"
+      },
+      {
+        "path": "research/exploration/phase12/images/observation-choice.png",
+        "sha256": "FBE90C5AEE7666344F62D75C8F08C6856458A3317B78D842AEADC4F0817F2CD4"
+      }
+    ],
+    "snapshot_component_missing": [
+      "独立归档的首读原始文件字节"
+    ],
+    "fingerprint_missing": false
+  },
+  "retelling": {
+    "original_model": "无限二维整数格各格同时更新，只看上一轮上、下、左、右四邻颜色，中心旧色不计票。多数决定新色，二黑二白时公平随机；这些随机选择跨格点、跨轮次独立。初态为纯色背景加有限异色扰动。T是首次回到原纯色背景的轮数，不恢复则为无穷。",
+    "size_and_order": "N衡量包住初始异色格的最小可平移轴平行方形的格边长，不是异色格数。先固定一个初态，对随机演化求允许无穷的期望；再在尺寸恰好为N的初态中取最大，即tau(N)。因此不是先按每次随机结果选最难初态。",
+    "proven_two_sides": "tau(N)为Theta(N²)。原显示下界N²/56623104000与上界664066N²同时适用于N≥786432000；上界自身从N≥16起成立。下界有实心方块作见证，上界包括同尺寸所有初态，两种纯色背景均包括。独立后续把下界改进为N²/576000000、N≥500001；没有改写封存主定理。",
+    "independent_network": "网络是另一套模型，不是原二维自动机的等待时间公式。给定参数后，Wa、Wb、Wc与0/1变量J独立，速率依次为a、b、e+f，P(J=1)=f/(e+f)。S=Wc+Wa+J Wb，所以每次先等待Wc及Wa，只在J=1时多等Wb。正文声明三箱零初值、持续单位输入下的出口曲线等于S的CDF；本页首读版本没列三箱方程，完整对应证明留给链接。",
+    "fixed_f_and_input_probability": "f是一次给定模型中的固定非负参数，不是每次从中抽取的概率；路线概率是f/(e+f)。持续单位输入是三箱确定性方程的输入条件，不是选模型的先验概率，也不是路线概率。选低f或高f模型的1/2先验是另一次、仅一次的模型选择。",
+    "expectation_derivation": "由独立性E[J Wb]=E[J]E[Wb]，故E[S]=1/(e+f)+1/a+f/(b(e+f))=1/a+(b+f)/(b(e+f))。",
+    "identifiability": "正文的same-law结论有固定a,b,e这一条件：两个f给同一S分布，当且仅当f相同或b=e。若a,b,e已知且b≠e，均值就能恢复f；若b=e，所有f的S分布都一样，因此只看完成时间无法辨认f。该结论没有允许a,b,e也一起变化。",
+    "sampling_design": "先以1/2概率选低模型f=1/2或高模型f=1，这一次选择对100个任务共用；再条件于这同一个模型独立重复100次。不是每个任务重新选模型。共同参数a=e=1、b=1.01，低高路线概率分别为1/3与1/2。给定模型时每次内部等待与分支独立，混合掉模型后不能直接称所有量无条件独立。",
+    "two_observations": "方案一只交给规则S1到S100；所有可测确定性二选一规则的平均成功率统一不超过353/606。方案二交给规则J1到J100，以分支次数至少5n/12判高f，否则判低f；n=100时即次数至少42判高，这一条规则的成功率至少33/50。前者是所有时间规则的上界，后者是一条明确分支规则的下界，故可严格推出分支规则优于任何时间规则至少两界之差。它们不是两种方案的实际准确率，不声称阈值最优。",
+    "limits": "界针对指定两模型、等先验、条件IID任务和确定性规则。没有推出其他采样设计、随机化或自适应规则的结果；内部标记的观测成本没有建模。没有声称实际设备符合等待模型，没有把网络结果变成自动机结果，也没有把形式化通过当作独立人类确认或新颖性认证。"
+  },
+  "worked_examples": [
+    {
+      "question": "33/50 - 353/606",
+      "steps": [
+        "33/50 - 353/606 = (19998 - 17650)/30300",
+        "=2348/30300=587/7575",
+        "作为成功率差约0.077491749；换成百分点为7.749174917个百分点。"
+      ],
+      "result": "587/7575 ≈ 7.749个百分点"
+    },
+    {
+      "question": "delta at epsilon=0.01",
+      "steps": [
+        "epsilon=1/100，1+epsilon=101/100",
+        "delta=(1/100)/(6·101/100)=1/606"
+      ],
+      "result": "1/606 ≈ 0.001650165"
+    },
+    {
+      "question": "1/2 + 100 delta /2",
+      "steps": [
+        "1/2+100·(1/606)/2=1/2+50/606",
+        "=303/606+50/606=353/606"
+      ],
+      "result": "353/606 ≈ 0.582508251，即58.2508251%"
+    }
+  ],
+  "image_checks": [
+    {
+      "path": "docs/images/01-rule.png",
+      "actually_viewed": true,
+      "conclusion": "3黑1白、1黑3白、2黑2白三幅与正文一致；中央问号不参与计票，平票各半，底部也写同步更新。没有发现图文矛盾。"
+    },
+    {
+      "path": "research/exploration/phase12/images/observation-choice.png",
+      "actually_viewed": true,
+      "conclusion": "图明确说明先选模型再独立重复、同组原始任务只改观测量、时间规则上界与分支规则下界、7.75个百分点的差及成本未建模。蓝条0至约58.25和绿条66至100分别表示可允许区域，标签支持这一读法；无图文冲突。"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "F1",
+      "severity": "nonblocking",
+      "category": "符号未明确定义",
+      "location": "research/exploration/README.md:27",
+      "original_quote": "a,b,e 的上限记作 A,B,E，f 的端点记作 f_-,F；区间非空，a_-,b_->0，e_-,f_-≥0，e_-+f_->0。",
+      "explanation": "A,B,E及f的端点有定义，但a_-,b_-,e_-首次出现没有明说是a,b,e各区间的下端点。依据常用记法能猜出，不阻断主要结论，但正文补一句能避免靠猜。",
+      "suggested_revision": "明确写[a_-,A]、[b_-,B]、[e_-,E]、[f_-,F]为四个参数区间。"
+    },
+    {
+      "id": "F2",
+      "severity": "nonblocking",
+      "category": "尺寸记号的格数/坐标跨度歧义",
+      "location": "README.md:7; docs/RESEARCH_RESULTS.md:7",
+      "original_quote": "最小平移轴平行方形的边长，以格为单位",
+      "explanation": "读者通常会理解为包含N×N个格的方形，但若把异色集合视作格点坐标，单个格点的几何包围方形边长可被误读为0。正文说以格计已经提供方向，但加单格N=1会消除差一歧义。",
+      "suggested_revision": "补一个单格N=1、2×5格长方形扰动N=5的短例，或直接写能放入N×N格的最小N。"
+    },
+    {
+      "id": "F3",
+      "severity": "nonblocking",
+      "category": "后续完整证明，非当前缺口",
+      "location": "research/exploration/README.md:19,23",
+      "original_quote": "三箱线性常微分方程在持续单位输入、零初值下的出口曲线等于 P(S≤t)",
+      "explanation": "首读本页没有列三箱方程，因此我不能仅凭本页检验三箱出口与CDF的对应。但它是结果入口且明确链接推导；不把未重证完整定理算作阻断。若想让本页独立解释三箱含义，可列方程和出口变量。",
+      "suggested_revision": "可选补三箱方程及出口变量定义；否则维持明确后续推导链接即可。"
+    },
+    {
+      "id": "F4",
+      "severity": "nonblocking",
+      "category": "措辞",
+      "location": "research/exploration/README.md:47",
+      "original_quote": "四个等待及分支变量的独立性只在给定所选模型后成立",
+      "explanation": "实际是三个等待变量和一个分支变量，共四个。现句可以读懂，但有瞬间被读作四个等待变量再加分支变量的可能。",
+      "suggested_revision": "改为三个等待变量和一个分支变量的独立性。"
+    },
+    {
+      "id": "F5",
+      "severity": "nonblocking",
+      "category": "后续完整证明，非当前推理跳步",
+      "location": "research/exploration/README.md:25,35,39,43",
+      "original_quote": "固定 a,b,e 的两个模型输出分布相同，当且仅当两个 f 相同或 b=e；1-(1-delta)^n/2；成功率至少1-34/n",
+      "explanation": "这些是入口页列举的已证结论，分别有推导链接。本页没有声称从均值公式一行直接推出全部分布结论，也没有承诺证明共同子测度或有限尾界，因此不列为阻断。应保留目前的条件和链接。",
+      "suggested_revision": "无必须修改；不要把均值单调误说成完整随机序证明。"
+    }
+  ],
+  "blocking_issue_count": 0,
+  "first_read_conclusion": "首读能够根据正文和实际配图复述目标、对象、主要定义、结论适用范围，完成所指定的可算例子。当前承诺内容无阻断性理解缺口；有4项可改进表述及1项保留说明。修订后仍需对最终正文与图片重新取得指纹并复读。"
+}

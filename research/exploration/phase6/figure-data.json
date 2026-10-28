@@ -1,0 +1,29 @@
+{
+  "method": "Deterministic RK4 numerical illustration, exact rational means and branch probabilities; proofs separate.",
+  "RK4_fine_steps": 10000,
+  "RK4_coarse_steps": 5000,
+  "max_halving_discrepancy": 6.887546089018315e-14,
+  "normalization": "dimensionless time, concentration and probability",
+  "means": {
+    "b2_e1": [
+      "11/6",
+      "7/4"
+    ],
+    "bhalf_e2": [
+      "9/5",
+      "2"
+    ],
+    "b1_e1": [
+      "2",
+      "2"
+    ]
+  },
+  "branch_probabilities": [
+    "1/3",
+    "1/2"
+  ],
+  "images": {
+    "hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465",
+    "rate-order.png": "351705f3e8803d569c95d14511e5727679025eac3578e18f438459e1f4d93ba5"
+  }
+}

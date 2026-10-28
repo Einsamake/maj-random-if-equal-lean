@@ -1,0 +1,424 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:28:22.1554197Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent reader; did not author ScaledEndpointEnvelope",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "kernel_evidence": {
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/ScaledEndpointEnvelope.lean",
+    "source_sha256": "e306112639ef772202dc9a05a35f61af69e76eba95a2350f6f6c6e7cbee9d2e1",
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/ScaledEndpointEnvelope-final.json",
+    "record_sha256": "4532171f3a7abd631141fa7b034af757b62f0894c4fa6e0c2d552d460e95388d",
+    "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/ScaledEndpointEnvelope-final.log",
+    "log_sha256": "e11990f29a3cf413ad4699312759c46d787896598dcdb2308a70717b314a727f",
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/ScaledEndpointEnvelope.olean",
+    "olean_sha256": "2d56be4557329e7f2f814c0ec565c58dd79fb3bbc0a4c89b00c6f4edad77f157",
+    "actual_exit_code": 0,
+    "actual_command_contains_trust_zero": true,
+    "actual_declaration_count": 18,
+    "actual_theorem_count": 15,
+    "actual_print_count": 18,
+    "actual_output_count": 18,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "unexpected_axioms": [],
+    "all_declarations_prints_outputs_match": true,
+    "source_unproved_tokens": 0,
+    "log_errors_or_sorryAx": 0,
+    "binding_passed": true,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.timeScale",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.boundedRates",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.timeScale_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.timeScale_cancel",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.actual_metzler_of_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.bounded_actual_metzler",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.upper_rates_bounded",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.endpoint_drift_scale",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_zero_cap",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_continuousOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_gaps_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaled_drift_domination",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.solution_below_scaled",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_actual_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ScaledEndpointEnvelope.scaledState_attainable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "reviewer_reran_kernel": false,
+    "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+  },
+  "imported_bindings": [
+    {
+      "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/EndpointTank.lean",
+      "source_sha256": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+      "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-final.json",
+      "record_sha256": "40e61f137ba8c4392e3c8af29436912619e7495b5fead0b648dc9903ad412722",
+      "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/evidence/EndpointTank-final.log",
+      "log_sha256": "c98d019c9f9b97757ee97f31f888f06450456cbd875dca815cc44d5a4e670ab9",
+      "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/EndpointTank.olean",
+      "olean_sha256": "188d051747df8fdfa9365dab341580a816dda5cd44f96577efa4265e11243677",
+      "actual_exit_code": 0,
+      "actual_command_contains_trust_zero": true,
+      "actual_declaration_count": 21,
+      "actual_theorem_count": 17,
+      "actual_print_count": 21,
+      "actual_output_count": 21,
+      "actual_axioms": [
+        "Classical.choice",
+        "propext",
+        "Quot.sound"
+      ],
+      "unexpected_axioms": [],
+      "all_declarations_prints_outputs_match": true,
+      "source_unproved_tokens": 0,
+      "log_errors_or_sorryAx": 0,
+      "binding_passed": true,
+      "declaration_axioms": [
+        {
+          "name": "MathExploration.EndpointTank.c",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.p",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.q_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_continuousOn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.one_sub_endpoint_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_zero_sub_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_one_sub_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_gaps_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpoint_drift_domination",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.solution_below_endpoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_actual_solution",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "MathExploration.EndpointTank.endpointState_attainable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "reviewer_reran_kernel": false,
+      "warning": "Actual log has the batteries local-checkout warning; no error or source linter warning observed. Dependency checkout pristineness is not claimed."
+    }
+  ],
+  "mathematical_checks": [
+    {
+      "lines": "11-24,42-60",
+      "finding": "timeScale(C)=(20/21)*C=C/c0, c0=21/20, so c0*timeScale(C)=C. The chain rule multiplies the endpoint derivative by timeScale(C); endpoint_drift_scale scales both matrix drift and inlet gain to the actual tuple(C,2C,C,3C). Thus scaled q is exp(-C*t), with no missing or reciprocal scaling factor.",
+      "topic": "time_scale_and_derivative"
+    },
+    {
+      "lines": "16-40",
+      "finding": "boundedRates states0<=a<=C,0<=b<=2C,0<=e<=C,0<=f<=3C. The actual matrix is Metzler from off-diagonal nonnegative rates; C>=0 makes the upper tuple feasible. This is the explicit proportional cap family, wider than the five-percent box but not an arbitrary matrix interval.",
+      "topic": "nonnegative_closed_rate_family"
+    },
+    {
+      "lines": "62-79",
+      "finding": "No division by C occurs. At C=0 the scaled time is0 and scaledState is identically0. For C>=0,t>=0 the scaled argument is nonnegative, so the endpoint gap certificate applies. The derivative identity itself is valid algebraically for every real C, while comparison correctly retains C>=0.",
+      "topic": "zero_cap_and_gap_transport"
+    },
+    {
+      "lines": "81-122",
+      "finding": "The row residuals are(C-a)*(1-Y0)+a*(1-u), (2C-b)*(Y0-Y1), and(C-e)*(Y0-Y2)+(3C-f)*(Y1-Y2). They are nonnegative on the stated cap box. differential_comparison uses the actual fixed matrix(a,b,e,f), not an assumed entrywise larger endpoint matrix. Actual state positivity is not smuggled in as an extra premise.",
+      "topic": "scaled_residual_and_comparison"
+    },
+    {
+      "lines": "124-148",
+      "finding": "The upper tuple is bounded for every C>=0, including C=0. The explicit scaled trajectory satisfies the actual ODE, continuity, unit-input bounds and zero initial state. The attainment theorem chooses that actual trajectory, so it remains a genuine feasible upper witness in the degenerate case as well.",
+      "topic": "feasible_attaining_witness"
+    }
+  ],
+  "zero_case": {
+    "upper_trajectory": "scaledState0 is identically0",
+    "certificate_scope": "An explicit zero trajectory is feasible and bounds every admitted given classical solution. No separate generic uniqueness theorem is claimed.",
+    "C": "0",
+    "regularity": "The chain rule has zero inner derivative; no limit or1/C argument is needed",
+    "rate_consequence": "The closed bounds force a=b=e=f=0"
+  },
+  "scope_limits": [
+    "The general bound requires fixed C>=0 and fixed rates throughout time. No arbitrary C(t) or rate switching theorem is provided.",
+    "The fixed ratios of the cap tuple are1:2:1:3; this is not a theorem for arbitrary directed graphs or arbitrary unrelated upper rates.",
+    "The formal declarations are all-time comparison and attainable upper trajectory, not a newly defined general IsGreatest outlet set or fixed-time numerical bound for every C.",
+    "Given classical-trajectory and bounded-input conditions remain the same as the accepted model. Arbitrary measurable-input solution existence and physical apparatus validity are not asserted.",
+    "Independent mathematical source reading and evidence binding; no kernel rerun, human reader acceptance, expert review or novelty certification.",
+    "Only the three requested new JSON reviews are written by this task; no Lean source, previous record, cache or sealed material is edited."
+  ]
+}

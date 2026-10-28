@@ -1,0 +1,31 @@
+module
+public import ParameterRecovery
+public import MeanRecoverySensitivity
+public import LawIdentifiability
+
+#print axioms MathExploration.ParameterRecovery.delta
+#print axioms MathExploration.ParameterRecovery.recover
+#print axioms MathExploration.ParameterRecovery.delta_meanFormula
+#print axioms MathExploration.ParameterRecovery.delta_meanFormula_sub_one
+#print axioms MathExploration.ParameterRecovery.delta_meanFormula_ne_one
+#print axioms MathExploration.ParameterRecovery.recover_meanFormula
+#print axioms MathExploration.ParameterRecovery.meanFormula_injective_f
+#print axioms MathExploration.ParameterRecovery.delta_total_mean_sub_one
+#print axioms MathExploration.ParameterRecovery.delta_total_mean_ne_one
+#print axioms MathExploration.ParameterRecovery.recover_total_mean
+#print axioms MathExploration.MeanRecoverySensitivity.lowMean
+#print axioms MathExploration.MeanRecoverySensitivity.highMean
+#print axioms MathExploration.MeanRecoverySensitivity.low_total_integrable
+#print axioms MathExploration.MeanRecoverySensitivity.high_total_integrable
+#print axioms MathExploration.MeanRecoverySensitivity.total_mean_gap
+#print axioms MathExploration.MeanRecoverySensitivity.total_mean_gap_pos_lt
+#print axioms MathExploration.MeanRecoverySensitivity.parameter_gap
+#print axioms MathExploration.MeanRecoverySensitivity.lowMean_one_hundredth
+#print axioms MathExploration.MeanRecoverySensitivity.highMean_one_hundredth
+#print axioms MathExploration.MeanRecoverySensitivity.total_mean_gap_one_hundredth
+#print axioms MathExploration.MeanRecoverySensitivity.finite_difference_ratio
+#print axioms MathExploration.LawIdentifiability.totalMeasure_mean
+#print axioms MathExploration.LawIdentifiability.meanFormula_eq_of_totalMeasure_eq
+#print axioms MathExploration.LawIdentifiability.f_eq_of_totalMeasure_eq_of_b_ne_e
+#print axioms MathExploration.LawIdentifiability.totalMeasure_eq_iff
+#print axioms MathExploration.LawIdentifiability.totalMeasure_eq_iff_f_eq_of_b_ne_e

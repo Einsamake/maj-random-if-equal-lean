@@ -1,0 +1,26 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase12\lean\ObservationMaps.lean:21:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\ObservationMaps.lean:32:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ObservationMaps.joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.totals_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.low_joint_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.high_joint_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.low_joint_time_event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.high_joint_time_event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.time_test_success' depends on axioms: [propext, Classical.choice, Quot.sound]

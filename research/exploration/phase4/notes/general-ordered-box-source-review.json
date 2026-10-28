@@ -1,0 +1,223 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:40:10.6129008Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent reader; did not author GeneralOrderedBox",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/lean/GeneralOrderedBox.lean",
+  "source_sha256": "7b154ef65f6042b76e2dca806e7de9a70f746eb2c1c0c664f550dc4e56dba05c",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "mathematical_checks": [
+    {
+      "lines": "11-35",
+      "finding": "orderedCaps contains only nonnegative scalar caps and E<=B. boundedRates contains only nonnegative actual rates below their corresponding caps. Neither predicate includes an ordering of the trajectory or the desired comparison. E<=B constrains caps; it does not require every actual b>=e.",
+      "topic": "structural_caps_not_desired_ordering"
+    },
+    {
+      "lines": "17-25,37-68",
+      "finding": "For the actual unit-inlet upper solution, g=(1-Y0,Y0-Y1,Y1-Y2) has g0_prime=-A*g0, g1_prime=A*g0-B*g1 and g2_prime=(B-E)*g1-(E+F)*g2. The matrix is exactly[[-A,0,0],[A,-B,0],[0,B-E,-(E+F)]]. Its off-diagonal entries are nonnegative from A>=0 and E<=B. Zero initial Y gives g(0)=(1,0,0), not the zero vector. The source derives these identities from actual component derivatives and derives continuity from the supplied actual trajectory.",
+      "topic": "actual_gap_equation_and_initial_state"
+    },
+    {
+      "lines": "71-104",
+      "finding": "upper_gaps_nonneg applies the already proved positive_solution to the real gap system, zero additive source and nonnegative initial gap. upper_order_gaps then derives1-Y0>=0, Y0-Y1>=0, Y1-Y2>=0 and Y0-Y2>=0. No gap positivity, parameter monotonicity or target comparison is supplied as a premise.",
+      "topic": "ordering_derived_not_assumed"
+    },
+    {
+      "lines": "106-130",
+      "finding": "The residual components are(A-a)*(1-Y0)+a*(1-u), (B-b)*(Y0-Y1), and(E-e)*(Y0-Y2)+(F-f)*(Y1-Y2). All signs follow from caps, nonnegative actual rates, u<=1 and the derived gaps. The proof does not incorrectly assert componentwise matrix order for parameter-correlated diagonal losses.",
+      "topic": "residual_along_upper_solution"
+    },
+    {
+      "lines": "132-157",
+      "finding": "differential_comparison is called with the actual fixed matrix(a,b,e,f). For x-Y, the residual gives dx-dY<=M_actual*(x-Y). Both initial states are zero. Actual u may vary with time and satisfies0<=u<=1 at every positive time; all eight rate/cap scalars stay fixed. The conclusion holds for every t>=0 and every coordinate. Actual state ordering or x<=Y is not assumed.",
+      "topic": "comparison_direction_and_quantifiers"
+    },
+    {
+      "lines": "159-180",
+      "finding": "For each C>=0 the caps(C,2C,C,3C) satisfy orderedCaps. The accepted explicit scaledState supplies actual continuity, unit-inlet derivative equation and zero initial state, so the general theorem has a certified nonempty family of instances. C=0 is included without division by C, using the already proved zero scaled trajectory.",
+      "topic": "explicit_nonempty_scaled_instance"
+    }
+  ],
+  "scope_limits": [
+    "For arbitrary nonnegative ordered caps, the theorem takes an actual classical upper-endpoint solution Y as data. It does not prove a general existence theorem for Y for every independent cap tuple.",
+    "The given-Y assumptions are actual ODE, continuity and initial conditions, not the desired ordering. Once such Y is supplied, upper_rates_bounded also places its endpoint tuple in the actual rate box, so it can serve as an attainable upper witness. No separate general IsGreatest set is defined here.",
+    "E<=B is a sufficient structural condition, not asserted necessary or a complete classification. Equality and zero caps are allowed; strict ordering and strict stability are not required.",
+    "Ordering belongs to the chosen upper trajectory. Actual interior-rate trajectories can have b<e or an unsorted state and still be bounded by an ordered-cap upper trajectory.",
+    "The model is the fixed three-node feedforward structure inherited from actualMatrix. General caps do not mean arbitrary graph topology, arbitrary dimension, arbitrary matrix intervals or time-varying coefficients.",
+    "The actual and upper functions must be continuous on the nonnegative half-line with the displayed derivative at every positive time. No arbitrary measurable-input existence, almost-everywhere solution formulation or physical apparatus certificate is supplied.",
+    "The constant-inlet counterexample fixes caps B=1/2 and E=2 when only f varies, so it lacks E<=B. It does not contradict this sufficient condition; embedding its trajectories into a larger ordered-cap box changes the all-upper tuple.",
+    "This is mathematical source/evidence review, not a kernel rerun, human document test, expert review or novelty certification."
+  ],
+  "kernel_evidence": {
+    "warning": "Actual final log contains the batteries local-checkout warning; no new source warning or error was observed. No pristine-dependency claim is made.",
+    "actual_log_sha256": "b743ee18aa85068502f654cc0fda112359e3b02f323f1d7f1769b14beec4244e",
+    "unexpected_axioms": [],
+    "independent_binding_passed": true,
+    "olean_sha256": "d34fb829f5338915e35a82f256f678baa63a3ad6ba02dd5c3fe1ac0b9422c3d4",
+    "actual_command_contains_trust_zero": true,
+    "actual_axiom_output_count": 16,
+    "actual_declaration_count": 16,
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/evidence/GeneralOrderedBox-final.json",
+    "source_unproved_tokens": 0,
+    "actual_exit_code": 0,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.GeneralOrderedBox.orderedCaps",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.boundedRates",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gapState",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gapMatrix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gap_matrix_metzler",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.actual_metzler_of_bounds",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.upper_rates_bounded",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gapState_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gapState_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.gapState_continuousOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.upper_gaps_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.upper_order_gaps",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.upper_drift_domination",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.solution_below_upper_trajectory",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.scaled_caps_ordered",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "reviewer_reran_kernel": false,
+    "record_sha256": "581f2b2c1c808f0c1929d8a3985225521f6a2c8032f771c5bbcc734246847a13",
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/build/GeneralOrderedBox.olean",
+    "actual_log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/evidence/GeneralOrderedBox-final.log",
+    "declarations_prints_outputs_match": true,
+    "log_errors_or_sorryAx": 0,
+    "per_declaration_axioms_match_record": true,
+    "actual_theorem_count": 12,
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "actual_print_count": 16
+  },
+  "dependency_binding": {
+    "record": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\evidence\\ScaledEndpointEnvelope-final.json",
+    "actual_log": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\evidence\\ScaledEndpointEnvelope-final.log",
+    "actual_log_sha256": "e11990f29a3cf413ad4699312759c46d787896598dcdb2308a70717b314a727f",
+    "counterexample_pin_unchanged": true,
+    "source_sha256": "e306112639ef772202dc9a05a35f61af69e76eba95a2350f6f6c6e7cbee9d2e1",
+    "previous_counterexample_source_sha256": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/lean/ScaledEndpointEnvelope.lean",
+    "record_sha256": "4532171f3a7abd631141fa7b034af757b62f0894c4fa6e0c2d552d460e95388d",
+    "all_match_dependency_record": true,
+    "resolved_olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/ScaledEndpointEnvelope.olean",
+    "olean_sha256": "2d56be4557329e7f2f814c0ec565c58dd79fb3bbc0a4c89b00c6f4edad77f157"
+  },
+  "mutation_scope": "Only this requested new general-ordered-box-source-review.json was written. No Lean source, previous record, cache, formal source or sealed package was edited; no agent was spawned and no compiler was run."
+}

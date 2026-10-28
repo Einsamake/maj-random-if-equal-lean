@@ -1,0 +1,65 @@
+{
+  "schema": "math-exploration-independent-source-review-v2",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean",
+  "source_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+  "verdict": "no_blocking_mathematical_issue_found",
+  "reviewer": "/root/strengthen_original/threshold_audit",
+  "historical_threshold_review": {
+    "schema": "math-exploration-independent-source-review-v1",
+    "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean",
+    "source_sha256": "65d1d980de0e6c486c00ca37bc25b20518c47f21ec065cb04d1196a1a86c6faf",
+    "reviewer": "/root/strengthen_original/threshold_audit",
+    "reviewer_context": "independent source-level mathematical audit; no inherited project history",
+    "reviewer_actions": "read only; no network; no compilation; no file mutations",
+    "verdict": "no_blocking_mathematical_issue_found",
+    "findings": [
+      {
+        "lines": "26-50",
+        "topic": "coordinates",
+        "finding": "Signed positive offsets 1..m agree with formal mem_directedBlock; reflected quadrant orientation is handled by the existing ProtectedExitArea theorem; injectivity prevents double counting."
+      },
+      {
+        "lines": "52-108",
+        "topic": "weighted_sum",
+        "finding": "Protected band plus triangle inequality gives pointwise w>=L/10+1-a-b. Summing over a,b=1..m gives m^2*(L/10-m). The exact term is the exact sum of the affine lower bounds, not necessarily the actual mass."
+      },
+      {
+        "lines": "110-130",
+        "topic": "floor_and_cubic_constant",
+        "finding": "L=20m+r, L>=80 gives m>=4 and r<=19<=5m, hence L<=25m. Together with m<=L/20 this proves L^3/12500."
+      },
+      {
+        "lines": "132-191",
+        "topic": "event_bridges",
+        "finding": "Static convexity/connectivity, actual trajectory shape, support, Good samples, t>=0, and the original clock/mark law remain present at the required steps."
+      },
+      {
+        "lines": "148-172",
+        "topic": "infinity",
+        "finding": "Finite event-count and finite physical-time premises exclude infinite exit only on the relevant events. No unconditional toNat or toReal truncation is used."
+      }
+    ],
+    "nonblocking_limits": [
+      {
+        "lines": "174-191",
+        "finding": "measure_mono_ae proves the stated measure inequality; this file does not separately expose measurability of the weighted threshold event or missing-weight random variable. The existing WeightedAreaTail integrability/measurability infrastructure should be used for a later Markov bound."
+      },
+      {
+        "lines": "184-191",
+        "finding": "The weighted random variable belongs to the auxiliary droplet frozen after first protected loss. It is not the original process missing weight, and the theorem does not identify original extinction time with auxiliary exit time."
+      }
+    ],
+    "certification_boundary": "Source review is distinct from Lean kernel validation, undergraduate reader simulation, human testing, expert review, and novelty certification."
+  },
+  "current_probability_review": {
+    "source_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+    "scope": "New 9 declarations, lines 193-263; original 14 declarations unchanged apart from added import and line shift",
+    "actions": "Read only; no compilation, network or file mutation",
+    "markov": "Lines 198-208 use actual probability law, nonnegative missing weight and proved integrability. Finite measure justifies ENNReal-toReal monotonicity.",
+    "mean_budget": "Lines 210-216 invoke actual PhysicalWeightedDrift.actual_mean_weighted_area_le; no core drift, probability, exit finiteness or quadratic-tail premise added.",
+    "arithmetic": "Lines 229-241: L>=250000 gives 18L+12<=19L, cleanup<=5L^2, and 5L^2<=20L^3/1000000; total mean<=39L^3/1000000.",
+    "threshold": "Lines 243-255: half threshold=L^3/25000=40L^3/1000000, so the half bound is valid with positive margin. Coarse inputs actually imply 39/80.",
+    "original_clock": "Lines 257-263 retain the actual original-clock endpoint event and existing comparison; no synchronous-time or original-N conversion, and no unannounced finiteness assumption."
+  },
+  "certification_boundary": "Independent source review and Lean kernel validation are separate. Neither establishes mathematical novelty, human testing, or undergraduate document readability."
+}

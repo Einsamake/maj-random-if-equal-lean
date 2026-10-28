@@ -1,0 +1,100 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:66:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:79:6: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:79:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:83:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:96:6: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:96:6: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:115:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:116:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase12\lean\BranchThresholdTesting.lean:124:2: error: linarith failed to find a contradiction
+n : ℕ
+eps : ℝ
+heps : 0 < eps
+hn : 0 < n
+hl : (lowJoint n eps).real (chooseHigh n) ≤ 32 / ↑n
+hh : (highJoint n eps).real (chooseHigh n)ᶜ ≤ 36 / ↑n
+a✝ : 34 / ↑n < ((lowJoint n eps).real (chooseHigh n) + (highJoint n eps).real (chooseHigh n)ᶜ) / 2
+⊢ False
+failed
+'MathExploration.BranchThresholdTesting.threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseLow_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_iff_average' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.real_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_add_testError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_ge' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_one_hundred' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_one_hundred' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

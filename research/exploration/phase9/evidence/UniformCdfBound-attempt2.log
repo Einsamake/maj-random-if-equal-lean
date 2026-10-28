@@ -1,0 +1,20 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase9\lean\UniformCdfBound.lean:52:27: warning: Variable name `he` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _he
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+D:\MyWorks\Math\research\exploration\phase9\lean\UniformCdfBound.lean:52:38: warning: Variable name `hflo` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hflo
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.UniformCdfBound.x0_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.UniformCdfBound.x0_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.UniformCdfBound.x1_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.UniformCdfBound.gap01_abs_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.UniformCdfBound.gap12_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.UniformCdfBound.x2_f_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

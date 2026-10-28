@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-28T00:21:53.127747+08:00",
+  "module": "CommonSubmeasureBound",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "55f99097da5ec1cdec64095e0c6901986e044b320dd74cd82a6dfba2ff2a921c",
+  "source_unchanged_during_build": true,
+  "log_sha256": "e2b48812d365280dfe4ae6db2233556c8115b3c625927724ba46ec1d76bf0caf",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\build\\CommonSubmeasureBound.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean\\CommonSubmeasureBound.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.CommonSubmeasureBound.abs_event_gap_le_missing_mass",
+    "MathExploration.CommonSubmeasureBound.abs_event_gap_le_of_common_mass",
+    "MathExploration.CommonSubmeasureBound.conv_mono_right",
+    "MathExploration.CommonSubmeasureBound.conv_mass",
+    "MathExploration.CommonSubmeasureBound.real_conv_mass"
+  ],
+  "expected_prints": [
+    "MathExploration.CommonSubmeasureBound.abs_event_gap_le_missing_mass",
+    "MathExploration.CommonSubmeasureBound.abs_event_gap_le_of_common_mass",
+    "MathExploration.CommonSubmeasureBound.conv_mono_right",
+    "MathExploration.CommonSubmeasureBound.conv_mass",
+    "MathExploration.CommonSubmeasureBound.real_conv_mass"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

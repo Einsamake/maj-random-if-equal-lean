@@ -1,0 +1,302 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:59:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:60:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:61:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:68:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:75:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:82:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:88:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:89:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:90:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:91:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:92:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:100:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:101:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:102:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:103:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:104:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:113:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:114:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:115:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:116:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:129:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:130:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:131:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:167:16: error: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  fun a => Classical.propDecidable (a ∈ fun ω => J ω = true)
+inferred
+  fun ω => instDecidableEqBool (J ω) true
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:175:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:176:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:177:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:178:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:179:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:182:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:197:13: error(lean.unknownIdentifier): Unknown constant `Bool.true_eq_true`
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:197:32: warning: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:197:61: warning: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+D:\MyWorks\Math\research\exploration\phase5\lean\BranchedLaw.lean:198:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : ℝ × ℝ × ℝ), a.1 + ((fun z => z.2.1) + fun z => z.2.2) a ∂waitLaw a b (e + f)
+in the target expression
+  ↑(branchProb e f he hf hc) * ∫ (z : ℝ × ℝ × ℝ), z.1 + (z.2.1 + z.2.2) ∂waitLaw a b (e + f) +
+      (1 - ↑(branchProb e f he hf hc)) * ∫ (z : ℝ × ℝ × ℝ), z.1 + z.2.2 ∂waitLaw a b (e + f) =
+    1 / a + 1 / (e + f) + f / ((e + f) * b)
+
+a b e f : ℝ
+ha : 0 < a
+hb : 0 < b
+he : 0 ≤ e
+hf : 0 ≤ f
+hc : 0 < e + f
+this✝⁴ : IsProbabilityMeasure (expMeasure a) := isProbabilityMeasure_expMeasure ha
+this✝³ : IsProbabilityMeasure (expMeasure a) := isProbabilityMeasure_expMeasure ha
+this✝² : IsProbabilityMeasure (expMeasure b) := isProbabilityMeasure_expMeasure hb
+this✝¹ : IsProbabilityMeasure (expMeasure (e + f)) := isProbabilityMeasure_expMeasure hc
+this✝ : IsProbabilityMeasure (branchMeasure e f he hf hc) := id inferInstance
+this : IsProbabilityMeasure (waitLaw a b (e + f)) := waitLaw_probability a b (e + f) ha hb hc
+ia : Integrable (fun z => z.2.2) (waitLaw a b (e + f))
+ib : Integrable (fun z => z.2.1) (waitLaw a b (e + f))
+ic : Integrable (fun z => z.1) (waitLaw a b (e + f))
+⊢ ↑(branchProb e f he hf hc) * ∫ (z : ℝ × ℝ × ℝ), z.1 + (z.2.1 + z.2.2) ∂waitLaw a b (e + f) +
+      (1 - ↑(branchProb e f he hf hc)) * ∫ (z : ℝ × ℝ × ℝ), z.1 + z.2.2 ∂waitLaw a b (e + f) =
+    1 / a + 1 / (e + f) + f / ((e + f) * b)
+'MathExploration.BranchedLaw.Sample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchProb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.branchMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.waitLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.law_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.totalMeasure_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.J_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wc_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wb_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.Wa_hasLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.rectangle_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.coordinate_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_integrable' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.total_mean' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_half' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.BranchedLaw.example_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

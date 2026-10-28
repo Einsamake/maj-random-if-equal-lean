@@ -1,0 +1,83 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ConstantInletCounterexample.r' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.lowState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.highState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.low_matrix_metzler' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.high_matrix_metzler' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.r_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.r_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.same_upstream' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.lowState_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.highState_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.lowState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.highState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.lowState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.highState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.checkTime_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.r_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.middle_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.lowState_actual_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ConstantInletCounterexample.highState_actual_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.GeneralOrderedBox.orderedCaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.boundedRates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gap_matrix_metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.actual_metzler_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_rates_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.gapState_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_gaps_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_order_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.upper_drift_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.solution_below_upper_trajectory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.GeneralOrderedBox.scaled_caps_ordered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.GeneralOrderedBox.scaled_upper_trajectory_instance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

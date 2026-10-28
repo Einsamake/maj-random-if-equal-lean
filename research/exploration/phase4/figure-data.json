@@ -1,0 +1,28 @@
+{
+  "kind": "analytic formulas and a gap-equation schematic; no physical experiment",
+  "inlet": "constant1",
+  "a": "1",
+  "b": "1/2",
+  "e": "2",
+  "f_pair": [
+    "1/2",
+    "1"
+  ],
+  "time": "2log2",
+  "outlets": [
+    "33/64",
+    "307/640"
+  ],
+  "difference": "23/640",
+  "all_rates_strictly_positive": true,
+  "not_claimed": [
+    "interior_beats_both_endpoints",
+    "whole_f_monotonicity",
+    "global_f_maximum",
+    "necessity_of_B_ge_E"
+  ],
+  "images": {
+    "constant-inlet-counterexample.png": "baa2a15178a4ea9a8befd81e736fbf032348950008442b70a3cd882140e580d4",
+    "ordered-gaps.png": "caee1744b4aefeab70b2417d57a907df73ea600487aebc74c7bc757afcdd7514"
+  }
+}

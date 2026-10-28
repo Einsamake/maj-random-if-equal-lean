@@ -1,0 +1,58 @@
+{
+  "reviewer": "/root/phase6_undergraduate_reader",
+  "status": "not_passed_pending_notation_fix",
+  "unresolved_blockers": [
+    "F_0/F_1 conflict: parameter f vs starting-node indices."
+  ],
+  "reviewed_file_sha256": {
+    "README.md": "14972490ed9d9ccd438d7446a5ff33441257f054da516c5c17bb6a62a41ca053",
+    "images/rate-order.png": "c6ef8ea0f1000ccaf988fb1833e3ce3ed9943244c02cd9ef8337a6b6d9b01c87",
+    "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465"
+  },
+  "actual_images_viewed": true,
+  "retelling": [
+    "Independent Wa,Wb,Wc,J generate S; f changes holding rate and branch probability simultaneously.",
+    "First-wait integrals and integrating factors connect probabilities to ODE responses; F0/F1 notational conflict blocks precise reading.",
+    "h nonnegative, g has sign direction b-e, Delta follows g; b=e gives total-time distribution independent off.",
+    "Actual formal scope is fixed other rates, nonstrict every-deadline probability order, not mean-based inference or arbitrary physical multiparameter modification."
+  ],
+  "worked_examples": {
+    "fast": [
+      "11/6",
+      "7/4",
+      "difference -1/12"
+    ],
+    "slow": [
+      "9/5",
+      "2",
+      "difference 1/5"
+    ],
+    "hidden": [
+      "branch1/3",
+      "branch1/2",
+      "means2and2",
+      "same total law but different J marginal"
+    ]
+  },
+  "feedback": [
+    {
+      "quote": "F_f(t)=P(S_f<=t);F_0(t)=P(W_a<=t);F_1(t)=P(W_b+W_a<=t)",
+      "category": "symbol",
+      "blocking": true,
+      "change": "Node probabilities renamed C0/C1 throughout."
+    },
+    {
+      "quote": "e is the speed from the start directly to node0",
+      "category": "terminology and figure",
+      "blocking": false,
+      "change": "Use competing-channel rate; explicitly initial conditional wait is still Exp(e+f), also in figure."
+    },
+    {
+      "quote": "middle node and outlet difference",
+      "category": "terminology",
+      "blocking": false,
+      "change": "Name responses x1 andx2; explain original output vs reversed-route start."
+    }
+  ],
+  "limits": "Context-free undergraduate simulation only, no source/audits/notes/links; not human testing, expert review or correctness/novelty certification."
+}

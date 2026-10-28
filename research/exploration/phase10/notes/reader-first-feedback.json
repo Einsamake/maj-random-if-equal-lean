@@ -1,0 +1,70 @@
+{
+  "role": "Independent simulated undergraduate mathematics reader; basic analysis and probability; no Lean or project background",
+  "scope": [
+    "README.md",
+    "images/common-completion-mass.png"
+  ],
+  "actual_image_viewed": true,
+  "read_source_audit_notes_external_links": false,
+  "readme_sha256": "3ACA448FAE4B592E80E2680C0FFBFC5FF370BEDD08FEC9C0A45B15867D55D1AE",
+  "image_sha256": "7234AF11479D9A8DA92D65B035A1B917222EC339599DC8372C4C9A2BE0831C72",
+  "result": "No blocking comprehension gap in the steps promised by this chapter; two nonblocking presentation issues require attention.",
+  "restatement": {
+    "goal": "比较两个随机任务的总完成时间 S；虽然内部多走一段的概率相差 1/6，但要证明任意可测时间集合 A 的概率差都被 epsilon/[6(1+epsilon)] 控制。这里 A 只可观测总时间，不能直接观测内部 J。",
+    "original_model": "四个随机量 W_c、W_a、W_b、J 相互独立，S=W_c+W_a+J W_b。W_a 的指数速率为 1，W_b 为 b=1+epsilon，W_c 为 1+f，J 为取值 0、1 且 P(J=1)=f/(1+f) 的随机量。低模型 f=1/2，高模型 f=1。",
+    "positive_mass_and_convolution": "E_r 是质量为 1 的指数分布；例如 (1/3)E_r 是非负分量，其质量为 1/3。分量相加是把各时间集合上的质量相加；卷积对应独立等待相加，质量相乘。分量不必各自是概率分布。",
+    "route_distributions": "按 J=0、J=1 分组可得 mu_L=(2/3)(E_1.5*E_1)+(1/3)(E_1.5*E_b*E_1)，mu_H=(1/2)(E_2*E_1)+(1/2)(E_2*E_b*E_1)。",
+    "exponential_identity": "正文先积分得到 E_s*E_r 在非负时间的密度 rs/(s-r) times [exp(-rt)-exp(-st)]，再把它乘 (s-r)/s 并加 (r/s)E_s 的密度，恰好得到 r exp(-rt)。因此给定的正分量恒等式可由本科积分检查。",
+    "two_decompositions": "定义 Q_L=(1/3)(E_1.5*E_1)、Q_H=(1/2)(E_2*E_1)、kappa=(1/6)(E_1.5*E_2)。把 E_1=(1/2)E_2+(1/2)(E_2*E_1) 代入 Q_L 得 Q_L=kappa+kappa*E_1；把 E_1=(2/3)E_1.5+(1/3)(E_1.5*E_1) 代入 Q_H 得 Q_H=2kappa+kappa*E_1。因此 Q_H=Q_L+kappa，2Q_L=Q_H+kappa*E_1。",
+    "common_R": "令 R=Q_H+Q_L*E_b。由于 mu_L=2Q_L+Q_L*E_b，代入 2Q_L 的式子得 mu_L=R+kappa*E_1；由于 mu_H=Q_H+Q_H*E_b，把后一项中的 Q_H 换为 Q_L+kappa，得 mu_H=R+kappa*E_b。这是输出分布的另一种表示，不改变原 J 的概率。",
+    "common_density": "b>=1 时 rho_b(t)=exp(-bt) 同时不大于 E_b 的密度 b exp(-bt) 和 E_1 的密度 exp(-t)。它的积分是 1/b，所以它是非负分量，通常并未归一化。卷积后 kappa*rho_b 同时包含在两个余下分量中，gamma=R+kappa*rho_b 的质量 c=5/6+1/(6b)。",
+    "arbitrary_events": "余下的 alpha_L=kappa*(E_1-rho_b)、alpha_H=kappa*(E_b-rho_b) 均非负且质量都是 1-c。对每个可测 A，共同 gamma(A) 抵消，而两个 alpha(A) 都在 [0,1-c]，所以差的绝对值最多为 1-c，不是 2(1-c)。这对每一个时间事件同时成立。",
+    "limits": "本章只处理一次总完成时间观测和给定参数家族；它没有证明多次独立观测的联合结论、决策可靠性、原二维自动机的新结论或新颖性。总变差采用事件概率差上确界这一约定。"
+  },
+  "hand_calculations": {
+    "branch_low": "(1/2)/(1+1/2)=(1/2)/(3/2)=1/3",
+    "branch_high": "1/(1+1)=1/2",
+    "branch_difference": "1/2-1/3=1/6",
+    "R_mass": "mass(Q_H)+mass(Q_L)*mass(E_b)=1/2+(1/3)*1=5/6",
+    "kappa_mass": "(1/6)*1*1=1/6",
+    "numeric_b": "epsilon=1/100 gives b=101/100 and 1/b=100/101",
+    "numeric_common_mass": "c=5/6+1/(6*(101/100))=505/606+100/606=605/606",
+    "numeric_remaining_mass": "1-c=1/606; equivalently (1/100)/(6*(101/100))=1/606",
+    "interval_example": "For A=[1,2], both remaining event masses belong to [0,1/606], hence |mu_H(A)-mu_L(A)|<=1/606. No integration of that particular interval is required and equality is not asserted.",
+    "percentage_points": "(1/606)*100 approximately 0.1650165 percentage points"
+  },
+  "feedback": [
+    {
+      "id": "R1",
+      "category": "terminology_and_model_wording",
+      "location": "README heading",
+      "original_quote": "两个模型，只有绕路速率不同",
+      "severity": "nonblocking",
+      "reader_problem": "依照刚读到的随机模型，绕路等待 W_b 的速率 b 在两个模型中完全相同。变化的是 f，同时造成 W_c 速率和 J=1 概率变化；若 f 被称作某种内部绕路触发速率，正文尚未定义该机制。此标题容易让我先误以为只有 W_b 参数变化。公式足以纠正此误解，故未阻断下文。",
+      "suggested_revision": "把标题改为两个模型，由参数 f 控制分岔，或直接写两个模型：f 分别取 1/2 和 1。"
+    },
+    {
+      "id": "R2",
+      "category": "undefined_figure_symbols",
+      "location": "PNG subtitle at top",
+      "original_quote": "a = e = 1, b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+      "severity": "nonblocking",
+      "reader_problem": "a 和 e 在正文均未定义，且下文推导不用它们。图片说四个随机量的原始定义见正文，但正文只给 W_a、W_b、W_c、J，不给 a、e 的单独含义。",
+      "suggested_revision": "删掉 a=e=1，保留 b=1+epsilon、epsilon>0 和两个 f 值。"
+    }
+  ],
+  "no_gap_observed": [
+    "正分量及总质量已有解释",
+    "两次指数恒等式的代入可逐项算出",
+    "R 与 kappa 的重组有正文检查步骤",
+    "rho_b 的两个密度不等式和积分均明确",
+    "剩余质量如何控制任意可测事件已闭合",
+    "数值算例与图中 605/606、1/606 一致"
+  ],
+  "deferred_proofs_or_claims": [
+    "多次独立样本联合分布和具体决策规则明确留到后续；不作为当前缺口"
+  ],
+  "image_text_agreement": "除 a=e=1 未定义外，图中低高模型、R 质量 5/6、余块质量 1/6、gamma、c 和数值例子均与正文一致。图明确声明这是总完成时间的等价新表示，原内部绕路概率仍为 1/3、1/2。",
+  "disclaimer": "This is an AI simulation of an undergraduate reader. It is not human user testing, expert review, mathematical correctness certification, or novelty certification.",
+  "reread_status": "Awaiting revised README and image before rereading final fingerprints."
+}

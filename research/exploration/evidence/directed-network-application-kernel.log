@@ -1,0 +1,123 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:118:25: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.DirectedNetworkComparison.sum_edge_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_imbalance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.max_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leaked_source_flux_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance_le_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.order' depends on axioms: [propext, Classical.choice, Quot.sound]
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:244:34: error: unsolved goals
+case e'_8
+k t : ℝ
+⊢ (fun s => Real.exp (-(k * s))) = fun x => Real.exp (-(k * id x))
+
+case e'_9
+k t : ℝ
+⊢ -(k * Real.exp (-(k * t))) = -(k * Real.exp (-(k * id t)))
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:257:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.760 0
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨0, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨0, ⋯⟩) =
+    0 - -Real.exp (-t)
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨0, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨0, ⋯⟩) =
+    0 - -Real.exp (-t)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:261:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.1147 1
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨1, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨1, ⋯⟩) =
+    0 - 2 * -Real.exp (-t) + -2 * Real.exp (-2 * t)
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨1, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨1, ⋯⟩) =
+    0 - 2 * -Real.exp (-t) + -2 * Real.exp (-2 * t)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:268:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  leakedRate weights leakage ?m.1631 2
+in the target expression
+  leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨2, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨2, ⋯⟩) =
+    0 - 7 / 3 * -Real.exp (-t) + 3 / 2 * (-2 * Real.exp (-2 * t)) - 1 / 6 * (-4 * Real.exp (-4 * t))
+
+case e'_9
+t : ℝ
+h1 : HasDerivAt (fun s => Real.exp (-s)) (-Real.exp (-t)) t
+h2 : HasDerivAt (fun s => Real.exp (-2 * s)) (-2 * Real.exp (-2 * t)) t
+h4 : HasDerivAt (fun s => Real.exp (-4 * s)) (-4 * Real.exp (-4 * t)) t
+⊢ leakedRate weights leakage (stepEnvelope t) ((fun i => i) ⟨2, ⋯⟩) + inlet (fun x => 1) t ((fun i => i) ⟨2, ⋯⟩) =
+    0 - 7 / 3 * -Real.exp (-t) + 3 / 2 * (-2 * Real.exp (-2 * t)) - 1 / 6 * (-4 * Real.exp (-4 * t))
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:281:52: error: unsolved goals
+h1 : Real.exp (-Real.log 2) = 1 / 2
+h2 : Real.exp (-2 * Real.log 2) = 1 / 4
+h4 : Real.exp (-4 * Real.log 2) = 1 / 16
+⊢ -(1 / 6) + 3 / 2 * Real.exp (-(2 * Real.log 2)) - 1 / 6 * Real.exp (-(4 * Real.log 2)) = 19 / 96
+'MathExploration.ThreeTankCertificate.weights_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakage_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.leakedRate_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.exp_negative_mul_deriv' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_continuousOn' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.stepEnvelope_log_two' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_upper' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.solution_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ThreeTankCertificate.outlet_at_log_two_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ThreeTankCertificate.unweighted_energy_can_increase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

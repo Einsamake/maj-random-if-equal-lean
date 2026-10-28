@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-28T00:32:20.007739+08:00",
+  "module": "ActualCompletionEventBound",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+  "source_unchanged_during_build": true,
+  "log_sha256": "b3395539c7e80f4eb5598a038d763c6acb851f26b8837f9f30e9969adc9c462f",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\build\\ActualCompletionEventBound.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean\\ActualCompletionEventBound.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ActualCompletionEventBound.gamma",
+    "MathExploration.ActualCompletionEventBound.gamma_le_low",
+    "MathExploration.ActualCompletionEventBound.gamma_le_high",
+    "MathExploration.ActualCompletionEventBound.gamma_mass_real",
+    "MathExploration.ActualCompletionEventBound.gamma_missing_mass",
+    "MathExploration.ActualCompletionEventBound.all_output_event_gap",
+    "MathExploration.ActualCompletionEventBound.all_product_law_event_gap",
+    "MathExploration.ActualCompletionEventBound.all_output_event_gap_one_hundredth",
+    "MathExploration.ActualCompletionEventBound.all_product_law_event_gap_one_hundredth"
+  ],
+  "expected_prints": [
+    "MathExploration.ActualCompletionEventBound.gamma",
+    "MathExploration.ActualCompletionEventBound.gamma_le_low",
+    "MathExploration.ActualCompletionEventBound.gamma_le_high",
+    "MathExploration.ActualCompletionEventBound.gamma_mass_real",
+    "MathExploration.ActualCompletionEventBound.gamma_missing_mass",
+    "MathExploration.ActualCompletionEventBound.all_output_event_gap",
+    "MathExploration.ActualCompletionEventBound.all_product_law_event_gap",
+    "MathExploration.ActualCompletionEventBound.all_output_event_gap_one_hundredth",
+    "MathExploration.ActualCompletionEventBound.all_product_law_event_gap_one_hundredth"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "01d797598305432868aa4d8c173031f630ba7b11d07d5d5cfc13097524d932b3"
+}

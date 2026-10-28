@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-27T18:22:00.098070+08:00",
+  "module": "HiddenBranchWitness",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+  "source_unchanged_during_build": true,
+  "log_sha256": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\HiddenBranchWitness.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\HiddenBranchWitness.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.HiddenBranchWitness.branch_event_probability",
+    "MathExploration.HiddenBranchWitness.half_branch_probability",
+    "MathExploration.HiddenBranchWitness.one_branch_probability",
+    "MathExploration.HiddenBranchWitness.same_totalMeasure",
+    "MathExploration.HiddenBranchWitness.different_hidden_laws"
+  ],
+  "expected_prints": [
+    "MathExploration.HiddenBranchWitness.branch_event_probability",
+    "MathExploration.HiddenBranchWitness.half_branch_probability",
+    "MathExploration.HiddenBranchWitness.one_branch_probability",
+    "MathExploration.HiddenBranchWitness.same_totalMeasure",
+    "MathExploration.HiddenBranchWitness.different_hidden_laws"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "b6b3fb01a62bdab31ed3f6ec109fefdb708f1782328236fe3b2266ad9974fd36"
+}

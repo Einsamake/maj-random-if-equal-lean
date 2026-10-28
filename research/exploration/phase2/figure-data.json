@@ -1,0 +1,22 @@
+{
+  "kind": "deterministic exact-formula teaching figures",
+  "parameter_check": {
+    "T": "log4",
+    "values": {
+      "1/2": "1/4",
+      "2": "3/8",
+      "4": "21/64"
+    },
+    "interior_minus_endpoint_max": "3/64"
+  },
+  "robust_check": {
+    "time": "(20/19)log2",
+    "bound": "28077/109744",
+    "bound_float": 0.25584086601545414,
+    "not_claimed_sharp": true
+  },
+  "images": {
+    "parameter-counterexample.png": "82b43aba6525a8f0024900e3db3e0683ad782565dfe07a0568c767101ad3ed35",
+    "robust-envelope.png": "0a06c7954d727693dcfcc4100601ab49b354a643efc1ca7c096b6a108d9d3524"
+  }
+}

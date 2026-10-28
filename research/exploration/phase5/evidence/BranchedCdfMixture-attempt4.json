@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-27T12:21:58.687580+08:00",
+  "module": "BranchedCdfMixture",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+  "source_unchanged_during_build": true,
+  "log_sha256": "b0a75cd939f893f8f6aa8d4e1957c3ba897d7c0b61b7c97cd54e33d2375bfe2b",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\BranchedCdfMixture.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedCdfMixture.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.BranchedCdfMixture.map_nested_product_via",
+    "MathExploration.BranchedCdfMixture.map_nested_product_direct",
+    "MathExploration.BranchedCdfMixture.map_bernoulli_nested_product",
+    "MathExploration.BranchedCdfMixture.totalMeasure_eq_mixture",
+    "MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq",
+    "MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq_rates"
+  ],
+  "expected_prints": [
+    "MathExploration.BranchedCdfMixture.map_nested_product_via",
+    "MathExploration.BranchedCdfMixture.map_nested_product_direct",
+    "MathExploration.BranchedCdfMixture.map_bernoulli_nested_product",
+    "MathExploration.BranchedCdfMixture.totalMeasure_eq_mixture",
+    "MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq",
+    "MathExploration.BranchedCdfMixture.cdf_totalMeasure_eq_rates"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "72a1c6b0e9bedef734d2b544a24427561677408f5244fde8608b5a2b9f1f1ed8"
+}

@@ -1,0 +1,60 @@
+{
+  "review_type": "AI模拟数学本科背景读者；不是人类测试、专家评审、数学正确性或新颖性认证",
+  "allowed_inputs": ["README.md正文", "images/hidden-route-vs-deadline.png实际图片"],
+  "other_inputs_used": false,
+  "status": "pass",
+  "unresolved_blockers": [],
+  "reviewed_file": "D:/MyWorks/Math/research/exploration/phase9/README.md",
+  "reviewed_file_sha256": "3FA3A25A60C915F109D30B1E3076E08A0ED5218DC37DCA8015ED0D3DDDC94C56",
+  "actual_image_viewed": true,
+  "actual_image_reopened_on_reread": true,
+  "image_file": "D:/MyWorks/Math/research/exploration/phase9/images/hidden-route-vs-deadline.png",
+  "image_sha256": "0FB0BC57B33CAF72D2D11E2F5CC8A71CED5BA1917832B919F343EB846935E87F",
+  "same_image_as_first_read": "复读时实际重新显示并查看了1680x1090的PNG，视觉内容与首读一致；首读未单独保存图片SHA，不伪称已作跨版本哈希比较。",
+  "revision_mapping": [
+    {
+      "first_read_quote": "对 $c>0$，把指数加权积分简写成",
+      "final_quote": "对 $c>0$、$t\\ge0$，把指数加权积分简写成",
+      "first_read_file_sha256": "1BCEAD3FEC11A4AB6FF52D66C066C481B22B2848DD59318244203FD4CAD12643",
+      "resolution": "已落实可选建议，明确了K估计所用的非负时间范围；首读本无阻断项。"
+    }
+  ],
+  "own_words_final_reread": {
+    "goal_and_object": "给出实际的独立指数等待与伯努利绕路模型，使两系统绕路概率始终相差1/6，却能让所有截止时间的完成概率差同时不超过任意指定eta>0。每对中a=e=1、b=1+epsilon相同，只有f分别取1/2和1。",
+    "first_layer": "H01=C0-C1满足0<=H01<=1。由相减得到H12'=(b-e)H01-(e+f)H12，初值0，因此H12是核exp(-(e+f)(t-s))对(b-e)H01的积分，绝对值至多|b-e|/(e+f)。",
+    "second_layer": "比较两个f时，D'=Delta f H12,L-(e+fH)D，初值0，故D的积分输入大小至多Delta f |b-e|/(e+fL)，再经第二层积分得到额外分母e+fH。代入特例得到epsilon/6；epsilon>0使两层输入和核都非负，所以D>=0。",
+    "time_domain": "积分推导限定t>=0、c>0；由于e+fL>0且fH>=fL，两层核的速率均正。负时间的两个完成概率都是0，因而最后界覆盖全部实数截止时间。",
+    "limits": "缩小epsilon也改变一对系统共同使用的已知b；不宣称固定b=1.01仍可任意缩小同一对的差。只控制各个单阈值事件的概率，没有提供总变差界、样本量或统计可辨识性结论。"
+  },
+  "independent_recomputed_examples": {
+    "route_gap": "(1/2)/(3/2)=1/3，1/2-1/3=1/6。",
+    "bound": "((1/2)epsilon)/((3/2)*2)=epsilon/6。",
+    "epsilon_1_over_10_in_image": "1/10除以6等于1/60，约0.016667。",
+    "epsilon_1_over_100": "1/100除以6等于1/600，约0.001666667；乘100转成百分点，约0.1666667个百分点。",
+    "epsilon_1_over_1000": "1/1000除以6等于1/6000，约0.000166667，即约0.0166667个百分点。",
+    "eta": "eta>0时epsilon=6eta>0，epsilon/6=eta，b=1+6eta>1；两f与绕路概率差保持不变。"
+  },
+  "final_localized_findings": [
+    {
+      "type": "symbol_scope",
+      "quote": "对 $c>0$、$t\\ge0$，把指数加权积分简写成",
+      "result": "定义域显式，后面的核积分界与使用范围一致。"
+    },
+    {
+      "type": "derivation",
+      "quote": "再用一次同样的积分估计，就得到一般形式",
+      "result": "能用前一层H12,L的上界作为输入，再除以e+fH，独立复现一般界；没有阻断性跳步。"
+    },
+    {
+      "type": "image_text_consistency",
+      "quote": "右侧是证明给出的上界，不是测得的实际差",
+      "result": "实际图的分数、小数、百分点、固定绕路差和改变共同b的说明与正文一致。"
+    },
+    {
+      "type": "explicitly_out_of_scope",
+      "quote": "因此实际能否通过大量观测恢复路线参数，仍需另外的统计分析。",
+      "result": "是结论范围的明确限制，不是当前承诺推导中的遗漏。"
+    }
+  ],
+  "acceptance_statement": "在只看最终正文与实际配图的范围内，模拟本科背景读者可复述模型、独立重现两层关键估计并完成全部所承诺算例，未发现当前承诺步骤的阻断性理解缺口。"
+}

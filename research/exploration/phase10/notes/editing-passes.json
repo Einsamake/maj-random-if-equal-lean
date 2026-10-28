@@ -1,0 +1,33 @@
+[
+  {
+    "pass": 1,
+    "sha256": "3aca448fae4b592e80e2680c0ffbfc5ff370bedd08fec9c0a45b15867d55d1ae",
+    "actions": [
+      "Introduced measurable completiontime events through concreteintervalexamples",
+      "Defined positive nonnormalized distributioncomponents and two exponentialresolvents",
+      "Explained equivalent outputrepresentation doesnot preserve original hiddenbranch law",
+      "Gave explicit commonmass calculation and proper TVconvention, kept finite-sample claims pending"
+    ]
+  },
+  {
+    "pass": 2,
+    "sha256": "3aca448fae4b592e80e2680c0ffbfc5ff370bedd08fec9c0a45b15867d55d1ae",
+    "actions": [
+      "Actually inspectedPNG and corrected topbar geometric lengths to1125:225=5:1",
+      "Changed fourwaitingquantities to fourrandomquantities,defined Er infigurecaption",
+      "Checked commonmass605/606 andremaining1/606 with exactFractions",
+      "Clarified commonoutput representation not hiddenJroute equivalence,positive finitecomponents not probabilitymeasures alone"
+    ]
+  },
+  {
+    "pass": 3,
+    "sha256": "55841ffd1290e00320f76dcde8dd6159f20cb1dc877cdbc00fae3b9a99553980",
+    "actions": [
+      "Independent reader could reconstruct bothpositive rewrites andcommonmass estimate, no blockers",
+      "Changed misleading detourrate heading to parameterf; Wb rateb fixedwithinpair",
+      "Removed undefineda/e symbols fromfigureheader",
+      "Defined rho density0 atnegative time explicitly"
+    ],
+    "based_on": "notes/reader-first-feedback.json"
+  }
+]

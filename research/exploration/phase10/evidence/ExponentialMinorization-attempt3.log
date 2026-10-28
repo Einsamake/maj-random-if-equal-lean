@@ -1,0 +1,22 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase10\lean\ExponentialMinorization.lean:54:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ExponentialMinorization.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_eq_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.scaled_pdf_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_le_exp_same' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_le_exp_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.common_submeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.near_common_submeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

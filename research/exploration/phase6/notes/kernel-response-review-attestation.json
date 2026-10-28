@@ -1,0 +1,19 @@
+{
+  "verdict": "PASS: independent kernel and actual-response semantic review",
+  "blocking_findings": [],
+  "reviewer": "/root/phase6_actual_cdf",
+  "underlying_review": "evidence/independent-kernel-response-review.json",
+  "underlying_sha256": "df5a11be2274caa1a3157c1c8645231dae7605b0e5bb58f30371fa6f8b5d79b4",
+  "modules": {
+    "ResponseKernelCalculus": {
+      "source_sha256": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+      "log_sha256": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+      "olean_sha256": "becf2f1902381a7d34c43bddbd8b7d812f9bc5fd1a7ee8f7ae40609930094db7"
+    },
+    "TankResponse": {
+      "source_sha256": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+      "log_sha256": "5df4e25600c906494b4cc505f9c64f9244ae670b2c05ed4927aa1891618fd5a6",
+      "olean_sha256": "71a983dac8b374ccc3433de996a67537b6aaf3345a7a6c1ede67033aad99a47d"
+    }
+  }
+}

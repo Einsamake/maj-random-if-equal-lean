@@ -1,0 +1,81 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ActualBranchMoments.lowJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.highJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.lowJoint_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.highJoint_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_eq_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_bit_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.low_count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualBranchMoments.high_count_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_measurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseLow_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.chooseHigh_iff_average' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.real_chebyshev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_add_testError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BranchThresholdTesting.low_error_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.high_error_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testError_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BranchThresholdTesting.testSuccess_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ObservationMaps.joint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.totals_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.low_joint_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.high_joint_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.low_joint_time_event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.high_joint_time_event' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationMaps.time_test_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.branchSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.branchSuccess_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.advantage_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.branch_strictly_better' depends on axioms: [propext, Classical.choice, Quot.sound]

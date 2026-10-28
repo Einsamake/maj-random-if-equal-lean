@@ -1,0 +1,25 @@
+{
+  "kind": "analytic-curve samples and a concentration-coupling schematic; no simulation certificate",
+  "time": "(20/19)log2",
+  "time_float": 0.7296286111157319,
+  "nominal_value": 0.2147389491402248,
+  "endpoint_value_numeric": 0.23172863454551101,
+  "old_bound": "28077/109744",
+  "new_rational_bound": "7425545410773/32000000000000",
+  "rate_box_percent": 5,
+  "coefficients_fixed": true,
+  "all_input_range": [
+    0,
+    1
+  ],
+  "q_half_example": {
+    "Y0": "1/2",
+    "Y1": "1/4",
+    "Y2": "19/96",
+    "Y1_minus_Y2": "5/96"
+  },
+  "images": {
+    "endpoint-certificate.png": "f0ed6aedfd8ef8f744329eeb8b940d8e226e0687e009e31be94b94c69e36eae3",
+    "why-endpoint-works.png": "14493363635d223e75946d38a28e238c936f8ac74d78f066ea141b681dc79f70"
+  }
+}

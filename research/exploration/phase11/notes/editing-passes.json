@@ -1,0 +1,32 @@
+[
+  {
+    "pass": 1,
+    "sha256": "3cf6a6c1dda8f44d5e899daa96ab45b39296a3f3f1553ebb913b40fbf6a1550b",
+    "actions": [
+      "Specified fair modelchoice once, conditionalIID observations allfromsamefixedmodel",
+      "Defined full measurable decisioneventA andequalprior success/error, no empiricalalgorithmclaim",
+      "Explained positive commoncomponent construction,productmassc^n andallrule bound",
+      "Exact353/606 and253/606 example, sharperpowerformula distinguished fromillustrative decimal"
+    ]
+  },
+  {
+    "pass": 2,
+    "sha256": "091f1a43b343e8d79d15e914d9ea60104d52216c9fedf13ce2612083d587feeb",
+    "actions": [
+      "ActuallyinspectedPNG for arrows,text,probabilityscale and exact upperbound353/606",
+      "Changed coinbaseline to deterministic alwayschooseLow consistentwith formallydefinedtestsets, clarified50percent fromequalpriors",
+      "Checked conditionalIIDversus repeatedlyrandomizedmodelchoice andlimitnotempiricalachievement",
+      "Checked exactpower100approximation withrational arithmetic"
+    ]
+  },
+  {
+    "pass": 3,
+    "sha256": "2822fdcd8ba9a298b6f7e9a80127667b4294fc79354791a59af8991132db4e48",
+    "actions": [
+      "Independent undergraduate simulation foundno blockedsteps;could reconstruct commonproduct andequalprior testing arithmetic",
+      "Replaced ambiguous otherrates same with explicit Wa/Wb shared andWc/J changingwithf",
+      "Clarified sampleuniquelydetermines decisionresult,matching measurablechooseHighset definition"
+    ],
+    "based_on": "notes/reader-first-feedback.json"
+  }
+]

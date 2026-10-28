@@ -1,0 +1,21 @@
+{
+  "reviewer": "/root, independent of ActualTankCdf author",
+  "verdict": "PASS: actual independent-law CDF equals certified two-example outlet for all nonnegative time",
+  "blocking_findings": [],
+  "source_sha256": "abcd4039dbc979c714395074a392a575dc8f7927ed663bbe6a7e84346ebdcb99",
+  "log_sha256": "6a2dbab9417b118228f7c3cce8dbae826e1dc1155b38f708f166c97158e15ba2",
+  "olean_sha256": "5011fd0bfa3e82bab8548377827eccba4f0810a5d1982d4e211573ca8a4f665d",
+  "semantic_findings": [
+    "Upstream exponential CDF replacements occur only on nonnegative integration domain for t>=0. Negative half-axis CDF is separately zero.",
+    "Direct and via convolution kernels use actual probability measures, never a desired CDF as a premise.",
+    "Weighted_kernels derives the two-route weighted sum from linear integration and positive c; no probabilistic expectation is silently replaced by a finite operator.",
+    "Low and high mixtures identify with the actual pre-existing ODE trajectories by the true integral-factor formulas and shared upstream states.",
+    "Two specific totalMeasure laws are instantiated from the same previously constructed product law, not newly postulated laws.",
+    "total_event_eq_cdf uses the measurable actual total pushforward and Iic t; numerical probability values are actual original-product-law events.",
+    "Scope is all nonnegative time for these two examples; general parameter CDF-to-ODE equivalence and a full CTMC path-process library are not claimed.",
+    "Allreal piecewise identities give0 for negative t and the outlet only for nonnegative t.",
+    "No result changes the original cellular automaton theorem or mean."
+  ],
+  "evidence_checks": "19actual named outputs match all prints and current source snapshot; standard trust0 log and source/cache hashes match; only standard axioms.",
+  "limits": "Independent AI source review, not human expert review or novelty certification."
+}

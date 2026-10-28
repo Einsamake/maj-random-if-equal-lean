@@ -1,0 +1,8 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ResponseKernelCalculus.kernel_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_eq_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ResponseKernelCalculus.kernel_nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-27T01:13:00.213176+08:00",
+  "exit_code": 1,
+  "source_sha256": "a7dc3dcbdea04c65f6d4b82510e044c41f2afc35c80c8174e3cbe7a2dad70c96",
+  "log_sha256": "58be1931825d5cac3f7a624fca37ca60ed168302a74e845c8067bbf044aa6d7f",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\RobustNetworkBounds.lean"
+  ],
+  "expected_declarations": [
+    "MathExploration.RobustNetworkBounds.linear",
+    "MathExploration.RobustNetworkBounds.Metzler",
+    "MathExploration.RobustNetworkBounds.offDiag",
+    "MathExploration.RobustNetworkBounds.row",
+    "MathExploration.RobustNetworkBounds.rowBound",
+    "MathExploration.RobustNetworkBounds.offDiag_nonneg",
+    "MathExploration.RobustNetworkBounds.row_le_bound",
+    "MathExploration.RobustNetworkBounds.linear_eq_rate",
+    "MathExploration.RobustNetworkBounds.rate_scale",
+    "MathExploration.RobustNetworkBounds.linear_sub",
+    "MathExploration.RobustNetworkBounds.linear_mono_matrix",
+    "MathExploration.RobustNetworkBounds.metzler_nonpos",
+    "MathExploration.RobustNetworkBounds.differential_comparison",
+    "MathExploration.RobustNetworkBounds.positive_solution",
+    "MathExploration.RobustNetworkBounds.interval_upper",
+    "MathExploration.RobustNetworkBounds.interval_lower"
+  ]
+}

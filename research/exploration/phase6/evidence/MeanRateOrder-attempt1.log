@@ -1,0 +1,35 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:18:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:18:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:45:2: error: Type mismatch
+  Eq.symm (sub_eq_zero.mp h)
+has type
+  meanFormula a b b flo = meanFormula a b b fhi
+but is expected to have type
+  meanFormula a b e flo = meanFormula a b e fhi
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 3
+'MathExploration.MeanRateOrder.meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

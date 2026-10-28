@@ -1,0 +1,108 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.CommonSubmeasureBound.abs_event_gap_le_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonSubmeasureBound.abs_event_gap_le_of_common_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonSubmeasureBound.conv_mono_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonSubmeasureBound.conv_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonSubmeasureBound.real_conv_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_eq_withDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.scaled_pdf_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_le_exp_same' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_le_exp_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.rho_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.common_submeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMinorization.near_common_submeasure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.prob_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.prob_three_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.prob_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.response_resolvent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_resolvent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_nnreal_smul_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_one_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.exponential_one_three_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_eq_kappa_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_eq_two_kappa_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_eq_Qlo_add_kappa' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.two_Qlo_eq_Qhi_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.conv_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.kappa_mass_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qlo_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.Qhi_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.remainder_mass_real' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.low_measure_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.high_measure_base' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.low_positive_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.PositiveWaitingDecomposition.high_positive_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_le_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_le_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_output_event_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_product_law_event_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_output_event_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_product_law_event_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

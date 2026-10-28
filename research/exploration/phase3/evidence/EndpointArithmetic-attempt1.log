@@ -1,0 +1,62 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:14:54: error: unsolved goals
+case e'_8
+z : ℝ
+h :
+  HasDerivAt ((((fun x => 1) - fun y => 7 / 3 * id y) + fun y => 3 / 2 * id y ^ 2) - fun y => 1 / 6 * id y ^ 4)
+    (0 - 7 / 3 * 1 + 3 / 2 * (↑2 * id z ^ (2 - 1) * 1) - 1 / 6 * (↑4 * id z ^ (4 - 1) * 1)) z
+⊢ response = (((fun x => 1) - fun y => y * (7 / 3)) + fun y => y ^ 2 * (3 / 2)) - fun y => y ^ 4 * (1 / 6)
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:19:35: warning: This simp argument is unused:
+  response
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [id_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:28:26: error: linarith failed to find a contradiction
+z : ℝ
+hz : z ∈ interior (Icc 0 1)
+hm : z ∈ Icc 0 1
+a✝ : 1 < z ^ 2
+⊢ False
+failed
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointArithmetic.lean:44:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  19 * (-(21 / 19) * Real.log 2)
+in the target expression
+  Real.exp (↑19 * (-(21 / 19) * Real.log 2)) = (1 / 2) ^ 21
+
+⊢ Real.exp (↑19 * (-(21 / 19) * Real.log 2)) = (1 / 2) ^ 21
+'MathExploration.EndpointArithmetic.response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_antitone' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_pow' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_checkDecay' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_at_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_lt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

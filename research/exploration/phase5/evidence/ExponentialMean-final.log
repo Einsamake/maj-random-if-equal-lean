@@ -1,0 +1,7 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ExponentialMean.weighted_density_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.integrable_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.integral_id' depends on axioms: [propext, Classical.choice, Quot.sound]

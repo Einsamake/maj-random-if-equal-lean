@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-28T08:04:34.511864+08:00",
+  "reviewer": "independent agent /root/phase11_common_iid (not BinaryTestingBound author)",
+  "review_mode": "independent source mathematics review plus inspection of existing actual trust-zero build log and cache; no additional compilation claimed",
+  "module": "BinaryTestingBound",
+  "attempt_reviewed": "attempt1",
+  "status": "PASS",
+  "source_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+  "log_sha256": "4535d6b3e0bc57b6673ffc0be7eb4f43198678dad39a32dc8ae8576af54a26b8",
+  "olean_sha256": "17053f84b44b6d2393ce02d48f7be8b0dccffd29b30c8a0d261eeb6b7921126d",
+  "named_declarations": [
+    "MathExploration.BinaryTestingBound.success",
+    "MathExploration.BinaryTestingBound.error",
+    "MathExploration.BinaryTestingBound.success_add_error",
+    "MathExploration.BinaryTestingBound.error_ge_common_mass",
+    "MathExploration.BinaryTestingBound.success_le_of_common_mass"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "checks": {
+    "source_matches_compiled_snapshot": true,
+    "source_sha_matches_metadata": true,
+    "log_sha_matches_metadata": true,
+    "cache_sha_matches_metadata": true,
+    "all_explicit_named_declarations_printed": true,
+    "actual_prints_match_source_and_metadata": true,
+    "standard_axioms_only": true,
+    "no_proof_bypass_tokens": true,
+    "actual_kernel_command_trust_zero": true,
+    "actual_build_succeeded_and_source_stable": true,
+    "measurable_set_required": true,
+    "probability_hypotheses_for_both_models": true,
+    "common_measure_dominated_by_both_models": true
+  },
+  "mathematical_findings": [
+    {
+      "declaration": "success",
+      "finding": "For equal prior probabilities, A means choose high, so high(A)/2+low(A-complement)/2 is the probability of a correct decision."
+    },
+    {
+      "declaration": "error",
+      "finding": "low(A)/2+high(A-complement)/2 is the probability of an incorrect decision under the same rule and priors."
+    },
+    {
+      "declaration": "success_add_error",
+      "finding": "Uses both probability measures and the measurable-complement identity; the four terms sum to one."
+    },
+    {
+      "declaration": "error_ge_common_mass",
+      "finding": "Instantiates the proved common-submeasure event-gap theorem with high first and low second. Its upper signed-gap bound high(A)-low(A)<=1-gamma(univ), together with high(A-complement)=1-high(A), gives error>=gamma(univ)/2. Direction and factor one-half are correct."
+    },
+    {
+      "declaration": "success_le_of_common_mass",
+      "finding": "Combines the proved error lower bound with success+error=1. The target inequality is not assumed as a hypothesis."
+    }
+  ],
+  "claim_scope": [
+    "arbitrary measurable space and measurable event A",
+    "both input laws are probability measures",
+    "gamma is a measure dominated by both laws",
+    "equal prior probabilities one-half",
+    "measurable deterministic tests encoded by A"
+  ],
+  "blocking_findings": [],
+  "notes": [
+    "The log includes the pre-existing batteries local-changes warning; no new dependency changes were made by this review.",
+    "This review does not certify novelty or constitute external mathematical peer review."
+  ],
+  "verdict": "PASS",
+  "original_independent_review_file": "notes/binary-testing-independent-review.json",
+  "original_independent_review_sha256": "a4800cd404386994b40d4995fe38c99d9d7bd4d6d43e8c3120fcab2d81a8ccc5",
+  "normalization": "Schemawrapper only, independentreview unchanged"
+}

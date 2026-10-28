@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-10-28T08:20:10.470256+08:00",
+  "reviewer": "/root",
+  "independence": "Root didnot author either reviewedmodule anddidnot participate their compilation repairs; additionalnon-authorAI review,notblindhumanexpertreview",
+  "verdict": "PASS_INDEPENDENT_AI_SOURCE_AND_ACTUAL_EVIDENCE",
+  "blocking_findings": [],
+  "module": "ActualBranchMoments",
+  "source_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+  "log_sha256": "9d43a8733865a5df59a8706e8b241437a9ff259ed76a813b00c7def9e2be8967",
+  "olean_sha256": "7cd89fb22792926bc650d05b391d837eda3c80a196affb1d8aa8b35d823cdb1d",
+  "accepted_attempt": "attempt2",
+  "actual_prints": 28,
+  "semantic_checks": [
+    "bit is actual originaljoint J trueindicator; bit²=bit and measurableindicatorintegrability giveactual expectationp andvariancep-p²,usingalreadyproved originalJ eventprobabilities,not assumed Bernoulli statistics.",
+    "lowJoint/highJoint areactual finitePi products oforiginaljointlow/high laws; L2and expectationcount fromactualmeasurePreserving_eval andfinite-sum integrability,variance_sum_pi givesvariance addition underactualindependence.",
+    "Explicit probabilities and allfour countmoments areprovedfor eps>0,nanyNat,includingn0. No countinteger/PMFbinomial identity or tailbound supplied asassumption."
+  ],
+  "actual_standard_trust_level": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "limits": "InternalAI review notexternalhumanexpert ornoveltycertification; originalformal/archive andphase1-11 untouched"
+}

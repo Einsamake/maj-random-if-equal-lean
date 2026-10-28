@@ -1,0 +1,51 @@
+{
+  "reviewer": "/root, not author of the reviewed four modules",
+  "verdict": "PASS: actual probability/response and order scopes match the statements",
+  "blocking_findings": [],
+  "modules": {
+    "GeneralTankCdf": {
+      "source_sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+      "log_sha256": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+      "olean_sha256": "645d339ffc9a21f34e1a56d69505dc66cd47d73ffaac350fdae08b8f350863b3",
+      "semantic_findings": [
+        "Real independent-product-law CDF is decomposed into direct/via exponential convolutions with actual probability weights.",
+        "All replacements of a clipped CDF by the analytic response occur only at nonnegative integration points.",
+        "Response x0/x1/x2 are constructed and actual ODEs proved; no target CDF/ODE equivalence is a premise.",
+        "CDF negative-time branch separately zero. Actual CDF derivative only stated for t>0 via local response equality.",
+        "Actual law event={total<=t} is the same product probability measure, not a substitute law."
+      ]
+    },
+    "MeanRateOrder": {
+      "source_sha256": "2369f17be56620f7b0019bf286ccc8971a603602edf26a6afe446c870b539e32",
+      "log_sha256": "893a0af8537fa86a33338e46409bbceee034ae4e56e80bc493a8b9853567e432",
+      "olean_sha256": "f61dcee03dc23006b59ca238ae917ec34e31b20815de01740d5d316ea0b1134b",
+      "semantic_findings": [
+        "Finite difference has sign(e-b) and strictly positive denominator under stated probability parameters.",
+        "Derivative theorem concerns algebraic meanFormula where b and e+f are nonzero; actual-law statements rewrite the certified integrable total_mean.",
+        "No CDF ordering is inferred from a mean. The a constant cancels from differences."
+      ]
+    },
+    "CompletionTimeOrder": {
+      "source_sha256": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+      "log_sha256": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+      "olean_sha256": "155dc28322640fc895cc30a08d42d890a66bd84f23560dc5f5174947fe2b912e",
+      "semantic_findings": [
+        "CDF ordering uses actual general CDF-to-response identity and proven response order at nonnegative time; both negative-time CDFs are zero.",
+        "Parameter comparison keeps a,b,e fixed and requires both valid positive total exit rates.",
+        "b=e permits arbitrary ordering of flo/fhi and yields equal CDF functions; probability-measure uniqueness gives equal totalMeasure.",
+        "No equality of the hidden sample probability laws is claimed here."
+      ]
+    },
+    "HiddenBranchWitness": {
+      "source_sha256": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+      "log_sha256": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+      "olean_sha256": "b6b3fb01a62bdab31ed3f6ec109fefdb708f1782328236fe3b2266ad9974fd36",
+      "semantic_findings": [
+        "The exact J=true event under the actual product law has mass f/(e+f) via its true Bernoulli marginal.",
+        "At a=b=e=1, f=1/2 and1 give branch masses1/3,1/2 and equal total pushforward measures.",
+        "Different hidden laws follow from evaluating the same measurable event under a hypothesized equality, not from a label change."
+      ]
+    }
+  },
+  "limitations": "Independent AI source review; not human testing, external expert assessment or novelty certification."
+}

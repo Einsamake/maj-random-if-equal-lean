@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-27T01:09:53.262689+08:00",
+  "exit_code": 0,
+  "source_sha256": "e1eb401a053c70e20a295f1cf0d22ced4e1b3b7a5ec52b4714d87a7c87a1182a",
+  "log_sha256": "aaa9506c64b03be99f79dc2474dc957bffdf192c5c4392762d0bf72f31243f71",
+  "purpose": "unchanged phase1 dependency in isolated exploration cache"
+}

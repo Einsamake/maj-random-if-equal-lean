@@ -1,0 +1,97 @@
+{
+  "kind": "exact finite checks and deterministic teaching diagrams; not new Lean proofs",
+  "ordinary_and_weighted_initial_rates": [
+    {
+      "L": 2,
+      "domain_sites": 21,
+      "outside_birth_sites": 4,
+      "ordinary_masked": "4",
+      "ordinary_expanded": "2",
+      "weighted_masked": "4",
+      "weighted_expanded": "4"
+    },
+    {
+      "L": 3,
+      "domain_sites": 37,
+      "outside_birth_sites": 8,
+      "ordinary_masked": "6",
+      "ordinary_expanded": "2",
+      "weighted_masked": "6",
+      "weighted_expanded": "6"
+    },
+    {
+      "L": 4,
+      "domain_sites": 57,
+      "outside_birth_sites": 12,
+      "ordinary_masked": "8",
+      "ordinary_expanded": "2",
+      "weighted_masked": "8",
+      "weighted_expanded": "8"
+    },
+    {
+      "L": 10,
+      "domain_sites": 261,
+      "outside_birth_sites": 36,
+      "ordinary_masked": "20",
+      "ordinary_expanded": "2",
+      "weighted_masked": "20",
+      "weighted_expanded": "20"
+    },
+    {
+      "L": 40,
+      "domain_sites": 3441,
+      "outside_birth_sites": 156,
+      "ordinary_masked": "80",
+      "ordinary_expanded": "2",
+      "weighted_masked": "80",
+      "weighted_expanded": "80"
+    }
+  ],
+  "selected_state_zero_boundary_checks": 912,
+  "state_sampling": "all 512 subsets for L=1; 200 seeded subsets each for L=2,3; seed 20261026",
+  "supporting_inequality_rational_pairs": 1369,
+  "permutation_flux_checks": 18,
+  "exhaustive_encoding_profiles_M_1_through_5": 350,
+  "particle_figure": {
+    "M": 5,
+    "row_lengths_bottom_up": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "positions": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "right_count": 2,
+    "white_cells": 10
+  },
+  "protected_figure": {
+    "L": 160,
+    "loss_point": [
+      145,
+      0
+    ],
+    "offsets": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "block_cells": 16,
+    "min_weight": 9,
+    "block_weight": 192,
+    "kind": "conditional geometry; not a trajectory"
+  },
+  "figures": {
+    "boundary-weight.png": "867741601cb64c3eed2f4fe492ac6d0104636df38679956a7a3190b28f1ec5ce",
+    "particle-count.png": "5907fcd30af60185d74d8a0c4464ee12a964680aa5a73714df0d5f6fc7ad06b8",
+    "positive-energy.png": "5f9e117cb36394aee3da29228181c60fe73b5e9770be2d90036c190defcab1b9",
+    "protected-threshold.png": "ebdc1c0728e2b806d23f428fa9551115844c23e0ec92969ecd1c0f905c665a36"
+  }
+}

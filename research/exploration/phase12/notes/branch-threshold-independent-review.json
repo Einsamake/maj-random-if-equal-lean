@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-10-28T08:20:10.473779+08:00",
+  "reviewer": "/root",
+  "independence": "Root didnot author either reviewedmodule anddidnot participate their compilation repairs; additionalnon-authorAI review,notblindhumanexpertreview",
+  "verdict": "PASS_INDEPENDENT_AI_SOURCE_AND_ACTUAL_EVIDENCE",
+  "blocking_findings": [],
+  "module": "BranchThresholdTesting",
+  "source_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+  "log_sha256": "ce7ac7575ba47066a133efd84511ecc1f7506276bd351654e5589fefcd560994",
+  "olean_sha256": "96b1aba0c169ce239ea2cbe0e8f0e71faecda743edac2d00055fe7a3213b832a",
+  "accepted_attempt": "attempt2",
+  "actual_prints": 22,
+  "semantic_checks": [
+    "chooseHigh is measurable actual count eventthreshold5n/12 onoriginaljointIID, exactlyequivalent toproportionthresholdfor n>0; complementusesstrictlower event.",
+    "low/high errorsubsets usevalidsidesofabsolute deviation aroundactualmeansn/3,n/2 andradiusn/12. n>0 ensuresnonzeropositiveradius,allvariance/mean/L2premises importedfromproved actualmoments.",
+    "real_chebyshev converts actualENNReal tailbound toreal withfiniteofReal RHS; no tailboundpassed ascorefinalassumption.",
+    "Tailbounds32/n and36/n arederivedfromactualvariances; equalprioraverageerror<=34/n andsuccess>=1-34/n followexplicit BinaryTestingBound success/error forspecified originaljoint event.",
+    "n100error8/25,9/25,17/50 andsuccess33/50 areexactrational specialization; no optimality/Bayes/randomized/adaptive/engineered-cost claim."
+  ],
+  "actual_standard_trust_level": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "limits": "InternalAI review notexternalhumanexpert ornoveltycertification; originalformal/archive andphase1-11 untouched"
+}

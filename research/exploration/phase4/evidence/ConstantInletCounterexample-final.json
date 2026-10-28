@@ -1,0 +1,259 @@
+{
+  "checked_at": "2026-10-27T06:26:52.074255+08:00",
+  "module": "ConstantInletCounterexample",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\ConstantInletCounterexample.lean",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "checks": {
+    "actual_exit_zero": true,
+    "standard_trust_zero": true,
+    "source_unchanged_during_build": true,
+    "actual_names_match_expected": true,
+    "only_standard_axioms": true,
+    "no_errors_in_log": true
+  },
+  "source_sha256": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+  "log_sha256": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build\\ConstantInletCounterexample.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\lean\\ConstantInletCounterexample.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "LEAN_PATH": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\build;D:\\MyWorks\\Math\\research\\exploration\\phase2\\build",
+  "named_declarations": [
+    "MathExploration.ConstantInletCounterexample.r",
+    "MathExploration.ConstantInletCounterexample.lowState",
+    "MathExploration.ConstantInletCounterexample.highState",
+    "MathExploration.ConstantInletCounterexample.checkTime",
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.r_zero",
+    "MathExploration.ConstantInletCounterexample.same_upstream",
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.lowState_zero",
+    "MathExploration.ConstantInletCounterexample.highState_zero",
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.checkTime_positive",
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet",
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet",
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution",
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution"
+  ],
+  "expected_prints": [
+    "MathExploration.ConstantInletCounterexample.r",
+    "MathExploration.ConstantInletCounterexample.lowState",
+    "MathExploration.ConstantInletCounterexample.highState",
+    "MathExploration.ConstantInletCounterexample.checkTime",
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive",
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler",
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.r_zero",
+    "MathExploration.ConstantInletCounterexample.same_upstream",
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt",
+    "MathExploration.ConstantInletCounterexample.lowState_zero",
+    "MathExploration.ConstantInletCounterexample.highState_zero",
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn",
+    "MathExploration.ConstantInletCounterexample.checkTime_positive",
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime",
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet",
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet",
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution",
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution"
+  ],
+  "declaration_axioms": {
+    "MathExploration.ConstantInletCounterexample.r": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_matrix_metzler": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_matrix_metzler": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.same_upstream": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.checkTime_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.r_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.middle_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.lowState_actual_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MathExploration.ConstantInletCounterexample.highState_actual_solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "3b2a7bbb20f4f55aa05f0ee32719bf2498e27f536380ddb3ea17a5d9f852f2bb",
+  "declaration_count": 27,
+  "theorem_count": 23,
+  "final_binding_checks": {
+    "all_source_declarations_bound_to_actual_prints": true,
+    "source_hash_still_matches_actual_build": true,
+    "log_hash_still_matches_actual_build": true,
+    "olean_hash_still_matches_actual_build": true,
+    "no_unproved_or_custom_axiom_source_tokens": true,
+    "no_new_lean_source_warnings": true
+  },
+  "dependency_binding": {
+    "record": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\evidence\\RobustTankCertificate-dependency-cache.json",
+    "checks": {
+      "accepted_dependency_passed": true,
+      "frozen_phase2_source_unchanged": true,
+      "dependency_log_hash_matches": true,
+      "dependency_cached_olean_hash_matches": true
+    },
+    "source_sha256": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+    "cached_olean_sha256": "99fbdb820707db44c9a6e7941c445559eacfb68f97414ea56117289f7a028607"
+  },
+  "verified_frozen_phase3_source_hashes": {
+    "EndpointTank": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+    "ScaledEndpointEnvelope": "e306112639ef772202dc9a05a35f61af69e76eba95a2350f6f6c6e7cbee9d2e1"
+  },
+  "previous_sources_edited": false,
+  "scope": "Two explicit classical zero-initial-state trajectories with common constant inlet 1 and strictly positive (a,b,e)=(1,1/2,2), differing only in f=1/2 versus f=1. At T=2 log(2), outlets are 33/64 and 307/640, difference 23/640>0, while the shared middle value is 1/4 below the larger-f outlet. No monotonicity for the whole f-family, global optimum, ODE uniqueness, or contradiction to the ordered phase3 endpoint barrier is claimed.",
+  "log_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase4\\evidence\\ConstantInletCounterexample-final.log"
+}

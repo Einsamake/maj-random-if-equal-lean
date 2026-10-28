@@ -1,0 +1,85 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.EndpointTank.c' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.p' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpoint_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.q_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.one_sub_endpoint_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpoint_zero_sub_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpoint_one_sub_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpoint_gaps_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpoint_drift_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.solution_below_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState_actual_solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointTank.endpointState_attainable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.checkDecay_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.rational_lower_checkDecay' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_at_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointArithmetic.response_checkDecay_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.outletValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.greatest_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.q_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.endpoint_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.exact_maximum_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointCertificate.every_outlet_at_checkTime_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.timeScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.boundedRates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.timeScale_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.timeScale_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.actual_metzler_of_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.bounded_actual_metzler' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.upper_rates_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.endpoint_drift_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_zero_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_gaps_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaled_drift_domination' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.solution_below_scaled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_actual_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ScaledEndpointEnvelope.scaledState_attainable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

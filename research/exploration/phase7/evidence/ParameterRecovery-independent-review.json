@@ -1,0 +1,48 @@
+{
+  "reviewed_at": "2026-10-27T18:31:40.063534+08:00",
+  "reviewer": "phase7_law_identifiability independent from module author",
+  "module": "ParameterRecovery",
+  "audit_attempt": "attempt1",
+  "source_sha256": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+  "audit_json": "D:\\MyWorks\\Math\\research\\exploration\\phase7\\evidence\\ParameterRecovery-attempt1.json",
+  "audit_log_sha256": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+  "olean_sha256": "3cc86cb084e4c135952f892e9f432c322326395ce0d45d89328a10d833926d6a",
+  "mechanical_checks": {
+    "audit_reports_success": true,
+    "trust_zero_recorded": true,
+    "current_source_matches_audit": true,
+    "preserved_source_matches_current": true,
+    "log_matches_audit": true,
+    "cache_matches_audit": true,
+    "all_prints_match_log": true,
+    "only_standard_axioms_reported": true,
+    "no_unfinished_or_native_decision_markers": true,
+    "expected_declaration_count": true
+  },
+  "semantic_review": [
+    {
+      "claim": "delta(meanFormula)=(b+f)/(e+f)",
+      "verdict": "pass",
+      "reason": "The a term cancels exactly; assumptions b nonzero and e+f nonzero suffice."
+    },
+    {
+      "claim": "recover(meanFormula)=f",
+      "verdict": "pass",
+      "reason": "The denominator delta-1 equals (b-e)/(e+f); e not equal b and e+f nonzero exclude division by zero."
+    },
+    {
+      "claim": "meanFormula is injective in f for fixed a,b,e with e not equal b",
+      "verdict": "pass",
+      "reason": "The proof applies the validated left inverse to an equality of formula values."
+    },
+    {
+      "claim": "recover_total_mean uses the actual sample-space law",
+      "verdict": "pass",
+      "reason": "The premise and conclusion contain BranchedLaw.law integral, and the proof rewrites using phase5 total_mean with all legal probability-domain hypotheses."
+    }
+  ],
+  "scope": "Fixed known a,b,e and an exact population mean; no finite-sample guarantee and no recovery of all unknown rates.",
+  "blocking_findings": [],
+  "review_passed": true,
+  "review_limit": "Internal source and evidence review; not external mathematical review or novelty certification."
+}

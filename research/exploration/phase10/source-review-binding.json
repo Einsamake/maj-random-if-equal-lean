@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "kind": "Independent AI source/semantics/actualevidence binding; not humanexpertreview",
+  "modules": {
+    "CommonSubmeasureBound": {
+      "source_sha256": "0f83d6a7e7e060cf8398bf5c3e528135081ea7ee316acb271ca55b2c6397e2b9",
+      "log_sha256": "d36ceab6e5f31c3b9c602346c3aee6dacaf38fc989653591cd0727b89ee3e349",
+      "olean_sha256": "851d88a594f8d26e82dd47ff7c43d0f9cd63925fb3383fa7c7dcc7e5dec35617",
+      "review_file": "notes/common-submeasure-independent-review.json",
+      "review_sha256": "6fb6bbc71a04140cc0aa4e9371ddf3b025abd96d87bd690c1330865f6bd32980"
+    },
+    "ExponentialMinorization": {
+      "source_sha256": "99b27e081493bb4af2ad6b5b4f1f89e912a25e13a83b6b4a39f8cd8a84f66f5e",
+      "log_sha256": "7f10ac6245129d3c85060d6d20d5f97c034d42510d126c118a915b1b3d81ee2d",
+      "olean_sha256": "bb69b4035f896deafbdf8508b373772b3877dad10c8911f70364d3d917788ea7",
+      "review_file": "notes/exponential-independent-review.json",
+      "review_sha256": "466e9e63920b80ba4bbba4868b72b358f2021a76446e7e3bcc662bed8ada839b"
+    },
+    "PositiveWaitingDecomposition": {
+      "source_sha256": "e723d9a22b667b61a45dca03614a354b53bd4ecfadff6b0516c9356fbeed5e75",
+      "log_sha256": "2c7d67c94071f2eb909250f5521c39a9ad55776eaa9161fd97504aa272dcc971",
+      "olean_sha256": "d7beddccd24daaee8c9c3d5b0dc10b9ce287c009b47af37c8041f3bb6a3c6350",
+      "review_file": "notes/positive-decomposition-independent-review.json",
+      "review_sha256": "306f30f1f4896277a3434fd538c93ef677a011feb7da6625e2fd272e517a7c7f"
+    },
+    "ActualCompletionEventBound": {
+      "source_sha256": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+      "log_sha256": "b3395539c7e80f4eb5598a038d763c6acb851f26b8837f9f30e9969adc9c462f",
+      "olean_sha256": "01d797598305432868aa4d8c173031f630ba7b11d07d5d5cfc13097524d932b3",
+      "review_file": "notes/actual-event-independent-review.json",
+      "review_sha256": "db2d60092c8ef6e0a7d1f983ec7fd13afe769a4013045be7f546d6d9fdd17beb"
+    }
+  }
+}

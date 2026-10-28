@@ -1,0 +1,133 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:21:54: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:32:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:38:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑(cdf (expMeasure 1)) s
+in the target expression
+  (fun x => 1 / 2 * rexp (-(1 / 2 * (t - x))) * ↑(cdf (expMeasure 1)) x) s =
+    (fun x => rexp (-(1 / 2) * (t - x)) * (1 / 2 * lowState x 0)) s
+
+t : ℝ
+ht : 0 ≤ t
+this : IsProbabilityMeasure (expMeasure 1) :=
+  isProbabilityMeasure_expMeasure
+    (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+s : ℝ
+hs : s ∈ Icc 0 t
+⊢ (fun x => 1 / 2 * rexp (-(1 / 2 * (t - x))) * ↑(cdf (expMeasure 1)) x) s =
+    (fun x => rexp (-(1 / 2) * (t - x)) * (1 / 2 * lowState x 0)) s
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:44:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:50:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑(cdf (expMeasure 1)) s
+in the target expression
+  (fun x => c * rexp (-(c * (t - x))) * ↑(cdf (expMeasure 1)) x) s =
+    (fun x => rexp (-c * (t - x)) * (c * lowState x 0)) s
+
+c : ℝ
+hc : 0 < c
+t : ℝ
+ht : 0 ≤ t
+this : IsProbabilityMeasure (expMeasure 1) :=
+  isProbabilityMeasure_expMeasure
+    (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+s : ℝ
+hs : s ∈ Icc 0 t
+⊢ (fun x => c * rexp (-(c * (t - x))) * ↑(cdf (expMeasure 1)) x) s =
+    (fun x => rexp (-c * (t - x)) * (c * lowState x 0)) s
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:56:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:57:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:63:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑(cdf (expMeasure (1 / 2) ∗ expMeasure 1)) s
+in the target expression
+  (fun x => c * rexp (-(c * (t - x))) * ↑(cdf (expMeasure (1 / 2) ∗ expMeasure 1)) x) s =
+    (fun x => rexp (-c * (t - x)) * (c * lowState x 1)) s
+
+c : ℝ
+hc : 0 < c
+t : ℝ
+ht : 0 ≤ t
+this✝ : IsProbabilityMeasure (expMeasure 1) :=
+  isProbabilityMeasure_expMeasure
+    (Mathlib.Meta.NormNum.isNat_lt_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one) (Eq.refl false))
+this : IsProbabilityMeasure (expMeasure (1 / 2)) :=
+  isProbabilityMeasure_expMeasure
+    (Mathlib.Meta.NormNum.isNNRat_lt_true
+      (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero))
+      (Mathlib.Meta.NormNum.isNNRat_div
+        (Mathlib.Meta.NormNum.isNNRat_mul (Eq.refl HMul.hMul)
+          (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_one))
+          (Mathlib.Meta.NormNum.isNNRat_inv_pos
+            (Mathlib.Meta.NormNum.IsNat.to_isNNRat (Mathlib.Meta.NormNum.isNat_ofNat ℝ (Eq.refl 2))))
+          (Eq.refl (Nat.mul 1 1)) (Eq.refl 2)))
+      (Eq.refl true))
+s : ℝ
+hs : s ∈ Icc 0 t
+⊢ (fun x => c * rexp (-(c * (t - x))) * ↑(cdf (expMeasure (1 / 2) ∗ expMeasure 1)) x) s =
+    (fun x => rexp (-c * (t - x)) * (c * lowState x 1)) s
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:87:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:87:6: warning: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase5\lean\ActualTankCdf.lean:87:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'MathExploration.ActualTankCdf.cdf_exp_one_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_exp_one_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_middle_low' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_direct_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.cdf_via_kernel' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.weighted_kernels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualTankCdf.low_mixture_is_outlet' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualTankCdf.high_mixture_is_outlet' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,66 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:16:4: error: Type mismatch: After simplification, term
+  HasDerivAt.add (hasDerivAt_const f e) (hasDerivAt_id f)
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.normedAddCommGroup.toAddCommGroup
+    RCLike.toInnerProductSpaceReal.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ ((fun x => e) + id) 1
+    f
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.instAddCommGroup Semiring.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun x => e + x) 1 f
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:17:56: error: Application type mismatch: The argument
+  hc
+has type
+  (e + f != 0) = true
+but is expected to have type
+  e + f ≠ 0
+in the application
+  HasDerivAt.div (hasDerivAt_const f 1) hsum hc
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:18:69: error: Application type mismatch: The argument
+  hc
+has type
+  (e + f != 0) = true
+but is expected to have type
+  e + f ≠ 0
+in the application
+  mul_ne_zero hc
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:21:6: error: `dsimp` made no progress
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:14:68: error: unsolved goals
+case e'_9
+a b e f : ℝ
+hb : (b != 0) = true
+hc : (e + f != 0) = true
+hsum : HasDerivAt (fun x => e + x) 1 f
+hone : HasDerivAt ((fun x => 1) / fun x => e + x) ((0 * (e + f) - 1 * 1) / (e + f) ^ 2) f
+hnum : HasDerivAt (id / fun y => (e + y) * b) ((1 * ((e + f) * b) - id f * (1 * b)) / ((e + f) * b) ^ 2) f
+htotal :
+  HasDerivAt (((fun x => 1 / a) + (fun x => 1) / fun x => e + x) + id / fun y => (e + y) * b)
+    (0 + (0 * (e + f) - 1 * 1) / (e + f) ^ 2 + (1 * ((e + f) * b) - id f * (1 * b)) / ((e + f) * b) ^ 2) f
+⊢ (e - b) / (b * (e + f) ^ 2) =
+    0 + (0 * (e + f) - 1 * 1) / (e + f) ^ 2 + (1 * ((e + f) * b) - f * (1 * b)) / ((e + f) * b) ^ 2
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:30:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase6\lean\MeanRateOrder.lean:30:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'MathExploration.MeanRateOrder.meanFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_hasDerivAt' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e' depends on axioms: [propext, Classical.choice, Quot.sound]

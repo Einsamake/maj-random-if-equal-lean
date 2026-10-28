@@ -1,0 +1,56 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:66:39: error: unsolved goals
+m : ℕ
+a : ℝ
+⊢ ↑(m ^ 2) + ↑(m ^ 2) * a - ↑m ^ 2 - ↑m ^ 3 = a * ↑m ^ 2 - ↑m ^ 3
+'MathResearchExploration.FullBlockThreshold.directedPoint' does not depend on any axioms
+'MathResearchExploration.FullBlockThreshold.directedPoint_injective' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.directedBlock_eq_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.sum_positive_offsets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.sum_affine_block' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.directedPoint_weight_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.fullBlock_exact_lower_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.fullBlock_cubic_weight' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_physical_exit_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.physical_exit_measure_le_cubic_weight' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.original_extinction_measure_le_cubic_weight' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

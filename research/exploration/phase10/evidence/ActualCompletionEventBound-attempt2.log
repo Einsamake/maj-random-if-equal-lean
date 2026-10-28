@@ -1,0 +1,75 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:17:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:25:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:34:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:35:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:47:2: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:47:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:53:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase10\lean\ActualCompletionEventBound.lean:54:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.ActualCompletionEventBound.gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_le_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_le_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionEventBound.gamma_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_output_event_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_product_law_event_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_output_event_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionEventBound.all_product_law_event_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

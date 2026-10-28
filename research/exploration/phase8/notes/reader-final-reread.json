@@ -1,0 +1,95 @@
+{
+  "review_kind": "simulated_mathematics_undergraduate_reader_reread",
+  "reviewed_on": "2026-10-28",
+  "status": "pass",
+  "reviewed_file": "D:/MyWorks/Math/research/exploration/phase8/README.md",
+  "reviewed_file_sha256": "92BCA59DD349C244533CED283B674DDED78A0616E708BE85F342D96F62F1F095",
+  "previous_reviewed_file_sha256": "3B63657D2121C5815AEFF3D0E3434183701A8F4AF59863E2943F2499B725A8A5",
+  "first_feedback_record": "notes/reader-first-feedback.json",
+  "actual_image_viewed": true,
+  "images": [
+    {
+      "path": "images/rate-box-rule.png",
+      "sha256": "AE88BA390CE62F4720D8F14F16325AEE203C4F1122668E8E272102D93175F632",
+      "same_hash_as_first_read": true,
+      "actual_image_viewed_again": true
+    },
+    {
+      "path": "images/two-routes.png",
+      "sha256": "EF178348E80514AF982CC708DCFA7846A40A0AD88D7DDA338BB9E7F6810DBFA8",
+      "same_hash_as_first_read": true,
+      "actual_image_viewed_again": true
+    }
+  ],
+  "scope": {
+    "reread_inputs": [
+      "README.md",
+      "images/rate-box-rule.png",
+      "images/two-routes.png"
+    ],
+    "excluded": [
+      "mathematical source",
+      "audit material",
+      "validation.json",
+      "external links",
+      "other chapters"
+    ],
+    "simulated_background": "数学本科毕业；基础分析、代数、概率；不懂 Lean，不依靠项目背景",
+    "limitation": "此 pass 仅表示限定背景的 AI 读者模拟中未发现当前解释的阻断缺口；不是人类读者测试、专家评审、数学正确性或新颖性认证。"
+  },
+  "change_checks": [
+    {
+      "feedback_id": "R1",
+      "checked_original": "$J$ 只取0和1两个值。",
+      "result": "resolved",
+      "reason": "正文已独立给出取值集合，不再需要靠图补出 J=0 的情况。"
+    },
+    {
+      "feedback_id": "R2",
+      "checked_original": "用下标 $H,L$ 分别表示较高、较低的速率及对应函数。两个 $C_1$ 的差 $D=C_{1,H}-C_{1,L}$ 满足 $D'=G-b_H D$",
+      "result": "resolved",
+      "reason": "高低速率的对应符号和 b 比较所用 D、k 已显式定义，可直接套用前面的积分公式。"
+    },
+    {
+      "feedback_id": "R3",
+      "checked_original": "若 $G(s)\\le0$，则同样得到 $D(t)\\le0$。",
+      "result": "resolved",
+      "reason": "正负两个方向均已明说，后文 H<=0 和 D<=0 的引用清楚。"
+    },
+    {
+      "feedback_id": "R4",
+      "checked_original": "$B>E$ 时，增加 $f$ 不会降低完成概率；$B<E$ 时，增加 $f$ 不会提高完成概率。 ... 若 $B=E$，则 $H$ 与 $D$ 都为0，改变 $f$ 不影响分布，约定选 $F$。",
+      "result": "resolved",
+      "reason": "已将严格大小条件与等号情形分开，且用不会降低/不会提高明确表达弱单调性。"
+    }
+  ],
+  "reread_restatement": {
+    "goal_and_objects": "任务先独立等待 Wc，再根据只取 0 或 1 的 J 选择是否多等 Wb，最后等待 Wa。关心的是每个 t 的完成概率 P(S<=t)。要在四个独立区间中选一个同样的参数组合，让它对所有 t 都达到合法组合中的最大完成概率。",
+    "probability_and_comparison": "先按各段等待分配截止时间，写出 C0、C1、C2 的概率积分，再求导成为一阶方程。两个解的差 D 等于驱动 G 的正指数权重积分，所以 G 的统一符号能控制 D 的符号。",
+    "increasing_first_three": "增大 a 提高 C0，并经非负权重提高 C1、C2。比较 b 的驱动为 (bH-bL)(C0-C1,L)，比较 e 的驱动为 (eH-eL)(C0-C2,L)；加入非负等待只会让总等待变长，因此两个括号均非负。于是先把 a、b、e 提至 A、B、E。",
+    "choosing_last_parameter": "固定 B、E 后，H=C1-C2 的驱动是 (B-E)(C0-C1)，故其符号由 B-E 决定。比较 f 的差方程驱动又是 (fH-fL)H_L，于是 B>E 选 f 上限，B<E 选下限，B=E 不依赖 f。这个选择顺序无需原盒中所有点的 b-e 同号。",
+    "scope": "结论比较完整的截止时间概率，不仅是均值。它限于一次任务中固定速率与独立区间约束；不能据此声称随时间变化、联动速率或原二维自动机的新恢复公式。"
+  },
+  "reread_examples": [
+    {
+      "row": 1,
+      "selection": "a、b、e 的上限为 2、3、1；B=3>E=1，故 f 取上限 2，得到 (2,3,1,2)。",
+      "explicit_arithmetic": "E[S]=1/2+1/(1+2)+2/((1+2)*3)=1/2+1/3+2/9=(9+6+4)/18=19/18。"
+    },
+    {
+      "row": 2,
+      "selection": "a、b、e 的上限为 2、1、3；B=1<E=3，故 f 取下限 1/2，得到 (2,1,3,1/2)。",
+      "explicit_arithmetic": "E[S]=1/2+1/(3+1/2)+(1/2)/((3+1/2)*1)=1/2+2/7+1/7=(7+4+2)/14=13/14。"
+    }
+  ],
+  "category_results": {
+    "undefined_terms": "本节对象和当前推导所需术语没有阻断缺口。",
+    "reasoning_steps": "主比较链可按给出的积分公式和差方程复述；没有借其他章节补推导。",
+    "symbols": "J、H/L、差函数与正负驱动的关系均已核对，四条反馈已解决。",
+    "figure_text_consistency": "两张图再次实际查看且 hash 未变；路线概率、角点、边界 B=E 的约定均与修订文一致。",
+    "deliberately_excluded_or_deferred": "随时间变化、参数联动和原二维自动机被明确排除；不要求本节提供这些情况的证明，也未打开验证链接评价外部审查事实。"
+  },
+  "unresolved_blockers": [],
+  "new_optional_findings": [],
+  "conclusion": "此次修订为小幅澄清，四条反馈均落实。模型、关键比较推导和两行分数算例可从正文和实际配图直接复述；读者模拟复读通过。"
+}

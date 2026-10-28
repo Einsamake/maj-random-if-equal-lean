@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-10-28T00:31:35.525500+08:00",
+  "reviewer": "/root",
+  "independence": "Root didnot author thismodule; independentAI source/evidence/semantic review, not humanexpertreview",
+  "verdict": "PASS_INDEPENDENT_AI_SOURCE_AND_ACTUAL_EVIDENCE",
+  "blocking_findings": [],
+  "module": "ExponentialMinorization",
+  "source_sha256": "99b27e081493bb4af2ad6b5b4f1f89e912a25e13a83b6b4a39f8cd8a84f66f5e",
+  "log_sha256": "7f10ac6245129d3c85060d6d20d5f97c034d42510d126c118a915b1b3d81ee2d",
+  "olean_sha256": "bb69b4035f896deafbdf8508b373772b3877dad10c8911f70364d3d917788ea7",
+  "accepted_attempt": "attempt3",
+  "actual_prints": 10,
+  "semantic_checks": [
+    "rho is actual ofReal(1/b) scaled expMeasure b, not a newly assumed probability distribution.",
+    "For b>=1 everyx>=0 has scaled density exp(-b*x)<=exp(-x), and negative x bothdensities vanish; withDensity_mono proves genuine measure domination.",
+    "rho<=Expb follows scalar1/b<=1, valid for positiveb; rho massreal1/b is computed from actualExp probabilitymeasure, finiteproofuses actualunivmass.",
+    "Generic rho definition at invalidb doesnot claim probability; all required sign hypotheses appear on applicationtheorems."
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "limitations": [
+    "Not noveltycertification orhumanexpertreview",
+    "No finite-sample or originalautomaton result asserted bythismodule"
+  ],
+  "warnings": "Only priorbatteries localchanges /style warnings; dependenciesnotreset"
+}

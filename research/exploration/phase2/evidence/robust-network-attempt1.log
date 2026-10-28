@@ -1,0 +1,76 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:25:0: warning: automatically included section variable(s) unused in theorem `MathExploration.RobustNetworkBounds.offDiag_nonneg`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:31:0: warning: automatically included section variable(s) unused in theorem `MathExploration.RobustNetworkBounds.row_le_bound`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:51:0: warning: automatically included section variable(s) unused in theorem `MathExploration.RobustNetworkBounds.rate_scale`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:59:0: warning: automatically included section variable(s) unused in theorem `MathExploration.RobustNetworkBounds.linear_sub`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:64:0: warning: automatically included section variable(s) unused in theorem `MathExploration.RobustNetworkBounds.linear_mono_matrix`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:81:4: error: Type mismatch: After simplification, term
+  HasDerivAt.exp (HasDerivAt.const_mul (-R) (hasDerivAt_id r))
+ has type
+  HasDerivAt (fun x => Real.exp (x * -R)) (1 * -R * Real.exp (r * -R)) r
+but is expected to have type
+  HasDerivAt (fun t => Real.exp (t * -R)) (-R * Real.exp (r * -R)) r
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instMul ↦ 2
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:103:9: error(lean.unknownIdentifier): Unknown identifier `mul_nonpos_iff_of_pos_left`
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase2\lean\RobustNetworkBounds.lean:121:4: error: Type mismatch: After simplification, term
+  HasDerivAt.sub (hdx r hr j) (hdy r hr j)
+ has type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.normedAddCommGroup.toAddCommGroup
+    RCLike.toInnerProductSpaceReal.toModule PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯
+    ((fun r => x r j) - fun r => y r j) (dx r j - dy r j) r
+but is expected to have type
+  @HasDerivAt ℝ DenselyNormedField.toNontriviallyNormedField ℝ Real.instAddCommGroup Semiring.toModule
+    PseudoMetricSpace.toUniformSpace.toTopologicalSpace ⋯ (fun u => x u j - y u j) (dx r j - dy r j) r
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instAdd ↦ 1
+'MathExploration.RobustNetworkBounds.linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.Metzler' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.offDiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.rowBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.offDiag_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.row_le_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_eq_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.rate_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.linear_mono_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.metzler_nonpos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.differential_comparison' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustNetworkBounds.positive_solution' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.RobustNetworkBounds.interval_upper' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.RobustNetworkBounds.interval_lower' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

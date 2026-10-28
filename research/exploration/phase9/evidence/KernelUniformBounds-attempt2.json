@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-10-28T00:11:36.706511+08:00",
+  "module": "KernelUniformBounds",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "9512a3d8623336d18000cffcf0e59f06b1517196f434c6fc1a80ac3b3c7324d4",
+  "source_unchanged_during_build": true,
+  "log_sha256": "a607b19adb9f3b3b4649371e4428ac997f478648af5215b024b4e132d0b236a6",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase9\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase9\\build\\KernelUniformBounds.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase9\\lean\\KernelUniformBounds.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.KernelUniformBounds.kernel_neg",
+    "MathExploration.KernelUniformBounds.kernel_mono",
+    "MathExploration.KernelUniformBounds.kernel_const",
+    "MathExploration.KernelUniformBounds.kernel_const_le",
+    "MathExploration.KernelUniformBounds.kernel_le_of_le",
+    "MathExploration.KernelUniformBounds.abs_kernel_le"
+  ],
+  "expected_prints": [
+    "MathExploration.KernelUniformBounds.kernel_neg",
+    "MathExploration.KernelUniformBounds.kernel_mono",
+    "MathExploration.KernelUniformBounds.kernel_const",
+    "MathExploration.KernelUniformBounds.kernel_const_le",
+    "MathExploration.KernelUniformBounds.kernel_le_of_le",
+    "MathExploration.KernelUniformBounds.abs_kernel_le"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "6f3e0726dabba2401cc50dca5418d2b19dfc0a6675162572cdb63d8d005a7bad"
+}

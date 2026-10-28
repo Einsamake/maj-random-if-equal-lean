@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-27T12:19:07.613506+08:00",
+  "module": "ActualTankCdf",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "af24b30c64ef3dcb91d9cbec8fe6985adb4e26e3763fd5b3730c7d381c3958c7",
+  "source_unchanged_during_build": true,
+  "log_sha256": "a8ee2dca8c38c4f2892051c9ad936d39d881249fc97ba8608e1a2efeeab39462",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ActualTankCdf.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ActualTankCdf.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ActualTankCdf.cdf_exp_one_negative",
+    "MathExploration.ActualTankCdf.cdf_exp_one_nonnegative",
+    "MathExploration.ActualTankCdf.cdf_middle_negative",
+    "MathExploration.ActualTankCdf.cdf_middle_low",
+    "MathExploration.ActualTankCdf.cdf_direct_kernel",
+    "MathExploration.ActualTankCdf.cdf_via_kernel",
+    "MathExploration.ActualTankCdf.weighted_kernels",
+    "MathExploration.ActualTankCdf.low_mixture_is_outlet",
+    "MathExploration.ActualTankCdf.high_mixture_is_outlet"
+  ],
+  "expected_prints": [
+    "MathExploration.ActualTankCdf.cdf_exp_one_negative",
+    "MathExploration.ActualTankCdf.cdf_exp_one_nonnegative",
+    "MathExploration.ActualTankCdf.cdf_middle_negative",
+    "MathExploration.ActualTankCdf.cdf_middle_low",
+    "MathExploration.ActualTankCdf.cdf_direct_kernel",
+    "MathExploration.ActualTankCdf.cdf_via_kernel",
+    "MathExploration.ActualTankCdf.weighted_kernels",
+    "MathExploration.ActualTankCdf.low_mixture_is_outlet",
+    "MathExploration.ActualTankCdf.high_mixture_is_outlet"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "2018d9a5ec670f586c6dd1a7e8872fc45cb9cbeea71ca8454a39d9edb54c57c8"
+}

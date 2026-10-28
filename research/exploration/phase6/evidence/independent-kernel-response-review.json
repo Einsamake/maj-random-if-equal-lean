@@ -1,0 +1,292 @@
+{
+  "reviewed_at": "2026-10-27T18:22:14.397681+08:00",
+  "reviewer": "/root/phase6_actual_cdf",
+  "review_kind": "Internal independent source and evidence review of modules authored by root and phase6_tank_response; not external expert review, novelty certification, or human reader testing.",
+  "status": "PASS",
+  "reviewed_modules": [
+    {
+      "module": "ResponseKernelCalculus",
+      "attempt": "attempt2",
+      "declaration_count": 6,
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\ResponseKernelCalculus.lean",
+      "source_sha256": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+      "audit": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\ResponseKernelCalculus-attempt2.json",
+      "audit_sha256": "67b1564d9de08f0ddf14c6c8c5ccf822913da95c7dd975fcd556c97b3bb2604e",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\ResponseKernelCalculus-attempt2.log",
+      "log_sha256": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\ResponseKernelCalculus.olean",
+      "cache_sha256": "becf2f1902381a7d34c43bddbd8b7d812f9bc5fd1a7ee8f7ae40609930094db7",
+      "cache_bundle": {
+        "ResponseKernelCalculus.ir": "656e8e7eb165c956d00ff487e71faa6df57c8b68217db67e2266c28763e8b13d",
+        "ResponseKernelCalculus.ir.sig": "a86ca452500210b09c337ddd1b4569879c11bf9ef9651e4193b2519ce3cdd735",
+        "ResponseKernelCalculus.olean": "becf2f1902381a7d34c43bddbd8b7d812f9bc5fd1a7ee8f7ae40609930094db7",
+        "ResponseKernelCalculus.olean.private": "a447805e576b8d5726add3f26c9d05c0a1580bcb5e073a2fe736677bfbec1bf2",
+        "ResponseKernelCalculus.olean.server": "218f28a063f4e438a3050425165bbed4a04053373165ce12a05b5249082974f1"
+      },
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "audit_success": true,
+        "trust_zero": true,
+        "source_matches_audit": true,
+        "source_snapshot_identical": true,
+        "log_matches_audit": true,
+        "cache_matches_audit": true,
+        "source_unchanged_during_build": true,
+        "all_declarations_printed_once": true,
+        "log_prints_match_source": true,
+        "standard_axioms_only": true,
+        "no_source_placeholders": true,
+        "no_lean_errors": true
+      },
+      "declaration_lines": {
+        "kernel_zero": 11,
+        "kernel_eq_factor": 14,
+        "kernel_hasDerivAt": 25,
+        "kernel_continuous": 47,
+        "kernel_nonneg": 51,
+        "kernel_nonpos": 57
+      },
+      "semantic_review": [
+        {
+          "declarations": [
+            "kernel_zero",
+            "kernel_eq_factor"
+          ],
+          "finding": "PASS: kernel is the frozen phase5 integral of exp(c*(s-t))*F(s); its value at zero is zero and the exponential factorization has the same sign and orientation."
+        },
+        {
+          "declarations": [
+            "kernel_hasDerivAt",
+            "kernel_continuous"
+          ],
+          "finding": "PASS: continuous forcing permits FTC on exp(c*s)*F(s); the product rule gives F(t)-c*kernel(c,F,t) for every real t and every real c. No stability or positivity assumption is silently required."
+        },
+        {
+          "declarations": [
+            "kernel_nonneg",
+            "kernel_nonpos"
+          ],
+          "finding": "PASS: on 0<=t the exponential factor is positive; pointwise sign of F on [0,t] transfers to the oriented interval integral. These are finite-time sign claims, not convergence claims."
+        }
+      ]
+    },
+    {
+      "module": "TankResponse",
+      "attempt": "attempt4",
+      "declaration_count": 22,
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\TankResponse.lean",
+      "source_sha256": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+      "audit": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\TankResponse-attempt4.json",
+      "audit_sha256": "2ce01d761e3307a70a0a2fb519864f40d2529dc904da093006fcd47fd3a24ed5",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\TankResponse-attempt4.log",
+      "log_sha256": "5df4e25600c906494b4cc505f9c64f9244ae670b2c05ed4927aa1891618fd5a6",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\TankResponse.olean",
+      "cache_sha256": "71a983dac8b374ccc3433de996a67537b6aaf3345a7a6c1ede67033aad99a47d",
+      "cache_bundle": {
+        "TankResponse.ir": "e7123a165211524e3931ae73da4a0dcee71f0c0f3f1bb773f1f760435580b6e4",
+        "TankResponse.ir.sig": "d2905f63219f87878bd0e2e2d7305a88b360f7f6ad795ae2b6e91102d9e57541",
+        "TankResponse.olean": "71a983dac8b374ccc3433de996a67537b6aaf3345a7a6c1ede67033aad99a47d",
+        "TankResponse.olean.private": "3c87d0671d8b7405e6a02e096df55ef250566832a93e0447d27c7aa8988ccbeb",
+        "TankResponse.olean.server": "21db0151ac248d87886d024eb5760eeeeb63d61757a65438f05bb631cea81c22"
+      },
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": {
+        "audit_success": true,
+        "trust_zero": true,
+        "source_matches_audit": true,
+        "source_snapshot_identical": true,
+        "log_matches_audit": true,
+        "cache_matches_audit": true,
+        "source_unchanged_during_build": true,
+        "all_declarations_printed_once": true,
+        "log_prints_match_source": true,
+        "standard_axioms_only": true,
+        "no_source_placeholders": true,
+        "no_lean_errors": true
+      },
+      "declaration_lines": {
+        "x0": 9,
+        "x1": 10,
+        "x2": 11,
+        "x0_continuous": 14,
+        "x0_zero": 18,
+        "x0_hasDerivAt": 20,
+        "x1_continuous": 28,
+        "x1_zero": 31,
+        "x1_hasDerivAt": 34,
+        "x2_continuous": 42,
+        "x2_zero": 46,
+        "x2_hasDerivAt": 49,
+        "solution_unique": 59,
+        "gap01_kernel": 91,
+        "x0_sub_x1_nonneg": 99,
+        "gap12_kernel": 109,
+        "x1_sub_x2_nonneg": 119,
+        "x1_sub_x2_nonpos": 126,
+        "delta_kernel": 134,
+        "x2_mono_f_of_e_le_b": 144,
+        "x2_antitone_f_of_b_le_e": 155,
+        "x2_eq_of_b_eq_e": 166
+      },
+      "semantic_review": [
+        {
+          "declarations": [
+            "x0",
+            "x1",
+            "x2"
+          ],
+          "finding": "PASS: x0=1-exp(-a*t), x1=kernel(b,b*x0), x2=kernel(e+f,e*x0+f*x1). The original rates and the e+f outlet loss are preserved."
+        },
+        {
+          "declarations": [
+            "x0_continuous",
+            "x1_continuous",
+            "x2_continuous",
+            "x0_zero",
+            "x1_zero",
+            "x2_zero",
+            "x0_hasDerivAt",
+            "x1_hasDerivAt",
+            "x2_hasDerivAt"
+          ],
+          "finding": "PASS: the three zero-initial solutions satisfy x0prime=a*(1-x0), x1prime=b*(x0-x1), x2prime=e*(x0-x2)+f*(x1-x2) on the full real line, derived from explicit/kernel definitions."
+        },
+        {
+          "declarations": [
+            "solution_unique"
+          ],
+          "finding": "PASS: any full-real zero-initial solution satisfying the displayed ODE is identified layer by layer by the frozen ode_to_kernel theorem. Continuity of forcing comes from the identified upstream response; uniqueness is proved, not assumed."
+        },
+        {
+          "declarations": [
+            "gap01_kernel",
+            "x0_sub_x1_nonneg"
+          ],
+          "finding": "PASS: the upstream gap has forcing a*(1-x0)=a*exp(-a*s), nonnegative for a>=0. The sign proof is valid for arbitrary b on finite nonnegative time."
+        },
+        {
+          "declarations": [
+            "gap12_kernel",
+            "x1_sub_x2_nonneg",
+            "x1_sub_x2_nonpos"
+          ],
+          "finding": "PASS: x1-x2 has forcing (b-e)*(x0-x1). Hence e<=b gives a nonnegative gap and b<=e gives a nonpositive gap."
+        },
+        {
+          "declarations": [
+            "delta_kernel",
+            "x2_mono_f_of_e_le_b",
+            "x2_antitone_f_of_b_le_e"
+          ],
+          "finding": "PASS: high-minus-low response has forcing (fhi-flo)*(x1-x2_flo) under loss e+fhi. For flo<=fhi the CDF-response order therefore follows the sign of b-e; no upstream rate a enters the threshold."
+        },
+        {
+          "declarations": [
+            "x2_eq_of_b_eq_e"
+          ],
+          "finding": "PASS: equality at b=e follows by antisymmetry for either ordering of flo and fhi; no denominator division or distinct-rate assumption is introduced."
+        }
+      ]
+    }
+  ],
+  "consumer_final_rebuild_binding": {
+    "module": "GeneralTankCdf",
+    "attempt": "attempt2",
+    "declaration_count": 14,
+    "source": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\GeneralTankCdf.lean",
+    "source_sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+    "audit": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\GeneralTankCdf-attempt2.json",
+    "audit_sha256": "ca2bc22eff6e42f5b736db6a7c970d990c1ac80a8ea4866b3db2973b0369b42a",
+    "log": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\evidence\\GeneralTankCdf-attempt2.log",
+    "log_sha256": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+    "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\GeneralTankCdf.olean",
+    "cache_sha256": "645d339ffc9a21f34e1a56d69505dc66cd47d73ffaac350fdae08b8f350863b3",
+    "cache_bundle": {
+      "GeneralTankCdf.ir": "5e08763b829eef29b06852a5a657e4db76c601b6c8e4851a810147e386b7f75b",
+      "GeneralTankCdf.ir.sig": "589bad4c252cb132c2fde2c8f36b36bc9ef41f16287d25c939c49a74b6be3e65",
+      "GeneralTankCdf.olean": "645d339ffc9a21f34e1a56d69505dc66cd47d73ffaac350fdae08b8f350863b3",
+      "GeneralTankCdf.olean.private": "920fcebb660f74f4fadce25577787a4fe0f5ce82a5b38776542060cf43ca23be",
+      "GeneralTankCdf.olean.server": "4a714f825b82f66d5862d13b36965291d5101dcfe7b040c7a0e3524dff30a4bb"
+    },
+    "axioms_seen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "checks": {
+      "audit_success": true,
+      "trust_zero": true,
+      "source_matches_audit": true,
+      "source_snapshot_identical": true,
+      "log_matches_audit": true,
+      "cache_matches_audit": true,
+      "source_unchanged_during_build": true,
+      "all_declarations_printed_once": true,
+      "log_prints_match_source": true,
+      "standard_axioms_only": true,
+      "no_source_placeholders": true,
+      "no_lean_errors": true
+    },
+    "declaration_lines": {
+      "cdf_exp_negative": 16,
+      "cdf_exp_eq_x0": 21,
+      "cdf_middle_negative": 26,
+      "cdf_middle_eq_x1": 33,
+      "cdf_direct_kernel": 47,
+      "cdf_via_kernel": 62,
+      "weighted_kernels": 78,
+      "cdf_totalMeasure_negative": 101,
+      "cdf_totalMeasure_eq_x2": 113,
+      "cdf_totalMeasure_eq_x2_all_real": 123,
+      "cdf_totalMeasure_hasDerivAt_of_pos": 133,
+      "total_event_eq_cdf": 146,
+      "total_event_eq_x2": 156,
+      "total_event_eq_x2_all_real": 163
+    }
+  },
+  "frozen_phase5_dependencies_observed": {
+    "LinearResponseKernel": {
+      "observed_source": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\LinearResponseKernel.lean",
+      "observed_source_sha256": "1ce430bf3b42af1d1ae7ae4fb281188c7bab4ca4db165f6f1aec36f9aea28662",
+      "observed_cache": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\LinearResponseKernel.olean",
+      "observed_cache_sha256": "e0c9c0c0ff87efd9e0acb81456c173cbf0f1ca74ecd95c577efa709a62891383"
+    },
+    "ExponentialCdfConvolution": {
+      "observed_source": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\ExponentialCdfConvolution.lean",
+      "observed_source_sha256": "36dd28877e3671d2b7540d9dfa0ce45e74bdbf5a8c31a1888657fe27d7c36a6a",
+      "observed_cache": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\ExponentialCdfConvolution.olean",
+      "observed_cache_sha256": "de4181e27843213a4e07c294cebc519c4f812c97ca53e480ff1ee75d3343e02c"
+    },
+    "BranchedLaw": {
+      "observed_source": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedLaw.lean",
+      "observed_source_sha256": "73b5a58cb05bdc942e0c64fdff4d552d9f212a546a10c35463a326b632a6c5bf",
+      "observed_cache": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\BranchedLaw.olean",
+      "observed_cache_sha256": "c51e473cba3d90c4e5fba2e6f247e08f266a3ad563bf364683ae666f86c7a23a"
+    },
+    "BranchedCdfMixture": {
+      "observed_source": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\lean\\BranchedCdfMixture.lean",
+      "observed_source_sha256": "1e3f7fbfb09c0a44da318559665e4ae434c59bc2b60288074b4423df325c52d9",
+      "observed_cache": "D:\\MyWorks\\Math\\research\\exploration\\phase5\\build\\BranchedCdfMixture.olean",
+      "observed_cache_sha256": "72a1c6b0e9bedef734d2b544a24427561677408f5244fde8608b5a2b9f1f1ed8"
+    }
+  },
+  "semantic_scope": [
+    "The analytic x2 response is defined on every real t; the actual completion-time CDF equals x2 only for t>=0 and equals zero for t<0.",
+    "The actual-CDF derivative theorem is restricted to t>0 and is transported from a local actual-CDF=x2 identity; it does not assume a CDF ODE or a probability/kernel equivalence.",
+    "The probability bridge uses the frozen product law Ber(f/(e+f)) x Exp(e+f) x Exp(b) x Exp(a), with a,b>0, e,f>=0, e+f>0. Analytic lemmas with weaker real-parameter assumptions are not claimed to define probability laws outside that range.",
+    "Repeated rates and endpoint branches e=0 or f=0 remain admitted by the probability theorem; no distinct-rate closed-form formula is used."
+  ],
+  "unresolved_blockers": [],
+  "review_limits": [
+    "This source review does not replace trust-zero kernel checking; the bound audit records provide that separate evidence.",
+    "No human-readable mathematical chapter was authored or accepted by this review."
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "checked_at": "2026-10-28T08:22:21.208716+08:00",
+  "status": "PASS",
+  "stage_complete": true,
+  "human_materials_and_reader_cycle_pending": false,
+  "reader_review": {
+    "reviewer": "/root/phase12_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "first_read": {
+      "review_id": "phase12-undergraduate-reader-first",
+      "status": "pass_with_nonblocking_suggestions",
+      "review_date_local": "2026-10-28",
+      "simulated_background": "数学本科毕业，基础分析与概率，不懂Lean，无项目历史。",
+      "read_scope": [
+        "D:/MyWorks/Math/research/exploration/phase12/README.md",
+        "D:/MyWorks/Math/research/exploration/phase12/images/observation-choice.png"
+      ],
+      "excluded_material_not_read": [
+        "源码",
+        "审计",
+        "notes",
+        "外链",
+        "其他章节"
+      ],
+      "actual_image_viewed": true,
+      "reviewed_file_sha256": "76375864F2A07FB94427F36F1EEB0597F97A35A30F9A6CE229C7FC0F0EFCEDED",
+      "reviewed_image_sha256": "FBE90C5AEE7666344F62D75C8F08C6856458A3317B78D842AEADC4F0817F2CD4",
+      "independent_retelling": [
+        "目标是比较同一对低高机制、同样100次任务、各半事先概率下，观察总完成时间S与观察内部绕路标记J所能保证的分类成功率。",
+        "先选定一次低或高模型。给定这个模型后，W_c、W_a、W_b、J相互独立，S=W_c+W_a+J W_b。W_a速率1，W_b速率101/100，W_c速率1+f，J=1的概率f/(1+f)。低模型f=1/2，W_c速率3/2，绕路概率1/3；高模型f=1，W_c速率2，绕路概率1/2。",
+        "在同一个已选模型下独立生成100次相同任务，即给定模型后独立同分布。不是每次重新选模型；忘掉所选模型后的混合样本也不能被直接当作无条件独立。每次任务同时有S_i与J_i；两种规则各自只得到其中一类观测，没有另造无关的伯努利数据。",
+        "Z_i就是J_i的0、1数值，N_n为总绕路次数。Z_i^2=Z_i，所以期望p、方差p-p^2。低模型每次方差2/9，高模型1/4；给定模型后的独立性使计数均值为n/3或n/2，方差为2n/9或n/4。",
+        "绕路比例至少5/12就判高，否则判低。低模型误判事件N_n>=5n/12距均值n/3至少n/12，含于绝对偏差至少n/12的事件。高模型误判事件N_n<5n/12距均值n/2严格超过n/12，也含于切比雪夫的非严格绝对偏差事件。误判上界分别为32/n、36/n。",
+        "等于阈值判高，因此低模型算错、高模型算对。n=100时整数计数从42起判高；一般n的阈值等号仍按正文处理。",
+        "各半先验使平均错误上界为34/n，n=100时为17/50，成功至少33/50=66%。这是下界，不是实际成功率恰为66%。",
+        "已证输入给任何由100个时间样本决定结果的可测二选一规则平均成功率至多353/606。具体分支规则成功至少33/50，故与任何这样的时间规则真实成功率之差至少587/7575>0。正文不证明该阈值最优，不估计记录成本，也不推广到任意现实系统。"
+      ],
+      "worked_examples": [
+        {
+          "item": "距离",
+          "calculation": "5/12-1/3=(5-4)/12=1/12；1/2-5/12=(6-5)/12=1/12"
+        },
+        {
+          "item": "单次方差",
+          "calculation": "(1/3)(2/3)=2/9；(1/2)(1/2)=1/4"
+        },
+        {
+          "item": "低模型误判",
+          "calculation": "(2n/9)/(n/12)^2=32/n；n=100时32/100=8/25"
+        },
+        {
+          "item": "高模型误判",
+          "calculation": "(n/4)/(n/12)^2=36/n；n=100时36/100=9/25"
+        },
+        {
+          "item": "各半先验",
+          "calculation": "(8/25+9/25)/2=17/50；1-17/50=33/50=66%"
+        },
+        {
+          "item": "严格差值",
+          "calculation": "33/50-353/606=(19998-17650)/30300=2348/30300=587/7575=0.0774917491749175，即约7.74917491749175个百分点"
+        }
+      ],
+      "located_feedback": [
+        {
+          "id": "R1",
+          "category": "术语/条件表述",
+          "original_quote": "一次任务由四个独立随机量产生：",
+          "blocking": false,
+          "feedback": "后文已说明给定模型后的独立生成，足以还原条件；但此句可加给定所选模型后，避免误读成混合模型下也无条件独立。",
+          "suggestion": "明确四随机量的独立性条件于已选模型。"
+        },
+        {
+          "id": "R2",
+          "category": "术语未定义",
+          "original_quote": "任何由样本唯一决定结果的可测二选一规则都满足",
+          "blocking": false,
+          "feedback": "由样本唯一决定结果足以理解规则是确定分类函数；可测未解释，基础概率读者可能不清楚这一限定。",
+          "suggestion": "轻量说明可测是要求分类结果的概率有定义，无须展开测度论。"
+        },
+        {
+          "id": "R3",
+          "category": "推理跳步检查",
+          "original_quote": "给定所选模型，各任务独立，和的均值相加、方差也相加。",
+          "blocking": false,
+          "feedback": "本科概率背景可从已给的单次矩得到计数矩，无需源码或研究生知识。",
+          "suggestion": "无必须修改。"
+        },
+        {
+          "id": "R4",
+          "category": "符号/等号边界",
+          "original_quote": "等于阈值时规则判高：在低模型下算误判，在高模型下算正确，上面的两个事件分别用 $\\ge$ 和 $<$，没有漏掉边界。",
+          "blocking": false,
+          "feedback": "与规则一致。高模型的严格尾事件含于切比雪夫非严格尾事件；P_L、P_H可由段落识别为固定低高模型的概率。",
+          "suggestion": "无必须修改。"
+        },
+        {
+          "id": "R5",
+          "category": "图文一致性",
+          "original_quote": "图中的两端含义不同：58.25%是所有完成时间规则都不能超过的上界；66%是一条具体分支规则已经能保证的下界。",
+          "blocking": false,
+          "feedback": "实际查看图片；蓝色至58.25%、绿色从66%至100%对应上界与下界。阈值、分数、7.75个百分点及非实测说明一致。",
+          "suggestion": "无必须重画项。"
+        },
+        {
+          "id": "R6",
+          "category": "明确留给先前章节的证明/已证输入",
+          "original_quote": "这里把该引理作为已证输入，不在本节重做其共同分布分量的构造。",
+          "blocking": false,
+          "feedback": "明确的外部输入，不是本节承诺讲清的新步骤缺口。未借助其他章节、审计或源码补足；也未认证该引理的正式证明。",
+          "suggestion": "保留范围说明。"
+        },
+        {
+          "id": "R7",
+          "category": "结论范围",
+          "original_quote": "这里是概率的绝对差，不是相对提升7.75%，也不是声称分支规则的真实成功率恰为66%。",
+          "blocking": false,
+          "feedback": "清楚区分保证与真实成功率、百分点与相对提升，且限制最优性、成本与外推范围。",
+          "suggestion": "无必须修改。"
+        }
+      ],
+      "unresolved_blockers": [],
+      "parent_notified_before_save": true,
+      "first_feedback_preservation_note": "首读反馈曾在保存时遇到PowerShell引号解析错误，未写成文件；此记录保留首读原文引句与首读SHA，依据已经发送给主代理的首读反馈保存，未回读其他notes。",
+      "limitations": "这是独立AI本科读者模拟，不是人类测试、专家评审、数学正确性或新颖性认证。"
+    },
+    "final_reread": {
+      "review_id": "phase12-undergraduate-reader-final",
+      "review_date_local": "2026-10-28",
+      "status": "pass",
+      "unresolved_blockers": [],
+      "actual_image_viewed": true,
+      "reviewed_file": "D:/MyWorks/Math/research/exploration/phase12/README.md",
+      "reviewed_file_sha256": "E147B0CB9760E9F5BF8E8CA2C1D24FFBA5C6D4F2ABF7B09926DB3083E2536451",
+      "reviewed_image": "D:/MyWorks/Math/research/exploration/phase12/images/observation-choice.png",
+      "reviewed_image_sha256": "FBE90C5AEE7666344F62D75C8F08C6856458A3317B78D842AEADC4F0817F2CD4",
+      "simulated_background": "数学本科毕业，基础分析与概率，不懂Lean，无项目历史。",
+      "reread_scope": "只复读最终正文并再次调用view_image查看实际配图；未读源码、审计、其他notes、外链或其他章节。",
+      "revision_mapping": [
+        {
+          "feedback_id": "R1",
+          "original_quote": "一次任务由四个独立随机量产生：",
+          "final_quote": "给定已经选中的低或高模型后，一次任务由四个独立随机量产生：",
+          "resolution": "resolved",
+          "reread": "独立性的条件已明确；先选一次模型与给定模型后的独立同分布不再容易混淆。"
+        },
+        {
+          "feedback_id": "R2",
+          "original_quote": "任何由样本唯一决定结果的可测二选一规则都满足",
+          "final_quote": "“可测”这里只要求判断结果的概率有定义。",
+          "resolution": "resolved",
+          "reread": "该词现在有足以支撑本节阅读的轻量解释，不必借助测度论。"
+        }
+      ],
+      "final_retelling": [
+        "模型只先选一次，低高各1/2。给定模型后，单任务四随机量独立，重复任务独立同分布；每个任务同时产生S_i和J_i。",
+        "分支计数来自真实J_i，低高单次期望1/3、1/2，方差2/9、1/4。计数均值和方差分别为n/3、2n/9与n/2、n/4。",
+        "阈值5/12到两概率各距1/12。低错误N_n>=5n/12，高错误N_n<5n/12。等于阈值判高，低算错、高算对；两错误事件均可用绝对偏差至少n/12的切比雪夫事件上界。",
+        "错误上界为32/n与36/n，各半平均34/n；100次成功至少33/50。时间规则353/606的上界明确是已证输入；本节无需重证共同分布分量。",
+        "因为两观测对应相同任务、相同两模型与先验，具体分支规则和任意正文所涵盖时间规则的成功率差至少587/7575>0。保证不等于实测，不宣称阈值最优、低记录成本或一般现实系统结论。"
+      ],
+      "recomputed_examples": [
+        "5/12-1/3=1/12；1/2-5/12=1/12。",
+        "p(1-p)给2/9与1/4。",
+        "(2n/9)/(n/12)^2=32/n；(n/4)/(n/12)^2=36/n。",
+        "n=100时32/100=8/25、36/100=9/25。",
+        "(8/25+9/25)/2=17/50；1-17/50=33/50=66%。",
+        "33/50-353/606=(19998-17650)/30300=2348/30300=587/7575≈0.0774917491749175=7.74917491749175个百分点。"
+      ],
+      "image_reread_result": "图片SHA未变，首读实际查看且终读再次调用view_image。上界/下界的条形方向、数值、阈值、差值与正文一致，无必须重画项。",
+      "pass_scope": "仅通过本文已承诺的新步骤的本科读者模拟理解与算例检查；先前时间上界按已证输入理解。",
+      "limitations": "模拟不构成人类用户测试、专家评审、数学正确性、新颖性或Lean证明认证。"
+    },
+    "reviewed_file_sha256": {
+      "README.md": "e147b0cb9760e9f5bf8e8ca2c1d24ffba5c6d4f2abf7b09926db3083e2536451",
+      "images/observation-choice.png": "fbe90c5aee7666344f62d75c8f08c6856458a3317b78d842aeadc4f0817f2cd4"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "sha256": "76375864f2a07fb94427f36f1eeb0597f97a35a30f9a6ce229c7fc0f0efceded",
+        "actions": [
+          "Sameoriginalrandomtasks forbothobservations,oneequalpriormodelchoice beforeconditionalIID repetitions",
+          "Explained whichfinishedtimebound usedasprovedlemma andwhichnewbranchcertificate fullyderivedhere",
+          "DerivedactualBernoulli moments,Chebyshev tails includingthresholdboundary andn>0",
+          "Separated upperbounds vs lowerguarantees vs achievedaccuracy andpercentagepointdifference"
+        ]
+      },
+      {
+        "pass": 2,
+        "sha256": "76375864f2a07fb94427f36f1eeb0597f97a35a30f9a6ce229c7fc0f0efceded",
+        "actions": [
+          "ActuallyviewedPNG: leftalltime-rule upperinterval vsrightspecifiedbranchrule lowerinterval oncommonpercentageaxis",
+          "ExactFractionchecks33/50-353/606=587/7575 andequalerror17/50",
+          "Confirmedchangingobservedvariable on sameoriginaljointexperiment, notanunrelatedBernoullimodel",
+          "Explained timeboundasimportedprovedlemma; fullnewChebyshev steps andthresholdboundary aregiven",
+          "Separatedpercentagepoints/exactfraction/roundedillustration andnonoptimalbounds"
+        ]
+      },
+      {
+        "pass": 3,
+        "sha256": "e147b0cb9760e9f5bf8e8ca2c1d24ffba5c6d4f2abf7b09926db3083e2536451",
+        "actions": [
+          "Independent contextfree undergraduate simulation restatednewsteps andcomputedallrequested fractions; no blockers",
+          "Explicitly conditioned four-variable independence on the selectedmodel,not unconditional mixture",
+          "Explained measurable as requiringdecisionprobabilities to be defined",
+          "Confirmed importedtime-only lemma explicitscope and allnewChebyshev steps self-contained"
+        ],
+        "based_on": "notes/reader-first-feedback.json"
+      }
+    ],
+    "scope": "Onlytext/actualPNG,contextfreeundergraduate AI simulation,not humanexpert/correctness/noveltycertification"
+  },
+  "local_links_checked": 1,
+  "mathematical_modules": 4,
+  "named_declarations": 65,
+  "new_theorems": 53,
+  "modules": {
+    "ActualBranchMoments": {
+      "source_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+      "log_sha256": "9d43a8733865a5df59a8706e8b241437a9ff259ed76a813b00c7def9e2be8967",
+      "record_sha256": "835db906e24d6d40d25899dc37e824cbb31adea1070f3d87349fe7f1b5be4eca",
+      "review_sha256": "04f15bc47433fd946129161a71c30d328aa0ffbea8d305b5362da68d71d74437",
+      "named": 28,
+      "theorems": 24,
+      "olean_sha256": "7cd89fb22792926bc650d05b391d837eda3c80a196affb1d8aa8b35d823cdb1d"
+    },
+    "BranchThresholdTesting": {
+      "source_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+      "log_sha256": "ce7ac7575ba47066a133efd84511ecc1f7506276bd351654e5589fefcd560994",
+      "record_sha256": "3078b1033c4218b45873be0c147a6da54a7488c4d7e681a940b651402ba4c9bb",
+      "review_sha256": "24209f67675ef26a126d2a5506025118c1794cc83dbcf37db44903d75edf3fd4",
+      "named": 22,
+      "theorems": 18,
+      "olean_sha256": "96b1aba0c169ce239ea2cbe0e8f0e71faecda743edac2d00055fe7a3213b832a"
+    },
+    "ObservationMaps": {
+      "source_sha256": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+      "log_sha256": "eb71146c71928e04de5802c4b6bf10358f418da699271fa7172b8605d4a1df71",
+      "record_sha256": "5b1f9f95b76f8512ad0a4a99276d95985fb72d5fc88c1b33cde74f70f108d2d7",
+      "review_sha256": "985ab32dde91841e5fa76cb8433963b2fd63df7577b1ebcc211a2f451598c352",
+      "named": 8,
+      "theorems": 6,
+      "olean_sha256": "6e92b3167ed296c5e6a7908c1533c3a49b7bb13adab12e9b6e03865fb22bb820"
+    },
+    "ObservationContrast": {
+      "source_sha256": "41f71bb570d1225f2b7d314444a02bdd9b7ac9889ab140a7087c48e468287f28",
+      "log_sha256": "6781f003cf733928a65b36681eac11b2dee480ec6cfb13b70853736f7cf31997",
+      "record_sha256": "7a336ff72751eee6567f5d4af1fc8e8fe6fcff2c587d23ed48056ebf112ea286",
+      "review_sha256": "0a23176bf3d23fab6d5063788a8d98203cdef583aa42bfdc9f061880e94a766a",
+      "named": 7,
+      "theorems": 5,
+      "olean_sha256": "d15c8aef807a0d30b529e93f7aae9cbd17fe305610d2eb9389b1eb8fb58eb194"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "91e137981c3a3a2ccea40d8b1fbf1a13eeec270877d64b502bcb508d4d40ef38",
+    "log_sha256": "d93d88f472334b57047e4ff1e772f20c3f477c674160d57a60849de08af3b723",
+    "actual_prints": 65,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "original_formal_sources_unchanged": 267,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "prior_accepted_artifacts_unchanged": true,
+  "artifact_sha256": {
+    "audit-selection.json": "9558ba896be587ea566925fd5cec5d51051d515d564553c3231dd04c622fa3c8",
+    "audit_module.py": "a496d01aa3eabe6c61a3b20aaa7330919986b7ea7b4fdbb8591ab1dc2d979459",
+    "draw_figures.py": "a5b56433da9e29777d294351c8c82014c377d08782d0ed2b0a8ab23d31a517fb",
+    "evidence/ActualBranchMoments-attempt1.json": "69b3776f943d3bdcdf485f3f6661a2037aff31d6dccfb977872a2e19f0536a05",
+    "evidence/ActualBranchMoments-attempt1.log": "72c0fc5c59023945db4fe5fc50482c64181bcb636683e03be66fd4ab1f0cbf16",
+    "evidence/ActualBranchMoments-attempt1.source.lean": "ea0ed81d153340e6ed16097f03a489f7639be6912fd8c61907ff559999f239c8",
+    "evidence/ActualBranchMoments-attempt2.json": "835db906e24d6d40d25899dc37e824cbb31adea1070f3d87349fe7f1b5be4eca",
+    "evidence/ActualBranchMoments-attempt2.log": "9d43a8733865a5df59a8706e8b241437a9ff259ed76a813b00c7def9e2be8967",
+    "evidence/ActualBranchMoments-attempt2.source.lean": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+    "evidence/BranchThresholdTesting-attempt1.json": "f9dcc92b1d550e388d73d2f2752fddb417e1a102dcf4d4ea4a79600456bf8e07",
+    "evidence/BranchThresholdTesting-attempt1.log": "bfcfc7a83f6a3da2c4c6b9c93f35da27cc5e4af5d0e80fdd40e0a4d01f26cb4d",
+    "evidence/BranchThresholdTesting-attempt1.source.lean": "cfaaba06b1a9bb3d6a6a44bfa020b480c2196a7f0809760d8e0bfa7cfe54bbcb",
+    "evidence/BranchThresholdTesting-attempt2.json": "3078b1033c4218b45873be0c147a6da54a7488c4d7e681a940b651402ba4c9bb",
+    "evidence/BranchThresholdTesting-attempt2.log": "ce7ac7575ba47066a133efd84511ecc1f7506276bd351654e5589fefcd560994",
+    "evidence/BranchThresholdTesting-attempt2.source.lean": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+    "evidence/ObservationContrast-attempt1.json": "7a336ff72751eee6567f5d4af1fc8e8fe6fcff2c587d23ed48056ebf112ea286",
+    "evidence/ObservationContrast-attempt1.log": "6781f003cf733928a65b36681eac11b2dee480ec6cfb13b70853736f7cf31997",
+    "evidence/ObservationContrast-attempt1.source.lean": "41f71bb570d1225f2b7d314444a02bdd9b7ac9889ab140a7087c48e468287f28",
+    "evidence/ObservationMaps-attempt1.json": "5b1f9f95b76f8512ad0a4a99276d95985fb72d5fc88c1b33cde74f70f108d2d7",
+    "evidence/ObservationMaps-attempt1.log": "eb71146c71928e04de5802c4b6bf10358f418da699271fa7172b8605d4a1df71",
+    "evidence/ObservationMaps-attempt1.source.lean": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+    "evidence/Phase12Audit-attempt1.json": "eeccf4e12b71fd9c937113493900ce0882c991d2775cebeb3a371ac5b620b584",
+    "evidence/Phase12Audit-attempt1.log": "d93d88f472334b57047e4ff1e772f20c3f477c674160d57a60849de08af3b723",
+    "evidence/Phase12Audit-attempt1.source.lean": "91e137981c3a3a2ccea40d8b1fbf1a13eeec270877d64b502bcb508d4d40ef38",
+    "figure-data.json": "c8bf40b271c43064624189d611bd26f25b5ae9af2de465eec368bc830caa640b",
+    "images/observation-choice.png": "fbe90c5aee7666344f62d75c8f08c6856458a3317b78d842aeadc4f0817f2cd4",
+    "lean/ActualBranchMoments.lean": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+    "lean/BranchThresholdTesting.lean": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+    "lean/ObservationContrast.lean": "41f71bb570d1225f2b7d314444a02bdd9b7ac9889ab140a7087c48e468287f28",
+    "lean/ObservationMaps.lean": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+    "lean/Phase12Audit.lean": "91e137981c3a3a2ccea40d8b1fbf1a13eeec270877d64b502bcb508d4d40ef38",
+    "notes/actual-branch-moments-independent-review.json": "5e073dea022cbee0029c115558a47fa73bfad0095635b887c3f57c2e9f91d264",
+    "notes/actual-branch-moments-root-review.json": "04f15bc47433fd946129161a71c30d328aa0ffbea8d305b5362da68d71d74437",
+    "notes/branch-threshold-independent-review.json": "24209f67675ef26a126d2a5506025118c1794cc83dbcf37db44903d75edf3fd4",
+    "notes/branch-threshold-testing-validation.json": "35fb20241eea2e150308141b117571ee3c76922171f4e6d0c5db11c0837d0d23",
+    "notes/editing-passes.json": "c00db1d5284cd83b306d7e062c9e2ee934a5daf599672115827732263e4f964d",
+    "notes/observation-contrast-independent-review.json": "0a23176bf3d23fab6d5063788a8d98203cdef583aa42bfdc9f061880e94a766a",
+    "notes/observation-maps-independent-review-binding.json": "985ab32dde91841e5fa76cb8433963b2fd63df7577b1ebcc211a2f451598c352",
+    "notes/observation-maps-independent-review.json": "7f51be461c762b5aee88ab6f61de3893e2dd36aaed5085c10c27fa9f1fd8a959",
+    "notes/phase11-freeze.json": "7de29dcc7e83410b4b89667589a33d58e6b7ff662f0933fa0b532aee1bdcd2f1",
+    "notes/reader-final-reread.json": "bc02cf0d8e0e735f055bbefa7545569ac86fbc8c4d7c1629abd4b5be72bb1d82",
+    "notes/reader-first-feedback.json": "26638538915401e8745165553f278ecdc43e683ad5c2a455966ac3bd901a01ed",
+    "reader-review.json": "3b87540939fa07c5ded725c646adde959f871fa9cbeef2788abfa8ef4ff64f3d",
+    "README.md": "e147b0cb9760e9f5bf8e8ca2c1d24ffba5c6d4f2abf7b09926db3083e2536451",
+    "RUN_STATE.json": "1076e96a0f6c1ce570a3ff8a110f8720a41c67afe6cea0859ee88cf229bcf5d1",
+    "source-review-binding.json": "3e1e50ba8edb0ca95156fa446a910c16d4812298c892be0dfdcbdf184e2b8c64",
+    "validate_phase12.py": "1352c4aeca9be626a37f0fb52843b35797b4ca4a9b3a6a76946fc974338f0108"
+  },
+  "scope": "SameactualoriginaljointIID low/high laws; count actualJ indicators withprovedmoments, standardChebyshev yields specifiedthresholdrule lowerror<=32/n,higherror<=36/n,success>=1-34/n forpositive n. Actualjoint totalsmap equalsphase11 completionIID. n100eps.01 branchsuccess>=33/50 vs everymeasurabledeterministic time-onlytest<=353/606, strictadvantage>=587/7575. No optimality,randomizedtest,adaptive/engineeringcost or originalautomaton claim."
+}

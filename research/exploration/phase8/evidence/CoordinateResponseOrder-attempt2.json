@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-27T19:37:21.246826+08:00",
+  "module": "CoordinateResponseOrder",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "01f2885fc03d3f344dbf22d6deab813d968b4f2760fed452a6b532bc3b05457e",
+  "source_unchanged_during_build": true,
+  "log_sha256": "e1ec0effc26b0973e91f5f5eb07399e929a8e2d880548ebf91df56f9bd83715d",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase8\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase8\\build\\CoordinateResponseOrder.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase8\\lean\\CoordinateResponseOrder.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.TankResponse.gap02_kernel",
+    "MathExploration.TankResponse.x0_sub_x2_nonneg",
+    "MathExploration.TankResponse.x0_mono_a",
+    "MathExploration.TankResponse.delta1_a_kernel",
+    "MathExploration.TankResponse.x1_mono_a",
+    "MathExploration.TankResponse.delta2_a_kernel",
+    "MathExploration.TankResponse.x2_mono_a",
+    "MathExploration.TankResponse.delta1_b_kernel",
+    "MathExploration.TankResponse.x1_mono_b",
+    "MathExploration.TankResponse.delta2_b_kernel",
+    "MathExploration.TankResponse.x2_mono_b",
+    "MathExploration.TankResponse.delta2_e_kernel",
+    "MathExploration.TankResponse.x2_mono_e"
+  ],
+  "expected_prints": [
+    "MathExploration.TankResponse.gap02_kernel",
+    "MathExploration.TankResponse.x0_sub_x2_nonneg",
+    "MathExploration.TankResponse.x0_mono_a",
+    "MathExploration.TankResponse.delta1_a_kernel",
+    "MathExploration.TankResponse.x1_mono_a",
+    "MathExploration.TankResponse.delta2_a_kernel",
+    "MathExploration.TankResponse.x2_mono_a",
+    "MathExploration.TankResponse.delta1_b_kernel",
+    "MathExploration.TankResponse.x1_mono_b",
+    "MathExploration.TankResponse.delta2_b_kernel",
+    "MathExploration.TankResponse.x2_mono_b",
+    "MathExploration.TankResponse.delta2_e_kernel",
+    "MathExploration.TankResponse.x2_mono_e"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "800f15545d7475d2d81a3b2358720d93981caa5e1257a5a2a6ceadde3404c61a"
+}

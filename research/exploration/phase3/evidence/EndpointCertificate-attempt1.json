@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-27T06:21:01.722100+08:00",
+  "module": "EndpointCertificate",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "a96b1a398d7e6a2fbea7cb260acf02bdb10efd1db87bbad3c8c14328c163e9bd",
+  "log_sha256": "5a82a7379c2d1ad5da288ca0803c351378f64fd8ce5616dd0a761a7d59089339",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\build\\EndpointCertificate.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\lean\\EndpointCertificate.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.EndpointCertificate.outletValues",
+    "MathExploration.EndpointCertificate.greatest_outlet",
+    "MathExploration.EndpointCertificate.q_at_checkTime",
+    "MathExploration.EndpointCertificate.endpoint_at_checkTime",
+    "MathExploration.EndpointCertificate.exact_maximum_at_checkTime",
+    "MathExploration.EndpointCertificate.every_outlet_at_checkTime_bound"
+  ],
+  "expected_prints": [
+    "MathExploration.EndpointCertificate.outletValues",
+    "MathExploration.EndpointCertificate.greatest_outlet",
+    "MathExploration.EndpointCertificate.q_at_checkTime",
+    "MathExploration.EndpointCertificate.endpoint_at_checkTime",
+    "MathExploration.EndpointCertificate.exact_maximum_at_checkTime",
+    "MathExploration.EndpointCertificate.every_outlet_at_checkTime_bound"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "bba010cab76794fff8eba5d16ac6f1fee1fd697df67f6d75fa54b1a198c6afa2"
+}

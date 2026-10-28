@@ -1,0 +1,110 @@
+{
+  "reviewer": "/root/phase5_undergraduate_reader",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "scope_limit": "Context-free simulated mathematics undergraduate; read only README and actually viewed both PNGs. No sources/audits/notes/links used. Neither human testing, expert review, mathematical correctness nor novelty certification.",
+  "first_read": {
+    "reviewer": "/root/phase5_undergraduate_reader",
+    "type": "context-free undergraduate reader simulation only",
+    "status": "pass_with_two_optional_precision_edits",
+    "unresolved_blockers": [],
+    "reviewed_file_sha256": {
+      "README.md": "8cfeef29b98368951841486c742b156908d48c33cb62b16a143a29a034c9cda1",
+      "images/waiting-route.png": "7f9c9f72efc7ea4c31707eba1f31e9cbe950a1989df2f8226395206500bcb18e",
+      "images/cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5"
+    },
+    "actual_images_viewed": true,
+    "retelling": [
+      "S=Wc+Wa+J Wb, independently draw all four, unused Wb when J=0.",
+      "Condition on first wait u, then s=t-u to obtain real probability convolution; branching weights e/c,f/c times c become e,f.",
+      "Integrating factors successively identify F0=x0,F1=x1,F=x2; no target equality assumed.",
+      "General mean/law are formalized for all allowed parameters, actual all-time CDF equality only for the two specific examples; not a new original-automaton formula."
+    ],
+    "worked_examples": {
+      "means": [
+        "2/5+(1/5)*2+1=9/5",
+        "1/3+(1/3)*2+1=2"
+      ],
+      "probabilities": [
+        "1-1/4-1/4+1/64=33/64",
+        "1-1/8-2/5+3/640=307/640"
+      ],
+      "difference": "33/64-307/640=23/640=0.0359375, 3.59375 percentage points"
+    },
+    "feedback": [
+      {
+        "quote": "等待超过t的概率是e^{-kt}",
+        "category": "symbol ambiguity",
+        "blocking": false,
+        "issue": "e is both a rate parameter and natural exponent base.",
+        "change": "Use exp consistently for the natural exponential."
+      },
+      {
+        "quote": "平均绕路等待",
+        "category": "figure wording",
+        "blocking": false,
+        "issue": "Table shows unconditional p*2 contribution, while conditional wait is2.",
+        "change": "Rename to 绕路对均值的贡献."
+      }
+    ],
+    "scope_limit": "Read only README and two actual PNGs, no source/audit/notes/links; not human testing, expert review, correctness or novelty certification."
+  },
+  "final_reread": {
+    "status": "pass",
+    "unresolved_blockers": [],
+    "actual_images_viewed": true,
+    "changes_confirmed": [
+      "All natural exponentials consistently use exp, avoiding rate-parameter e ambiguity.",
+      "Figure1 table now labels unconditional detour contribution and preserves conditional wait2."
+    ],
+    "worked_examples": {
+      "mean_half": "2/5+(1/5)*2+1=9/5=1.8",
+      "mean_one": "1/3+(1/3)*2+1=2",
+      "low_probability": "1-1/4-1/4+1/64=33/64",
+      "high_probability": "1-1/8-2/5+3/640=307/640",
+      "difference": "23/640=3.59375 percentage points"
+    },
+    "scope_confirmed": [
+      "F0=x0,F1=x1,F=x2 via actual independent waiting integrals and integrating factors.",
+      "All-time machine CDF identification is only two parameter examples; general actual-law mean separate.",
+      "No physical reversed water flow or new original-automaton mean formula; mean ordering alone not CDF order."
+    ]
+  },
+  "reviewed_file_sha256": {
+    "README.md": "fdc11e208ec2ed3b6a1ef788ae9803a88fa00e254c65848efecb3ec27bed72f9",
+    "images/waiting-route.png": "dfa33c4a02fb8369033425b6e75935d3ed20579be91a5ce3bbf52a20f1a7a927",
+    "images/cdf-response.png": "f6dcbb3eba1d7619cb742e5fbb2410a65b6e3f819058026f17ec6587d9f75cd5"
+  },
+  "editing_passes": [
+    {
+      "pass": 1,
+      "focus": "Concrete question and evidence boundary",
+      "sha256": "8d0ed79d92d4c56afe0728d03c580583a0b00ecc8ba30736080602d2e2d4ddb0",
+      "actions": [
+        "Route and worked means precede calculus.",
+        "General mean separated from two-example formalCDF identity.",
+        "Reverse dependency path explicitly distinguished from physical water transport.",
+        "Classical background and original automaton scope explicit."
+      ]
+    },
+    {
+      "pass": 2,
+      "focus": "Figure and inference clarity",
+      "sha256": "7a6fe992816ad6ab3b92b3f135a58dceb2344e7196c5a727241631d5858fa261",
+      "actions": [
+        "Actually viewed both PNGs. Moved curve legend outside plotting area to uncover trajectories.",
+        "Clarified t-s as a change of integration variable, not an imposed waiting constraint."
+      ]
+    },
+    {
+      "pass": 3,
+      "focus": "First independent reader feedback",
+      "sha256": "eeba81f8d599ceee849c897cc0db644dff0fc50e2412f35b627b9082fa3e2670",
+      "actions": [
+        "Replaced all natural exponent bases e with exp to avoid confusing the rate parameter e.",
+        "Changed route table heading from average detour wait to detour contribution to the mean, distinguishing unconditional contribution from conditional wait.",
+        "Preserved all exact values and probability-vs-mean and formal-scope boundaries."
+      ]
+    }
+  ]
+}

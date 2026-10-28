@@ -1,0 +1,29 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialMean.lean:28:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫⁻ (x : ℝ), gammaPDF ?m.31 r x
+in the target expression
+  ∫⁻ (x : ℝ), ENNReal.ofReal (gammaPDFReal 2 r x) ∂volume ≠ ⊤
+
+r : ℝ
+hr : 0 < r
+⊢ ∫⁻ (x : ℝ), ENNReal.ofReal (gammaPDFReal 2 r x) ∂volume ≠ ⊤
+D:\MyWorks\Math\research\exploration\phase5\lean\ExponentialMean.lean:33:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∫ (a : ℝ), (ENNReal.ofReal (gammaPDFReal 2 r a)).toReal ∂?m.38
+in the target expression
+  ∫ (x : ℝ), (gammaPDF 2 r x).toReal = 1
+
+r : ℝ
+hr : 0 < r
+⊢ ∫ (x : ℝ), (gammaPDF 2 r x).toReal = 1
+'MathExploration.ExponentialMean.weighted_density_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integrable' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialMean.gamma_density_integral' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ExponentialMean.integrable_id' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'MathExploration.ExponentialMean.integral_id' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

@@ -1,0 +1,152 @@
+{
+  "validated_at": "2026-10-28T08:08:31.694745+08:00",
+  "verdict": "PASS",
+  "author_agent": "/root/phase11_actual_testing",
+  "checks": {
+    "all_named_declarations_printed": true,
+    "no_custom_axiom_or_proof_escape": true,
+    "actual_pi_coordinate_laws": true,
+    "individual_actual_trust_zero_cache": true,
+    "direct_dependencies_match_current_accepted_audits": true,
+    "exact_linear_success_arithmetic": true,
+    "exact_linear_error_arithmetic": true
+  },
+  "actual_module": {
+    "module": "ActualCompletionTesting",
+    "phase": "phase11",
+    "attempt": "attempt1",
+    "source": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean\\ActualCompletionTesting.lean",
+    "source_sha256": "327497cb0b765c30c5aa81caecd8fe1d21e9dce0b31425418528d79155e18393",
+    "snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\ActualCompletionTesting-attempt1.source.lean",
+    "snapshot_sha256": "327497cb0b765c30c5aa81caecd8fe1d21e9dce0b31425418528d79155e18393",
+    "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\build\\ActualCompletionTesting.olean",
+    "cache_sha256": "ed0378a3bb76f17089991a2c13ff4b51ff79fe7089f79a64568305ad68c6ccc2",
+    "log": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\ActualCompletionTesting-attempt1.log",
+    "log_sha256": "d4af39bcf89a16f1194ec60c7c4b8afb7dea8b5da53265fdff0f884b1fe237cb",
+    "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\ActualCompletionTesting-attempt1.json",
+    "audit_metadata_sha256": "1fd376440d5d4ce7090e00fe4d565cff6edaee1420e5db57736c1cd9bc384704",
+    "trust_level": 0,
+    "checks_passed": true,
+    "named_declaration_count": 33,
+    "axioms_seen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "current_files_match_accepted_audit": true
+  },
+  "direct_dependencies": [
+    {
+      "module": "ActualCompletionEventBound",
+      "phase": "phase10",
+      "attempt": "attempt2",
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase10\\lean\\ActualCompletionEventBound.lean",
+      "source_sha256": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+      "snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase10\\evidence\\ActualCompletionEventBound-attempt2.source.lean",
+      "snapshot_sha256": "a380ef802b1f5266e8d5bf0356ae86fd0b3a8b7613185cc95d9aefaeba573300",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase10\\build\\ActualCompletionEventBound.olean",
+      "cache_sha256": "01d797598305432868aa4d8c173031f630ba7b11d07d5d5cfc13097524d932b3",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase10\\evidence\\ActualCompletionEventBound-attempt2.log",
+      "log_sha256": "b3395539c7e80f4eb5598a038d763c6acb851f26b8837f9f30e9969adc9c462f",
+      "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase10\\evidence\\ActualCompletionEventBound-attempt2.json",
+      "audit_metadata_sha256": "5d4c4778d88db2bbd4ea283827be0556c5b5af12cc336675ea21c20275fe38f8",
+      "trust_level": 0,
+      "checks_passed": true,
+      "named_declaration_count": 9,
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "current_files_match_accepted_audit": true
+    },
+    {
+      "module": "CommonIIDBound",
+      "phase": "phase11",
+      "attempt": "attempt1",
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean\\CommonIIDBound.lean",
+      "source_sha256": "b76d9e49be45b6740dc2393c85c98fd2a4f5ba526dbb4a28d1437dc42836eaaa",
+      "snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\CommonIIDBound-attempt1.source.lean",
+      "snapshot_sha256": "b76d9e49be45b6740dc2393c85c98fd2a4f5ba526dbb4a28d1437dc42836eaaa",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\build\\CommonIIDBound.olean",
+      "cache_sha256": "6831b1f2e93129ddc834db3f9a51c336e56c605f03c9d798ce841df6b4defd5c",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\CommonIIDBound-attempt1.log",
+      "log_sha256": "b7bc0d41efc8e060675721caff1d50803a51dafd6cf371460f7ff1e730cfe4bc",
+      "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\CommonIIDBound-attempt1.json",
+      "audit_metadata_sha256": "df810674856833e8200a2f433102ea92491beac91fc2408a7c40d414ccaea11f",
+      "trust_level": 0,
+      "checks_passed": true,
+      "named_declaration_count": 13,
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "current_files_match_accepted_audit": true
+    },
+    {
+      "module": "BinaryTestingBound",
+      "phase": "phase11",
+      "attempt": "attempt1",
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean\\BinaryTestingBound.lean",
+      "source_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+      "snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.source.lean",
+      "snapshot_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\build\\BinaryTestingBound.olean",
+      "cache_sha256": "17053f84b44b6d2393ce02d48f7be8b0dccffd29b30c8a0d261eeb6b7921126d",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.log",
+      "log_sha256": "4535d6b3e0bc57b6673ffc0be7eb4f43198678dad39a32dc8ae8576af54a26b8",
+      "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.json",
+      "audit_metadata_sha256": "1681bc6df18015934b39a8bf9f9a9769c75eb4021b1041fb480137c2a3c13da9",
+      "trust_level": 0,
+      "checks_passed": true,
+      "named_declaration_count": 5,
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "current_files_match_accepted_audit": true
+    }
+  ],
+  "dependency_binding_scope": "Current accepted source/snapshot/log/cache files at post-build validation; no independent claim that the compiler itself recorded dependency hashes.",
+  "common_iid_non_author_review": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\notes\\common-iid-independent-review.json",
+  "common_iid_non_author_review_sha256": "2cbcdf8413fff5361bec8447d68b8ff867792a16260adb110018dd7204379986",
+  "formal_scope": {
+    "sample_space": "Fin n -> Real",
+    "sample_law": "Actual completion-time marginal product Measure.pi; probability and coordinate marginal/rectangle factorization are proved.",
+    "test": "Any measurable event A on the completion-time sample, with A selecting high and equal model priors.",
+    "hypotheses": "eps > 0, n : Nat, A measurable; no event-gap or success-bound hypothesis.",
+    "all_test_event_gap": "abs(P_high(A)-P_low(A)) <= 1-c^n <= n*delta",
+    "c": "5/6+1/(6*(1+eps))",
+    "delta": "eps/(6*(1+eps))",
+    "success": "(P_high(A)+P_low(complement A))/2",
+    "error": "(P_low(A)+P_high(complement A))/2",
+    "success_bounds": [
+      "1-c^n/2",
+      "1/2+n*delta/2"
+    ],
+    "error_bounds": [
+      "c^n/2",
+      "1/2-n*delta/2"
+    ],
+    "not_claimed": [
+      "Optimality of the bounds",
+      "Arbitrary hidden observations",
+      "An extra randomization coordinate or randomized-test extension",
+      "A new human-readable exposition or undergraduate reader acceptance"
+    ]
+  },
+  "one_hundred_samples_eps_one_hundredth": {
+    "linear_success_upper_exact": "353/606",
+    "linear_error_lower_exact": "253/606",
+    "power_success_upper_exact": "1-(605/606)^100/2",
+    "power_error_lower_exact": "(605/606)^100/2",
+    "linear_success_upper_decimal": 0.5825082508250825,
+    "linear_error_lower_decimal": 0.4174917491749175,
+    "power_success_upper_decimal": 0.5761179237169659,
+    "power_error_lower_decimal": 0.4238820762830341,
+    "exact_values_formalized": true
+  },
+  "warnings": "Successful log retains existing batteries repository-local-change warning and nonblocking Lean letI style warnings."
+}

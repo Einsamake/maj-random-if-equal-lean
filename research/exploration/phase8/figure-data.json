@@ -1,0 +1,29 @@
+{
+  "images": {
+    "rate-box-rule.png": "ae88ba390ce62f4720d8f14f16325aee203c4f1122668e8e272102d93175f632",
+    "two-routes.png": "ef178348e80514af982cc708dcfa7846a40a0ad88d7dda338bb9e7f6810dbfa8"
+  },
+  "type": "Exact decision diagram and probability-route diagram; no numerical sampling/curve evidence",
+  "domain": "a,b>0,e,f>=0,e+f>0; all rates fixed; independent rate intervals",
+  "examples": [
+    {
+      "corner": [
+        2,
+        3,
+        1,
+        2
+      ],
+      "mean": "19/18"
+    },
+    {
+      "corner": [
+        "2",
+        "1",
+        "3",
+        "1/2"
+      ],
+      "mean": "13/14"
+    }
+  ],
+  "arithmetic_checked_with": "fractions.Fraction"
+}

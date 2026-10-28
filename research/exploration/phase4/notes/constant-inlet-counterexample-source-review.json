@@ -1,0 +1,314 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "reviewed_utc": "2026-10-26T22:33:59.6873372Z",
+  "reviewer": "/root/strengthen_original",
+  "reviewer_role": "Independent reader; did not author ConstantInletCounterexample",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/lean/ConstantInletCounterexample.lean",
+  "source_sha256": "bf3c772e8849e3224f2da39e55ebcc18cae912636c8c2b647d0f03c684650e5f",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "mathematical_checks": [
+    {
+      "finding": "The tuples(1,1/2,2,1/2) and(1,1/2,2,1) have all four rates strictly positive. Their matrices are[[-1,0,0],[1/2,-1/2,0],[2,1/2,-5/2]] and[[-1,0,0],[1/2,-1/2,0],[2,1,-3]]. Both are Metzler; structural zero matrix entries are not claimed strictly positive.",
+      "topic": "strictly_positive_parameters",
+      "lines": "11-36"
+    },
+    {
+      "finding": "r_prime=-r/2. Shared x0=1-r^2 and x1=(1-r)^2 satisfy x0_prime=1-x0 and x1_prime=(x0-x1)/2 with the same literal unit inlet. Low outlet derivative r^2+r/4-5*r^5/4 equals2*(x0-x2)+(x1-x2)/2. High outlet derivative r^2/2+2*r/5-9*r^6/10 equals2*(x0-x2)+(x1-x2). Thus changing f also correctly changes the matching diagonal loss.",
+      "topic": "actual_common_input_ODE",
+      "lines": "38-87"
+    },
+    {
+      "finding": "r(0)=1 makes every component zero in both trajectories. Actual component derivatives hold at every real time; continuity on the nonnegative half-line follows. Final packets retain the actual matrix, common unit input and shared zero state. No general existence or uniqueness premise is substituted for these explicit solutions.",
+      "topic": "true_trajectories_and_zero_initial_state",
+      "lines": "89-103,138-159"
+    },
+    {
+      "finding": "T=2*log2>0 gives r(T)=1/2. Low state is(3/4,1/4,33/64) and high state is(3/4,1/4,307/640). Outlet difference is330/640-307/640=23/640>0 while f increases from1/2 to1.",
+      "topic": "exact_time_and_values",
+      "lines": "105-132"
+    },
+    {
+      "finding": "The middle value1/4 is below the high-f outlet307/640, so Y1-Y2=-147/640. Along the high-f trajectory the high-minus-low drift residual is(fHigh-fLow)*(Y1-Y2)=-147/1280<0 at T. This is precisely why the ordered-gap upper-barrier argument does not apply.",
+      "topic": "failed_phase3_gap_condition",
+      "lines": "134-136"
+    }
+  ],
+  "independent_arithmetic": {
+    "role": "Exact rational diagnostics, separate from the recorded kernel run.",
+    "middle": "1/4",
+    "high_minus_middle": "147/640",
+    "difference": "23/640=0.0359375",
+    "high_over_low_barrier_residual": "-147/1280",
+    "high": "307/640=0.4796875",
+    "low": "33/64=0.515625"
+  },
+  "scope_limits": [
+    "The counterexample refutes unconditional claims that increasing f, or choosing its upper endpoint with the other rates fixed, must give the larger outlet under constant unit input.",
+    "It does not show an interior point exceeding both endpoints. It therefore does not refute endpoint-only search in general; that stronger conclusion belonged to the earlier three-value decaying-input example.",
+    "One parameter pair at one time is compared. No global monotonicity or antitonicity for the entire f-family, derivative-in-f sign theorem, or global optimizer is established.",
+    "These tuples are outside the original five-percent admissible box. They are not the all-upper tuple of the phase3 proportional-cap theorem. Being contained in a larger cap box does not contradict that theorem, whose attaining tuple is different.",
+    "The phase3 theorem requires ordered barrier gaps; the present model has b<e and a middle node cleaner than the outlet. Positivity alone does not restore the missing gap sign.",
+    "The result concerns the displayed fixed rate-coefficient ODE family, not validation of one fixed-volume hardware layout, an experiment, arbitrary-input existence, or general ODE uniqueness.",
+    "This is independent source/evidence review, not a kernel rerun, human reader test, expert review or novelty certification."
+  ],
+  "kernel_evidence": {
+    "log": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/evidence/ConstantInletCounterexample-final.log",
+    "olean_sha256": "3b2a7bbb20f4f55aa05f0ee32719bf2498e27f536380ddb3ea17a5d9f852f2bb",
+    "reviewer_reran_kernel": false,
+    "declarations_prints_outputs_match": true,
+    "olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/build/ConstantInletCounterexample.olean",
+    "independent_binding_passed": true,
+    "actual_theorem_count": 23,
+    "warning": "Actual final log has the batteries local-checkout warning, with no new Lean source warning or error. No pristine-dependency claim is made.",
+    "log_sha256": "59ad8f74cfae5eb54932cf6f6477e0cb206170a9d3dd9412b4ab703e257f20d6",
+    "record_sha256": "7edb878b4c05f89f2f17a1cae1f20851b620b16b9372b6b55a8a40cf2e057a5f",
+    "per_declaration_axioms_match_record": true,
+    "actual_declaration_count": 27,
+    "unexpected_axioms": [],
+    "actual_exit_code": 0,
+    "log_errors_or_sorryAx": 0,
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase4/evidence/ConstantInletCounterexample-final.json",
+    "actual_axioms": [
+      "Classical.choice",
+      "propext",
+      "Quot.sound"
+    ],
+    "actual_axiom_output_count": 27,
+    "source_unproved_tokens": 0,
+    "actual_command_contains_trust_zero": true,
+    "declaration_axioms": [
+      {
+        "name": "MathExploration.ConstantInletCounterexample.r",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.lowState",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.highState",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.low_parameters_strictly_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.high_parameters_strictly_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.low_matrix_metzler",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.high_matrix_metzler",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.r_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.r_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.same_upstream",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.lowState_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.highState_hasDerivAt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.lowState_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.highState_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.lowState_continuousOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.highState_continuousOn",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.checkTime_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.r_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.low_outlet_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.high_outlet_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.middle_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.outlet_difference_at_checkTime",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.larger_link_smaller_outlet",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.middle_cleaner_than_high_outlet",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.lowState_actual_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "MathExploration.ConstantInletCounterexample.highState_actual_solution",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "actual_print_count": 27
+  },
+  "dependency_binding": {
+    "resolution": "No RobustTankCertificate.olean is present in the first phase4/build path; the accepted phase3/build cache is present and hash-matched.",
+    "frozen_ScaledEndpointEnvelope_source_sha256": "e306112639ef772202dc9a05a35f61af69e76eba95a2350f6f6c6e7cbee9d2e1",
+    "resolved_olean": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase3/build/RobustTankCertificate.olean",
+    "source_sha256": "00768256f2e4b0544b4e3ad44559f1a12a6c0f1cf7fbb0f973699d4f2ab96c58",
+    "source_and_olean_match_record": true,
+    "record": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase3\\evidence\\RobustTankCertificate-dependency-cache.json",
+    "frozen_EndpointTank_source_sha256": "39fa9f7d56fcff58c0bd6fb687366fc3f4ac1096bddf1697b11ee4b1ddb39db4",
+    "record_sha256": "73bc55f6062bab1ef07c12fbf5dbc4fd75b442afeb16a308086625d80e9b1af2",
+    "olean_sha256": "99fbdb820707db44c9a6e7941c445559eacfb68f97414ea56117289f7a028607",
+    "frozen_source": "D:\\MyWorks\\Math\\research\\exploration\\phase2\\lean\\RobustTankCertificate.lean",
+    "phase3_pins_match_final_record": true
+  },
+  "mutation_scope": "Only this new phase4/notes/constant-inlet-counterexample-source-review.json was written. No Lean source, previous review, cache, formal source or sealed package was edited; no agent was spawned."
+}

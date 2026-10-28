@@ -1,0 +1,63 @@
+{
+  "artifact_kind": "independent_machine_source_review",
+  "reviewer": "network_transfer subagent",
+  "date": "2026-10-27",
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/RobustNetworkBounds.lean",
+  "source_sha256_at_review": "3d2ed3289bf003e3c4a8c278b56c29a79a2428c56bd2b1f1c798e848cc46779f",
+  "reviewed_line_range": [1,213],
+  "named_declarations_reviewed": 16,
+  "theorem_count": 11,
+  "source_modified_by_reviewer": false,
+  "compiler_run_by_reviewer": false,
+  "semantic_review_result": "No blocking mathematical or hypothesis mismatch found in the reviewed source snapshot.",
+  "build_binding_status": "pending_root_actual_pass_and_hash",
+  "build_binding": null,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "lines": [19,23],
+      "subject": "Matrix direction and arbitrary diagonal",
+      "finding": "linear B x i is sum_j B_ij*x_j. Metzler requires only off-diagonal entries B_ij>=0 for i!=j. The diagonal is unrestricted. row includes the diagonal; no row nonpositivity or stability hypothesis is assumed."
+    },
+    {
+      "lines": [26,51],
+      "subject": "Generator decomposition",
+      "finding": "offDiag removes only B_ii. The identity Bx_i=rate(offDiag B)x_i+row_i*x_i is correct because the diagonal difference B_ii*(x_i-x_i) vanishes. The row bound row_i<=sum_j|row_j| is valid for every finite matrix."
+    },
+    {
+      "lines": [73,108],
+      "subject": "Exponential transformation",
+      "finding": "With R=sum_i|row_i|, q=exp(-Rt)>0, z=q*c and d_i=R-row_i>=0, the displayed derivative is z'=rate(offDiag B)z-d*z-q*s. Both the negative exponential sign and leakage sign are correct. Nonnegative s remains nonnegative after multiplication by q. q(0)=1 transfers the initial sign; division by q>0 transfers z<=0 back to c<=0. The proof does not require a stable B or a physical conservation law."
+    },
+    {
+      "lines": [112,133],
+      "subject": "Differential inequality comparison",
+      "finding": "For c=x-y, the residual s=Bc-(dx-dy) is nonnegative by the explicit drift inequality. Its actual derivative is dx-dy=Bc-s. Continuity, positive-time actual derivatives and initial order are supplied, and the desired state order is derived rather than assumed. No positivity of x or y is needed for this theorem."
+    },
+    {
+      "lines": [135,150],
+      "subject": "Positivity of the actual solution",
+      "finding": "Comparison of zero against x uses the actual Metzler matrix M, actual nonnegative input f, and actual nonnegative initial x(0). The residual inequality is -Mx-f<=-Mx. Thus later uses of x>=0 are derived, not supplied as the target conclusion."
+    },
+    {
+      "lines": [154,173],
+      "subject": "Upper interval barrier",
+      "finding": "For actual x'=Mx+f and upper y'=Hy+g, x'-y'=H(x-y)+(M-H)x+f-g<=H(x-y). The entrywise matrix bound is multiplied only by the actual state x, whose nonnegativity follows from positive_solution. The actual M is Metzler; f>=0 and x(0)>=0 are explicit; f<=g and x(0)<=y(0) are explicit. H is Metzler, but need not be a physical or stable matrix."
+    },
+    {
+      "lines": [175,194],
+      "subject": "Lower interval barrier",
+      "finding": "For lower y'=Ly+g and actual x'=Mx+f, y'-x'=L(y-x)+(L-M)x+g-f<=L(y-x). This again uses actual x>=0, not lower-barrier y>=0. The lower input g and lower initial y(0) may be negative; the theorem still gives a valid lower bound. L is required to be Metzler, and the actual M/f/x(0) positivity conditions remain explicit."
+    }
+  ],
+  "nonblocking_scope_limits": [
+    "All matrices B, M, L and H are fixed in time. The source does not by itself certify arbitrary time-dependent matrices M(t).",
+    "The theorem concerns given continuous classical trajectories with actual derivatives at every positive time. It does not prove general ODE existence, uniqueness, or solutions for arbitrary measurable inputs.",
+    "A lower matrix bound with negative off-diagonal entries is not covered by interval_lower, which explicitly requires a Metzler lower matrix. The diagonal may have either sign.",
+    "The upper and lower interval matrices may combine independently chosen entry bounds that do not correspond to any physically attainable parameter choice. This is allowed for a conservative barrier, but the result does not identify an attained physical worst case.",
+    "A barrier matrix may have positive row sums or unstable modes. Its given trajectory remains a valid comparison barrier, although the bound can grow and become conservative.",
+    "The interval matrix argument depends on the actual state being nonnegative. It cannot be reused for signed states merely from entrywise matrix order.",
+    "The general comparison results and interval-matrix method are classical positive-system facts, not novelty certification."
+  ],
+  "reader_review_status": "This is a machine audit, not a human-facing exposition or undergraduate reader acceptance."
+}

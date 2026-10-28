@@ -1,0 +1,32 @@
+theorem solution_unique (a b e f : Real) (y0 y1 y2 : Real → Real)
+    (hz0 : y0 0=0) (hz1 : y1 0=0) (hz2 : y2 0=0)
+    (hd0 : ∀ t, HasDerivAt y0 (a*(1-y0 t)) t)
+    (hd1 : ∀ t, HasDerivAt y1 (b*(y0 t-y1 t)) t)
+    (hd2 : ∀ t, HasDerivAt y2 (e*(y0 t-y2 t)+f*(y1 t-y2 t)) t) :
+    y0=x0 a ∧ y1=x1 a b ∧ y2=x2 a b e f := by
+  have hy0 : y0=x0 a := by
+    funext t
+    have hy := ode_to_kernel a y0 (fun _ => a) continuous_const hz0
+      (by intro s; convert hd0 s using 1 <;> ring) t
+    have hx := ode_to_kernel a (x0 a) (fun _ => a) continuous_const (x0_zero a)
+      (by intro s; convert x0_hasDerivAt a s using 1 <;> ring) t
+    exact hy.trans hx.symm
+  have hy1 : y1=x1 a b := by
+    funext t
+    change y1 t=kernel b (fun s => b*x0 a s) t
+    apply ode_to_kernel b y1 (fun s => b*x0 a s)
+      ((x0_continuous a).const_mul b) hz1
+    intro s
+    convert hd1 s using 1
+    rw [hy0]
+    ring
+  have hy2 : y2=x2 a b e f := by
+    funext t
+    change y2 t=kernel (e+f) (fun s => e*x0 a s+f*x1 a b s) t
+    apply ode_to_kernel (e+f) y2 (fun s => e*x0 a s+f*x1 a b s)
+      (((x0_continuous a).const_mul e).add ((x1_continuous a b).const_mul f)) hz2
+    intro s
+    convert hd2 s using 1
+    rw [hy0,hy1]
+    ring
+  exact ⟨hy0,hy1,hy2⟩

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "blocking_findings": [],
+  "modules": {
+    "ParameterRecovery": {
+      "source_sha256": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+      "log_sha256": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+      "review_file": "notes/ParameterRecovery-review-attestation.json",
+      "review_sha256": "815e28b1b038c39fb99cb5f12158bb56d6b50d243cd1be7240eb136216df30b0"
+    },
+    "MeanRecoverySensitivity": {
+      "source_sha256": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+      "log_sha256": "4e1e17e09b181f8fd35fc50852ca4e21c25889b16d970fbbf915b3bbc5421690",
+      "review_file": "notes/MeanRecoverySensitivity-review-attestation.json",
+      "review_sha256": "7048d4bfc33f49c2ae02fcbdb6d4d8a0bd39504a579a533358f545e051018020"
+    },
+    "LawIdentifiability": {
+      "source_sha256": "77254c0755759041298a99d6ef9fae146a9f4d3d8486ec73a88cdd67eb0bba14",
+      "log_sha256": "a1bc249fed6fc317951450d5e8c9644d3970584901df2c189a3dd5ee084f2e10",
+      "review_file": "notes/root-law-independent-review.json",
+      "review_sha256": "c3a8ac44a0bcff0205b27dd0d960d945b6eb09293d5b5732da2ef59f3bd2d459"
+    }
+  }
+}

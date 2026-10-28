@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-27T18:19:22.595572+08:00",
+  "module": "CompletionTimeOrder",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+  "source_unchanged_during_build": true,
+  "log_sha256": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\CompletionTimeOrder.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\CompletionTimeOrder.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.CompletionTimeOrder.cdf_mono_f_of_e_le_b",
+    "MathExploration.CompletionTimeOrder.cdf_antitone_f_of_b_le_e",
+    "MathExploration.CompletionTimeOrder.cdf_eq_of_b_eq_e",
+    "MathExploration.CompletionTimeOrder.totalMeasure_eq_of_b_eq_e",
+    "MathExploration.CompletionTimeOrder.total_event_mono_f_of_e_le_b",
+    "MathExploration.CompletionTimeOrder.total_event_antitone_f_of_b_le_e",
+    "MathExploration.CompletionTimeOrder.total_event_eq_of_b_eq_e"
+  ],
+  "expected_prints": [
+    "MathExploration.CompletionTimeOrder.cdf_mono_f_of_e_le_b",
+    "MathExploration.CompletionTimeOrder.cdf_antitone_f_of_b_le_e",
+    "MathExploration.CompletionTimeOrder.cdf_eq_of_b_eq_e",
+    "MathExploration.CompletionTimeOrder.totalMeasure_eq_of_b_eq_e",
+    "MathExploration.CompletionTimeOrder.total_event_mono_f_of_e_le_b",
+    "MathExploration.CompletionTimeOrder.total_event_antitone_f_of_b_le_e",
+    "MathExploration.CompletionTimeOrder.total_event_eq_of_b_eq_e"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "155dc28322640fc895cc30a08d42d890a66bd84f23560dc5f5174947fe2b912e"
+}

@@ -1,0 +1,36 @@
+{
+  "reviewed_at": "2026-10-28T00:12:57.967554+08:00",
+  "reviewer": "/root/phase8_box_repair",
+  "independence": "Reviewer did not author KernelUniformBounds; reviewer authors UniformCdfBound. Independent AI source and actual-evidence review, not human expert review.",
+  "verdict": "PASS_INDEPENDENT_AI_SOURCE_AND_ACTUAL_EVIDENCE",
+  "blocking_findings": [],
+  "module": "KernelUniformBounds",
+  "source_sha256": "9512a3d8623336d18000cffcf0e59f06b1517196f434c6fc1a80ac3b3c7324d4",
+  "log_sha256": "a607b19adb9f3b3b4649371e4428ac997f478648af5215b024b4e132d0b236a6",
+  "olean_sha256": "6f3e0726dabba2401cc50dca5418d2b19dfc0a6675162572cdb63d8d005a7bad",
+  "actual_evidence": "evidence/KernelUniformBounds-attempt2.json",
+  "actual_named_declarations_checked": 6,
+  "actual_standard_trust_level": 0,
+  "checks": {
+    "source_snapshot_log_cache_match": true,
+    "source_unchanged_during_actual_build": true,
+    "all_prints_full_names_and_order_match": true,
+    "axioms_only_standard_three": true,
+    "no_placeholders_custom_axioms_unsafe_or_native_decide": true
+  },
+  "semantic_checks": [
+    "kernel_neg follows exact linearity of the oriented interval integral, with no regularity or sign premise introduced.",
+    "kernel_mono requires t>=0 and continuous F,G; the positive exponential factor preserves pointwise inequality and continuity supplies integrability on the compact interval. It does not assert order under reversed time.",
+    "kernel_const gives the exact constant-forcing solution (K/c)*(1-exp(-c*t)) for c!=0, proved via actual zero initial state and scalar ODE derivative, not from a supplied solution equality.",
+    "kernel_const_le is valid for c>0,K>=0 even for negative t, because the omitted term (K/c)*exp(-c*t) is nonnegative. Subsequent comparison bounds correctly still require t>=0.",
+    "kernel_le_of_le compares to the actual constant-forcing kernel, then bounds by K/c. The bound F<=K is required throughout [0,t], not only at its endpoint.",
+    "abs_kernel_le applies the upper comparison to both F and -F, using exact kernel_neg, and obtains the two-sided absolute bound. Continuous F,c>0,K>=0,t>=0 and the interval absolute input bound are all explicit."
+  ],
+  "warnings": [
+    "Actual build reports existing batteries checkout local changes and unused/unreachable tactic warnings only; these are not errors and dependencies were not reset."
+  ],
+  "limitations": [
+    "This is an elementary scalar response-kernel bound, not an originality certification.",
+    "No stochastic law or statistical guarantee is asserted in this module."
+  ]
+}

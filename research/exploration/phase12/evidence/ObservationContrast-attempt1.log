@@ -1,0 +1,9 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.ObservationContrast.branchSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.branchSuccess_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.timeSuccess_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.advantage_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ObservationContrast.branch_strictly_better' depends on axioms: [propext, Classical.choice, Quot.sound]

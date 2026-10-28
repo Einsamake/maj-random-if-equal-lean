@@ -1,0 +1,64 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathResearchExploration.ImprovedOriginalLower.quotient' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.rounds' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.quotient_ge_thirtytwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.quotient_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.quotient_mul_le_square' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.square_lt_quotient_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.side_le_sixtyfour_quotient_sub_twelve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.square_exponential_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.scheduling_time_le_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.scheduling_error_le_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.original_clock_survival_at_horizon_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.original_clock_survival_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.synchronous_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.halfSide_large' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.halfSide_ge_third' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_quarter_ge_original_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.synchronous_square_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.square_expectedRecovery_quadratic_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.translated_square_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_quadratic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_quadratic_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_theta_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

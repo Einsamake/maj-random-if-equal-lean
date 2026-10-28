@@ -1,0 +1,31 @@
+{
+  "kind": "exact rational arithmetic supplement, distinct from Lean kernel audit",
+  "parameters": {
+    "a": "1",
+    "b": "101/100",
+    "e": "1",
+    "eps": "1/100",
+    "flo": "1/2",
+    "fhi": "1"
+  },
+  "values": {
+    "low_mean": "605/303",
+    "high_mean": "403/202",
+    "mean_gap": "1/606",
+    "low_delta_minus_one": "1/150",
+    "high_delta_minus_one": "1/200",
+    "low_recovered_f": "1/2",
+    "high_recovered_f": "1"
+  },
+  "checks": {
+    "low_mean_605_over_303": true,
+    "high_mean_403_over_202": true,
+    "mean_gap_1_over_606": true,
+    "mean_gap_formula": true,
+    "mean_gap_positive_and_below_eps": true,
+    "parameter_gap_one_half": true,
+    "low_recovery": true,
+    "high_recovery": true
+  },
+  "checks_passed": true
+}

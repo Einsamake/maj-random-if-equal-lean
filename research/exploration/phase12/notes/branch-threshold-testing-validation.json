@@ -1,0 +1,124 @@
+{
+  "validated_at": "2026-10-28T08:19:18.865961+08:00",
+  "verdict": "PASS",
+  "author_agent": "/root/phase11_actual_testing",
+  "checks": {
+    "all_named_declarations_printed": true,
+    "all_prints_in_accepted_actual_log": true,
+    "no_custom_axiom_or_proof_escape": true,
+    "accepted_actual_trust_zero_individual_cache": true,
+    "only_allowed_axioms": true,
+    "no_sorryAx_or_errors_in_final_log": true,
+    "direct_dependencies_match_accepted_audits": true,
+    "failed_attempt1_preserved": true,
+    "n100_low_chebyshev_arithmetic": true,
+    "n100_high_chebyshev_arithmetic": true,
+    "n100_equal_prior_error_arithmetic": true,
+    "n100_success_arithmetic": true
+  },
+  "actual_module": {
+    "module": "BranchThresholdTesting",
+    "phase": "phase12",
+    "attempt": "attempt2",
+    "source": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\lean\\BranchThresholdTesting.lean",
+    "source_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+    "source_snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\BranchThresholdTesting-attempt2.source.lean",
+    "source_snapshot_sha256": "6c515017c7567ee25623facc80d9bdbc234adb38d763c99672a467809c270732",
+    "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\build\\BranchThresholdTesting.olean",
+    "cache_sha256": "96b1aba0c169ce239ea2cbe0e8f0e71faecda743edac2d00055fe7a3213b832a",
+    "log": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\BranchThresholdTesting-attempt2.log",
+    "log_sha256": "ce7ac7575ba47066a133efd84511ecc1f7506276bd351654e5589fefcd560994",
+    "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\BranchThresholdTesting-attempt2.json",
+    "audit_metadata_sha256": "3078b1033c4218b45873be0c147a6da54a7488c4d7e681a940b651402ba4c9bb",
+    "trust_level": 0,
+    "checks_passed": true,
+    "named_declaration_count": 22,
+    "axioms_seen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "current_files_match_accepted_audit": true
+  },
+  "direct_dependencies": [
+    {
+      "module": "ActualBranchMoments",
+      "phase": "phase12",
+      "attempt": "attempt2",
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\lean\\ActualBranchMoments.lean",
+      "source_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+      "source_snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\ActualBranchMoments-attempt2.source.lean",
+      "source_snapshot_sha256": "0d26da1f3f366ccd3500dd9940bacb737406684587ccdbdb657313c5f430f10b",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\build\\ActualBranchMoments.olean",
+      "cache_sha256": "7cd89fb22792926bc650d05b391d837eda3c80a196affb1d8aa8b35d823cdb1d",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\ActualBranchMoments-attempt2.log",
+      "log_sha256": "9d43a8733865a5df59a8706e8b241437a9ff259ed76a813b00c7def9e2be8967",
+      "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\evidence\\ActualBranchMoments-attempt2.json",
+      "audit_metadata_sha256": "835db906e24d6d40d25899dc37e824cbb31adea1070f3d87349fe7f1b5be4eca",
+      "trust_level": 0,
+      "checks_passed": true,
+      "named_declaration_count": 28,
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "current_files_match_accepted_audit": true
+    },
+    {
+      "module": "BinaryTestingBound",
+      "phase": "phase11",
+      "attempt": "attempt1",
+      "source": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\lean\\BinaryTestingBound.lean",
+      "source_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+      "source_snapshot": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.source.lean",
+      "source_snapshot_sha256": "847b08bb8d81396fff78f7de5370329971e09a127241b481c06652e2e73f1191",
+      "cache": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\build\\BinaryTestingBound.olean",
+      "cache_sha256": "17053f84b44b6d2393ce02d48f7be8b0dccffd29b30c8a0d261eeb6b7921126d",
+      "log": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.log",
+      "log_sha256": "4535d6b3e0bc57b6673ffc0be7eb4f43198678dad39a32dc8ae8576af54a26b8",
+      "audit_metadata": "D:\\MyWorks\\Math\\research\\exploration\\phase11\\evidence\\BinaryTestingBound-attempt1.json",
+      "audit_metadata_sha256": "1681bc6df18015934b39a8bf9f9a9769c75eb4021b1041fb480137c2a3c13da9",
+      "trust_level": 0,
+      "checks_passed": true,
+      "named_declaration_count": 5,
+      "axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "current_files_match_accepted_audit": true
+    }
+  ],
+  "dependency_binding_scope": "Current accepted source/snapshot/log/cache files at post-build validation; no independent claim that the compiler itself recorded dependency hashes.",
+  "moments_non_author_review": "D:\\MyWorks\\Math\\research\\exploration\\phase12\\notes\\actual-branch-moments-independent-review.json",
+  "moments_non_author_review_sha256": "5e073dea022cbee0029c115558a47fa73bfad0095635b887c3f57c2e9f91d264",
+  "formal_scope": {
+    "sample_space": "Fin n -> BranchedLaw.Sample",
+    "joint_laws": "ActualBranchMoments.lowJoint/highJoint: actual Measure.pi copies of original NearBlindCompletion.lowLaw/highLaw.",
+    "observation": "count n x = sum_i (if original BranchedLaw.J(x_i) then 1 else 0).",
+    "rule": "choose high iff count n x >= 5*(n:Real)/12; for n>0 this is equivalent to count/n >= 5/12.",
+    "event_measurability": "chooseHigh_measurable proves the threshold event is measurable.",
+    "proof_route": "Actual original-law mean and variance -> standard mathlib Chebyshev at radius n/12 -> explicit error-event inclusion -> equal-prior testing formulas.",
+    "low_error_bound": "P_low(chooseHigh n) <= 32/n",
+    "high_error_bound": "P_high(complement (chooseHigh n)) <= 36/n",
+    "equal_prior_error_bound": "testError n eps <= 34/n",
+    "equal_prior_success_bound": "1-34/n <= testSuccess n eps",
+    "hypotheses": "eps>0 and n>0; no assumed mean, variance, Chebyshev tail, event gap, or success bound in the final performance statements.",
+    "n100_exact": {
+      "low_error_upper": "8/25",
+      "high_error_upper": "9/25",
+      "error_upper": "17/50",
+      "success_lower": "33/50"
+    },
+    "not_claimed": [
+      "Optimal constants or optimal test",
+      "An implemented integer threshold or a formal count>=42 equivalence",
+      "A branch-only data law replacing the actual original joint law",
+      "External expert review or novelty certification",
+      "Human-readable exposition or undergraduate reader acceptance"
+    ]
+  },
+  "failed_attempt1_resolution": "All measurement, event-inclusion and individual Chebyshev bounds checked; the first attempt failed at normalization while combining 32/n and 36/n using linarith. Accepted attempt2 explicitly adds/divides the inequalities and normalizes the resulting rational identity with ring.",
+  "warnings": "Accepted log contains existing batteries local-change warning and nonblocking Lean style/tactic suggestions."
+}

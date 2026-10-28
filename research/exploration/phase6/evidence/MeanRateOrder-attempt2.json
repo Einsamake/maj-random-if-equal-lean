@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-27T18:11:59.209429+08:00",
+  "module": "MeanRateOrder",
+  "exit_code": 1,
+  "trust_level": 0,
+  "checks_passed": false,
+  "source_sha256": "7780f04bf9164c08cc444d0825b25cfc937bfe4454295100b35c5ca028fda35b",
+  "source_unchanged_during_build": true,
+  "log_sha256": "7880668266ffe70c595626be42954e72a42590fb2607daa4718f8204de7db9d9",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\MeanRateOrder.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\MeanRateOrder.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.MeanRateOrder.meanFormula",
+    "MathExploration.MeanRateOrder.meanFormula_hasDerivAt",
+    "MathExploration.MeanRateOrder.meanFormula_difference",
+    "MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b",
+    "MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e",
+    "MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e",
+    "MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b",
+    "MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e",
+    "MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e"
+  ],
+  "expected_prints": [
+    "MathExploration.MeanRateOrder.meanFormula",
+    "MathExploration.MeanRateOrder.meanFormula_hasDerivAt",
+    "MathExploration.MeanRateOrder.meanFormula_difference",
+    "MathExploration.MeanRateOrder.meanFormula_antitone_f_of_e_le_b",
+    "MathExploration.MeanRateOrder.meanFormula_mono_f_of_b_le_e",
+    "MathExploration.MeanRateOrder.meanFormula_eq_of_b_eq_e",
+    "MathExploration.MeanRateOrder.total_mean_antitone_f_of_e_le_b",
+    "MathExploration.MeanRateOrder.total_mean_mono_f_of_b_le_e",
+    "MathExploration.MeanRateOrder.total_mean_eq_of_b_eq_e"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext",
+    "sorryAx"
+  ]
+}

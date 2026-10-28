@@ -1,0 +1,42 @@
+{
+  "reviewer": "/root/phase7_undergraduate_reader",
+  "status": "pass_with_two_optional_clarity_edits",
+  "unresolved_blockers": [],
+  "reviewed_file_sha256": {
+    "README.md": "5bc3a01e1876077a5a79ca7f1b72fe272e61da12c44df2dab812c7502ff41062",
+    "images/mean-recovery.png": "6d848f8b693d1df2d1528b4d7e0a900bee0805c1ef31dc9cec15cc55579a96d0"
+  },
+  "actual_image_viewed": true,
+  "restatement": [
+    "Known fixed a,b,e; onlyf unknown, m is actual population expectation, not one observation or finite sample average.",
+    "d=b(m-1/a) gives inverse(b-ed)/(d-1); denominator(b-e)/(e+f) nonzero iff b!=e.",
+    "At b=e, actual CDF equality follows from Dprime=-(b+f)D andzero initial, not fromequalmeans.",
+    "Equal outputlaws withb!=e forceequalmeans andhenceequalf; no simultaneous all-rate recovery.",
+    "Nearfamily variesknownb acrossmodels while fixed within eachpair, fixed fgap1/2 gives arbitrarily smallmean gap.",
+    "303 is a normalized two-point absolute difference quotient, not a derivative or relative-percent factor."
+  ],
+  "worked_examples": {
+    "inverse_from9/5": "d2/5,numerator-3/10,denominator-3/5 ->f1/2",
+    "inverse_from2": "d1/2,numerator-1/2,denominator-1/2 ->f1",
+    "near_low_mean": "1+(151/100)/(303/200)=605/303",
+    "near_high_mean": "1+(201/100)/(202/100)=403/202",
+    "gap": "1210/606-1209/606=1/606",
+    "quotient": "(1/2)*606=303",
+    "epsilon": "[2(3+2eps)-3(2+eps)]/[6(1+eps)]=eps/[6(1+eps)]"
+  },
+  "feedback": [
+    {
+      "quote": "两个积分的强迫项连续",
+      "category": "undefined term",
+      "blocking": false,
+      "change": "Removed jargon, explained C0/C1continuity andFTC."
+    },
+    {
+      "quote": "总等待时间仍由四个独立随机量构成",
+      "category": "standalone entry",
+      "blocking": false,
+      "change": "Removed still."
+    }
+  ],
+  "scope": "No source/audits/notes/priorchapters/links used. Undergraduate simulation, not human testing, expert review or correctness/novelty certification."
+}

@@ -1,0 +1,37 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase11\lean\CommonIIDBound.lean:42:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+D:\MyWorks\Math\research\exploration\phase11\lean\CommonIIDBound.lean:72:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'MathExploration.CommonIIDBound.iid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.iid_isProbabilityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.pi_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.iid_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.common_mass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.common_mass_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_of_common_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonIIDBound.one_sub_pow_le_mul_one_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_linear_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

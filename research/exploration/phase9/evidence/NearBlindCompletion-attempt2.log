@@ -1,0 +1,31 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.NearBlindCompletion.cdf_f_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.event_f_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.lowLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.highLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.lowTotalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.highTotalMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.lowLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.highLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.lowTotalMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.NearBlindCompletion.highTotalMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.NearBlindCompletion.near_cdf_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.near_event_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.near_cdf_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.NearBlindCompletion.near_event_gap_one_hundredth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.NearBlindCompletion.low_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.high_branch_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.branch_probability_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.different_hidden_laws' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.NearBlindCompletion.arbitrarily_close_cdfs_with_fixed_branch_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

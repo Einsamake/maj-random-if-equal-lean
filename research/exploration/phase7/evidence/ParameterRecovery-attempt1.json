@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-27T18:30:20.975769+08:00",
+  "module": "ParameterRecovery",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "d68ae21020d465db36703be0d101deb05c51d4788e2b9000dc302596f4ca1cee",
+  "source_unchanged_during_build": true,
+  "log_sha256": "3b21e01d39c677ff11870f8ceb2024778bc0ff9cca2c0557f29610453798377b",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase7\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase7\\build\\ParameterRecovery.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase7\\lean\\ParameterRecovery.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.ParameterRecovery.delta",
+    "MathExploration.ParameterRecovery.recover",
+    "MathExploration.ParameterRecovery.delta_meanFormula",
+    "MathExploration.ParameterRecovery.delta_meanFormula_sub_one",
+    "MathExploration.ParameterRecovery.delta_meanFormula_ne_one",
+    "MathExploration.ParameterRecovery.recover_meanFormula",
+    "MathExploration.ParameterRecovery.meanFormula_injective_f",
+    "MathExploration.ParameterRecovery.delta_total_mean_sub_one",
+    "MathExploration.ParameterRecovery.delta_total_mean_ne_one",
+    "MathExploration.ParameterRecovery.recover_total_mean"
+  ],
+  "expected_prints": [
+    "MathExploration.ParameterRecovery.delta",
+    "MathExploration.ParameterRecovery.recover",
+    "MathExploration.ParameterRecovery.delta_meanFormula",
+    "MathExploration.ParameterRecovery.delta_meanFormula_sub_one",
+    "MathExploration.ParameterRecovery.delta_meanFormula_ne_one",
+    "MathExploration.ParameterRecovery.recover_meanFormula",
+    "MathExploration.ParameterRecovery.meanFormula_injective_f",
+    "MathExploration.ParameterRecovery.delta_total_mean_sub_one",
+    "MathExploration.ParameterRecovery.delta_total_mean_ne_one",
+    "MathExploration.ParameterRecovery.recover_total_mean"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "3cc86cb084e4c135952f892e9f432c322326395ce0d45d89328a10d833926d6a"
+}

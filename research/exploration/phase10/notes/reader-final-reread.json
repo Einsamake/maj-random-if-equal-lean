@@ -1,0 +1,63 @@
+{
+  "role": "Independent simulated undergraduate mathematics reader; basic analysis and probability; no Lean or prior project history",
+  "scope": [
+    "README.md",
+    "images/common-completion-mass.png"
+  ],
+  "actual_image_viewed": true,
+  "read_source_audit_other_notes_external_links": false,
+  "readme_sha256": "55841FFD1290E00320F76DCDE8DD6159F20CB1DC877CDBC00FAE3B9A99553980",
+  "image_sha256": "AE28C2B8029A9C15CC2FB19087245CFE4777886381D96FFB48CB1E562894EAC8",
+  "status": "passed_simulated_undergraduate_reader_reread",
+  "unresolved_blockers": [],
+  "unresolved_nonblocking_issues": [],
+  "feedback_resolution": [
+    {
+      "id": "R1",
+      "first_read_quote": "两个模型，只有绕路速率不同",
+      "revised_quote": "两个模型，只改变参数 $f$",
+      "result": "resolved",
+      "explanation": "新标题准确说只有参数 f 改变；正文已给 W_c 速率 1+f 和绕路概率 f/(1+f)，没有再误指固定的 W_b 速率 b。"
+    },
+    {
+      "id": "R2",
+      "first_read_quote": "a = e = 1, b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+      "revised_quote": "b = 1 + ε, ε > 0; 比较 f = 1/2 与 f = 1",
+      "result": "resolved",
+      "explanation": "实际重画后的图已删去正文未定义的 a、e，只保留正文定义并使用的 b、epsilon 和 f。"
+    }
+  ],
+  "restatement": {
+    "goal_and_observation": "目标是统一控制两个模型的每个可测完成时间事件 A 的概率差。A 只看总完成时间 S，不看 J 的内部取值。",
+    "original_model": "四个独立随机量满足 S=W_c+W_a+J W_b；W_a 速率 1，W_b 速率 b=1+epsilon，W_c 速率 1+f，P(J=1)=f/(1+f)。f 分别为 1/2、1，故原来内部绕路概率仍为 1/3、1/2。",
+    "positive_output_representation": "E_r 是质量 1 的指数分布，乘常数后可以是质量小于 1 的非负分量。卷积表示独立等待相加，分量质量相乘。两次指数等待恒等式给 Q_L=kappa+kappa*E_1，Q_H=2kappa+kappa*E_1，从而 Q_H=Q_L+kappa 和 2Q_L=Q_H+kappa*E_1。定义 R=Q_H+Q_L*E_b 后，可把相同输出分布重新写为 mu_L=R+kappa*E_1、mu_H=R+kappa*E_b。R 质量为 5/6，kappa 质量为 1/6。",
+    "hidden_branch_distinction": "这里的 1/6 是等价表示中某个正分量的质量，不是原模型 J=1 的新概率。原绕路事件依旧相差 1/6。只有观察 S 时，重新表示才足以用于比较其分布，不能据此把原内部路线也当成相同。",
+    "rho_and_common_mass": "rho_b 在 t>=0 的密度 exp(-bt)，负时间为 0。它同时被 E_1 的密度 exp(-t) 和 E_b 的密度 b exp(-bt) 包含，质量为 1/b。因此 gamma=R+kappa*rho_b 被两个输出分布共同包含，质量 c=5/6+1/(6b)。",
+    "arbitrary_event_argument": "减去 gamma 后，两边剩下非负分量 alpha_L、alpha_H，质量都为 1-c。任意可测 A 上共同 gamma(A) 抵消。两个剩余事件质量均在 [0,1-c]，所以其差的绝对值不超过 1-c=epsilon/[6(1+epsilon)]。",
+    "explicit_scope": "这是单次总时间观测的事件概率界。多次样本联合分布、具体判别规则、二维自动机的新结论和新颖性均未在本章证明。"
+  },
+  "recalculations": {
+    "low_hidden_branch": "(1/2)/(1+1/2)=1/3",
+    "high_hidden_branch": "1/(1+1)=1/2",
+    "hidden_branch_difference": "1/2-1/3=1/6",
+    "R_mass": "1/2+1/3=5/6",
+    "kappa_mass": "(1/6)*1*1=1/6",
+    "b_at_epsilon_0_01": "1+1/100=101/100",
+    "rho_mass": "1/b=100/101",
+    "common_mass": "5/6+1/(6b)=505/606+100/606=605/606",
+    "remaining_mass": "1-605/606=1/606",
+    "epsilon_formula_check": "(1/100)/(6*(101/100))=1/606",
+    "A_1_2": "|mu_H([1,2])-mu_L([1,2])|<=1/606; this is an upper guarantee and does not assert equality.",
+    "percentage_points": "(1/606)*100=0.1650165... percentage points, matching approximately 0.1650 in the figure."
+  },
+  "figure_checks": [
+    "低高两行的共同 R 质量均为 5/6",
+    "余块 kappa*E_1 与 kappa*E_b 质量均为 1/6",
+    "图明确说明等价输出表示与原内部绕路概率的区别",
+    "rho、gamma、c 的公式与正文相同",
+    "605/606、1/606 及百分数算例与正文相同",
+    "未看到裁切、遮挡或图文矛盾"
+  ],
+  "first_read_record_preserved": "notes/reader-first-feedback.json was not edited during reread; it retains the original version fingerprints.",
+  "disclaimer": "AI simulation of an undergraduate reader only; not human user testing, expert review, mathematical correctness certification, or novelty certification."
+}

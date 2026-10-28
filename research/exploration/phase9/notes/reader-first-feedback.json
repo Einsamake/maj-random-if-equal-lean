@@ -1,0 +1,58 @@
+{
+  "review_type": "AI模拟数学本科背景读者；不是人类用户测试、专家评审、数学正确性认证或新颖性认证",
+  "allowed_inputs": ["README.md正文", "images/hidden-route-vs-deadline.png实际图片"],
+  "other_inputs_used": false,
+  "actual_image_viewed": true,
+  "reviewed_file": "D:/MyWorks/Math/research/exploration/phase9/README.md",
+  "reviewed_file_sha256": "1BCEAD3FEC11A4AB6FF52D66C066C481B22B2848DD59318244203FD4CAD12643",
+  "status": "passed_no_blocking_gaps",
+  "unresolved_blockers": [],
+  "own_words": {
+    "question": "如果两种系统内部是否绕路的概率相差固定的1/6，只观察是否在一个截止时间前完成，每个截止时间的完成概率能否同时很接近？正文构造了一系列模型对，回答可以，并给出统一上界。",
+    "actual_model": "一次试验独立抽取Wa、Wb、Wc和J。先等待Wc，再按J决定是否多等Wb，最后等Wa。总时间为Wc+Wa+J Wb。Wa、Wb、Wc分别是速率a、b、e+f的指数随机量；J取1的概率为f/(e+f)。比较时a=e=1、b=1+epsilon在同一对中相同，只有f从1/2改成1；不同模型不是同一次试验中的联合比较。",
+    "two_integral_steps": "C0是最后一段的完成概率，C1是绕路加最后一段的完成概率，C2是全部任务的完成概率。先把独立等待的卷积和分支概率写成积分，得到三个初值为0的微分方程。令H01=C0-C1、H12=C1-C2，因为多加非负等待使完成更难，0<=H01<=1。把C1'减C2'，并用C0-C2=H01+H12，得到H12'=(b-e)H01-(e+f)H12。积分因子给出H12=K_(e+f)[(b-e)H01]，因此|H12|<=|b-e|/(e+f)。再比较fH与fL，D=C2H-C2L满足D'=(fH-fL)H12,L-(e+fH)D。对这条方程使用相同积分因子以及前一个上界，得到|D|<=(fH-fL)|b-e|/((e+fL)(e+fH))。这两个分母来自先控制单个模型的H12，再控制两个模型之间的D。",
+    "conclusion": "例子中差分子为epsilon/2，分母为3，所以每个非负截止时间的概率差至多epsilon/6；b-e为正，使两次积分均非负，所以差的方向是FH>=FL。负截止时间两个概率都为0。选择epsilon=6 eta即可让所有截止时间的绝对差不超过eta，而绕路概率差仍为1/6。",
+    "limits": "任意缩小界时需要改变两模型共同使用的b，不能把b固定在1.01仍宣称可任意缩小同一对的差。该结论控制单个阈值事件，不等同于任意事件或总变差接近；不说明有限次观测的检验成功率、所需样本数或参数能否由大量观测恢复；也不认证新颖性。"
+  },
+  "independent_calculations": {
+    "branch_probabilities": "(1/2)/(1+1/2)=1/3，1/(1+1)=1/2，1/2-1/3=(3-2)/6=1/6。",
+    "general_bound_substitution": "Delta f=1/2，|b-e|=epsilon，e+fL=3/2，e+fH=2，所以((1/2)epsilon)/((3/2)*2)=epsilon/6。",
+    "epsilon_1_over_100": "epsilon/6=1/600=0.0016666667；乘100换成百分点为1/6=0.16666667个百分点，不是0.001667个百分点。",
+    "epsilon_1_over_1000": "epsilon/6=1/6000=0.0001666667，对应约0.01666667个百分点。",
+    "eta_choice": "给定eta>0，取epsilon=6 eta>0，则b=1+6 eta，epsilon/6=eta；两模型中的b相同，f值固定，绕路概率差仍为1/6。"
+  },
+  "localized_feedback": [
+    {
+      "type": "symbol_scope",
+      "severity": "optional_nonblocking",
+      "original_quote": "对 $c>0$，把指数加权积分简写成",
+      "feedback": "可加上t>=0，让K定义的使用范围更显式。紧前部分已明确只对非负时间推导，后面也把负时间单独处理，故这不是理解障碍。"
+    },
+    {
+      "type": "terminology",
+      "severity": "no_blocker",
+      "original_quote": "$\\mathrm{Exp}(k)$ 是速率为 $k$ 的指数等待，平均时长为 $1/k$。",
+      "feedback": "关键分布、速率、绕路指示量、分布函数和百分点均有定义；基础概率背景足以理解。"
+    },
+    {
+      "type": "derivation",
+      "severity": "no_blocker",
+      "original_quote": "由前面的微分方程相减",
+      "feedback": "可独立补出C0-C2=H01+H12这一行代数，从而重现H12微分式；这是本科水平的短计算，不需要源码或外部定理补缺口。第二次D方程也可逐项相减复现。"
+    },
+    {
+      "type": "image_text_consistency",
+      "severity": "no_blocker",
+      "original_quote": "右侧是证明给出的上界，不是测得的实际差",
+      "feedback": "已查看实际PNG。条形图的1/3、1/2及1/6差，右侧epsilon表的1/60、1/600、1/6000和小数，底部关于改变共同b及统计限制的文字，与正文一致；图中没有把上界画成测量值。"
+    },
+    {
+      "type": "explicitly_out_of_scope",
+      "severity": "no_blocker",
+      "original_quote": "因此实际能否通过大量观测恢复路线参数，仍需另外的统计分析。",
+      "feedback": "这里明确把统计恢复问题留在正文结论之外；没有承诺本节完成这个证明，不能算作当前章节缺口。"
+    }
+  ],
+  "reread_required_after_material_revision": true,
+  "review_boundary": "本反馈只检验正文及实际图片是否支持模拟本科读者复述与算例，不替代数学源、内核审计、外链检查或人类专家评审。"
+}

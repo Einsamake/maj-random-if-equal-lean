@@ -1,0 +1,207 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:16:5: error: unknown namespace `InfiniteGridModel`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:17:5: error: unknown namespace `ClippedDiamondGeometry`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:18:5: error: unknown namespace `ClippedProtectedGeometry`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:19:5: error: unknown namespace `OrthogonalGridConvexity`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:20:5: error: unknown namespace `ForbiddenBirthControl`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:21:5: error: unknown namespace `WeightedExitArea`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:22:5: error: unknown namespace `DropletDomainComparison`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:25:23: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:26:26: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:30:37: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:39:46: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:40:4: error(lean.unknownIdentifier): Unknown identifier `directedBlock`
+
+Note: It is not possible to treat `directedBlock` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:42:2: error: No applicable extensionality theorem found for type
+  ?m.15 L x horizontal vertical
+
+Note: Extensionality theorems can be registered by marking them with the `[ext]` attribute
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:64:12: error(lean.unknownIdentifier): Unknown identifier `p`
+
+Note: It is not possible to treat `p` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:64:33: error(lean.unknownIdentifier): Unknown identifier `p`
+
+Note: It is not possible to treat `p` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:66:13: warning: This simp argument is unused:
+  Fintype.sum_prod_type
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_sub_distrib, Finset.sum_const, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:66:36: warning: This simp argument is unused:
+  Finset.sum_sub_distrib
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fintype.sum_prod_type, Finset.sum_const, Fintype.card_fin, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:67:22: warning: This simp argument is unused:
+  Fintype.card_fin
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Fintype.sum_prod_type, Finset.sum_sub_distrib, Finset.sum_const, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:72:50: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:73:14: error(lean.unknownIdentifier): Unknown identifier `protectedSites`
+
+Note: It is not possible to treat `protectedSites` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:76:6: error(lean.unknownIdentifier): Unknown identifier `weight`
+
+Note: It is not possible to treat `weight` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:77:18: error(lean.unknownIdentifier): Unknown identifier `ClippedProtectedGeometry.mem_protectedSites_iff_band`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:76:58: error: unsolved goals
+L : ℕ
+x : sorry
+hx : x ∈ sorry
+horizontal vertical : Bool
+p : Fin (L / 20) × Fin (L / 20)
+⊢ ↑L / 10 + 1 - (↑↑p.1 + 1) - (↑↑p.2 + 1) ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:94:51: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:95:14: error(lean.unknownIdentifier): Unknown identifier `protectedSites`
+
+Note: It is not possible to treat `protectedSites` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:97:6: error(lean.unknownIdentifier): Unknown identifier `mass`
+
+Note: It is not possible to treat `mass` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:98:6: error(lean.unknownIdentifier): Unknown identifier `directedBlock_eq_image`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:97:65: error: unsolved goals
+L : ℕ
+x : sorry
+hx : x ∈ sorry
+horizontal vertical : Bool
+⊢ ↑(L / 20) ^ 2 * (↑L / 10 - ↑(L / 20)) ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:114:60: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:115:14: error(lean.unknownIdentifier): Unknown identifier `protectedSites`
+
+Note: It is not possible to treat `protectedSites` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:116:25: error(lean.unknownIdentifier): Unknown identifier `mass`
+
+Note: It is not possible to treat `mass` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:120:4: error: mod_cast has type
+  (20 : ℕ) * (L / 20) ≤ L
+but is expected to have type
+  (20 : ℝ) * (↑L / 20) ≤ ↑L
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  Real.instLE ↦ 2
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:124:66: error: linarith failed to find a contradiction
+L : ℕ
+hL : 80 ≤ L
+x : sorry
+hx : x ∈ sorry
+horizontal vertical : Bool
+hm : ↑L ≤ 25 * ↑(L / 20)
+hu : 20 * (↑L / 20) ≤ ↑L
+hm0 : 0 ≤ ↑(L / 20)
+hL0 : 0 ≤ ↑L
+hsq : ↑L * ↑L ≤ 25 * ↑(L / 20) * (25 * ↑(L / 20))
+a✝ : ↑L / 10 - ↑(L / 20) < ↑L / 20
+⊢ False
+failed
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:127:15: error(lean.unknownIdentifier): Unknown identifier `fullBlock_exact_lower_bound`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:116:84: error: unsolved goals
+L : ℕ
+hL : 80 ≤ L
+x : sorry
+hx : x ∈ sorry
+horizontal vertical : Bool
+hm : ↑L ≤ 25 * ↑(L / 20)
+hu : 20 * (↑L / 20) ≤ ↑L
+hm0 : 0 ≤ ↑(L / 20)
+hL0 : 0 ≤ ↑L
+hsq : ↑L * ↑L ≤ 25 * ↑(L / 20) * (25 * ↑(L / 20))
+hfactor : ↑L / 20 ≤ ↑L / 10 - ↑(L / 20)
+hmul : ↑L * ↑L * (↑L / 20) ≤ 25 * ↑(L / 20) * (25 * ↑(L / 20)) * (↑L / 20)
+hmul2 : ↑(L / 20) ^ 2 * (↑L / 20) ≤ ↑(L / 20) ^ 2 * (↑L / 10 - ↑(L / 20))
+⊢ ↑L ^ 3 / 12500 ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:132:16: error(lean.unknownIdentifier): Unknown identifier `Site`
+
+Note: It is not possible to treat `Site` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:132:28: error(lean.unknownIdentifier): Unknown identifier `RowConvex`
+
+Note: It is not possible to treat `RowConvex` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:132:47: error(lean.unknownIdentifier): Unknown identifier `ColumnConvex`
+
+Note: It is not possible to treat `ColumnConvex` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:133:13: error(lean.unknownIdentifier): Unknown identifier `FourConnected`
+
+Note: It is not possible to treat `FourConnected` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:133:44: error(lean.unknownIdentifier): Unknown identifier `protectedSites`
+
+Note: It is not possible to treat `protectedSites` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:134:25: error(lean.unknownIdentifier): Unknown identifier `missingWeight`
+
+Note: It is not possible to treat `missingWeight` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:135:19: error(lean.unknownIdentifier): Unknown identifier `protectedSites`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:134:46: error: unsolved goals
+L : ℕ
+hL : 80 ≤ L
+S : Finset sorry
+hr : sorry
+hc : sorry
+hconn : sorry
+hmissing : ¬sorry ⊆ S
+⊢ ↑L ^ 3 / 12500 ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:148:20: error(lean.unknownIdentifier): Unknown identifier `DropletModifiedWord.Event`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:149:10: error(lean.unknownIdentifier): Unknown identifier `exitTime`
+
+Note: It is not possible to treat `exitTime` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:151:6: error(lean.unknownIdentifier): Unknown identifier `missingWeight`
+
+Note: It is not possible to treat `missingWeight` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:152:14: error(lean.unknownIdentifier): Unknown identifier `ProtectedEvolution.initial_stoppedTrajectory_shape`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:151:109: error: unsolved goals
+L : ℕ
+hL : 80 ≤ L
+events : ℕ → sorry
+n : ℕ
+hn : sorry ≤ ↑n
+⊢ ↑L ^ 3 / 12500 ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:159:9: error(lean.unknownIdentifier): Unknown identifier `DropletClockLaw.Sample`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:159:53: error(lean.unknownIdentifier): Unknown identifier `ClockEventWord.Good`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:161:13: error(lean.unknownIdentifier): Unknown identifier `FrozenPhysicalExit.physicalExit`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:163:25: error(lean.unknownIdentifier): Unknown identifier `missingWeight`
+
+Note: It is not possible to treat `missingWeight` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:165:14: error(lean.unknownIdentifier): Unknown identifier `FrozenPhysicalExit.physicalExit_le_iff`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:164:103: error: unsolved goals
+L : ℕ
+hL : 80 ≤ L
+z : sorry
+hg : ℝ → sorry
+t : ℝ
+ht : 0 ≤ t
+hexit : sorry ≤ ENNReal.ofReal t
+⊢ ↑L ^ 3 / 12500 ≤ sorry
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:173:14: error(lean.unknownIdentifier): Unknown constant `fullBlock_exact_lower_bound`
+C:/Users/Lenovo/Desktop/Project/Math/research/exploration/lean/FullBlockThreshold.lean:174:14: error(lean.unknownIdentifier): Unknown constant `fullBlock_cubic_weight`
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_physical_exit_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

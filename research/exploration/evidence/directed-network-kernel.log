@@ -1,0 +1,27 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\lean\DirectedNetworkComparison.lean:118:25: warning: Variable name `i` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _i
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'MathExploration.DirectedNetworkComparison.sum_edge_difference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_imbalance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.rate_flux_le_energy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.max_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.leaked_source_flux_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.energy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.nonpos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.DirectedNetworkComparison.imbalance_le_total' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.DirectedNetworkComparison.order' depends on axioms: [propext, Classical.choice, Quot.sound]

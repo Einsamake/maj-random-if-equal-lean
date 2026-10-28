@@ -1,0 +1,19 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+C:\Users\Lenovo\Desktop\Project\Math\research\exploration\phase3\lean\EndpointCertificate.lean:38:60: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [EndpointTank.endpointState, Matrix.cons_val_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MathExploration.EndpointCertificate.outletValues' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.greatest_outlet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.q_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.endpoint_at_checkTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.EndpointCertificate.exact_maximum_at_checkTime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.EndpointCertificate.every_outlet_at_checkTime_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

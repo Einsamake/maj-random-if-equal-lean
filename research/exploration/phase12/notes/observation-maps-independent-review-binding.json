@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-28T08:15:39.550059+08:00",
+  "reviewer": "independent agent /root/phase11_common_iid; not source author",
+  "module": "ObservationMaps",
+  "attempt_reviewed": "attempt1",
+  "status": "PASS",
+  "review_mode": "Independent source mathematics review and existing actual trust=0 log/cache fingerprint checks; no extra compilation claimed",
+  "source_sha256": "e424c07842eaed01f06b7c48e67a060ab0d65e45b35b98f7c03c5f62ee36d1e7",
+  "log_sha256": "eb71146c71928e04de5802c4b6bf10358f418da699271fa7172b8605d4a1df71",
+  "olean_sha256": "6e92b3167ed296c5e6a7908c1533c3a49b7bb13adab12e9b6e03865fb22bb820",
+  "named_declarations": [
+    "MathExploration.ObservationMaps.joint",
+    "MathExploration.ObservationMaps.totals",
+    "MathExploration.ObservationMaps.totals_measurable",
+    "MathExploration.ObservationMaps.low_joint_totals",
+    "MathExploration.ObservationMaps.high_joint_totals",
+    "MathExploration.ObservationMaps.low_joint_time_event",
+    "MathExploration.ObservationMaps.high_joint_time_event",
+    "MathExploration.ObservationMaps.time_test_success"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "checks": {
+    "source_matches_attempt_snapshot": true,
+    "source_hash_matches_metadata": true,
+    "log_hash_matches_metadata": true,
+    "cache_hash_matches_metadata": true,
+    "all_named_declarations_printed": true,
+    "actual_log_prints_match_source_and_metadata": true,
+    "standard_axioms_only": true,
+    "no_bypass_tokens": true,
+    "actual_trust_zero_success": true
+  },
+  "mathematical_findings": [
+    "joint n mu is the genuine finite product Measure.pi of the original single-trial joint law; totals n maps each sample tuple to its corresponding completion time.",
+    "low_joint_totals and high_joint_totals use actual coordinatewise measurable pushforward through Measure.pi_map_pi, with mapped coordinate probability justified by the existing actual total-time probability theorems for eps>0. Their target is exactly phase11 lowSampleMeasure/highSampleMeasure, not an unrelated IID law.",
+    "low_joint_time_event and high_joint_time_event transfer the probability of the measurable pullback totals inverse A using map_measureReal_apply in the correct direction.",
+    "time_test_success transfers high(A) and low(A-complement), correctly matching equal-prior success. Preimage commutes with complement, so the second pullback represents exactly choosing low.",
+    "The generic joint product is definitionally the same Measure.pi used by ActualBranchMoments.lowJoint/highJoint after substituting the original low/high law. This supports the same-trials comparison; no extra independence or pushforward conclusion is assumed."
+  ],
+  "claim_scope": [
+    "n:Nat including zero",
+    "eps>0",
+    "measurable deterministic decision event A on the complete time vector",
+    "equal-prior success definition",
+    "actual original joint IID law"
+  ],
+  "blocking_findings": [],
+  "limitations": [
+    "This review verifies source/evidence consistency and mathematical meaning; no novelty or external peer-review certification is claimed."
+  ],
+  "verdict": "PASS",
+  "original_independent_review_file": "notes/observation-maps-independent-review.json",
+  "original_independent_review_sha256": "7f51be461c762b5aee88ab6f61de3893e2dd36aaed5085c10c27fa9f1fd8a959",
+  "normalization": "Schemawrapperonly, originalindependentreviewunchanged"
+}

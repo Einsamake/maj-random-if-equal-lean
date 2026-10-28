@@ -1,0 +1,20 @@
+{
+  "method": "Direct evaluation of exact mean formula, not sampled data",
+  "known_a_e": 1,
+  "near_b": "101/100",
+  "f_pair": [
+    "1/2",
+    "1"
+  ],
+  "population_means": [
+    "605/303",
+    "403/202"
+  ],
+  "mean_gap": "1/606",
+  "finite_difference_ratio": 303,
+  "finite_sample_guarantee": false,
+  "CDF_distance_inference": false,
+  "images": {
+    "mean-recovery.png": "6d848f8b693d1df2d1528b4d7e0a900bee0805c1ef31dc9cec15cc55579a96d0"
+  }
+}

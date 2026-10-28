@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-27T18:33:43.340581+08:00",
+  "module": "MeanRecoverySensitivity",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "850959790b12a3cc6d7e4f495dd956568db05dd9f1e5638068fd705c171537fb",
+  "source_unchanged_during_build": true,
+  "log_sha256": "4e1e17e09b181f8fd35fc50852ca4e21c25889b16d970fbbf915b3bbc5421690",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase7\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase7\\build\\MeanRecoverySensitivity.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase7\\lean\\MeanRecoverySensitivity.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.MeanRecoverySensitivity.lowMean",
+    "MathExploration.MeanRecoverySensitivity.highMean",
+    "MathExploration.MeanRecoverySensitivity.low_total_integrable",
+    "MathExploration.MeanRecoverySensitivity.high_total_integrable",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap_pos_lt",
+    "MathExploration.MeanRecoverySensitivity.parameter_gap",
+    "MathExploration.MeanRecoverySensitivity.lowMean_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.highMean_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.finite_difference_ratio"
+  ],
+  "expected_prints": [
+    "MathExploration.MeanRecoverySensitivity.lowMean",
+    "MathExploration.MeanRecoverySensitivity.highMean",
+    "MathExploration.MeanRecoverySensitivity.low_total_integrable",
+    "MathExploration.MeanRecoverySensitivity.high_total_integrable",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap_pos_lt",
+    "MathExploration.MeanRecoverySensitivity.parameter_gap",
+    "MathExploration.MeanRecoverySensitivity.lowMean_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.highMean_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.total_mean_gap_one_hundredth",
+    "MathExploration.MeanRecoverySensitivity.finite_difference_ratio"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "7be925514527f4b9718b726f9d1582dd034c225731d3c245d2aa08980b9efc62"
+}

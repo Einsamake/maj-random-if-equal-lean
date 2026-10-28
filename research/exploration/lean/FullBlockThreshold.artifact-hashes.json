@@ -1,0 +1,38 @@
+[
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.lean",
+    "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.validation.log",
+    "sha256": "0d61e35c7ae8636d5417422f3b110921943f2997a2c2bf19fe156669171e1754"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.validation.exit.txt",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.validation.json",
+    "sha256": "07415dafb9174d7900caba9e822fd67f61a130d7d71f9e1baca5780cbf458038"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.source-review.json",
+    "sha256": "4041e58c6d4148bd6a5443d33b91fc7dfcce5fcb265d04f141b7fe8585a834ae"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.threshold-only.lean",
+    "sha256": "65d1d980de0e6c486c00ca37bc25b20518c47f21ec065cb04d1196a1a86c6faf"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.threshold-only.validation.log",
+    "sha256": "0611af2e8644bccf01fd2488e1da2a909ed5f33ead500acbf38d13fa3158b881"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.threshold-only.validation.json",
+    "sha256": "56048b81629492416f24a57453d8187b4b03847c28f87fa9ef256768d9a7ca53"
+  },
+  {
+    "path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\notes\\original_strengthening_candidates_2026-10-27.json",
+    "sha256": "6a9792bf3bd194f14a233edfde3dcb4964426af758dce40b6e2775f59cb21a97"
+  }
+]

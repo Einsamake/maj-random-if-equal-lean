@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-10-27T01:20:01.986315+08:00",
+  "module": "RobustNetworkBounds",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "3d2ed3289bf003e3c4a8c278b56c29a79a2428c56bd2b1f1c798e848cc46779f",
+  "log_sha256": "ef135d7017edda867af97e4760fc2b5f0d47f73053fc91e5203bd474bd524b58",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\build\\RobustNetworkBounds.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\RobustNetworkBounds.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.RobustNetworkBounds.linear",
+    "MathExploration.RobustNetworkBounds.Metzler",
+    "MathExploration.RobustNetworkBounds.offDiag",
+    "MathExploration.RobustNetworkBounds.row",
+    "MathExploration.RobustNetworkBounds.rowBound",
+    "MathExploration.RobustNetworkBounds.offDiag_nonneg",
+    "MathExploration.RobustNetworkBounds.row_le_bound",
+    "MathExploration.RobustNetworkBounds.linear_eq_rate",
+    "MathExploration.RobustNetworkBounds.rate_scale",
+    "MathExploration.RobustNetworkBounds.linear_sub",
+    "MathExploration.RobustNetworkBounds.linear_mono_matrix",
+    "MathExploration.RobustNetworkBounds.metzler_nonpos",
+    "MathExploration.RobustNetworkBounds.differential_comparison",
+    "MathExploration.RobustNetworkBounds.positive_solution",
+    "MathExploration.RobustNetworkBounds.interval_upper",
+    "MathExploration.RobustNetworkBounds.interval_lower"
+  ],
+  "expected_prints": [
+    "MathExploration.RobustNetworkBounds.linear",
+    "MathExploration.RobustNetworkBounds.Metzler",
+    "MathExploration.RobustNetworkBounds.offDiag",
+    "MathExploration.RobustNetworkBounds.row",
+    "MathExploration.RobustNetworkBounds.rowBound",
+    "MathExploration.RobustNetworkBounds.offDiag_nonneg",
+    "MathExploration.RobustNetworkBounds.row_le_bound",
+    "MathExploration.RobustNetworkBounds.linear_eq_rate",
+    "MathExploration.RobustNetworkBounds.rate_scale",
+    "MathExploration.RobustNetworkBounds.linear_sub",
+    "MathExploration.RobustNetworkBounds.linear_mono_matrix",
+    "MathExploration.RobustNetworkBounds.metzler_nonpos",
+    "MathExploration.RobustNetworkBounds.differential_comparison",
+    "MathExploration.RobustNetworkBounds.positive_solution",
+    "MathExploration.RobustNetworkBounds.interval_upper",
+    "MathExploration.RobustNetworkBounds.interval_lower"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "0ae178b42b47af5de6c6c9a44362bd78cc41b1a265a16cd8803dff7c55499a3a"
+}

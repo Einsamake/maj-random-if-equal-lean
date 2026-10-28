@@ -1,0 +1,298 @@
+{
+  "checked_at": "2026-10-27T18:27:46.421015+08:00",
+  "status": "PASS",
+  "mathematical_modules": 6,
+  "audit_driver_modules": 1,
+  "named_declarations": 63,
+  "new_theorems": 59,
+  "modules": {
+    "ResponseKernelCalculus": {
+      "source_sha256": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+      "log_sha256": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+      "record_sha256": "67b1564d9de08f0ddf14c6c8c5ccf822913da95c7dd975fcd556c97b3bb2604e",
+      "review_sha256": "8b57aab78a6b543c58ef5605667b43c1bb565850138c0a8a862a844283353a8d",
+      "named": 6,
+      "theorems": 6,
+      "olean_sha256": "becf2f1902381a7d34c43bddbd8b7d812f9bc5fd1a7ee8f7ae40609930094db7"
+    },
+    "TankResponse": {
+      "source_sha256": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+      "log_sha256": "5df4e25600c906494b4cc505f9c64f9244ae670b2c05ed4927aa1891618fd5a6",
+      "record_sha256": "2ce01d761e3307a70a0a2fb519864f40d2529dc904da093006fcd47fd3a24ed5",
+      "review_sha256": "8b57aab78a6b543c58ef5605667b43c1bb565850138c0a8a862a844283353a8d",
+      "named": 22,
+      "theorems": 19,
+      "olean_sha256": "71a983dac8b374ccc3433de996a67537b6aaf3345a7a6c1ede67033aad99a47d"
+    },
+    "GeneralTankCdf": {
+      "source_sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+      "log_sha256": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+      "record_sha256": "ca2bc22eff6e42f5b736db6a7c970d990c1ac80a8ea4866b3db2973b0369b42a",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941",
+      "named": 14,
+      "theorems": 14,
+      "olean_sha256": "645d339ffc9a21f34e1a56d69505dc66cd47d73ffaac350fdae08b8f350863b3"
+    },
+    "MeanRateOrder": {
+      "source_sha256": "2369f17be56620f7b0019bf286ccc8971a603602edf26a6afe446c870b539e32",
+      "log_sha256": "893a0af8537fa86a33338e46409bbceee034ae4e56e80bc493a8b9853567e432",
+      "record_sha256": "f715b7a03eef2c85e811a1595f82bd1b3e7c0a37174730891725ca746fd8aeeb",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941",
+      "named": 9,
+      "theorems": 8,
+      "olean_sha256": "f61dcee03dc23006b59ca238ae917ec34e31b20815de01740d5d316ea0b1134b"
+    },
+    "CompletionTimeOrder": {
+      "source_sha256": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+      "log_sha256": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+      "record_sha256": "cf837eac9909c25c3c2b488f395b3247053f220e3a9dcaba674b0352091979ae",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941",
+      "named": 7,
+      "theorems": 7,
+      "olean_sha256": "155dc28322640fc895cc30a08d42d890a66bd84f23560dc5f5174947fe2b912e"
+    },
+    "HiddenBranchWitness": {
+      "source_sha256": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+      "log_sha256": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+      "record_sha256": "0ea96e9b463db98cdef0bdd72c170c451e44cab20a6eb8608e310b50dd47adc8",
+      "review_sha256": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941",
+      "named": 5,
+      "theorems": 5,
+      "olean_sha256": "b6b3fb01a62bdab31ed3f6ec109fefdb708f1782328236fe3b2266ad9974fd36"
+    }
+  },
+  "unified_audit": {
+    "source_sha256": "eaf22ca129bf2ed39db7d2343a97a8fea5499175af026be1bb776a81cac35100",
+    "log_sha256": "524438d676b1449298f96c9936b6f8868baa9e252f9a9865ce6cf1469e315f32",
+    "actual_prints": 63,
+    "trust_level": 0,
+    "exit_code": 0
+  },
+  "reader_review": {
+    "reviewer": "/root/phase6_undergraduate_reader",
+    "status": "pass",
+    "unresolved_blockers": [],
+    "scope_limit": "Context-free undergraduate mathematics reader simulation; README plus actually viewed two PNGs only, no sources/audits/notes/links. Not human testing, expert review, correctness or novelty certification.",
+    "first_read": {
+      "reviewer": "/root/phase6_undergraduate_reader",
+      "status": "not_passed_pending_notation_fix",
+      "unresolved_blockers": [
+        "F_0/F_1 conflict: parameter f vs starting-node indices."
+      ],
+      "reviewed_file_sha256": {
+        "README.md": "14972490ed9d9ccd438d7446a5ff33441257f054da516c5c17bb6a62a41ca053",
+        "images/rate-order.png": "c6ef8ea0f1000ccaf988fb1833e3ce3ed9943244c02cd9ef8337a6b6d9b01c87",
+        "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465"
+      },
+      "actual_images_viewed": true,
+      "retelling": [
+        "Independent Wa,Wb,Wc,J generate S; f changes holding rate and branch probability simultaneously.",
+        "First-wait integrals and integrating factors connect probabilities to ODE responses; F0/F1 notational conflict blocks precise reading.",
+        "h nonnegative, g has sign direction b-e, Delta follows g; b=e gives total-time distribution independent off.",
+        "Actual formal scope is fixed other rates, nonstrict every-deadline probability order, not mean-based inference or arbitrary physical multiparameter modification."
+      ],
+      "worked_examples": {
+        "fast": [
+          "11/6",
+          "7/4",
+          "difference -1/12"
+        ],
+        "slow": [
+          "9/5",
+          "2",
+          "difference 1/5"
+        ],
+        "hidden": [
+          "branch1/3",
+          "branch1/2",
+          "means2and2",
+          "same total law but different J marginal"
+        ]
+      },
+      "feedback": [
+        {
+          "quote": "F_f(t)=P(S_f<=t);F_0(t)=P(W_a<=t);F_1(t)=P(W_b+W_a<=t)",
+          "category": "symbol",
+          "blocking": true,
+          "change": "Node probabilities renamed C0/C1 throughout."
+        },
+        {
+          "quote": "e is the speed from the start directly to node0",
+          "category": "terminology and figure",
+          "blocking": false,
+          "change": "Use competing-channel rate; explicitly initial conditional wait is still Exp(e+f), also in figure."
+        },
+        {
+          "quote": "middle node and outlet difference",
+          "category": "terminology",
+          "blocking": false,
+          "change": "Name responses x1 andx2; explain original output vs reversed-route start."
+        }
+      ],
+      "limits": "Context-free undergraduate simulation only, no source/audits/notes/links; not human testing, expert review or correctness/novelty certification."
+    },
+    "final_reread": {
+      "status": "pass",
+      "blockers_resolved": [
+        "Node probabilities C0,C1 distinguished from total family F_f.",
+        "e as competing-channel rate, initial wait remains Exp(e+f) even conditional on direct whene>0.",
+        "x2 is concentration output and reversed-route start."
+      ],
+      "final_precision_followup": "Explicit e>0 restriction added to conditional direct wait in text and actual figure; checked no clipping or overlap.",
+      "worked_examples": {
+        "fast": "11/6 to7/4; difference -1/12",
+        "slow": "9/5 to2; difference1/5",
+        "hidden": "branch1/3 vs1/2; means both2; g=0 makes entire total distribution same while J marginals differ."
+      },
+      "restatement": [
+        "Construct S from four independent quantities, with f changing waiting and branch probability.",
+        "First-wait convolution and integrating factors give C0=x0,C1=x1,F_f=x2.",
+        "h>=0, sign ofg controlled byb-e, sign ofDelta preserved bynonnegative f difference.",
+        "Fixedotherparameters, nonstrict everydeadline probabilities; no mean-to-CDF inference or arbitrary physical multiparameter generalization."
+      ]
+    },
+    "reviewed_file_sha256": {
+      "README.md": "50eb9fc8c4e55344d4fdf6c815bf42b2815ceafdf9d9dff80d748fe5692ff520",
+      "images/rate-order.png": "351705f3e8803d569c95d14511e5727679025eac3578e18f438459e1f4d93ba5",
+      "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465"
+    },
+    "editing_passes": [
+      {
+        "pass": 1,
+        "focus": "Question and exact result scope",
+        "actions": [
+          "General law and non-strict per-deadline order, not a mean-only inference.",
+          "Separate output-distribution invariance from changing internal joint law."
+        ],
+        "sha256": "045eb7d95855842aaba0e00504b6d6d01207b138306c9c7d3a6f31ec59805e6b"
+      },
+      {
+        "pass": 2,
+        "focus": "Actual figure and mathematical precision",
+        "actions": [
+          "Viewed both rendered PNGs, checked common axes and exact fraction means.",
+          "Changed figure labels to nondecreasing/nonincreasing to match proved non-strict scope.",
+          "Made distinguishability statistical, not certain from one branch observation.",
+          "Clarified common initial wait, fixed-other-rate restriction, initial zero differences and derivative scope."
+        ],
+        "sha256": "5fbdcca6af3396485488c3b60897314a36a0f0b278bb9cd326e38b7de8a9d3d3"
+      },
+      {
+        "pass": 3,
+        "focus": "Blocking independent-reader feedback",
+        "actions": [
+          "Renamed node completion probabilities C0,C1, retaining F_f exclusively for the total-time family.",
+          "Explicitly distinguished direct-channel competing rate e from conditional initial waiting rate e+f, also in the actual figure.",
+          "Clarified x2 as concentration-system output but start of the reverse dependency route."
+        ],
+        "sha256": "df57837ac285cd5783f5616ce3733d803137f7e4694983bbba61a7ecd872ed3d"
+      }
+    ]
+  },
+  "local_links_checked": 2,
+  "original_formal_sources_unchanged": 267,
+  "phase1_math_sources_unchanged": true,
+  "prior_accepted_artifacts_unchanged": true,
+  "sealed_original_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "artifact_sha256": {
+    "audit-selection.json": "1f84dab60bc9cce2bd4cffbdf96125e6b3c39f5fa4ac61802bd78479582a9e72",
+    "audit_module.py": "d1ef17dfd0fda5ab98dc0a85d7c6160f15ef1fb7744b4d9e03b9feb328cb76d9",
+    "evidence/CompletionTimeOrder-attempt1.json": "95ebfc076027d9909935b558039d295599d6f67e4071f0b8cfafbd2381afb855",
+    "evidence/CompletionTimeOrder-attempt1.log": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+    "evidence/CompletionTimeOrder-attempt1.source.lean": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+    "evidence/CompletionTimeOrder-attempt2.json": "cf837eac9909c25c3c2b488f395b3247053f220e3a9dcaba674b0352091979ae",
+    "evidence/CompletionTimeOrder-attempt2.log": "271aa1b99c3119f7879a52edc912455d3f19522346e542ed3d3276035a9a3db2",
+    "evidence/CompletionTimeOrder-attempt2.source.lean": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+    "evidence/GeneralTankCdf-attempt1.json": "ad0739d74ce9c5c3b61ec101180b7ce54f9511bf56d4979e7e9b66877e68d924",
+    "evidence/GeneralTankCdf-attempt1.log": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+    "evidence/GeneralTankCdf-attempt1.source.lean": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+    "evidence/GeneralTankCdf-attempt2.json": "ca2bc22eff6e42f5b736db6a7c970d990c1ac80a8ea4866b3db2973b0369b42a",
+    "evidence/GeneralTankCdf-attempt2.log": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+    "evidence/GeneralTankCdf-attempt2.source.lean": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+    "evidence/HiddenBranchWitness-attempt1.json": "50e4348b7e88eeaf313c43ec286052c150d8b236b956db72118bef052c1a0595",
+    "evidence/HiddenBranchWitness-attempt1.log": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+    "evidence/HiddenBranchWitness-attempt1.source.lean": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+    "evidence/HiddenBranchWitness-attempt2.json": "0ea96e9b463db98cdef0bdd72c170c451e44cab20a6eb8608e310b50dd47adc8",
+    "evidence/HiddenBranchWitness-attempt2.log": "0128731bd1a654c410219870338ee291c7f5e0a6ef7609c2429ee7886532415d",
+    "evidence/HiddenBranchWitness-attempt2.source.lean": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+    "evidence/independent-kernel-response-review.json": "df5a11be2274caa1a3157c1c8645231dae7605b0e5bb58f30371fa6f8b5d79b4",
+    "evidence/MeanRateOrder-attempt1.json": "a8332ffb4a328da6f1731485c58ba2757927964b95da2051b099e8df8c6e6a4b",
+    "evidence/MeanRateOrder-attempt1.log": "b5e4c7e7054a77c40a4820d3e09c1385b5e390c3a984c0068bfb2ee56b703d5b",
+    "evidence/MeanRateOrder-attempt1.source.lean": "df3259c78755b6afd2bdbd8167b02fa48627512724a4928851f158f4e2faa8c9",
+    "evidence/MeanRateOrder-attempt2.json": "df1e8310db39bcd5d361095754c5cc454804ba2c6dfd52c9543b175ece919e4f",
+    "evidence/MeanRateOrder-attempt2.log": "7880668266ffe70c595626be42954e72a42590fb2607daa4718f8204de7db9d9",
+    "evidence/MeanRateOrder-attempt2.source.lean": "7780f04bf9164c08cc444d0825b25cfc937bfe4454295100b35c5ca028fda35b",
+    "evidence/MeanRateOrder-attempt3.json": "cbbf5976782e3d4393174fd9c5cb5be65b3187d9f7b3932598e1b6b8c1a3c406",
+    "evidence/MeanRateOrder-attempt3.log": "511418b1f7c1e2c0598d2dc51f255011d6f38a54d6a09d13be87203e2ebeeef2",
+    "evidence/MeanRateOrder-attempt3.source.lean": "91b5d2be4ccbf4b86b5b552440b4fe29e89ae883eb9e4a0bb1269cfef74082b9",
+    "evidence/MeanRateOrder-attempt4.json": "f715b7a03eef2c85e811a1595f82bd1b3e7c0a37174730891725ca746fd8aeeb",
+    "evidence/MeanRateOrder-attempt4.log": "893a0af8537fa86a33338e46409bbceee034ae4e56e80bc493a8b9853567e432",
+    "evidence/MeanRateOrder-attempt4.source.lean": "2369f17be56620f7b0019bf286ccc8971a603602edf26a6afe446c870b539e32",
+    "evidence/Phase6Audit-final.json": "3bfbec180e9628c958d55da04ef4b867c844051e9426f6eb98f4aadc88da62b1",
+    "evidence/Phase6Audit-final.log": "524438d676b1449298f96c9936b6f8868baa9e252f9a9865ce6cf1469e315f32",
+    "evidence/Phase6Audit-final.source.lean": "eaf22ca129bf2ed39db7d2343a97a8fea5499175af026be1bb776a81cac35100",
+    "evidence/ResponseKernelCalculus-attempt1.json": "c70a8fb005692b053fce32df20e16c9a3a00cb444edca6749a0f7c74edda6622",
+    "evidence/ResponseKernelCalculus-attempt1.log": "1f018935e25bcb7db5d8ca546de3d2076a6d783f0eb3559a7c55c71881c0427d",
+    "evidence/ResponseKernelCalculus-attempt1.source.lean": "5c425beea92f470338f82b43f9d3dac0d27f954ebc93851b7bffca0c1b5d5aa3",
+    "evidence/ResponseKernelCalculus-attempt2.json": "67b1564d9de08f0ddf14c6c8c5ccf822913da95c7dd975fcd556c97b3bb2604e",
+    "evidence/ResponseKernelCalculus-attempt2.log": "bd4218385d2738ba80c7348064e98125f46ccba70292b075ecd8122afe0e2a30",
+    "evidence/ResponseKernelCalculus-attempt2.source.lean": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+    "evidence/TankResponse-attempt1.json": "45dfcc58fe30c2fc11f2fdd325bc48d208e934a18a8b953a7dd34c3a43a65dbb",
+    "evidence/TankResponse-attempt1.log": "7e3770b2101a0fe9e9269bc4f644fbec9985d10bb611ed61e3d2ff21ffd4dc6f",
+    "evidence/TankResponse-attempt1.source.lean": "6b4f27a9a0ad0cc60ce1c360d2e93f243daf9bc577c023901c26d23e4b21703a",
+    "evidence/TankResponse-attempt2.json": "e1af9ec483fdb7721345e46ec85feeef1663d8a0a719e19d0b7c6b23890bbbc6",
+    "evidence/TankResponse-attempt2.log": "17d11507d87cd9464d7bf0be6b9c8dfa56cf7e1642f43113fc9f3e55d6590507",
+    "evidence/TankResponse-attempt2.source.lean": "d29aee8e3b135c10a77f3fa2068f38d0c99546edc47c3f44b3c5847e7003347f",
+    "evidence/TankResponse-attempt3.json": "d76e7d63a2d108655db302b8f129425ff0d18c3e516db023137b7f86666cc7ad",
+    "evidence/TankResponse-attempt3.log": "e73234724213c380c419a946b6e65d472953a68700f8e199dfd0d64a4e3eec55",
+    "evidence/TankResponse-attempt3.source.lean": "354e3d6a0e958011ddb838df28490bfdde221444ef18feeb13e6886512197181",
+    "evidence/TankResponse-attempt4.json": "2ce01d761e3307a70a0a2fb519864f40d2529dc904da093006fcd47fd3a24ed5",
+    "evidence/TankResponse-attempt4.log": "5df4e25600c906494b4cc505f9c64f9244ae670b2c05ed4927aa1891618fd5a6",
+    "evidence/TankResponse-attempt4.source.lean": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+    "evidence/TankResponse-unique-draft.txt": "f14b04caba81f9dae986a713ab195730701f6f6d3088d1aeff4f2b35a7d58124",
+    "figure-data.json": "f027735ec56855fae3c42fc54dd29b63df9584e1a36ed5f9ecc106f33783fbce",
+    "images/hidden-branch.png": "19e829209c0c17b3d1056749a238886d39093c8005e1ac9c23497c830e1e3465",
+    "images/rate-order.png": "351705f3e8803d569c95d14511e5727679025eac3578e18f438459e1f4d93ba5",
+    "lean/CompletionTimeOrder.lean": "99d5db03e090c735104a79354f384f8beb553b12b92e07bf1a0f797a633bab84",
+    "lean/GeneralTankCdf.lean": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+    "lean/HiddenBranchWitness.lean": "64d2e84cda2ccf9dbfe92f828f503e6bcd8c40d0a8f8c9d44e6cf74784d9c79c",
+    "lean/MeanRateOrder.lean": "2369f17be56620f7b0019bf286ccc8971a603602edf26a6afe446c870b539e32",
+    "lean/Phase6Audit.lean": "eaf22ca129bf2ed39db7d2343a97a8fea5499175af026be1bb776a81cac35100",
+    "lean/ResponseKernelCalculus.lean": "5ac2355b9b21790d9867cf45decaf38cff84aee3e271fb2ff08f7d57b0372b39",
+    "lean/TankResponse.lean": "94bc41801435d45adc24bf490fbb8dc814acd1030bb9b0f7ae24c0046e09fc6f",
+    "notes/editing-passes.json": "5e2e5eb18642d3d800575b2523d47c061bde53dafff659184866b0adfb36538e",
+    "notes/kernel-response-review-attestation.json": "8b57aab78a6b543c58ef5605667b43c1bb565850138c0a8a862a844283353a8d",
+    "notes/phase5-freeze.json": "8f7c44b210ebfd0cb8dfc6a2dc5eced8084875f5035d1190f2642e7445177906",
+    "notes/reader-first-read.json": "f0f0c3ddfaed538643154996b9e7a2583dc22f154a01262efae9aee0838781f5",
+    "notes/readme-pass1.md": "045eb7d95855842aaba0e00504b6d6d01207b138306c9c7d3a6f31ec59805e6b",
+    "notes/readme-pass2.md": "14972490ed9d9ccd438d7446a5ff33441257f054da516c5c17bb6a62a41ca053",
+    "notes/readme-pass3.md": "146bb847e98cd725ba375571d0af5565df200a805141c5bfc5f6e814e937f0fa",
+    "notes/root-independent-review.json": "4a8bc332eda0b50374eb43072d3ad9b2aa97e73e5beea44188f1900d812f7941",
+    "reader-review.json": "d292ed596d7d17376de8f47d39fd6cbd1382581b84fde4fdd96798a4af3adb58",
+    "README.md": "50eb9fc8c4e55344d4fdf6c815bf42b2815ceafdf9d9dff80d748fe5692ff520",
+    "render_results.py": "f9415ebd3f75c9bfed183178b5dd3d684cb69e04452f23f6f532baa0ec0180e4",
+    "RUN_STATE.json": "30f9921533832c545b3ba3295653b9ecaf5e1f10793c62bf68e9adb86886ebeb",
+    "source-review-binding.json": "c337b2d1a574746e0ee6669aa00ce508a2d5dbc0cdbec1ced43a9eb0d8fd3d1d",
+    "validate_phase6.py": "99101393018510eb2924098e7f76cbacdf2a3182df30453cfa9330496df16f6a"
+  },
+  "claims": {
+    "parameters": "a,b>0,e,f>=0,e+f>0, fixed rates, zero initial state and constant inlet1",
+    "constructed_actual_response_exists_and_satisfies_ODE": true,
+    "actual_CDF_equals_response_for_all_parameters": true,
+    "actual_CDF_positive_time_ODE": true,
+    "f_order_on_actual_CDF_at_every_real_deadline": {
+      "e_le_b": "nondecreasing",
+      "b_le_e": "nonincreasing",
+      "b_eq_e": "totalMeasure invariant in f"
+    },
+    "actual_mean_order_opposite_to_CDF_order": true,
+    "hidden_branch_actual_probabilities": [
+      "1/3",
+      "1/2"
+    ],
+    "hidden_branch_same_totalMeasure_different_sample_law": true,
+    "strict_CDF_order_or_necessity_classification_proved": false,
+    "new_field_or_novelty_certification": false,
+    "reader_simulation_not_human_test": true
+  }
+}

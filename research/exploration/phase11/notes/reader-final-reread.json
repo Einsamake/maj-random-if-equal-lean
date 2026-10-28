@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "review_kind": "independent_simulated_undergraduate_reader_final_reread",
+  "status": "pass",
+  "unresolved_blockers": [],
+  "actual_image_viewed": true,
+  "reviewed_file_sha256": {
+    "README.md": "2822FDCD8BA9A298B6F7E9A80127667B4294FC79354791A59AF8991132DB4E48",
+    "images/testing-experiment.png": "4975ABC8921F60B283CD525D16FD54B2F3DC37D7756AB7F02C680175DEAA7619"
+  },
+  "first_read_file_sha256": {
+    "README.md": "091F1A43B343E8D79D15E914D9EA60104D52216C9FEDF13CE2612083D587FEEB",
+    "images/testing-experiment.png": "4975ABC8921F60B283CD525D16FD54B2F3DC37D7756AB7F02C680175DEAA7619"
+  },
+  "method": {
+    "reader_background": "模拟数学本科毕业，基础分析、代数、概率，不懂Lean，无项目历史。",
+    "only_read": [
+      "README.md正文",
+      "images/testing-experiment.png实际图片"
+    ],
+    "did_not_read": [
+      "数学源码",
+      "审计",
+      "其他notes",
+      "外链",
+      "其他章节"
+    ],
+    "first_read_feedback_preserved": "reader-first-feedback.json由本读者已保存；此次没有重新打开该notes或其他notes，仅使用本轮阅读记忆。",
+    "limits": "本科背景模拟读者通过不代表人类用户测试、专家评审、数学正确性或创新性认证。"
+  },
+  "revision_response": [
+    {
+      "original_sentence": "它们的其他速率在每一对比较中相同。",
+      "final_sentence": "两个模型的Wa速率都为1，Wb速率都为1+ε；Wc的速率1+f与绕路概率则都随f改变。",
+      "reader_result": "原先“其他速率”的歧义已消除。现在可以直接指出相同的是Wa、Wb速率，改变的是Wc速率和J的概率；四随机量模型没有被改写成仅绕路概率不同。"
+    },
+    {
+      "original_sentence": "这里讨论这种由样本决定结果的规则。",
+      "final_sentence": "这里讨论这种由样本唯一决定判断结果的规则。",
+      "reader_result": "与判高区域A的描述一致：同一个完整样本对应固定的二选一结果；正文没有承诺额外随机化或重新设计实验。"
+    }
+  ],
+  "fresh_restatement": {
+    "goal_and_scope": "在明确给出的低f=1/2与高f=1两个机制间，实验只在最开始公平选择一次机制，然后固定这个机制做n次任务；判断者只看总完成时间。结论是所有正文定义的可测二选一规则共有成功率上界，不能从这里推出某个算法达到上界，也不能推成任意模型100次都难识别。",
+    "true_four_random_variables": "S=Wc+Wa+J Wb。每次任务的四随机量相互独立。Wa速率1，Wb速率1+ε，Wc速率1+f，P(J=1)=f/(1+f)。低机制Wc速率3/2且绕路概率1/3；高机制Wc速率2且绕路概率1/2。独立重做任务时每次重抽内部随机量，但不重选机制。",
+    "conditional_iid": "给定低机制后S1,...,Sn独立同分布于μL，给定高机制后独立同分布于μH。因此联合分布分别是μL的n次乘积和μH的n次乘积。不能把未知机制已经混合后的无条件样本直接当作独立。",
+    "common_positive_component": "QL质量1/3、QH质量1/2，原始分支给μL=2QL+QL*Eb与μH=QH+QH*Eb。正文两个指数恒等式给QL=κ+κ*E1、QH=2κ+κ*E1，所以R=QH+QL*Eb是共同分量，并剩下κ*E1和κ*Eb。ρb密度e^(-bt)在t≥0时同时被E1、Eb密度支配，质量1/b。再保留κ*ρb，便有共同γ=R+κ*ρb，质量c=5/6+1/(6b)，各自剩余δ=1-c。质量1/6是改写中的κ，不是原始绕路概率。",
+    "product_and_any_event": "每次单分布写成γ+各自余项，n次乘积展开的非负项中共有γ^⊗n，质量c^n。任意可测A上的共同项抵消，各自余项落在[0,1-c^n]，因而|PH(A)-PL(A)|≤1-c^n。A可用整个完成时间向量。",
+    "equal_prior_success_and_error": "A是判高区域，A补判低；先验各半，所以p成功=1/2 PH(A)+1/2 PL(A补)=1/2+1/2[PH(A)-PL(A)]≤1-c^n/2≤1/2+nδ/2。最后一步用1-c^n≤nδ。p错误=1-p成功，故至少c^n/2；松界对应错误率至少1/2-nδ/2。"
+  },
+  "calculations": [
+    {
+      "example": "零次观测",
+      "working": "n=0时c^0=1；成功率界1-1/2=1/2，松界1/2+0=1/2，错误率下界1/2。"
+    },
+    {
+      "example": "共同质量与余量",
+      "working": "ε=1/100，b=101/100；c=5/6+1/(6b)=505/606+100/606=605/606；δ=1/606。"
+    },
+    {
+      "example": "100次松界",
+      "working": "100/(2·606)=50/606；成功率≤303/606+50/606=353/606≈58.2508%；错误率≥(606-353)/606=253/606≈41.7492%。"
+    },
+    {
+      "example": "互补边界检查",
+      "working": "(353+253)/606=1。幂形式的一对边界1-c^100/2与c^100/2也相加为1；这不声称它们可达。"
+    },
+    {
+      "example": "更紧幂界",
+      "working": "成功率≤1-(605/606)^100/2。用100log(1-1/606)≈-0.165153得(605/606)^100≈0.84776，故成功率界≈57.61%，错误率界≈42.39%。由1-c^100≤100δ可直接知道此界不比353/606松。"
+    }
+  ],
+  "categorized_result": {
+    "undefined_terms_blocking": [],
+    "inference_gaps_blocking": [],
+    "symbol_problems_blocking": [],
+    "figure_text_inconsistencies": [],
+    "proof_deferred_to_other_sources_that_blocks_current_claim": [],
+    "figure_observation": "已实际查看图。图明确只选模型一次、条件下独立重复100次、全样本判定A；50%总是判低基线与353/606≈58.25%松上界一致。图片指纹与首读相同，未需重画。"
+  },
+  "conclusion": "修订后当前正文承诺的实验设置、四变量模型、共同正分量、独立乘积共同质量、任意样本事件差界、等先验成功率和错误率转换及手算例均可由正文与图片完成；无尚存阻断缺口。"
+}

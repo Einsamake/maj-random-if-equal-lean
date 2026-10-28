@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-27T18:20:46.486675+08:00",
+  "module": "GeneralTankCdf",
+  "exit_code": 0,
+  "trust_level": 0,
+  "checks_passed": true,
+  "source_sha256": "907387928b6e68ae32b0e15b20011db1470bce7eb19dc3ad45becacd239d5e16",
+  "source_unchanged_during_build": true,
+  "log_sha256": "aef1b336495543926b9b3d240738f96a77ade7863642ca721e07f1318cd50598",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lake.exe",
+    "env",
+    "lean",
+    "--trust=0",
+    "--root=D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean",
+    "-o",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\build\\GeneralTankCdf.olean",
+    "D:\\MyWorks\\Math\\research\\exploration\\phase6\\lean\\GeneralTankCdf.lean"
+  ],
+  "cwd": "D:\\MyWorks\\Math\\formal\\analysis",
+  "named_declarations": [
+    "MathExploration.GeneralTankCdf.cdf_exp_negative",
+    "MathExploration.GeneralTankCdf.cdf_exp_eq_x0",
+    "MathExploration.GeneralTankCdf.cdf_middle_negative",
+    "MathExploration.GeneralTankCdf.cdf_middle_eq_x1",
+    "MathExploration.GeneralTankCdf.cdf_direct_kernel",
+    "MathExploration.GeneralTankCdf.cdf_via_kernel",
+    "MathExploration.GeneralTankCdf.weighted_kernels",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_negative",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2_all_real",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_hasDerivAt_of_pos",
+    "MathExploration.GeneralTankCdf.total_event_eq_cdf",
+    "MathExploration.GeneralTankCdf.total_event_eq_x2",
+    "MathExploration.GeneralTankCdf.total_event_eq_x2_all_real"
+  ],
+  "expected_prints": [
+    "MathExploration.GeneralTankCdf.cdf_exp_negative",
+    "MathExploration.GeneralTankCdf.cdf_exp_eq_x0",
+    "MathExploration.GeneralTankCdf.cdf_middle_negative",
+    "MathExploration.GeneralTankCdf.cdf_middle_eq_x1",
+    "MathExploration.GeneralTankCdf.cdf_direct_kernel",
+    "MathExploration.GeneralTankCdf.cdf_via_kernel",
+    "MathExploration.GeneralTankCdf.weighted_kernels",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_negative",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_eq_x2_all_real",
+    "MathExploration.GeneralTankCdf.cdf_totalMeasure_hasDerivAt_of_pos",
+    "MathExploration.GeneralTankCdf.total_event_eq_cdf",
+    "MathExploration.GeneralTankCdf.total_event_eq_x2",
+    "MathExploration.GeneralTankCdf.total_event_eq_x2_all_real"
+  ],
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "olean_sha256": "645d339ffc9a21f34e1a56d69505dc66cd47d73ffaac350fdae08b8f350863b3"
+}

@@ -1,0 +1,99 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+'MathExploration.CommonIIDBound.iid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.iid_isProbabilityMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.pi_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.iid_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.commonIID_real_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.common_mass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.common_mass_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_of_common_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.CommonIIDBound.one_sub_pow_le_mul_one_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.CommonIIDBound.abs_product_event_gap_le_linear_missing_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.BinaryTestingBound.success' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BinaryTestingBound.error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BinaryTestingBound.success_add_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BinaryTestingBound.error_ge_common_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.BinaryTestingBound.success_le_of_common_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.missingMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_coordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.lowSampleMeasure_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.highSampleMeasure_rectangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_le_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_le_high' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonSampleMeasure_mass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.commonMass_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.one_sub_commonMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.missing_sample_mass_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.all_test_event_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.all_test_event_gap_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_add_testError' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_ge_common_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_le_common_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_ge_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_le_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_one_hundredth_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_one_hundredth_one_hundred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testSuccess_one_hundredth_one_hundred_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.ActualCompletionTesting.testError_one_hundredth_one_hundred_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

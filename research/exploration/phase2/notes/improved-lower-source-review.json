@@ -1,0 +1,351 @@
+{
+  "schema": "independent-math-source-review-v1",
+  "date": "2026-10-27",
+  "reviewed_at_utc": "2026-10-26T17:15:16Z",
+  "reviewer_role": "Independent source reader; did not author ImprovedOriginalLower or phase1 FullBlockThreshold.",
+  "verdict": "PASS_WITH_STATED_SCOPE_LIMITS",
+  "blocking_findings": [],
+  "source": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+  "source_sha256": "F8334255C3889B31528634C6DDE9C97B7BBD9A3763AD04F00F69AA0152DD9C27",
+  "source_hash_at_first_and_final_read_equal": true,
+  "claim_reviewed": "For N>=500001, ofReal(N^2/576000000)<=OriginalRecoveryProfile.tau N<=ofReal(664066*N^2), in the original synchronous model, exact-N scale, two homogeneous backgrounds, with ENat/ENNReal infinity retained.",
+  "mathematical_checks": [
+    {
+      "item": "floor and natural subtraction",
+      "source_lines": [
+        23,
+        59
+      ],
+      "status": "pass",
+      "evidence": "quotient=L^2/8000000 is Nat division, hence a floor. rounds=q-1 uses Nat subtraction, but q>=32 is proved before rewriting rounds+1=q. Both floor inequalities q*8000000<=L^2<(q+1)*8000000 are proved directly from Nat division/mod.",
+      "independent_reasoning": "At L=250000, q=7812 and rounds=7811; no truncation at zero enters the theorem range."
+    },
+    {
+      "item": "exponential scheduling-error bound",
+      "source_lines": [
+        51,
+        75
+      ],
+      "status": "pass",
+      "evidence": "L<=32q+31 follows from 250000L<=L^2<8000000(q+1). With q>=32 this gives L<=64(q-12). Put r=q-12>=16; the original scalar inequality 64r^2<=2^r yields 64L^2<=4096*64r^2<=2^(r+12)=2^q.",
+      "dependency": "D:/MyWorks/Math/formal/analysis/MathResearchAnalysis/SyncLowerScale.lean, square_exponential_bound",
+      "boundary": "This dependency is only the scalar exponential inequality; the old giant-L lower theorem is not used as a premise."
+    },
+    {
+      "item": "clock horizon versus synchronous rounds",
+      "source_lines": [
+        77,
+        105
+      ],
+      "status": "pass",
+      "evidence": "SchedulingFailure.time(k)=8 log(2)(k+1), so k=q-1 gives exactly 8 log(2)q. From log(2)<=1 and q*8000000<=L^2 this is <=L^2/1000000, the phase1 quadraticHorizon.",
+      "error": "Finite square parameter n=2L-1 gives n+2=2L+1. Error=(6/5)(2L+1)^2*2^(-q)<=(6/5)*9L^2/(64L^2)=27/160<1/4. The proof uses the weaker <=1/4 correctly.",
+      "no_time_substitution": "Physical clock time is kept as Real/NNReal until the actual SquareGridLaw clock-to-synchronous probability comparison. It is not set equal to a ring count."
+    },
+    {
+      "item": "phase1 probability input is proved, not assumed",
+      "source_lines": [
+        115,
+        147
+      ],
+      "status": "pass",
+      "evidence": "FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half is invoked with only L and hL. Phase1 derives its stronger L^3/12500 missing-weight threshold by summing the entire vacant block and applies the actual mean bound (18L+12)T+(L+2)(4L+2).",
+      "phase1_numeric_check": "For L>=250000 and H=L^2/1000000, mean<=39L^3/1000000<=L^3/25000, half of threshold L^3/12500.",
+      "law_identity": "PhysicalAreaTail.law L is definitionally ClockWordMarks.measure(parameter L), matching clockProbability's original law."
+    },
+    {
+      "item": "survival monotonicity and comparison direction",
+      "source_lines": [
+        126,
+        147
+      ],
+      "status": "pass",
+      "evidence": "ClockEndpointSurvival.clockProbability_antitone proves absorption persistence under an almost-sure all-times Good sample event for the true zero-boundary endpoint; this is not an assumed monotonicity of the auxiliary mixed event.",
+      "clock_to_sync": "The proof selects .1 of SquareGridLaw.two_way_clock_tail: P_clock(nonzero at time(k))<=P_sync(T>k)+error. Clock survival>=1/2 and error<=1/4 imply P_sync(T>k)>=1/4.",
+      "off_by_one": "The unused .2 concerns 2*rankThreshold(k)+1. No extra factor 2 or 256 is imported into the lower-bound horizon. The first direction already compares to k synchronous rounds."
+    },
+    {
+      "item": "round lower bound and final denominator",
+      "source_lines": [
+        106,
+        165
+      ],
+      "status": "pass",
+      "evidence": "L^2<8000000(q+1) and q>=32 imply L^2<=16000000(q-1)=16000000k. halfSide(N)=floor((N-1)/2)>=N/3 for N>=6. Thus k/4>=L^2/64000000>=N^2/576000000.",
+      "constant_multiplication": "576000000=16000000*4*9.",
+      "threshold": "N>=500001 implies halfSide N>=250000. At odd threshold N=500001 equality holds. Even N=500002 has the same L=250000. No theorem is claimed below the stated threshold."
+    },
+    {
+      "item": "odd auxiliary square to exact-N square",
+      "source_lines": [
+        167,
+        184
+      ],
+      "status": "pass",
+      "evidence": "The auxiliary finite model n=parameter(halfSide N) extends to squareConfig(2L+1), with 2L+1<=N. square_supported_mono and SquareGridLaw.supported_tail_le_top(N-2) move its lower tail to squareConfig N in the original infinite-grid law.",
+      "direction": "A smaller supported initial state has no larger recovery tail than the full N-square. Hence its lower probability bound transfers upward to the full square.",
+      "parity": "For odd N the squares have equal side; for even N the auxiliary side is N-1. exact-N is supplied by the final full square, not falsely assigned to the smaller one."
+    },
+    {
+      "item": "genuine original law, infinity, and expectation",
+      "source_lines": [
+        186,
+        201
+      ],
+      "status": "pass",
+      "evidence": "InfiniteGridRandomDynamics.measure is FairMarks.markMeasure(Site x Nat), an actual infinitePi of fair two-point measures, and synchronous is the infinite integer-grid four-neighbour update with no centre.",
+      "recovery": "HomogeneousRecoveryTime.synchronous is the first hit of either all-false or all-true and takes values in ENat. For zero-background supported squares, synchronous_ne_one_of_supported makes it pathwise equal to the zero-background recovery time.",
+      "expectation": "ExtendedRecoveryExpectation.expectation is the lintegral of ENat.toENNReal; ExtendedTailLower.expectation_ge_of_quarter_tail proves the single-event lower bound without finite-mean or almost-sure-finite assumptions. Infinite recovery is never converted to Nat in the new argument."
+    },
+    {
+      "item": "exact N, translations, two backgrounds, and preserved upper bound",
+      "source_lines": [
+        203,
+        237
+      ],
+      "status": "pass",
+      "evidence": "translated_square_witness explicitly proves distance=N for every translation and complement choice and transports expectation using original distribution symmetries. OriginalRecoveryProfile.tau is an iSup over deterministic configurations with distance exactly N.",
+      "lower_scope": "The lower bound is witnessed by filled squares and their translated/complemented versions. It is not a lower bound for every initial configuration.",
+      "upper": "tau_quadratic_bounds calls the existing OriginalQuadraticUpper.tau_quadratic_upper_bound with its actual N>=16 premise discharged from N>=500001. Coefficient664066 is unchanged.",
+      "no_core_parameters": "Final tau lower/bounds declarations take only N and the numerical lower-threshold premise; no drift, tail, scheduling, law, finiteness, comparison, or exact-N conclusion is accepted as an extra parameter."
+    }
+  ],
+  "numerical_boundary_checks": {
+    "L_examples": [
+      {
+        "L": 249999,
+        "q": 7812,
+        "k": 7811,
+        "horizon": 62499.500001,
+        "scheduling_time_using_log2_le_one": 62496,
+        "actual_time": 43318.92619627434,
+        "round_lower_bound": 3906.2187500625
+      },
+      {
+        "L": 250000,
+        "q": 7812,
+        "k": 7811,
+        "horizon": 62500,
+        "scheduling_time_using_log2_le_one": 62496,
+        "actual_time": 43318.92619627434,
+        "round_lower_bound": 3906.25
+      },
+      {
+        "L": 250001,
+        "q": 7812,
+        "k": 7811,
+        "horizon": 62500.500001,
+        "scheduling_time_using_log2_le_one": 62496,
+        "actual_time": 43318.92619627434,
+        "round_lower_bound": 3906.2812500625
+      }
+    ],
+    "N_examples": [
+      {
+        "N": 500000,
+        "L": 249999,
+        "odd_side": 499999,
+        "meets_L250000": false,
+        "k": 7811,
+        "target_lower": 434.02777777777777
+      },
+      {
+        "N": 500001,
+        "L": 250000,
+        "odd_side": 500001,
+        "meets_L250000": true,
+        "k": 7811,
+        "target_lower": 434.029513890625
+      },
+      {
+        "N": 500002,
+        "L": 250000,
+        "odd_side": 500001,
+        "meets_L250000": true,
+        "k": 7811,
+        "target_lower": 434.03125000694445
+      }
+    ],
+    "role": "Independent arithmetic diagnostics supporting source reading; not a replacement for universal Lean proofs."
+  },
+  "kernel_evidence": {
+    "reviewer_reran_kernel": false,
+    "reviewer_ran_full_project": false,
+    "record": "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/evidence/improved-original-lower-validation.json",
+    "record_sha256_at_review": "7B978814517080D97F9B099F47BF1AB5FD47BB5997CF5FCD4C81A09E1DDBA76E",
+    "actual_binding_checks": {
+      "source_hash_matches": true,
+      "olean_hash_matches": true,
+      "log_hash_matches": true,
+      "frozen_phase1_source_hash_matches": true,
+      "dependency_olean_hash_matches": true,
+      "actual_printed_declaration_count": 24,
+      "actual_names_match_declared_names": true,
+      "exit_file_zero": true,
+      "record_trust_level": 0,
+      "record_command": [
+        "D:/MyWorks/Math/formal/.tools/lean-4.35.0-rc4-windows/bin/lake.exe",
+        "env",
+        "lean",
+        "--trust=0",
+        "-o",
+        "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/build/ImprovedOriginalLower.olean",
+        "--root=C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean",
+        "C:/Users/Lenovo/Desktop/Project/Math/research/exploration/phase2/lean/ImprovedOriginalLower.lean"
+      ]
+    },
+    "observed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "custom_axioms_observed": false,
+    "unsupported_proof_tokens_in_new_source": false,
+    "evidence_boundary": "A final validation JSON, command containing --trust=0, kernel output with24actual declaration names, exit0, and matching source/olean/log hashes were actually read. The earlier temporary lack of metadata has been resolved. This review verifies the files and recorded run; it does not independently recreate the CLI execution.",
+    "warning": "The log contains the existing non-fatal warning that the batteries dependency checkout has local changes. This review did not audit that package."
+  },
+  "read_file_hashes": [
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\lean\\ImprovedOriginalLower.lean",
+      "Hash": "F8334255C3889B31528634C6DDE9C97B7BBD9A3763AD04F00F69AA0152DD9C27"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\lean\\FullBlockThreshold.lean",
+      "Hash": "1910B52305E593410D0C190F17E2FAFA9F47CFB24ACF9B08AD45BCE2AEEC8D79"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalQuadraticRecovery.lean",
+      "Hash": "27E11B9CE8AFAA9D41B41F001B51444A19D293DCAF880EBA2064457DFB9D758B"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalQuadraticLower.lean",
+      "Hash": "B5AB0C112B66D5B5F3AFD17DED75DBC28E884D123E51EADAFAF0F71AB9068752"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalQuadraticUpper.lean",
+      "Hash": "6411173CD853EC57417B799A5AEEDA6D316490453A31A18CF9C07296EFBF5C3F"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalRecoveryProfile.lean",
+      "Hash": "2539A1193042D8E7E6476EDBC6CCAB3E1BB9DA82E14E93A5DAC196E589325884"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\HomogeneousRecoveryTime.lean",
+      "Hash": "D0761ADAE03F103A3A39A0644A5E1B70C4433EE31A52A8D5098D5B64944E70DE"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\InfiniteGridRandomDynamics.lean",
+      "Hash": "6C6DEB105EDC9579B4508FF0665472BD55E74F991382FE796462902D76E88714"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\InfiniteGridModel.lean",
+      "Hash": "BECE083097453BBC47B97258096FE85BA2CEE656834B9A1D54071FFB64CAD81A"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\FairMarks.lean",
+      "Hash": "9140074A94CE73943C4301A2DD545DB913FCEC48786C50FDFE082369F27C1E35"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SquareGridLaw.lean",
+      "Hash": "6A0C98FF1273EA9C96DC3D693F91987634707FD94223FBE012894279CE492031"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SquareRecoveryTime.lean",
+      "Hash": "D646260833A8FEBB0C92E09FD9974CC0EAACEB578BA7FF4F71BE1E5C31FFCE20"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SynchronousClockComparison.lean",
+      "Hash": "86D2F2144DF000884446F13BC166408A0F932394B4F9A825902563C6A86CF993"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SchedulingFailure.lean",
+      "Hash": "E2DCF88CBC905335E846F6157D1363142B804FE719F664039A3FA2A1E15617AD"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ClockEndpointSurvival.lean",
+      "Hash": "F9315FF33AB2CEE211CB52D14FF3A5EFB3C4BCC9A969BD39D0FAA93FA9787031"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ClockRecoveryComparison.lean",
+      "Hash": "62C57D5F428082854AC3C54247CDD487156558D08CE8ED76478606E0920A5DD4"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SynchronousQuadraticTail.lean",
+      "Hash": "F72C764B9663455B26B4E87640A45D806EE85D564C1D88FB6AF21E015C5C2331"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SyncLowerScale.lean",
+      "Hash": "D4EA9C03054C76C0BF00B2756B2ACC0002F97FEE430376F0316C7ED65D59E6AD"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ClippedSquareCoordinates.lean",
+      "Hash": "C6CD6A6745EFD54A81DB2DCB0180DB52614E316B6E86F36595324A7BF7F65376"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ExtendedTailLower.lean",
+      "Hash": "69D9F37C4AB4E1C5EEFAADE5AC5D43332ABA4891708957EF31A9DA19944A9CCB"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ExtendedRecoveryExpectation.lean",
+      "Hash": "845AE6F5D2C03A831F6605CA7B8CE551369E116D8B22769D54E642915F350339"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\PerturbationGeometry.lean",
+      "Hash": "61B8AC512E07C7CD8EF2B54EBB39C311293D8BE7015E7C7D8B3D7B322012A637"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\PerturbationSymmetry.lean",
+      "Hash": "C08F325F3527EFE13D0E3BF13F5814AD7FAAB36299CFE6FEA936C90C113C0504"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\PhysicalWeightedDrift.lean",
+      "Hash": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\FrozenPhysicalExit.lean",
+      "Hash": "EE4882CCE8654DCA8D4207D4B20E6169A14F26E7ADB80D331755AB216C5B4805"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\PhysicalAreaTail.lean",
+      "Hash": "ED1D27446E2AE29E8889E4DBCB3D19F74CC889DB90B2FDDD5EE36CA5BA5BA968"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\WeightedExitArea.lean",
+      "Hash": "E0199659D0AB6101AF2AAECACD304F518E5259A05A3D0154634E08C441E254CB"
+    },
+    {
+      "Path": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ProtectedExitArea.lean",
+      "Hash": "F592704670AFB00D91E74A04AF6823BBDA9FAF1A4B21357AB57DB3652472F486"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\improved-original-lower-validation.json",
+      "Hash": "7B978814517080D97F9B099F47BF1AB5FD47BB5997CF5FCD4C81A09E1DDBA76E"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\improved-original-lower-kernel.log",
+      "Hash": "CC772E99553E755AD8CFAD883EF55967EA43AAF83ACCCE5727D3F763A0032F04"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\improved-original-lower-kernel.exit.txt",
+      "Hash": "13BF7B3039C63BF5A50491FA3CFD8EB4E699D1BA1436315AEF9CBE5711530354"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\build\\ImprovedOriginalLower.olean",
+      "Hash": "83AD6E7D37C6A279E49CC98B5A68CCFCB6AC15A6D0617773A92D21DCA75B1A1D"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\build\\FullBlockThreshold.olean",
+      "Hash": "21A5B5F046126EBEBCA173024BB0B347F1014529FD49C2E6FD158BAFE1B7DAD4"
+    },
+    {
+      "Path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\research\\exploration\\phase2\\evidence\\full-block-threshold-cache-build.json",
+      "Hash": "A3CEEFE9431A3891130BB2F89A0C98D951B669F4DB09BDF7520B648FFAF54938"
+    }
+  ],
+  "scope_limits": [
+    "Selective independent mathematical source reading of the new theorem and named original interfaces, not an expert peer review, novelty certification, or proof of an unrelated claim.",
+    "Original D/formal imports were not all recompiled or exhaustively audited in this review; their inspected source fingerprints are saved, and the new target's final run and frozen phase1 dependency artifacts were hash-checked.",
+    "No formal source, phase1 source, ZIP/package, or documentation was edited. Only this machine-readable review was created.",
+    "No mathematical issue requiring a source change was found in the requested floor/time/probability/scale/law scope."
+  ]
+}

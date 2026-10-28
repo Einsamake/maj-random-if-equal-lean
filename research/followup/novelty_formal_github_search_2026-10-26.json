@@ -1,0 +1,256 @@
+[
+  {
+    "query": "Maj-Random-If-Equal",
+    "total": 0,
+    "incomplete": false,
+    "items": []
+  },
+  {
+    "query": "MajRandomIfEqual",
+    "total": 0,
+    "incomplete": false,
+    "items": []
+  },
+  {
+    "query": "2101.12682 extension:lean",
+    "total": 0,
+    "incomplete": false,
+    "items": []
+  },
+  {
+    "query": "Glauber zero temperature extension:lean",
+    "total": 26,
+    "incomplete": false,
+    "items": [
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Solutions/Sol_MarkovMixing_ising_high_temperature.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Solutions/Sol_MarkovMixing_ising_high_temperature.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/c5ea003/Solutions/Sol_MarkovMixing_ising_high_temperature.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/c5ea003/Solutions/Sol_MarkovMixing_ising_high_temperature.lean"
+      },
+      {
+        "repo": "EmmaLeonhart/Sutra",
+        "path": "fv-lean/mathlib/GibbsMathlib.lean",
+        "url": "https://github.com/EmmaLeonhart/Sutra/blob/c5298ddf23f2303840e21e6e4eca61251c626b5f/fv-lean/mathlib/GibbsMathlib.lean"
+      },
+      {
+        "repo": "mkaratarakis/HopfieldNet",
+        "path": "NeuralNetwork/NeuralNetwork/toCanonicalEnsemble.lean",
+        "url": "https://github.com/mkaratarakis/HopfieldNet/blob/0bbb8999d1703776516f37f412334e01e07a30a0/NeuralNetwork/NeuralNetwork/toCanonicalEnsemble.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Solutions/Sol_MarkovMixing_ising_complete_graph_fast.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Solutions/Sol_MarkovMixing_ising_complete_graph_fast.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/c5ea003/Solutions/Sol_MarkovMixing_ising_complete_graph_fast.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/c5ea003/Solutions/Sol_MarkovMixing_ising_complete_graph_fast.lean"
+      },
+      {
+        "repo": "primaryhosting/brockian-mathematics",
+        "path": "aristotle/harvest_100/admin_c5e7aa00.lean",
+        "url": "https://github.com/primaryhosting/brockian-mathematics/blob/29426ff65b6f1fd68d594e529632eb79b5be3089/aristotle/harvest_100/admin_c5e7aa00.lean"
+      },
+      {
+        "repo": "mkaratarakis/someRepo",
+        "path": "HopfieldNet/Quiver/NN/toCanonicalEnsemble.lean",
+        "url": "https://github.com/mkaratarakis/someRepo/blob/0c0bad2ee10a5e044a3386ba768c6ff649043042/HopfieldNet/Quiver/NN/toCanonicalEnsemble.lean"
+      },
+      {
+        "repo": "tomdif/unifiedtheory",
+        "path": "UnifiedTheory/LayerB/WehrlEntropy.lean",
+        "url": "https://github.com/tomdif/unifiedtheory/blob/f257895b2902241778ede405324a556a091c3733/UnifiedTheory/LayerB/WehrlEntropy.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_MarkovMixing_ising_edge_removal.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_MarkovMixing_ising_edge_removal.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/c5ea003/Theorems/Thm_MarkovMixing_ising_edge_removal.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/c5ea003/Theorems/Thm_MarkovMixing_ising_edge_removal.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/c5ea003/Theorems/Thm_MarkovMixing_ising_cycle.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/c5ea003/Theorems/Thm_MarkovMixing_ising_cycle.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_MarkovMixing_ising_cycle.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_MarkovMixing_ising_cycle.lean"
+      },
+      {
+        "repo": "meelgroup/arlib",
+        "path": "Arlib/MarkovChains/Chains/HardCore.lean",
+        "url": "https://github.com/meelgroup/arlib/blob/8d08f89a6d05c5e8368e91659bd6e117fbb74c4e/Arlib/MarkovChains/Chains/HardCore.lean"
+      },
+      {
+        "repo": "mkaratarakis/HNBM",
+        "path": "HopfieldNet/Quiver/NeuralNetwork/toCanonicalEnsemble.lean",
+        "url": "https://github.com/mkaratarakis/HNBM/blob/a9a7755008a756ca416b304100e44d52bc203ef6/HopfieldNet/Quiver/NeuralNetwork/toCanonicalEnsemble.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Solutions/Sol_MarkovMixing_ising_cycle.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Solutions/Sol_MarkovMixing_ising_cycle.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/c5ea003/Solutions/Sol_MarkovMixing_ising_cycle.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/c5ea003/Solutions/Sol_MarkovMixing_ising_cycle.lean"
+      },
+      {
+        "repo": "the-omega-institute/trureturing",
+        "path": "D5/S3/StatisticalMechanics/MarkovMpembaTripletRefutation.lean",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/94e86dd8001c38b034eba8919bfdfa73e19feb69/D5/S3/StatisticalMechanics/MarkovMpembaTripletRefutation.lean"
+      },
+      {
+        "repo": "paulklemstine/Lean",
+        "path": "Catalog/Bridges/DifferentialGeometry/RobustLorentzianSampling.lean",
+        "url": "https://github.com/paulklemstine/Lean/blob/1dab15edd3bbf5f748c7cd0896331c2e172148b2/Catalog/Bridges/DifferentialGeometry/RobustLorentzianSampling.lean"
+      },
+      {
+        "repo": "paulklemstine/Lean",
+        "path": "docs/Catalog/Bridges/DifferentialGeometry/RobustLorentzianSampling.lean",
+        "url": "https://github.com/paulklemstine/Lean/blob/1dab15edd3bbf5f748c7cd0896331c2e172148b2/docs/Catalog/Bridges/DifferentialGeometry/RobustLorentzianSampling.lean"
+      }
+    ]
+  },
+  {
+    "query": "symmetric exclusion extension:lean",
+    "total": 2040,
+    "incomplete": false,
+    "items": [
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_SpinStatistics_pauli_exclusion.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_SpinStatistics_pauli_exclusion.lean"
+      },
+      {
+        "repo": "nim-lang/Nim",
+        "path": "lib/system/yrc_proof.lean",
+        "url": "https://github.com/nim-lang/Nim/blob/d9a700f0e79fb739ffe7a682bf71d81bc8b16fbc/lib/system/yrc_proof.lean"
+      },
+      {
+        "repo": "rhovision-org/quantum-logical-framework",
+        "path": "lean/PauliExclusion.lean",
+        "url": "https://github.com/rhovision-org/quantum-logical-framework/blob/795a01a464b733b0ed09ff9156e88f313f611d02/lean/PauliExclusion.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_EthierKurtz_exclusion_feller_generation.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_EthierKurtz_exclusion_feller_generation.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_EthierKurtz_exclusion_cylinder_range_dense.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_EthierKurtz_exclusion_cylinder_range_dense.lean"
+      },
+      {
+        "repo": "FloatingPragma/observer-patch-holography",
+        "path": "Lean/Thermodynamics/NativeRepairFourCycle.lean",
+        "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/54161c42a647ed5a7e76d66cf174e0cd1db1b5f6/Lean/Thermodynamics/NativeRepairFourCycle.lean"
+      },
+      {
+        "repo": "openai/math",
+        "path": "lean/OAI/RepresentationTheory/SignedTensor/Basic.lean",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/RepresentationTheory/SignedTensor/Basic.lean"
+      },
+      {
+        "repo": "openai/math",
+        "path": "lean/OAI/Analysis/Mahler/PlanarRegularity.lean",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Analysis/Mahler/PlanarRegularity.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Definitions/Def_StochFictPlay_ZeroSumESS_Symmetric.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Definitions/Def_StochFictPlay_ZeroSumESS_Symmetric.lean"
+      },
+      {
+        "repo": "QuAIR/Lean-QIT",
+        "path": "QIT/HigherOrder/Comb/EventSchedule.lean",
+        "url": "https://github.com/QuAIR/Lean-QIT/blob/8a931d4bda61ba503cfc0728704cfef5dedf2cff/QIT/HigherOrder/Comb/EventSchedule.lean"
+      },
+      {
+        "repo": "openai/math",
+        "path": "lean/OAI/Combinatorics/ContingencyTables/Machines/BinaryContraction.lean",
+        "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Combinatorics/ContingencyTables/Machines/BinaryContraction.lean"
+      },
+      {
+        "repo": "prove2me/formalpedia",
+        "path": "envs/0df444a/Theorems/Thm_Conway99Formal_automorphisms_order_eleven_aut_quotient_symmetric.lean",
+        "url": "https://github.com/prove2me/formalpedia/blob/082b32d5d4099d88e510efc822346b699a9584fa/envs/0df444a/Theorems/Thm_Conway99Formal_automorphisms_order_eleven_aut_quotient_symmetric.lean"
+      },
+      {
+        "repo": "rjwalters/lean-genius",
+        "path": "proofs/Proofs/InclusionExclusion.lean",
+        "url": "https://github.com/rjwalters/lean-genius/blob/470a7df849a5b2c21a8ee06db711561372bc639f/proofs/Proofs/InclusionExclusion.lean"
+      },
+      {
+        "repo": "facebookresearch/atlas-lean",
+        "path": "WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean",
+        "url": "https://github.com/facebookresearch/atlas-lean/blob/cfa3090b1bca1769a9ba4fcce89f2e998533b491/WantedExt/Analysis/Distribution/CauchyPrincipalValueWanted.lean"
+      },
+      {
+        "repo": "tavisrudd/cubic-stabilization-m1",
+        "path": "lean/TavisRuddFiniteGeom/Papers/CubicStabilizationM1/GraphLattices/SymmetricSixExclusion.lean",
+        "url": "https://github.com/tavisrudd/cubic-stabilization-m1/blob/26447e7486a58c35cbc9627bd68d5c82885f3daf/lean/TavisRuddFiniteGeom/Papers/CubicStabilizationM1/GraphLattices/SymmetricSixExclusion.lean"
+      },
+      {
+        "repo": "crabsatellite/erdos-1212-visible-lattice-path",
+        "path": "kernel/Erdos1212Kernel/DeBruijnAdjointPrincipalValue.lean",
+        "url": "https://github.com/crabsatellite/erdos-1212-visible-lattice-path/blob/400001f0847afe36a26c588d34445210dbdc116e/kernel/Erdos1212Kernel/DeBruijnAdjointPrincipalValue.lean"
+      },
+      {
+        "repo": "primaryhosting/brockian-mathematics",
+        "path": "aristotle/pr_ready/QPhys_pauli_exclusion_antisym.lean",
+        "url": "https://github.com/primaryhosting/brockian-mathematics/blob/29426ff65b6f1fd68d594e529632eb79b5be3089/aristotle/pr_ready/QPhys_pauli_exclusion_antisym.lean"
+      },
+      {
+        "repo": "primaryhosting/brockian-mathematics",
+        "path": "aristotle/best_proofs/QPhys_pauli_exclusion_antisym.lean",
+        "url": "https://github.com/primaryhosting/brockian-mathematics/blob/29426ff65b6f1fd68d594e529632eb79b5be3089/aristotle/best_proofs/QPhys_pauli_exclusion_antisym.lean"
+      },
+      {
+        "repo": "sparckix/ztare",
+        "path": "ztare_proofs/ZtareProofs/ns_trackb_axisymmetric_smooth_existence.lean",
+        "url": "https://github.com/sparckix/ztare/blob/624d63c24759fa8c7c1ecde4311f9a1507c26e30/ztare_proofs/ZtareProofs/ns_trackb_axisymmetric_smooth_existence.lean"
+      },
+      {
+        "repo": "soyukke/lean-unsolved",
+        "path": "Unsolved/Collatz/Formula.lean",
+        "url": "https://github.com/soyukke/lean-unsolved/blob/9c266b61f87c39b164f35d91666dea7923f1768d/Unsolved/Collatz/Formula.lean"
+      }
+    ]
+  },
+  {
+    "query": "SSEP extension:lean",
+    "error": "GitHub request failed"
+  },
+  {
+    "query": "SimpleExclusion extension:lean",
+    "total": 0,
+    "incomplete": false,
+    "items": []
+  },
+  {
+    "query": "Marcovici extension:lean",
+    "error": "GitHub request failed"
+  },
+  {
+    "query": "MajRandom extension:v",
+    "error": "GitHub request failed"
+  },
+  {
+    "query": "MajRandom extension:thy",
+    "error": "GitHub request failed"
+  }
+]

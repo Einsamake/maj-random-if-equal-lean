@@ -1,0 +1,21 @@
+warning: batteries: repository has local changes:
+  D:\MyWorks\Math\formal\analysis\.lake/packages\batteries
+D:\MyWorks\Math\research\exploration\phase9\lean\KernelUniformBounds.lean:25:40: error: unexpected token '('; expected ')', ',' or ':'
+D:\MyWorks\Math\research\exploration\phase9\lean\KernelUniformBounds.lean:40:6: error(lean.unknownIdentifier): Unknown identifier `kernel_const`
+D:\MyWorks\Math\research\exploration\phase9\lean\KernelUniformBounds.lean:39:35: error: unsolved goals
+c K t : ℝ
+hc : 0 < c
+hK : 0 ≤ K
+⊢ kernel c (fun x => K) t ≤ K / c
+'MathExploration.KernelUniformBounds.kernel_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathExploration.KernelUniformBounds.kernel_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+D:\MyWorks\Math\research\exploration\phase9\lean\KernelUniformBounds.lean:65:14: error(lean.unknownIdentifier): Unknown constant `MathExploration.KernelUniformBounds.kernel_const`
+'MathExploration.KernelUniformBounds.kernel_const_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.KernelUniformBounds.kernel_le_of_le' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'MathExploration.KernelUniformBounds.abs_kernel_le' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

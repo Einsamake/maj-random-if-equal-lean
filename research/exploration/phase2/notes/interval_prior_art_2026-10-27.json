@@ -1,0 +1,243 @@
+{
+  "schema": "phase2-interval-comparison-prior-art-v1",
+  "date": "2026-10-27",
+  "scope": "Known mathematical framework for fixed uncertain nonnegative edge rates and leaks, matrix interval outer bounds, and general Metzler comparison.",
+  "classification": "Standard positive/cooperative interval prediction or bounding-system construction. Without output measurements/correction, interval predictor or comparison envelope is more exact terminology than observer.",
+  "sources": [
+    {
+      "id": "bolajraf-aitrami-helmke-2011",
+      "title": "Robust Positive Interval Observers For Uncertain Positive Systems",
+      "authors": [
+        "M. Bolajraf",
+        "M. Ait Rami",
+        "U. Helmke"
+      ],
+      "version": "18th IFAC World Congress preprints, Milano, August 28-September 2, 2011; IFAC Proceedings Volumes 44(1),14330-14334",
+      "doi": "10.3182/20110828-6-IT-1002.03682",
+      "pdf_url": "https://skoge.folk.ntnu.no/prost/proceedings/ifac11-proceedings/data/html/papers/3682.pdf",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S1474667016459306",
+      "source_type": "Actual IFAC conference preprint hosted in university proceedings archive; publisher metadata independently retrieved.",
+      "read_locations": [
+        {
+          "pdf_pages_one_based": [
+            1,
+            2
+          ],
+          "printed_pages": "14330-14331",
+          "items": [
+            "Definition2, Remark3, Lemma5, Remark6, Lemma7"
+          ],
+          "text_lines": [
+            73,
+            120
+          ]
+        },
+        {
+          "pdf_pages_one_based": [
+            2
+          ],
+          "printed_pages": "14331",
+          "items": [
+            "uncertain Metzler matrix bounds Eq3",
+            "interval observer Eq4-5",
+            "nonnegative error Eq6-7"
+          ],
+          "text_lines": [
+            121,
+            179
+          ]
+        },
+        {
+          "pdf_pages_one_based": [
+            3,
+            4
+          ],
+          "printed_pages": "14332-14333",
+          "items": [
+            "Section4 illustrative mammillary three-compartment flow model Eq16",
+            "parameter intervals",
+            "entrywise lower and upper matrices"
+          ],
+          "text_lines": [
+            438,
+            470
+          ]
+        }
+      ],
+      "verified_claims": [
+        "Metzler means only nonnegative off-diagonal entries. Lemma5 says exp(tM) is nonnegative for every Metzler M; Hurwitz conditions are separate subsequent equivalences.",
+        "Remark6 applies positivity to affine forcing via variation of constants; Lemma7 bounds a same-Metzler system from above by replacing bounded forcing with an upper forcing.",
+        "Section3 takes elementwise matrix bounds and proves state inclusion by writing error equations with Metzler matrices and nonnegative residual forcing.",
+        "Section4 uses compartment flow rates that occur both as positive coupling and negative diagonal contributions, then constructs separate matrix entry bounds. This is closely aligned with the project's parameter splitting."
+      ],
+      "boundary": "For observer optimization and asymptotic error bounds, the paper imposes extra boundedness/stability hypotheses. Those are not needed for the basic finite-time containment mechanism and should not be silently borrowed as automatic.",
+      "quotation": "For any Metzler matrix",
+      "quotation_word_count": 4
+    },
+    {
+      "id": "leurent-efimov-raissi-perruquetti-2019",
+      "title": "Interval Prediction for Continuous-Time Systems with Parametric Uncertainties",
+      "authors": [
+        "Edouard Leurent",
+        "Denis Efimov",
+        "Tarek Raissi",
+        "Wilfrid Perruquetti"
+      ],
+      "version": "arXiv:1904.04727v2, 2019-08-12; CDC2019,7049-7054",
+      "doi": "10.1109/CDC40024.2019.9029480",
+      "pdf_url": "https://arxiv.org/pdf/1904.04727",
+      "version_url": "https://arxiv.org/abs/1904.04727",
+      "author_project_url": "https://eleurent.github.io/interval-prediction/",
+      "source_type": "Author preprint and author project page",
+      "read_locations": [
+        {
+          "pdf_pages_one_based": [
+            1,
+            2
+          ],
+          "items": [
+            "Lemma1 interval matrix-vector arithmetic",
+            "SectionII.B nonnegative systems"
+          ],
+          "text_lines": [
+            83,
+            162
+          ]
+        },
+        {
+          "pdf_pages_one_based": [
+            2,
+            3
+          ],
+          "items": [
+            "SectionIII parameter-dependent model",
+            "Eq6 direct interval predictor",
+            "motivating scalar example discussion",
+            "Assumptions1-3",
+            "Theorem1 Eq7 and proof"
+          ],
+          "text_lines": [
+            206,
+            468
+          ]
+        },
+        {
+          "author_project_lines": [
+            26,
+            35
+          ],
+          "items": [
+            "direct interval predictor instability despite stable original dynamics"
+          ]
+        }
+      ],
+      "verified_claims": [
+        "Entrywise matrix uncertainty and sign-split interval arithmetic give a standard direct interval predictor with guaranteed state containment.",
+        "Introduction and SectionIII.B explicitly separate containment from stability: interval outer inclusion can transform stable dynamics into an unstable predictor.",
+        "Theorem1 proves containment first and establishes input-to-state stability only under additional matrix inequalities. Hence an expanding outer bound is not by itself a failed containment proof."
+      ],
+      "boundary": "The paper's proposed tighter LPV predictor is not identical to the project's simpler entrywise envelope. Its relevance is the general interval arithmetic/Metzler framework and the explicit stability caveat.",
+      "quotation": "Interval Prediction for Continuous-Time Systems with Parametric Uncertainties",
+      "quotation_word_count": 9
+    },
+    {
+      "id": "angeli-sontag-2003-background",
+      "title": "Monotone Control Systems",
+      "authors": [
+        "David Angeli",
+        "Eduardo D. Sontag"
+      ],
+      "version": "IEEE TAC48(10),2003,1684-1698; arXiv:math/0206133v1,2002-06-13",
+      "doi": "10.1109/TAC.2003.817920",
+      "pdf_url": "https://www.sontaglab.org/FTPDIR/angeli-sontag-monotone-TAC03.pdf",
+      "readable_preprint_url": "https://arxiv.org/pdf/math/0206133",
+      "source_type": "Author-hosted published paper plus author preprint; read in prior phase of same subagent task",
+      "read_locations": [
+        {
+          "published_pages": "1685-1687",
+          "items": [
+            "DefinitionII.1 input/state order",
+            "PropositionIII.2 sign conditions"
+          ]
+        },
+        {
+          "preprint_pages": "3,5-6",
+          "items": [
+            "Definition2.2",
+            "Proposition3.3 inequalities7-8"
+          ]
+        }
+      ],
+      "verified_claim": "State cooperativity concerns off-diagonal derivatives; monotonicity with respect to another input or parameter additionally requires the corresponding parameter derivatives to have the chosen fixed signs. Nonnegative physical parameters alone do not establish parameter monotonicity.",
+      "quotation": "Monotone Control Systems",
+      "quotation_word_count": 3
+    }
+  ],
+  "project_comparison": {
+    "actual_equation": "x_i'=sum_j a_ij (x_j-x_i)-d_i x_i+f_i",
+    "assumptions": [
+      "finite indices",
+      "alo<=a<=ahi elementwise",
+      "dlo<=d<=dhi",
+      "x_i(t)>=0",
+      "f_i(t)<=fhi_i(t)",
+      "appropriate continuous/absolutely-continuous solution and derivative equation"
+    ],
+    "upper_operator": "(Mbar x)_i=sum_j ahi_ij x_j-(sum_j alo_ij+dlo_i)x_i",
+    "upper_matrix_entries": "Mbar_ij=ahi_ij for i!=j; Mbar_ii=ahi_ii-sum_j alo_ij-dlo_i.",
+    "residual": "r_i=(fhi_i-f_i)+sum_j(ahi_ij-a_ij)x_j+[sum_j(a_ij-alo_ij)+d_i-dlo_i]x_i>=0.",
+    "comparison_proof": "Let y'=Mbar y+fhi with y(0)>=x(0). Error e=y-x obeys e'=Mbar e+r. Off-diagonal entries of Mbar are nonnegative, so exp(Mbar t)>=0 even if a diagonal entry is positive; therefore e>=0.",
+    "conservation_boundary": "Mbar generally need not be any physically admissible parameter realization, conservative, stochastic, dissipative or Hurwitz. State containment follows from cooperativity and the residual sign.",
+    "parameter_dependency": "Each edge rate affects both positive inflow and negative loss. Treating those two occurrences independently loses algebraic dependency and may widen the box; that widening is allowed for an outer certificate.",
+    "self_edge_refinement": "If self edges are allowed, actual a_ii terms cancel exactly. Cancelling self terms before interval enclosure gives the tighter diagonal -sum_{j!=i}alo_ij-dlo_i. The stated coarse bound remains valid but can introduce an artificial positive diagonal through ahi_ii-alo_ii.",
+    "regularity_boundary": "The same algebra does not require rates to be fixed: it also works for time-varying rates staying within the bounds, provided the differential relation and solution regularity hold. This wider fact is standard, not asserted as implemented by the project.",
+    "terminology": "With no measured-output correction, call the construction an interval predictor, upper comparison system, or robust outer envelope."
+  },
+  "counterexample": {
+    "status": "Original elementary example derived here to explain a standard limitation; not claimed as a literature example or research novelty.",
+    "model": "x0'=-k x0, x1'=k x0-x1, x(0)=(1,0), fixed k in [2,6], input zero.",
+    "matrix": "M(k)=[[-k,0],[k,-1]], Metzler and Hurwitz for every k in [2,6].",
+    "solution": "x0(t;k)=exp(-k t); x1(t;k)=k/(k-1)*(exp(-t)-exp(-k t)).",
+    "time": "t=log(2)",
+    "exact_values": [
+      {
+        "k": 2,
+        "x1": "1/2"
+      },
+      {
+        "k": 4,
+        "x1": "7/12"
+      },
+      {
+        "k": 6,
+        "x1": "93/160"
+      }
+    ],
+    "strict_inequalities": [
+      "7/12-93/160=1/480>0",
+      "7/12-1/2=1/12>0"
+    ],
+    "reason": "The parameter k appears with opposite signs in the two equations: partial f/partial k=(-x0,+x0). Thus ordinary coordinate order does not make this a monotone parameter input, despite positive state dynamics.",
+    "matrix_box": "The sharp entrywise upper matrix across this family is [[-2,0],[6,-1]], obtained by selecting a lower k for the negative diagonal and an upper k for the positive coupling. It is not M(k) for any single k; this is precisely a legitimate interval outer relaxation."
+  },
+  "checks": {
+    "counterexample_exact_arithmetic": {
+      "difference_internal_minus_high": {
+        "numerator": 1,
+        "denominator": 480
+      },
+      "difference_internal_minus_low": {
+        "numerator": 1,
+        "denominator": 12
+      }
+    },
+    "source_quote_limit": "Each source has at most 9 verbatim words in this record.",
+    "formal_sources_changed": false,
+    "external_publication_or_contact": false,
+    "literature_search_boundary": "Two new primary sources were read plus a previously read primary background source. No exhaustive history search; novelty is not inferred from absent search results.",
+    "retrieval_limits": [
+      "Publisher full text for IFAC paper returned403; conference preprint fully readable.",
+      "PDF screenshot requests returned cache-miss errors; mathematical statements were read from parsed primary PDF text."
+    ]
+  }
+}
