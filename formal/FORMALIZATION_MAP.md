@@ -1,63 +1,17 @@
-# 当前形式化对应与可信边界
+# 形式化结构
 
-目标为原无限二维同步四邻 Maj-Random-If-Equal 最坏扩展期望恢复时间 τ(N)=Θ(N²)。**完整渐近主定理已通过标准 Lean 内核验收。**
+主定理研究原无限格点同步过程，辅助有限方框与连续时钟仅用于比较。最终结论不以几何漂移界、核心概率界或同步—时钟比较作为外加前提。
 
-分析258个证明模块、3280条辅助定理、259份分析源；核心旧125条定理与1模型、8源仅回核指纹未重编。共267份正式源、3406项实际公理输出。最新分析统一构建及标准Lean --trust=0审计实际退出0（2026-10-26T14:53:59.002869+08:00），仅三个标准公理，零新增Lean警告。
+| 数学对象或论证 | 主要模块 |
+| --- | --- |
+| 无限四邻规则、独立公平标记、允许无穷的首达时间 | [InfiniteGridModel](analysis/MathResearchAnalysis/InfiniteGridModel.lean)、[SquareGridLaw](analysis/MathResearchAnalysis/SquareGridLaw.lean)、[InfiniteGridRecoveryTime](analysis/MathResearchAnalysis/InfiniteGridRecoveryTime.lean) |
+| 平移方形尺寸、恰尺寸最坏扩展期望及最大值实现 | [PerturbationGeometry](analysis/MathResearchAnalysis/PerturbationGeometry.lean)、[OriginalRecoveryProfile](analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean) |
+| 清理、保护域与首次失守冻结 | [FiniteMajorityPeeling](analysis/MathResearchAnalysis/FiniteMajorityPeeling.lean)、[ClippedProtectedGeometry](analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean)、[DropletStoppedClockLaw](analysis/MathResearchAnalysis/DropletStoppedClockLaw.lean) |
+| 可观测历史、停止后等待与逐事件补偿 | [MarkedClockFiltration](analysis/MathResearchAnalysis/MarkedClockFiltration.lean)、[MarkedStoppedResidual](analysis/MathResearchAnalysis/MarkedStoppedResidual.lean)、[MarkedPredictableCompensation](analysis/MathResearchAnalysis/MarkedPredictableCompensation.lean) |
+| 零权层、加权面积、漂移与原同步下界 | [ForbiddenBirthControl](analysis/MathResearchAnalysis/ForbiddenBirthControl.lean)、[PhysicalWeightedDrift](analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean)、[OriginalQuadraticLower](analysis/MathResearchAnalysis/OriginalQuadraticLower.lean) |
+| 阶梯形与有序粒子、真实矩方程及协方差 | [YoungParticles](analysis/MathResearchAnalysis/YoungParticles.lean)、[MixedClockDynkin](analysis/MathResearchAnalysis/MixedClockDynkin.lean)、[MixedClockCovariance](analysis/MathResearchAnalysis/MixedClockCovariance.lean) |
+| 热衰减、局部清空与原尺寸时钟比较 | [MixedClearingProbability](analysis/MathResearchAnalysis/MixedClearingProbability.lean)、[CrossSquareClockBound](analysis/MathResearchAnalysis/CrossSquareClockBound.lean)、[ClockRecoveryComparison](analysis/MathResearchAnalysis/ClockRecoveryComparison.lean) |
+| 原同步重启、扩展尾和与二次上界 | [SquareRandomRestart](analysis/MathResearchAnalysis/SquareRandomRestart.lean)、[ExtendedBlockTail](analysis/MathResearchAnalysis/ExtendedBlockTail.lean)、[OriginalQuadraticUpper](analysis/MathResearchAnalysis/OriginalQuadraticUpper.lean) |
+| 原量词下的二次渐近结论 | [OriginalQuadraticRecovery](analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) |
 
-| 内容 | 主要模块 | 当前边界 |
-|---|---|---|
-| 原无限同步模型、真实随机law、含∞首达 | InfiniteGridModel、SquareGridLaw、InfiniteGridRecoveryTime | 原四邻规则、背景、边界、time尺度保持 |
-| 原尺寸、exact-N最坏扩展期望 | PerturbationGeometry、OriginalRecoveryProfile | 原模型/exact-N/max对应；N≥16二次上界及有限均值、eventual两侧界已证 |
-| 真时钟任务、rank、PW/零温、两向clock比较 | ClockReadiness、ActualClockTail、ClockRankTail、SquarePWCensoring、ZeroTemperature、ClockRecoveryComparison | 工具/比较已证，不代替CMST/FSS核心尾 |
-| 同步重启和块尾 | FairMarksPastFuture、SquareRandomRestart | 真past/future law及乘法尾；真实二次尺度单块尾≤1/2已实例化 |
-| strict-majority清理与实际改造字 | FiniteMajorityPeeling、GridMajorityPeeling、DropletModifiedWord | 终止、最大稳定core、次序无关、实际更新共轭已证 |
-| 实际D∪外四邻保护域、字与clock law | ClippedProtectedGeometry、DropletStoppedWord、DropletStoppedClockLaw | 永久first loss冻结、原消失概率比较、真law已证 |
-| 一般真实连续轮廓与原Good | OrthogonalBoundary系列、OrthogonalPhysicalContour、ProtectedGeometricGood | 全frontier、简单闭curve、全分割Euclidean弧长和原Good；严格<exit才Good |
-| 真实物理exit与二次面积 | FrozenPhysicalExit、ProtectedExitArea | ENNReal含∞、finite attained/freeze、exit后缺失面积≥L²/1600 |
-| joint历史、适应/渐进可测状态 | MarkedClockFiltration、MarkedHistoryWords、ObservedFrozenProcess、ObservedProgressive | 真实past可测版本、AE同原过程；未把旧global-guarded word逐样本适应当已证 |
-| 原F退出停时版本 | LocalObservedHistory | 有限site全sample右gap、invalid独立flag、原F停时及AE真实物理law/扩展mean |
-| marked-history停时后残余等待 | MarkedStoppedResidual、ProtectedExitResidual | single-site Exp(1)与停止σ独立；实际exit∧T真正finite实例；非完整未来vector；真实单site freshmark见下行 |
-| 正确面积势与有限率代数 | MaskedAreaGenerator、ProtectedAreaPotential | mask支持、D-relative面积有界可积、精确被禁birth修正；非物理补偿 |
-| 真正停时后的单site新标记 | UnrevealedMarkInvariance、StoppedMarkSlices、StoppedFreshMark | 实际fair law、与F_R独立、jointwaiting尾；actual exit∧T已实例化；固定single-site；MarkedResidualPair已给完整Borel pairlaw/停止历史独立性 |
-| 实际响铃计数、可积和精确平均 | MarkedRingCount、MarkedRingIntegrability、ClockGapOccupation、TruncatedExponential、ClockRingMean | ENNReal保∞、原历史可测、有限horizon可积；t≥0真实E[count_t]=t；原历史条件增量及非负可预测贡献补偿见后续模块；实际面积Dynkin见下行 |
-| 未来gap重置保持历史 | FutureGapHistory | 只需该ring仍在未来，原jointF事件保持；不是保测度/未来law |
-| 原历史条件计数与真实事件测度 | ClockIntervalHistory、ClockIntervalCount、MarkedIntervalFactor、MarkedConditionalCount、MarkedClockPointMeasure、MarkedPredictableRectangles | 原F_s上E[count(s,t]]=t-s，每色一半；真实事件sum积分与有限质量T/2、生成矩形质量；全可预测补偿及实际面积公式见下行 |
-| 真实前态与物理面积公式 | ObservedPreState、ActualPreState、ActualAreaDynkin、PhysicalAreaGenerator等9新模块 | 共同AE全t真实前态、signed路径和/可积、真实clipped D生成元；91新theorem/101named均标准审计 |
-| 真实面积与过早失守概率 | PhysicalAreaTail、CumulativeCleanupBudget、CleanupAreaTail | 实际Markov阈值，first-loss冻结后的累计cleanup≤4L+2，真实面积/尾概率保留masked raw积分 |
-| 零权出生层 | ForbiddenBirthControl | 外可能birth必在norm1=L+2，w在该层为0；真实masked/expanded weighted raw严格相等；真实整体weighted率及下界见后续 |
-| 加权真实物理二次下尾接口 | WeightedExitArea、WeightedAreaDynkin、WeightedAreaTail、WeightedRawContour、WeightedReflection、WeightedRawRate、PhysicalWeightedDrift | 真正raw≤18L+12、真实E[W_T]界；L≥12288000时T=L²/12288000处辅助exit和原clock灭绝CDF≤1/2，无核心率或概率输入 |
-| 原同步exact-N二次下界 | SyncLowerScale、ExtendedTailLower、SynchronousQuadraticTail、OriginalQuadraticLower | 真同步尾≥1/4、奇偶N支持比较、保∞期望；N≥786432000时ofReal(N²/56623104000)≤tau(N) |
-| 上界辅助模型与真实同维clock基础 | MixedSquareModel、MixedSquareCorners、MixedSquareClockLaw | 真实混合边界、精确双向翻角、空间单调形状保持、同clock/mark endpoint可测及原同维支配；后续ClockSampleRestriction/ClockWordRestriction/CrossSquareClockBound已给实际跨尺寸law与支配 |
-| 原同步二次上界 | OriginalQuadraticUpper | N≥16时 tau≤ofReal(664066N²)，无核心概率输入 |
-| τ(N)=Θ(N²) | OriginalQuadraticRecovery | 267源统一内核验收；eventual原量词两侧界，非人类专家认证 |
-
-[停时阶段](PROGRESS_2026-10-21_MARKED_STOPPING.md) · [面积阶段](PROGRESS_2026-10-21_AREA_POTENTIAL.md) · [下一阶段](../README.md)。旧PROGRESS文件按日期保留历史语境；当前状态以本文和最新统一audit为准。独立AI不是人类专家认证。
-
-[真实停时后的新标记](PROGRESS_2026-10-21_FRESH_MARK.md)。
-
-[实际计数与精确均值](PROGRESS_2026-10-21_CLOCK_MEAN.md)。
-
-
-[真实逐次响铃的可预测补偿](PROGRESS_2026-10-22_PREDICTABLE_COMPENSATION.md)：新增3模块24定理/29命名声明；仅在标准原历史可预测σ上比较真实事件测度与时间参考测度，不是全ambient积σ等价。更新前真实状态与物理面积Dynkin现已闭合，见23日验收。
-
-
-[23日真实前态、面积Dynkin与clipped生成元](PROGRESS_2026-10-23_AREA_DYNKIN.md)。该历史阶段给出真实物理时间面积公式；本次已用有限粒子矩路线闭合主定理所需概率界。
-
-
-[24日：真实清理总预算、早退出概率与零权边界层](PROGRESS_2026-10-24_CLEANUP_WEIGHT.md)。
-
-[25日：实际加权线性率与平方时间概率界](PROGRESS_2026-10-25_QUADRATIC_CLOCK_TAIL.md)。该历史阶段供给下界所需CLOCK数值界；原同步完整Θ结论见26日最终记录。
-
-[25日：原同步与exact-N二次期望下界](PROGRESS_2026-10-25_SYNC_LOWER.md)。这只完成Θ定理的下界。
-
-[25日：混合边界与真实阶梯形clock基础](PROGRESS_2026-10-25_MIXED_BOUNDARY.md)。这部分尚不给恢复时间上界。
-
-行长编码的历史验收见[YoungRows](PROGRESS_2026-10-25_YOUNG_ROWS.md)；粒子编码现已完成，二次上界现已完成，见最新主定理记录。
-
-[25日粒子编码与有限算子验收](PROGRESS_2026-10-25_EXCLUSION.md)；真实矩方程和非正协方差现已完成，见[26日后续验收](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)。二次上界现已完成，见最新主定理记录。
-
-[26日：有限机器的真实时钟Dynkin与混合边界实例](PROGRESS_2026-10-26_FINITE_MACHINE_DYNKIN.md)。
-
-[26日后续：真实一二矩ODE、异点非正协方差与中心能量](PROGRESS_2026-10-26_MOMENTS_COVARIANCE.md)；热衰减和最终上界现已完成，见最新主定理记录。
-
-[当前完整主定理与证据](PROGRESS_2026-10-26_MAIN_THEOREM.md)：此前各日期链接为历史阶段，当时未闭合的热概率、跨尺寸更新、原同步二次上界现已完成；完整经典FSS强尾和全未来vector强Markov不是此证明所需的最终输入。
+[证明纲要](../docs/PROOF_GUIDE.md)按数学依赖组织两侧估计。[最终检查记录](PROGRESS_2026-10-26_MAIN_THEOREM.md)与[公理输出及源绑定](audit/original-theta-independent-final-binding-evidence.json)用于核对该版本；它们不将完整经典强尾定理或全未来向量的强 Markov 性列为最终外加输入。有关停止历史和局部补偿的较早记录按[归档约定](../docs/ARCHIVAL_RECORD.md)保存。

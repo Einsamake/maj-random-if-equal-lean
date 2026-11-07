@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "scope": "Documentation, exact examples, links, unchanged published proofs and archives; no new Lean build",
+  "baseline_commit": "f3dc0ba5495c78e238c2e58a1f6b040a936df0c0",
+  "baseline_files_retained_byte_identically": 2030,
+  "rewritten_baseline_documents": 32,
+  "current_documents_checked": 37,
+  "local_document_links_checked": 324,
+  "formal_source_sha256_matches": 267,
+  "exploration_source_sha256_matches": 54,
+  "academic_figures_checked": 4,
+  "sealed_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "new_kernel_build_performed": false,
+  "human_expert_review_claimed": false,
+  "edition": "2026-11-07",
+  "manifest_sha256": "325a7a7b67250f56035d36967529d74535524c0faaae2694af5589e870dc6211",
+  "independent_reader_groups": {
+    "core": {
+      "status": "PASS simulated reading comprehension only",
+      "final_report_sha256": "a3cd3cb31c8ea8614ceb20e6c6325418543f061d05eb607ff0d418b4ccc89378",
+      "files_fingerprinted": 9,
+      "review_type": "Independent AI simulated undergraduate; body and actual figures only; feedback revised and actual reread performed",
+      "human_expert_review": false
+    },
+    "network": {
+      "status": "PASS simulated reading comprehension only",
+      "final_report_sha256": "742d9a199e12d8308bb4bb639fe08fc450c9b09f8015da602b6c430b8001872e",
+      "files_fingerprinted": 32,
+      "review_type": "Independent AI simulated undergraduate; body and actual figures only; feedback revised and actual reread performed",
+      "human_expert_review": false
+    },
+    "methods": {
+      "status": "PASS simulated reading comprehension only",
+      "final_report_sha256": "e8942de7607e70537a7d71154ffd6d5c04cc97b02bd8898d47913efc97441f99",
+      "files_fingerprinted": 21,
+      "review_type": "Independent AI simulated undergraduate; body and actual figures only; feedback revised and actual reread performed",
+      "human_expert_review": false
+    }
+  },
+  "current_academic_documents_reader_covered": 37,
+  "reader_records": "Detailed actual initial/revision/reread records retained in the editorial workspace; hashes above identify those records. This is not human peer review.",
+  "mathematical_source_review": "Independent nonauthor byte/source audit of frozen original and published exploration; no new mathematical claims or kernel rebuild.",
+  "new_figures": "Four reproducible explanatory redraws with unchanged numerical geometry and actual visual inspection; original published PNGs remain byte-identical.",
+  "github_markdown_rendering": "README, proof guide and network overview actually rendered through the GitHub Markdown API with math elements; this is structural rendering evidence, not a browser visual certification."
+}

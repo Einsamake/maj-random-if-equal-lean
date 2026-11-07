@@ -1,7 +1,13 @@
-# 可移交的Lean材料
+# 封存材料
 
-最新文件为 Lean形式化材料_2026-10-26.zip。完整标准渐近主定理、图文介绍、原模型定义、267份正式源、固定工具链说明、实际内核审计与独立复核证据均在材料包中。编译器和依赖缓存不打包。
+`Lean形式化材料_2026-10-26.zip` 保存2026-10-26版本的模型、267份正式源、工具链说明、构建与公理审计记录。编译器和依赖缓存不包含在包内。后续文稿和独立研究不回写该包。
 
-确切包指纹和逐文件核验以 formal/audit/package-validation.json 及同名.zip.sha256为准。包内LEAN_MANIFEST.json记录内容文件的字节数/SHA256；formal/scripts/package_lean.py会实际读回全部文件并检查CRC。
+该 ZIP 的 SHA-256 为
 
-本结果不是独立人类专家认证或全球新颖性认证；精确eventual范围见formal/PROGRESS_2026-10-26_MAIN_THEOREM.md。
+```text
+16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892
+```
+
+[包验证记录](../formal/audit/package-validation.json)记载1862个条目、字节数及CRC检查；包内 `LEAN_MANIFEST.json` 列出内容文件的大小和指纹。复核封存包时，应比较包本身及其清单，不以当前已修订文稿替换包内旧稿。
+
+主定理的精确范围见[结果](../docs/RESEARCH_RESULTS.md)，当前源的复现方法见[验证说明](../docs/VERIFICATION.md)。封存标识是可复核的版本标识，不是期刊出版或专家审稿记录。

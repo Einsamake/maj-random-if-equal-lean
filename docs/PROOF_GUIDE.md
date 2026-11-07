@@ -1,76 +1,224 @@
-> 这篇说明保留停时/补偿阶段的历史叙事。当前完整二次主定理已经通过标准Lean内核，见[最新结果](../formal/PROGRESS_2026-10-26_MAIN_THEOREM.md)；文中的“下一步”均指当时状态。
+# 二次恢复时间的证明纲要
 
-# 为什么“下一枚硬币仍公平”也需要证明？
+本节给出原显示上下界的主要约减、概率估计与常数。基本模型、恢复时间和尺寸按[模型与记号](NOTATION.md)定义。下文列出的几何引理、时钟耦合和排斥过程矩估计均作为已证引理使用，其完整证明由相应形式数学源给出；本文展开它们如何组成原同步模型的结论。
 
-[首页](../README.md)已经用一个 3×3 方块展示了更新、恢复时间和研究目标。这里接着解释最近真正完成的一项证明，以及它为什么对下一步有用。
+## 1. 有限方形归约与时钟比较
 
-## 1. 闹钟让我们能一次分析一处变化
+颜色取 $0<1$。在同一平票标记下，四邻多数更新对四个输入单调。因此，在固定零边界的 $N\times N$ 方形内，任意初态的同步恢复时间不超过全 $1$ 初态的恢复时间。初始包围方形外始终为背景色：方形外的每个格点最多只有一个邻居在方形内，不能产生异色。
 
-在原问题中，所有格子一起更新。为了分析，我们另外研究每次只更新一格的随机时钟过程：每格有独立闹钟，平均每单位时间响一次，响到谁就更新谁。
+平移与黑白互换保持随机标记律及恢复时间分布。由此，无限格点上的两背景、任意平移问题可归约到有限零边界方形，且尺寸恰为 $N$ 的约束在归约中保留。相关声明为 [OriginalRecoveryProfile.lean](../formal/analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean) 的 `tau_eq_normalizedTau` 及 [SquareRecoveryTime.lean](../formal/analysis/MathResearchAnalysis/SquareRecoveryTime.lean) 的 `synchronous_le_top`。
 
-![同步更新与单次随机时钟更新的区别](images/06-current-bridge.png)
+辅助时钟过程给每个格点配置独立的速率 $1$ 泊松时钟，每次响铃只更新该格点，平票使用独立公平标记。其连续时间记为 $t$，原同步时间仍按整数轮计。两过程的联系通过调度比较建立，而非逐步等同。
 
-图左边的一轮中，四个角恰好都变白了；右边只演示一个角的闹钟响起、随后变白。它们是不同的过程，需要用已经建立的一批比较工具连接，不能把右边的一次响铃直接当成左边的一轮。
+对 $N\ge2$、$t\ge0$，记 $q_N(t)$ 为边长 $N$、零边界、全 $1$ 初态的时钟过程在时刻 $t$ 尚未清空的概率。对整数 $k\ge0$，定义
 
-## 2. 观察时刻也可能是随机的
+$$
+t_k=8\log2\,(k+1),\quad r_k=128(k+1),\quad
+\epsilon_N(k)=\frac65N^2\,2^{-(k+1)}.
+$$
 
-例如，我们约定：“第一次发现某个保护格变白时，停下来观察。”这个时刻由已经发生的事决定，我们并不知道它会落在什么时候。
+若 $T_N$ 表示相同方形全 $1$ 初态的同步恢复时间，则
 
-证明里还有许多这样的观察规则。共同要求是：**决定是否停下时，只能使用已经看到的信息。** 这种规则在概率论中叫“停时”。
+$$
+q_N(t_k)\le\mathbb P(T_N>k)+\epsilon_N(k),
+$$
 
-如果先偷看后面的硬币，再挑一个“下一枚正好是黑色”的时刻，就会挑偏。这种选择不能用来宣称未来硬币仍然公平。
+$$
+\mathbb P(T_N>2r_k+1)
+\le2q_N(t_k)+2\epsilon_N(k).
+$$
 
-目前的证明先给观察设置有限截止时间：要么先看到指定事件，要么到截止时间就停。这样，观察时刻确实有限，不需要先假定保护区最终一定失守。
+第二式的因子 $2$ 来自两个棋盘相位。调度失败概率 $\epsilon_N(k)$ 同时控制依赖任务尚未完成和更新次数过多的事件。两个方向的比较均见 [SquareRecoveryTime.lean](../formal/analysis/MathResearchAnalysis/SquareRecoveryTime.lean) 的 `two_way_clock_tail`，尺度及失败事件见 [SchedulingFailure.lean](../formal/analysis/MathResearchAnalysis/SchedulingFailure.lean)。
 
-## 3. 用一张配对图看最近的证明
+## 2. 加权面积与下界
 
-现在固定一个格点，考虑它在观察之后的下一次响铃。
+### 2.1 辅助区域与退出估计
 
-![两条演化有完全相同的过去、观察时刻和下一次响铃时刻，只翻转还未揭示的硬币结果](images/07-fresh-coin.png)
+取整数 $L\ge2$。在边长 $2L+1$ 的方形中，定义截角区域与保护区域
 
-上、下两行只差一件事：下一次响铃所用的那枚标记，一个是黑，一个是白。其余随机输入都保持原样。
+$$
+D_L=\{z\in\mathbb Z^2:|z_1|,|z_2|\le L,\ |z_1|+|z_2|\le L+1\},
+$$
 
-这次响铃还没有发生，所以翻转标记不会改动已看到的过去。观察规则只看过去，因此观察时刻也不变。闹钟的输入没改，下一次响铃的时刻也不变。
+$$
+I_L=\{z\in\mathbb Z^2:10(|z_1|+|z_2|)\le9L\},\qquad
+P_L=I_L\cup\partial_4 I_L.
+$$
 
-于是，我们可以把“下一枚结果为黑”的演化，与“下一枚结果为白”的演化一一配对。两种输入的机会相等，过去的记录相同，因此按过去决定何时观察，不会把这枚硬币挑偏。
+这里 $\partial_4 I_L$ 是 $I_L$ 外、与其中至少一个格点四邻相接的格点集。辅助过程从 $D_L$ 全部占据出发：禁止 $D_L$ 外出生，每次随机更新后反复删除不足两个占据邻居的格点，并在 $P_L$ 首次不再完全占据时冻结。删除操作按有限迭代稳定化定义；所得过程的几何性质及与原时钟过程的序关系是下界所用的比较引理。
 
-真正的形式化还要处理“到底哪一次响铃是观察后的第一响”：对每个可能的编号分别配对，再把互不重叠的情况相加。这个连接已经通过 Lean 检查。
+占据表示颜色 $1$，未占据表示颜色 $0$；域内随机更新沿用第1节的速率1泊松四邻多数更新及公平平票标记。
 
-已有证明还给出了等待时间的规律，并直接计算了等待、下一枚标记与过去记录的联合尾概率。**这是固定一个格点的结论**，不能凭此跳到所有格点未来共同独立。现在完整的等待/标记联合分布也已通过内核检查：任意可测的等待条件，都可与尚未揭示标记的配对一起处理。
+令 $U_t$ 为该冻结过程的占据集，$\sigma$ 为保护区域首次失守的时刻。使用线性权重
 
-## 4. 这项证明怎样帮助研究收缩速度
+$$
+w_L(z)=L+2-|z_1|-|z_2|,\qquad
+W_t=\sum_{z\in D_L\setminus U_t}w_L(z).
+$$
 
-我们想在这样的随机观察时刻之后，继续计算更新的平均影响。首先必须知道，接下来使用的硬币和等待规律确实还是所需的规律，不能因观察方式而改变。
+$W_t$ 是丢失的加权面积，在 $D_L$ 上权重为正。对占据集包含于 $D_L$ 的构形，$D_L$ 外能发生出生的位置只能在 $|z_1|+|z_2|=L+2$ 层上；这一层的权重为零，因此禁止这些出生不增加加权漂移修正。
 
-有了这类保证，局部计算才有可靠的概率基础。例如，更新一个两黑两白邻居支持的黑色角点：
+下列两项是几何与补偿公式给出的估计：
 
-![单次角点更新的两个结果，以及平均少半个黑格的计算](images/08-local-change.png)
+$$
+\mathbb E[W_t]\le(18L+12)t+(L+2)(4L+2)\qquad(L\ge2),
+$$
 
-这只能说明**在图中的状态、选定这个角点更新一次**时，黑格数平均减少半个。它还没有回答：一秒内会发生多少次有关的更新？更新后图形改变，下一次的平均变化又是多少？
+$$
+\mathbb P(\sigma\le t)
+\le\frac{\mathbb E[W_t]}{L^3/128000}\qquad(L\ge80).
+$$
 
-现在已证明其中一项：辅助过程每个格点在 t 单位时间内平均响铃 t 次。它来自真实等待间隔的计算，不能读成“每条样本都恰好响 t 次”。
+第一式中，$(18L+12)t$ 来自原始单格更新的加权漂移；$(L+2)(4L+2)$ 支付附加删除的总损失。其时间积分针对实际更新前的状态。第二式使用退出时必然丢失的加权面积阈值 $L^3/128000$，再应用非负随机变量的 Markov 不等式。完整证明见 [WeightedAreaTail.lean](../formal/analysis/MathResearchAnalysis/WeightedAreaTail.lean)、[WeightedExitArea.lean](../formal/analysis/MathResearchAnalysis/WeightedExitArea.lean) 与 [PhysicalWeightedDrift.lean](../formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean)。
 
-![经过2.2单位时间响2次；三个等待段在截止前占用0.6、1.1、0.5](images/09-clock-time.png)
+原时钟过程若已清空，保护区域必已在上述比较过程中失守。因此
 
-上图把时间分成三段，合计2.2。对所有随机样本取平均以后，指数等待的概率规律才把总占用时长换成平均响铃次数。现在过去记录的连接也已经完成：即使先按此前记录筛选样本，后续区间的平均新增响铃仍等于区间长度，各种预配标记平均各一半。下一步才是随时间变化的权重与每次更新前的图形。
+$$
+1-q_{2L+1}(t)
+\le\frac{(18L+12)t+(L+2)(4L+2)}{L^3/128000}.
+$$
 
-我们正在补的真实时间公式，就是要把这些变化放进同一条严格的累计关系中。技术记录里把这称为“补偿公式”或“Dynkin 公式”。记住它的作用即可：**连接一次更新与一段时间。**
+取 $h_L=L^2/12288000$。当 $L\ge12288000$ 时，右侧在 $t\le h_L$ 不超过 $1/2$，从而 $q_{2L+1}(t)\ge1/2$。
 
-## 5. 为什么这座桥仍然难
+### 2.2 同步尾界与原尺寸
 
-辅助证明还会对过程作改造，例如禁止某些区域外的出生，并进行几何清理。这样做有利于控制图形，却会改变面积的变化率。算式里必须记下这些改动，不能把原过程的面积公式直接搬过来。
+取
 
-此前已找到一个反例，否定了把实际辅助过程的面积漂移当成固定常数的简化路线。因此，现在保留了正确的边界修正项，下一步还要控制它随时间的累积。
+$$
+k_L=\left\lfloor\frac{L^2}{196608000}\right\rfloor-1.
+$$
 
-即使完成累计公式，仍需证明小岛在平方时间内有足够强的收缩概率，再接回原同步过程的上下界。**所以，已有的局部规律和比较工具，并不等于完整主定理已经证明。**
+当 $L\ge196608000$ 时，尺度估计给出
 
-Lean 负责核查我们已经写出的逻辑推导；原问题与定义是否对应、剩余步骤是否齐全，也必须分别检查。独立 AI 审查不能冒充人类专家确认。
+$$
+k_L\ge\frac{L^2}{393216000},\quad
+t_{k_L}\le h_L,\quad
+\epsilon_{2L+1}(k_L)\le\frac14.
+$$
 
-[返回图文首页](../README.md) · [核查技术记录](VERIFICATION.md)
+由第一方向的时钟比较，
 
+$$
+\mathbb P(T_{2L+1}>k_L)
+\ge q_{2L+1}(t_{k_L})-\epsilon_{2L+1}(k_L)
+\ge\frac14.
+$$
 
-## 从一次变化到整段面积
+尺度估计见 [SyncLowerScale.lean](../formal/analysis/MathResearchAnalysis/SyncLowerScale.lean)，同步尾界见 [SynchronousQuadraticTail.lean](../formal/analysis/MathResearchAnalysis/SynchronousQuadraticTail.lean) 的 `synchronous_tail_ge_quarter`。
 
-后来又补上了实际铃响前的图形，并证明这件事在每一个随机响铃时刻都成立。现在每次更新和清理造成的面积增减可以如实相加，恰好得到最终面积减初始面积；还已证明这本随机账的平均值等于时间积分。这里处理的是辅助时钟过程，完整二次恢复时间定理仍待几何与概率界。
+对原尺寸 $N\ge786432000$，取 $L=\lfloor(N-1)/2\rfloor$，则 $2L+1\le N$、$L\ge196608000$ 且 $L\ge N/6$。实心小方块与实心 $N\times N$ 方块的单调比较给出
 
-[现在的面积进展与核心缺口](../STATUS.md) · [形式化与验收](../formal/PROGRESS_2026-10-23_AREA_DYNKIN.md)
+$$
+\mathbb P(T_{Q_N}>k_L)\ge\frac14.
+$$
+
+非负扩展期望满足 $\mathbb E[T]\ge k\mathbb P(T>k)$，即使允许 $T=\infty$ 也成立。因此
+
+$$
+\tau(N)\ge\mathbb E[T_{Q_N}]
+\ge\frac{k_L}{4}
+\ge\frac{L^2}{1572864000}
+\ge\frac{N^2}{56623104000}.
+$$
+
+奇偶尺寸处理、尾概率转期望及精确尺寸见证见 [OriginalQuadraticLower.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticLower.lean)。
+
+## 3. 排斥过程与上界
+
+### 3.1 阶梯边界的粒子表示
+
+取 $M=8N+1$ 的辅助方形，南、西外边界固定为 $0$，北、东外边界固定为 $1$，初态全 $1$。该时钟过程保持坐标单调的阶梯形，即两坐标都增大时颜色值不减。边界编码为长度 $2M$ 的路径上的 $M$ 个粒子；一次角点变化对应邻位粒子与空位的交换，总粒子数保持为 $M$。
+
+![混合边界方形的阶梯边界与粒子编码](images/06-particle-encoding.png)
+
+图 1. 混合边界辅助过程的三种构形及对应粒子编码。图中 $M=5$，粒子数始终为 $5$；粒子编码边界而非占据格点。图示更新序列不指定连续时间。
+
+记 $\eta_i(t)\in\{0,1\}$ 为第 $i$ 个路径位置的粒子占据变量，$\rho_i(t)=\mathbb E[\eta_i(t)]$，$0\le i<2M$。定义
+
+$$H(t)=\sum_{i=0}^{2M-1}(\rho_i(t)-1/2)^2.$$
+
+一阶矩的离散热方程及路径 Poincaré 不等式给出
+
+$$
+H'(t)\le-\frac{H(t)}{4M^2},\qquad H(0)=M/2,
+$$
+
+故
+
+$$H(t)\le\frac M2\exp\!\left(-\frac{t}{4M^2}\right).$$
+
+在 $t_0=16M^2$ 时，有 $H(t_0)\le M/16$。对应声明为 [MixedHeatDecay.lean](../formal/analysis/MathResearchAnalysis/MixedHeatDecay.lean) 的 `squareMass_le_exponential`、`squareMass_at_mixingTime`。
+
+### 3.2 局部清空概率
+
+令 $J_t=\sum_{i=M}^{2M-1}\eta_i(t)$ 为右半路径的粒子数。Cauchy–Schwarz 不等式给
+
+$$
+|\mathbb E[J_{t_0}]-M/2|^2\le M H(t_0)\le M^2/16,
+$$
+
+所以 $\mathbb E[J_{t_0}]\ge M/4$。另一方面，不同占据变量的协方差非正，因此
+
+$$
+\operatorname{Var}(J_{t_0})
+\le\sum_{i=M}^{2M-1}\operatorname{Var}(\eta_i(t_0))\le M/4.
+$$
+
+此处不要求占据变量独立。由于 $N\le M/8$，切比雪夫不等式给
+
+$$
+\mathbb P(J_{t_0}<N)
+\le\frac{M/4}{(M/8)^2}=\frac{16}{M}\le\frac18
+\qquad(N\ge16).
+$$
+
+阶梯构形的几何关系保证：$J_{t_0}\ge N$ 时，辅助方形西南角的 $N\times N$ 区域全为 $0$。均值、方差、清空事件的连接分别见 [MixedRightCountHeat.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountHeat.lean)、[MixedRightCountMoments.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountMoments.lean)、[MixedLocalClearing.lean](../formal/analysis/MathResearchAnalysis/MixedLocalClearing.lean) 与 [MixedClearingProbability.lean](../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean)。
+
+### 3.3 跨尺寸比较、同步尾界与重启
+
+将辅助方形中目标 $N\times N$ 区域的时钟及标记限制到该区域，得到的联合分布正是边长 $N$ 的小方形所需分布。在相同内部随机输入下，零边界小方形的状态逐点不超过辅助过程。因此辅助区域全 $0$ 蕴含小方形清空，得到
+
+$$q_N(t_0)\le1/8.$$
+
+跨尺寸限制及逐点比较见 [ClockSampleRestriction.lean](../formal/analysis/MathResearchAnalysis/ClockSampleRestriction.lean)、[ClockRestrictedExecution.lean](../formal/analysis/MathResearchAnalysis/ClockRestrictedExecution.lean) 和 [CrossSquareClockBound.lean](../formal/analysis/MathResearchAnalysis/CrossSquareClockBound.lean)。
+
+取 $k=1296N^2$ 以及同步块长度
+
+$$b_N=2\cdot128(k+1)+1.$$
+
+当 $N\ge16$ 时，$t_0\le k\le t_k$，$\epsilon_N(k)\le1/8$。小方形的清空态吸收，故 $q_N(t_k)\le q_N(t_0)$。第二方向的时钟比较给
+
+$$
+\mathbb P(T_N>b_N)\le2\cdot\frac18+2\cdot\frac18=\frac12.
+$$
+
+任意块结束后，给定此前历史，未使用的同步平票标记仍服从原独立公平律。当前构形不超过全 $1$ 构形，故同一上界可逐块应用。对初始异色集合包含于该零边界方形的任意初态 $x$，以及整数 $j\ge0$，
+
+$$\mathbb P(T_x>jb_N)\le2^{-j}.$$
+
+由非负扩展期望的尾和公式，按长度 $b_N$ 分块求和，
+
+$$
+\mathbb E[T_x]
+=\sum_{t=0}^{\infty}\mathbb P(T_x>t)
+\le b_N\sum_{j=0}^{\infty}2^{-j}
+=2b_N\le664066N^2.
+$$
+
+最后一个数值界使用 $b_N\le332033N^2$。尺度、重启和尾和证明见 [SyncUpperScale.lean](../formal/analysis/MathResearchAnalysis/SyncUpperScale.lean)、[SquareRandomRestart.lean](../formal/analysis/MathResearchAnalysis/SquareRandomRestart.lean)、[ExtendedBlockTail.lean](../formal/analysis/MathResearchAnalysis/ExtendedBlockTail.lean)。对归一化的全部精确尺寸图形取上确界，再还原平移与背景色，得到 [OriginalQuadraticUpper.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticUpper.lean) 的 `tau_quadratic_upper_bound`。
+
+![从辅助区域清空到原同步模型上界的结构](images/07-local-clearing.png)
+
+图 2. 上界的几何比较与时间尺度。辅助方形边长为 $8N+1$，仅要求其西南 $N\times N$ 区域在指定时刻全为背景色；该事件经跨尺寸比较与调度估计转为同步块尾界。图示为证明结构，非模拟数据；图中所标内核检查对应2026-10-26的归档版本。
+
+## 4. 定理合并与独立改进
+
+第 2 节给出 $N\ge786432000$ 时的下界，第 3 节给出 $N\ge16$ 时的上界。合并后取
+
+$$c=1/56623104000,\quad C=664066,\quad N_0=786432000,$$
+
+即得 $\tau(N)=\Theta(N^2)$；形式声明见 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean)。
+
+后续独立证明 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 使用更强的辅助时钟退出估计与调度尺度，得到 $N\ge500001$ 时的 $\tau(N)\ge N^2/576000000$。该文件另行保存，不替换上述原证明的常数与版本。
+
+原证明的构建、工具链和审计记录见[验证方法](VERIFICATION.md)。相关比较方法与算例见[证明方法说明](proof-discovery/README.md)。按日期形成的进展及原稿由[归档索引](ARCHIVAL_RECORD.md)定位，其阶段性表述按原日期理解。

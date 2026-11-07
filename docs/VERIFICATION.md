@@ -1,13 +1,52 @@
-# 完整主定理验证记录
+# 形式化验证与复现
 
-分析258个证明模块、3280条辅助定理、259份分析源；核心旧125条定理与1模型、8源仅回核指纹未重编。共267份正式源、3406项实际公理输出。最新分析统一构建及标准Lean --trust=0审计实际退出0（2026-10-26T14:53:59.002869+08:00），仅三个标准公理，零新增Lean警告。
+## 已归档的内核检查
 
-主定理为 `MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic`：对原无限二维同步四邻模型，取两种纯色背景、尺寸恰为 N 的最坏扩展期望，证明所有充分大的 N 都满足两侧二次界。上界对 N≥16 成立；两侧共同阈值为 N≥786432000。这组显示常数不声称覆盖所有 N≥1。最终参数中没有保留待证的概率界或耦合假设。
+主定理声明为 `MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic`。2026-10-26的[分析验证记录](../formal/audit/analysis-validation.json)记载：259份分析源统一构建成功，`lake env lean --trust=0 AnalysisAxioms.lean` 退出码为0，检查的3280条分析定理所输出的公理依赖属于 `propext`、`Classical.choice` 和 `Quot.sound`。
 
-分析使用Lean4.35.0-rc4与固定mathlib54c01c3314d33d15d77893cbe4e0472ff26bb34d；核心使用Lean4.35.0，本轮仅核旧八源及审计，不跨版本复用olean，也未重置缓存依赖。本次两阶段18新模块107定理126具名声明有各自build0和标准trust0审计；统一267源的指纹和3406实际公理输出由独立脚本重算绑定。仅三个标准公理，零新增Leanwarning，仅原batteries文档提示。
+另8份核心源使用独立工具链；最终阶段核对了其源指纹与既有[核心审计](../formal/audit/core-validation.json)，没有重新编译这8份源。最终[独立绑定记录](../formal/audit/original-theta-independent-final-binding-evidence.json)汇总267份正式源及3406项公理输出。因而不能将最终阶段描述为两套工具链均重新构建。
 
-[完整结果与源指纹](../formal/PROGRESS_2026-10-26_MAIN_THEOREM.md) · [最终独立语义](../formal/audit/original-theta-independent-review.md) · [完整绑定](../formal/audit/original-theta-independent-final-binding-evidence.json) · [统一记录](../formal/audit/analysis-validation.json)。
+| 工程 | Lean版本 | 依赖 |
+| --- | --- | --- |
+| `formal/analysis/` | `4.35.0-rc4` | mathlib提交 `54c01c3314d33d15d77893cbe4e0472ff26bb34d` |
+| `formal/` | `4.35.0` | 以本目录的 `lakefile` 与锁定文件为准 |
 
-复现分析验证：在工作区根目录用现有 Python 运行 `formal/scripts/validate_analysis.py`，它先实际统一构建，再执行 `lake env lean --trust=0 AnalysisAxioms.lean`。专项脚本还审计新增定义和具名声明。`scripts/validate_workspace.py` 核对源指纹、脚本语法和文档链接；它不重编证明。`formal/scripts/package_lean.py` 逐文件核对材料 ZIP 及其 CRC。
+固定版本分别记在[分析工具链](../formal/analysis/lean-toolchain)和[核心工具链](../formal/lean-toolchain)。不同 Lean 版本的编译产物不可混用。
 
-独立AI复核不等于独立人类专家确认；本地验收不冒充远端CI，也不认证全球新颖性。日期较早的PROGRESS和研究候选稿保留历史状态，不代替本次精确主定理。
+## 在独立检出中复现
+
+安装对应版本的 Lean/Lake 并恢复锁定依赖后，从分析目录运行：
+
+```text
+cd formal/analysis
+lake build
+lake env lean --trust=0 AnalysisAxioms.lean
+```
+
+核心工程在其独立目录及指定版本下检查（以下同样从仓库根目录开始）：
+
+```text
+cd formal
+lake build
+lake env lean --trust=0 audit/CoreAxioms.lean
+```
+
+本仓库不随附编译器和依赖缓存。首次构建需要取得工程锁定的依赖，并验证其版本与源一致。
+
+`formal/scripts/validate_analysis.py` 与 `validate_core.py` 是原 Windows 工作区使用的验证脚本，编译器路径相对固定在 `formal/.tools/`。在使用其他安装布局时，宜运行上述 Lake 命令或明确调整本地脚本路径。原脚本会写入审计输出，复现应在独立检出中进行，以保留归档记录。
+
+## 文档与历史证据
+
+本次修订仅改变说明文稿与其配图。源指纹检查和链接检查与重新运行 Lean 是不同操作，本次只核对文档与源指纹，未重新构建数学工程。旧验证 JSON 中的文稿指纹对应旧稿，详见[版本约定](ARCHIVAL_RECORD.md)。
+
+内核检查约束的是具体形式声明及其依赖。原模型对应关系另有[独立 AI 语义复核](../formal/audit/original-theta-independent-review.md)；模拟本科读者反馈用于核查解释的可理解性。这两项均不属于独立人类专家评审。仓库不以这些检查代替文献优先权判断。
+
+## 当前文稿的只读检查
+
+在包含基线提交历史的 Git 检出中，可从仓库根目录运行：
+
+```text
+python scripts/check_documentation.py
+```
+
+该命令按[本次清单](academic-revision-2026-11-07/manifest.json)核对当前文稿、链接、267份正式源、54份研究 Lean 源文件及保留归档的字节一致性，并复算所列有限算例；它不调用 Lean。数学正文与资料入口见[文稿索引](INDEX.md)。
