@@ -49,4 +49,4 @@ lake env lean --trust=0 audit/CoreAxioms.lean
 python scripts/check_documentation.py
 ```
 
-该命令按[本次清单](academic-revision-2026-11-07/manifest.json)核对当前文稿、链接、267份正式源、54份研究 Lean 源文件及保留归档的字节一致性，并复算所列有限算例；它不调用 Lean。数学正文与资料入口见[文稿索引](INDEX.md)。
+该命令按[当前清单](readme-bilingual-2026-11-16/manifest.json)核对当前文稿（含中英文 README）、链接、267份正式源、54份研究 Lean 源文件及保留归档的字节一致性，并复算所列有限算例；它不调用 Lean。2026-11-16的双语入口修订仅更新 README、本文的清单入口及校验配置；[2026-11-07清单](academic-revision-2026-11-07/manifest.json)作为历史记录保留。数学正文与资料入口见[文稿索引](INDEX.md)。

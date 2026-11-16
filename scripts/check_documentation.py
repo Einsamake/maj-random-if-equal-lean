@@ -9,7 +9,7 @@ import argparse, hashlib, json, re, subprocess, sys
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-META = ROOT / "docs/academic-revision-2026-11-07/manifest.json"
+META = ROOT / "docs/readme-bilingual-2026-11-16/manifest.json"
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()

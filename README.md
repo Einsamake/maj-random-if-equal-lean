@@ -1,5 +1,7 @@
 # 二维随机多数元胞自动机的恢复时间
 
+**中文** | [English](README.en.md)
+
 本仓库研究二维整数格上的同步四邻多数规则，并给出有限扰动的最坏期望恢复时间为二次量级的证明。模型对应于 Fatès、Marcovici、Taati 关于随机平票多数规则的恢复时间问题，见[文献 [1]，§4.2 与 Question 7.4](docs/REFERENCES.md#fates-marcovici-taati-2022)。
 
 ## 模型与主定理
