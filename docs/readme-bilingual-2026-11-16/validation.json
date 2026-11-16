@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-16",
+  "scope": "Chinese and English README entry points, verification manifest configuration and evidence; no new mathematical claims or Lean build",
+  "base_commit": "fe0da72171bacfbafe097bd018e6b9ffa46c0c43",
+  "issue": "https://github.com/Einsamake/maj-random-if-equal-lean/issues/1",
+  "pull_request": "https://github.com/Einsamake/maj-random-if-equal-lean/pull/2",
+  "final_prose_sha256": {
+    "README.md": "5fbeaddd1b7fcf1df74ac8ae63ac298dbe93a371ccb0d7e04e99241fc0ca7666",
+    "README.en.md": "4f60c4235ba5909622466827359cb2768c1322018bee6eb029b2b8c5915548ac",
+    "docs/VERIFICATION.md": "3584401128caab8e907995922ea46be4fb49610202c499003ac0962b4f367df3"
+  },
+  "feedback_changes": [
+    {
+      "source": "reader-initial.json",
+      "file": "README.md",
+      "before": "独立的后续证明将显示下界改进为",
+      "after": "独立的后续证明把上述显式下界改进为",
+      "purpose": "Remove future-tense ambiguity and use explicit lower bound terminology"
+    },
+    {
+      "source": "reader-initial.json",
+      "file": "README.en.md",
+      "before": "of size exactly $N$",
+      "after": "whose smallest enclosing-square side length is exactly $N$",
+      "purpose": "Avoid confusing enclosing-square size with number of perturbed sites"
+    }
+  ],
+  "reader_final_version_hashes_matched": true,
+  "review_scope": "Independent AI simulated undergraduate readability review and bilingual consistency check, not human expert or novelty certification",
+  "github_actions_checks_run": false,
+  "human_collaborator_approval_recorded": false,
+  "new_lean_build_performed": false
+}

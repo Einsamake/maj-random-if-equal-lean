@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "scope": "Multiset of mathematical expressions agrees after ignoring whitespace, sentence punctuation and the English explicit T_A=infinity assignment; prose and quantifiers were separately read",
+  "math_expressions_compared": 21,
+  "sha256": {
+    "README.md": "5fbeaddd1b7fcf1df74ac8ae63ac298dbe93a371ccb0d7e04e99241fc0ca7666",
+    "README.en.md": "4f60c4235ba5909622466827359cb2768c1322018bee6eb029b2b8c5915548ac",
+    "docs/VERIFICATION.md": "3584401128caab8e907995922ea46be4fb49610202c499003ac0962b4f367df3"
+  }
+}

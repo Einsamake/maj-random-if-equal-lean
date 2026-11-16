@@ -1,5 +1,7 @@
 # 二维随机多数元胞自动机的恢复时间
 
+**中文** | [English](README.en.md)
+
 本仓库研究二维整数格上的同步四邻多数规则，并给出有限扰动的最坏期望恢复时间为二次量级的证明。模型对应于 Fatès、Marcovici、Taati 关于随机平票多数规则的恢复时间问题，见[文献 [1]，§4.2 与 Question 7.4](docs/REFERENCES.md#fates-marcovici-taati-2022)。
 
 ## 模型与主定理
@@ -24,7 +26,7 @@ $$
 
 下界以实心方块为见证；上界覆盖所有尺寸恰为 $N$ 的有限扰动。下界使用辅助时钟过程的加权面积估计，上界使用阶梯边界的粒子表示、热衰减与重启尾界。[证明纲要](docs/PROOF_GUIDE.md)给出主要约减和显示常数的来源。形式定理位于 [OriginalQuadraticRecovery.lean](formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean)，声明名为 `tau_theta_quadratic`。
 
-独立的后续证明将显示下界改进为
+独立的后续证明把上述显式下界改进为
 
 $$
 \tau(N)\ge\frac{N^2}{576000000}\qquad(N\ge500001).

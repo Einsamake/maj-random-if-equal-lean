@@ -1,0 +1,76 @@
+{
+  "review_type": "independent AI simulated undergraduate reader review",
+  "date": "2026-11-16",
+  "scope": "Only the three supplied prose files were read. No mathematical source, audit evidence, external links, or project history was consulted.",
+  "reader_assumptions": "Simulated reader with undergraduate analysis, algebra and probability, no Lean knowledge and no prior project knowledge. This is not a human user test, expert review, mathematical correctness certificate, or novelty assessment.",
+  "files_read": [
+    {
+      "path": "D:/MyWorks/Math/repository/readme-bilingual-20261116/README.md",
+      "sha256": "8E38FB84AEB01B2F8137E7512170E906ECAA82620F8CFC8DED6A751A38AD41F4"
+    },
+    {
+      "path": "D:/MyWorks/Math/repository/readme-bilingual-20261116/README.en.md",
+      "sha256": "4E4ECC3869932076484CC3FDF7497718E38FBA45E1C7F6AF00D9EF31CB110FEC"
+    },
+    {
+      "path": "D:/MyWorks/Math/repository/readme-bilingual-20261116/docs/VERIFICATION.md",
+      "sha256": "3584401128CAAB8E907995922EA46BE4FB49610202C499003AC0962B4F367DF3"
+    }
+  ],
+  "restatement": {
+    "object_and_goal": "在二维整数格上，每个点只有0、1两色；起点是纯色背景加上一个有限异色集合A。目标是按A的包围方形边长N，估计所有这种确定初态中最慢的期望恢复时间。另一个等待网络属于不同模型，不用于解释本自动机的定理。",
+    "update_rule": "每一轮所有点同步读取上一轮上下左右四邻。三比一或四比零时选多数色，二比二时用独立公平选择决定新色；本点旧色不计票。不同点和不同轮的平票选择独立。",
+    "size": "N不是异色点的数量，而是包含A的最小轴平行格点正方形每边的格点数。对非空有限A，我从定义得到s(A)=1+max(max_x-min_x,max_y-min_y)。",
+    "time_and_expectation": "T_A是第一次完全恢复原背景的轮数；永不恢复则为无穷。A固定后只对各轮各点的平票随机性求期望。tau(N)再对所有s(A)=N的初态取上确界；平移和颜色对称性把候选集合约化为有限个形状，所以这里可取最大。",
+    "quantifiers": "原合并不等式对每个整数N>=786432000成立；其中上界可单独提前到N>=16。上界对每个尺寸恰为N的扰动都有效；下界只需找到一个见证，正文给的是实心方块，并不声称每个图形都需要二次时间。两种纯色背景均包括。",
+    "conclusion_scope": "二次量级指最坏期望tau(N)与N平方之间有与N无关的正比例上下界，并且只要求充分大的N。它不等于每次随机实现都在固定倍N平方时间内恢复，也不等于所有初态都有相同恢复时间。正文没有承诺在README中证明所有辅助估计；证明纲要及正式定理另有入口。"
+  },
+  "worked_examples": [
+    {
+      "example": "A={(0,0),(2,1)}",
+      "calculation": "横坐标需要0、1、2三列，纵坐标只需要0、1两行。边长按格点数计，正方形至少有三列，三乘三方形确可包含这两点，所以s(A)=3；|A|=2。中英文示例一致。"
+    },
+    {
+      "example": "A={(a,b)}",
+      "calculation": "横纵跨度均为0，一个格点就能包含A，所以s(A)=1，而不是0。"
+    }
+  ],
+  "constant_comparison": {
+    "original_lower": "tau(N)>=N^2/56623104000 for integer N>=786432000",
+    "original_upper": "tau(N)<=664066*N^2 for integer N>=16",
+    "improved_lower": "tau(N)>=N^2/576000000 for integer N>=500001",
+    "comparison": "强化下界的分母更小，因此下界系数更大。在共同适用区间N>=786432000上，下界系数提高56623104000/576000000=98.304倍；强化下界的有效阈值也从786432000降至500001。上界常数和其N>=16阈值没有变化。结合强化下界与原上界，可以对N>=500001写出新的两侧夹逼，但README分别保存原主定理与后续结果，并未混淆其版本。"
+  },
+  "bilingual_consistency": {
+    "result": "pass",
+    "details": "两版对象、同步规则、平票独立性、自身不投票、尺寸定义、示例、期望来源、最坏量词、常数、阈值、实心方块见证及后续强化均一致。英文明确详细解释目前为中文，避免使读者以为链接后的全文也已经双语化。"
+  },
+  "verification_understanding": {
+    "result": "understood within the promised explanatory scope",
+    "restatement": "文档报告的是分日期和对象保存的既有检查：2026-10-26对259份分析源进行了统一构建及所列公理检查；另8份核心源在最终阶段只比对指纹与既有审计，没有重新编译，所以不能把267份源的汇总说成两套工具链都在最终阶段重新构建。分析和核心分别固定Lean 4.35.0-rc4与4.35.0，产物不能混用。独立复现需要相应工具链、依赖及分别运行命令；脚本可能写审计，所以建议独立检出。当前文稿检查只核对字节、链接及有限算例，不调用Lean；本次文稿修订没有重新构建数学工程。",
+    "limits": "我能区分检查种类与报告边界，但仅凭这段正文不能验证Lean命令、公理枚举或审计数据本身。这里没有要求本科读者理解公理的形式逻辑意义，因此propext等名字不构成本次阅读阻断。"
+  },
+  "feedback": [
+    {
+      "file": "README.en.md",
+      "original_sentence": "The upper bound applies to every finite perturbation of size exactly $N$.",
+      "category": "possible terminology misreading",
+      "severity": "nonblocking",
+      "reader_risk": "独立摘读此句时，size可能被理解为异色点数。",
+      "existing_resolution": "前文已经定义s(A)，并以两个点却尺寸为3的实例明确排除点数解释。因此连续阅读没有阻断。",
+      "optional_suggestion": "可将size exactly N局部改为bounding-square side length exactly N，使该句脱离上下文时也更稳；并非通过所必需。"
+    },
+    {
+      "file": "README.md",
+      "original_sentence": "独立的后续证明将显示下界改进为",
+      "category": "wording ambiguity",
+      "severity": "nonblocking",
+      "reader_risk": "将显示短暂读起来像将来才会证明；接下句已给出结果的文件位置，整体仍能判断这是已有后续结果。另可将显示下界读作explicit lower bound的译法，但字面不够顺。",
+      "existing_resolution": "后文该结果位于某文件且分别保存，英文也使用现在时improves，足以消除是否已有结果的主要歧义。",
+      "optional_suggestion": "可改为独立的后续证明把上述显式下界改进为。"
+    }
+  ],
+  "blocking_issues": [],
+  "not_a_gap": "辅助时钟、粒子表示、热衰减与重启尾界仅作为方法导航列出，正文明确把主要推导放在证明纲要；README没有承诺在此解释完整证明，因此不把这些术语未展开列为阻断。",
+  "verdict": "在所读指纹版本上，中英文README的入口说明及VERIFICATION的检查边界通过本次独立AI模拟本科读者验收；无需为可理解性作阻断修订。此结论只针对说明可理解性与两版表述的一致性，不认证数学正确性、新颖性或实际审计结果。"
+}
