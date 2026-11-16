@@ -38,7 +38,7 @@
     "research/exploration/phase9/README.md"
   ],
   "current_documents_sha256": {
-    "README.md": "8e38fb84aeb01b2f8137e7512170e906ecaa82620f8cfc8ded6a751a38ad41f4",
+    "README.md": "5fbeaddd1b7fcf1df74ac8ae63ac298dbe93a371ccb0d7e04e99241fc0ca7666",
     "STATUS.md": "c9b5e216c1c397c71f549ef973d8ff926008cf0c1dd88229f370f5211175c317",
     "deliverables/README.md": "b3139d30c1b47f45745d4cc4695bd3c46bc1fb79724f68ec84491e513b614b32",
     "docs/ARCHIVAL_RECORD.md": "39eb2b64ba990e6123b44108a68567a9590c3433859484ba3fbb9458b63c1110",
@@ -75,7 +75,7 @@
     "research/exploration/phase7/README.md": "07fffdff1d7f0dfaf24afa7be19a7ac958073b533a24f186127a9ec6c51bd28a",
     "research/exploration/phase8/README.md": "dda449f2c8209e24216f12aa65122655c86d47b29581d5a99d9a5e75249ea41d",
     "research/exploration/phase9/README.md": "01e20b9a1096e309aad6a98cfdf9e7f23e122c06c939cbc3fea462377e7c4d8d",
-    "README.en.md": "4e4ecc3869932076484cc3fdf7497718e38fba45e1c7f6af00d9ef31cb110fec"
+    "README.en.md": "4f60c4235ba5909622466827359cb2768c1322018bee6eb029b2b8c5915548ac"
   },
   "exploration_source_sha256": {
     "research/exploration/lean/DirectedNetworkComparison.lean": "e1eb401a053c70e20a295f1cf0d22ced4e1b3b7a5ec52b4714d87a7c87a1182a",

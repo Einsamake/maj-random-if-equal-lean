@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Documentation, exact examples, links, unchanged published proofs and archives; no new Lean build",
+  "baseline_commit": "f3dc0ba5495c78e238c2e58a1f6b040a936df0c0",
+  "baseline_files_retained_byte_identically": 2030,
+  "rewritten_baseline_documents": 32,
+  "current_documents_checked": 38,
+  "local_document_links_checked": 341,
+  "formal_source_sha256_matches": 267,
+  "exploration_source_sha256_matches": 54,
+  "academic_figures_checked": 4,
+  "sealed_zip_sha256": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "new_kernel_build_performed": false,
+  "human_expert_review_claimed": false
+}

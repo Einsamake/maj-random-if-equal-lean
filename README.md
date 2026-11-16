@@ -26,7 +26,7 @@ $$
 
 下界以实心方块为见证；上界覆盖所有尺寸恰为 $N$ 的有限扰动。下界使用辅助时钟过程的加权面积估计，上界使用阶梯边界的粒子表示、热衰减与重启尾界。[证明纲要](docs/PROOF_GUIDE.md)给出主要约减和显示常数的来源。形式定理位于 [OriginalQuadraticRecovery.lean](formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean)，声明名为 `tau_theta_quadratic`。
 
-独立的后续证明将显示下界改进为
+独立的后续证明把上述显式下界改进为
 
 $$
 \tau(N)\ge\frac{N^2}{576000000}\qquad(N\ge500001).

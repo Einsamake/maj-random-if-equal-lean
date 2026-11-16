@@ -24,7 +24,7 @@ $$
 
 The upper bound alone holds for $N\ge16$. Thus there exist positive constants $c,C$, independent of $N$, and a finite threshold $N_0$ such that $cN^2\le\tau(N)\le CN^2$ for all $N\ge N_0$; equivalently, $\tau(N)=\Theta(N^2)$.
 
-A filled square witnesses the lower bound. The upper bound applies to every finite perturbation of size exactly $N$. The lower-bound proof uses a weighted-area estimate for an auxiliary clock process; the upper-bound proof uses a particle representation of staircase boundaries, heat decay and a restart tail bound. The [proof outline](docs/PROOF_GUIDE.md) describes the reductions and the explicit constants. The formal theorem is `tau_theta_quadratic` in [OriginalQuadraticRecovery.lean](formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean).
+A filled square witnesses the lower bound. The upper bound applies to every finite perturbation whose smallest enclosing-square side length is exactly $N$. The lower-bound proof uses a weighted-area estimate for an auxiliary clock process; the upper-bound proof uses a particle representation of staircase boundaries, heat decay and a restart tail bound. The [proof outline](docs/PROOF_GUIDE.md) describes the reductions and the explicit constants. The formal theorem is `tau_theta_quadratic` in [OriginalQuadraticRecovery.lean](formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean).
 
 A separate subsequent proof improves the explicit lower bound to
 
