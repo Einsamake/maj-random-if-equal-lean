@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    "B2",
+    "B3"
+  ],
+  "source_sha256": "ec38d28f1f494cf642a91a550b32db3cf7aff99dd9e50dd4153159bd2e6e2634",
+  "new_result_tags": [
+    "4b",
+    "4c",
+    "4d",
+    "4e"
+  ],
+  "proof_tags": [
+    "DF1",
+    "DF2",
+    "DF3",
+    "DF4"
+  ],
+  "unimplemented": [
+    "C1",
+    "C2"
+  ],
+  "formal_binding": "pending final aggregate build"
+}

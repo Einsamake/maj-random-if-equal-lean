@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\Project\Math\revision-ab-2026-11-17\lean\RecoveryMoments.lean:47:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+C:\Users\Lenovo\Desktop\Project\Math\revision-ab-2026-11-17\lean\RecoveryMoments.lean:76:42: warning: `ENat.toNat_coe` has been deprecated: Use `ENat.toNat_natCast` instead
+
+Hint: Replace the deprecated name:
+  ENat.toNat_c̵o̵e̵n̲a̲t̲C̲a̲s̲t̲
+C:\Users\Lenovo\Desktop\Project\Math\revision-ab-2026-11-17\lean\RecoveryMoments.lean:248:28: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲

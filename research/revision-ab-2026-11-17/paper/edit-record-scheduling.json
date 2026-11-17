@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "owner": "scheduling subagent",
+  "files": [
+    "scheduling.md",
+    "scheduling-source-map.json",
+    "edit-record-scheduling.json"
+  ],
+  "formal_sources_mutated": false,
+  "frozen_materials_mutated": false,
+  "editing_passes": [
+    {
+      "pass": 1,
+      "focus": "Complete proof structure and original-clock evidence chain",
+      "changes": "Wrote self-contained common-history residual proof, true readiness recurrence, selected identity rearrangement, fixed-path moments, exact rank Laplace bound, slot completion and both endpoint inequalities.",
+      "output_sha256": "c7251318b522102bc26f3b9f7b24981a2b0f9b91058bb9411818827fe0ee5591"
+    },
+    {
+      "pass": 2,
+      "focus": "Mathematical gaps and independence scope",
+      "changes": "Added explicit stopped-history inclusion argument and original-coordinate density factorization; checked finite prefix rather than global task independence.",
+      "output_sha256": "d0f39dee50d6353df325075129f76219662c82b35d614933618dea4bb4bfae23"
+    },
+    {
+      "pass": 3,
+      "focus": "Reader clarity, boundaries and count conventions",
+      "changes": "Restricted rational observation indices to nonnegative values after independent semantics feedback; made stopped-history time domain explicit; clarified opposite-colour neighbours and positive rank restriction.",
+      "output_sha256": "956e1e93cc578bbffb80e0a9ed842502809af8c9d7846779da15e26d32f46d8b"
+    }
+  ],
+  "independent_semantics_feedback": [
+    {
+      "reviewer": "root independent audit",
+      "finding": "No blocking issue; F_s defined for s>=0 but S2 rational union allowed a<0.",
+      "resolution": "S2 now restricts 0<=a<=s; countable slice proof also uses nonnegative rational times.",
+      "status": "addressed"
+    }
+  ],
+  "simulated_undergraduate_reader": {
+    "status": "Pending integrated review by root; no local reader pass claimed.",
+    "required_record": "Root preserves body/version SHA, quotation-located feedback, edits and reread outcome.",
+    "limitation": "Simulation only, not human user testing, expert review, mathematical correctness certification or novelty certification."
+  },
+  "example": {
+    "site_order": "b,c,a,d,b,c,a,d",
+    "times": [
+      0.2,
+      0.3,
+      0.4,
+      0.7,
+      0.9,
+      1.1,
+      1.5,
+      1.8
+    ],
+    "ranks": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4
+    ],
+    "selected_M": 1.8,
+    "selected_path": "d,c,d",
+    "waits": [
+      0.7,
+      0.4,
+      0.7
+    ],
+    "nonempty_slots": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "completed_scans": 8,
+    "calculation_checked": true
+  },
+  "source_map": "scheduling-source-map.json",
+  "source_files_fingerprinted": 24,
+  "final_manuscript_sha256": "956e1e93cc578bbffb80e0a9ed842502809af8c9d7846779da15e26d32f46d8b",
+  "checks": {
+    "all_declarations_found": true,
+    "original_sources_read_only": true,
+    "local_markdown_links": "paper.md, scheduling-source-map.json, edit-record-scheduling.json all present after this write",
+    "integrated_links": "Root to verify after integration",
+    "Lean_rerun": false
+  }
+}

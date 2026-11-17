@@ -1,0 +1,27 @@
+{
+  "module": "SharpFailureRate",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lean.exe",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\SharpFailureRate.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpFailureRate.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 11.214608430862427,
+  "source_sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+  "log_sha256": "9b59c15881e3805967a1b1f8cfa487b69b00bd8c359e5673b615f338b31c0461",
+  "trust_level": 0,
+  "fresh_project_base": true,
+  "lean_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\fresh-base\\analysis;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+  "actual_axiom_outputs": [
+    "MathResearchRevision.SharpFailureRate.layers_succ_ge_twice",
+    "MathResearchRevision.SharpFailureRate.scheduling_le_inv_side",
+    "MathResearchRevision.SharpFailureRate.failure_le_five_div",
+    "MathResearchRevision.SharpFailureRate.failure_isBigO_inv"
+  ],
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpFailureRate.lean",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\SharpFailureRate.olean",
+  "olean_sha256": "e8ef25dd98882f63f2a2a4aa66e95af8a7bc790c919f328bb42783aadd3404f5"
+}

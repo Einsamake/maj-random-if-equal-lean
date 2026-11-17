@@ -1,0 +1,951 @@
+{
+  "schema_version": 1,
+  "kind": "human_shape_proof_source_correspondence",
+  "snapshot_date": "2026-10-29",
+  "authoritative_workspace": "D:/MyWorks/Math",
+  "chapter": "research/manuscript/quadratic-recovery-v5/shape-preservation.md",
+  "chapter_sha256": "FBA23BE5E325380CF5BAA254B839C3D437F374DF1C188EFCE28C140018DC4BBD",
+  "scope": "Ordinary mathematical exposition of existing formal Shape preservation; no new theorem, source edit, or Lean build.",
+  "status": "author_checked_draft_for_independent_source_and_reader_review",
+  "acceptance_boundary": "The source map records provenance. The chapter contains ordinary proofs and does not ask its reader to use Lean source to supply a missing argument. This map is not independent semantic or undergraduate-reader acceptance.",
+  "frozen_paths_not_edited": [
+    "formal",
+    "research/manuscript/quadratic-recovery-v0",
+    "research/manuscript/quadratic-recovery-v1",
+    "research/manuscript/quadratic-recovery-v2",
+    "research/manuscript/quadratic-recovery-v3",
+    "research/manuscript/quadratic-recovery-v4",
+    "phases 1-13"
+  ],
+  "notation": {
+    "shape": "row interval convexity + column interval convexity + occupied four-neighbor connectivity + occupied degree>=2",
+    "D": "|x|<=L, |y|<=L, norm1<=L+1",
+    "A": "10 norm1<=9L",
+    "P": "A union its exterior four-neighbor boundary",
+    "main_geometric_range": "integer L>=2",
+    "lemma3_application_range": "integer L>=80",
+    "event_variables": "S_n, F_n, nu, W, K, M_e retained from MM1-MM6",
+    "physical_exit": "theta from MM8; physical frozen set U(t) from WB4"
+  },
+  "obligations": [
+    {
+      "id": "G0",
+      "chapter_tags": [
+        "G1",
+        "G2"
+      ],
+      "claim": "Initial D_L has Shape and P_L is initially retained.",
+      "human_proof": "Explicit row/column radii, norm-decreasing paths to the origin, two-neighbor stability including axes, and integrality of the protected norm bound.",
+      "sources": [
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "Shape",
+          "line_start": 19,
+          "line_end": 21,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "clipped_shape",
+          "line_start": 22,
+          "line_end": 25,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ClippedOrthogonalSections",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+          "declaration": "mem_clipped_row_interval_iff",
+          "line_start": 56,
+          "line_end": 62,
+          "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C"
+        },
+        {
+          "module": "ClippedOrthogonalSections",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+          "declaration": "mem_clipped_column_interval_iff",
+          "line_start": 63,
+          "line_end": 69,
+          "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C"
+        },
+        {
+          "module": "ClippedOrthogonalSections",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+          "declaration": "row_interval_convex",
+          "line_start": 164,
+          "line_end": 172,
+          "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C"
+        },
+        {
+          "module": "ClippedOrthogonalSections",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+          "declaration": "column_interval_convex",
+          "line_start": 173,
+          "line_end": 181,
+          "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C"
+        },
+        {
+          "module": "ClippedGridConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedGridConnectivity.lean",
+          "declaration": "path_to_origin",
+          "line_start": 139,
+          "line_end": 145,
+          "sha256": "5D1EF3D82ED21C04E0A724C9AC37760FFA1BB8956CF1A85A789BC960AC91AE19"
+        },
+        {
+          "module": "ClippedGridConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedGridConnectivity.lean",
+          "declaration": "path_between",
+          "line_start": 146,
+          "line_end": 149,
+          "sha256": "5D1EF3D82ED21C04E0A724C9AC37760FFA1BB8956CF1A85A789BC960AC91AE19"
+        },
+        {
+          "module": "ClippedDiamondGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean",
+          "declaration": "clippedDomain_degree_ge_two",
+          "line_start": 247,
+          "line_end": 261,
+          "sha256": "8C092C3463AA7A736806F593028FA9EAEB9930FBFCB6FFFD8979163B87BAA1EF"
+        },
+        {
+          "module": "ClippedDiamondGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean",
+          "declaration": "clippedDomain_stable",
+          "line_start": 262,
+          "line_end": 266,
+          "sha256": "8C092C3463AA7A736806F593028FA9EAEB9930FBFCB6FFFD8979163B87BAA1EF"
+        },
+        {
+          "module": "ClippedProtectedGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean",
+          "declaration": "protectedSites_subset_clippedDomain_of_pos",
+          "line_start": 185,
+          "line_end": 195,
+          "sha256": "D809D52A894B9ADEBD1CA33A2DB3EA26489D9A4A31F13B643947C70FFD2980EA"
+        }
+      ]
+    },
+    {
+      "id": "G1",
+      "chapter_tags": [
+        "G3"
+      ],
+      "claim": "Vacant opposites are impossible; changing actual raw events are degree-two tie births or deaths; no-op and exterior events remain no-op.",
+      "human_proof": "An opposite pair forces vacancy to be occupied by interval convexity; any three neighbors contain an opposite pair. Occupied stability and the literal four-input threshold finish the classification.",
+      "sources": [
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "vacant_no_east_west",
+          "line_start": 28,
+          "line_end": 31,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "vacant_no_north_south",
+          "line_start": 32,
+          "line_end": 34,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "vacant_degree4_le_two",
+          "line_start": 35,
+          "line_end": 43,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "vacant_localRule_true_iff",
+          "line_start": 44,
+          "line_end": 54,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "stable_occupied_localRule_false_iff",
+          "line_start": 62,
+          "line_end": 74,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "rawStep_classification",
+          "line_start": 93,
+          "line_end": 110,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+          "declaration": "modifiedStep_classification",
+          "line_start": 132,
+          "line_end": 148,
+          "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6"
+        },
+        {
+          "module": "DropletModifiedWord",
+          "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+          "declaration": "modifiedStep_of_not_mem",
+          "line_start": 95,
+          "line_end": 98,
+          "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "chapter_tags": [
+        "G4"
+      ],
+      "claim": "A degree-two vacant insertion preserves Shape and cleanup is the identity.",
+      "human_proof": "The occupied neighbors include one on each axis, so both affected intervals gain an adjacent endpoint; old paths survive and the new site attaches; old degrees cannot fall.",
+      "sources": [
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "vacant_degree_two_orthogonal_neighbors",
+          "line_start": 90,
+          "line_end": 100,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "vacant_degree_two_insert_rowConvex",
+          "line_start": 154,
+          "line_end": 159,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "vacant_degree_two_insert_columnConvex",
+          "line_start": 160,
+          "line_end": 165,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "vacant_degree_two_insert_fourConnected",
+          "line_start": 166,
+          "line_end": 176,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "stable_insert_of_degree_ge_two",
+          "line_start": 101,
+          "line_end": 110,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "cleanup_insert_of_stable_degree_ge_two",
+          "line_start": 111,
+          "line_end": 115,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        },
+        {
+          "module": "ConvexBirthUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+          "declaration": "actual_vacant_birth_preserves",
+          "line_start": 218,
+          "line_end": 236,
+          "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950"
+        }
+      ]
+    },
+    {
+      "id": "G3",
+      "chapter_tags": [
+        "G5"
+      ],
+      "claim": "Every legal degree-less-than-two cleanup deletion preserves row/column convexity and occupied connectivity; iteration reaches K.",
+      "human_proof": "A new interval gap would require two occupied immediate neighbors. A shortest path between surviving sites cannot have a degree-zero or degree-one internal vertex. Iterate through the ordinary legal deletion characterization already proved in MM1.",
+      "sources": [
+        {
+          "module": "ConvexCleanupUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean",
+          "declaration": "rowConvex_erase_of_no_opposites",
+          "line_start": 25,
+          "line_end": 41,
+          "sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA"
+        },
+        {
+          "module": "ConvexCleanupUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean",
+          "declaration": "columnConvex_erase_of_no_opposites",
+          "line_start": 42,
+          "line_end": 58,
+          "sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA"
+        },
+        {
+          "module": "ConvexCleanupUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean",
+          "declaration": "legal_delete_preserves_convexity",
+          "line_start": 76,
+          "line_end": 83,
+          "sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA"
+        },
+        {
+          "module": "ConvexCleanupUpdate",
+          "path": "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean",
+          "declaration": "cleanup_preserves_convexity",
+          "line_start": 91,
+          "line_end": 94,
+          "sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA"
+        },
+        {
+          "module": "CleanupConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/CleanupConnectivity.lean",
+          "declaration": "path_erase_of_degree_lt_two",
+          "line_start": 37,
+          "line_end": 72,
+          "sha256": "CCE3B32DA0E4939F6E8C11C7EED8A8B02B577AF13A4D3F97D4CFB20B7E8E2E8B"
+        },
+        {
+          "module": "CleanupConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/CleanupConnectivity.lean",
+          "declaration": "fourConnected_erase_of_degree_lt_two",
+          "line_start": 73,
+          "line_end": 80,
+          "sha256": "CCE3B32DA0E4939F6E8C11C7EED8A8B02B577AF13A4D3F97D4CFB20B7E8E2E8B"
+        },
+        {
+          "module": "CleanupConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/CleanupConnectivity.lean",
+          "declaration": "cleanup_fourConnected",
+          "line_start": 94,
+          "line_end": 98,
+          "sha256": "CCE3B32DA0E4939F6E8C11C7EED8A8B02B577AF13A4D3F97D4CFB20B7E8E2E8B"
+        }
+      ],
+      "source_proof_presentation_note": "The chapter uses the equivalent shortest-simple-path argument instead of the source's path retraction."
+    },
+    {
+      "id": "G4",
+      "chapter_tags": [
+        "G6"
+      ],
+      "claim": "A protected, supported, stable row/column-convex state has no occupied degree-two opposite pair.",
+      "human_proof": "Singleton column gives 9L<10(|x|+1). For all outward occupied u, clipped support makes the same-height axis point protected; row convexity forces u to the singleton height. For the outermost occupied u, that universal conclusion excludes its N/S neighbors separately and maximality excludes E, contradicting stability. Reflection handles negative x and coordinate interchange handles the vertical pair.",
+      "sources": [
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "column_singleton_of_missing_vertical",
+          "line_start": 15,
+          "line_end": 27,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "protected_singleton_column_bound",
+          "line_start": 28,
+          "line_end": 41,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "outward_row_axis_in_innerDiamond",
+          "line_start": 42,
+          "line_end": 53,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "outward_occupied_same_row",
+          "line_start": 54,
+          "line_end": 62,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "no_east_on_positive_singleton_column",
+          "line_start": 63,
+          "line_end": 106,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "no_singleton_column_on_axis",
+          "line_start": 107,
+          "line_end": 114,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "protected_no_horizontal_opposites",
+          "line_start": 206,
+          "line_end": 233,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "degree4_transpose",
+          "line_start": 267,
+          "line_end": 273,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "stable_transpose",
+          "line_start": 274,
+          "line_end": 282,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "protected_no_vertical_opposites",
+          "line_start": 283,
+          "line_end": 302,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        }
+      ],
+      "source_proof_presentation_note": "The source proves positive and negative x explicitly; the ordinary proof states the exact reflection invariances and transports the positive argument."
+    },
+    {
+      "id": "G5",
+      "chapter_tags": [
+        "G7"
+      ],
+      "claim": "An occupied adjacent-neighbor degree-two corner has an occupied common diagonal.",
+      "human_proof": "Four protected-axis implications, all four nonzero sign pairs in a norm table, all four nonorigin axis cases, and the origin; reflected pairs are then transported explicitly.",
+      "sources": [
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "northeast_diagonal",
+          "line_start": 14,
+          "line_end": 89,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "rowConvex_mirror",
+          "line_start": 102,
+          "line_end": 112,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "columnConvex_mirror",
+          "line_start": 113,
+          "line_end": 123,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "protected_mirror",
+          "line_start": 128,
+          "line_end": 140,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "northwest_diagonal",
+          "line_start": 141,
+          "line_end": 153,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "southeast_diagonal",
+          "line_start": 154,
+          "line_end": 166,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        },
+        {
+          "module": "ProtectedCornerGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+          "declaration": "southwest_diagonal",
+          "line_start": 167,
+          "line_end": 180,
+          "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E"
+        }
+      ],
+      "arithmetic_check": "r=floor(9L/10)>=1; 2r+2>9L/5>=L+1 for L>=2; no sign case is hidden by a symmetry claim."
+    },
+    {
+      "id": "G6",
+      "chapter_tags": [
+        "G8"
+      ],
+      "claim": "Actual degree-two death followed by the literal cleanup preserves Shape and support.",
+      "human_proof": "G6 makes the two neighbors adjacent; removing a row/column endpoint preserves both interval properties. G7 gives a two-edge occupied bypass for the unique occurrence of the deleted site in a shortest path. Iterate G5 through the complete cleanup and use terminal stability and monotone support.",
+      "sources": [
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "protected_erase_convexity",
+          "line_start": 303,
+          "line_end": 313,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+          "declaration": "protected_cleanup_erase_convexity",
+          "line_start": 314,
+          "line_end": 324,
+          "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC"
+        },
+        {
+          "module": "ProtectedDeathConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+          "declaration": "northeast_neighbor_bypass",
+          "line_start": 72,
+          "line_end": 87,
+          "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56"
+        },
+        {
+          "module": "ProtectedDeathConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+          "declaration": "protected_neighbor_bypass",
+          "line_start": 137,
+          "line_end": 158,
+          "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56"
+        },
+        {
+          "module": "ProtectedDeathConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+          "declaration": "protected_erase_fourConnected",
+          "line_start": 159,
+          "line_end": 166,
+          "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56"
+        },
+        {
+          "module": "ProtectedDeathConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+          "declaration": "protected_cleanup_erase_fourConnected",
+          "line_start": 167,
+          "line_end": 174,
+          "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56"
+        },
+        {
+          "module": "ProtectedDeathConnectivity",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+          "declaration": "actual_protected_death_preserves",
+          "line_start": 175,
+          "line_end": 187,
+          "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56"
+        },
+        {
+          "module": "DropletModifiedWord",
+          "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+          "declaration": "modifiedStep_supported",
+          "line_start": 140,
+          "line_end": 144,
+          "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37"
+        },
+        {
+          "module": "DropletModifiedWord",
+          "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+          "declaration": "modifiedStep_stable",
+          "line_start": 145,
+          "line_end": 151,
+          "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "actual_modifiedStep_shape",
+          "line_start": 26,
+          "line_end": 50,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        }
+      ]
+    },
+    {
+      "id": "G7",
+      "chapter_tags": [
+        "G9"
+      ],
+      "claim": "Every actual frozen output, including the completed first-losing output, has Shape and support; finite clock prefixes transfer this to physical frozen states.",
+      "human_proof": "Induct using A subset P only if the current input retains P. Execute the losing event in full using its still-protected input; preserve the resulting state thereafter. No hypothesis requires the unfrozen path to remain unprotected after first loss.",
+      "sources": [
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "modifiedTrajectory_shape_of_history",
+          "line_start": 51,
+          "line_end": 63,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "inner_preserved_before_exit",
+          "line_start": 64,
+          "line_end": 74,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "modifiedTrajectory_shape_upto_exit",
+          "line_start": 75,
+          "line_end": 83,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "stoppedTrajectory_shape",
+          "line_start": 84,
+          "line_end": 94,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "ProtectedEvolution",
+          "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+          "declaration": "initial_stoppedTrajectory_shape",
+          "line_start": 95,
+          "line_end": 100,
+          "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F"
+        },
+        {
+          "module": "DropletDomainComparison",
+          "path": "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean",
+          "declaration": "modifiedTrajectory_succ",
+          "line_start": 109,
+          "line_end": 113,
+          "sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC"
+        },
+        {
+          "module": "DropletDomainComparison",
+          "path": "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean",
+          "declaration": "stoppedTrajectory_before_exit",
+          "line_start": 205,
+          "line_end": 209,
+          "sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC"
+        },
+        {
+          "module": "DropletDomainComparison",
+          "path": "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean",
+          "declaration": "stoppedTrajectory_after_exit",
+          "line_start": 210,
+          "line_end": 214,
+          "sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC"
+        },
+        {
+          "module": "DropletDomainComparison",
+          "path": "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean",
+          "declaration": "stoppedTrajectory_frozen",
+          "line_start": 215,
+          "line_end": 220,
+          "sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC"
+        },
+        {
+          "module": "PhysicalWeightedDrift",
+          "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+          "declaration": "stoppedWord_shape",
+          "line_start": 29,
+          "line_end": 36,
+          "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48"
+        },
+        {
+          "module": "PhysicalWeightedDrift",
+          "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+          "declaration": "strictStateAt_shape",
+          "line_start": 37,
+          "line_end": 42,
+          "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48"
+        },
+        {
+          "module": "PhysicalWeightedDrift",
+          "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+          "declaration": "beforeState_shape_all_times_ae",
+          "line_start": 43,
+          "line_end": 54,
+          "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48"
+        },
+        {
+          "module": "PhysicalWeightedDrift",
+          "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+          "declaration": "rawContribution_le_linear_all_times_ae",
+          "line_start": 55,
+          "line_end": 70,
+          "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48"
+        }
+      ],
+      "rate_scope": "The rate in WB3 is gated by P containment and is exactly zero after frozen loss. This chapter supplies Shape, not the independent raw rate estimate."
+    }
+  ],
+  "reused_v4_interfaces": [
+    {
+      "path": "research/manuscript/quadratic-recovery-v4/modified-cleanup.md",
+      "claims": [
+        "MM1: K equals every terminal legal deletion sequence and is stable",
+        "MM2-MM3: literal raw and masked modified maps",
+        "MM4-MM6: first-loss index and frozen completed-output convention",
+        "MM8-MM9: physical exit theta and regular finite prefixes"
+      ],
+      "sha256": "B4865DF06438FAE2B84CC675E903FF0044B6A2652CD28E95B64BB288A53DBDE2"
+    },
+    {
+      "path": "research/manuscript/quadratic-recovery-v4/weighted-balance.md",
+      "claims": [
+        "WB3: frozen raw rate has P-containment gate",
+        "WB4: U(t) is the physical frozen occupied state"
+      ],
+      "sha256": "158D7749DE739A04198359BBFC515E6BB53A58AC3A23E88522E84B3483EEA260"
+    }
+  ],
+  "figure": {
+    "path": "research/manuscript/quadratic-recovery-v5/images/corner-deletion-bypass.png",
+    "specification": "research/manuscript/quadratic-recovery-v5/review/shape-figure-spec.json",
+    "spec_sha256": "95ADF4BF000D82AB05BFC1514A38BB1474C6C2751541F77B37D15D749BE08540",
+    "render_and_visual_review": "owned by root; not certified by this author"
+  },
+  "example_checks": {
+    "method": "PowerShell in-memory exact enumeration of D_80 and the raw erasure, with genuine four-neighbor counts; no simulation claim.",
+    "D80": {
+      "before_card": 13281,
+      "after_card": 13280,
+      "deleted_site": [
+        -79,
+        -2
+      ],
+      "occupied_neighbors": [
+        [
+          -79,
+          -1
+        ],
+        [
+          -78,
+          -2
+        ]
+      ],
+      "vacant_neighbors": [
+        [
+          -79,
+          -3
+        ],
+        [
+          -80,
+          -2
+        ]
+      ],
+      "common_diagonal": [
+        -78,
+        -1
+      ],
+      "neighbor_degrees_before": [
+        4,
+        4
+      ],
+      "neighbor_degrees_after": [
+        3,
+        3
+      ],
+      "minimum_surviving_degree_after": 2,
+      "cleanup_identity": true
+    },
+    "toy": {
+      "state": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "raw_delete": [
+        0,
+        0
+      ],
+      "cleanup_order": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "degrees_at_deletion": [
+        1,
+        1,
+        0
+      ],
+      "terminal_state": [],
+      "actual_D_trajectory": false
+    }
+  },
+  "pending_independent_checks": [
+    "Source/semantic correspondence by root's independent reviewer",
+    "Simulated undergraduate reader with final prose and actual figure only",
+    "Reader feedback, revision mapping and reread version fingerprints owned by root",
+    "Full-paper rendering and visual QA owned by root"
+  ],
+  "formal_modules": [
+    {
+      "module": "DropletDomainComparison",
+      "path": "formal/analysis/MathResearchAnalysis/DropletDomainComparison.lean",
+      "sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC",
+      "line_count": 235,
+      "plan_sha256": "046830B92BF24F664D447C8121FC71047B3CBAE28996D98A7D52D920A9A3D0CC",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ConvexLocalUpdate",
+      "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+      "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6",
+      "line_count": 148,
+      "plan_sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "CleanupConnectivity",
+      "path": "formal/analysis/MathResearchAnalysis/CleanupConnectivity.lean",
+      "sha256": "CCE3B32DA0E4939F6E8C11C7EED8A8B02B577AF13A4D3F97D4CFB20B7E8E2E8B",
+      "line_count": 98,
+      "plan_sha256": "CCE3B32DA0E4939F6E8C11C7EED8A8B02B577AF13A4D3F97D4CFB20B7E8E2E8B",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedCornerGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+      "sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E",
+      "line_count": 180,
+      "plan_sha256": "E5C7202E6305231EFE64AAEB426E41B4366D1663A9076EF8768163EA81A6220E",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedDeathConnectivity",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedDeathConnectivity.lean",
+      "sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56",
+      "line_count": 187,
+      "plan_sha256": "A0B8FC09ACB026AD488C3C314E52E38F464FA57D63F6645F6D68E983B2B8BC56",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ClippedProtectedGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean",
+      "sha256": "D809D52A894B9ADEBD1CA33A2DB3EA26489D9A4A31F13B643947C70FFD2980EA",
+      "line_count": 222,
+      "plan_sha256": "D809D52A894B9ADEBD1CA33A2DB3EA26489D9A4A31F13B643947C70FFD2980EA",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ClippedOrthogonalSections",
+      "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+      "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C",
+      "line_count": 201,
+      "plan_sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "DropletModifiedWord",
+      "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+      "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37",
+      "line_count": 231,
+      "plan_sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ClippedDiamondGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean",
+      "sha256": "8C092C3463AA7A736806F593028FA9EAEB9930FBFCB6FFFD8979163B87BAA1EF",
+      "line_count": 271,
+      "plan_sha256": "8C092C3463AA7A736806F593028FA9EAEB9930FBFCB6FFFD8979163B87BAA1EF",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ConvexCleanupUpdate",
+      "path": "formal/analysis/MathResearchAnalysis/ConvexCleanupUpdate.lean",
+      "sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA",
+      "line_count": 112,
+      "plan_sha256": "24395A04729955572F2866E4249C45E6A0E29BFEEF5B8F84428A00B14A1040FA",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ClippedGridConnectivity",
+      "path": "formal/analysis/MathResearchAnalysis/ClippedGridConnectivity.lean",
+      "sha256": "5D1EF3D82ED21C04E0A724C9AC37760FFA1BB8956CF1A85A789BC960AC91AE19",
+      "line_count": 155,
+      "plan_sha256": "5D1EF3D82ED21C04E0A724C9AC37760FFA1BB8956CF1A85A789BC960AC91AE19",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedEvolution",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+      "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F",
+      "line_count": 108,
+      "plan_sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedColumnGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+      "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC",
+      "line_count": 324,
+      "plan_sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "PhysicalWeightedDrift",
+      "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+      "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48",
+      "line_count": 165,
+      "plan_sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48",
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ConvexBirthUpdate",
+      "path": "formal/analysis/MathResearchAnalysis/ConvexBirthUpdate.lean",
+      "sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950",
+      "line_count": 236,
+      "plan_sha256": "808080D8EE9F9DB9BF3E623E48295E00AA30C0EA3118015D0495FA38EE3DD950",
+      "matches_plan_snapshot": true
+    }
+  ],
+  "validation": {
+    "formal_source_drift": [],
+    "declaration_name_resolution": "all unique",
+    "lean_build": "not run",
+    "review_status": "author provenance check only"
+  }
+}

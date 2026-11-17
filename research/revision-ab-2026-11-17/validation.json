@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "tasks_completed": [
+    "A1",
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "tasks_reserved_for_collaborators": [
+    "C1",
+    "C2"
+  ],
+  "reader_acceptance": "waived by explicit user instruction 2026-11-17",
+  "fresh_project_sources": 267,
+  "fresh_analysis_sources": 259,
+  "fresh_core_sources": 8,
+  "external_dependencies_reused": "locked Lean and mathlib; these external libraries were not rebuilt",
+  "base_axiom_outputs": 3406,
+  "new_modules": 5,
+  "new_named_declarations": 58,
+  "new_theorems": 52,
+  "new_definitions": 6,
+  "copied_existing_modules": 2,
+  "existing_dependency_declarations": 47,
+  "aggregate_axiom_outputs": 105,
+  "standard_lean_trust": 0,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "frozen_sources_unchanged": 267,
+  "frozen_paper_unchanged": {
+    "paper.md": "2b3411cb3c8f661650b3f1e7390d58aa8d91db10ec2ef75e0e8d9ab8361b59d0",
+    "tex/main.tex": "e452ef700a34bde8da641cd4a684599e345296e9e31b04f20320a7ceada8195c",
+    "output/pdf/quadratic-recovery-working-draft-v5.pdf": "af2c00a836d9ffb29ad05c2e3e2e98619dcc421c67e8c038933fb957cef7adc1"
+  },
+  "frozen_zip_unchanged": "16f7715e4f2d4a98a6b30a3ab6a6471ea9063de93c9588acf84a2e9d8a280892",
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "pdf_sha256": "926d5af679ec9f1b4a89bd56228bb4787dcb573ccd109098ccc878b9b5db4414",
+  "pdf_pages": 60,
+  "paper_equation_tags": 178,
+  "local_links_checked": 38,
+  "local_link_resolutions": [
+    {
+      "target": "images/staircase-particle-hop.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\staircase-particle-hop.png"
+    },
+    {
+      "target": "images/censoring-distribution.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\censoring-distribution.png"
+    },
+    {
+      "target": "images/static-protected-geometry.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\static-protected-geometry.png"
+    },
+    {
+      "target": "images/cleanup-freeze-perimeter.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\cleanup-freeze-perimeter.png"
+    },
+    {
+      "target": "images/corner-deletion-bypass.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\corner-deletion-bypass.png"
+    },
+    {
+      "target": "images/corner-valley-weight-payment.png",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\images\\corner-valley-weight-payment.png"
+    },
+    {
+      "target": "../../exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "resolved": "D:\\MyWorks\\Math\\research\\exploration\\phase2\\lean\\ImprovedOriginalLower.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalQuadraticRecovery.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalRecoveryProfile.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/SquareRecoveryTime.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SquareRecoveryTime.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/SchedulingFailure.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SchedulingFailure.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/SquarePWCensoring.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\SquarePWCensoring.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/RankClockCensoring.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\RankClockCensoring.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ProtectedEvolution.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/ProtectedCornerGeometry.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ProtectedCornerGeometry.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/WeightedRawContour.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\WeightedRawContour.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/WeightedRawRate.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\WeightedRawRate.lean"
+    },
+    {
+      "target": "../../exploration/lean/FullBlockThreshold.lean",
+      "resolved": "D:\\MyWorks\\Math\\research\\exploration\\lean\\FullBlockThreshold.lean"
+    },
+    {
+      "target": "../../exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "resolved": "D:\\MyWorks\\Math\\research\\exploration\\phase2\\lean\\ImprovedOriginalLower.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MachineClockGenerator.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MachineClockGenerator.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MachineClockDynkin.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MachineClockDynkin.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MixedClockMoments.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MixedClockMoments.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MixedMomentEvolution.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MixedMomentEvolution.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MixedHeatDecay.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MixedHeatDecay.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MixedRightCountMoments.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MixedRightCountMoments.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\MixedClearingProbability.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/ClockSampleRestriction.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ClockSampleRestriction.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/ClockWordRestriction.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\ClockWordRestriction.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/CrossSquareClockBound.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\CrossSquareClockBound.lean"
+    },
+    {
+      "target": "../../../formal/analysis/MathResearchAnalysis/OriginalQuadraticUpper.lean",
+      "resolved": "D:\\MyWorks\\Math\\formal\\analysis\\MathResearchAnalysis\\OriginalQuadraticUpper.lean"
+    },
+    {
+      "target": "../lean/OriginalRecoveryResults.lean",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalRecoveryResults.lean"
+    },
+    {
+      "target": "../lean/SharpRecoveryTail.lean",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpRecoveryTail.lean"
+    },
+    {
+      "target": "../lean/SharpFailureRate.lean",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpFailureRate.lean"
+    },
+    {
+      "target": "../lean/RecoveryMoments.lean",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\RecoveryMoments.lean"
+    },
+    {
+      "target": "../lean/OriginalConsequences.lean",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalConsequences.lean"
+    },
+    {
+      "target": "../../../formal/PROGRESS_2026-10-26_MAIN_THEOREM.md",
+      "resolved": "D:\\MyWorks\\Math\\formal\\PROGRESS_2026-10-26_MAIN_THEOREM.md"
+    },
+    {
+      "target": "revision-source-map.json",
+      "resolved": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\revision-source-map.json"
+    }
+  ],
+  "source_sha256": {
+    "lean/dependencies/FullBlockThreshold.lean": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+    "lean/dependencies/ImprovedOriginalLower.lean": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+    "lean/OriginalConsequences.lean": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+    "lean/OriginalRecoveryResults.lean": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+    "lean/RecoveryMoments.lean": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+    "lean/RevisionAxioms.lean": "6b8b9334081207e6d5fc3d9dcd7a49cb6e3441319f5b3d88da97f7cb3a6539e5",
+    "lean/SharpFailureRate.lean": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+    "lean/SharpRecoveryTail.lean": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c"
+  },
+  "evidence_sha256": {
+    "evidence\\base-replay\\replay.json": "2103950d69ea482e4643d37405c604db029b79377a5439f5ceaeacaf8bf2a51a",
+    "evidence\\unified-build.json": "89da8fb4625f2899ba845351704f3ea2654bf8d6baeb86555a42490a5a73883c",
+    "evidence\\independent-source-review.json": "c3f2ba7612db2a9655162bc6d2535249f227d96963994e179e2401673ec84901",
+    "evidence\\independent-final-binding.json": "71861d4185ff2f8fe028a14ed9046a0ba568d9617c39e86e93ca91d87f9985a0",
+    "paper\\review\\pdf-validation.json": "b8528f8499ca0207e86008d7aab5492a6febe7598922f0356256db18081b722d"
+  },
+  "not_certified": [
+    "human expert refereeing",
+    "global novelty or priority",
+    "arXiv submission readiness"
+  ],
+  "external_publication": false
+}

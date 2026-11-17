@@ -1,0 +1,23 @@
+'MathResearchRevision.OriginalConsequences.quadratic_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_sharp_block_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_sharp_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_ae_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_rpow_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_exponential_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_exponential_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.finite_machine_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -34,6 +34,10 @@ $$
 
 该结果位于 [ImprovedOriginalLower.lean](research/exploration/phase2/lean/ImprovedOriginalLower.lean)，与原主定理分别保存。
 
+## 2026-11-17 修订
+
+A1–A3、B1–B3 已完成：强化下界进入完整论文，并给出方形极值等式、准确块尾、高阶矩和指数矩的原模型形式化。见[60页英文论文](research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)、[修订说明及审计](research/revision-ab-2026-11-17/README.md)。C1、C2 [留给合作者](docs/collaborator-handoff-2026-11-14/TASKS.md)。
+
 ## 相关结果与材料
 
 仓库还包含一个独立的随机等待网络，研究出口响应的概率表示、参数比较及观测量对二元辨识的影响。其模型、条件和定理见[研究结果](docs/RESEARCH_RESULTS.md)；它与上述二维自动机是不同的数学对象。

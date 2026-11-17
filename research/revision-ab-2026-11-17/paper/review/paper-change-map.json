@@ -1,0 +1,79 @@
+{
+  "old_paper_sha256": "2b3411cb3c8f661650b3f1e7390d58aa8d91db10ec2ef75e0e8d9ab8361b59d0",
+  "new_paper_sha256": "5aa959c0cc83437948261f7f0547a011a64fce6b7ec735ab3bafb5ac54e6398f",
+  "changes": [
+    {
+      "task": "A1/A2/B1 abstract",
+      "old_start": "The upper bound alone holds for $N\\geq16$. This is the quadratic order",
+      "new_start": "The upper bound alone holds for $N\\geq16$, with a uniform geometric bound on its block tails. The filled squar"
+    },
+    {
+      "task": "A2 results",
+      "old_start": "The upper inequality holds for every $N\\geq16$. Consequently $\\tau(N)=\\Theta(N^2)$.",
+      "new_start": "The upper inequality holds for every $N\\geq16$. Consequently $\\tau(N)=\\Theta(N^2)$.\n\n**Theorem 2 (uniform bloc"
+    },
+    {
+      "task": "B1",
+      "old_start": "**Lemma 2 (clock/synchronous bridge).**",
+      "new_start": "**Corollary 1 (an exact extremizer).** For every integer $N\\geq2$,\n$$\n\\tau(N)=\\mathbb E T_{\\mathbf1_{Q_N}}.\n\\t"
+    },
+    {
+      "task": "A1 lemma3",
+      "old_start": "For $L\\geq12288000$ and $0\\leq t\\leq L^2/12288000$, this gives $C_{2L+1}(t)\\geq1/2$. For $L\\geq196608000$, put",
+      "new_start": "For $L\\geq250000$ and $0\\leq t\\leq L^2/1000000$, this gives $C_{2L+1}(t)\\geq1/2$. Put\n$$\nq_L=\\left\\lfloor\\frac"
+    },
+    {
+      "task": "A1 assembly",
+      "old_start": "**Assembly of Theorem 1.** Lemmas 1 and 6 give the upper bound. For the lower bound take the filled square and",
+      "new_start": "**Assembly of Theorems 1 and 2.** Lemmas 1 and 6 give the upper bound and the uniform block tail in (4a), incl"
+    },
+    {
+      "task": "A3 mixed application",
+      "old_start": "#### 4.2.1. From the original gaps and marks to an observable equation\n\nUse exactly the gap and mark coordinat",
+      "new_start": "#### 4.2.1. Application of the finite-state observable identity\n\nUse §3.4 on the side-$M=2L+1$ mixed square, t"
+    },
+    {
+      "task": "A3 common lemma",
+      "old_start": "## 4. Proof of mixed local clearing",
+      "new_start": "### 3.4. A finite-state observable identity under the original clocks\n\nWe use the following identity twice: fo"
+    },
+    {
+      "task": "A3 counter application",
+      "old_start": "To be precise about exceptional samples, form $Y(t)$ from the observed finite strictly ordered list through $t",
+      "new_start": "Apply §3.4 with $V=\\Lambda_L$, $\\mathcal A=\\mathcal E$, deterministic initial state $(D,0)$, and update maps $"
+    },
+    {
+      "task": "A1 full block",
+      "old_start": "Let\n$$\nm=\\left\\lfloor\\frac L{40}\\right\\rfloor,\\qquad\nB=\\{q+(\\sigma i,\\tau j):1\\leq i,j\\leq m\\}.\n\\tag{SG7}\n$$\nA",
+      "new_start": "Let\n$$\nm=\\left\\lfloor\\frac L{20}\\right\\rfloor,\\qquad\nB=\\{q+(\\sigma i,\\tau j):1\\leq i,j\\leq m\\}.\n\\tag{SG7}\n$$\nT"
+    },
+    {
+      "task": "A1 numerical check",
+      "old_start": "Here $m=2$, and the block consists of\n$$\n(71,0),\\ (71,-1),\\ (70,0),\\ (70,-1).\n$$\nTheir $\\ell^1$ norms are $71,",
+      "new_start": "Here $m=4$ and the full block consists of the sixteen sites\n$$\nB=\\{(72-i,1-j):1\\leq i,j\\leq4\\}.\n$$\nTheir weigh"
+    },
+    {
+      "task": "A1 figure caption",
+      "old_start": "*Figure 3. Static geometry for $L=80$. The domain view shows $D_{80}$ and the protected set $P_{80}$, includin",
+      "new_start": "*Figure 3. Static geometry for $L=80$. The domain view shows $D_{80}$ and the protected set $P_{80}$, includin"
+    },
+    {
+      "task": "A2/B1 scope",
+      "old_start": "The constants in (4) are not optimized. No leading constant, limiting extinction law, shape theorem, or stabil",
+      "new_start": "The constants in (4) are not optimized. No leading constant, limiting extinction law, shape theorem, or stabil"
+    },
+    {
+      "task": "A1 source entry",
+      "old_start": "The main entry is [OriginalQuadraticRecovery.lean](../../../formal/analysis/MathResearchAnalysis/OriginalQuadr",
+      "new_start": "The strengthened main entry is [ImprovedOriginalLower.lean](../../exploration/phase2/lean/ImprovedOriginalLowe"
+    },
+    {
+      "task": "A1/A3 source table",
+      "old_start": "| Lemma 3 and original lower bound | [PhysicalWeightedDrift](../../../formal/analysis/MathResearchAnalysis/Phy",
+      "new_start": "| Lemma 3 and strengthened lower bound | [FullBlockThreshold](../../exploration/lean/FullBlockThreshold.lean):"
+    }
+  ],
+  "status": "A1/A2/A3/B1 prose draft; independent review and integrated B2/B3 pending",
+  "frozen_source_modified": false,
+  "new_kernel_build_claimed_by_this_script": false
+}

@@ -1,0 +1,95 @@
+{
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "tex_sha256": "6e7d7eaa23ab9c94b15afdf327153bd555e23056538c05b40168e5aea63079f2",
+  "pdf_sha256": "926d5af679ec9f1b4a89bd56228bb4787dcb573ccd109098ccc878b9b5db4414",
+  "pdf_bytes": 884499,
+  "commands": [
+    {
+      "command": [
+        "D:\\Program_Files_Backup\\anaconda3\\Library\\bin\\pandoc.exe",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\review\\conversion.md",
+        "-f",
+        "markdown+tex_math_dollars-implicit_figures",
+        "-t",
+        "latex",
+        "-s",
+        "--metadata",
+        "title=Quadratic recovery for synchronous four-neighbour random majority dynamics",
+        "--metadata",
+        "date=Working draft, 17 November 2026",
+        "-V",
+        "geometry:margin=25.4mm",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "papersize=a4",
+        "-V",
+        "colorlinks=true",
+        "-V",
+        "linkcolor=blue",
+        "-V",
+        "urlcolor=blue",
+        "--lua-filter",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\review\\pdf-links.lua",
+        "-o",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex\\main.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper",
+      "exit_code": 0,
+      "log": "review/pandoc.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "D:\\Program Files\\TexLive\\2026\\bin\\windows\\xelatex.exe",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-no-shell-escape",
+        "-synctex=1",
+        "-output-directory",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex\\build",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex\\main.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex",
+      "exit_code": 0,
+      "log": "review/xelatex-pass-1.log",
+      "log_sha256": "6cee0c2fade1a1fe4eefe5d64d01e9b6ec0904f39390c8bbe3f836b59c17b223"
+    },
+    {
+      "command": [
+        "D:\\Program Files\\TexLive\\2026\\bin\\windows\\xelatex.exe",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-no-shell-escape",
+        "-synctex=1",
+        "-output-directory",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex\\build",
+        "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex\\main.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\tex",
+      "exit_code": 0,
+      "log": "review/xelatex-pass-2.log",
+      "log_sha256": "6cee0c2fade1a1fe4eefe5d64d01e9b6ec0904f39390c8bbe3f836b59c17b223"
+    }
+  ],
+  "compiler": "native XeLaTeX 2026, two actual passes",
+  "margin_mm": 25.4,
+  "internal_relative_pdf_links": "removed in TeX conversion only; Markdown links retained",
+  "warnings": {
+    "overfull": [],
+    "missing_characters": [],
+    "undefined_references": [],
+    "rerun": []
+  },
+  "pages_visual_review": "PASS; see pdf-validation.json for exact scope and bound page hashes.",
+  "images": {
+    "censoring-distribution.png": "27eef3f968b62ca78e53fbc3573ba2bac3f59a16995e15299ae6b911fb0645ce",
+    "cleanup-freeze-perimeter.png": "38cb653dc9c4f126ec864859e88f26f5629f6862410c8d0fbfcbd3962d888232",
+    "corner-deletion-bypass.png": "bf48a8fd0d63d07578b410b5b0fd2134645e1a138463d758fd055b467cb7c02b",
+    "corner-valley-weight-payment.png": "3fcc2f1632ac6bc6abb63b110a529c1c46ca0d58fc62f590ba38ef93ff1e273c",
+    "staircase-particle-hop.png": "7b8a405f3d319a6f94ebca407d28e60708b90e962b850554edb04285802f73bf",
+    "static-protected-geometry.png": "703439b342f499542ec237f4960cad07d025e8427270d786f733a0aff0ba2049"
+  }
+}

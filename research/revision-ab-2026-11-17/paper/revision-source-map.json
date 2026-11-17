@@ -1,0 +1,622 @@
+{
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "baseline_paper_sha256": "2b3411cb3c8f661650b3f1e7390d58aa8d91db10ec2ef75e0e8d9ab8361b59d0",
+  "scope": "A1 A2 A3 B1 B2 B3 integrated revision; C1/C2 are reserved for collaborators and not implemented here.",
+  "declarations": [
+    {
+      "path": "research/exploration/lean/FullBlockThreshold.lean",
+      "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "declaration": "MathResearchExploration.FullBlockThreshold.fullBlock_exact_lower_bound",
+      "line": 97
+    },
+    {
+      "path": "research/exploration/lean/FullBlockThreshold.lean",
+      "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "declaration": "MathResearchExploration.FullBlockThreshold.fullBlock_cubic_weight",
+      "line": 117
+    },
+    {
+      "path": "research/exploration/lean/FullBlockThreshold.lean",
+      "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "declaration": "MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing",
+      "line": 133
+    },
+    {
+      "path": "research/exploration/lean/FullBlockThreshold.lean",
+      "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "declaration": "MathResearchExploration.FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half",
+      "line": 257
+    },
+    {
+      "path": "research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "declaration": "MathResearchExploration.ImprovedOriginalLower.rounds_lower_bound",
+      "line": 106
+    },
+    {
+      "path": "research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "declaration": "MathResearchExploration.ImprovedOriginalLower.synchronous_tail_ge_quarter",
+      "line": 134
+    },
+    {
+      "path": "research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "declaration": "MathResearchExploration.ImprovedOriginalLower.halfSide_ge_third",
+      "line": 153
+    },
+    {
+      "path": "research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "declaration": "MathResearchExploration.ImprovedOriginalLower.rounds_quarter_ge_original_square",
+      "line": 159
+    },
+    {
+      "path": "research/exploration/phase2/lean/ImprovedOriginalLower.lean",
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "declaration": "MathResearchExploration.ImprovedOriginalLower.tau_quadratic_bounds",
+      "line": 223
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/MachineClockDynkin.lean",
+      "sha256": "95308d00c4ee6c6117e23570ff0b7531cda2a03665dd5be5c5282b194bbe1693",
+      "declaration": "MathResearchAnalysis.MachineClockDynkin.expected_observable_dynkin",
+      "line": 246
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean",
+      "sha256": "2539a1193042d8e7e6476edbc6ccab3e1bb9da82e14e93a5dac196e589325884",
+      "declaration": "MathResearchAnalysis.OriginalRecoveryProfile.tau_eq_normalizedTau",
+      "line": 98
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean",
+      "sha256": "2539a1193042d8e7e6476edbc6ccab3e1bb9da82e14e93a5dac196e589325884",
+      "declaration": "MathResearchAnalysis.OriginalRecoveryProfile.expectedRecovery_finite_square",
+      "line": 62
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/OriginalQuadraticUpper.lean",
+      "sha256": "6411173cd853ec57417b799a5aeeda6d316490453a31a18cf9c07296efbf5c3f",
+      "declaration": "MathResearchAnalysis.OriginalQuadraticUpper.recovery_block_tail",
+      "line": 36
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/MachineClockGenerator.lean",
+      "sha256": "a5a1435f56e9f5454359f3a9afe9dbf04461b06dcaa96581326f7b480f654c1b",
+      "declaration": "MathResearchAnalysis.MachineClockGenerator.expected_observable_dynkin_current",
+      "line": 122
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.finiteExpected_le_top",
+      "line": 18
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square_finite",
+      "line": 24
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square",
+      "line": 39
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.homogeneous_finite_square_map",
+      "line": 49
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.exists_finite_recovery_law",
+      "line": 62
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.exists_finite_tail",
+      "line": 77
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.exists_finite_observable_integrals",
+      "line": 93
+    },
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "path_base": "paper directory",
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "declaration": "MathResearchRevision.OriginalRecoveryResults.original_recovery_block_tail",
+      "line": 105
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.failure",
+      "line": 13
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.failure_nonneg",
+      "line": 16
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.block_eq",
+      "line": 20
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.clock_survival_le",
+      "line": 24
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le",
+      "line": 44
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le",
+      "line": 51
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.failure_le_half",
+      "line": 68
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.failure_lt_one",
+      "line": 79
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.recovery_block_tail",
+      "line": 82
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.expectation_le_geometric",
+      "line": 93
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.finiteExpected_le",
+      "line": 113
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.tau_le",
+      "line": 127
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.scheduling_majorant",
+      "line": 136
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "path_base": "paper directory",
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "declaration": "MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero",
+      "line": 143
+    },
+    {
+      "path": "../lean/SharpFailureRate.lean",
+      "path_base": "paper directory",
+      "sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "declaration": "MathResearchRevision.SharpFailureRate.layers_succ_ge_twice",
+      "line": 8
+    },
+    {
+      "path": "../lean/SharpFailureRate.lean",
+      "path_base": "paper directory",
+      "sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "declaration": "MathResearchRevision.SharpFailureRate.scheduling_le_inv_side",
+      "line": 12
+    },
+    {
+      "path": "../lean/SharpFailureRate.lean",
+      "path_base": "paper directory",
+      "sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "declaration": "MathResearchRevision.SharpFailureRate.failure_le_five_div",
+      "line": 35
+    },
+    {
+      "path": "../lean/SharpFailureRate.lean",
+      "path_base": "paper directory",
+      "sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "declaration": "MathResearchRevision.SharpFailureRate.failure_isBigO_inv",
+      "line": 47
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.nat_le_block_successor",
+      "line": 25
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.block_predecessor_lt",
+      "line": 33
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.monotone_weight_envelope",
+      "line": 38
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.lintegral_monotone_weight_le",
+      "line": 50
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.polynomialConstant",
+      "line": 97
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.polynomial_series_summable",
+      "line": 100
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.polynomialConstant_lt_top",
+      "line": 110
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.momentConstant",
+      "line": 120
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.momentConstant_lt_top",
+      "line": 123
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.lintegral_rpow_le_blocks",
+      "line": 128
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.recovery_rpow_le",
+      "line": 164
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.extendedExp",
+      "line": 193
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.expRatio",
+      "line": 196
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.expConstant",
+      "line": 199
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.expRatio_lt_one",
+      "line": 202
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.expConstant_lt_top",
+      "line": 212
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.exponential_weight_series",
+      "line": 221
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.lintegral_extendedExp_le",
+      "line": 237
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.recovery_exponential_le",
+      "line": 276
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.positive_exponential_interval",
+      "line": 292
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.recovery_ae_finite",
+      "line": 300
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.recovery_rpow_lt_top",
+      "line": 312
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "path_base": "paper directory",
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "declaration": "MathResearchRevision.RecoveryMoments.recovery_exponential_lt_top",
+      "line": 320
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.quadratic_bounds",
+      "line": 19
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_sharp_block_tail",
+      "line": 24
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_sharp_expectation",
+      "line": 33
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_ae_finite",
+      "line": 39
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_rpow_le",
+      "line": 48
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_rpow_lt_top",
+      "line": 58
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_exponential_le",
+      "line": 67
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.original_exponential_lt_top",
+      "line": 77
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "path_base": "paper directory",
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "declaration": "MathResearchRevision.OriginalConsequences.finite_machine_dynkin",
+      "line": 85
+    }
+  ],
+  "constant_replacements": [
+    {
+      "quantity": "static cubic denominator",
+      "v5": 128000,
+      "revision6": 12500,
+      "condition": "L>=80"
+    },
+    {
+      "quantity": "clock horizon denominator",
+      "v5": 12288000,
+      "revision6": 1000000,
+      "condition": "L>=250000 in revision6"
+    },
+    {
+      "quantity": "synchronous quotient denominator",
+      "v5": 196608000,
+      "revision6": 8000000,
+      "condition": "q=floor(L^2/denominator), r=q-1"
+    },
+    {
+      "quantity": "rounds lower-bound denominator",
+      "v5": 393216000,
+      "revision6": 16000000,
+      "condition": "L>=250000 in revision6"
+    },
+    {
+      "quantity": "half-side lower threshold",
+      "v5": 196608000,
+      "revision6": 250000
+    },
+    {
+      "quantity": "N-to-half-side factor",
+      "v5": 6,
+      "revision6": 3,
+      "condition": "L=floor((N-1)/2), N>=6"
+    },
+    {
+      "quantity": "original lower denominator",
+      "v5": 56623104000,
+      "revision6": 576000000,
+      "condition": "N>=500001 in revision6"
+    },
+    {
+      "quantity": "original threshold",
+      "v5": 786432000,
+      "revision6": 500001
+    },
+    {
+      "quantity": "upper coefficient",
+      "v5": 664066,
+      "revision6": 664066,
+      "condition": "N>=16"
+    }
+  ],
+  "A3_applications": {
+    "mixed": {
+      "state": "finite coordinatewise-monotone square patterns",
+      "closure": "\u00a74.1",
+      "observable": "G(f)=F(eta(f))",
+      "increment_operator": "MC1"
+    },
+    "cleanup": {
+      "state": "pairs (U,c) reachable by finite words, PB16",
+      "closure": "append one event",
+      "observable": "counter c, then missing weight V(U)",
+      "pathwise_budget": "PB13"
+    }
+  },
+  "kernel_check_performed_by_this_script": false,
+  "frozen_sources_changed": false,
+  "inherited_pre_integration_record": {
+    "paper_sha256": "d33b01d8a8e4a6f4bbfc0351337b72e80d83ea73af9194b45f7cfdd7ff43731b",
+    "scope": "A1 A2 A3 B1 prose; B2/B3 and integrated validation handled separately"
+  },
+  "new_modules": [
+    {
+      "path": "../lean/OriginalRecoveryResults.lean",
+      "source_sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "namespace": "MathResearchRevision.OriginalRecoveryResults",
+      "named_declarations": 8,
+      "source_location_check": "performed for this map",
+      "kernel_status": "see revision validation and actual build logs; not inferred from source presence"
+    },
+    {
+      "path": "../lean/SharpRecoveryTail.lean",
+      "source_sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "namespace": "MathResearchRevision.SharpRecoveryTail",
+      "named_declarations": 14,
+      "source_location_check": "performed for this map",
+      "kernel_status": "see revision validation and actual build logs; not inferred from source presence"
+    },
+    {
+      "path": "../lean/SharpFailureRate.lean",
+      "source_sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "namespace": "MathResearchRevision.SharpFailureRate",
+      "named_declarations": 4,
+      "source_location_check": "performed for this map",
+      "kernel_status": "see revision validation and actual build logs; not inferred from source presence"
+    },
+    {
+      "path": "../lean/RecoveryMoments.lean",
+      "source_sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "namespace": "MathResearchRevision.RecoveryMoments",
+      "named_declarations": 23,
+      "source_location_check": "performed for this map",
+      "kernel_status": "see revision validation and actual build logs; not inferred from source presence"
+    },
+    {
+      "path": "../lean/OriginalConsequences.lean",
+      "source_sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "namespace": "MathResearchRevision.OriginalConsequences",
+      "named_declarations": 9,
+      "source_location_check": "performed for this map",
+      "kernel_status": "see revision validation and actual build logs; not inferred from source presence"
+    }
+  ],
+  "proof_to_artifact": {
+    "A1": "FullBlockThreshold and ImprovedOriginalLower; OriginalConsequences.quadratic_bounds",
+    "A2": "OriginalRecoveryResults.original_recovery_block_tail",
+    "A3": "OriginalConsequences.finite_machine_dynkin and frozen MachineClockGenerator.expected_observable_dynkin_current",
+    "B1": "OriginalRecoveryResults.tau_eq_full_square",
+    "B2": "SharpRecoveryTail, SharpFailureRate and OriginalConsequences.original_sharp_block_tail/original_sharp_expectation",
+    "B3": "RecoveryMoments and OriginalConsequences.original_rpow_le/original_rpow_lt_top/original_exponential_lt_top"
+  },
+  "reader_review": "Waived by explicit user instruction on 2026-11-17; no simulated reader pass is claimed."
+}

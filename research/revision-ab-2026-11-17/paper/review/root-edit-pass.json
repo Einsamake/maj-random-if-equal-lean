@@ -1,0 +1,29 @@
+{
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "passes": [
+    {
+      "purpose": "mathematical conditions and endpoints",
+      "changes": [
+        "Theorems3/4 with full proofs",
+        "0<=a<=min(1/2,5/N)",
+        "extended-valued powers/exponentials and AE finiteness before representatives"
+      ]
+    },
+    {
+      "purpose": "remove stale workflow prose",
+      "changes": [
+        "remove unperformed simulated-reader promises",
+        "separate old proof provenance from new replay"
+      ]
+    },
+    {
+      "purpose": "scope and source dictionary",
+      "changes": [
+        "original-model aggregate interfaces mapped",
+        "C1/C2 excluded",
+        "external dependency reuse explicitly retained"
+      ]
+    }
+  ],
+  "reader_review": "waived by explicit user instruction on 2026-11-17"
+}

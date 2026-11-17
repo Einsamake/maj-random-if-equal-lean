@@ -1,0 +1,2717 @@
+PAGE 1
+Quadratic recovery for synchronous four-neighbour random
+majority dynamics
+Working draft, 17 November 2026
+Working draft, revision 6 — 17 November 2026. Author information is intentionally unassigned.
+Local working draft; not submitted. The argument below is accompanied by a frozen Lean
+development. The paper follows the original model and size convention throughout, and gives
+the geometric, clock-law and comparison arguments used in the proof. Its exposition, model
+correspondence and historical priority require independent specialist assessment; the formal
+artifact is not a substitute for that assessment.
+Section 3 gives the finite Gibbs censoring argument, its zero-temperature limit, and the selected-
+task and conflict-rank constructions needed for the clock/synchronous comparison. Section 4
+proves the staircase encoding, original-clock moment equations, covariance estimate and local-
+clearing bound in Lemma 4. Section 5 defines the clipped-domain geometry and proves the
+static cubic cost of protected loss. Section 6 constructs the modified and frozen process, proves
+its cleanup budget under the original clocks, preserves its geometric shape through protected
+loss, and bounds its signed weighted drift by pairing boundary corners with valleys. It concludes
+with the original-clock lower tail.
+The six lemmas are proved below and assembled into the original synchronous expectation
+bound. The source dictionary records the corresponding artifact declarations, whose final theo-
+rem takes none of the intermediate extinction, censoring, covariance or coupling estimates as an
+external input. Neither this draft nor its internal AI checks constitutes human expert review.
+Abstract
+We study synchronous majority dynamics on the infinite square lattice. Each site reads its
+four nearest neighbours, without reading its own state, and resolves a tie with an independent
+fair coin. Starting from a finite perturbation of either homogeneous configuration, measure the
+perturbation by the side length of its smallest translated axis-parallel enclosing square. The
+worst extended expected recovery time among deterministic initial configurations of size exactly
+𝑁 satisfies
+𝑁 2
+576000000 ≤ 𝜏 (𝑁 ) ≤ 664066𝑁 2 (𝑁 ≥ 500001).
+The upper bound alone holds for 𝑁 ≥ 16 , with a uniform geometric bound on its block tails.
+Retaining the block failure rate gives recovery by an explicit quadratic deadline with probability
+tending to one, as well as bounds on all fixed positive moments and a common interval of
+exponential moments. The filled square attains the worst extended expectation for every 𝑁 ≥ 2 .
+This is the quadratic order conjectured in Question 7.4 of Fatès, Marcovici and Taati. A
+weighted loss estimate supplies the lower bound. A staircase boundary, finite exclusion moments,
+and a local-clearing event supply the upper bound. An explicit comparison transfers estimates
+from marked-clock physical time to synchronous rounds. The proof is organized into six lemmas:
+normalization, clock/synchronous comparison, weighted slow extinction, mixed local clearing,
+1
+
+PAGE 2
+retained-clock coupling, and restart. A source dictionary connects the statements to the Lean
+artifact.
+1. The model and the original question
+Let 𝒩 = {(1, 0), (−1, 0), (0, 1), (0, −1)} and define
+Φ(𝑢1, 𝑢2, 𝑢3, 𝑢4; 𝜉) =
+⎧{
+⎨{⎩
+1, ∑ 𝑖 𝑢𝑖 > 2,
+0, ∑ 𝑖 𝑢𝑖 < 2,
+𝜉, ∑ 𝑖 𝑢𝑖 = 2.
+A configuration is a map 𝑥 ∶ ℤ 2 → {0, 1}. On the product probability space carrying independent
+Bernoulli(1/2) variables (𝜉𝑧,𝑘)𝑧∈ℤ2,𝑘≥1, set 𝑋0 = 𝑥 and
+𝑋𝑘+1(𝑧) = Φ((𝑋 𝑘(𝑧 + 𝑣)) 𝑣∈𝒩; 𝜉𝑧,𝑘+1). (1)
+All sites read the preceding configuration. The centre site’s own state is not among the four
+inputs.
+For 𝑏 ∈ {0, 1} , put 𝐴𝑏(𝑥) = {𝑧 ∶ 𝑥(𝑧) ≠ 𝑏} . We consider initial configurations for which this set
+is finite for one of the two backgrounds 𝑏. For a finite set 𝐴, define
+𝑑(𝐴) = min{𝑚 ∈ ℕ ∶ 𝐴 ⊂ 𝑧 + [0, 𝑚) 2 for some 𝑧 ∈ ℤ 2}, 𝑑(∅) = 0. (2)
+Thus a single exceptional site has size 1, and a filled 𝑁 by 𝑁 square has size 𝑁 . The size is not
+the number of exceptional sites. Write size (𝑥) = 𝑑(𝐴 𝑏(𝑥)).
+Let 0 and 1 be the homogeneous configurations. The recovery time and worst profile are
+𝑇𝑥 = inf{𝑘 ≥ 0 ∶ 𝑋 𝑘 ∈ {0, 1}}, 𝜏 (𝑁 ) = sup
+size(𝑥)=𝑁
+𝔼[𝑇𝑥], (3)
+where inf ∅ = ∞ and the expectation takes values in [0, ∞]. For 𝑁 ≥ 2 , the supremum reduces
+to a finite maximum.
+Theorem 1 (quadratic recovery). For every integer 𝑁 ≥ 500001 ,
+𝑁 2
+576000000 ≤ 𝜏 (𝑁 ) ≤ 664066𝑁 2. (4)
+The upper inequality holds for every 𝑁 ≥ 16 . Consequently 𝜏 (𝑁 ) = Θ(𝑁2).
+Theorem 2 (uniform block tail). Put
+𝑏𝑁 = 331776𝑁 2 + 257.
+For every integer 𝑁 ≥ 16 , every deterministic finite perturbation 𝑥 of either homogeneous
+background with size exactly 𝑁 , and every integer 𝑗 ≥ 0 ,
+ℙ(𝑇𝑥 > 𝑗𝑏 𝑁 ) ≤ 2 −𝑗. (4a)
+In particular, 𝑇𝑥 < ∞ almost surely. The bound is uniform over the permitted initial configu-
+rations. Its proof uses conditional restart from the observed configuration; it does not require
+independence of successive survival events.
+Theorem 3 (retained block failure). For an integer 𝑁 ≥ 16 , set
+𝑎𝑁 = 328𝑁 + 1 + 125 𝑁 2 2−(1296𝑁 2+1). (4b)
+2
+
+PAGE 3
+Then 0 ≤ 𝑎 𝑁 ≤ min(1/2, 5/𝑁 ), so 𝑎𝑁 = 𝑂(𝑁 −1), and, for every initial configuration covered
+by Theorem 2 and every integer 𝑗 ≥ 0 ,
+ℙ(𝑇𝑥 > 𝑗𝑏 𝑁 ) ≤ 𝑎 𝑗𝑁 , 𝔼𝑇 𝑥 ≤ 𝑏𝑁1 − 𝑎𝑁 , 𝜏 (𝑁 ) ≤ 𝑏𝑁1 − 𝑎𝑁 . (4c)
+In particular, the probability of recovery by the fixed quadratic deadline 331776𝑁 2 + 257 tends
+to one. The additive 257 is retained in this deadline.
+Theorem 4 (moments and exponential integrability). Put 𝑐0 = 332033. For every fixed
+real 𝑟 > 0 , define the finite constant
+𝐶𝑟 = 𝑐 𝑟0
+∞
+∑
+𝑗=0
+(𝑗 + 1)⌈𝑟⌉2−𝑗.
+For every 𝑁 ≥ 16 and every initial configuration covered by Theorem 2,
+𝔼𝑇 𝑟𝑥 ≤ 𝐶 𝑟𝑁 2𝑟. (4d)
+Moreover, if 0 < 𝜆 < log(2)/𝑐0, then
+𝔼 exp(𝜆𝑇𝑥/𝑁 2) ≤ 𝐾 𝜆 ∶= 1 + 𝑒𝑐0𝜆1 − 𝑒𝑐0𝜆/2 < ∞. (4e)
+The same constant is valid for all these 𝑁 and initial configurations. The interval is nonempty;
+for example 𝜆 = 1/(4𝑐 0) is admissible. Both powers and exponentials are interpreted as +∞ at
+an infinite recovery time. Finiteness is a consequence of the tail estimate, not an assumption
+on 𝑇𝑥.
+The theorem concerns (1) under its actual product coin law. Its parameter is the exact size
+in (2). It is not a statement about an asynchronous clock, a finite torus, or a random initial
+perturbation.
+Fatès, Marcovici and Taati [FMT22] define the enclosing-square size in §1.2, the worst expected
+profile in §4.1, and this fair-tie rule in §4.2. Their Proposition 4.1 gives a cubic upper bound.
+Question 7.4 conjectures the quadratic order in Theorem 1. A limited public-source search on
+28 October 2026 did not identify an earlier proof for the same model. That search is not a
+certification of global priority or exhaustive coverage, and an unchanged arXiv version does not
+establish the problem’s present public status.
+A related two-dimensional zero-temperature Ising model already has quadratic extinction esti-
+mates [CMST10, Theorem 2]. Its sites update at independent rate-one Poisson clocks; [FMT22,
+Example 4.2] explicitly distinguishes it from the synchronous model. Physical clock time cannot
+simply be renamed as a number of parallel rounds.
+The proof uses established ideas. Peres and Winkler [PW11] develop monotone-system censoring
+and comparisons of update schemes. Liu and Yin [LY24, Lemma 3.11] give Poisson-schedule
+dependency-depth bounds, crediting earlier work. The scope of this draft is the original-model
+quadratic theorem and its formal artifact. It makes no claim that censoring, exclusion encodings,
+heat estimates, or clock-chain bounds were invented in this project.
+2. Six lemmas and the proof of the main theorem
+Put 𝑄𝑚 = {0, … , 𝑚−1} 2. A zero-boundary finite process uses zero outside 𝑄𝑚. A configuration
+supported in 𝑄𝑚 remains supported there: an exterior site has at most one neighbour inside the
+square and cannot become 1. The finite synchronous process therefore has exactly the restricted
+infinite-lattice law.
+3
+
+PAGE 4
+Write
+𝑝𝑚(𝑘) = ℙ(𝑇 1𝑄𝑚 > 𝑘).
+For a separate clock experiment, give each site independent rate-one exponential gaps and
+independent fair marks, with the entire gap and mark fields independent. At a ring, update
+only that site using Φ. Define
+𝐶𝑚(𝑡) = ℙ( the zero-boundary clock process from 1𝑄𝑚 is nonzero at physical time 𝑡). (5)
+Zero is absorbing, so 𝐶𝑚 is nonincreasing. We distinguish synchronous integer rounds, compar-
+ison layers, real clock time 𝑡, and an integer dependency-rank threshold 𝑅. The inequalities
+below connect them. In every mathematical statement, 𝑚 and 𝑀 are actual square side lengths,
+not the source’s internal argument 𝑛.
+Lemma 1 (normalization and domination). For 𝑁 ≥ 2 , 𝜏 (𝑁 ) is the maximum of the
+extended finite-square expectations over side- 𝑁 patterns whose original size is exactly 𝑁 . For
+every pattern 𝑔 on 𝑄𝑚, common synchronous marks give
+𝑇𝑔 ≤ 𝑇 1𝑄𝑚 . (6)
+Proof. Translation reindexes the independent coin coordinates. Colour complementation re-
+places fair marks by their complements. Both operations preserve the product law, expected
+recovery time, and size. A finite perturbation can therefore be placed in 𝑄𝑁 over the zero back-
+ground. The square is invariant, so recovery to a homogeneous configuration means recovery
+to zero in this normalization. The other infinite homogeneous configuration cannot be reached
+from a state supported in 𝑄𝑁 .
+The normalized set of patterns of exact size 𝑁 is finite and contains the filled square. This
+proves attainment. For fixed tie mark, Φ is nondecreasing in every neighbour input. Induction
+on rounds preserves order under common marks. Thus the trajectory from 𝑔 lies below that
+from the filled square, proving (6) also when a hitting time is infinite. □
+Corollary 1 (an exact extremizer). For every integer 𝑁 ≥ 2 ,
+𝜏 (𝑁 ) = 𝔼𝑇1𝑄𝑁 . (6a)
+Both sides are extended expectations. To prove the upper inequality, normalize any permitted
+initial configuration by translation and, when needed, colour complementation. Lemma 1 then
+compares its recovery time with that of the filled square on the same side- 𝑁 domain. Taking
+extended expectations and the supremum gives 𝜏 (𝑁 ) ≤ 𝔼𝑇 1𝑄𝑁 . For the reverse inequality,
+the filled square itself has size exactly 𝑁 and is one of the configurations in (3). Thus it
+gives 𝔼𝑇1𝑄𝑁 ≤ 𝜏 (𝑁 ). This proves equality without assuming finiteness or uniqueness of themaximizing initial configuration.
+Lemma 2 (clock/synchronous bridge). For integers 𝑚 ≥ 2 and 𝑘 ≥ 0 , set
+𝑡𝑘 = 8 log 2 (𝑘 + 1), 𝑅 𝑘 = 128(𝑘 + 1), 𝐸 𝑚(𝑘) = 65 𝑚2 2−(𝑘+1). (7)
+Then
+𝐶𝑚(𝑡𝑘) ≤ 𝑝 𝑚(𝑘) + 𝐸𝑚(𝑘), (8)
+𝑝𝑚(2𝑅𝑘 + 1) ≤ 2𝐶 𝑚(𝑡𝑘) + 2𝐸𝑚(𝑘). (9)
+Section 3 proves this bridge from the finite-word censoring inequality and two explicit clock
+estimates.
+4
+
+PAGE 5
+Lemma 3 (weighted lower tail). Let 𝐿 ≥ 80 be an integer and 𝑡 ≥ 0 . Then
+1 − 𝐶2𝐿+1(𝑡) ≤ (18𝐿 + 12)𝑡 + (𝐿 + 2)(4𝐿 + 2)𝐿3/12500 . (10)
+For 𝐿 ≥ 250000 and 0 ≤ 𝑡 ≤ 𝐿 2/1000000, this gives 𝐶2𝐿+1(𝑡) ≥ 1/2 . Put
+𝑞𝐿 = ⌊ 𝐿28000000 ⌋ , 𝑟 𝐿 = 𝑞 𝐿 − 1. (11)
+Then, for every 𝐿 ≥ 250000 ,
+𝑝2𝐿+1(𝑟𝐿) ≥ 1/4, 𝑟 𝐿 ≥ 𝐿 2/16000000. (12)
+Proof. A clipped process is frozen when a protected set first loses a site. Its weighted missing-
+area variable 𝑉𝑡 is nonnegative and satisfies
+𝔼𝑉𝑡 ≤ (18𝐿 + 12)𝑡 + (𝐿 + 2)(4𝐿 + 2). (13)
+Protected exit costs at least 𝐿3/12500 weighted units, and extinction of the original clock process
+implies protected exit. Markov’s inequality gives (10). The static cost comes from summing
+the varying weights over the full square of side ⌊𝐿/20⌋. Section 5.3 proves the exact aﬀine sum
+and the floor estimate that yield 𝐿3/12500.
+The weight vanishes at exterior sites where clipping could suppress a birth. It cancels that
+correction in the drift. The separate cleanup estimate gives the finite budget in (13). The static
+threshold is (SG5); the completed-output freeze and original-clock comparison are (MM9)–
+(MM10). The cleanup budget and exact weighted balance are (PB21) and (WB4). Sections
+6.4–6.6 establish shape preservation, the actual raw weighted rate, and (13).
+We give the numerical and rounding details. For 𝐿 ≥ 250000 ,
+18𝐿 + 12 ≤ 19𝐿, (𝐿 + 2)(4𝐿 + 2) ≤ 5𝐿 2.
+Consequently, at 𝑡 = 𝐿 2/1000000,
+(18𝐿 + 12)𝑡 + (𝐿 + 2)(4𝐿 + 2) ≤ 19𝐿3
+1000000 + 5𝐿2 ≤ 39𝐿31000000 ≤ 12 𝐿312500 .
+The second inequality uses 𝐿 ≥ 250000 . Substitution in (10) proves the clock survival estimate,
+also for all earlier times by monotonicity.
+Write 𝑞 = 𝑞 𝐿. Integer division gives
+8000000𝑞 ≤ 𝐿 2 < 8000000(𝑞 + 1), 𝑞 ≥ 32.
+As 250000𝐿 ≤ 𝐿 2, these inequalities also give 𝐿 ≤ 32𝑞 + 31 ≤ 64(𝑞 − 12) . Set 𝑠 = 𝑞 − 12 ≥ 16 .
+The elementary estimate 2𝑠 ≥ 64𝑠 2 holds for every integer 𝑠 ≥ 16 : it holds at 16, and its
+induction step follows from 2𝑠2 ≥ (𝑠 + 1) 2. Therefore
+64𝐿2 ≤ 4096 (64𝑠2) ≤ 4096 2 𝑠 = 2 𝑞.
+Since 𝑟𝐿 + 1 = 𝑞 and log 2 ≤ 1 ,
+𝑡𝑟𝐿 = 8 log 2 𝑞 ≤ 8𝑞 ≤ 𝐿 2/1000000.
+5
+
+PAGE 6
+Also (2𝐿 + 1)2 ≤ 9𝐿 2, so
+𝐸2𝐿+1(𝑟𝐿) = 65 (2𝐿 + 1)2 2−𝑞 ≤ 545 𝐿2 2−𝑞 ≤ 27160 < 14 .
+Subtract this scheduling error in (8) from the clock survival probability 1/2. This proves
+𝑝2𝐿+1(𝑟𝐿) ≥ 1/4 . Finally, 𝑞 + 1 ≤ 2(𝑞 − 1) because 𝑞 ≥ 32 , whence
+𝐿2 < 8000000(𝑞 + 1) ≤ 16000000(𝑞 − 1) = 16000000𝑟 𝐿.
+This proves (12), retaining the floor and the subtraction of one. No finite-extinction assumption
+has been used. □
+For the upper estimate, use a mixed-boundary clock process on 𝑄𝑀 . Its south and west exterior
+neighbours are 0, and its north and east exterior neighbours are 1. Precisely, outside 𝑄𝑀 the
+extension is 0 if either coordinate is negative and 1 otherwise. A coordinatewise nondecreasing
+pattern remains so under its single-site updates.
+Let 𝑓 ∶ 𝑄 𝑀 → {0, 1} denote the current mixed-boundary state, with 0 white and 1 black.
+Coordinates increase eastward and northward. Coordinatewise nondecreasing means that
+𝑥 ≤ 𝑥 ′, 𝑦 ≤ 𝑦 ′ ⟹ 𝑓(𝑥, 𝑦) ≤ 𝑓(𝑥 ′, 𝑦′).
+Let 𝜆𝑦 count the white cells of 𝑓 in row 𝑦, starting at the west. These lengths are nonincreasing
+in 𝑦. Encode the boundary by 𝑀 labelled particles on the path {0, … , 2𝑀 − 1} at positions
+𝑃𝑟 = 𝑟 + 𝜆 𝑀−1−𝑟 , 0 ≤ 𝑟 < 𝑀 . (14)
+They are strictly increasing. A filled black square occupies the left 𝑀 slots; an all-white square
+occupies the right 𝑀 slots.
+Figure 1. A deterministic legal move for 𝑀 = 3 . The row lengths (𝜆0, 𝜆1, 𝜆2) = (2, 1, 0) give particle
+positions (0, 2, 4). Mark 0 at the highlighted cell (1, 1) changes the lengths to (2, 2, 0) and the positions to
+(0, 3, 4), a hop across bond 2–3. The right-half count 𝐽 changes from one to two. Particle number stays
+three while black area decreases by one. No elapsed time is assigned to this illustration.
+6
+
+PAGE 7
+Let 𝜂𝑖(𝑡) be the occupancy indicator of slot 𝑖, and 𝜌𝑖(𝑡) = 𝔼𝜂 𝑖(𝑡). Put
+𝐻(𝑡) =
+2𝑀−1
+∑
+𝑖=0
+(𝜌𝑖(𝑡) − 1/2)2, 𝐽 (𝑡) =
+2𝑀−1
+∑
+𝑖=𝑀
+𝜂𝑖(𝑡). (15)
+Lemma 4 (mixed local clearing). Let 𝐿 ≥ 1 , 𝑀 = 2𝐿 + 1 , and let the mixed process start
+from a deterministic coordinatewise nondecreasing pattern. For 𝑡 ≥ 0 ,
+𝐻(𝑡) ≤ 𝑀2 𝑒−𝑡/(4𝑀 2), Var 𝐽 (𝑡) ≤ 𝑀 /4. (16)
+At 𝑡mix = 16𝑀 2, 𝔼𝐽 (𝑡mix) ≥ 𝑀 /4. For every integer 0 ≤ 𝑁 ≤ 𝑀 /8 ,
+ℙ(the southwest 𝑁 by 𝑁 block is not all white at 𝑡mix) ≤ 16/𝑀 . (17)
+The positive-time energy identity and all-time path estimate underlying (16) are
+𝐻 ′(𝑡) = −𝐷(𝑡), 𝐻(𝑡) ≤ 4𝑀 2𝐷(𝑡), 𝐷(𝑡) =
+2𝑀−2
+∑
+𝑖=0
+(𝜌𝑖+1(𝑡) − 𝜌𝑖(𝑡))2. (18)
+Proof. Section 4 derives the encoding, genuine moment equations, nonpositive off-diagonal
+covariance, and the energy and concentration estimates, ending with (17). □
+Lemma 5 (retained-clock coupling). Let 2 ≤ 𝑚 ≤ 𝑀 . Start a zero-boundary clock
+process on 𝑄𝑚 from any pattern 𝑔, and the mixed process on 𝑄𝑀 from the filled black square.
+Under the genuine larger product clock/mark law, they can be coupled so that, almost surely
+simultaneously for every 𝑡 ≥ 0 ,
+𝑋(𝑚)𝑡 (𝑣) ≤ 𝑌 (𝑀)𝑡 (𝑣) (𝑣 ∈ 𝑄 𝑚). (19)
+The projected smaller sample has exactly its own product law. In particular,
+ℙ(𝑋(𝑚)𝑡 ≠ 0) ≤ ℙ(𝑌 (𝑀)𝑡 is not white throughout 𝑄𝑚). (20)
+Section 7 gives a direct proof.
+Lemma 6 (blocks, restart, and expectation). For 𝑁 ≥ 16 , set
+𝑘𝑁 = 1296𝑁 2, 𝑏 𝑁 = 256(𝑘 𝑁 + 1) + 1. (21)
+For every initial pattern 𝑔 on 𝑄𝑁 and every integer 𝑗 ≥ 0 ,
+ℙ(𝑇𝑔 > 𝑗𝑏 𝑁 ) ≤ 2 −𝑗, 𝔼𝑇 𝑔 ≤ 2𝑏 𝑁 ≤ 664066𝑁 2. (22)
+Proof. Take 𝐿 = 4𝑁 in Lemma 4, so 𝑀 = 8𝑁 + 1 and 𝑁 ≤ 𝑀 /8 . Lemma 5 gives
+𝐶𝑁 (16(8𝑁 + 1) 2) ≤ 16/(8𝑁 + 1) ≤ 1/8.
+The scales satisfy
+16(8𝑁 + 1) 2 ≤ 1296𝑁 2 = 𝑘 𝑁 ≤ 𝑡 𝑘𝑁 , 𝐸 𝑁 (𝑘𝑁 ) ≤ 1/8.
+For the scheduling error, use 𝑘𝑁 + 1 ≥ 𝑁 and 64𝑁 2 ≤ 2 𝑁 for 𝑁 ≥ 16 in (7). The clock survival
+term and the scheduling error are each at most 1/8 before the factor two in (9). Monotonicity
+of 𝐶𝑁 then gives 𝑝𝑁 (𝑏𝑁 ) ≤ 1/2 .
+7
+
+PAGE 8
+Condition on the past at a block boundary. Future coin coordinates retain their independent
+product law. Every remaining pattern is dominated by the filled square, so its conditional
+probability of surviving the next block is at most 1/2. Induction proves the tail in (22). The
+successive survival events themselves need not be independent.
+The infinite-time event is contained in {𝑇𝑔 > 𝑗𝑏 𝑁 } for every 𝑗, so its probability is at most
+2−𝑗 for every 𝑗 and is therefore zero. The extended tail-sum identity gives, without a prior
+integrability assumption,
+𝔼𝑇𝑔 =
+∞
+∑
+𝑠=0
+ℙ(𝑇𝑔 > 𝑠) ≤ 𝑏 𝑁
+∞
+∑
+𝑗=0
+2−𝑗 = 2𝑏 𝑁 .
+Finally 𝑏𝑁 = 331776𝑁 2 + 257 ≤ 332033𝑁 2 for 𝑁 ≥ 1 . □
+Assembly of Theorems 1 and 2. Lemmas 1 and 6 give the upper bound and the uniform
+block tail in (4a), including initial perturbations of the other homogeneous background by colour
+complementation. For the lower bound take the filled square and
+𝐿 = ⌊ 𝑁 − 12 ⌋ .
+For 𝑁 ≥ 500001 , integer division gives 𝐿 ≥ 250000 , 2𝐿 + 1 ≤ 𝑁 and 𝐿 ≥ 𝑁 /3 . The last
+inequality follows from 𝑁 ≤ 2𝐿 + 2 ≤ 3𝐿 , since 𝐿 ≥ 2 . Place the side- (2𝐿 + 1) filled square
+inside 𝑄𝑁 and apply common-mark monotonicity. Lemma 3 gives
+𝔼𝑇1𝑄𝑁 ≥ 𝑟 𝐿 ℙ(𝑇1𝑄𝑁 > 𝑟 𝐿) ≥ 𝑟 𝐿/4 ≥ 𝐿 2/64000000 ≥ 𝑁 2/576000000.
+These inequalities are valid for extended expectations. Corollary 1 identifies the left side with
+𝜏 (𝑁 ). Thus both bounds concern the original synchronous product law and the exact size
+convention (2).
+2.1. The retained failure rate and distributional consequences
+We prove Theorem 3 without weakening the estimates used in Lemma 6. With 𝑀 = 8𝑁 + 1 ,
+the genuine larger mixed-clock local-clearing estimate and retained-sample comparison give
+𝐶𝑁 (16𝑀 2) ≤ 16/𝑀 .
+The scheduling time 𝑡𝑘𝑁 is at least 16𝑀 2. Thus 𝐶𝑁 (𝑡𝑘𝑁 ) ≤ 16/𝑀 . Substitution into the second
+direction (9) of the synchronous comparison yields
+𝑝𝑁 (𝑏𝑁 ) ≤ 2 168𝑁 + 1 + 2 65 𝑁 2 2−(𝑘𝑁+1) = 𝑎 𝑁 . (DF1)
+The two factors of two belong to that comparison. The clock probability is evaluated under its
+original product gap/mark law.
+For 𝑁 ≥ 16 , 32/(8𝑁 + 1) ≤ 1/4 and 𝐸𝑁 (𝑘𝑁 ) ≤ 1/8 , as proved in Lemma 6. Hence 0 ≤
+𝑎𝑁 ≤ 1/2 < 1 . At every deterministic block boundary the observed pattern is below the filled
+square, and unused future marks are independent of the used marks and have their original law.
+Consequently
+ℙ(𝑇𝑥 > (𝑗 + 1)𝑏 𝑁 ) ≤ 𝑎 𝑁 ℙ(𝑇𝑥 > 𝑗𝑏 𝑁 ). (DF2)
+Induction proves (4c), including 𝑗 = 0 . This conditional estimate does not assert independence
+of the successive survival events.
+8
+
+PAGE 9
+For any 𝑇 ∈ {0, 1, …} ∪ {∞} and positive integer 𝑏,
+𝑇 ≤ 𝑏
+∞
+∑
+𝑗=0
+1{𝑇 >𝑗𝑏}. (DF3)
+For finite 𝑇 this counts the blocks meeting the waiting interval; for 𝑇 = ∞ both sides are
+infinite. Tonelli’s theorem and (DF2) give
+𝔼𝑇𝑥 ≤ 𝑏 𝑁
+∞
+∑
+𝑗=0
+𝑎𝑗𝑁 = 𝑏𝑁1 − 𝑎𝑁 .
+Take the supremum over exact-size initial configurations for the stated 𝜏 (𝑁 ) bound. Finally,
+𝑘𝑁 + 1 ≥ 𝑁 and
+0 ≤ 125 𝑁 22−(𝑘𝑁+1) ≤ 125 𝑁 22−𝑁 ⟶ 0.
+Together with 32/(8𝑁 + 1) → 0 , this proves 𝑎𝑁 → 0. Its explicit rate follows from 𝑘𝑁 + 1 ≥ 2𝑁
+and 64𝑁 2 ≤ 2 𝑁 for 𝑁 ≥ 16 . Also 𝑁 ≤ 2 𝑁 , so (2𝑁 )2 ≥ 64𝑁 3. Hence
+12
+5 𝑁 22−(𝑘𝑁+1) ≤ 12𝑁 25(2𝑁 )2 ≤ 1𝑁 , 328𝑁 + 1 ≤ 4𝑁 .
+This proves 𝑎𝑁 ≤ 5/𝑁 and the stated recovery-by-deadline conclusion.
+For Theorem 4, we use only Theorem 2, so these moment conclusions do not depend on the
+refined 𝑎𝑁 . First,
+ℙ(𝑇𝑥 = ∞) ≤ ℙ(𝑇 𝑥 > 𝑗𝑏 𝑁 ) ≤ 2 −𝑗 (𝑗 ≥ 0),
+which proves almost-sure finiteness by letting 𝑗 → ∞ . We retain the original extended-valued
+random variable in the expectations below; its infinite-value event is now known to be null.
+For any nondecreasing 𝐹 ∶ ℕ → [0, ∞] , a finite positive 𝑇 belongs to exactly one interval
+(𝑗𝑏𝑁 , (𝑗 + 1)𝑏𝑁 ]. Thus
+𝐹 (𝑇 ) ≤ 𝐹 (0) +
+∞
+∑
+𝑗=0
+𝐹 ((𝑗 + 1)𝑏𝑁 ) 1{𝑇 >𝑗𝑏𝑁} almost surely . (DF4)
+This also holds at 𝑇 = 0 ; the separate 𝐹 (0) term will matter for the exponential. Tonelli applies
+to its nonnegative summands without a prior moment assumption.
+Take 𝐹 (𝑡) = 𝑡 𝑟. Since 𝐹 (0) = 0 and 𝑏𝑁 ≤ 𝑐 0𝑁 2,
+𝔼𝑇 𝑟𝑥 ≤ 𝑏 𝑟𝑁
+∞
+∑
+𝑗=0
+(𝑗 + 1)𝑟2−𝑗 ≤ 𝑐 𝑟0𝑁 2𝑟
+∞
+∑
+𝑗=0
+(𝑗 + 1)⌈𝑟⌉2−𝑗.
+For 𝑘 = ⌈𝑟⌉ , the ratio of consecutive positive summands in the last series is
+1
+2 ( 𝑗 + 2𝑗 + 1 )𝑘 ⟶ 12 < 1.
+The ratio test proves 𝐶𝑟 < ∞ , for every fixed real 𝑟 > 0 , and establishes (4d). For example,
+𝑟 = 1 gives ∑𝑗≥0(𝑗 + 1)2−𝑗 = 4, so 𝐶1 = 4𝑐 0. Lemma 6 already gives the smaller first-moment
+constant 2𝑐0; the single formula 𝐶𝑟 is used here to cover all positive real orders.
+For the exponential choose 𝐹 (𝑡) = 𝑒 𝜆𝑡/𝑁 2. Now 𝐹 (0) = 1, and (DF4) gives
+𝔼𝑒𝜆𝑇𝑥/𝑁 2 ≤ 1 + ∞∑
+𝑗=0
+𝑒𝑐0𝜆(𝑗+1)2−𝑗 = 1 + 𝑒𝑐0𝜆
+1 − 𝑒𝑐0𝜆/2 .
+The geometric sum converges precisely under the suﬀicient condition 𝑐0𝜆 < log 2 used here.
+Since log 2 ≥ 1/2 , the concrete positive choice 𝜆 = 1/(4𝑐 0) satisfies it. This proves (4e). No
+step assumes a higher moment or exponential moment finite before proving it. □
+9
+
+PAGE 10
+3. The clock/synchronous comparison in more detail
+3.1. Checkerboard splitting
+A colour scan updates every vertex of one checkerboard colour once with fresh independent fair
+marks. These vertices are nonadjacent, so their updates commute. Let 𝐴𝑐(𝑠) be the nonzero
+probability after 𝑠 alternating colour scans from the filled square, starting with colour 𝑐.
+Fix a site-and-round mark field and run two checkerboard trajectories with opposite first colours.
+At slot 𝑠 ≥ 1 , an active vertex equals the synchronous value at round 𝑠, while an inactive vertex
+equals its synchronous value at round 𝑠 − 1. Induction proves this because every update reads
+only the opposite colour.
+The synchronous state is reconstructed from the active-colour values of the two trajectories.
+Nonzero synchronous state therefore implies that at least one checkerboard trajectory is nonzero.
+A union bound, with the scan-censoring order from the filled square, gives
+𝑝𝑚(2𝑞 + 1) ≤ 2𝐴 1(2𝑞). (23)
+Here 1 labels one checkerboard colour. One scan word can omit its last scan; the opposite-
+start word can omit its first scan. Both retained words have the same 2𝑞-scan kernel, up to
+commuting nonadjacent updates. The deletion inequality used for this step is stated below.
+Conversely, synchronous zero at round 𝑘 forces both checkerboard trajectories to be zero after
+slot 𝑘 + 1, so
+𝐴𝑐(𝑘 + 1) ≤ 𝑝 𝑚(𝑘). (24)
+The factor two in (23) does not use independence of the two checkerboard trajectories.
+3.2. Censoring from the filled square
+A finite update word is a list of sites, read from left to right; a site may occur repeatedly. From
+the filled square, deleting occurrences makes the endpoint stochastically larger. Here the words
+and deleted positions are fixed before the marks are sampled, and every occurrence uses a fresh
+independent fair tie mark. We prove a comparison of the averaged laws, without asserting an
+endpoint inequality for each fixed assignment of marks.
+Fix an integer 𝑚 ≥ 2 , let Λ = 𝑄 𝑚 = {0, … , 𝑚 − 1} 2, and put Ω = {0, 1} Λ. Extend every
+𝑥 ∈ Ω by 0 outside Λ. The order is coordinatewise: 𝑥 ≤ 𝑦 means 𝑥(𝑣) ≤ 𝑦(𝑣) for every 𝑣.
+Coordinatewise minimum and maximum make Ω a finite lattice. Its largest element is ⊤ = 1Λ.
+A real function 𝜑 is increasing if 𝑥 ≤ 𝑦 implies 𝜑(𝑥) ≤ 𝜑(𝑦) . For laws 𝜇, 𝜈 on Ω, write 𝜇 ⪯ 𝜈 if
+𝜇(𝜑) ∶= ∑
+𝑥∈Ω
+𝜇(𝑥)𝜑(𝑥) ≤ ∑
+𝑥∈Ω
+𝜈(𝑥)𝜑(𝑥) =∶ 𝜈(𝜑) for every increasing 𝜑. (C1)
+A positive-temperature reference law. Write 𝑠𝑣 = 2𝑥(𝑣) − 1 ∈ {−1, 1} . Let 𝐸Λ be the set
+of unordered nearest-neighbour pairs inside Λ. Write deg Λ(𝑣) for the number of neighbours of
+𝑣 inside Λ, and 𝑏𝑣 = 4 − degΛ(𝑣) for the number missing. Those missing spins are fixed at −1.
+Use the Hamiltonian
+𝐻(𝑥) = − ∑
+{𝑢,𝑣}∈𝐸Λ
+𝑠𝑢𝑠𝑣 + ∑
+𝑣∈Λ
+𝑏𝑣𝑠𝑣, 𝜋 𝛽(𝑥) = 𝑒−𝛽𝐻(𝑥)𝑍𝛽 , 𝑍 𝛽 = ∑𝑥∈Ω 𝑒−𝛽𝐻(𝑥), 𝛽 ≥ 0. (C2)
+Here 𝛽 is inverse temperature. The negative pair term favours alignment, so the interaction
+is ferromagnetic. The boundary term is the interaction with the fixed exterior −1 spins. All
+masses 𝜋𝛽(𝑥) are strictly positive.
+10
+
+PAGE 11
+Let 𝑥𝑣,𝑎 mean 𝑥 with only its value at 𝑣 replaced by 𝑎 ∈ {0, 1} . Let 𝑎𝑣(𝑥) count the 1 spins
+among the four neighbours of 𝑣, including the fixed exterior zeros, and set
+ℎ𝑣(𝑥) = ∑
+𝑢∈{𝑣+(1,0),𝑣−(1,0),𝑣+(0,1),𝑣−(0,1)}
+(2𝑥(𝑢) − 1) = 2𝑎 𝑣(𝑥) − 4.
+Only terms incident to 𝑣 change when its value is replaced. Each interior neighbour contributes
+−2𝑠𝑢 to 𝐻(𝑥 𝑣,1) − 𝐻(𝑥 𝑣,0), and the boundary term contributes 2𝑏𝑣. Thus
+𝐻(𝑥 𝑣,1) − 𝐻(𝑥 𝑣,0) = −2ℎ 𝑣(𝑥).
+The conditional probability of a 1 at 𝑣 under 𝜋𝛽 is consequently
+𝑝𝛽,𝑣(𝑥) = 𝑒−𝛽𝐻(𝑥𝑣,1)𝑒−𝛽𝐻(𝑥𝑣,0) + 𝑒−𝛽𝐻(𝑥𝑣,1) = 11 + 𝑒−2𝛽ℎ𝑣(𝑥) . (C3)
+It depends only on the values away from 𝑣. The heat-bath update resamples 𝑣 from this
+conditional law:
+(𝐾𝛽,𝑣𝜑)(𝑥) = 𝑝 𝛽,𝑣(𝑥)𝜑(𝑥𝑣,1) + (1 − 𝑝 𝛽,𝑣(𝑥))𝜑(𝑥𝑣,0). (C4)
+Equivalently, 𝐾𝛽,𝑣(𝑥, 𝑦) = 0 unless 𝑥 and 𝑦 agree away from 𝑣; otherwise it is
+𝑒−𝛽𝐻(𝑦)/(𝑒−𝛽𝐻(𝑥𝑣,0) + 𝑒−𝛽𝐻(𝑥𝑣,1))
+. These two possible endpoint probabilities sum to one.
+The source calls the alignment score −𝐻 its energy: its half of the sum over oriented interior
+edges is exactly the sum over 𝐸Λ. Its Gibbs weight is 𝑒𝛽(−𝐻), so (C2) uses the same inverse
+temperature, without a change of scale.
+Why increasing densities survive updates. If 𝑥, 𝑦 agree away from 𝑣, the denominators in
+their heat-bath probabilities coincide. Multiplying by the Gibbs mass gives
+𝜋𝛽(𝑥)𝐾𝛽,𝑣(𝑥, 𝑦) = 𝜋 𝛽(𝑦)𝐾𝛽,𝑣(𝑦, 𝑥). (C5)
+If they do not agree away from 𝑣, both sides vanish. This is detailed balance; summing over 𝑥
+also proves that 𝜋𝛽 is invariant under the update.
+For any law 𝜇, define its density relative to 𝜋𝛽 by 𝜌(𝑥) = 𝜇(𝑥)/𝜋 𝛽(𝑥). An increasing density
+means this ratio is increasing; it does not mean the masses 𝜇(𝑥) themselves are increasing.
+Its updated law is (𝜇𝐾𝛽,𝑣)(𝑦) = ∑ 𝑥 𝜇(𝑥)𝐾𝛽,𝑣(𝑥, 𝑦). Detailed balance gives the exact density
+update
+(𝜇𝐾𝛽,𝑣)(𝑦)
+𝜋𝛽(𝑦) = ∑𝑥
+𝜇(𝑥)
+𝜋𝛽(𝑥) 𝐾𝛽,𝑣(𝑦, 𝑥) = (𝐾 𝛽,𝑣𝜌)(𝑦). (C6)
+We next verify that 𝐾𝛽,𝑣 preserves increasing functions. If 𝑥 ≤ 𝑦 , then ℎ𝑣(𝑥) ≤ ℎ 𝑣(𝑦), hence
+𝑝𝛽,𝑣(𝑥) ≤ 𝑝 𝛽,𝑣(𝑦) because 𝛽 ≥ 0 . Also 𝑥𝑣,𝑎 ≤ 𝑦 𝑣,𝑎 for either 𝑎, and 𝜑(𝑦𝑣,0) ≤ 𝜑(𝑦 𝑣,1). Therefore
+𝐾𝛽,𝑣𝜑(𝑥) ≤ 𝑝 𝛽,𝑣(𝑥)𝜑(𝑦𝑣,1) + (1 − 𝑝 𝛽,𝑣(𝑥))𝜑(𝑦𝑣,0)
+≤ 𝑝 𝛽,𝑣(𝑦)𝜑(𝑦𝑣,1) + (1 − 𝑝 𝛽,𝑣(𝑦))𝜑(𝑦𝑣,0) = 𝐾 𝛽,𝑣𝜑(𝑦). (C7)
+The second difference is (𝑝𝛽,𝑣(𝑦) − 𝑝 𝛽,𝑣(𝑥))(𝜑(𝑦𝑣,1) − 𝜑(𝑦 𝑣,0)) ≥ 0 .
+For the initial law 𝜇 = 𝛿 ⊤, which assigns probability one to ⊤, the density is zero except at
+⊤, where it is 1/𝜋𝛽(⊤) > 0 . It is increasing because no configuration lies strictly above ⊤.
+Equations (C6)–(C7) show inductively that the density after every finite prefix of updates is
+increasing.
+11
+
+PAGE 12
+The one-update deletion calculation. Suppose 𝜌 = 𝜇/𝜋 𝛽 and 𝜑 are increasing. Fix the
+values 𝑧 on Λ ∖ {𝑣} and denote the two completions by 𝑧0, 𝑧1. Put
+𝑞𝑧 = 𝜋 𝛽(𝑧0) + 𝜋𝛽(𝑧1), 𝑝 𝑧 = 𝜋𝛽(𝑧1)𝑞𝑧 , 𝜌 𝑖 = 𝜌(𝑧 𝑖), 𝜑 𝑖 = 𝜑(𝑧 𝑖).
+Conditionally on 𝑧, the value 𝑥(𝑣) is Bernoulli (𝑝𝑧) under 𝜋𝛽. At both completions, 𝐾𝛽,𝑣𝜑
+equals (1 − 𝑝𝑧)𝜑0 + 𝑝𝑧𝜑1, and the total 𝜇-mass of the two completions is 𝑞𝑧[(1 − 𝑝𝑧)𝜌0 + 𝑝𝑧𝜌1].
+Consequently the 𝑧-contribution to 𝜇(𝜑) − (𝜇𝐾𝛽,𝑣)(𝜑), divided by 𝑞𝑧, is
+[(1 − 𝑝𝑧)𝜌0𝜑0 + 𝑝𝑧𝜌1𝜑1]
+− [(1 − 𝑝 𝑧)𝜌0 + 𝑝𝑧𝜌1][(1 − 𝑝𝑧)𝜑0 + 𝑝𝑧𝜑1]
+= 𝑝 𝑧(1 − 𝑝𝑧)(𝜌1 − 𝜌0)(𝜑1 − 𝜑0) ≥ 0.
+(C8)
+This is the covariance of 𝜌 and 𝜑 under that two-point conditional law. Multiplying by 𝑞𝑧 and
+summing over all 𝑧 yields
+𝜇(𝜑) − (𝜇𝐾𝛽,𝑣)(𝜑) = ∑
+𝑧
+𝑞𝑧𝑝𝑧(1 − 𝑝𝑧)(𝜌1 − 𝜌0)(𝜑1 − 𝜑0) ≥ 0. (C9)
+The sign uses 𝑧0 ≤ 𝑧 1. Thus one update gives 𝜇𝐾𝛽,𝑣 ⪯ 𝜇 whenever the current density is
+increasing. The calculation is not an assertion about one realization of the updates.
+To delete an update in the middle of a word, write that word as a prefix 𝑃 , the chosen site
+𝑣, and a suﬀix 𝑆. For a word 𝑊 = (𝑣 1, … , 𝑣𝑟), write 𝐾𝛽,𝑊 = 𝐾 𝛽,𝑣1 ⋯ 𝐾𝛽,𝑣𝑟, with the empty
+word acting as the identity. In particular, (𝐾𝛽,𝑊 𝜑)(𝑥) is the expected final observable when the
+sites are updated in that chronological order. Start from 𝛿⊤ and let 𝜇 = 𝛿 ⊤𝐾𝛽,𝑃 . Its density is
+increasing. Each update preserves increasing functions, so the suﬀix observable 𝜓 = 𝐾 𝛽,𝑆𝜑 is
+increasing. Apply (C9) to 𝜓:
+(𝛿⊤𝐾𝛽,𝑃 𝐾𝛽,𝑣𝐾𝛽,𝑆)(𝜑) ≤ (𝛿 ⊤𝐾𝛽,𝑃 𝐾𝛽,𝑆)(𝜑). (C10)
+This also explains suﬀix preservation of stochastic order: if 𝛼 ⪯ 𝛾 , then (𝛼𝐾𝛽,𝑆)(𝜑) =
+𝛼(𝐾𝛽,𝑆𝜑) ≤ 𝛾(𝐾 𝛽,𝑆𝜑). Deleting one occurrence at a time gives, for every subword 𝑊 ′ obtained
+by deletion from 𝑊 ,
+(𝐾𝛽,𝑊 𝜑)(⊤) ≤ (𝐾 𝛽,𝑊 ′𝜑)(⊤) (𝛽 ≥ 0, 𝜑 increasing).
+At each deletion the increasing-density argument applies to the prefix of the current word, so
+the induction does not assume that its law is a prefix law of the original word. This proves
+finite-temperature censoring from the filled square.
+The finite-word zero-temperature limit. From (C3),
+𝑝𝛽,𝑣(𝑥) ⟶ 𝑝 ∞,𝑣(𝑥) =
+⎧{
+⎨{⎩
+1, 𝑎 𝑣(𝑥) > 2,
+1/2, 𝑎 𝑣(𝑥) = 2,
+0, 𝑎 𝑣(𝑥) < 2,
+𝛽 ⟶ ∞. (C11)
+Define 𝐾∞,𝑣 by (C4) with 𝑝∞,𝑣 in place of 𝑝𝛽,𝑣, and form word operators in the same way.
+Hold the word 𝑊 = (𝑣 1, … , 𝑣𝑟), its length 𝑟, and the starting state 𝑥0 fixed as 𝛽 increases. Its
+expected endpoint observable is the finite sum
+(𝐾𝛽,𝑊 𝜑)(𝑥0) = ∑
+𝑥1,…,𝑥𝑟∈Ω
+[
+𝑟
+∏
+𝑗=1
+𝐾𝛽,𝑣𝑗(𝑥𝑗−1, 𝑥𝑗)] 𝜑(𝑥𝑟).
+12
+
+PAGE 13
+Every factor has a limit by (C11). Taking limits in this finite sum gives 𝐾∞,𝑊 𝜑(𝑥0), the
+expected endpoint under four-neighbour majority with fresh independent fair tie marks at every
+occurrence. Taking the limits of the two real numbers in the finite-temperature censoring
+inequality proves
+𝔼𝜑(𝑋full) ≤ 𝔼𝜑(𝑋 deleted) for every increasing 𝜑, (25)
+when both words start from ⊤ and the second is obtained by deletion. This passes to the limit
+in fixed-word expectations; it requires no limiting density relative to a zero-temperature Gibbs
+law.
+A two-site calculation inside a square. In 𝑄2, start with all four sites equal to 1, choose
+adjacent sites 𝑎 = (0, 0) and 𝑏 = (1, 0) , and use 𝜑(𝑥) = 𝑥(𝑏) . Compare the full word (𝑎, 𝑏)
+with the subword (𝑏). Each site initially has two 1 neighbours inside the square and two fixed
+exterior zeros. The first update in either word is therefore a fair tie.
+For the full word, 𝑎 = 1 after its update with probability 1/2. Conditional on this outcome, 𝑏
+still sees a tie and is 1 with probability 1/2. If 𝑎 = 0 , then 𝑏 sees only one 1 neighbour and
+becomes 0. Thus
+𝔼𝑋full(𝑏) = 12 ⋅ 12 = 14 , 𝔼𝑋 deleted(𝑏) = 12 .
+At finite temperature the second branch instead sets 𝑏 to 1 with probability (1 + 𝑒4𝛽)−1, so the
+full expectation is 14 + 12(1+𝑒4𝛽) ≤ 12 , tending to 14 . This checks both the deletion direction and
+the factor 2𝛽ℎ in the heat-bath probability.
+Figure 2. A separate repeated-site example. Only the upper-left site a is updated in a zero-boundary
+two-by-two square. One update and two updates both leave it fair, so their endpoint laws agree. The
+particular marks 0 then 1 nevertheless restore a black cell. Censoring compares averaged endpoint laws;
+it is not an assertion that every additional update removes black cells.
+13
+
+PAGE 14
+3.3. Scheduling on the original clock sample
+It concerns a square of actual side length 𝑚 ≥ 2 , not a square of side 𝑚 + 2 . All clock
+constructions below use the same original arrival streams. The two conclusions are
+ℙ(𝑀𝑚,𝑐,𝑘 > 𝑡) ≤ 𝑚 28𝑘+1𝑒−𝑡/2, ℙ(𝐵 𝑚,𝑡,𝑞) ≤ 𝑚25 𝑒9𝑡2−𝑞 (𝑞 ≥ 1). (S1)
+Here 𝑀𝑚,𝑐,𝑘 is the time needed to select 𝑘 + 1 alternating colour layers, and 𝐵𝑚,𝑡,𝑞 means that
+the clock events up to time 𝑡 have a conflict rank at least 𝑞. We define both quantities below.
+We also prove the finite word rearrangements that connect them to colour scans. The final
+comparison of endpoint expectations uses the finite censoring lemma, proved in §3.2; the clock
+bounds themselves do not use censoring.
+3.3.1. The sample, its history , and strict next rings Put 𝑄𝑚 = {0, … , 𝑚 − 1}2. Write
+𝑢 ∼ 𝑣 when 𝑢, 𝑣 ∈ 𝑄 𝑚 differ by one in exactly one coordinate. Every vertex has between two
+and four such neighbours. There is no identification of opposite edges. A vertex is even or odd
+according to the parity of its coordinate sum. Every neighbour has the opposite colour.
+For every 𝑣 ∈ 𝑄 𝑚 and 𝑟 ≥ 0 , sample mutually independent gaps 𝐺𝑣,𝑟 with density 𝑒−𝑔 on 𝑔 > 0 .
+The event with identity (𝑣, 𝑟) occurs at
+𝑆𝑣,𝑟 = 𝐺 𝑣,0 + ⋯ + 𝐺𝑣,𝑟.
+Independently of all gaps, give every identity an independent fair mark 𝑈𝑣,𝑟 ∈ {0, 1} . At its
+arrival, the event updates only 𝑣 by the paper’s four-neighbour majority rule, using 𝑈𝑣,𝑟 for a
+tie.
+We use a single probability-one set of regular samples. All gaps are positive there. At each
+site, infinitely many gaps exceed one: the probability that the next 𝑛 gaps after any fixed index
+are all at most one is (1 − 𝑒 −1)𝑛 → 0 , and there are countably many starting indices. Hence
+every site’s arrival sums diverge. Since the square has finitely many sites, every bounded time
+interval contains finitely many events. Finally, arrivals at distinct sites never coincide almost
+surely: each specified equality has probability zero because one of the two independent sums
+has a continuous density, and there are countably many pairs. These facts hold together on one
+regular set, for all time bounds.
+For 𝑠 ≥ 0 , the common history ℱ𝑠 records all observations {𝑆𝑣,𝑟 ≤ 𝑢} for 𝑢 ≤ 𝑠 , at every
+site. In probability notation, it is the sigma-algebra generated by those events: the collection
+obtained by allowing complements and countable unions of observations. It does not reveal an
+unarrived gap or a future mark.
+A nonnegative random time 𝑅, allowed to equal ∞, is a stopping time if {𝑅 ≤ 𝑠} ∈ ℱ 𝑠 for
+every 𝑠. Thus observing the history through 𝑠 suﬀices to decide whether 𝑅 has occurred. Its
+stopped history is
+ℱ𝑅 = {𝐸 ∶ 𝐸 ∩ {𝑅 ≤ 𝑠} ∈ ℱ 𝑠 for every 𝑠 ≥ 0},
+with 𝐸 also required to be measurable in the full clock sample. This describes information
+available when the observation stops at 𝑅.
+Let 𝑁𝑣(𝑅) be the first arrival at 𝑣 strictly after 𝑅, and set 𝑁𝑣(∞) = ∞ . If no such arrival
+exists, its value is also ∞. We retain these extended values until their almost-sure finiteness
+has been proved. A strict next ring is again a stopping time: for finite 𝑠,
+{𝑁𝑣(𝑅) ≤ 𝑠} = ⋃
+𝑟≥0
+⋃
+𝑎∈ℚ, 0≤𝑎≤𝑠
+{𝑅 ≤ 𝑎} ∩ {𝑎 < 𝑆 𝑣,𝑟 ≤ 𝑠}. (S2)
+14
+
+PAGE 15
+Each event on the right is known by time 𝑠. The identity follows by choosing a rational number
+between 𝑅 and an arrival strictly greater than 𝑅. On a regular sample, 𝑁𝑣(𝑅) is finite whenever
+𝑅 is finite.
+3.3.2. Why a wait after a common-history stopping time is exponential The fact
+needed later is stronger than the memoryless property at a fixed time:
+ℙ(𝐸 ∩ {𝑁 𝑣(𝑅) − 𝑅 > 𝑠}) = 𝑒 −𝑠ℙ(𝐸) (𝐸 ∈ ℱ 𝑅, 𝑠 ≥ 0), (S3)
+provided 𝑅 is nonnegative, a stopping time, and finite almost surely. Differences in (S3) are
+taken on the full-measure set where both times are finite; assigning any value on the remaining
+null set changes no probability. Equation (S3) says both that the residual wait has the Exp (1)
+law and that it is independent of the entire stopped common history. We prove it from the gap
+coordinates.
+Fixed observation time. First let 𝑅 = 𝑎 ≥ 0 be deterministic. At site 𝑣, partition regular
+samples according to the current gap index 𝑟: the preceding sum 𝑏 = 𝐺 𝑣,0 + ⋯ + 𝐺𝑣,𝑟−1 satisfies
+𝑏 ≤ 𝑎 < 𝑆 𝑣,𝑟 = 𝑏 + 𝐺 𝑣,𝑟. For 𝑟 = 0 , put 𝑏 = 0 .
+Fix every gap coordinate except 𝑔 = 𝐺 𝑣,𝑟. On the region 𝑏 ≤ 𝑎 and 𝑔 > 𝑎 − 𝑏 , changing
+𝑔 changes no observation through time 𝑎. Earlier arrivals at 𝑣 are unchanged; the 𝑟th and
+all later arrivals at 𝑣 remain greater than 𝑎; other sites are unchanged. Therefore any event
+𝐸 ∈ ℱ 𝑎 has a constant truth value as 𝑔 ranges over (𝑎 − 𝑏, ∞). This statement holds first for
+the generating observations and then for their complements and countable unions, hence for all
+of ℱ𝑎.
+On that fixed set of other coordinates, the event 𝑁𝑣(𝑎) − 𝑎 > 𝑠 asks for 𝑔 > 𝑎 − 𝑏 + 𝑠 . The
+gap coordinate has its original density 𝑒−𝑔, independently of the fixed coordinates. The two
+integrals over that coordinate are related by
+∫
+∞
+𝑎−𝑏+𝑠
+𝑒−𝑔 𝑑𝑔 = 𝑒 −𝑠 ∫
+∞
+𝑎−𝑏
+𝑒−𝑔 𝑑𝑔.
+Multiply by the common indicator of 𝐸, integrate the other independent coordinates, and sum
+over the disjoint current-gap indices. Their union has probability one by divergence of the
+arrival sums. This proves (S3) for deterministic 𝑎, relative to the common history of all sites,
+rather than only the history of site 𝑣.
+A time with countably many possible values. If a finite stopping time 𝑄 takes countably
+many values, then 𝐸 ∩ {𝑄 = 𝑎} ∈ ℱ 𝑎 for 𝐸 ∈ ℱ 𝑄. Indeed {𝑄 < 𝑎} is a countable union of
+events {𝑄 ≤ 𝑏} with rational 0 ≤ 𝑏 < 𝑎 (the union is empty when 𝑎 = 0 ), and the defining
+property of ℱ𝑄 applies. Apply the deterministic result to each slice 𝐸 ∩ {𝑄 = 𝑎} and add. This
+proves (S3) for 𝑄.
+An arbitrary almost-surely finite stopping time. Put 𝛿𝑛 = 2 −𝑛 and round 𝑅 upwards to
+the least nonnegative grid point 𝑗𝛿𝑛 ≥ 𝑅 , obtaining 𝑄𝑛. Keep 𝑄𝑛 = ∞ where 𝑅 = ∞ . The
+event {𝑄𝑛 ≤ 𝑎} is a union of events {𝑅 ≤ 𝑗𝛿 𝑛} with 𝑗𝛿𝑛 ≤ 𝑎 , so 𝑄𝑛 is a stopping time. On
+𝑅 < ∞ ,
+𝑅 ≤ 𝑄 𝑛 < 𝑅 + 𝛿 𝑛.
+Also ℱ𝑅 ⊆ ℱ 𝑄𝑛: intersecting 𝐸 ∈ ℱ 𝑅 with a grid slice of 𝑄𝑛 gives a difference of events
+𝐸 ∩ {𝑅 ≤ 𝑗𝛿 𝑛}, each known by that grid time. Thus the countable-value result gives
+ℙ(𝐸 ∩ {𝑁 𝑣(𝑄𝑛) − 𝑄𝑛 > 𝑠}) = 𝑒 −𝑠ℙ(𝐸). (S4)
+15
+
+PAGE 16
+For each regular sample with 𝑅 < ∞ , there is a positive distance from 𝑅 to its strict next ring.
+Eventually 𝑄𝑛 lies before that same ring. Consequently 𝑁𝑣(𝑄𝑛) = 𝑁 𝑣(𝑅) eventually, and
+𝑁𝑣(𝑄𝑛) − 𝑄𝑛 ≤ 𝑁 𝑣(𝑅) − 𝑅, 0 ≤ [𝑁 𝑣(𝑅) − 𝑅] − [𝑁 𝑣(𝑄𝑛) − 𝑄𝑛] < 𝛿 𝑛.
+The strict survival indicators therefore converge to the indicator in (S3), even when 𝑠 = 𝑁 𝑣(𝑅)−
+𝑅: the approximating waits approach from below. Indicators are bounded by one, so bounded
+convergence in (S4) proves (S3). No right-continuity of a filtration or unproved stopping-time
+memoryless principle is being invoked.
+Taking 𝐸 to be the whole space in (S3) gives the exponential tail. The intervals (𝑠, ∞) deter-
+mine the law of a nonnegative real variable and generate its measurable events. Closure under
+complements and disjoint countable unions then extends the factorization from these intervals
+to every measurable event about the wait. This proves the stated independence.
+3.3.3. Selecting alternating layers without restarting clocks Define extended comple-
+tion and readiness times at every vertex by
+𝐷0(𝑣) = 0, 𝑅 𝑗(𝑣) = max𝑢∼𝑣 𝐷𝑗(𝑢), 𝐷 𝑗+1(𝑣) = 𝑁 𝑣(𝑅𝑗(𝑣)). (S5)
+The neighbour maximum is nonempty. All 𝑅𝑗(𝑣) and 𝐷𝑗(𝑣) are stopping times: use finite
+maxima and (S2), inductively. On the single regular set, all are finite, by induction over 𝑗 and
+cofinality of each arrival stream. There are countably many pairs (𝑗, 𝑣), so these assertions hold
+simultaneously. Only now write
+𝑊𝑗(𝑣) = 𝐷 𝑗+1(𝑣) − 𝑅𝑗(𝑣) > 0 (S6)
+on that set. Formula (S3) applies to each 𝑅𝑗(𝑣), and makes 𝑊𝑗(𝑣) exponential and independent
+of ℱ𝑅𝑗(𝑣).
+Choose a first colour 𝑐 ∈ { even, odd}. Let 𝑇𝑗(𝑐) contain colour 𝑐 when 𝑗 is even and the opposite
+colour when 𝑗 is odd. The selected tasks of layer 𝑗 are the events at times 𝐷𝑗+1(𝑣) for 𝑣 ∈ 𝑇 𝑗(𝑐).
+The other completion times in (S5) only make the recurrence uniform; they are not additional
+retained updates. Define
+𝑀𝑚,𝑐,𝑘 = max0≤𝑗≤𝑘 max𝑣∈𝑇𝑗(𝑐) 𝐷𝑗+1(𝑣). (S7)
+Thus 𝑘 = 0 means one selected layer, not zero layers.
+A selected task at 𝑣 waits for all its interior neighbours’ preceding-layer tasks and then takes
+the next ring already present in its original stream. Rings before readiness are skipped, not
+moved or resampled. Because neighbours have opposite colours, every predecessor of a task in
+𝑇𝑗+1(𝑐) belongs to 𝑇𝑗(𝑐).
+For any neighbour 𝑢 ∼ 𝑣 the recurrence gives
+𝐷𝑗(𝑢) ≤ 𝑅 𝑗(𝑣) < 𝐷 𝑗+1(𝑣). (S8)
+Every selected task therefore has a later selected successor at some neighbour. Iterating this
+fact shows that the maximum in (S7) is the maximum of the final selected layer alone. This
+avoids a separate union bound over all 𝑘 + 1 layers.
+The family of waits is not declared globally independent. Different tasks may inspect overlapping
+streams, or even select the same ring when the tasks are not both retained. The independence
+we will use is only along a predetermined legal path, with the history specified at each step.
+16
+
+PAGE 17
+3.3.4. A fixed path, its moments, and the completion bound A legal path of length
+𝑘 + 1 is a list (𝑣0, … , 𝑣𝑘) such that 𝑣𝑗 ∈ 𝑇 𝑗(𝑐) and 𝑣𝑗 ∼ 𝑣 𝑗+1. Vertices may repeat. Unfolding
+(S5) gives
+𝐷𝑘+1(𝑣𝑘) = max𝑣0∼⋯∼𝑣𝑘
+𝑣𝑗∈𝑇𝑗(𝑐)
+𝑘
+∑
+𝑗=0
+𝑊𝑗(𝑣𝑗), (S9)
+where the maximum fixes its terminal vertex 𝑣𝑘. To verify (S9), note that 𝐷1(𝑣) = 𝑊 0(𝑣), and
+substitute 𝐷𝑗+1(𝑣) = 𝑊 𝑗(𝑣) + max𝑢∼𝑣 𝐷𝑗(𝑢) one layer at a time. The path weights are the
+actual delays from (S6), not new exponential coordinates.
+Fix one such path in advance, independently of the sample. Its readiness times increase, and
+(S8) gives
+𝑅𝑗(𝑣𝑗) < 𝐷 𝑗+1(𝑣𝑗) ≤ 𝑅 𝑗+1(𝑣𝑗+1).
+By the time 𝑅𝑗(𝑣𝑗) is observed, every preceding wait on this path is known: its two endpoints
+have already occurred. For stopping times 𝐴 ≤ 𝐵 , information known at 𝐴 is also known at 𝐵:
+for 𝐸 ∈ ℱ 𝐴, the identity 𝐸 ∩ {𝐵 ≤ 𝑠} = (𝐸 ∩ {𝐴 ≤ 𝑠}) ∩ {𝐵 ≤ 𝑠} proves 𝐸 ∈ ℱ 𝐵. A stopping
+time is itself known at its stopping history, so the two endpoints of every preceding wait, and
+their difference, are known at 𝑅𝑗(𝑣𝑗). Thus (S3), applied at 𝑅𝑗(𝑣𝑗), factors each new wait from
+any function of the preceding waits.
+For 𝜃 < 1 , a single exponential wait has moment
+𝔼𝑒𝜃𝑊 = ∫
+∞
+0
+𝑒𝜃𝑤𝑒−𝑤 𝑑𝑤 = (1 − 𝜃) −1.
+Successive factorization gives
+𝔼 exp(𝜃
+𝑘
+∑
+𝑗=0
+𝑊𝑗(𝑣𝑗)) = (1 − 𝜃) −(𝑘+1). (S10)
+This also proves integrability: at each step nonnegative integration factors the previous product
+and a finite one-step moment. No separate assumption about exponential integrability of the
+path sum is needed. At 𝜃 = 1/2 , Markov’s inequality gives
+ℙ (
+𝑘
+∑
+𝑗=0
+𝑊𝑗(𝑣𝑗) > 𝑡) ≤ 2 𝑘+1𝑒−𝑡/2.
+There are at most 𝑚2 choices of terminal vertex and at most four predecessors at each of the
+𝑘 edges. Hence there are at most 𝑚24𝑘 paths. Combining this count, (S9), and the final-layer
+maximum proves the sharper bound
+ℙ(𝑀𝑚,𝑐,𝑘 > 𝑡) ≤ 𝑚 24𝑘2𝑘+1𝑒−𝑡/2 ≤ 𝑚 28𝑘+1𝑒−𝑡/2. (S11)
+The last inequality is 4𝑘2𝑘+1 = 2 ⋅ 8 𝑘 ≤ 8 𝑘+1. Independence between different paths is unneces-
+sary for the union bound.
+3.3.5. Why the selected events execute as the fixed layer word An event identity
+includes its site and original arrival index. Each retained task selects one such identity. Distinct
+retained tasks have distinct identities. To see the only nontrivial case, choose a neighbour 𝑢 of
+𝑣 and apply (S8) twice:
+𝐷𝑗(𝑣) < 𝐷 𝑗+1(𝑢) < 𝐷 𝑗+2(𝑣). (S12)
+A site is retained only every other layer, so its retained completion times, and hence its arrival
+indices, strictly increase.
+17
+
+PAGE 18
+Two event occurrences conflict if their sites agree or are neighbours. Updates at distinct non-
+adjacent sites commute for every fixed mark assignment: each changes only its own coordinate
+and neither reads the coordinate changed by the other. Shared neighbours do not affect this
+statement, since those coordinates are only read.
+Order retained events by increasing layer, in any fixed order inside a layer. For every conflicting
+pair this order agrees with physical time. At the same site, use (S12) repeatedly; the two layers
+differ by an even number. At neighbouring sites, the layer difference is odd; use (S8) once and
+then repeated two-step inequalities. Inside one layer the sites are distinct and nonadjacent, so
+no pair conflicts.
+When 𝑀𝑚,𝑐,𝑘 ≤ 𝑡, all these identities occur in the full chronological clock list through 𝑡. Delete
+exactly the other identities. The remaining chronological list and the layer-ordered list have
+the same events, with the same order for each conflicting pair. They can be transformed into
+one another by swapping adjacent nonconflicting events. Here is a finite proof: move the first
+event of the target list leftwards to the first position of the current list. Every event it passes
+is reversed relative to the target order, so cannot conflict with it. Delete the now matching
+first position and repeat. Each swap commutes, so the two marked endpoints agree for every
+assignment of the original identity marks.
+Consequently the retained word has exactly the kernel of 𝑘+1 complete alternating colour scans.
+This conclusion has retained the genuine clock identities and all their marks. It is stronger than
+an unlabelled permutation of sites.
+3.3.6. Computed conflict ranks give chronological witnesses Fix a regular sample and
+𝑡 ≥ 0 , and list all arrivals through 𝑡 in chronological order as 𝑒1, … , 𝑒ℓ. Compute their ranks in
+that order:
+rank(𝑒𝑖) = 1 + max({rank(𝑒ℎ) ∶ ℎ < 𝑖, 𝑒 ℎ conflicts with 𝑒𝑖} ∪ {0}). (S13)
+Define 𝐵𝑚,𝑡,𝑞 to be the event that some computed rank is at least 𝑞. The empty event list has
+no positive rank and belongs to none of these events for 𝑞 ≥ 1 .
+If 𝑒𝑖 has rank 𝑟 > 1 , its maximum in (S13) is attained by an actual earlier conflicting event
+of rank 𝑟 − 1 . Choose it and repeat. At rank one there is no positive predecessor to choose.
+Reversing the resulting list gives 𝑟 events in chronological order, with consecutive ranks 1, 2, … , 𝑟
+and consecutive sites equal or adjacent. This is a sublist of the actual chronological event list:
+it is obtained by deleting positions, not by reusing a site label at an invented time.
+If 𝑟 ≥ 𝑞 ≥ 1 , retain the last 𝑞 events of this witness. Write their sites as 𝑣0, … , 𝑣𝑞−1 and their
+actual arrival times as 𝑎0 < ⋯ < 𝑎 𝑞−1 ≤ 𝑡 . The first time is strictly positive. The truncated
+witness still ends at the original selected event; its first rank need not be one.
+For a fixed spatial list 𝑝 = (𝑣 0, … , 𝑣𝑞−1), define a greedy chain on the original streams:
+𝐻0 = 0, 𝐻 𝑗+1 = 𝑁 𝑣𝑗(𝐻𝑗), 0 ≤ 𝑗 < 𝑞. (S14)
+All 𝐻𝑗 are finite stopping times almost surely. The residual-wait result and successive factor-
+ization give, for every 𝑎 > 0 ,
+𝔼𝑒−𝑎𝐻𝑞 = (1 + 𝑎) −𝑞, ℙ(𝐻 𝑞 ≤ 𝑡) ≤ 𝑒 𝑎𝑡(1 + 𝑎)−𝑞. (S15)
+The inequality is Markov applied to 𝑒−𝑎𝐻𝑞; it includes equality at 𝑡. Repeated vertices cause
+no problem, because each wait is after the preceding chain stopping time in the same original
+stream.
+18
+
+PAGE 19
+Any specified chronological arrival witness dominates this greedy chain: 𝐻1 ≤ 𝑎 0, and if 𝐻𝑗 ≤
+𝑎𝑗−1 < 𝑎 𝑗, the next arrival at 𝑣𝑗 after 𝐻𝑗 is no later than the specified arrival 𝑎𝑗. Hence
+𝐻𝑗+1 ≤ 𝑎 𝑗 by induction. The rank witness above therefore implies 𝐻𝑞 ≤ 𝑡 for its spatial list.
+There are at most 𝑚25𝑞−1 spatial lists with 𝑞 vertices and consecutive vertices equal or adjacent.
+Choose the first vertex, then one of five instructions at each step: stay, east, west, north, south.
+An instruction crossing the boundary stays at its current vertex. Every legal list has at least
+one such code; multiple codes for the same boundary step only reduce the number of distinct
+lists. There are 𝑞 − 1 spatial instructions and 𝑞 clock waits.
+Choose 𝑎 = 9 in (S15), rather than a factorial estimate. Union over the deterministic finite
+family gives
+ℙ(𝐵𝑚,𝑡,𝑞) ≤ 𝑚 25𝑞−1𝑒9𝑡10−𝑞
+= 𝑚2
+5 𝑒9𝑡2−𝑞 (𝑞 ≥ 1). (S16)
+This derives both constants: 9 is the chosen Laplace parameter, producing the factor 1/(1+9) =
+1/10 per wait; 1/5 comes from having one fewer spatial instruction than waits. No independence
+between spatial lists is asserted. For 𝑞 = 0 , this derivation and its count convention do not apply.
+3.3.7. F rom actual ranks to exactly 2𝑞 full colour scans Suppose every rank in the
+finite event list is at most 𝑞. Assign an event of rank 𝑟 ≥ 1 to slot
+𝜎(𝑒) = { 2𝑟 − 1, its site is even ,2𝑟, its site is odd . (S17)
+If an earlier event conflicts with a later event, (S13) makes the later rank strictly larger. Its
+slot is therefore strictly larger too, even if the colours differ. Sort the labelled events by slot,
+keeping every site/ring identity and its mark. Every conflicting pair retains its chronological
+order, so the finite swapping argument in §3.3.5 proves equality of marked endpoints before and
+after sorting.
+Events in one slot have the same colour and different sites. The different-site claim needs the
+rank recurrence: two occurrences at the same site conflict, so their ranks, and thus their slots,
+cannot be equal. Each slot batch is consequently a duplicate-free partial enumeration of one
+colour.
+For each 𝑠 = 1, … , 2𝑞, keep its actual batch as a prefix and append precisely the missing vertices
+of its colour, once each, in any fixed order. Empty batches are completed too. This produces 2𝑞
+full colour scans, starting with even. The sorted actual site word is a sublist of this completed
+word. This is a constructed embedding: each original event still occupies its own position, and
+only the missing site occurrences are inserted.
+On 𝐵c𝑚,𝑡,𝑞, all ranks are actually less than 𝑞, hence in particular at most 𝑞. We deliberately use
+that weaker bound to obtain the source’s 2𝑞 scans. For 𝑞 = 1 , the complement contains only
+the empty clock list, and the same completion inserts two full scans. The rank-tail estimate
+(S16) is stated only for 𝑞 ≥ 1 .
+3.3.8. A small example on four sites Let 𝑚 = 2 , name the even vertices 𝑎 = (0, 0), 𝑑 =
+(1, 1) and the odd vertices 𝑏 = (1, 0), 𝑐 = (0, 1) , and start with the even colour. Consider these
+initial arrival times; later arrivals are irrelevant to the calculation:
+19
+
+PAGE 20
+Site First arrival Second arrival Third arrival
+𝑎 0.4 1.5 2.7
+𝑑 0.7 1.8 2.9
+𝑏 0.2 0.9 2.2
+𝑐 0.3 1.1 2.4
+The first selected layer finishes at 𝐷1(𝑎) = 0.4, 𝐷 1(𝑑) = 0.7 . Both next tasks become ready
+at 0.7, so their strict next rings are 𝐷2(𝑏) = 0.9, 𝐷 2(𝑐) = 1.1 . The third layer is ready at 1.1,
+giving 𝐷3(𝑎) = 1.5, 𝐷 3(𝑑) = 1.8 . Therefore 𝑀2,even,2 = 1.8.
+The path (𝑑, 𝑐, 𝑑) has actual waits 0.7, 1.1 − 0.7 = 0.4 , and 1.8 − 1.1 = 0.7 , whose sum is 1.8.
+Its second visit to 𝑑 uses 𝑑’s original second ring. It does not draw a new gap starting at time
+1.1.
+Through time 1.8, the full event list has sites
+𝑏, 𝑐, 𝑎, 𝑑, 𝑏, 𝑐, 𝑎, 𝑑
+with ranks 1, 1, 2, 2, 3, 3, 4, 4. The first two events do not conflict with each other, because their
+sites are diagonal. With the bound 𝑟 ≤ 4 , the actual nonempty slot batches are slot 2 ∶ (𝑏, 𝑐) ,
+slot 3 ∶ (𝑎, 𝑑) , slot 6 ∶ (𝑏, 𝑐) and slot 7 ∶ (𝑎, 𝑑) . Completing slots 1, 4, 5, 8 by their missing colour
+sites gives eight full scans. A chronological rank-four witness is the original event sublist at
+times 0.2, 0.4, 1.1, 1.8, with sites (𝑏, 𝑎, 𝑐, 𝑑). Every consecutive pair is adjacent, and the greedy
+chain for this fixed list finishes no later than 1.8.
+These are deterministic calculations for one list of arrivals, not a numerical estimate of an event
+probability. The displayed clocks can be checked directly against (S5), (S13), and (S17).
+3.3.9. T urning the embeddings into endpoint probabilities Here is the precise use
+of finite censoring. For a deterministic finite site word 𝑤, let 𝐾𝑤𝜑 be the expectation of 𝜑
+after updating its occurrences with independent fair marks, starting from the filled square. The
+needed finite censoring lemma says: if 𝑢 is obtained by deleting occurrences from 𝑤, then
+𝐾𝑤𝜑 ≤ 𝐾 𝑢𝜑 for increasing 𝜑. (S18)
+Section 3.2 proves this lemma for the zero-temperature fair-tie kernel. Sections 3.3.1–3.3.8 above
+are independent of (S18). The deductions in this section use (S18).
+Condition on the entire gap sample first. The actual finite clock word through 𝑡 is then fixed. Its
+distinct event identities have independent fair marks, since the entire mark field is independent
+of the gap field. The same statement holds for the selected identities, even though their indices
+depend on gaps. Thus the mark-averaged expectation of the actual clock endpoint is exactly
+𝐾𝑤𝜑 for that sample’s chronological site word. Integrating over the original gap law gives the
+genuine clock endpoint expectation. We have not replaced its random length, arrival law, or
+ordering by a fixed finite schedule.
+Let 𝐴𝑐(𝑠) be the nonzero probability after 𝑠 full alternating colour scans from the filled square,
+starting with colour 𝑐. Take 𝜑 to be the indicator of a nonzero state, an increasing function
+taking values in [0, 1].
+On 𝑀𝑚,𝑐,𝑘 ≤ 𝑡 , delete the unselected actual identities. Section 3.3.5 identifies the resulting
+marked endpoint with 𝑘 + 1 full scans. Apply (S18) to the original chronological site word and
+20
+
+PAGE 21
+this selected subword. On the exceptional event, both mark-averaged observables lie between
+zero and one. Integrating the resulting pointwise bound yields
+𝐶𝑚(𝑡) ≤ 𝐴 𝑐(𝑘 + 1) + ℙ(𝑀 𝑚,𝑐,𝑘 > 𝑡). (S19)
+On 𝐵c𝑚,𝑡,𝑞, first sort the actual identities into slots, without changing their marked endpoint.
+Section 3.3.7 embeds this sorted site word by deletion into 2𝑞 completed scans. The direction
+of (S18) is now 𝐾completed scans 𝜑 ≤ 𝐾 sorted clock 𝜑. Each completed slot enumerates its entire
+colour exactly once, so its kernel is the fixed colour-scan kernel: distinct same-colour updates
+commute, and each uses an independent mark. Although the batch order depends on the gap
+sample, the complete scan expectation is always 𝐴even(2𝑞). Integrate and charge at most one
+on the exceptional event to obtain
+𝐴even(2𝑞) ≤ 𝐶 𝑚(𝑡) + ℙ(𝐵𝑚,𝑡,𝑞). (S20)
+Censoring compares mark-averaged expectations from the filled square. No pointwise ordering
+under one fixed mark assignment is used or needed for (S19) or (S20). The pointwise assertions
+used earlier were only equalities under commuting rearrangements.
+At the paper’s scales
+𝑡𝑘 = 8 log 2 (𝑘 + 1), 𝑅 𝑘 = 128(𝑘 + 1),
+the two tails are at most 𝑚22−(𝑘+1) and (𝑚2/5)2−56(𝑘+1), respectively. Their union therefore
+costs at most
+𝐸𝑚(𝑘) = 65 𝑚22−(𝑘+1).
+Indeed 8𝑘+1𝑒−𝑡𝑘/2 = 2 −(𝑘+1) and 𝑒9𝑡𝑘2−𝑅𝑘 = 2 (72−128)(𝑘+1). Combining (S19)–(S20) with the
+paper’s checkerboard relations 𝐴𝑐(𝑘 + 1) ≤ 𝑝 𝑚(𝑘) and 𝑝𝑚(2𝑞 + 1) ≤ 2𝐴 even(2𝑞) gives Lemma
+2. The factor two there is the two-phase union bound; it does not assert independence of the
+checkerboard trajectories.
+3.3.10. Correspondence with the source The source parameter is 𝑛 = 𝑚 − 2 . Its
+completion (j+1) is 𝐷𝑗+1, and its zero-based ready j is 𝑅𝑗. Its tasks n c j is 𝑇𝑗(𝑐); its
+squareMaximum n c k is (S7). Task paths and clock event words are stored newest first in
+several source modules. Their reversal gives the chronological paths and event lists used here.
+In particular, a path at source level 𝑘 has 𝑘 + 1 vertices and waits, whereas a rank witness of
+threshold 𝑞 has 𝑞 vertices and waits.
+The probabilistic estimates above concern the original product clock law. The final endpoint
+comparison uses the finite censoring lemma proved in §3.2 (S18). The corresponding declarations
+are listed in §9.
+3.4. A finite-state observable identity under the original clocks
+We use the following identity twice: for the mixed-square occupation field and for the modified
+process carrying its cleanup counter. We state it for the finite squares used in this paper, with
+arbitrary finite state space and deterministic initial state.
+Let 𝐿 ≥ 1 , 𝑉 = {−𝐿, … , 𝐿} 2, and 𝐾 = |𝑉 | = (2𝐿 + 1) 2. A translated square of the same side
+has the identical coordinate law. Let 𝒜 be a nonempty finite set, let 𝑦0 ∈ 𝒜, and let
+𝐹𝑣,𝑏 ∶ 𝒜 ⟶ 𝒜 (𝑣 ∈ 𝑉 , 𝑏 ∈ {0, 1})
+be fixed update maps. Execute the original rate-one gap field and independent fair identity
+marks of §3.3.1 from 𝑦0. Write 𝑌 (𝑡) for its endpoint at physical time 𝑡, including events at 𝑡.
+21
+
+PAGE 22
+For 𝐺 ∶ 𝒜 → ℝ , define
+ℒ𝐺(𝑦) = 12 ∑𝑣∈𝑉 1∑𝑏=0[𝐺(𝐹𝑣,𝑏(𝑦)) − 𝐺(𝑦)]. (FM1)
+Then, for every 𝑇 ≥ 0 ,
+𝔼𝐺(𝑌 (𝑇 )) = 𝐺(𝑦 0) + ∫
+𝑇
+0
+𝔼ℒ𝐺(𝑌 (𝑠)) 𝑑𝑠. (FM6)
+All expectations use the original gap-and-mark product law. No equation for a proposed re-
+placement process is assumed.
+Proof. Let ℋ𝑡 record the arrivals through deterministic time 𝑡 and the marks of those arrivals,
+revealing no future gaps or unused marks. Construct an ℋ𝑡-measurable state on every sample
+as follows. If the arrived identities form a finite strictly chronological list, execute that list
+with its observed marks from 𝑦0; otherwise return 𝑦0. For each candidate list, the assertion
+that it contains exactly the arrived identities is a countable intersection of observed arrival
+or nonarrival assertions. Its order and its finitely many marks are observed too. There are
+countably many lists and finite mark vectors, and each fixes its execution result. Taking their
+unions therefore describes the event of each possible output state. This proves measurability
+without a test of future regularity. On the single regular probability-one set from §3.3.1 this
+representative agrees with actual execution simultaneously for every 𝑡.
+The same construction is jointly measurable in (𝑡, 𝜔). For a candidate list, selecting exactly
+the events through 𝑡 amounts to measurable inequalities 𝑠𝑒(𝜔) ≤ 𝑡 or 𝑠𝑒(𝜔) > 𝑡 , together with
+its measurable order and marks. Replacing ≤ 𝑡 by < 𝑡 constructs the jointly measurable strict
+pre-event representative 𝑌 (𝑡−).
+Conditional on ℋ𝑡, the residual waits at the 𝐾 sites are independent rate-one exponentials,
+the later gaps retain their original laws, and the unused marks remain independent and fair.
+We justify the required joint assertion directly. Partition by the first unarrived gap index 𝑟𝑣
+at each site. Fix the earlier gaps and their observed marks, and let 𝑏𝑣 ≤ 𝑡 be the last arrival
+at 𝑣, or 0 if none has occurred. The current gaps satisfy 𝐺𝑣,𝑟𝑣 > 𝑡 − 𝑏 𝑣. With residuals
+𝑢𝑣 = 𝐺 𝑣,𝑟𝑣 − (𝑡 − 𝑏𝑣) > 0 , their product density factors as
+∏
+𝑣∈𝑉
+𝑒−(𝑡−𝑏𝑣+𝑢𝑣) = ( ∏
+𝑣∈𝑉
+𝑒−(𝑡−𝑏𝑣)) ( ∏
+𝑣∈𝑉
+𝑒−𝑢𝑣) .
+The first factor is the mass of the survival constraints; after normalization the second is the
+independent residual density. Later gaps are unrestricted coordinates. On this fixed index slice,
+the unused mark identities are fixed and disjoint from the observed ones, so their joint law is
+the original fair product law.
+For precision, take an observed-history event 𝐷 and a measurable condition 𝐶 on finitely many
+residual, later-gap and unused-mark coordinates, numbered from the first unarrived event at
+each site. On the fixed earlier-coordinate slice, the indicator of 𝐷 is unchanged while the current
+gaps vary above their survival thresholds. The density factorization separates this indicator from
+the probability of 𝐶. Integrating earlier coordinates and summing the index vectors gives
+ℙ(𝐷 ∩ {future coordinates satisfy 𝐶}) = ℙ(𝐷) 𝜇 future(𝐶),
+where 𝜇future is the prescribed product law. This proves the finite joint conditional laws used
+next. It is a deterministic-time statement; no arbitrary-stopping-time assertion is needed here.
+22
+
+PAGE 23
+For ℎ > 0 , exactly one arrival in (𝑡, 𝑡 + ℎ], at a specified site 𝑣 and with a specified mark 𝑏, has
+conditional probability
+1
+2 ∫
+ℎ
+0
+𝑒−𝑠𝑒−(ℎ−𝑠)𝑒−(𝐾−1)ℎ 𝑑𝑠 = ℎ2 𝑒−𝐾ℎ. (FM2)
+The factors describe the residual wait, the exclusion of a second arrival at that site, and the
+exclusion of arrivals at all other sites. The no-arrival probability is 𝑒−𝐾ℎ. These disjoint cases
+imply
+ℙ(at least two arrivals in (𝑡, 𝑡 + ℎ] ∣ ℋ 𝑡) = 1 − 𝑒 −𝐾ℎ(1 + 𝐾ℎ) ≤ 𝐾2ℎ22 , (FM3)
+using 1 − 𝑒 −𝑥(1 + 𝑥) = ∫𝑥0 𝑢𝑒−𝑢 𝑑𝑢 ≤ 𝑥 2/2. Arrivals that leave the state unchanged are stillcounted.
+Put 𝐵𝐺 = max𝑦∈𝒜 |𝐺(𝑦)|. On a one-arrival event the state is exactly 𝐹𝑣,𝑏(𝑌 (𝑡)). The exact
+one-arrival contribution is ℎ𝑒−𝐾ℎℒ𝐺(𝑌 (𝑡)), and |ℒ𝐺| ≤ 2𝐾𝐵 𝐺. Replacing 𝑒−𝐾ℎ by 1 costs at
+most 2𝐵𝐺𝐾2ℎ2. On the multiple-arrival event the observable changes by at most 2𝐵𝐺, and
+(FM3) bounds the additional cost by 𝐵𝐺𝐾2ℎ2. Thus
+𝔼[𝐺(𝑌 (𝑡 + ℎ)) − 𝐺(𝑌 (𝑡)) ∣ ℋ 𝑡] = ℎℒ𝐺(𝑌 (𝑡)) + 𝑅 𝑡,ℎ, |𝑅 𝑡,ℎ| ≤ 3𝐵 𝐺𝐾2ℎ2. (FM4)
+The estimate is uniform in the observed state and in 𝑡; closure of every 𝐹𝑣,𝑏 on 𝒜 ensures that
+all its terms are defined.
+For any 𝐴 ∶ 𝒜 → ℝ , changes between 𝑠 < 𝑡 require a ring in (𝑠, 𝑡]. Therefore
+|𝔼𝐴(𝑌 (𝑡)) − 𝔼𝐴(𝑌 (𝑠))| ≤ 2‖𝐴‖ ∞(1 − 𝑒−𝐾(𝑡−𝑠)) ≤ 2𝐾‖𝐴‖ ∞(𝑡 − 𝑠). (FM5)
+Apply this to 𝐺 and to the finite function ℒ𝐺. Their mean functions are continuous. Divide
+[0, 𝑇 ] into 𝑛 equal intervals, take expectations in (FM4), and sum. The total error is at most
+3𝐵𝐺𝐾2𝑇 2/𝑛, and the main term is the left Riemann sum for 𝔼ℒ𝐺(𝑌 (𝑠)). Letting 𝑛 → ∞
+proves (FM6). The fundamental theorem of calculus then gives
+𝑑
+𝑑𝑡 𝔼𝐺(𝑌 (𝑡)) = 𝔼ℒ𝐺(𝑌 (𝑡)) (𝑡 > 0), (FM7)
+with continuity at 0.
+On each regular trajectory, 𝑌 (𝑠−) and 𝑌 (𝑠) differ only at its countably many ring times. Thus
+bounded jointly measurable functions of these two states have equal time integrals. Fubini’s
+theorem permits the same replacement inside time integrals of expectations. This is the strict-
+before/end-point correspondence needed for event scores in §6.2.3. □
+The argument proves the identity directly from the given clocks. Its finite-state formula-
+tion does not identify arbitrary processes by a matching formal generator. In the artifact,
+MachineClockGenerator.expected_observable_dynkin_current gives this current-state
+identity, building on the strict-past compensation in MachineClockDynkin.expected_
+observable_dynkin. The state type and observable are arbitrary finite ones, while the site
+type remains the finite square DropletClockLaw.Vertex L .
+4. Proof of mixed local clearing
+4.1. Staircase states and their finite update generator
+We justify the particle representation used in Lemma 4, including the two endpoints of the
+particle path and the factor 1/2 in its generator. Fix an actual square side 𝑀 ≥ 2 . Lemma
+23
+
+PAGE 24
+4 uses 𝑀 = 2𝐿 + 1 ≥ 3 , but the correspondence below works for every 𝑀 ≥ 2 . The starting
+pattern may be any deterministic coordinatewise nondecreasing pattern; the filled black square
+is one such pattern.
+The mixed boundary and the shape. Write 𝑄𝑀 = {0, … , 𝑀 − 1} 2, with 𝑥 increasing
+eastward and 𝑦 northward. A cell has value 0 when white and 1 when black. Extend a pattern
+𝑓 ∶ 𝑄 𝑀 → {0, 1} to the whole integer lattice by
+̃𝑓(𝑥, 𝑦) =
+⎧{
+⎨{⎩
+𝑓(𝑥, 𝑦), (𝑥, 𝑦) ∈ 𝑄 𝑀 ,
+0, 𝑥 < 0 or 𝑦 < 0,
+1, otherwise.
+(E4.1)
+Thus the west and south exterior neighbours are white, and the east and north exterior neigh-
+bours are black. The second case takes priority, including outside corners. At a ring, a cell
+reads its four neighbours in this extension, takes their strict majority, and uses the fair mark
+when two are white and two are black. The cell’s old value is not an extra vote.
+Call 𝑓 nondecreasing if 𝑓(𝑥, 𝑦) ≤ 𝑓(𝑥 ′, 𝑦′) whenever 𝑥 ≤ 𝑥 ′ and 𝑦 ≤ 𝑦 ′. Its extension (E4.1) is
+also nondecreasing. A black exterior site has nonnegative coordinates and at least one coordinate
+at least 𝑀 , so every site northeast of it is black exterior. A black interior site forces black values
+northeast within 𝑄𝑀 by assumption, and beyond 𝑄𝑀 by the boundary rule. In row 𝑦, the white
+cells consequently form an initial segment. Let 𝜆𝑦 be their number. Then
+𝑓(𝑥, 𝑦) = 0 ⟺ 𝑥 < 𝜆 𝑦, 𝑀 ≥ 𝜆 0 ≥ 𝜆 1 ≥ ⋯ ≥ 𝜆 𝑀−1 ≥ 0. (E4.2)
+The lengths cannot increase as we move north: if a cell is white, every cell southwest of it is white.
+Conversely, every integer sequence satisfying these inequalities defines a unique nondecreasing
+pattern through (E4.2). This is the staircase shape we encode.
+Which cells can change? A black cell has black north and east neighbours. It can become
+white only when both its south and west neighbours are white, and then only with mark 0. Call
+it a removable black corner. If either south or west neighbour is black, at least three inputs
+are black, so neither mark changes the cell. A white cell has white south and west neighbours.
+It can become black only when both north and east neighbours are black, and then only with
+mark 1. Call it an addable black corner. If either north or east neighbour is white, at least
+three inputs are white and neither mark changes the cell. These two cases exhaust all cells and
+both marks.
+The row lengths locate the corners explicitly. In row 𝑦, a removable corner must be the first
+black cell, at 𝑥 = 𝜆 𝑦; an addable corner must be the last white cell, at 𝑥 = 𝜆 𝑦 − 1. The exact
+conditions and their effects are
+Changing cell in row
+𝑦 Condition Changing mark Row-length change
+Black (𝜆𝑦, 𝑦) 𝜆𝑦 < 𝑀 and either
+𝑦 = 0 or 𝜆𝑦−1 > 𝜆 𝑦
+0 𝜆𝑦 ↦ 𝜆 𝑦 + 1
+White (𝜆𝑦 − 1, 𝑦) 𝜆𝑦 > 0 and either
+𝑦 = 𝑀 − 1 or
+𝜆𝑦+1 < 𝜆 𝑦
+1 𝜆𝑦 ↦ 𝜆 𝑦 − 1
+For the first row of the table, the west neighbour is white by (E4.2), or by the west boundary
+when 𝜆𝑦 = 0. The south neighbour is white precisely under the listed condition, using the white
+south boundary at 𝑦 = 0 . For the second row, the east neighbour is black by (E4.2), or by the
+24
+
+PAGE 25
+east boundary when 𝜆𝑦 = 𝑀 . The north neighbour is black precisely under its listed condition,
+using the black north boundary at 𝑦 = 𝑀 − 1 .
+Each permitted row-length change preserves (E4.2). For an increase, the strict integer gap
+gives 𝜆𝑦 + 1 ≤ 𝜆 𝑦−1 when 𝑦 > 0 ; at 𝑦 = 0 , the condition 𝜆0 < 𝑀 gives the upper bound
+𝜆0 + 1 ≤ 𝑀 . For a decrease, the strict gap gives 𝜆𝑦 − 1 ≥ 𝜆 𝑦+1 when 𝑦 < 𝑀 − 1 ; at 𝑦 = 𝑀 − 1 ,
+positivity gives 𝜆𝑀−1 − 1 ≥ 0 . The inequality on the other side of the changed row is preserved
+automatically. All other rows stay fixed. Thus every marked single-cell update preserves the
+staircase shape, and induction gives the same statement for every finite event word. Rate-one
+clocks on the finite square have only finitely many rings in every bounded interval almost surely,
+so this shape statement applies to every clock trajectory on that event.
+A bijection with exactly 𝑀 particles. Label the rows from north to south by 𝑟 = 𝑀 − 1 − 𝑦
+and place particle 𝑟 at
+𝑃𝑟 = 𝑟 + 𝜆 𝑀−1−𝑟 , 𝑟 = 0, … , 𝑀 − 1. (E4.3)
+There are 2𝑀 slots, numbered 0, … , 2𝑀 − 1. The row bounds give 𝑟 ≤ 𝑃 𝑟 ≤ 𝑟 + 𝑀 ≤ 2𝑀 − 1 ,
+and consecutive particles satisfy
+𝑃𝑟+1 − 𝑃𝑟 = 1 + 𝜆 𝑀−2−𝑟 − 𝜆𝑀−1−𝑟 ≥ 1. (E4.4)
+The particles are therefore distinct and ordered. In particular, their number is exactly 𝑀 ,
+regardless of the black area.
+To see that no particle states are missing, start with any 𝑀 occupied slots and list them
+increasingly as 𝑃0 < ⋯ < 𝑃 𝑀−1 . The 𝑟 particles to the left force 𝑃𝑟 ≥ 𝑟 . The 𝑀 − 1 − 𝑟
+particles to the right force
+𝑃𝑟 ≤ (2𝑀 − 1) − (𝑀 − 1 − 𝑟) = 𝑀 + 𝑟.
+Also 𝑃𝑟+1 − 𝑃𝑟 ≥ 1 , so (𝑃𝑟+1 − (𝑟 + 1)) − (𝑃 𝑟 − 𝑟) ≥ 0 : the offsets 𝑃𝑟 − 𝑟 are nondecreasing.
+Define
+𝜆𝑦 = 𝑃 𝑀−1−𝑦 − (𝑀 − 1 − 𝑦), 𝑓(𝑥, 𝑦) = { 0, 𝑥 < 𝜆 𝑦,1, 𝑥 ≥ 𝜆 𝑦. (E4.5)
+The bounds just proved show that these are ordinary nonnegative integer differences in [0, 𝑀 ],
+and the reversed offsets give the decreasing lengths in (E4.2). Substitution into (E4.3) returns
+the given particle positions. Starting instead with a staircase, (E4.5) returns its original lengths
+and hence its original cells. Thus encoding and decoding undo one another. We have a bijection
+between nondecreasing square patterns and subsets of exactly 𝑀 slots in a path of length 2𝑀 .
+The all-black square has 𝜆𝑦 = 0 and particles {0, … , 𝑀 − 1}. The all-white square has 𝜆𝑦 = 𝑀
+and particles {𝑀 , … , 2𝑀 − 1}. Neither description treats particle number as black area.
+Corner flips are exactly the legal adjacent swaps. Let 𝜂𝑖 = 1 when slot 𝑖 is occupied
+and 0 otherwise. A legal right hop moves a particle from 𝑖 to a vacant slot 𝑖 + 1 within the
+path; equivalently it changes the adjacent pair 10 to 01. A legal left hop moves a particle to
+the vacant slot immediately to its left, changing 01 to 10.
+For a removable corner in row 𝑦, only 𝜆𝑦 increases, so only particle 𝑟 = 𝑀 − 1 − 𝑦 moves, from
+𝑃𝑟 to 𝑃𝑟 + 1. For an addable corner, the same label moves from 𝑃𝑟 to 𝑃𝑟 − 1. We check both
+that the destinations are vacant and that every legal hop arises this way.
+If 𝑦 > 0 , the next particle to the right is the one for row 𝑦 − 1, and
+𝑃𝑟+1 − 𝑃𝑟 = 1 + 𝜆 𝑦−1 − 𝜆𝑦.
+25
+
+PAGE 26
+The slot 𝑃𝑟 + 1 is vacant exactly when 𝜆𝑦−1 > 𝜆 𝑦. This strict inequality also implies 𝜆𝑦 < 𝑀 ,
+since 𝜆𝑦−1 ≤ 𝑀 . If 𝑦 = 0 , this is the last particle: its right destination exists exactly when
+𝑃𝑀−1 + 1 = 𝑀 + 𝜆 0 < 2𝑀 , that is, 𝜆0 < 𝑀 ,
+and there is no particle farther right to block it. For either row position, the right hop exists
+and is vacant if and only if the black cell in the first row of the corner table can be removed.
+For a left hop with 𝑦 < 𝑀 − 1 , the preceding particle represents row 𝑦 + 1, and
+𝑃𝑟 − 𝑃𝑟−1 = 1 + 𝜆 𝑦 − 𝜆𝑦+1.
+The slot 𝑃𝑟 − 1 is vacant exactly when 𝜆𝑦 > 𝜆 𝑦+1. This also forces 𝜆𝑦 > 0 . If 𝑦 = 𝑀 − 1 , this
+is the first particle, at 𝑃0 = 𝜆 𝑀−1 : the left destination exists exactly when 𝜆𝑀−1 > 0 , with no
+earlier particle to block it. For either row position, the left hop exists and is vacant if and only
+if the white cell in the second row of the corner table can become black. The left and right path
+endpoints therefore introduce no extra transitions and lose no boundary corners.
+An unequal bond also identifies its corner uniquely. For a 10 bond, its occupied left slot identifies
+one label 𝑟, then one row 𝑦 = 𝑀 −1−𝑟 and the black cell (𝜆𝑦, 𝑦). For a 01 bond, its occupied right
+slot similarly identifies (𝜆𝑦 − 1, 𝑦). Thus active corners and unequal adjacent bonds correspond
+one to one, with the correct orientation. No bond is counted twice.
+The actual fair update operator. Write 𝑈 𝑎𝑣 𝑓 for the original majority update at cell 𝑣 with
+mark 𝑎 ∈ {0, 1} , and Enc 𝑓 = 𝜂 for the occupation field. For any real function 𝐹 of the particle
+state, the finite marked-cell operator is
+𝒜(𝐹 ∘ Enc)(𝑓) = ∑
+𝑣∈𝑄𝑀
+[ 𝐹 (Enc(𝑈 0𝑣 𝑓)) + 𝐹 (Enc(𝑈 1𝑣 𝑓))2 − 𝐹 (𝜂)] . (E4.6)
+This is the infinitesimal drift of the actual marked-clock update. To check the coeﬀicient, use
+independence and the memorylessness of the rate-one exponential gaps. With 𝑀 fixed and
+ℎ ↓ 0 , exactly one ring at a specified cell and no rings elsewhere in an interval of length ℎ has
+probability ℎ𝑒−𝑀 2ℎ = ℎ + 𝑂(ℎ 2), whereas two or more total rings have probability 𝑂(ℎ2). The
+mark at the single ring is independently fair. Every 𝐹 is bounded on this finite state space,
+so the multiple-ring contribution divided by ℎ tends to zero. Each named cell therefore has
+coeﬀicient one in (E4.6). At an inactive cell both terms return 𝐹 (𝜂). At an active corner,
+the mark equal to the old cell value leaves the state fixed, while the opposite mark performs
+its unique bond swap. If 𝜂𝑖,𝑖+1 denotes 𝜂 with slots 𝑖 and 𝑖 + 1 exchanged, the one-to-one
+correspondence above turns (E4.6) into
+𝒜(𝐹 ∘ Enc)(𝑓) = 12 2𝑀−2∑𝑖=0 [𝐹 (𝜂𝑖,𝑖+1) − 𝐹 (𝜂)]. (E4.7)
+An equal pair contributes zero because its swap changes nothing. Each bond appears once,
+oriented from its smaller slot to its larger slot. Consequently every legal exchange has rate
+exactly 1/2, with no additional factor for its two directions. There are no exchanges beyond the
+endpoints and no particle creation or removal. Equation (E4.7) is the finite symmetric exclusion
+update generator with this rate convention.
+The calculation identifies the original marked update operator. It does not, by itself, establish
+a stochastic-law identification or the moment evolution used in Lemma 4. The moment argu-
+ment that follows derives the expectation equations directly from the original independent gap
+and mark fields, using (E4.7) for their drift. This keeps the deterministic encoding and the
+probabilistic evolution as separate steps.
+26
+
+PAGE 27
+A six-slot example. For 𝑀 = 3 , take
+(𝜆0, 𝜆1, 𝜆2) = (2, 1, 0).
+The bottom, middle and top rows are respectively 001, 011 and 111, read from west to east.
+Formula (E4.3) gives (𝑃0, 𝑃1, 𝑃2) = (0, 2, 4) , or 𝜂 = 101010 on slots 0, … , 5. There are five
+unequal bonds; every one has exactly the indicated cell and changing mark:
+Bond
+Pair before the
+update Cell (𝑥, 𝑦) Changing mark New (𝜆0, 𝜆1, 𝜆2)
+0–1 10 (0, 2) 0 (2, 1, 1)
+1–2 01 (0, 1) 1 (2, 0, 0)
+2–3 10 (1, 1) 0 (2, 2, 0)
+3–4 01 (1, 0) 1 (1, 1, 0)
+4–5 10 (2, 0) 0 (3, 1, 0)
+For example, (1, 1) is initially black, its north and east neighbours are black, and its south and
+west neighbours are white. Mark 0 makes it white, changing the particle positions from (0, 2, 4)
+to (0, 3, 4) and the occupation word from 101010 to 100110. Mark 1 leaves it fixed. Decoding
+the new positions directly gives 𝜆0 = 4 − 2 = 2 , 𝜆1 = 3 − 1 = 2 and 𝜆2 = 0 − 0 = 0 , recovering
+the listed square. After this flip, the reverse move at the same now-white cell uses mark 1. The
+particle number remains three while the black area decreases from six cells to five. All five rows
+of the table can be checked in the same way from (E4.3) and (E4.5).
+The mixed process is used at a fixed time, not at an absorbing all-white state. In an all-white
+mixed square, the northeast cell still sees black exterior neighbours to the north and east and
+white neighbours to the south and west. Its mark- 1 update can make it black. This does not
+affect the encoding or Lemma 4: only the white-block event at the specified time is needed.
+4.2. Actual clock moments and nonpositive covariance
+This subsection starts after the staircase encoding and its corner calculation. Fix an integer
+𝐿 ≥ 1 , actual mixed-square side 𝑀 = 2𝐿 + 1 , and a deterministic coordinatewise nondecreasing
+initial pattern, as in Lemma 4. Set
+𝐼 = {0, … , 2𝑀 − 1}, 𝐸 = {(𝑎, 𝑎 + 1) ∶ 0 ≤ 𝑎 < 2𝑀 − 1}.
+Each undirected path edge is listed once. For 𝑒 = (𝑎, 𝑎 + 1) , let 𝜎𝑒 ∶ 𝐼 → 𝐼 exchange 𝑎 and
+𝑎 + 1 and fix every other slot. For an occupation field 𝜂 ∈ {0, 1} 𝐼, define 𝜂𝑒𝑖 = 𝜂 𝜎𝑒(𝑖). The
+corner calculation gives the following equality for every monotone square state 𝑓, its encoded
+occupation field 𝜂, and every real function 𝐹 on the finite occupation space:
+∑
+𝑣∈𝑄𝑀
+{ 𝐹 (𝜂(Φ0𝑣𝑓)) + 𝐹 (𝜂(Φ 1𝑣𝑓))2 − 𝐹 (𝜂(𝑓))}
+= ℒ𝐹 (𝜂), ℒ𝐹 (𝜂) = 12 ∑𝑒∈𝐸[𝐹 (𝜂𝑒) − 𝐹 (𝜂)]. (MC1)
+Here Φ𝑏𝑣𝑓 means one actual mixed-boundary update at cell 𝑣 with mark 𝑏. The left side averages
+its two fair marks. Equation (MC1) specifies rate 1/2 per listed bond; it does not yet prove an
+evolution equation for a random process.
+We now prove that (MC1) governs the occupation field 𝜂(𝑡) obtained from the original indepen-
+dent cell clocks, at physical time 𝑡. In particular, we do not define its moments by an ordinary
+differential equation.
+27
+
+PAGE 28
+4.2.1. Application of the finite-state observable identity Use §3.4 on the side- 𝑀 =
+2𝐿 + 1 mixed square, translating its sites if necessary. Take 𝒜 to be the finite set of coor-
+dinatewise nondecreasing square patterns, 𝑦0 the specified deterministic initial pattern, and
+𝐹𝑣,𝑏 = Φ 𝑏𝑣. The shape argument of §4.1 proves closure under both marks at every site. Its
+staircase map 𝑓 ↦ 𝜂(𝑓) is deterministic. Thus any function 𝐹 on the finite occupation space
+gives the observable 𝐺(𝑓) = 𝐹 (𝜂(𝑓)) on 𝒜.
+Equation (MC1) identifies the increment operator (FM1) of this observable with the exclusion
+operator ℒ𝐹 evaluated at 𝜂(𝑓) . Applying (FM6) therefore gives, under the original cell-clock
+and mark law,
+𝔼𝐹 (𝜂(𝑇 )) = 𝐹 (𝜂(0)) + ∫
+𝑇
+0
+𝔼ℒ𝐹 (𝜂(𝑠)) 𝑑𝑠. (MC6)
+The initial state is deterministic. By (FM5)–(FM7), the mean is continuous at 0 and
+𝑑
+𝑑𝑡 𝔼𝐹 (𝜂(𝑡)) = 𝔼ℒ𝐹 (𝜂(𝑡)) (𝑡 > 0). (MC7)
+This application uses both the update-by-update encoding and the actual clock identity. A
+finite algebraic equality of operators alone would not supply the stochastic evolution equation.
+4.2.2. The genuine one- and two-point equations Define the first moments and the
+distinct-slot second moments by
+𝜌𝑖(𝑡) = 𝔼𝜂 𝑖(𝑡), 𝑔 𝑖𝑗(𝑡) = 𝔼[𝜂 𝑖(𝑡)𝜂𝑗(𝑡)] (𝑖 ≠ 𝑗).
+Both factors in 𝑔𝑖𝑗 use the same sample. Thus 𝑔𝑖𝑗 = 𝑔 𝑗𝑖 by commutativity of multiplication,
+without any independence assertion. Their initial values are
+𝜌𝑖(0) = 𝜂 𝑖(0), 𝑔 𝑖𝑗(0) = 𝜂 𝑖(0)𝜂𝑗(0). (MC8)
+Every sample has exactly 𝑀 particles by the encoding, so finite linearity of expectation also
+gives ∑𝑖∈𝐼 𝜌𝑖(𝑡) = 𝑀 .
+For a real slot field 𝑟 and a real field ℎ on distinct ordered pairs, introduce
+(𝐴𝑟)𝑖 = 12 ∑𝑒∈𝐸[𝑟𝜎𝑒(𝑖) − 𝑟𝑖], (𝐵ℎ) 𝑖𝑗 = 12 ∑𝑒∈𝐸[ℎ𝜎𝑒(𝑖),𝜎𝑒(𝑗) − ℎ𝑖𝑗]. (MC9)
+The pair operator uses the same edge on both indices. A swap is one-to-one, so 𝑖 ≠ 𝑗 implies
+𝜎𝑒(𝑖) ≠ 𝜎 𝑒(𝑗). Consequently 𝐵 is a finite operator on distinct pairs; it never calls for a diagonal
+value ℎ𝑖𝑖.
+Apply (MC6) to 𝐹 (𝜂) = 𝜂 𝑖 and to 𝐹 (𝜂) = 𝜂 𝑖𝜂𝑗. A swap changes these observables to 𝜂𝜎𝑒(𝑖)
+and 𝜂𝜎𝑒(𝑖)𝜂𝜎𝑒(𝑗), respectively. Every summand is bounded, and the sums are finite. Expectation
+therefore passes through them, giving the actual integral equations
+𝜌𝑖(𝑇 ) = 𝜂 𝑖(0) + ∫
+𝑇
+0
+(𝐴𝜌(𝑠))𝑖 𝑑𝑠, 𝑔 𝑖𝑗(𝑇 ) = 𝜂 𝑖(0)𝜂𝑗(0) + ∫
+𝑇
+0
+(𝐵𝑔(𝑠))𝑖𝑗 𝑑𝑠. (MC10)
+Their components are continuous at 0 and continuously differentiable for 𝑡 > 0 , by (FM5),
+(MC6) and (MC7). In particular,
+𝜌′𝑖 = (𝐴𝜌) 𝑖, 𝑔 ′𝑖𝑗 = (𝐵𝑔) 𝑖𝑗 (𝑖 ≠ 𝑗). (MC11)
+Writing 𝑘 ∼ 𝑖 for adjacent slots of the path, the first equation is
+𝜌′𝑖 = 12 ∑𝑘∼𝑖(𝜌𝑘 − 𝜌𝑖). (MC12)
+28
+
+PAGE 29
+There is one neighbour at each endpoint and two at an interior slot. The second equation can
+be written
+𝑔′𝑖𝑗 = 12 ∑𝑘∼𝑖
+𝑘≠𝑗
+(𝑔𝑘𝑗 − 𝑔𝑖𝑗) + 12 ∑𝑘∼𝑗
+𝑘≠𝑖
+(𝑔𝑖𝑘 − 𝑔𝑖𝑗). (MC13)
+To justify the omitted connecting edge: if an edge joins 𝑖 and 𝑗, its single term in (MC9) is
+(𝑔𝑗𝑖 − 𝑔𝑖𝑗)/2 = 0 by the proved symmetry. Every edge touching exactly one index appears once
+in (MC13); an edge touching neither contributes zero. No second moment is replaced by a
+product of first moments.
+4.2.3. The covariance equation and its source Let
+𝒫 = {(𝑖, 𝑗) ∈ 𝐼 2 ∶ 𝑖 ≠ 𝑗}, 𝑞 𝑖𝑗(𝑡) = 𝑔 𝑖𝑗(𝑡) − 𝜌𝑖(𝑡)𝜌𝑗(𝑡).
+This is the off-diagonal covariance. The map (𝑖, 𝑗) ↦ (𝜎 𝑒(𝑖), 𝜎𝑒(𝑗)) is a permutation of 𝒫 and is
+its own inverse. We keep the full pair operator 𝐵 from (MC9). In particular, we do not discard
+an edge term by treating the two indices as independent walkers.
+Subtract the product derivative in (MC11). With 𝑟𝑖𝑗 = 𝜌 𝑖𝜌𝑗, finite linearity gives
+𝑞′𝑖𝑗 = (𝐵𝑞) 𝑖𝑗 − 𝑆𝑖𝑗, 𝑆 𝑖𝑗 = (𝐴𝜌) 𝑖𝜌𝑗 + 𝜌𝑖(𝐴𝜌)𝑗 − (𝐵𝑟)𝑖𝑗. (MC14)
+We compute the source edge by edge. For one edge set 𝑥 = 𝜌 𝑖, 𝑦 = 𝜌 𝑗, 𝑥𝑒 = 𝜌 𝜎𝑒(𝑖), and
+𝑦𝑒 = 𝜌 𝜎𝑒(𝑗). Its contribution to 𝑆𝑖𝑗 is
+(𝑥𝑒 − 𝑥)𝑦 + 𝑥(𝑦 𝑒 − 𝑦) − (𝑥 𝑒𝑦𝑒 − 𝑥𝑦)
+2 = − (𝑥𝑒 − 𝑥)(𝑦𝑒 − 𝑦)2 . (MC15)
+If the edge touches neither index or only one, at least one factor on the right vanishes. If it
+joins the distinct indices, 𝑥𝑒 = 𝑦 and 𝑦𝑒 = 𝑥, so its contribution is (𝑥 − 𝑦) 2/2. There is exactly
+one such listed edge when |𝑖 − 𝑗| = 1 , and none otherwise. Hence
+𝑆𝑖𝑗(𝑡) = 12 1{|𝑖−𝑗|=1}[𝜌𝑖(𝑡) − 𝜌𝑗(𝑡)]2 ≥ 0. (MC16)
+Equations (MC14)–(MC16) contain all pair-transport terms and the complete source. For the
+connecting edge itself, (𝐵𝑞)𝑖𝑗 has term (𝑞𝑗𝑖 − 𝑞𝑖𝑗)/2 = 0 , since 𝑞 is symmetric. Its nonzero effect
+on the product of the two means is precisely the source in (MC16).
+For a numerical check of that local calculation, take adjacent indices with 𝜌𝑖 = 3/4 , 𝜌𝑗 = 1/4 ,
+and symmetric 𝑔𝑖𝑗 = 𝑔 𝑗𝑖 = 1/8 at an instant. The contribution of their connecting edge alone
+is −1/4 to 𝜌′𝑖, 1/4 to 𝜌′𝑗, and zero to 𝑔′𝑖𝑗. It contributes
+(−1/4)(1/4) + (3/4)(1/4) = 1/8
+to (𝜌𝑖𝜌𝑗)′, and therefore −1/8 to 𝑞′𝑖𝑗. This agrees with −(3/4 − 1/4)2/2 = −1/8 . It is an algebra
+check on one edge, not a proposed full square state or a claim that other edges have no effect.
+4.2.4. A finite comparison proof, including time zero For a real number 𝑥, write
+𝑥+ = max{𝑥, 0} and define
+ℰ(𝑡) = ∑
+(𝑖,𝑗)∈𝒫
+[(𝑞𝑖𝑗(𝑡))+]2.
+The function 𝑥 ↦ (𝑥 +)2 is continuously differentiable, including at 𝑥 = 0 , with derivative 2𝑥+.
+Thus ℰ is continuous for 𝑡 ≥ 0 and differentiable for 𝑡 > 0 .
+29
+
+PAGE 30
+We check why pair transport cannot increase this energy. Fix a time and suppress it in the next
+two displays. Write 𝑝 = (𝑖, 𝑗) and 𝜎𝑒𝑝 = (𝜎 𝑒(𝑖), 𝜎𝑒(𝑗)). Because 𝜎𝑒 is an involutive permutation
+of 𝒫, reindexing the finite sum gives
+∑
+𝑝∈𝒫
+(𝑞𝑝)+(𝑞𝜎𝑒𝑝 − 𝑞𝑝) = − 12 ∑𝑝∈𝒫((𝑞𝜎𝑒𝑝)+ − (𝑞𝑝)+)(𝑞𝜎𝑒𝑝 − 𝑞𝑝)
+≤ 0.
+(MC17)
+The inequality follows because 𝑥 ↦ 𝑥 + is nondecreasing: the two factors in each product have
+the same sign. More explicitly, the sum on the left becomes − ∑𝑝(𝑞𝜎𝑒𝑝)+(𝑞𝜎𝑒𝑝 − 𝑞 𝑝) after
+reindexing; adding these two expressions proves the equality.
+Use (MC14), the factor 1/2 in 𝐵, and 𝑆𝑝 ≥ 0. For 𝑡 > 0 ,
+ℰ′(𝑡) = 2 ∑
+𝑝∈𝒫
+(𝑞𝑝)+[(𝐵𝑞)𝑝 − 𝑆𝑝]
+= ∑
+𝑒∈𝐸
+∑
+𝑝∈𝒫
+(𝑞𝑝)+(𝑞𝜎𝑒𝑝 − 𝑞𝑝) − 2 ∑
+𝑝∈𝒫
+(𝑞𝑝)+𝑆𝑝 ≤ 0.
+(MC18)
+The deterministic initial state gives 𝑞𝑖𝑗(0) = 0 by (MC8), so ℰ(0) = 0 . For 0 < 𝑠 < 𝑡 , the mean
+value theorem and (MC18) imply ℰ(𝑡) ≤ ℰ(𝑠) . Let 𝑠 ↓ 0 and use continuity at zero. Then
+0 ≤ ℰ(𝑡) ≤ 0 . Every nonnegative summand vanishes, and we conclude
+Cov(𝜂𝑖(𝑡), 𝜂𝑗(𝑡)) = 𝑞 𝑖𝑗(𝑡) ≤ 0 (𝑡 ≥ 0, 𝑖 ≠ 𝑗). (MC19)
+The argument applies to the actual mixed clock process from each deterministic monotone
+initial pattern. It makes no assertion that different occupations are independent. The diagonal
+variance remains 𝜌𝑖(1 − 𝜌𝑖); it was never included among the comparison states.
+4.3. F rom moments to a white block
+We now prove the estimates in Lemma 4 using the actual moments derived in §4.2. The square
+side is 𝑀 , the particle path has 𝑛 = 2𝑀 slots, and each listed path bond has rate 1/2. The
+initial staircase is deterministic; in Lemma 4, 𝑀 = 2𝐿 + 1 with 𝐿 ≥ 1 . Write 𝑢𝑖(𝑡) = 𝜌 𝑖(𝑡) − 1/2
+for 0 ≤ 𝑖 < 𝑛 , and recall
+𝐻(𝑡) =
+𝑛−1
+∑
+𝑖=0
+𝑢𝑖(𝑡)2, 𝐷(𝑡) =
+𝑛−2
+∑
+𝑖=0
+(𝑢𝑖+1(𝑡) − 𝑢𝑖(𝑡))2. (H1)
+There are always exactly 𝑀 particles, so ∑𝑖 𝑢𝑖(𝑡) = 0 . These are expectations under the original
+clock and mark law. No assertion of independent particle occupations is used.
+Energy and the time scale. The first-moment equation in §4.2 is 𝑢′𝑖 = 12 ∑𝑗∶ |𝑗−𝑖|=1(𝑢𝑗 − 𝑢𝑖),
+with only neighbours that belong to the path. Thus, for 𝑡 > 0 ,
+𝐻 ′(𝑡) = ∑
+𝑖
+𝑢𝑖 ∑
+𝑗∶ |𝑗−𝑖|=1
+(𝑢𝑗 − 𝑢𝑖)
+=
+𝑛−2
+∑
+𝑖=0
+[𝑢𝑖(𝑢𝑖+1 − 𝑢𝑖) + 𝑢𝑖+1(𝑢𝑖 − 𝑢𝑖+1)] = −𝐷(𝑡).
+The factor two from differentiating a square has cancelled the bond rate 1/2. Each bond occurs
+once in 𝐷.
+30
+
+PAGE 31
+Here is a direct finite-path estimate. Suppress 𝑡 and use ∑𝑗 𝑢𝑗 = 0 to write
+𝑢𝑖 = 1𝑛 𝑛−1∑𝑗=0(𝑢𝑖 − 𝑢𝑗), 𝑢 2𝑖 ≤ 1𝑛 𝑛−1∑𝑗=0(𝑢𝑖 − 𝑢𝑗)2. (H2)
+For any 𝑖, 𝑗, telescope along the segment of the path between them. Cauchy–Schwarz gives
+(𝑢𝑖 − 𝑢𝑗)2 ≤ |𝑖 − 𝑗|
+max(𝑖,𝑗)−1
+∑
+𝑎=min(𝑖,𝑗)
+(𝑢𝑎+1 − 𝑢𝑎)2 ≤ 𝑛𝐷.
+For 𝑖 = 𝑗 , the left side and the segment sum are zero. Substituting the bound into (H2) gives
+𝑢2𝑖 ≤ 𝑛𝐷, and summing over 𝑖 proves
+𝐻(𝑡) ≤ 𝑛 2𝐷(𝑡) = 4𝑀 2𝐷(𝑡). (H3)
+This is a deliberately loose Poincaré inequality: it bounds displacement from the mean by
+differences across adjacent slots.
+Initially every 𝜌𝑖(0) is either 0 or 1, so every 𝑢𝑖(0)2 = 1/4 and 𝐻(0) = 𝑀 /2 . Equations (18)
+and (H3) imply
+𝑑
+𝑑𝑡 (𝑒𝑡/(4𝑀 2)𝐻(𝑡)) ≤ 0 (𝑡 > 0).
+The moments, and hence 𝐻, are continuous at zero. Apply the mean value theorem on [𝑠, 𝑡] for
+0 < 𝑠 < 𝑡 and let 𝑠 decrease to zero. We obtain
+𝐻(𝑡) ≤ 𝑀2 𝑒−𝑡/(4𝑀 2) (𝑡 ≥ 0). (H4)
+The quadratic time scale comes from the length 2𝑀 in (H3), rather than a change from clock
+time to parallel rounds.
+The count in the right half. Let 𝐼+ = {𝑀 , … , 2𝑀 − 1} and 𝐽 (𝑡) = ∑ 𝑖∈𝐼+ 𝜂𝑖(𝑡). Since this
+sum has 𝑀 terms, Cauchy–Schwarz gives
+∣𝔼𝐽 (𝑡) − 𝑀2 ∣2 = ∣∑𝑖∈𝐼+ 𝑢𝑖(𝑡)∣
+2
+≤ 𝑀 ∑
+𝑖∈𝐼+
+𝑢𝑖(𝑡)2 ≤ 𝑀 𝐻(𝑡). (H5)
+Set 𝑡∗ = 16𝑀 2. Since 𝑒−4 ≤ 1/8, (H4) gives 𝐻(𝑡 ∗) ≤ 𝑀 /16 and consequently
+𝔼𝐽 (𝑡∗) ≥ 𝑀 /4. (H6)
+For example, the elementary series bound 𝑒4 ≥ 1 + 4 + 42/2 = 13 already justifies the numerical
+estimate on 𝑒−4.
+For the variance, expand the square of the finite sum under the same sample law:
+Var 𝐽 (𝑡) = ∑
+𝑖∈𝐼+
+Var 𝜂𝑖(𝑡) + 2 ∑
+𝑖,𝑗∈𝐼+
+𝑖<𝑗
+Cov(𝜂𝑖(𝑡), 𝜂𝑗(𝑡)).
+The off-diagonal covariance theorem from §4.2 makes the second sum nonpositive. Since each
+𝜂𝑖 is a zero-or-one variable, its variance is 𝜌𝑖(1 − 𝜌𝑖). Therefore
+Var 𝐽 (𝑡) ≤ ∑
+𝑖∈𝐼+
+𝜌𝑖(𝑡)(1 − 𝜌𝑖(𝑡)) ≤ 𝑀 /4. (H7)
+31
+
+PAGE 32
+In fact 0 ≤ 𝐽 (𝑡) ≤ 𝑀 and 0 ≤ 𝜂 𝑖(𝑡) ≤ 1 . Thus all first and second moments in the finite
+expansions are integrable, before any variance bound is used. The sign concerns distinct slots;
+the individual Bernoulli variances in (H7) remain nonnegative.
+Why many right-half particles clear a square. Use the encoding 𝑃𝑟 = 𝑟 + 𝜆 𝑀−1−𝑟 from
+(14). Put 𝑑 = 𝑀 − 1 − 𝑟 . Then
+𝑃𝑟 ≥ 𝑀 ⟺ 𝜆 𝑑 ≥ 𝑑 + 1 ⟺ 𝑓(𝑑, 𝑑) = 0. (H8)
+Thus 𝐽 counts white diagonal cells of the staircase. Their indices form an initial segment of
+{0, … , 𝑀 − 1}: if 𝑓(𝑑, 𝑑) = 0 and 0 ≤ 𝑎 ≤ 𝑑 , monotonicity gives 𝑓(𝑎, 𝑎) = 0 . If 𝐽 ≥ 𝑁 ≥ 1 , the
+cell (𝑁 − 1, 𝑁 − 1) is white, and every site southwest of it is white by the same coordinatewise
+order. Hence the entire southwest 𝑁 by 𝑁 block is white.
+For 1 ≤ 𝑁 ≤ 𝑀 /8 , failure of this event implies 𝐽 (𝑡∗) < 𝑁 and, by (H6),
+|𝐽 (𝑡∗) − 𝔼𝐽 (𝑡∗)| ≥ 𝑀 /8.
+Chebyshev’s inequality and (H7) prove
+ℙ(southwest 𝑁 by 𝑁 block is not all white at 𝑡∗) ≤ 𝑀 /4(𝑀 /8)2 = 16𝑀 . (H9)
+For 𝑁 = 0 the block is empty and the failure probability is zero. This proves Lemma 4 at
+physical time 16𝑀 2. It is a fixed-time local event, with no absorption claim for the mixed-
+boundary process. The retained-clock comparison in §7 is needed to apply it to the smaller
+zero-boundary process.
+5. Static geometry behind the weighted lower tail
+The geometric question in Lemma 3 is why losing one protected site should cost a cubic amount
+of weighted missing area. One site’s weight is only of order 𝐿. We will find a block with order
+𝐿2 missing sites and sum its varying weights exactly. The argument first applies to finite sets
+with specified convexity and connectivity properties; §6.4 then verifies those properties for the
+actual evolving and frozen outputs.
+5.1. The domain, protection, and missing weight
+Work on the integer lattice ℤ2. For 𝑧 = (𝑧 1, 𝑧2) write ‖𝑧‖1 = |𝑧 1| + |𝑧2|. Fix an integer 𝐿 ≥ 80
+and define
+𝐷𝐿 = {𝑧 ∈ ℤ 2 ∶ |𝑧 1| ≤ 𝐿, |𝑧 2| ≤ 𝐿, ‖𝑧‖ 1 ≤ 𝐿 + 1}. (SG1)
+Thus 𝐷𝐿 is a square clipped by a diamond. Define the inner protected diamond and its outer
+nearest-neighbour boundary by
+𝐴𝐿 = {𝑧 ∈ ℤ 2 ∶ 10‖𝑧‖ 1 ≤ 9𝐿}, 𝜕 out𝐴𝐿 = {𝑧 ∉ 𝐴 𝐿 ∶ ‖𝑧 − 𝑎‖ 1 = 1 for some 𝑎 ∈ 𝐴 𝐿},
+and put
+𝑃𝐿 = 𝐴 𝐿 ∪ 𝜕out𝐴𝐿. (SG2)
+Here nearest neighbours differ by one unit in exactly one coordinate. The outer boundary
+belongs to the protected set. If 𝑞 ∈ 𝑃 𝐿, then either 𝑞 ∈ 𝐴 𝐿 or 𝑞 is one nearest-neighbour step
+from some 𝑎 ∈ 𝐴 𝐿. In both cases the triangle inequality gives
+‖𝑞‖1 ≤ 910 𝐿 + 1. (SG3)
+Since 𝐿 ≥ 80 , the right side is at most 𝐿, so 𝑃𝐿 ⊆ 𝐷 𝐿.
+32
+
+PAGE 33
+The weight and the weighted missing area of any finite set 𝑆 ⊆ ℤ 2 are
+𝑤𝐿(𝑧) = 𝐿 + 2 − ‖𝑧‖ 1, 𝑉 𝐿(𝑆) = ∑
+𝑧∈𝐷𝐿∖𝑆
+𝑤𝐿(𝑧). (SG4)
+Every term in this sum is at least one, because ‖𝑧‖1 ≤ 𝐿 + 1 on 𝐷𝐿. In particular, 𝑉𝐿(𝑆) ≥ 0 .
+We will bound it below by counting only a small block of missing sites.
+Call 𝑆 row-convex if, whenever (𝑎, 𝑦), (𝑏, 𝑦) ∈ 𝑆 and 𝑎 ≤ 𝑐 ≤ 𝑏 are integers, (𝑐, 𝑦) ∈ 𝑆 . Define
+column-convexity by the corresponding condition on vertical lines. These conditions say that
+each nonempty row or column of 𝑆 is an interval of lattice sites. Say that 𝑆 is nearest-neighbour
+connected if any two of its sites can be joined by a finite path within 𝑆, each step changing one
+coordinate by 1 or −1 and leaving the other coordinate fixed. A path of length zero is allowed.
+We also allow 𝑆 = ∅ ; the condition on pairs of sites then holds vacuously.
+Static protected-loss lemma. If 𝑆 is finite, row-convex, column-convex, and nearest-
+neighbour connected, then
+𝑃𝐿 ⊈ 𝑆 ⟹ 𝑉 𝐿(𝑆) ≥ 𝐿312500 . (SG5)
+No assumption that 𝑆 ⊆ 𝐷 𝐿 is needed: 𝑉𝐿(𝑆) counts only missing sites inside 𝐷𝐿. The proof
+has two steps: locate an entirely empty quadrant at a missing protected point, then place a
+square block of missing sites inside it.
+Figure 3. Static geometry for 𝐿 = 80 . The domain view shows 𝐷80 and the protected set 𝑃80, including
+the outer boundary of 𝐴80. The local view uses 𝑞 = (72, 1) and 𝑆 = {(73, 1), (72, 2), (73, 2)} . Its strict
+southwest quadrant contains the full 4 by 4 vacant block used in (SG7). The sixteen displayed weights sum
+to 176, above both the aﬀine lower sum 64 and the cubic threshold 40.96. This is a static configuration;
+it is not asserted to be a modified-trajectory state.
+33
+
+PAGE 34
+5.2. A vacant site has an empty strict quadrant
+For signs 𝜎, 𝜏 ∈ {−1, 1} define
+𝑄𝜎,𝜏 (𝑞) = {𝑞 + (𝜎𝑎, 𝜏 𝑏) ∶ 𝑎, 𝑏 ∈ ℤ, 𝑎 ≥ 1, 𝑏 ≥ 1}. (SG6)
+These are the four strict coordinate quadrants at 𝑞 = (𝑞 1, 𝑞2). For example, 𝑄−1,−1(𝑞) is strictly
+southwest of 𝑞. None contains 𝑞 or any site on its horizontal or vertical axes.
+We claim that if 𝑞 ∉ 𝑆 and 𝑆 has the convexity and connectivity properties above, then at least
+one 𝑄𝜎,𝜏 (𝑞) is disjoint from 𝑆. If 𝑆 is empty, all four quadrants are empty. Assume henceforth
+that 𝑆 is nonempty.
+Suppose first that the row through 𝑞 has no occupied site. If 𝑆 contained a site below that row
+and another above it, a nearest-neighbour path between them would have to meet that row:
+its second coordinate changes by at most one per step. This contradicts the empty row. All
+of 𝑆 therefore lies strictly on one side of that row, and both strict quadrants on the other side
+are empty. The same argument applies when the column through 𝑞 is empty, using the first
+coordinate of a path.
+It remains to consider the case in which both the row and the column through 𝑞 meet 𝑆. Choose
+an occupied site 𝑅 on that row and an occupied site 𝑈 on that column. Neither is 𝑞. Reflect
+the whole configuration horizontally or vertically if necessary so that
+𝑅 = (𝑟, 𝑞 2), 𝑟 > 𝑞 1, 𝑈 = (𝑞 1, 𝑢), 𝑢 > 𝑞 2.
+Coordinate reflections preserve the two interval conditions and nearest-neighbour paths.
+There is no occupied site (𝑎, 𝑞2) with 𝑎 ≤ 𝑞 1. Such a site, together with 𝑅, would force 𝑞 into 𝑆
+by row-convexity. Similarly, there is no occupied site (𝑞1, 𝑏) with 𝑏 ≤ 𝑞 2, by column-convexity
+and 𝑈 . Thus the west half of the row through 𝑞 and the south half of its column are both
+vacant, including 𝑞.
+Suppose now that an occupied site lay strictly southwest of 𝑞. Connect it to 𝑅 by a nearest-
+neighbour path in 𝑆. The path starts with both coordinates strictly below those of 𝑞, whereas 𝑅
+is outside this strict quadrant. Because a step changes only one coordinate by one unit, the first
+step leaving it must reach either (𝑞1, 𝑏) with 𝑏 < 𝑞 2, or (𝑎, 𝑞2) with 𝑎 < 𝑞 1. Both kinds of sites
+have just been shown vacant. This is a contradiction. The strict southwest quadrant is therefore
+empty. Undoing the reflections yields an empty strict quadrant in the original configuration,
+proving the claim.
+5.3. F rom an empty quadrant to the cubic bound
+To prove (SG5), choose 𝑞 ∈ 𝑃 𝐿 ∖ 𝑆. The preceding argument provides signs 𝜎, 𝜏 with 𝑄𝜎,𝜏 (𝑞) ∩
+𝑆 = ∅ . Let
+𝑚 = ⌊ 𝐿20 ⌋ , 𝐵 = {𝑞 + (𝜎𝑖, 𝜏 𝑗) ∶ 1 ≤ 𝑖, 𝑗 ≤ 𝑚}. (SG7)
+The coordinate map is injective, so |𝐵| = 𝑚 2. The empty strict quadrant makes 𝐵 disjoint from
+𝑆.
+We check that the entire larger block is still inside the clipped domain. For 𝑧 = 𝑞 + (𝜎𝑖, 𝜏 𝑗) ,
+(SG3) and 𝑚 ≤ 𝐿/20 give
+‖𝑧‖1 ≤ 910 𝐿 + 1 + 𝑖 + 𝑗 ≤ 𝐿 + 1.
+For each coordinate separately,
+|𝑧1| ≤ ‖𝑞‖ 1 + 𝑖 ≤ 1920 𝐿 + 1 ≤ 𝐿, |𝑧 2| ≤ ‖𝑞‖ 1 + 𝑗 ≤ 1920 𝐿 + 1 ≤ 𝐿,
+34
+
+PAGE 35
+where 𝐿 ≥ 80 . Hence 𝐵 ⊆ 𝐷 𝐿 ∖ 𝑆.
+A pointwise lower weight of order 𝐿 is not needed at every far corner. Instead, the triangle
+inequality gives
+𝑤𝐿(𝑞 + (𝜎𝑖, 𝜏 𝑗)) ≥ 𝐿10 + 1 − 𝑖 − 𝑗.
+Sum this aﬀine lower bound over the whole block. Since ∑
+𝑚
+𝑖=1 𝑖 = 𝑚(𝑚 + 1)/2 ,
+∑
+𝑧∈𝐵
+𝑤𝐿(𝑧) ≥
+𝑚
+∑
+𝑖=1
+𝑚
+∑
+𝑗=1
+( 𝐿10 + 1 − 𝑖 − 𝑗)
+= 𝑚 2 ( 𝐿10 + 1) − 𝑚2(𝑚 + 1) = 𝑚 2 ( 𝐿10 − 𝑚) .
+(SG8)
+The floor costs only a fixed factor. Write 𝐿 = 20𝑚 + 𝑟 with 0 ≤ 𝑟 ≤ 19 . Since 𝐿 ≥ 80 implies
+𝑚 ≥ 4 , we have 𝑟 ≤ 5𝑚 , hence 𝑚 ≥ 𝐿/25 . Also 𝑚 ≤ 𝐿/20 , so 𝐿/10 − 𝑚 ≥ 𝐿/20. All remaining
+missing weights in 𝐷𝐿 are nonnegative. Therefore
+𝑉𝐿(𝑆) ≥ ∑
+𝑧∈𝐵
+𝑤𝐿(𝑧) ≥ 𝑚 2 ( 𝐿10 − 𝑚) ≥ 𝐿2625 𝐿20 = 𝐿312500 .
+This proves (SG5), including 𝑆 = ∅ . It is the full sum (SG8), rather than a larger minimum
+site weight, that yields the improved threshold.
+5.4. A numerical check and the dynamical application
+For the configuration in the figure, ‖𝑞‖1 = 73 = 9(80)/10 + 1 , so 𝑞 ∈ 𝑃 80: it is adjacent
+to (72, 0) ∈ 𝐴 80. The three sites of 𝑆 form an occupied nearest-neighbour path, and every
+occupied row and column is an interval. The east and north witnesses are (73, 1) and (72, 2),
+so the half-axis argument supplies the empty southwest quadrant.
+Here 𝑚 = 4 and the full block consists of the sixteen sites
+𝐵 = {(72 − 𝑖, 1 − 𝑗) ∶ 1 ≤ 𝑖, 𝑗 ≤ 4}.
+Their weights are 11 + 𝑖 − 𝑗 , with row sums 50, 46, 42, 38, totalling 176. Formula (SG8) gives
+the lower estimate 𝑚2(𝐿/10 − 𝑚) = 16(8 − 4) = 64 , while the uniform cubic threshold is
+803/12500 = 40.96 . Thus the exact sum, the aﬀine lower sum, and the final threshold have the
+required order. The two end sites of 𝑆 have only one occupied neighbour, so 𝑆 is not stable in
+the two-neighbour sense used later. Stability is not a hypothesis of this static lemma, and this
+configuration is not asserted to be reachable by a modified trajectory.
+The lemma proves the static cost of protected loss under its stated hypotheses. Section 6 defines
+the modified and frozen process and retains the completed losing output. Section 6.4 proves that
+this actual output has the required row and column convexity and connectedness. The weighted
+rate estimate and cleanup budget then allow §6.6 to apply (SG5) and derive the probability
+bound (10).
+6. The modified process and the weighted lower tail
+6.1. The modified update and the first protected loss
+Section 5 identifies a static cost of losing protection. We now define the process to which that
+cost will be applied. Every arrival still uses its original site, arrival index and fair mark. The
+modification changes the response to an arrival: it suppresses updates outside 𝐷𝐿, and inside
+35
+
+PAGE 36
+𝐷𝐿 it follows one majority update by a deterministic deletion procedure. At the first protected
+loss, it retains the entire output of that procedure forever.
+Throughout this subsection, 𝐿 ≥ 80 . We use 𝐷𝐿 and 𝑃𝐿 from §5 and the centred square
+𝐸𝐿 = {−𝐿, … , 𝐿}2.
+A finite occupied set 𝑆 ⊆ ℤ 2 represents the configuration 1𝑆; every site outside 𝑆 has value 0.
+Neighbours are the four sites in 𝑣 + 𝒩, as in (1).
+The deletion procedure Let
+𝑑𝑆(𝑣) = |(𝑣 + 𝒩) ∩ 𝑆|.
+Call 𝑆 stable for deletion if 𝑑𝑆(𝑣) ≥ 2 for every 𝑣 ∈ 𝑆 . This condition concerns the deterministic
+cleanup only. A site with exactly two occupied neighbours may still be removed by an ordinary
+majority update with tie mark 0.
+A legal deletion removes an occupied site with 𝑑𝑆(𝑣) < 2 . Continue making legal deletions until
+none is available, and denote the resulting set by 𝐾(𝑆) . The name 2-core means precisely this
+terminal set; no graph-theoretic background is required. Each deletion removes one site and no
+deletion adds a site, so every such procedure terminates after at most |𝑆| deletions. The answer
+is independent of the order of these legal deletions, provided the procedure continues until none
+is available.
+Suppose 𝑅 ⊆ 𝑆 is stable for deletion. It survives every legal deletion from 𝑆. Indeed, if a
+legal deletion tried to remove 𝑣 ∈ 𝑅 , the two neighbours of 𝑣 in 𝑅 would still be present,
+contradicting its current degree being less than two. This is an induction over the deletion
+sequence. Its terminal set 𝑇 is itself stable, and 𝑇 ⊆ 𝑆 . Given any other terminal output 𝑈 ,
+apply the preceding argument to the stable set 𝑇 along the deletion sequence ending at 𝑈 . It
+gives 𝑇 ⊆ 𝑈 ; reversing their roles gives 𝑈 ⊆ 𝑇 . Thus 𝑇 = 𝑈 = 𝐾(𝑆) .
+The same argument shows that 𝐾(𝑆) is the largest stable subset of 𝑆. It also proves
+𝐾(𝑆) ⊆ 𝑆, 𝐾(𝐾(𝑆)) = 𝐾(𝑆), 𝑆 ⊆ 𝑇 ⟹ 𝐾(𝑆) ⊆ 𝐾(𝑇 ). (MM1)
+For the last assertion, 𝐾(𝑆) is a stable subset of 𝑇 , so maximality puts it inside 𝐾(𝑇 ).
+There is an equivalent procedure that removes all currently legal sites at once. Set
+𝑆(0) = 𝑆, 𝑆 (𝑗+1) = {𝑣 ∈ 𝑆 (𝑗) ∶ 𝑑 𝑆(𝑗)(𝑣) ≥ 2}.
+If a round makes no change, every later round is identical. Otherwise it removes at least one site.
+After |𝑆| rounds either a fixed set has been reached or all sites have been removed; in both cases
+𝑆(|𝑆|) is stable. Every stable subset of 𝑆 survives all these rounds by the same degree argument.
+Consequently 𝑆(|𝑆|) = 𝐾(𝑆) . This is the bounded iteration used in the source implementation.
+The preceding proof identifies it with every terminal sequence of legal single deletions.
+A legal deletion also has the value prescribed by the genuine four-neighbour rule: fewer than
+two occupied inputs force 0, for either tie mark. Each cleanup deletion therefore agrees with a
+genuine majority write that would set that site to 0. The modified process inserts these writes
+deterministically, with no extra elapsed time, clock arrivals or random marks.
+36
+
+PAGE 37
+One event, then a finite word For a site 𝑣 and mark 𝜉 ∈ {0, 1} , define the genuine raw
+write by
+𝑊𝑣,𝜉(𝑆) = { 𝑆 ∪ {𝑣}, Φ(( 1𝑆(𝑣 + 𝑢))𝑢∈𝒩; 𝜉) = 1,𝑆 ∖ {𝑣}, Φ(( 1𝑆(𝑣 + 𝑢))𝑢∈𝒩; 𝜉) = 0. (MM2)
+The centre value is not an input. For a finite update domain 𝐷, write
+𝑅𝐷𝑣,𝜉(𝑆) = { 𝑊𝑣,𝜉(𝑆), 𝑣 ∈ 𝐷,𝑆, 𝑣 ∉ 𝐷, 𝑀 𝐷𝑣,𝜉(𝑆) = { 𝐾(𝑊𝑣,𝜉(𝑆)), 𝑣 ∈ 𝐷,𝑆, 𝑣 ∉ 𝐷. (MM3)
+When the domain is fixed, we also write 𝑒 = (𝑣, 𝜉) , 𝑅𝑒 = 𝑅 𝐷𝑣,𝜉 and 𝑀𝑒 = 𝑀 𝐷𝑣,𝜉. An exterior
+event is the identity, including on an unstable input. Thus the exact definition does not run
+cleanup after an exterior event. On stable inputs it can also be written as 𝑀 𝐷𝑣,𝜉(𝑆) = 𝐾(𝑅 𝐷𝑣,𝜉(𝑆)),
+because then 𝐾(𝑆) = 𝑆 .
+Starting from 𝑆 ⊆ 𝐷 , both maps have output in 𝐷. For an interior event, the raw write can
+add only 𝑣 ∈ 𝐷 and cleanup can only remove sites. For an exterior event, the set is unchanged.
+Moreover, 𝑀 𝐷 preserves stability: an interior event ends with cleanup and an exterior event
+preserves the input.
+The initial set 𝐷𝐿 is stable. When both coordinates of 𝑧 ∈ 𝐷 𝐿 are nonzero, the horizontal and
+vertical neighbours towards the origin lie in 𝐷𝐿. When one coordinate is zero, a step towards the
+origin in the other coordinate and a step along the zero coordinate give two distinct neighbours
+in 𝐷𝐿; at the origin use (1, 0) and (0, 1). The defining bounds |𝑧𝑖| ≤ 𝐿 and ‖𝑧‖1 ≤ 𝐿 + 1 verify
+each inclusion. Thus the modified process from 𝐷𝐿 always remains a stable subset of 𝐷𝐿.
+A marked finite word is an ordered list (𝑣1, 𝜉1), … , (𝑣𝑛, 𝜉𝑛). Its modified execution means apply-
+ing 𝑀 𝐷𝑣1,𝜉1 first, then 𝑀 𝐷𝑣2,𝜉2, and so on. A prefix ends after a whole modified step, including allits cleanup deletions. This defines every finite endpoint without assuming a geometric invariant.
+The finite-square implementation computes exactly this operation. The coordinate change 𝑎 ↦
+𝑎− (𝐿, 𝐿) maps {0, … , 2𝐿}2 bijectively to 𝐸𝐿 and preserves nearest-neighbour adjacency. Hence
+it preserves occupied-neighbour degrees, every pruning round, and 𝐾. The zero exterior supplies
+the missing inputs at the square boundary, so a boundary site still reads four inputs rather than
+using a majority among its fewer interior neighbours. Under this coordinate change, the finite
+operation “write one site, take the finite 2-core if the site is in the clipped mask, otherwise do
+nothing” is exactly (MM3), with the same supplied mark. Induction over the word gives equality
+of all finite endpoints. Both descriptions therefore use the original zero-boundary square and
+the original four-input threshold.
+F reeze the completed output that loses protection For an infinite marked event se-
+quence, let 𝑆0 = 𝐷 𝐿 and
+𝑆𝑛+1 = 𝑀 𝐷𝐿𝑣𝑛+1,𝜉𝑛+1(𝑆𝑛), 𝜈 = inf{𝑛 ≥ 0 ∶ 𝑃 𝐿 ⊈ 𝑆 𝑛}, inf ∅ = ∞. (MM4)
+Here 𝑃𝐿 ⊆ 𝐷 𝐿 by §5, so the initial state has not lost protection. The index 𝑛 counts arrivals,
+not cleanup deletions. Define the frozen sequence recursively by 𝐹0 = 𝐷 𝐿 and
+𝐹𝑛+1 = {𝑀 𝐷𝐿𝑣𝑛+1,𝜉𝑛+1(𝐹𝑛), 𝑃 𝐿 ⊆ 𝐹 𝑛,𝐹𝑛, 𝑃𝐿 ⊈ 𝐹 𝑛. (MM5)
+Then 𝐹𝑛 = 𝑆 𝑛 before the first loss. If 𝜈 < ∞ , the step from 𝜈 − 1 to 𝜈 is still executed in
+full, and 𝐹𝑛 = 𝑆 𝜈 for every 𝑛 ≥ 𝜈 . In particular, the retained state is the cleaned output that
+has already lost protection. If 𝜈 = ∞ , every step is executed and 𝐹𝑛 = 𝑆 𝑛 for all 𝑛. These
+37
+
+PAGE 38
+assertions follow by induction from (MM5): while protection is present, the recursions coincide;
+once it is missing, the frozen state stays unchanged. We also write Ψ𝑒(𝑈 ) = 𝑀 𝑒(𝑈 ) if 𝑃𝐿 ⊆ 𝑈 ,
+and Ψ𝑒(𝑈 ) = 𝑈 otherwise, for the frozen update map in (MM5). Equivalently,
+𝑃𝐿 ⊆ 𝐹 𝑛 ⟺ 𝑃 𝐿 ⊆ 𝑆 𝑗 for every 0 ≤ 𝑗 ≤ 𝑛. (MM6)
+This equivalence does not require the unfrozen sequence to keep missing a site after its first loss.
+For a small calculation, let 𝐶 = {0, 1} 2, let 𝐵 = 𝐶 + (4, 0) , and start from the stable eight-site
+set 𝐶 ∪ 𝐵. Use a mask containing both squares and the toy protected set 𝐼 = {(1, 1)} . At (0, 0)
+there are exactly two occupied neighbours. A raw write with mark 0 removes that corner of 𝐶,
+leaving the three-site path
+(1, 0) − − (1, 1) − − (0, 1).
+Its endpoints each have degree one. Delete (1, 0) and (0, 1), in either order; each has degree
+one when deleted. The remaining site (1, 1) has degree zero and is deleted. The four sites of
+𝐵 retain degree two, so the completed modified output is 𝐵. It has lost 𝐼 and is frozen. A
+later mark- 0 arrival at (4, 0) would clean 𝐵 to the empty set in the unfrozen process, while the
+frozen process remains 𝐵. This is a direct test of the rule on an arbitrary stable input with toy
+protection; it is not asserted to occur along the trajectory started from 𝐷𝐿 with its actual 𝑃𝐿.
+Common-mark domination and the original clock law Fix finite domains 𝐷 ⊆ 𝐸 and
+inputs 𝑆 ⊆ 𝑇 with 𝑆 ⊆ 𝐷 . The same mark makes the four-input majority map monotone. At
+an event in 𝐷, it gives
+𝑀 𝐷𝑣,𝜉(𝑆) ⊆ 𝑊 𝑣,𝜉(𝑆) ⊆ 𝑊 𝑣,𝜉(𝑇 ) = 𝑅 𝐸𝑣,𝜉(𝑇 ).
+At an event in 𝐸 ∖ 𝐷, the smaller set stays 𝑆. The larger write changes only 𝑣, and 𝑣 ∉ 𝑆 , so it
+cannot remove any member of 𝑆. At an event outside 𝐸, both sets stay unchanged. Thus, in
+all cases,
+𝑀 𝐷𝑣,𝜉(𝑆) ⊆ 𝑅 𝐸𝑣,𝜉(𝑇 ). (MM7)
+Repeated application proves domination after every prefix of the same marked word. In partic-
+ular, the unfrozen modified sequence from 𝐷𝐿 lies inside the genuine zero-boundary sequence
+from 𝐸𝐿 at every event index. The frozen sequence has the same comparison before loss and at
+the completed loss step, when it still equals the unfrozen sequence. We assert no comparison
+between the frozen state and the evolving original state after that step.
+Now use the original rate-one gaps and identity-indexed fair marks from §3.3 on 𝐸𝐿. Work
+on its single probability-one set of regular samples, where all arrival times are positive, there
+are no simultaneous arrivals, and every bounded time interval contains finitely many arrivals.
+Enumerate the identities chronologically. If the 𝑗th identity is (𝑣𝑗, 𝑟𝑗), use exactly 𝜉𝑗 = 𝑈 𝑣𝑗,𝑟𝑗 in
+(MM4) and (MM5). Cleanup neither changes that identity nor consumes or replaces its mark.
+Even an event suppressed by the mask remains in the common word. Therefore a fixed time 𝑡
+selects a genuine finite prefix, with all its original sites, arrival indices and marks intact. This
+prefix property holds on the one regular set simultaneously for all 𝑡 ≥ 0 .
+Let 𝑁 (𝑡) be the number of arrivals through 𝑡, let 𝐹𝑡 = 𝐹 𝑁(𝑡) , and let 𝑋𝑡 be the genuine zero-
+boundary clock process from 𝐸𝐿. Define the extended physical exit time
+𝜃 = inf{𝑡 ≥ 0 ∶ 𝑃 𝐿 ⊈ 𝐹 𝑡} ∈ [0, ∞]. (MM8)
+If a loss occurs, it occurs at the first arrival whose completed modified output loses protection,
+and the frozen path remains at that output. Local finiteness excludes accumulation of arrivals
+at finite time. Consequently, on the common regular set, simultaneously for every 𝑡 ≥ 0 ,
+𝜃 ≤ 𝑡 ⟺ 𝑃 𝐿 ⊈ 𝐹 𝑡. (MM9)
+38
+
+PAGE 39
+If no loss occurs, 𝜃 = ∞ and both sides are false for finite 𝑡.
+Since (0, 0) ∈ 𝑃 𝐿, protection is nonempty. If 𝑋𝑡 = ∅ , domination forces the unfrozen modified
+set at the same prefix to be empty. That prefix therefore witnesses protected loss. By (MM6)
+and (MM9),
+{𝑋𝑡 = ∅} ⊆ {𝜃 ≤ 𝑡}, 1 − 𝐶 2𝐿+1(𝑡) ≤ ℙ(𝜃 ≤ 𝑡). (MM10)
+The centred square is a translate of 𝑄2𝐿+1, so its original extinction probability is exactly the
+one in (5). This proof uses domination of the unfrozen process; it does not compare the frozen
+state with 𝑋𝑡 after exit. Neither protected loss nor original extinction is assumed to occur in
+finite time.
+For probability statements one may define the frozen state on every sample using only obser-
+vations through 𝑡. If the observed identities admit a complete finite strict chronological list,
+execute that list with its observed marks by (MM5); otherwise return 𝐷𝐿. Any two such lists
+are identical, because both contain precisely the arrived identities in strict time order. There
+are countably many candidate finite lists and finite mark vectors, and the event specifying each
+uses only observed arrivals and marks. Thus the state is measurable with respect to the ob-
+served past: determining it reveals no unused mark or future gap. On the common regular set
+this representative agrees with 𝐹𝑡 at every nonnegative real time. This supplies measurable
+endpoints without replacing the product clock law or making a separate exceptional-set choice
+for each 𝑡.
+The construction so far preserves support and stability. The other properties needed for the
+static lemma are row-convexity, column-convexity and nearest-neighbour connectedness; §6.4
+proves their preservation through the completed losing output. We first bound the amount
+removed by cleanup and derive its physical-time contribution, separately from the raw weighted
+rate.
+Figure 4. A toy test with protected set 𝐼 = {(1, 1)} , rather than the actual 𝑃𝐿. The dark left block is
+𝐶 = {0, 1} 2, and the blue right block is 𝐵 = 𝐶 + (4, 0) . The first actual arrival, at (0, 0) with mark
+0, includes both the raw panel and the three cleanup deletions; cleanup inserts no additional arrivals or
+elapsed time. The resulting 𝐵 has lost 𝐼 and is frozen, so the later arrival at (4, 0) has no effect. The
+ledger charges only cleanup, including the losing output, and excludes the raw removal of weight 82 at
+𝐿 = 80 .
+39
+
+PAGE 40
+6.2. Perimeter pays for every cleanup deletion
+The initial boundary contains 8𝐿 + 4 unit edges. Every cleanup deletion consumes at least two
+of these perimeter units, and a raw majority update never replenishes them. Therefore there
+are at most 4𝐿 + 2 cleanup deletion occurrences. Each has weight at most 𝐿 + 2.
+We prove these statements for every finite marked word, including the event that first loses
+protection. We then show, under the original clock law, that the expected accumulated weighted
+loss equals the time integral of the actual weighted cleanup rate. The resulting bound (𝐿 +
+2)(4𝐿 + 2) holds for every physical horizon 𝑇 ≥ 0 . The clock argument is needed: a bound on
+a finite-word loss alone does not identify its expected rate.
+Fix an integer 𝐿 ≥ 80 . Throughout this section 𝐷 = 𝐷 𝐿, 𝑃 = 𝑃 𝐿, and 𝑤 = 𝑤 𝐿 are the objects
+of §5. Thus
+𝐷 = {(𝑥, 𝑦) ∈ ℤ 2 ∶ |𝑥| ≤ 𝐿, |𝑦| ≤ 𝐿, |𝑥| + |𝑦| ≤ 𝐿 + 1}, 𝑤(𝑥, 𝑦) = 𝐿 + 2 − |𝑥| − |𝑦|. (PB1)
+We use Per for perimeter so that it cannot be confused with the protected set 𝑃 . No row or
+column convexity, connectivity, or stability hypothesis is needed for the perimeter inequalities
+below.
+6.2.1. What a single change does to exposed edges Represent each occupied site by
+its closed unit square. For a finite occupied set 𝑈 ⊂ ℤ 2, an exposed edge is a pair (𝑧, 𝑒) with
+𝑧 ∈ 𝑈 , 𝑒 ∈ {(1, 0), (−1, 0), (0, 1), (0, −1)}, and 𝑧 + 𝑒 ∉ 𝑈 . Define
+Per(𝑈 ) = #{(𝑧, 𝑒) ∶ 𝑧 ∈ 𝑈 , 𝑧 + 𝑒 ∉ 𝑈 }. (PB2)
+Each pair represents one actual unit side between an occupied and a vacant square. Each such
+side is counted once, from its occupied side. Holes contribute their exposed sides as well.
+Write 𝑑𝑈 (𝑣) for the number of occupied nearest neighbours of 𝑣. If 𝑣 ∈ 𝑈 is deleted, its 4 −
+𝑑𝑈 (𝑣) previously exposed sides disappear, while its 𝑑𝑈 (𝑣) sides shared with occupied neighbours
+become exposed on those neighbours. Therefore
+Per(𝑈 ∖ {𝑣}) − Per(𝑈 ) = 2𝑑𝑈 (𝑣) − 4. (PB3)
+If 𝑣 ∉ 𝑈 is added, its 4 − 𝑑 𝑈 (𝑣) sides towards vacant neighbours become exposed, while the
+𝑑𝑈 (𝑣) previously exposed sides of occupied neighbours disappear. Thus
+Per(𝑈 ∪ {𝑣}) − Per(𝑈 ) = 4 − 2𝑑 𝑈 (𝑣). (PB4)
+These formulas apply to arbitrary finite 𝑈 .
+For a mark 𝑒 = (𝑣, 𝑏) , with 𝑏 ∈ {0, 1} , the raw majority rule writes 0 when 𝑑𝑈 (𝑣) < 2 , writes 1
+when 𝑑𝑈 (𝑣) > 2 , and writes 𝑏 when 𝑑𝑈 (𝑣) = 2 . A raw deletion consequently has 𝑑𝑈 (𝑣) ≤ 2 , and a
+raw birth has 𝑑𝑈 (𝑣) ≥ 2 . Equations (PB3) and (PB4) show that either change has nonpositive
+perimeter increment. A write equal to the current value is the identity. In particular, both
+possible changes in a tie have zero perimeter increment; neither mark needs to be censored.
+Use the maps of §6.1 in the following explicit form. The masked raw map 𝑅𝑒 performs this one
+majority write if 𝑣 ∈ 𝐷 , and is the identity if 𝑣 ∉ 𝐷 . The modified map is
+𝑀𝑒(𝑈 ) = {𝐶(𝑅 𝑒(𝑈 )), 𝑣 ∈ 𝐷,𝑈 , 𝑣 ∉ 𝐷, (PB5)
+where 𝐶(𝑆) = 𝐾(𝑆) is the canonical cleanup defined in §6.1: delete occupied sites of degree less
+than two until none remains. An exterior event is literally the identity, even on an unstable set
+𝑈 ; it does not run cleanup on 𝑈 .
+40
+
+PAGE 41
+During one cleanup, let 𝐴0, 𝐴1, … , 𝐴𝑘 = 𝐶(𝐴 0) be a legal sequence of single-site deletions. At
+each deletion the current degree is 0 or 1. Equation (PB3) gives
+Per(𝐴𝑖+1) ≤ Per(𝐴𝑖) − 2.
+Summing yields
+Per(𝐶(𝐴 0)) + 2𝑘 ≤ Per(𝐴0), 𝑘 = |𝐴 0 ∖ 𝐶(𝐴 0)|. (PB6)
+The endpoint is the canonical cleanup from §6.1, while this inequality works for every legal
+deletion order leading to it. Combining raw nonincrease with (PB6), and putting
+𝑛(𝑈 , 𝑒) = |𝑅𝑒(𝑈 ) ∖ 𝑀𝑒(𝑈 )|,
+we obtain
+Per(𝑀𝑒(𝑈 )) + 2𝑛(𝑈 , 𝑒) ≤ Per(𝑈 ). (PB7)
+For an exterior event both maps equal 𝑈 , so 𝑛(𝑈 , 𝑒) = 0.
+6.2.2. The initial perimeter and the finite-word budget For |𝑦| ≤ 𝐿 , the occupied sites
+of 𝐷 in row 𝑦 are exactly
+−𝑟𝐿(𝑦) ≤ 𝑥 ≤ 𝑟 𝐿(𝑦), 𝑟 𝐿(𝑦) = min{𝐿, 𝐿 + 1 − |𝑦|}.
+The two bounds on 𝑥 are |𝑥| ≤ 𝐿 and |𝑥| ≤ 𝐿 + 1 − |𝑦| , so their intersection is precisely this
+interval. Its radius is nonnegative when |𝑦| ≤ 𝐿 ; rows with |𝑦| > 𝐿 are empty. Each of the 2𝐿+1
+nonempty rows has exactly one exposed left side and one exposed right side. Interchanging the
+coordinates gives 2𝐿 + 1 nonempty interval columns, each with exactly one exposed bottom side
+and one exposed top side. These are all four possible directions of an exposed edge, with no
+overlap between directions. Hence
+Per(𝐷) = 2(2𝐿 + 1) + 2(2𝐿 + 1) = 8𝐿 + 4. (PB8)
+For any chronological marked word 𝑒1, … , 𝑒𝑚, first consider the unfrozen modified states 𝑈0 = 𝐷,
+𝑈𝑗 = 𝑀 𝑒𝑗(𝑈𝑗−1). Adding (PB7) for 𝑗 = 1, … , 𝑚 puts Per (𝑈𝑗) on the left of step 𝑗 and on the
+right of step 𝑗 + 1. These intermediate terms cancel, giving
+Per(𝑈𝑚) + 2
+𝑚
+∑
+𝑗=1
+𝑛(𝑈𝑗−1, 𝑒𝑗) ≤ 8𝐿 + 4.
+Since the final perimeter is nonnegative,
+𝑚
+∑
+𝑗=1
+𝑛(𝑈𝑗−1, 𝑒𝑗) ≤ 4𝐿 + 2. (PB9)
+The word may have repeated sites and either mark at any event.
+The first-loss-frozen update is
+Ψ𝑒(𝑈 ) = {𝑀𝑒(𝑈 ), 𝑃 ⊆ 𝑈 ,𝑈 , 𝑃 ⊈ 𝑈 . (PB10)
+It tests protection in the input state. Thus the update whose output first loses a protected
+site is executed in full, including its cleanup; that output is then retained. Define the charged
+deletion count by
+𝑞(𝑈 , 𝑒) = 1{𝑃 ⊆𝑈}𝑛(𝑈 , 𝑒).
+41
+
+PAGE 42
+For an active input, (PB7) applies. For a frozen input, Ψ𝑒(𝑈 ) = 𝑈 and 𝑞(𝑈 , 𝑒) = 0. Therefore
+Per(Ψ𝑒(𝑈 )) + 2𝑞(𝑈 , 𝑒) ≤ Per(𝑈 ).
+Repeating the same telescope along 𝑈𝑗 = Ψ 𝑒𝑗(𝑈𝑗−1), 𝑈0 = 𝐷, proves
+𝑁𝑚 ∶=
+𝑚
+∑
+𝑗=1
+𝑞(𝑈𝑗−1, 𝑒𝑗) ≤ 4𝐿 + 2. (PB11)
+This includes the cleanup at the first losing event. It also covers a word that never loses
+protection, and any finite prefix of either kind.
+For 𝑈 ⊆ 𝐷 , both 𝑅𝑒(𝑈 ) and 𝑀𝑒(𝑈 ) are subsets of 𝐷, and 𝑀𝑒(𝑈 ) ⊆ 𝑅 𝑒(𝑈 ). Define the literal
+weighted cleanup loss by
+ℓ(𝑈 , 𝑒) = ∑
+𝑧∈𝑅𝑒(𝑈)∖𝑀 𝑒(𝑈)
+𝑤(𝑧) = ∑
+𝑧∈𝑅𝑒(𝑈)
+𝑤(𝑧) − ∑
+𝑧∈𝑀𝑒(𝑈)
+𝑤(𝑧). (PB12)
+This excludes the raw majority write’s own deletion; it charges only the sites subsequently
+removed by cleanup. At exterior events the difference set is empty, so ℓ(𝑈 , 𝑒) = 0 . Since
+1 ≤ 𝑤(𝑧) ≤ 𝐿 + 2 on 𝐷,
+0 ≤ ℓ(𝑈 , 𝑒) ≤ (𝐿 + 2)𝑛(𝑈 , 𝑒).
+For the frozen process set 𝑎(𝑈 , 𝑒) = 1{𝑃 ⊆𝑈}ℓ(𝑈 , 𝑒) and
+𝑐𝑚 =
+𝑚
+∑
+𝑗=1
+𝑎(𝑈𝑗−1, 𝑒𝑗), 𝐵 𝐿 = (𝐿 + 2)(4𝐿 + 2).
+Equations (PB11) and (PB12) give the pathwise bound
+0 ≤ 𝑐 𝑚 ≤ (𝐿 + 2)𝑁 𝑚 ≤ 𝐵 𝐿. (PB13)
+The sums count deletion occurrences. If a site is removed by cleanup, is later born again by a
+raw write, and is removed by a later cleanup, its weight is charged again. We have not replaced
+these sums by the weight of a union of deleted sites.
+Two small calculations check the constants. The geometric count (PB8) holds for every integer
+𝐿 ≥ 0 , so we may test it at 𝐿 = 2 even though the lower-tail argument assumes 𝐿 ≥ 80 . At
+𝐿 = 2 , the row lengths of 𝐷2 from bottom to top are 3, 5, 5, 5, 3. Five interval rows contribute
+ten exposed left or right sides, and five interval columns contribute ten bottom or top sides.
+Thus Per (𝐷2) = 20 = 8 ⋅ 2 + 4 .
+For a local cleanup example, take 𝐴 = {(−1, 0), (0, 0), (1, 0)}. Its perimeter is 8: the six top or
+bottom sides and the two end sides. Delete the left endpoint, then the right endpoint, then the
+remaining centre. The current degrees are 1, 1, 0, and the perimeters are 8, 6, 4, 0. Thus three
+deletions cost eight perimeter units, which is at least 2⋅3. With the weight 𝑤2(𝑥, 𝑦) = 4−|𝑥|−|𝑦| ,
+the deleted weights are 3, 3, 4, totalling 10 ≤ 4 ⋅ 3 . This example checks the local perimeter and
+weight accounting; it is not asserted to be a reachable protected state from 𝐷𝐿.
+6.2.3. T urning the word budget into an actual clock-rate budget The physical clocks
+run on the full centred square
+Λ𝐿 = {−𝐿, −𝐿 + 1, … , 𝐿}2, 𝐾 = |Λ 𝐿| = (2𝐿 + 1) 2.
+Each site has its original independent rate-one clock and independent fair marks, with the entire
+gap field independent of the entire mark field. These are the original coordinates used in §3.4.
+42
+
+PAGE 43
+Events in Λ𝐿 ∖ 𝐷 remain in the clock list; their state map is the identity and their cleanup
+charge is zero.
+On the probability-one regular set, enumerate the genuine event identities in chronological order.
+Let their sites and original marks be 𝑒𝑗, and their times be 𝑡𝑗. Through every finite 𝑇 there are
+finitely many such events and no simultaneous events. Execute Ψ𝑒𝑗 and the counter update
+(𝑈 , 𝑐) ⟼ 𝑇𝑒(𝑈 , 𝑐) ∶= (Ψ𝑒(𝑈 ), 𝑐 + 𝑎(𝑈 , 𝑒)) (PB14)
+from (𝐷, 0). The resulting state 𝑌 (𝑡) = (𝑈 (𝑡), 𝑐(𝑡)) uses all events through 𝑡, including an event
+at 𝑡 if there is one. Direct induction on that actual list gives the identity
+𝑐(𝑇 ) = ∑
+𝑗∶𝑡𝑗≤𝑇
+1{𝑃 ⊆𝑈(𝑡𝑗−)}ℓ(𝑈 (𝑡𝑗−), 𝑒𝑗), 0 ≤ 𝑐(𝑇 ) ≤ 𝐵 𝐿. (PB15)
+Here 𝑈 (𝑡𝑗−) means the state after all strictly earlier events. This is the actual cumulative
+cleanup loss, not a new counter with the same proposed mean.
+The endpoint set 𝑈 (𝑇 ) alone does not record earlier cleanup losses: a removed site may have
+returned. This is why we carry 𝑐 as a second state coordinate.
+We next justify using the observable 𝐹 (𝑈 , 𝑐) = 𝑐 in the original-clock argument. Let ℰ be the
+set of pairs reachable from (𝐷, 0) by all finite words in Λ𝐿 × {0, 1} under (PB14). All weights
+of sites in 𝐷 are positive integers. Thus every reachable counter is an integer, and (PB13) gives
+ℰ ⊆ {𝑈 ∶ 𝑈 ⊆ 𝐷} × {0, 1, … , 𝐵 𝐿}. (PB16)
+Both 𝐿 and 𝐵𝐿 are integers, so the right side is a finite set. The reachable set ℰ is also closed
+under every 𝑇𝑒: append 𝑒 to a word reaching the given pair. The bound already proved for every
+word applies to the appended word as well. Hence no transition needs an artificial truncation
+of the counter, and no transition is defined by ignoring a possible overflow.
+Apply §3.4 with 𝑉 = Λ 𝐿, 𝒜 = ℰ , deterministic initial state (𝐷, 0), and update maps 𝐹𝑣,𝑏 = 𝑇 (𝑣,𝑏).
+The finite-word bound (PB13) and closure in (PB16) are the required finite-state hypotheses.
+In particular, this application needs the reachable counter space; it would not be justified by
+treating an unbounded auxiliary counter as automatically bounded.
+The history-measurable representative from §3.4 executes the observed finite list and otherwise
+returns (𝐷, 0). It belongs to ℰ on every sample and agrees with the actual augmented execution
+simultaneously at all times on the common regular set. Its jointly measurable strict-before
+version records the input of each actual event.
+For 𝐺 ∶ ℰ → ℝ , its increment operator is
+ℒℰ𝐺(𝑥) = ∑
+𝑣∈Λ𝐿
+1
+2
+1
+∑
+𝑏=0
+[𝐺(𝑇(𝑣,𝑏)𝑥) − 𝐺(𝑥)]. (PB17)
+The common identity (FM6), with the original physical-time law, now gives
+𝔼𝐺(𝑌 (𝑇 )) = 𝐺(𝐷, 0) + ∫
+𝑇
+0
+𝔼ℒℰ𝐺(𝑌 (𝑠)) 𝑑𝑠. (PB19)
+All state functions are bounded because ℰ is finite. The strict-before and endpoint versions may
+be interchanged in these time integrals by the final paragraph of §3.4.
+Take 𝐺 = 𝐹 , where 𝐹 (𝑈 , 𝑐) = 𝑐 . Its increment under 𝑇𝑒 is exactly 𝑎(𝑈 , 𝑒). Exterior terms in
+(PB17) now vanish, so
+ℒℰ𝐹 (𝑈 , 𝑐) = 𝑟cl(𝑈 ), 𝑟 cl(𝑈 ) = 1{𝑃 ⊆𝑈} ∑
+𝑣∈𝐷
+ℓ(𝑈 , (𝑣, 0)) + ℓ(𝑈 , (𝑣, 1))
+2 . (PB20)
+43
+
+PAGE 44
+The indicator tests the input state, as in (PB10). The coeﬀicient of each site is one, and the
+two marks have coeﬀicient 1/2 each. There is no division by 𝐾 or rescaling of physical time.
+At an event time the cleanup score in (PB15) uses 𝑈 (𝑠−); (PB19) uses 𝑈 (𝑠). On every regu-
+lar trajectory these states differ only at its countably many event times. The bounded rates
+therefore agree for Lebesgue-almost every 𝑠. For any reachable pair, appending one mark shows
+0 ≤ 𝑎(𝑈 , 𝑒) ≤ 𝐵 𝐿, so 0 ≤ 𝑟 cl(𝑈 ) ≤ 𝐾𝐵 𝐿. Both versions of the rate are thus bounded jointly
+measurable functions on each finite horizon. Their time integrals agree, and expectation can be
+interchanged with the time integral. Combining (PB13), (PB15), (PB19), and (PB20) proves
+∫
+𝑇
+0
+𝔼 𝑟cl(𝑈 (𝑠−)) 𝑑𝑠 = 𝔼 ∑
+𝑗∶𝑡𝑗≤𝑇
+1{𝑃 ⊆𝑈(𝑡𝑗−)}ℓ(𝑈 (𝑡𝑗−), 𝑒𝑗)
+= 𝔼𝑐(𝑇 ) ≤ (𝐿 + 2)(4𝐿 + 2), 𝑇 ≥ 0.
+(PB21)
+The final inequality is uniform in 𝑇 .
+Equation (PB21) is the cleanup input for the weighted lower tail, under rate-one site clocks
+and fair marks in physical time. It pays for cleanup even at the first protected-loss output and
+counts every repeated deletion. It does not establish preservation of the geometric hypotheses
+needed to apply the static exit lemma, nor the separate raw weighted-drift estimate 18𝐿 + 12.
+Those obligations remain necessary before the lower-tail estimate (13) can be rederived.
+The finite reachable weighted-counter construction above permits the application of the common
+original-clock identity in §3.4. The formal source also contains an event-by-event derivation of
+the same physical budget; the source correspondence is recorded in §9.
+6.3. The actual weighted balance, with its raw term retained
+The cleanup budget can now be inserted into the exact evolution of the missing weight. Keep
+𝐷 = 𝐷 𝐿, 𝑃 = 𝑃 𝐿 and 𝑤 = 𝑤 𝐿 from §5. For 𝑈 ⊆ 𝐷 , write
+𝑚(𝑈 ) = ∑
+𝑧∈𝑈
+𝑤(𝑧), 𝑉 (𝑈 ) = 𝑚(𝐷) − 𝑚(𝑈 ) = 𝑉 𝐿(𝑈 ). (WB1)
+The second equality follows by partitioning 𝐷 into 𝑈 and 𝐷 ∖ 𝑈 . In particular, 𝑉 (𝑈 ) ≥ 0, and
+𝑉 (𝐷) = 0 .
+For one event 𝑒 = (𝑣, 𝑏) with 𝑣 ∈ 𝐷 and 𝑃 ⊆ 𝑈 , the literal cleanup loss is ℓ(𝑈 , 𝑒) = 𝑚(𝑅𝑒(𝑈 )) −
+𝑚(𝑀𝑒(𝑈 )). Thus
+𝑉 (Ψ𝑒(𝑈 )) − 𝑉 (𝑈 ) = 𝑚(𝑈 ) − 𝑚(𝑅𝑒(𝑈 )) + ℓ(𝑈 , 𝑒). (WB2)
+The raw majority write and the subsequent cleanup are both included, but their contributions
+remain distinct. If 𝑃 ⊈ 𝑈 , the frozen event has zero increment. If 𝑣 ∉ 𝐷 , both maps are the
+identity and both contributions are zero.
+Define the actual masked raw rate by
+𝑟raw(𝑈 ) = 1{𝑃 ⊆𝑈} ∑
+𝑣∈𝐷
+1
+2
+1
+∑
+𝑏=0
+[𝑚(𝑈 ) − 𝑚(𝑅(𝑣,𝑏)(𝑈 ))]. (WB3)
+This is an explicit function of the present occupied set and the two genuine marks. This rate
+can have either sign: a raw birth increases 𝑚 and contributes negatively. The cleanup rate 𝑟cl
+is the nonnegative function in (PB20).
+Let 𝑈 (𝑡) be the frozen occupied set from the original clock sample. Apply the actual finite-
+machine observable identity (PB19) to the bounded function 𝐺(𝑈 , 𝑐) = 𝑉 (𝑈 ) on the reachable
+44
+
+PAGE 45
+augmented state space. A veraging (WB2) over both marks and summing all physical sites gives
+its increment operator exactly as
+ℒℰ𝐺(𝑈 , 𝑐) = 𝑟raw(𝑈 ) + 𝑟cl(𝑈 ).
+Exterior site clocks remain in the experiment, with zero summands. Since the initial set is 𝐷,
+(PB19) proves the true-law balance
+𝔼𝑉 (𝑈 (𝑇 )) = ∫
+𝑇
+0
+𝔼𝑟raw(𝑈 (𝑠)) 𝑑𝑠 + ∫
+𝑇
+0
+𝔼𝑟cl(𝑈 (𝑠)) 𝑑𝑠, 𝑇 ≥ 0. (WB4)
+All the functions in this formula are bounded on a finite state space; their sample expectations
+and time integrals on every finite horizon exist. The physical cleanup estimate (PB21) now
+yields
+𝔼𝑉 (𝑈 (𝑇 )) ≤ ∫
+𝑇
+0
+𝔼𝑟raw(𝑈 (𝑠)) 𝑑𝑠 + (𝐿 + 2)(4𝐿 + 2). (WB5)
+This inequality has no assumed drift bound or supplied moment equation. It follows from the
+literal original clocks, the finite observable calculation, and the proved cleanup budget.
+The next two subsections prove the geometric facts needed to use this balance: the actual
+outputs keep row and column convexity and connectedness through the losing output, and the
+raw rate in (WB3) is at most 18𝐿 + 12 while protection remains. Section 6.6 then uses the
+static threshold and (MM10). The negative birth contribution stays inside the signed raw rate
+throughout this calculation.
+6.4. Shape through the first protected loss
+The static loss estimate needs a geometric property of the state that has just lost protection.
+We prove that property for the literal modified updates of §6.1, including all cleanup deletions
+in the losing event. The argument is deterministic: it applies to every marked event word.
+Write 𝑣 = (𝑥, 𝑦) and use
+𝑁 (𝑣) = (𝑥, 𝑦 + 1), 𝐸(𝑣) = (𝑥 + 1, 𝑦), 𝑆(𝑣) = (𝑥, 𝑦 − 1), 𝑊 (𝑣) = (𝑥 − 1, 𝑦).
+Here 𝑆(𝑣) denotes the southern neighbour; the unadorned letter 𝑆 denotes an occupied set.
+Recall
+𝐷𝐿 = {(𝑥, 𝑦) ∈ ℤ 2 ∶ |𝑥| ≤ 𝐿, |𝑦| ≤ 𝐿, |𝑥| + |𝑦| ≤ 𝐿 + 1},
+𝐴𝐿 = {(𝑥, 𝑦) ∈ ℤ 2 ∶ 10(|𝑥| + |𝑦|) ≤ 9𝐿},
+𝑃𝐿 = 𝐴 𝐿 ∪ 𝜕out𝐴𝐿,
+where 𝜕out𝐴𝐿 consists of sites outside 𝐴𝐿 with a four-neighbour in 𝐴𝐿. Throughout this section
+𝐿 is an integer with 𝐿 ≥ 2 ; its application to Lemma 3 has 𝐿 ≥ 80 .
+For any occupied set 𝑆, write 𝑑𝑆(𝑣) = |{𝑁 (𝑣), 𝐸(𝑣), 𝑆(𝑣), 𝑊 (𝑣)} ∩ 𝑆| . A finite occupied set is
+row convex if each horizontal section is an integer interval, possibly empty, and column convex
+if the same holds for each vertical section. Thus, for example, occupation of (𝑎, 𝑦) and (𝑏, 𝑦)
+with 𝑎 ≤ 𝑏 implies occupation of every (𝑐, 𝑦) with 𝑎 ≤ 𝑐 ≤ 𝑏 . It is four-connected if any two
+occupied sites can be joined by a finite path of occupied sites whose successive sites differ by
+one horizontal or vertical unit. This condition is vacuous for the empty set. As in §6.1, stability
+means that every occupied site has at least two occupied four-neighbours. Set
+Shape(𝑆) ⟺
+⎧{
+⎨{⎩
+𝑆 is row convex and column convex ,
+𝑆 is four-connected ,
+𝑑𝑆(𝑣) ≥ 2 for every 𝑣 ∈ 𝑆.
+(G1)
+45
+
+PAGE 46
+The cleanup 𝐾 is exactly the terminal set of any finite sequence of legal single deletions, each
+of which removes an occupied site whose current degree is less than two. Section 6.1 proved
+that this terminal set is independent of the deletion order. For an event 𝑒 = (𝑣, 𝜉) inside 𝐷𝐿,
+the modified update is 𝑀𝑒(𝑆) = 𝐾(𝑊 𝑣,𝜉(𝑆)); outside 𝐷𝐿 it is 𝑀𝑒(𝑆) = 𝑆 . We use these exact
+maps below.
+Initial state and possible raw changes For a row at height 𝑦 with |𝑦| ≤ 𝐿 , put 𝑎(𝑦) =
+min{𝐿, 𝐿 + 1 − |𝑦|}. Its occupied coordinates in 𝐷𝐿 are exactly
+−𝑎(𝑦), −𝑎(𝑦) + 1, … , 𝑎(𝑦).
+Rows with |𝑦| > 𝐿 are empty. Exchanging coordinates gives the same description of the columns.
+Consequently 𝐷𝐿 is row and column convex. Starting from any point of 𝐷𝐿, move each nonzero
+coordinate one unit at a time towards zero. Every such move decreases its absolute value and
+the sum of the two absolute values, so it remains in 𝐷𝐿. This gives an occupied path to the
+origin, and reversing one such path and concatenating with another joins any two occupied
+sites.
+If both coordinates of a site of 𝐷𝐿 are nonzero, its horizontal and vertical neighbours towards the
+origin are distinct and remain in 𝐷𝐿. If exactly one coordinate is zero, use the neighbour towards
+the origin along the nonzero coordinate and the positive unit step along the zero coordinate.
+The first decreases the norm, while the second has norm at most 𝐿 + 1 and coordinate bounds
+at most 𝐿. At the origin use (1, 0) and (0, 1). These are two occupied neighbours in every case,
+proving stability.
+For 𝑧 ∈ 𝑃 𝐿, the definition and the triangle inequality give ‖𝑧‖1 ≤ 9𝐿/10 + 1 < 𝐿 + 1 . Since this
+norm is an integer, ‖𝑧‖1 ≤ 𝐿, which also bounds both absolute coordinates. We have proved
+Shape(𝐷𝐿), 𝑃 𝐿 ⊆ 𝐷 𝐿. (G2)
+Now let 𝑆 have Shape. A vacant site cannot have both 𝐸(𝑣) and 𝑊 (𝑣) occupied: row convexity
+would then occupy 𝑣. Column convexity excludes simultaneous occupation of 𝑁 (𝑣) and 𝑆(𝑣).
+Any three of the four neighbours contain an opposite pair, so a vacant site has degree at most
+two. At an occupied site stability gives degree at least two.
+The four-input majority rule therefore has only the following possible changes:
+current centre 𝑑𝑆(𝑣) 𝜉 𝑊𝑣,𝜉(𝑆)
+𝑣 ∉ 𝑆 2 1 𝑆 ∪ {𝑣}
+𝑣 ∈ 𝑆 2 0 𝑆 ∖ {𝑣}
+all other cases 𝑆.
+(G3)
+For example, at degree two the new value is the supplied tie mark, while at an occupied site of
+degree greater than two it remains one. An event outside 𝐷𝐿 is the identity by the definition
+of the masked update, including its cleanup convention. An interior raw event that does not
+change 𝑆 also makes no modified change, because 𝑆 is already stable and 𝐾(𝑆) = 𝑆 .
+Births and legal cleanup deletions Suppose a vacant site of degree two is inserted. Its two
+occupied neighbours cannot be opposite, by the preceding argument. Thus one is horizontal
+and the other vertical. In the affected row, the new site is immediately next to the old occupied
+interval. The interval cannot continue past the vacant site, so insertion extends it by one
+endpoint. The same argument applies in the affected column. Every other section is unchanged.
+46
+
+PAGE 47
+All old occupied paths remain, and the new site is joined to an old site by an occupied edge.
+Finally old degrees cannot decrease and the new site has two occupied neighbours. Hence
+Shape(𝑆 ∪ {𝑣}), 𝐾(𝑆 ∪ {𝑣}) = 𝑆 ∪ {𝑣} (𝑣 ∉ 𝑆, 𝑑 𝑆(𝑣) = 2). (G4)
+We will also need a fact that requires no protected-set assumption. Let 𝑇 be row and column
+convex and four-connected, and remove an occupied site 𝑣 with 𝑑𝑇 (𝑣) < 2 . There cannot be two
+occupied neighbours of 𝑣 along either coordinate axis. If removing 𝑣 = (𝑥, 𝑦) split an occupied
+row interval, there would be surviving sites on both sides of 𝑥 in that row. Row convexity before
+deletion would then occupy both (𝑥 − 1, 𝑦) and (𝑥 + 1, 𝑦), contrary to the degree bound. The
+same argument in the column excludes a vertical gap. Thus the surviving rows and columns
+are still intervals.
+For connectivity, take two surviving sites and an occupied path between them of shortest length.
+This path has no repeated site, since deleting a loop would shorten it. The deleted site cannot
+be an endpoint, and if it were an internal vertex then its preceding and following vertices would
+be two distinct occupied neighbours. That contradicts 𝑑𝑇 (𝑣) < 2 . The path therefore avoids 𝑣.
+Applying this argument at every legal deletion, and using termination and the characterization
+of 𝐾, proves
+𝑇 row convex, column convex and four-connected
+⟹ 𝐾(𝑇 ) row convex, column convex and four-connected . (G5)
+This statement includes empty terminal sets. Stability is supplied at termination; it need not
+hold during cleanup.
+Opposite neighbours at an occupied degree-two site For the next two arguments as-
+sume
+Shape(𝑆), 𝐴 𝐿 ⊆ 𝑆 ⊆ 𝐷 𝐿.
+We first prove that an occupied degree-two site cannot have an opposite pair of occupied neigh-
+bours.
+Suppose, to the contrary, that 𝑣 = (𝑥, 𝑦) has only its eastern and western neighbours occupied.
+Its northern and southern neighbours are vacant. Column convexity then makes the occupied
+part of the column at 𝑥 the singleton {(𝑥, 𝑦)}: any occupied site higher or lower would force
+the missing immediate neighbour between it and 𝑣.
+If 10(|𝑥| + 1) ≤ 9𝐿 , both (𝑥, 1) and (𝑥, −1) belong to 𝐴𝐿 ⊆ 𝑆 . These two different heights
+contradict the singleton column. Therefore
+9𝐿 < 10(|𝑥| + 1).
+In particular 𝑥 ≠ 0 , since 𝐿 ≥ 2 .
+Consider first 𝑥 > 0 . For every occupied 𝑢 = (𝑎, 𝑏) with 𝑎 > 𝑥 , the support condition gives
+|𝑏| ≤ 𝐿 + 1 − 𝑎 ≤ 𝐿 − 𝑥, 10|𝑏| ≤ 10𝐿 − 10𝑥 < 𝐿 + 10 ≤ 9𝐿.
+The strict inequality uses 9𝐿 < 10(𝑥 + 1) ; the last uses 𝐿 ≥ 2 . Thus (0, 𝑏) ∈ 𝐴 𝐿 ⊆ 𝑆 . Row
+convexity between (0, 𝑏) and (𝑎, 𝑏) occupies (𝑥, 𝑏). The singleton column forces 𝑏 = 𝑦 . We have
+established the universal statement: every occupied point strictly to the right of column 𝑥 has
+height 𝑦.
+The assumed occupation of 𝐸(𝑣) ensures that this region contains an occupied point. Since 𝑆
+is finite, choose 𝑢 = (𝑎, 𝑦) ∈ 𝑆 whose first coordinate is maximal. Then 𝑎 ≥ 𝑥 + 1 . Its eastern
+47
+
+PAGE 48
+neighbour is vacant by maximality. If its northern neighbour were occupied, that neighbour
+would still lie strictly to the right of column 𝑥, so the universal statement would force its height
+𝑦 + 1 to equal 𝑦. This is impossible. The southern neighbour is excluded by the same universal
+statement, now forcing 𝑦 − 1 = 𝑦 . Only the western neighbour can remain occupied, giving
+𝑑𝑆(𝑢) ≤ 1 , contrary to stability.
+The reflection (𝑎, 𝑏) ↦ (−𝑎, 𝑏) preserves 𝐴𝐿, 𝐷𝐿, occupied degrees and stability, and maps each
+row or column interval to an interval. It reduces 𝑥 < 0 to the positive case, exchanging east
+and west. Exchanging the two coordinates preserves the same hypotheses and swaps row and
+column convexity, reducing a northern/southern opposite pair to the horizontal case. Thus
+𝑣 ∈ 𝑆, 𝑑 𝑆(𝑣) = 2
+⟹ {𝐸(𝑣), 𝑊 (𝑣)} ⊈ 𝑆, {𝑁 (𝑣), 𝑆(𝑣)} ⊈ 𝑆. (G6)
+The protection and support assumptions are essential to this argument.
+The occupied diagonal We next show that a site whose only occupied neighbours are two
+adjacent neighbours has their common diagonal occupied. It suﬀices first to consider
+𝑣 = (𝑥, 𝑦), 𝑣, 𝑁 (𝑣), 𝐸(𝑣) ∈ 𝑆, 𝑆(𝑣), 𝑊 (𝑣) ∉ 𝑆.
+Assume that 𝑞 = (𝑥 + 1, 𝑦 + 1) is vacant. Protected points on the coordinate axes give four
+implications:
+condition necessary inequality
+𝑥 > 0 9𝐿 < 10|𝑦|
+𝑦 > 0 9𝐿 < 10|𝑥|
+𝑥 < 0 9𝐿 < 10|𝑦 + 1|
+𝑦 < 0 9𝐿 < 10|𝑥 + 1|.
+Each row has a direct interval argument. If 𝑥 > 0 and 10|𝑦| ≤ 9𝐿 , the protected site (0, 𝑦) and
+𝑣 force (𝑥 − 1, 𝑦) = 𝑊 (𝑣) to be occupied. If 𝑦 > 0 and 10|𝑥| ≤ 9𝐿 , the protected site (𝑥, 0) and
+𝑣 force (𝑥, 𝑦 − 1) = 𝑆(𝑣) to be occupied.
+If 𝑥 < 0 and 10|𝑦 + 1| ≤ 9𝐿 , the protected site (0, 𝑦 + 1) and 𝑁 (𝑣) force 𝑞 to be occupied. If
+𝑦 < 0 and 10|𝑥 + 1| ≤ 9𝐿 , the protected site (𝑥 + 1, 0) and 𝐸(𝑣) force 𝑞 to be occupied. In the
+last two cases 𝑞 may be the axis endpoint, which is itself protected.
+Put 𝑟 = ⌊9𝐿/10⌋ ≥ 1 . Because all the absolute coordinates are integers, each displayed strict
+inequality says that the indicated absolute coordinate is at least 𝑟 + 1 . The definition of the
+floor gives 𝑟 > 9𝐿/10 − 1 , and therefore
+2𝑟 + 2 > 95 𝐿 ≥ 𝐿 + 1 (𝐿 ≥ 2).
+The following four cases contradict the support of one of the occupied neighbours:
+𝑥 𝑦 forced bounds occupied norm
+< 0 < 0 −𝑥 − 1 ≥ 𝑟 + 1, −𝑦 − 1 ≥ 𝑟 + 1 ‖𝑁 (𝑣)‖1 = (−𝑥) + (−𝑦 − 1) ≥ 2𝑟 + 3
+< 0 > 0 −𝑥 ≥ 𝑟 + 1, 𝑦 + 1 ≥ 𝑟 + 1 ‖𝑁 (𝑣)‖1 = (−𝑥) + (𝑦 + 1) ≥ 2𝑟 + 2
+> 0 < 0 𝑥 + 1 ≥ 𝑟 + 1, −𝑦 ≥ 𝑟 + 1 ‖𝐸(𝑣)‖1 = (𝑥 + 1) + (−𝑦) ≥ 2𝑟 + 2
+> 0 > 0 𝑥 ≥ 𝑟 + 1, 𝑦 ≥ 𝑟 + 1 ‖𝑁 (𝑣)‖1 = 𝑥 + (𝑦 + 1) ≥ 2𝑟 + 3.
+Indeed 𝑁 (𝑣), 𝐸(𝑣) ∈ 𝐷 𝐿 must both have norm at most 𝐿 + 1.
+The cases on the coordinate axes also give contradictions. If 𝑦 = 0, 𝑥 < 0 , the third implication
+requires 1 ≥ 𝑟 + 1 ; if 𝑦 = 0, 𝑥 > 0 , the first requires 0 ≥ 𝑟 + 1 . If 𝑥 = 0, 𝑦 < 0 , the fourth
+48
+
+PAGE 49
+requires 1 ≥ 𝑟 + 1 ; if 𝑥 = 0, 𝑦 > 0 , the second requires 0 ≥ 𝑟 + 1 . Finally at 𝑥 = 𝑦 = 0 , the site
+𝑊 (𝑣) = (−1, 0) is in 𝐴𝐿 because 𝐿 ≥ 2 , contradicting its vacancy. All nine sign possibilities
+have been covered, so the assumed vacant 𝑞 is impossible.
+Reflections in the coordinate axes preserve protection, support, interval convexity and occupied
+membership. Reflecting horizontally, vertically, or in both axes maps any of the other three
+adjacent pairs to the northeastern pair just treated. Reflecting its occupied diagonal back gives
+two occupied neighbours of 𝑣 occupied common diagonal
+𝑁 (𝑣), 𝐸(𝑣) (𝑥 + 1, 𝑦 + 1)
+𝑁 (𝑣), 𝑊 (𝑣) (𝑥 − 1, 𝑦 + 1)
+𝑆(𝑣), 𝐸(𝑣) (𝑥 + 1, 𝑦 − 1)
+𝑆(𝑣), 𝑊 (𝑣) (𝑥 − 1, 𝑦 − 1).
+(G7)
+A death followed by cleanup Let 𝑆 have Shape and satisfy 𝐴𝐿 ⊆ 𝑆 ⊆ 𝐷 𝐿, and let an
+occupied degree-two site 𝑣 be removed by an interior event with mark zero. By (G6), its two
+occupied neighbours are adjacent. In particular 𝑣 cannot be an internal point of its occupied row
+or column interval, since that would require an opposite occupied pair. Removing 𝑣 therefore
+preserves row and column convexity.
+For connectivity take two surviving occupied sites and a shortest occupied path between them
+in 𝑆. If it avoids 𝑣, it survives unchanged. Otherwise 𝑣 is internal and occurs just once. Its
+predecessor and successor are distinct and hence are precisely its two occupied neighbours. In
+the northeastern case, replace the segment
+𝑁 (𝑣), 𝑣, 𝐸(𝑣) by 𝑁 (𝑣), (𝑥 + 1, 𝑦 + 1), 𝐸(𝑣),
+or make the replacement in reverse order. The middle point is occupied by (G7), is distinct
+from 𝑣, and is a four-neighbour of each endpoint. The other three cases use the corresponding
+diagonal in (G7). The replacement is an occupied walk avoiding 𝑣; if it repeats another vertex,
+removing the intervening loop produces a path. Thus the raw erasure is four-connected.
+Apply (G5) to the raw erasure. Cleanup preserves its interval convexity and connectivity and
+ends in a stable set. It cannot add a point outside 𝐷𝐿. We obtain
+Shape(𝐾(𝑆 ∖ {𝑣})), 𝐾(𝑆 ∖ {𝑣}) ⊆ 𝐷 𝐿 (𝑣 ∈ 𝑆, 𝑑 𝑆(𝑣) = 2). (G8)
+Together, (G3), (G4) and (G8) show: if the input has Shape and satisfies 𝐴𝐿 ⊆ 𝑆 ⊆ 𝐷 𝐿, then
+every complete modified event has Shape and remains supported in 𝐷𝐿.
+For an explicit instance, take 𝐿 = 80 and perform the first modified update from 𝑆 = 𝐷 80 at
+𝑣 = (−79, −2) with mark zero. This is an actual allowed first event of the modified process.
+Its northern and eastern neighbours are (−79, −1) and (−78, −2); its southern and western
+neighbours have norm 82 and lie outside 𝐷80. The common diagonal is (−78, −1), of norm 79,
+so deleting 𝑣 leaves the two-edge occupied detour
+(−79, −1), (−78, −1), (−78, −2).
+The affected row changes from the integer interval [−79, 79] to [−78, 79], and the affected column
+changes from [−2, 2] to [−1, 2]. Both occupied neighbours of 𝑣 have degree four before deletion
+and degree three afterwards; all other surviving degrees are unchanged. The raw erasure is
+already stable, so cleanup makes no further deletion. The deleted site has norm 81, whereas
+𝑃80 has norm at most 73, so this first event retains protection.
+49
+
+PAGE 50
+Figure 5. A legal first update from 𝐷80, shown in a local window. The mark-zero write deletes 𝑣 =
+(−79, −2). Its occupied neighbours 𝑁 (𝑣) = (−79, −1) and 𝐸(𝑣) = (−78, −2) stay connected through
+𝑞 = (−78, −1) ; both drawn steps have length one. The southern and western neighbours are outside 𝐷80.
+The raw output is already stable, so cleanup does nothing.
+A separate small calculation illustrates a cleanup that does change the set. The toy square
+𝐶 = {0, 1} 2 has degree two at every occupied site. After a mark-zero write at (0, 0), the
+raw output is the path (0, 1), (1, 1), (1, 0). Delete (1, 0), then (0, 1), then (1, 1): their degrees
+at deletion are respectively 1, 1, 0. Thus 𝐾(𝐶 ∖ {(0, 0)}) = ∅ . The rows and columns remain
+intervals and every surviving pair stays connected at each stage. This is a toy cleanup calculation,
+not a protected trajectory starting from 𝐷𝐿.
+The completed losing output Use precisely the sequences 𝑆𝑛, 𝐹𝑛 and the first-loss index 𝜈
+of (MM4)–(MM5). We prove by induction that every frozen output has Shape and is supported
+in 𝐷𝐿. The initial case is (G2). If 𝑃𝐿 ⊆ 𝐹 𝑛, then 𝐴𝐿 ⊆ 𝐹 𝑛 and the complete next event preserves
+Shape and support by the result above. If 𝑃𝐿 ⊈ 𝐹 𝑛, the frozen recursion gives 𝐹𝑛+1 = 𝐹 𝑛, so
+the properties persist without any further geometric assumption. Therefore
+Shape(𝐹𝑛), 𝐹 𝑛 ⊆ 𝐷 𝐿 for every 𝑛 ≥ 0. (G9)
+If 𝜈 < ∞ , then 𝜈 ≥ 1 by (G2). The input 𝐹𝜈−1 = 𝑆 𝜈−1 still contains 𝑃𝐿, so the step to 𝐹𝜈 = 𝑆 𝜈
+executes its raw write and its entire cleanup. Its output has Shape by the protected-input
+argument, even though this output no longer contains 𝑃𝐿. Every later frozen output equals
+this same 𝑆𝜈. If there is no loss, every finite modified output is covered by the induction. No
+assertion about protection on an unfrozen path after its first loss is used.
+On any common clock sample that is locally finite in the finite update square, the physical state
+𝑈 (𝑇 ) is the output of a finite completed event prefix. The same holds for the strict pre-event
+state, using the prefix of arrivals strictly before the given time. Applying (G9) to those prefixes
+proves Shape and support for the actual physical frozen states, including their retained first-
+losing output. On {𝜃 ≤ 𝑇 } , where 𝜃 is the physical protected-loss time from (MM8), this is the
+state to which the static cubic loss estimate of §5 applies. After loss the frozen update is the
+identity, so its raw contribution to the frozen generator is zero; protection is needed only at the
+inputs of events that are executed.
+50
+
+PAGE 51
+6.5. The actual weighted raw rate
+We now bound the signed mass loss caused by the majority write itself, before cleanup. A
+deletion has positive sign and a birth has negative sign. The bound comes from pairing occupied
+corners with vacant valleys in adjacent columns. The difference of their weights is paid by actual
+exposed unit edges. This will give
+𝑄𝐷(𝑆) ≤ 2(𝐿 + 2) + 2 Per(𝑆) ≤ 18𝐿 + 12. (R1)
+The cleanup loss remains the separate term already accounted for in (WB2)–(WB5).
+Fix an integer 𝐿 ≥ 2 . For 𝑣 = (𝑥, 𝑦) , put ‖𝑣‖1 = |𝑥| + |𝑦| and write
+𝐷 = {(𝑥, 𝑦) ∈ ℤ 2 ∶ |𝑥| ≤ 𝐿, |𝑦| ≤ 𝐿, |𝑥| + |𝑦| ≤ 𝐿 + 1}, 𝐸 = {−𝐿, … , 𝐿} 2,
+𝐴 = {𝑣 ∶ 10‖𝑣‖ 1 ≤ 9𝐿}, 𝑤(𝑣) = 𝐿 + 2 − ‖𝑣‖ 1, 𝑚(𝐵) = ∑
+𝑣∈𝐵
+𝑤(𝑣). (R2)
+Here 𝐵 may be any finite set: 𝑤 is the literal signed function on the lattice. In particular
+𝑤 ≥ 1 on 𝐷, but it can be negative on 𝐸. Throughout the deterministic argument assume
+that 𝐴 ⊆ 𝑆 ⊆ 𝐷 and that 𝑆 has the four shape properties proved in the preceding subsection:
+every occupied row and column is an integer interval, any two occupied sites can be joined by
+four-neighbour steps in 𝑆, and every occupied site has at least two occupied neighbours.
+We use two local conclusions already proved there. A vacant site has at most two occupied
+neighbours, and they cannot be an opposite pair. At an occupied site with exactly two occupied
+neighbours, those neighbours also cannot be opposite. The second conclusion uses the protected
+core 𝐴, stability, and support in 𝐷, as well as interval convexity. It is not a consequence of
+interval convexity alone.
+Let 𝜌𝑣,𝑏(𝑆) be the unmasked majority write at 𝑣, with tie mark 𝑏 ∈ {0, 1} : it writes 0 for fewer
+than two occupied neighbours, 1 for more than two, and 𝑏 for exactly two. All other sites retain
+their values. For 𝑣 ∈ 𝐷 , this is exactly the raw map 𝑅(𝑣,𝑏) of §6.1. Define
+𝑞𝑆(𝑣) = 𝑚(𝑆) − 𝑚(𝜌 𝑣,0(𝑆)) + 𝑚(𝑆) − 𝑚(𝜌 𝑣,1(𝑆))2 ,
+𝑄𝐷(𝑆) = ∑
+𝑣∈𝐷
+𝑞𝑆(𝑣), 𝑄 𝐸(𝑆) = ∑
+𝑣∈𝐸
+𝑞𝑆(𝑣).
+(R3)
+The factor 1/2 averages the two actual fair marks. Each site clock has rate one; there is no
+division by the number of sites.
+Extending the sum adds only zero-weight births We first prove a support fact, without
+using the shape assumptions. Suppose 𝑆 ⊆ 𝐷 and a site 𝑧 = (𝑥, 𝑦) has at least two occupied
+neighbours. Then |𝑥|, |𝑦| ≤ 𝐿 . For example, if 𝑥 > 𝐿 , its north, south and east neighbours
+all have first coordinate greater than 𝐿, so at most its west neighbour can be occupied. This
+contradicts the assumed degree. The same argument at 𝑥 < −𝐿 , 𝑦 > 𝐿 , and 𝑦 < −𝐿 leaves at
+most one possible occupied neighbour in each case.
+One occupied neighbour 𝑢 also gives
+‖𝑧‖1 ≤ ‖𝑢‖ 1 + 1 ≤ 𝐿 + 2.
+Consequently, if such a 𝑧 lies outside 𝐷, its coordinates are still in the square 𝐸, while its integer
+norm is greater than 𝐿 + 1 and at most 𝐿 + 2. Thus
+𝑧 ∉ 𝐷, 𝑑 𝑆(𝑧) ≥ 2 ⟹ 𝑧 ∈ 𝐸, ‖𝑧‖ 1 = 𝐿 + 2, 𝑤(𝑧) = 0. (R4)
+51
+
+PAGE 52
+Here 𝑑𝑆(𝑧) counts the occupied north, east, south and west neighbours of 𝑧.
+For clarity, the probability of a birth at a vacant site under a fair mark is
+𝛽𝑆(𝑧) =
+⎧{
+⎨{⎩
+0, 𝑑 𝑆(𝑧) < 2,
+1/2, 𝑑 𝑆(𝑧) = 2,
+1, 𝑑 𝑆(𝑧) > 2.
+For 𝑧 ∈ 𝐸 ∖ 𝐷 the site is vacant, so 𝑞𝑆(𝑧) = −𝑤(𝑧)𝛽 𝑆(𝑧). If its degree is below two, the birth
+probability is zero; otherwise (R4) makes its weight zero. Partitioning 𝐸 into 𝐷 and 𝐸 ∖ 𝐷
+proves the exact cancellation
+𝑄𝐷(𝑆) = 𝑄 𝐸(𝑆) + ∑
+𝑧∈𝐸∖𝐷
+𝑤(𝑧)𝛽𝑆(𝑧) = 𝑄 𝐸(𝑆). (R5)
+The sum over 𝐸 is a calculation device: clocks outside 𝐷 still act by the identity in the masked
+experiment. Equality (R5) holds because their unmasked weighted contributions vanish. It
+does not assert that a birth outside 𝐷 is impossible. For example, for 𝑆 = 𝐷 80 the vacant site
+(−80, 2) has occupied east and south neighbours (−79, 2) and (−80, 1). A mark 1 births it in
+the unmasked update. Its weight is 82 − 80 − 2 = 0 , so that birth contributes no weighted
+correction.
+F our corner and valley charges The neighbour maps are 𝑁 (𝑥, 𝑦) = (𝑥, 𝑦 + 1), 𝐸+(𝑥, 𝑦) =
+(𝑥 + 1, 𝑦), 𝑆−(𝑥, 𝑦) = (𝑥, 𝑦 − 1) , and 𝑊 (𝑥, 𝑦) = (𝑥 − 1, 𝑦) . The subscripts distinguish the east
+and south maps from the square 𝐸 and the occupied set 𝑆. Define the northwest corner and
+valley sets by
+𝒞NW = {𝑣 ∈ 𝑆 ∶ 𝑁 (𝑣) ∉ 𝑆, 𝑊 (𝑣) ∉ 𝑆},
+𝒱NW = {𝑧 ∈ 𝐸 ∖ 𝑆 ∶ 𝐸 +(𝑧) ∈ 𝑆, 𝑆 −(𝑧) ∈ 𝑆},
+𝐻NW(𝑆) = ∑
+𝑣∈𝒞NW
+𝑤(𝑣) − ∑
+𝑧∈𝒱NW
+𝑤(𝑧).
+(R6)
+The other three orientations use the following pairs. A corner is occupied and both listed
+neighbours are vacant; a valley is vacant and both listed neighbours are occupied.
+Orientation Corner’s vacant pair Valley’s occupied pair
+NW north, west east, south
+NE north, east west, south
+SW south, west east, north
+SE south, east west, north
+Each charge 𝐻 is the sum of its corner weights minus the sum of its valley weights in 𝐸.
+The local exclusions stated after (R2), together with stability, leave exactly four cases:
+Present site Occupied degree
+Mean raw mass loss
+𝑞𝑆(𝑣)
+Contribution to the
+four charges at 𝑣
+occupied 2, adjacent pair 𝑤(𝑣)/2 +𝑤(𝑣) in one corner
+orientation
+occupied 3 or 4 0 0
+vacant 2, adjacent pair −𝑤(𝑣)/2 −𝑤(𝑣) in one valley
+orientation
+52
+
+PAGE 53
+Present site Occupied degree
+Mean raw mass loss
+𝑞𝑆(𝑣)
+Contribution to the
+four charges at 𝑣
+vacant 0 or 1 0 0
+To check the first row, the degree-two occupied site is deleted only by mark 0. Its other two,
+vacant neighbours form exactly one of the four corner pairs in the table. A site of degree at
+least three has fewer than two vacant neighbours and is unchanged by either mark. For a vacant
+degree-two site, only mark 1 changes its value, and its two occupied neighbours select exactly
+one valley pair. A vacant site of degree at most one has neither a birth nor a valley pair. There
+are no further cases: a vacant degree of three would contain an opposite pair, and an occupied
+degree below two violates stability.
+Thus twice the mean loss at each site is the sum of its four signed orientation contributions.
+Summing over 𝐸, which contains 𝑆, gives
+2𝑄𝐸(𝑆) = 𝐻 NW(𝑆) + 𝐻 NE(𝑆) + 𝐻 SW(𝑆) + 𝐻 SE(𝑆). (R7)
+In particular, the negative birth terms have been included, with the same weight as in (R3).
+A concrete pairing across adjacent columns We prove 𝐻NW(𝑆) ≤ 𝐿 + 2 + Per(𝑆). The
+construction below needs column intervals, four-neighbour connectivity and support in 𝐷. If 𝑆
+is empty, both sums are empty and the assertion holds. Otherwise let 𝐼 be the set of occupied
+column coordinates. It is an integer interval: on an occupied path between columns 𝑎 < 𝑏 , the
+first coordinate changes by at most one at each step and therefore visits every integer between
+𝑎 and 𝑏.
+For 𝑥 ∈ 𝐼 , let ℎ𝑥 be the largest occupied height in that column. Column convexity makes its
+occupied heights a single interval, so any northwest corner in that column must be its unique
+top 𝑣 = (𝑥, ℎ 𝑥).
+Take a northwest corner outside the first occupied column. The preceding column 𝑥 − 1 is
+occupied. Set
+𝑎 = ℎ 𝑥−1, 𝑏 = ℎ 𝑥, 𝑢 = (𝑥 − 1, 𝑎), 𝑣 = (𝑥, 𝑏).
+An occupied path from 𝑢 to 𝑣 must cross the vertical line between columns 𝑥 − 1 and 𝑥. To
+see the actual edge, follow the path until its first site whose first coordinate is at least 𝑥. The
+previous site has first coordinate 𝑥 − 1, the new site has coordinate 𝑥, and the step is horizontal.
+Hence for some integer 𝑐 both (𝑥 − 1, 𝑐) and (𝑥, 𝑐) are occupied, with 𝑐 ≤ 𝑎, 𝑏 .
+We claim 𝑎 < 𝑏 . If 𝑏 ≤ 𝑎 , then 𝑐 ≤ 𝑏 ≤ 𝑎 , and the interval in column 𝑥 − 1 contains (𝑥 − 1, 𝑏).
+This is 𝑊 (𝑣), contradicting the definition of the corner. We may therefore pair 𝑣 with
+𝑧 = 𝜋(𝑣) = (𝑥 − 1, 𝑎 + 1). (R8)
+This is an actual vacant valley. It is vacant because it lies above the top 𝑎 of its column, and
+its south neighbour is 𝑢 ∈ 𝑆 . Its east neighbour (𝑥, 𝑎 + 1) is occupied: it lies between (𝑥, 𝑐)
+and (𝑥, 𝑏) in the current column, since 𝑐 ≤ 𝑎 < 𝑎 + 1 ≤ 𝑏 . Finally, its two occupied neighbours
+imply 𝑧 ∈ 𝐸 by the coordinate argument preceding (R4). Thus 𝑧 belongs to exactly the valley
+set in (R6), even if 𝑧 ∉ 𝐷 .
+The pairing is injective. If 𝜋(𝑣) = 𝜋(𝑣 ′), their first coordinates give the same corner column
+𝑥; each column has only one top, so 𝑣 = 𝑣 ′. The only corners left unpaired are in the first
+occupied column, which again has one top. There is therefore at most one unpaired corner. Its
+53
+
+PAGE 54
+total weight is at most 𝐿 + 2, since 𝑤(𝑣) = 𝐿 + 2 − ‖𝑣‖ 1 ≤ 𝐿 + 2 ; with no unpaired corner the
+sum is zero.
+Figure 6. Left: the static protected shape (R12), with preceding top 𝑢 = (−76, −4) , corner 𝑣 = (−75, 1) ,
+and paired valley 𝑧 = (−76, −3) . The five marked west sides belong to the occupied cells (−75, 𝑗) for
+𝑗 = −3, −2, −1, 0, 1 and pay for 𝑤(𝑣) − 𝑤(𝑧) = 6 − 3 = 3 ≤ 5 . No reachability claim is made for this
+example. Right: a different state, 𝑆 = 𝐷 80, has the genuine exterior valley (−80, 2) of weight zero.
+Its possible unmasked birth does not affect (R5). Filled cells are occupied and outlined cells are vacant.
+Green arrows indicate the pairing, not updates or occupied paths.
+The payment uses exposed unit edges For the pair above, 𝑏 > 𝑎 . The difference of the
+actual weights is
+𝑤(𝑣) − 𝑤(𝑧) = |𝑥 − 1| − |𝑥| + |𝑎 + 1| − |𝑏|
+≤ 1 + (𝑏 − 𝑎 − 1) = 𝑏 − 𝑎. (R9)
+The first bound follows from |𝑥 − 1| ≤ |𝑥| + 1 . For the second, 𝑎 + 1 ≤ 𝑏 and the triangle
+inequality give
+|𝑎 + 1| = |𝑏 − (𝑏 − 𝑎 − 1)| ≤ |𝑏| + (𝑏 − 𝑎 − 1).
+These inequalities cover all coordinate signs and the axes.
+For each integer 𝑗 = 𝑎 + 1, … , 𝑏 , the site (𝑥, 𝑗) is occupied by the same crossing and column-
+interval argument. Its west neighbour (𝑥 − 1, 𝑗) is vacant because 𝑗 > 𝑎 . Thus its west side is
+one of the genuine exposed edges counted by Per (𝑆) in (PB2). There are exactly 𝑏 − 𝑎 such
+unit edges. A second northwest corner must lie in a different column, so its paid west edges
+have different occupied source cells. The paid segments for this one orientation are disjoint.
+Therefore
+∑
+𝑣 paired
+[𝑤(𝑣) − 𝑤(𝜋(𝑣))] ≤ ∑
+𝑣 paired
+(ℎ𝑥 − ℎ𝑥−1) ≤ Per(𝑆). (R10)
+In the middle sum, 𝑥 is the column coordinate of the summation corner 𝑣 = (𝑥, ℎ 𝑥). The
+differences in the first sum keep their signs; the argument does not replace a negative difference
+by its absolute value.
+54
+
+PAGE 55
+Every valley counted in (R6) has nonnegative weight. Indeed, a valley in 𝐷 has weight at least
+one, while a valley outside 𝐷 has two occupied neighbours and hence weight zero by (R4). This
+assertion is only about valleys, not all of 𝐸. Since the paired valleys form an injective subset of
+all valleys, subtracting all valley weights gives an upper bound no larger than subtracting just
+the paired weights. Splitting the corners into paired and unpaired ones now gives
+𝐻NW(𝑆) ≤ ∑
+𝑣 unpaired
+𝑤(𝑣) + ∑
+𝑣 paired
+[𝑤(𝑣) − 𝑤(𝜋(𝑣))]
+≤ 𝐿 + 2 + Per(𝑆).
+(R11)
+The numbers in Figure 6 come from the following finite set satisfying all the deterministic
+hypotheses. Take 𝐿 = 80 and
+𝑆 = {(𝑥, 𝑦) ∈ 𝐷 80 ∶ 𝑥 ≥ −76, (𝑥 ≥ −74 or 𝑦 ≤ 1), (𝑥 ≥ −75 or 𝑦 ≤ −4)}. (R12)
+Its columns at −76 and −75 are respectively [−5, −4] and [−6, 1]; all columns at 𝑥 ≥ −74 retain
+their 𝐷80 intervals. Every row is the intersection of a 𝐷80 interval with a right half-line: its
+new lower bound is −76 for 𝑦 ≤ −4 , −75 for −3 ≤ 𝑦 ≤ 1 , and −74 for 𝑦 ≥ 2 . Hence rows and
+columns remain intervals. Every occupied site in the two shortened columns can move east to
+the unchanged part 𝑥 ≥ −74 . From there first move the horizontal coordinate towards zero,
+then the vertical coordinate towards zero. The horizontal coordinate never falls below −74, and
+no step increases either absolute coordinate or their sum, so each step remains in both 𝐷80 and
+the unchanged part. This proves four-neighbour connectivity. In each column −76, −75, −74,
+every site has an occupied east neighbour and at least one vertical neighbour. At 𝑥 ≥ −73 the
+neighbours from 𝐷80 are unchanged, so its degree remains at least two. Thus 𝑆 is stable. The
+protected band 𝑃80 has ‖𝑣‖1 ≤ 73, so 𝑥 ≥ −73 there and the whole band is retained.
+Now 𝑎 = −4 , 𝑏 = 1 , and 𝑏−𝑎 = 5 . The corner and valley weights are 82−75−1 = 6 and 82−76−
+3 = 3 . The five actual edge sources are (−75, −3), (−75, −2), (−75, −1), (−75, 0), (−75, 1). A
+fair raw deletion at 𝑣 contributes 6/2 = 3 to the site rate; a fair raw birth at 𝑧 contributes −3/2.
+Their combined contribution is (6 − 3)/2 = 3/2 ≤ 5/2 . The example verifies the deterministic
+estimate; no claim of reachability from 𝐷80 by a marked word is needed or made.
+The four orientations give the linear constant Reflecting either coordinate preserves
+absolute values, 𝐷, 𝐸, 𝐴, neighbour relations, interval rows and columns, stability, connectivity,
+and exposed unit edges. It therefore preserves the weight and perimeter. Reflection sends each
+of the four orientation charges to a northwest charge of the reflected set. Apply (R11) in each
+reflected state, then use (R7):
+𝑄𝐸(𝑆) ≤ 2(𝐿 + 2) + 2 Per(𝑆). (R13)
+Each of the four charges has used its own valid upper bound Per (𝑆); after summing and dividing
+by two this gives 2 Per(𝑆). We have not asserted disjointness of payments across different
+orientations.
+To bound the perimeter, every nonempty interval column has one exposed top side and one
+exposed bottom side, with no other exposed sides in these directions. Every nonempty interval
+row has one exposed left and one exposed right side. These four directions partition all exposed
+edges, including when 𝑆 is empty. Thus
+Per(𝑆) = 2(#{ occupied columns } + #{occupied rows })
+≤ 2((2𝐿 + 1) + (2𝐿 + 1)) = 8𝐿 + 4. (R14)
+The final inequality uses 𝑆 ⊆ 𝐸 . Combining (R5), (R13), and (R14) proves (R1), since 2(𝐿 +
+2) + 2(8𝐿 + 4) = 18𝐿 + 12 .
+55
+
+PAGE 56
+Return to the frozen dynamics of §§6.1–6.3, where 𝐿 ≥ 80 . At an input retaining 𝑃𝐿, the actual
+shape theorem gives the four shape properties and 𝐴𝐿 ⊆ 𝑃 𝐿 ⊆ 𝑆 ⊆ 𝐷 𝐿, so (R1) applies to the
+literal quantity (R3). At an input that has lost 𝑃𝐿, the frozen update is the identity and its
+raw rate is zero. Consequently the exact rate from (WB3) satisfies
+𝑟raw(𝑆) = 1{𝑃𝐿⊆𝑆}𝑄𝐷(𝑆) ≤ 18𝐿 + 12 (R15)
+on every actual frozen state. The output first losing protection is still retained in full, as proved
+in the shape subsection. It need not retain 𝐴𝐿 for this rate estimate: once 𝑃𝐿 is lost, the
+indicator in (R15) is zero. Inserting this bound, with the already separate cleanup term, into
+(WB5) gives
+𝔼𝑉 (𝑈 (𝑇 )) ≤ (18𝐿 + 12)𝑇 + (𝐿 + 2)(4𝐿 + 2), 𝑇 ≥ 0. (R16)
+The integration is over true elapsed time with the original rate-one clocks and fair marks. The
+bound on the raw contribution has now been derived from the actual state geometry; it is not
+an additional assumption in the weighted balance.
+6.6. F rom the actual geometric bounds to the original clock tail
+We can now finish Lemma 3. Fix an integer 𝐿 ≥ 80 . Let 𝑈 (𝑡) be the frozen occupied set
+constructed in §6.1 from the original clocks on 𝐸𝐿, and let 𝜃 ∈ [0, ∞] be its first protected-loss
+time. Write
+𝑎𝐿 = 18𝐿 + 12, 𝐵 𝐿 = (𝐿 + 2)(4𝐿 + 2), ℎ 𝐿 = 𝐿312500 > 0. (LT1)
+Here 𝐵𝐿 is the already proved cleanup budget, while 𝑎𝐿 bounds the separate signed raw rate.
+Both retain the original rate-one clock scale.
+The preservation result in §6.4 is a statement about every finite marked word. On the single
+regular set of clock samples from §6.1, the actual state at every finite time is the endpoint of
+such a word. It follows simultaneously for all 𝑡 ≥ 0 that 𝑈 (𝑡) is row-convex, column-convex,
+nearest-neighbour connected and stable, with 𝑈 (𝑡) ⊆ 𝐷 𝐿. At a ring time its strict pre-event
+state is also the endpoint of a finite prefix and has the same properties. This passage uses one
+probability-one set, rather than choosing a new exceptional set for each time.
+If 𝑃𝐿 ⊆ 𝑈 (𝑡), then 𝐴𝐿 ⊆ 𝑈 (𝑡), so the deterministic raw estimate of §6.5 applies to the actual
+set. If 𝑃𝐿 ⊈ 𝑈 (𝑡), the frozen rate (WB3) is zero. In either case,
+𝑟raw(𝑈 (𝑡)) ≤ 𝑎𝐿 for every 𝑡 ≥ 0 on the same regular set . (LT2)
+The same bound holds for the strict pre-event version in (PB21). No comparison with the
+evolving original process after freezing is needed here.
+The time and sample integrals in (WB5) already exist, because their integrands are bounded
+functions of the finite reachable machine. Integrating (LT2), and retaining the cleanup budget
+from (PB21), gives
+𝔼𝑉𝐿(𝑈 (𝑇 )) ≤ ∫
+𝑇
+0
+𝔼𝑟raw(𝑈 (𝑠)) 𝑑𝑠 + 𝐵𝐿 ≤ 𝑎 𝐿𝑇 + 𝐵 𝐿, 𝑇 ≥ 0. (LT3)
+Thus (13) is a consequence of the original gap-and-mark law and the geometric calculation. The
+raw term has been bounded, not discarded.
+For each finite 𝑇 , use the measurable endpoint event 𝐸𝑇 = {𝑃 𝐿 ⊈ 𝑈 (𝑇 )}. By (MM9), this event
+agrees on the common probability-one regular set with {𝜃 ≤ 𝑇 } ; the notation ℙ(𝜃 ≤ 𝑇 ) below
+means ℙ(𝐸𝑇 ). All probabilities in this step are therefore taken only for the already measurable
+56
+
+PAGE 57
+endpoint event 𝐸𝑇 . On 𝐸𝑇 , the retained state is the completed output that first lost protection.
+Its row and column convexity and connectedness still hold: §6.4 included that losing output,
+although protection itself no longer holds there. Applying the static lemma (SG5) therefore
+gives 𝑉𝐿(𝑈 (𝑇 )) ≥ ℎ𝐿. On the complementary event 𝑉𝐿(𝑈 (𝑇 )) ≥ 0 by (SG4). Consequently the
+pointwise indicator bound is
+ℎ𝐿 1𝐸𝑇 ≤ 𝑉 𝐿(𝑈 (𝑇 )) almost surely . (LT4)
+Both variables are measurable and integrable, as established for the frozen endpoint and its
+bounded missing weight in §6. Taking expectations and using (LT3) proves
+ℙ(𝜃 ≤ 𝑇 ) ≤ 𝑎𝐿𝑇 + 𝐵 𝐿
+ℎ𝐿
+. (LT5)
+The estimate uses only the finite-horizon indicator (LT4); it assumes neither 𝜃 < ∞ nor eventual
+extinction. If 𝜃 = ∞ , its indicator is zero at every finite 𝑇 .
+Finally (MM10) was proved under the very same clock and mark sample: extinction of the
+original zero-boundary process on 𝐸𝐿 implies protected loss by that time. Translation identifies
+𝐸𝐿 with the square of side 2𝐿 + 1 used in (5). Hence
+1 − 𝐶2𝐿+1(𝑇 ) ≤ ℙ(𝜃 ≤ 𝑇 ) ≤ (18𝐿 + 12)𝑇 + (𝐿 + 2)(4𝐿 + 2)𝐿3/12500 , 𝑇 ≥ 0. (LT6)
+This is (10). It is a statement about the original clock law in physical time. Lemma 2 and the
+explicit calculations after (10) transfer it to synchronous rounds; no time parameter has been
+renamed in this final step.
+7. Proof of the retained-clock coupling
+For every site 𝑢 ∈ 𝑄 𝑀 and index 𝑟 ≥ 0 , sample independent gaps 𝐺𝑢,𝑟 ∼ Exp(1) and marks
+𝑈𝑢,𝑟 ∼ Bernoulli(1/2), with the two entire fields independent. The event with identity (𝑢, 𝑟)
+has arrival time
+𝑠𝑢,𝑟 =
+𝑟
+∑
+ℓ=0
+𝐺𝑢,ℓ.
+For the smaller square retain exactly the coordinates 𝐺𝑣,𝑟, 𝑈𝑣,𝑟 with 𝑣 ∈ 𝑄 𝑚. Preserve the
+arrival index 𝑟.
+The smaller field has its exact product law. Every finite collection of distinct retained identi-
+ties is a collection of distinct larger coordinates with the prescribed independent distributions.
+Cylinder sets (events depending on only finitely many coordinates) determine this countable
+product law. Restriction acts separately on gap and mark fields, so it preserves their joint
+independence. No marks are resampled.
+There is a single probability-one set on which all gaps are positive, every site’s partial sums
+diverge, and arrivals at distinct sites never coincide. For divergence, fix a site and a starting
+index 𝑟. The probability that none of the next 𝑛 independent gaps exceeds one is (1 − 𝑒 −1)𝑛,
+which tends to zero. Thus the event that no gap after 𝑟 exceeds one has probability zero.
+Taking the countable union over 𝑟 shows that infinitely many gaps exceed one almost surely,
+so their partial sums diverge. Each cross-site arrival equality has probability zero, and there
+are countably many pairs. There are finitely many sites; thus every bounded time interval
+has finitely many events. These properties hold simultaneously for all time bounds, without
+intersecting uncountably many fixed-time null sets.
+57
+
+PAGE 58
+Fix a regular sample and 𝑡 ≥ 0 . The smaller chronological list is precisely the larger chronological
+list with all events outside 𝑄𝑚 deleted. Arrival sums and indices are unchanged, and there are
+no ties to reorder. This proves the retained-word identity.
+Suppose current states satisfy 𝑥(𝑣) ≤ 𝑦(𝑣) on 𝑄𝑚. Extend 𝑥 by zero and 𝑦 by the mixed
+boundary. The first extension is below the second everywhere: inside 𝑄𝑚 use the assumed
+order, and outside it the first extension is zero.
+Read the finite larger event list in time order. An event outside 𝑄𝑚 writes no restricted coordi-
+nate, so the order on 𝑄𝑚 is preserved while the smaller state stays fixed. An event at 𝑣 ∈ 𝑄 𝑚 is
+applied to both states with the same mark 𝑈𝑣,𝑟. Their four neighbour inputs are ordered by the
+extension argument, so monotonicity of Φ preserves the order at 𝑣; other restricted coordinates
+are unchanged.
+The initial order holds because the larger square is filled. Induction over events proves (19) at 𝑡.
+The same regular sample supports the argument for every 𝑡, proving its simultaneous-time form.
+If the larger endpoint is white throughout 𝑄𝑚, the smaller endpoint is zero. Event containment
+and the exact projected law give (20). □
+This comparison does not assert that the mixed process is absorbed when its target block
+becomes white. Only the local endpoint event is needed.
+8. Scope of the result
+The lower argument needs a positive probability of surviving a quadratic number of rounds.
+The upper argument needs a uniform positive probability of clearing within a quadratic block.
+First and second moments suﬀice for the upper argument because the staircase geometry turns
+a particle-count threshold into a square of white sites.
+The constants in (4) are not optimized. No leading constant, limiting extinction law, shape
+theorem, or stability from random perturbations is claimed. The retained failure rate gives
+(4c); Theorem 4 supplies fixed positive moments and exponential integrability on its stated
+interval. The filled square attains the exact worst extended expectation by (6a). The lower
+argument gives a positive survival probability for that witness; the geometric upper tail (4a)
+holds uniformly for every permitted deterministic perturbation of exact size 𝑁 .
+The two quantitative estimates are weighted slow extinction and mixed local clearing. The clock
+bridge and retained-clock coupling connect them to the original synchronous law. For the lower
+estimate, shape preservation activates the static loss threshold; the corner–valley boundary
+calculation controls the raw contribution, while the separate perimeter budget pays for cleanup.
+9. Formal artifact and source dictionary
+The strengthened main entry is ImprovedOriginalLower.lean. Its declarations tau_quadratic_
+bounds and tau_theta_quadratic give (4) and its asymptotic form for OriginalRecoveryPro-
+file.tau. The original frozen theorem remains in OriginalQuadraticRecovery.lean; the upper
+coeﬀicient is unchanged.
+The paper’s finite side 𝑚 corresponds to the source argument 𝑛 = 𝑚 − 2 . For a half-side
+parameter 𝐿 ≥ 1 , ClippedSquareCoordinates.parameter(L) is 2𝐿 − 1, so its actual side is 2𝐿 + 1.
+In the upper construction 𝐿 = 4𝑁 , the side is 8𝑁 + 1 . Substituting 𝑛 = 𝑁 into a finite-square
+source theorem would therefore use the wrong size.
+58
+
+PAGE 59
+Paper statement Source entry
+Exact-𝑁 normalization and expectation OriginalRecoveryProfile: tau_eq_
+normalizedTau, expectedRecovery_finite_
+square
+Lemma 2 SquareRecoveryTime: two_way_clock_tail;
+SchedulingFailure: bad_tail
+Censoring and clock word embeddings SquarePWCensoring:
+actualMajorityWordMean_censoring;
+RankClockCensoring
+Actual shape and weighted raw boundary ProtectedEvolution,
+ProtectedCornerGeometry,
+WeightedRawContour, WeightedRawRate
+Lemma 3 and strengthened lower bound FullBlockThreshold: fullBlock_exact_lower_
+bound, fullBlock_cubic_weight, original_
+clock_extinction_at_quadraticHorizon_le_
+half; ImprovedOriginalLower: synchronous_
+tail_ge_quarter, rounds_quarter_ge_
+original_square, tau_quadratic_bounds
+Common finite-state observable identity MachineClockGenerator: expected_
+observable_dynkin_current;
+MachineClockDynkin: expected_observable_
+dynkin; the site type is the finite square
+DropletClockLaw.Vertex L
+Lemma 4 MixedClockMoments,
+MixedMomentEvolution, MixedHeatDecay,
+MixedRightCountMoments,
+MixedClearingProbability
+Lemma 5 and exact projected law ClockSampleRestriction: projectSample_
+map; ClockWordRestriction: reverse_word_
+map_eq_filter; CrossSquareClockBound
+Lemma 6 and final upper bound OriginalQuadraticUpper: recovery_block_
+tail, finiteExpected_le_two_blocks, tau_
+quadratic_upper_bound
+Exact filled-square extremizer and
+original-law block tail
+OriginalRecoveryResults: tau_eq_full_
+square, original_recovery_block_tail
+Accurate failure rate and restart SharpRecoveryTail: recovery_block_tail,
+finiteExpected_le, tau_le; SharpFailureRate:
+failure_le_five_div, failure_isBigO_inv
+Fixed positive moments and exponential
+interval
+RecoveryMoments: recovery_rpow_le,
+recovery_exponential_le, expConstant_lt_
+top
+Original infinite-grid conclusions and the
+shared current-state formula
+OriginalConsequences: quadratic_bounds,
+original_sharp_block_tail, original_rpow_le,
+original_exponential_lt_top, finite_
+machine_dynkin
+The original verification record reports a unified build and standard Lean kernel audit on 26 Oc-
+tober 2026. It distinguishes 259 analysis sources built in that run from eight earlier core sources
+whose recorded fingerprints were rechecked. The analysis toolchain is Lean 4.35.0-rc4 with the
+59
+
+PAGE 60
+recorded mathlib revision. The recorded axiom output contains propext, Classical.choice and
+Quot.sound.
+The new interfaces preserve the original infinite-grid measure, both homogeneous backgrounds,
+exact enclosing-square size, and extended recovery time. The revision validation record sepa-
+rates the fresh project-source replay, the new-module builds and per-declaration axiom output,
+the source fingerprints, and the independent AI semantic check. It also records that the locked
+external Lean and mathlib dependencies are reused. The source dictionary identifies the proof
+interfaces used in the revised sections. These checks are distinct from human specialist refereeing
+and historical-priority assessment.
+References
+[FMT22] Nazim Fatès, Irène Marcovici and Siamak Taati. Self-stabilisation of Cellular
+Automata on Tilings . Fundamenta Informaticae 185(1), 27–82, 2022. Author PDF ; DOI.
+arXiv:2101.12682, v3 dated 5 March 2022.
+[CMST10] Pietro Caputo, Fabio Martinelli, François Simenhaus and Fabio Lucio Toninelli.
+“Zero” temperature stochastic 3D Ising model and dimer covering fluctuations: a first step
+towards interface mean curvature motion . arXiv:1007.3599v2, 14 September 2010. The two-
+dimensional result is Theorem 2; the model uses continuous-time single-site clocks.
+[PW11] Yuval Peres and Peter Winkler. Can extra updates delay mixing? arXiv:1112.0603v1,
+2 December 2011. Relevant predecessors are the censoring inequality and the update-scheme
+comparisons in §3.
+[LY24] Hongyang Liu and Yitong Yin. Parallelize Single-Site Dynamics up to Dobrushin Crite-
+rion. arXiv:2111.04044v2, 20 December 2024; first version 7 November 2021. Lemma 3.11 gives
+a dependency-depth tail and credits earlier sources.
+60

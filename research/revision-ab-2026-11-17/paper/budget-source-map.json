@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "status": "Source-mapped v4 E3 budget substage; independent simulated-reader acceptance is managed by root.",
+  "paper_target": "quadratic-recovery-v4 Section 6.2; cleanup obligation only; does not close Lemma 3 or (13).",
+  "document": {
+    "path": "perimeter-budget.md",
+    "sha256": "A6831578E18E1982D7B61D7D3FE403227ECC72612C6AB1F0A7B6AB31F32B2FBD",
+    "lines": 241
+  },
+  "figure_context": {
+    "path": "images/cleanup-freeze-perimeter.png",
+    "sha256": "38CB653DC9C4F126EC864859E88F26F5629F6862410C8D0FBFCBD3962D888232",
+    "owner": "root",
+    "inspected_by_budget_writer": true,
+    "scope": "Toy input is two separated 2x2 blocks with toy protection {(1,1)}; three cleanup deletions cost perimeter8 and weight242 at L80, excluding raw weight82. Not claimed to be a reachable trajectory from D_L."
+  },
+  "claims": [
+    {
+      "id": "PB1",
+      "document_lines": [
+        7,
+        13
+      ],
+      "claim": "D_L and integer linear weights, with positive weights on D.",
+      "sources": [
+        "MathResearchAnalysis.ClippedDiamondGeometry.clippedDomain",
+        "MathResearchAnalysis.ForbiddenBirthControl.weight",
+        "MathResearchAnalysis.ForbiddenBirthControl.weight_nonnegative_on_domain",
+        "MathResearchAnalysis.ForbiddenBirthControl.weight_upper_bound"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB2-PB4",
+      "document_lines": [
+        15,
+        37
+      ],
+      "claim": "Actual exposed nearest-neighbour unit-edge perimeter and exact changes 2d-4 on deletion and 4-2d on birth.",
+      "sources": [
+        "MathResearchAnalysis.GridCellBoundary.boundary",
+        "MathResearchAnalysis.GridCellBoundary.perimeter",
+        "MathResearchAnalysis.GridMajorityPeeling.degree4",
+        "MathResearchAnalysis.GridPerimeterUpdate.perimeter_insert",
+        "MathResearchAnalysis.GridPerimeterUpdate.perimeter_erase"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB5-PB7",
+      "document_lines": [
+        39,
+        71
+      ],
+      "claim": "Raw majority is perimeter-nonincreasing, including either tied mark. Exterior events are literal identity. Every cleanup deletion drops perimeter at least two.",
+      "sources": [
+        "MathResearchAnalysis.DropletModifiedWord.rawStep",
+        "MathResearchAnalysis.DropletModifiedWord.maskedRawStep",
+        "MathResearchAnalysis.DropletModifiedWord.modifiedStep",
+        "MathResearchAnalysis.GridMajorityPeeling.cleanup_reachable",
+        "MathResearchAnalysis.GridPerimeterDynamics.rawStep_perimeter_le",
+        "MathResearchAnalysis.GridPerimeterDynamics.maskedRawStep_perimeter_le",
+        "MathResearchAnalysis.GridPerimeterDynamics.cleanup_perimeter_card_budget",
+        "MathResearchAnalysis.GridPerimeterDynamics.modifiedStep_perimeter_loss_budget"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB8",
+      "document_lines": [
+        73,
+        84
+      ],
+      "claim": "Each nonempty interval row and column contributes two exposed sides, giving Per(D_L)=8L+4.",
+      "sources": [
+        "MathResearchAnalysis.ClippedOrthogonalSections.sectionRadius",
+        "MathResearchAnalysis.ClippedOrthogonalSections.mem_clipped_row_iff",
+        "MathResearchAnalysis.ClippedOrthogonalSections.mem_clipped_column_iff",
+        "MathResearchAnalysis.ClippedBoundaryPerimeter.boundary_card",
+        "MathResearchAnalysis.ClippedBoundaryPerimeter.physical_perimeter"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB9-PB11",
+      "document_lines": [
+        86,
+        119
+      ],
+      "claim": "Every marked word from D_L has cleanup occurrence count at most 4L+2; input-based freezing includes the first loss output and its cleanup.",
+      "sources": [
+        "MathResearchAnalysis.GridPerimeterDynamics.modifiedWord_perimeter_loss_budget",
+        "MathResearchAnalysis.ClippedPerimeterBudget.wordLoss_le",
+        "MathResearchAnalysis.DropletStoppedWord.stoppedStep",
+        "MathResearchAnalysis.CumulativeCleanupBudget.loss",
+        "MathResearchAnalysis.CumulativeCleanupBudget.step_budget",
+        "MathResearchAnalysis.CumulativeCleanupBudget.word_budget"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB12-PB13",
+      "document_lines": [
+        121,
+        141
+      ],
+      "claim": "Literal raw-to-cleanup weighted mass loss excludes the raw write and sums occurrences with multiplicity; weighted total at most (L+2)(4L+2).",
+      "sources": [
+        "MathResearchAnalysis.DropletModifiedWord.modifiedStep_subset_maskedRawStep",
+        "MathResearchAnalysis.DropletModifiedWord.maskedRawStep_supported",
+        "MathResearchAnalysis.DropletModifiedWord.modifiedStep_supported",
+        "MathResearchAnalysis.ForbiddenBirthControl.mass",
+        "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss",
+        "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_nonnegative",
+        "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_le"
+      ],
+      "evidence": "Existing formal definitions or conclusions; the full ordinary proof is in the body."
+    },
+    {
+      "id": "PB14-PB16",
+      "document_lines": [
+        147,
+        181
+      ],
+      "claim": "Genuine original clock list and counter identity; all-word reachable (U,c) set is finite and closed, with no counter clamping.",
+      "sources": [
+        "MathResearchAnalysis.ClippedSquareCoordinates.parameter",
+        "MathResearchAnalysis.ClippedSquareCoordinates.side",
+        "MathResearchAnalysis.ClippedSquareCoordinates.card_centeredSites",
+        "MathResearchAnalysis.ClippedSquareCoordinates.clippedDomain_subset_centeredSites",
+        "MathResearchAnalysis.ClippedPerimeterBudget.clockOccupied_exact_endpoint",
+        "MathResearchAnalysis.CumulativeCleanupBudget.loss_sum_ordered",
+        "MathResearchAnalysis.CumulativeCleanupBudget.pathSum_eq_loss"
+      ],
+      "evidence": "PB14-PB16 are an ordinary-mathematics construction proved in this section. Existing formal list identities and coordinate definitions are correspondences, not formal declarations of the augmented weighted counter."
+    },
+    {
+      "id": "PB17-PB19",
+      "document_lines": [
+        183,
+        213
+      ],
+      "claim": "For any observable on the reachable augmented state, original residual-gap and fair-mark probabilities imply a uniform O(h^2) error and the integrated observable identity.",
+      "sources": [],
+      "evidence": "Ordinary proof reuses the written v3 original-clock MC2-MC6 argument recorded below; no actual ODE or finite-operator-to-law assertion is assumed. No Lean declaration of this augmented-state route is claimed."
+    },
+    {
+      "id": "PB20-PB21",
+      "document_lines": [
+        215,
+        237
+      ],
+      "claim": "The actual fair per-site frozen weighted cleanup rate, at strict pre-event states, integrates to expected accumulated weighted cleanup and is at most (L+2)(4L+2) uniformly in physical T.",
+      "sources": [
+        "MathResearchAnalysis.WeightedAreaDynkin.cleanupRate",
+        "MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_eq_compensator",
+        "MathResearchAnalysis.CumulativeCleanupBudget.time_integral_rate_le",
+        "MathResearchAnalysis.CumulativeCleanupBudget.actual_clipped_cleanup_rate_le",
+        "MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_cleanup_le"
+      ],
+      "evidence": "The conclusion matches the existing formal physical compensation route. The paper proves it directly using F(U,c)=c and the original clock small-interval argument. Scalar word bounds alone are not used to infer compensation."
+    },
+    {
+      "id": "scope",
+      "document_lines": [
+        239,
+        241
+      ],
+      "claim": "Cleanup is paid; Shape preservation and weighted raw drift 18L+12 remain open paper obligations.",
+      "sources": [
+        "MathResearchAnalysis.WeightedAreaTail.missing_generator_raw_cleanup",
+        "MathResearchAnalysis.WeightedAreaTail.meanArea_le_raw_integral_add_budget",
+        "MathResearchAnalysis.WeightedAreaTail.original_clock_extinction_le_raw_integral_add_budget"
+      ],
+      "evidence": "These formal conclusions explain how the cleanup input is used; they do not supply a missing human proof of Shape or raw drift."
+    }
+  ],
+  "original_clock_paper_argument": {
+    "path": "research/manuscript/quadratic-recovery-v3/paper.md",
+    "sha256": "50E148D7E4CA1BFC3A8FCF71AADC8024EADE2EB7A424D1774BC9FEBC528C6A01",
+    "lines": [
+      924,
+      983
+    ],
+    "named_equations": [
+      "MC2",
+      "MC3",
+      "MC4",
+      "MC5",
+      "MC6"
+    ],
+    "use": "The conditional residual-gap/unused-mark law and small-interval-to-integral proof are instantiated for the finite reachable augmented state. The v3 file is read-only and unchanged."
+  },
+  "sources": [
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GridCellBoundary.lean",
+      "sha256": "6F3E543A625A5F031B2F201D65DF0EA20149D5C6279C8F4717FE234E6F208A37",
+      "line_count": 229,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.GridCellBoundary.boundary",
+          "line": 48,
+          "declaration_line": "def boundary (S : Finset Site) : Finset HalfEdge :="
+        },
+        {
+          "name": "MathResearchAnalysis.GridCellBoundary.perimeter",
+          "line": 60,
+          "declaration_line": "def perimeter (S : Finset Site) : Nat := (boundary S).card"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GridMajorityPeeling.lean",
+      "sha256": "BD1C25C2E2208FFC24EA63DB9EB6997DA2BC669B5E327EB0CC1790F193282762",
+      "line_count": 171,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.GridMajorityPeeling.degree4",
+          "line": 30,
+          "declaration_line": "def degree4 (S : Finset Site) (v : Site) : Nat := (neighbors4 v ∩ S).card"
+        },
+        {
+          "name": "MathResearchAnalysis.GridMajorityPeeling.cleanup",
+          "line": 122,
+          "declaration_line": "def cleanup (S : Finset Site) : Finset Site :="
+        },
+        {
+          "name": "MathResearchAnalysis.GridMajorityPeeling.cleanup_reachable",
+          "line": 143,
+          "declaration_line": "theorem cleanup_reachable (S : Finset Site) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridMajorityPeeling.cleanup_subset",
+          "line": 125,
+          "declaration_line": "theorem cleanup_subset (S : Finset Site) : cleanup S ⊆ S :="
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/FiniteMajorityPeeling.lean",
+      "sha256": "CFCD95ADE0705DB947B2739BE33877A496B958DF7876649B087F0EA223ACE322",
+      "line_count": 222,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.FiniteMajorityPeeling.Delete",
+          "line": 44,
+          "declaration_line": "@[expose] def Delete (neighbors : V → Finset V) (S T : Finset V) : Prop :="
+        },
+        {
+          "name": "MathResearchAnalysis.FiniteMajorityPeeling.deletes_to_core",
+          "line": 211,
+          "declaration_line": "theorem deletes_to_core (S : Finset V) : Deletes neighbors S (core neighbors S) := by"
+        },
+        {
+          "name": "MathResearchAnalysis.FiniteMajorityPeeling.terminal_deletion_order_independent",
+          "line": 216,
+          "declaration_line": "theorem terminal_deletion_order_independent {S T U : Finset V}"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GridPerimeterUpdate.lean",
+      "sha256": "7E6957EE19D47D018BD8FAFE5CDE7A708D32F5006714D087697EB0EA42103DA3",
+      "line_count": 124,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.GridPerimeterUpdate.perimeter_insert",
+          "line": 91,
+          "declaration_line": "theorem perimeter_insert (S : Finset Site) (v : Site) (hv : v ∉ S) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterUpdate.perimeter_erase",
+          "line": 106,
+          "declaration_line": "theorem perimeter_erase (S : Finset Site) (v : Site) (hv : v ∈ S) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GridPerimeterDynamics.lean",
+      "sha256": "DB23646A82D5F377B1889ECC1DADAC25B50A5E8D63C1963F0CBCF8E506B476AD",
+      "line_count": 163,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.cleanup_perimeter_card_budget",
+          "line": 52,
+          "declaration_line": "theorem cleanup_perimeter_card_budget (S : Finset Site) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.rawStep_perimeter_le",
+          "line": 74,
+          "declaration_line": "theorem rawStep_perimeter_le (S : Finset Site) (v : Site) (tie : Bool) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.maskedRawStep_perimeter_le",
+          "line": 94,
+          "declaration_line": "theorem maskedRawStep_perimeter_le (D S : Finset Site) (v : Site) (tie : Bool) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.eventLoss",
+          "line": 125,
+          "declaration_line": "def eventLoss (D S : Finset Site) (e : Event) : Nat :="
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.wordLoss",
+          "line": 129,
+          "declaration_line": "def wordLoss (D S : Finset Site) : List Event → Nat"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.modifiedStep_perimeter_loss_budget",
+          "line": 137,
+          "declaration_line": "theorem modifiedStep_perimeter_loss_budget (D S : Finset Site) (e : Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.GridPerimeterDynamics.modifiedWord_perimeter_loss_budget",
+          "line": 148,
+          "declaration_line": "theorem modifiedWord_perimeter_loss_budget (D S : Finset Site) (w : List Event) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GridCleanupDeletion.lean",
+      "sha256": "5F424368C8F9861CA1F83E13A2CB3A0340671380DE7E266F4CAD3182CF925DF0",
+      "line_count": 154,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.GridCleanupDeletion.cleanup_eq_self_iff_stable",
+          "line": 44,
+          "declaration_line": "theorem cleanup_eq_self_iff_stable (S : Finset Site) : cleanup S = S ↔ Stable S := by"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClippedDiamondGeometry.lean",
+      "sha256": "8C092C3463AA7A736806F593028FA9EAEB9930FBFCB6FFFD8979163B87BAA1EF",
+      "line_count": 271,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ClippedDiamondGeometry.clippedDomain",
+          "line": 32,
+          "declaration_line": "def clippedDomain (L : ℕ) : Finset Site :="
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClippedOrthogonalSections.lean",
+      "sha256": "819AD905E638B4FDF0762B235A4E2AA63170349B329965990567EFCECCFE623C",
+      "line_count": 201,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ClippedOrthogonalSections.sectionRadius",
+          "line": 22,
+          "declaration_line": "def sectionRadius (L : Nat) (a : Int) : Int :="
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedOrthogonalSections.mem_clipped_row_iff",
+          "line": 44,
+          "declaration_line": "theorem mem_clipped_row_iff (L : Nat) (x y : Int) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedOrthogonalSections.mem_clipped_column_iff",
+          "line": 50,
+          "declaration_line": "theorem mem_clipped_column_iff (L : Nat) (x y : Int) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClippedBoundaryPerimeter.lean",
+      "sha256": "9623A873A07F82A6291D92932D918117328FE4CC3536738F580ECF72F81ADD8E",
+      "line_count": 184,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ClippedBoundaryPerimeter.boundary_card",
+          "line": 172,
+          "declaration_line": "theorem boundary_card (L : Nat) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedBoundaryPerimeter.physical_perimeter",
+          "line": 178,
+          "declaration_line": "theorem physical_perimeter (L : Nat) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClippedPerimeterBudget.lean",
+      "sha256": "55AAD33D2176D67C1C1CF03209F7DCDEF301B6B7C6C95F6CD6D08A249795DB85",
+      "line_count": 59,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ClippedPerimeterBudget.modifiedWord_budget",
+          "line": 25,
+          "declaration_line": "theorem modifiedWord_budget (L : Nat) (D : Finset Site) (w : List Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedPerimeterBudget.wordLoss_le",
+          "line": 31,
+          "declaration_line": "theorem wordLoss_le (L : Nat) (D : Finset Site) (w : List Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedPerimeterBudget.clockOccupied_exact_endpoint",
+          "line": 44,
+          "declaration_line": "theorem clockOccupied_exact_endpoint (L : Nat) (D S : Finset Site) (t : Real)"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedPerimeterBudget.actual_clock_budget",
+          "line": 49,
+          "declaration_line": "theorem actual_clock_budget (L : Nat) (D : Finset Site) (t : Real)"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedPerimeterBudget.actual_clock_cleanup_loss_le",
+          "line": 55,
+          "declaration_line": "theorem actual_clock_cleanup_loss_le (L : Nat) (D : Finset Site) (t : Real)"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+      "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37",
+      "line_count": 231,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.rawStep",
+          "line": 31,
+          "declaration_line": "def rawStep (S : Finset Site) (v : Site) (tie : Bool) : Finset Site :="
+        },
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.maskedRawStep",
+          "line": 34,
+          "declaration_line": "def maskedRawStep (D S : Finset Site) (v : Site) (tie : Bool) : Finset Site :="
+        },
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.modifiedStep",
+          "line": 37,
+          "declaration_line": "def modifiedStep (D S : Finset Site) (v : Site) (tie : Bool) : Finset Site :="
+        },
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.modifiedStep_subset_maskedRawStep",
+          "line": 99,
+          "declaration_line": "theorem modifiedStep_subset_maskedRawStep (D S : Finset Site) (v : Site) (tie : Bool) :"
+        },
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.maskedRawStep_supported",
+          "line": 132,
+          "declaration_line": "theorem maskedRawStep_supported {D S : Finset Site} (hS : S ⊆ D)"
+        },
+        {
+          "name": "MathResearchAnalysis.DropletModifiedWord.modifiedStep_supported",
+          "line": 140,
+          "declaration_line": "theorem modifiedStep_supported {D S : Finset Site} (hS : S ⊆ D)"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/DropletStoppedWord.lean",
+      "sha256": "A0AF04F2D51E94698C61424ECEF265E09699BFD502C87FFB0BC5328EC79ED7F6",
+      "line_count": 137,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.DropletStoppedWord.stoppedStep",
+          "line": 12,
+          "declaration_line": "def stoppedStep (D I S : Finset Site) (e : Event) : Finset Site :="
+        },
+        {
+          "name": "MathResearchAnalysis.DropletStoppedWord.stoppedWord",
+          "line": 15,
+          "declaration_line": "def stoppedWord (D I S : Finset Site) : List Event → Finset Site"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/CumulativeCleanupBudget.lean",
+      "sha256": "F39BCEF5B5643560992319047EE63749347EEF90301BC9F12417405997E83AA5",
+      "line_count": 476,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.loss",
+          "line": 16,
+          "declaration_line": "def loss (D I U : Finset Site) (e : DropletModifiedWord.Event) : Nat :="
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.wordLoss",
+          "line": 20,
+          "declaration_line": "def wordLoss (D I U : Finset Site) : List DropletModifiedWord.Event → Nat"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.step_budget",
+          "line": 29,
+          "declaration_line": "theorem step_budget (D I U : Finset Site) (e : DropletModifiedWord.Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.word_budget",
+          "line": 36,
+          "declaration_line": "theorem word_budget (D I U : Finset Site) (w : List DropletModifiedWord.Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.loss_sum_ordered",
+          "line": 55,
+          "declaration_line": "theorem loss_sum_ordered {α : Type*} (time : α → Real)"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.pathSum_eq_loss",
+          "line": 252,
+          "declaration_line": "theorem pathSum_eq_loss (L : Nat) (D I S : Finset Site) (z : Sample L)"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.expected_cleanup_eq_compensator",
+          "line": 306,
+          "declaration_line": "theorem expected_cleanup_eq_compensator (L : Nat) {D I S : Finset Site} (hSD : S ⊆ D)"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.time_integral_rate_le",
+          "line": 428,
+          "declaration_line": "theorem time_integral_rate_le (L : Nat) {D I S : Finset Site} (hSD : S ⊆ D)"
+        },
+        {
+          "name": "MathResearchAnalysis.CumulativeCleanupBudget.actual_clipped_cleanup_rate_le",
+          "line": 462,
+          "declaration_line": "theorem actual_clipped_cleanup_rate_le (L : Nat) (hL : 1 ≤ L) (T : NNReal) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ForbiddenBirthControl.lean",
+      "sha256": "7ED911A408DDCDA06065DC1EF31269CBF377C70858DDB95ADC14CFE18BF23CC2",
+      "line_count": 224,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ForbiddenBirthControl.weight",
+          "line": 26,
+          "declaration_line": "def weight (L : Nat) (v : Site) : Real :="
+        },
+        {
+          "name": "MathResearchAnalysis.ForbiddenBirthControl.mass",
+          "line": 154,
+          "declaration_line": "def mass (w : Site → Real) (S : Finset Site) : Real := ∑ v ∈ S, w v"
+        },
+        {
+          "name": "MathResearchAnalysis.ForbiddenBirthControl.weight_nonnegative_on_domain",
+          "line": 128,
+          "declaration_line": "theorem weight_nonnegative_on_domain (L : Nat) (v : Site) (hv : v ∈ clippedDomain L) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ForbiddenBirthControl.weight_upper_bound",
+          "line": 219,
+          "declaration_line": "theorem weight_upper_bound (L : Nat) (v : Site) : weight L v ≤ (L : Real) + 2 := by"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/WeightedAreaDynkin.lean",
+      "sha256": "F0D5FF59D833E94E522B72DE8EF8C5C88A8C28C9CB2F94DCC2AA9DBD950080B8",
+      "line_count": 729,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss",
+          "line": 592,
+          "declaration_line": "def weightedLoss (L : Nat) (U : Finset Site) (e : DropletModifiedWord.Event) : Real :="
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_nonnegative",
+          "line": 598,
+          "declaration_line": "theorem weightedLoss_nonnegative {L : Nat} {U : Finset Site}"
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaDynkin.weightedLoss_le",
+          "line": 612,
+          "declaration_line": "theorem weightedLoss_le (L : Nat) (U : Finset Site) (e : DropletModifiedWord.Event) :"
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaDynkin.cleanupRate",
+          "line": 631,
+          "declaration_line": "def cleanupRate (L : Nat) (I U : Finset Site) : Real :="
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaDynkin.actual_weighted_cleanup_le",
+          "line": 697,
+          "declaration_line": "theorem actual_weighted_cleanup_le (L : Nat) (hL : 1 ≤ L) (T : NNReal) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/WeightedAreaTail.lean",
+      "sha256": "4545EDB300EC1C8A22FBBB0A0E928FDE54AA4B19D68FEB2F566673604F5BF2DF",
+      "line_count": 237,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.missing_generator_raw_cleanup",
+          "line": 75,
+          "declaration_line": "theorem missing_generator_raw_cleanup {L : Nat} {I U : Finset Site}"
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.meanArea_le_raw_integral_add_budget",
+          "line": 177,
+          "declaration_line": "theorem meanArea_le_raw_integral_add_budget (L : Nat) (hL : 1 ≤ L) (T : NNReal) :"
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.original_clock_extinction_le_raw_integral_add_budget",
+          "line": 227,
+          "declaration_line": "theorem original_clock_extinction_le_raw_integral_add_budget (L : Nat) (hL : 80 ≤ L) (T : NNReal) :"
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClippedSquareCoordinates.lean",
+      "sha256": "C6CD6A6745EFD54A81DB2DCB0180DB52614E316B6E86F36595324A7BF7F65376",
+      "line_count": 265,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.ClippedSquareCoordinates.parameter",
+          "line": 24,
+          "declaration_line": "def parameter (L : Nat) : Nat := 2 * L - 1"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedSquareCoordinates.side",
+          "line": 26,
+          "declaration_line": "def side (L : Nat) : Nat := 2 * L + 1"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedSquareCoordinates.card_centeredSites",
+          "line": 86,
+          "declaration_line": "theorem card_centeredSites (L : Nat) (hL : 1 ≤ L) :"
+        },
+        {
+          "name": "MathResearchAnalysis.ClippedSquareCoordinates.clippedDomain_subset_centeredSites",
+          "line": 138,
+          "declaration_line": "theorem clippedDomain_subset_centeredSites (L : Nat) (hL : 1 ≤ L) :"
+        }
+      ]
+    }
+  ],
+  "notation": {
+    "PB_perimeter": "Per(U), exposed unit cell sides; distinct from protected set P.",
+    "cleanup_alias": "C(S)=K(S) of Section6.1.",
+    "budget": "B_L=(L+2)(4L+2).",
+    "clock_count": "K=(2L+1)^2; original rate-one site clocks on all Lambda_L.",
+    "augmented_process": "Y(t)=(U(t),c(t)); distinct from original raw process X_t of Section6.1.",
+    "weights": "Positive integers on D_L, though formal weightedLoss takes Real values."
+  },
+  "separate_checks": {
+    "formal_sources": "Read-only inspection, exact declaration starts and SHA256 fingerprints; no formal source modified and no new kernel check claimed.",
+    "numeric_examples": {
+      "D2_rows": [
+        3,
+        5,
+        5,
+        5,
+        3
+      ],
+      "D2_card": 21,
+      "D2_perimeter": 20,
+      "cleanup_degrees": [
+        1,
+        1,
+        0
+      ],
+      "cleanup_perimeters": [
+        8,
+        6,
+        4,
+        0
+      ],
+      "cleanup_weights_L2": [
+        3,
+        3,
+        4
+      ],
+      "cleanup_weight_sum_L2": 10
+    },
+    "figure": "Budget writer viewed the rendered root-owned figure and checked the literal raw/cleanup weight split.",
+    "document_links": "PASS: the standalone source-map link exists; PB1-PB21 each occur once; 62 display-math delimiter lines are paired.",
+    "reader": "Independent semantic read completed with precision fixes; independent undergraduate-reader simulation is pending root integration.",
+    "source_validation": "PASS: 17 formal source-file hashes, all 63 exact declaration starts, the frozen v3 paper argument hash, and root-owned figure hash rechecked after writing.",
+    "document_fingerprint": "PASS: source map and editing record both match the current 241-line document SHA256."
+  },
+  "scope": "Only perimeter-budget.md, budget-source-map.json and edit-record-budget.json are written by this subagent. Frozen formal sources, phases1-13 and paper v0-v3 are untouched."
+}

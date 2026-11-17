@@ -1,0 +1,1491 @@
+{
+  "archive_root": "research/revision-ab-2026-11-17",
+  "files": {
+    "analysis-fresh-axioms.lean": {
+      "bytes": 258880,
+      "sha256": "35cb1155296c3ae012977e57524f087fe476c307279d44c174ed8d2239741a6d"
+    },
+    "CHECKPOINT.md": {
+      "bytes": 937,
+      "sha256": "ab71c4898a7c58f6ff381854531c5c43a6d78a1396693601c4a5a31ff13b538a"
+    },
+    "core-fresh-axioms.lean": {
+      "bytes": 7716,
+      "sha256": "5201d7968116632af42eca7100f6abfe424ae147530e5d87a00315f3a709e246"
+    },
+    "evidence/base-replay/analysis-fresh-axioms.log": {
+      "bytes": 408686,
+      "sha256": "760883d1d6f56993e6388d7f86b310448f531cd5b6f8008f50a1dab58d3a2555"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ActualAreaDynkin.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ActualAreaTelescope.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ActualClockTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ActualPreState.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ArrivalFiltration.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.BipartiteDynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.BlockTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CenteredPeelingTransport.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CleanupAreaTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CleanupConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryBox.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryCurve.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryCycle.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryIncidence.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryPerimeter.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedBoundaryPolygon.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedDiamondGeometry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedGridConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedInitialContour.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedOrthogonalSections.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedPerimeterBudget.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedPhysicalBox.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedProtectedGeometry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedRegionBox.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClippedSquareCoordinates.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockArrivalCountTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockCandidateIntervals.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockCensoringKernel.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockCounting.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockDeterministicResidual.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockEndpointMean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockEndpointSurvival.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockEventOrder.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockEventWord.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockExecutionLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockGapOccupation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockGapReset.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockIntervalCount.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockIntervalHistory.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockMaximum.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockNoTies.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockRankTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockReadiness.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockRecoveryComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockRestrictedExecution.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockRingMean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockSampleRestriction.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockSelectedMarks.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockSelectedWord.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockStoppedResidual.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockTimeNullGraph.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockWaitingLimit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockWordConsistency.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockWordMarks.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ClockWordRestriction.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ConditionalMoment.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ConvexBirthUpdate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ConvexCleanupUpdate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ConvexLocalUpdate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CountableClockSurvival.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CountLowerTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CrossSquareClockBound.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.CumulativeCleanupBudget.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.DropletClockLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.DropletDomainComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.DropletModifiedWord.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.DropletStoppedClockLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.DropletStoppedWord.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.EventMeasureLimit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.EventTrace.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExponentialClocks.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExponentialMemoryless.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExponentialMoment.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedBlockTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedNextRing.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedRecoveryExpectation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedRecoveryTime.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedStoppingPath.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ExtendedTailLower.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FairMarks.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FairMarksPastFuture.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FairMarksTransport.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteExclusionEnergy.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteExclusionGenerator.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteMachinePreState.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteMajorityPeeling.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteMomentRegularity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteObservedClockState.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FinitePathPoincare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FinitePermutationComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteRankWitness.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteSlotPoincare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FiniteWordKernel.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FirstLayerClock.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FixedClockPath.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ForbiddenBirthControl.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FrozenPhysicalExit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.FutureGapHistory.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GreedyClockChain.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridBoundaryIncidence.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridBoundaryPermutation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridBoundarySegments.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridCellBoundary.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridCellRegion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridCleanupDeletion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridContourLength.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridMajorityPeeling.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridPerimeterDynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridPerimeterUpdate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridPhysicalRegion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridRegionBoundary.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.GridRegionConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.HistoryEventInvariant.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.HomogeneousRecoveryTime.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridComplement.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridModel.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridRandomDynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridRecoveryTime.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridTranslation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.InfiniteGridTranslationLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.LocalObservedHistory.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MachineClockDynkin.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MachineClockGenerator.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MachineEventScores.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MachineTraceTelescope.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedAreaSum.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedClockFiltration.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedClockPointMeasure.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedConditionalCount.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedDeterministicResidual.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedEventTrace.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedHistoryWords.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedIntervalFactor.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedPredictableCompensation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedPredictableRectangles.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedResidualPair.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedRingCount.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedRingIntegrability.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedRingMean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MarkedStoppedResidual.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MaskedAreaGenerator.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedClearingProbability.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedClockCovariance.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedClockDynkin.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedClockMoments.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedExclusionGenerator.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedHeatDecay.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedLocalClearing.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedMomentEnergy.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedMomentEvolution.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedMomentPoincare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedRightCountHeat.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedRightCountMoments.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedSquareClockLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedSquareCorners.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.MixedSquareModel.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.NextRing.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.NonnegativeMoment.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ObservedFrozenProcess.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ObservedPreState.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ObservedProgressive.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OriginalQuadraticLower.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OriginalQuadraticRecovery.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OriginalQuadraticUpper.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OriginalRecoveryProfile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalBoundaryConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalBoundaryCurve.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalBoundaryCycle.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalBoundaryPolygon.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalContourLength.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalGridConvexity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalPerimeter.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalPhysicalBox.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalPhysicalContour.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.OrthogonalVacantQuadrant.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PathTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PerturbationGeometry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PerturbationNormalization.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PerturbationSymmetry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PhysicalAreaGenerator.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PhysicalAreaTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PhysicalWeightedDrift.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PositivePartSquare.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PredictableAreaContribution.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PredictableClockReference.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.PredictableClockSigma.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedAreaPotential.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedColumnGeometry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedCornerGeometry.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedDeathConnectivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedDomainClockComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedEvolution.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedExitArea.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedExitResidual.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ProtectedGeometricGood.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RandomThresholdSurvival.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RankClockCensoring.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RankScanEmbedding.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RankSlotEmbedding.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RationalProtectedExit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RealPredictableCompensation.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.RecoveryTimeTransport.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ScalarHeatDecay.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SchedulingFailure.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SmallDiameterRecovery.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareAttractivity.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareBatch.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareDeterministicRestart.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareDynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareGibbs.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareGibbsLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareGreedyPaths.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareGridEmbedding.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareGridLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareInclusion.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquarePWCensoring.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquarePWDrop.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquarePWMeasure.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareRandomComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareRandomDynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareRandomRestart.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareRecoveryTime.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareScanKernel.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareScanOrder.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareSpin.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareTasks.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SquareTaskTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.StoppedFreshMark.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.StoppedMarkSlices.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.StoppingPath.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.StrictClockPrefix.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SurvivalLaw.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SynchronousClockComparison.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SynchronousQuadraticTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SyncLowerScale.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.SyncUpperScale.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.TaskClockBridge.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.TaskPaths.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.TaskPathTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.TruncatedExponential.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.UnrevealedMarkInvariance.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.UpperStoppingApprox.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedAreaDynkin.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedAreaTail.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedExitArea.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedRawContour.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedRawRate.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WeightedReflection.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.WholeSquareClockTransport.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungParticleHops.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungParticleInverse.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungParticleMoves.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungParticles.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungRows.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.YoungRowUpdates.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/analysis-MathResearchAnalysis.ZeroTemperature.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-fresh-axioms.log": {
+      "bytes": 11407,
+      "sha256": "fe408f7c5b2fc4cd6e5fbddf0e761854a2bcce312166f17b2b5b424934ecddd5"
+    },
+    "evidence/base-replay/core-MathResearch.Dynamics.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.EventEmbedding.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.Grid.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.Majority.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.Readiness.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.Scheduling.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/core-MathResearch.Trace.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/base-replay/parser-correction.json": {
+      "bytes": 315,
+      "sha256": "e06f17e0d87a2ec65c156f695902e6e4bdc60f63e7b42d75c18f5f7dd51ffdac"
+    },
+    "evidence/base-replay/replay.json": {
+      "bytes": 260644,
+      "sha256": "2103950d69ea482e4643d37405c604db029b79377a5439f5ceaeacaf8bf2a51a"
+    },
+    "evidence/FullBlockThreshold-build.json": {
+      "bytes": 3986,
+      "sha256": "6fd3ef4f6940521a291bcb7c7efa9fa04721051029db96ddcc5646e8e3dcde24"
+    },
+    "evidence/FullBlockThreshold.log": {
+      "bytes": 3043,
+      "sha256": "6096aada397ee29836824cf0b11b1c3687b468c2dadc8002b4fd48db5730488e"
+    },
+    "evidence/ImprovedOriginalLower-build.json": {
+      "bytes": 4032,
+      "sha256": "93ecaf551dc01da6681067892f72b70b50ee696d021ce9a43cf0ce9d94257ca3"
+    },
+    "evidence/ImprovedOriginalLower.log": {
+      "bytes": 3088,
+      "sha256": "00af4f8c33abf768613f6b231b9af88287a73ad0f3ada127465e9c4926753988"
+    },
+    "evidence/independent-base-binding-work.json": {
+      "bytes": 169336,
+      "sha256": "14a141e5ea5ad7861b39bcd22cbaaa890a5836c8266695ed5ff76e1a26933e2d"
+    },
+    "evidence/independent-final-binding.json": {
+      "bytes": 34555,
+      "sha256": "71861d4185ff2f8fe028a14ed9046a0ba568d9617c39e86e93ca91d87f9985a0"
+    },
+    "evidence/independent-source-review.json": {
+      "bytes": 24254,
+      "sha256": "c3f2ba7612db2a9655162bc6d2535249f227d96963994e179e2401673ec84901"
+    },
+    "evidence/independent-source-review.md": {
+      "bytes": 4962,
+      "sha256": "e4659ee07ce30fdb95bc8c59bb200da88edf6900926fe69bdf610484aff3913f"
+    },
+    "evidence/leanpath.log": {
+      "bytes": 1081,
+      "sha256": "d9724a3c0e491871c9f5fcfd1456415615677b7d5b6394d5764d8499f2949da5"
+    },
+    "evidence/moments-work.log": {
+      "bytes": 765,
+      "sha256": "53453e12bc4996522979bb2ae0a84ecfd77a98473f356b14dc6526ae8bc2ec26"
+    },
+    "evidence/OriginalConsequences-build.json": {
+      "bytes": 2750,
+      "sha256": "4a09057540ced409702715cbb1627199303cedae45c95118f57f2091b17ffc69"
+    },
+    "evidence/OriginalConsequences.log": {
+      "bytes": 1142,
+      "sha256": "adadcf24e88db8f9e1f44e0991fe7c3f1a431106b257bd7ecc76f9459ff6f841"
+    },
+    "evidence/OriginalRecoveryResults-build.json": {
+      "bytes": 2745,
+      "sha256": "6436697143ede0a1b17543e2e82c4a91503ce15f47bee9a8efcdd4dac1ccff67"
+    },
+    "evidence/OriginalRecoveryResults.log": {
+      "bytes": 1071,
+      "sha256": "a66b1f690f6410f92d102ca2ee9cda8e37d6468c006f4cb4e7a86ef3d4e9b422"
+    },
+    "evidence/recovery-moments-kernel.log": {
+      "bytes": 2771,
+      "sha256": "b3c8563ed640f2b66e190369b0b075bb2e9140519f92ca0e50f1d83d60811fe9"
+    },
+    "evidence/recovery-moments-validation.json": {
+      "bytes": 3699,
+      "sha256": "330be206370553f20c14bdb4d18d6afa9bb70a621e41aa5005bcced627924541"
+    },
+    "evidence/RecoveryMoments-build.json": {
+      "bytes": 3598,
+      "sha256": "a0313fe3c93ed319fc0457c4855f0a7a3bc7c009d61a6431acf46847bc2d5e25"
+    },
+    "evidence/RecoveryMoments.log": {
+      "bytes": 2728,
+      "sha256": "2993b4466a35125dd449dab437fd0976b56a8750fa9e33b6237561dce24d74eb"
+    },
+    "evidence/RevisionAxioms-build.json": {
+      "bytes": 9783,
+      "sha256": "a7ad8884e2d7772cbe03b6e0ab47178afb42974b7194cc8d730ab62dcdd3bace"
+    },
+    "evidence/RevisionAxioms.log": {
+      "bytes": 13170,
+      "sha256": "e4cb08217ef28b00dc2be966d985c1cf8b66b81ce64e55d24ccc76281ecc180c"
+    },
+    "evidence/SharpFailureRate-build.json": {
+      "bytes": 2346,
+      "sha256": "e1b7938933d00ce14c7bc17c9b3cc86e86fca201cad55b20d0c80bd97ee43bfa"
+    },
+    "evidence/SharpFailureRate-kernel.log": {
+      "bytes": 487,
+      "sha256": "f674643a860aae3570c42e84f67de1c1642ab567bc784b622db8e49ac461f4a7"
+    },
+    "evidence/SharpFailureRate-validation.json": {
+      "bytes": 2089,
+      "sha256": "c50ceb799df9130077fb01f670bc49bb3de8da704d71b89776f64732bf2ac81e"
+    },
+    "evidence/SharpFailureRate.log": {
+      "bytes": 481,
+      "sha256": "9b59c15881e3805967a1b1f8cfa487b69b00bd8c359e5673b615f338b31c0461"
+    },
+    "evidence/SharpRecoveryTail-build.json": {
+      "bytes": 2981,
+      "sha256": "ec7b45879285f652ea4c6e35b4fa8dd8056da7aac20ad25437e43b2e5688bc44"
+    },
+    "evidence/SharpRecoveryTail-kernel.log": {
+      "bytes": 1637,
+      "sha256": "57b5f45e9e00d1a3019ba5f9d16ace62998668149ba2856707d545bbc9e86c80"
+    },
+    "evidence/SharpRecoveryTail-validation.json": {
+      "bytes": 2749,
+      "sha256": "64b9e08af43a84b76e9dcdac43985384cab45a8b873c13f842cd35aeb568245c"
+    },
+    "evidence/SharpRecoveryTail.log": {
+      "bytes": 1617,
+      "sha256": "3527429074498f3a47409120d7a09fb94ed58b1f55cfe6a10f848bc9576b7b39"
+    },
+    "evidence/unified-build.json": {
+      "bytes": 38090,
+      "sha256": "89da8fb4625f2899ba845351704f3ea2654bf8d6baeb86555a42490a5a73883c"
+    },
+    "final_build.py": {
+      "bytes": 3645,
+      "sha256": "e4c984fb569ddcfcf37ac72c40bdea783bdfcd093371b02cee10bf94aa57c8a1"
+    },
+    "finalize_paper_text.py": {
+      "bytes": 5517,
+      "sha256": "638355e0aff36f2d1b2bf389ec79998982d20e8d69d191d580f4e2f2d47a22bb"
+    },
+    "integrate_distribution.py": {
+      "bytes": 6606,
+      "sha256": "67d3b6bd147fc79795f00f1666c2629653bfe2cc8fd9a5ccc35d7880753ad298"
+    },
+    "lean/dependencies/FullBlockThreshold.lean": {
+      "bytes": 14390,
+      "sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79"
+    },
+    "lean/dependencies/ImprovedOriginalLower.lean": {
+      "bytes": 12418,
+      "sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27"
+    },
+    "lean/OriginalConsequences.lean": {
+      "bytes": 5636,
+      "sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135"
+    },
+    "lean/OriginalRecoveryResults.lean": {
+      "bytes": 6447,
+      "sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647"
+    },
+    "lean/RecoveryMoments.lean": {
+      "bytes": 15728,
+      "sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f"
+    },
+    "lean/RevisionAxioms.lean": {
+      "bytes": 8505,
+      "sha256": "6b8b9334081207e6d5fc3d9dcd7a49cb6e3441319f5b3d88da97f7cb3a6539e5"
+    },
+    "lean/SharpFailureRate.lean": {
+      "bytes": 2861,
+      "sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571"
+    },
+    "lean/SharpRecoveryTail.lean": {
+      "bytes": 8877,
+      "sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c"
+    },
+    "package_revision.py": {
+      "bytes": 1760,
+      "sha256": "f2bf9c84539794cefad5cc66b7c012d913eb6cc8d5ee5d8028c3e62b76ca1ba3"
+    },
+    "paper/assembly-source-map.json": {
+      "bytes": 3161,
+      "sha256": "41857f2dceff3cb705df8e8bfefbbf85d2fe63320cfb13eb82eb6e485ffcd6b9"
+    },
+    "paper/baseline-source-map.json": {
+      "bytes": 228180,
+      "sha256": "69827748e9eace7cac33206b9d7e1d450904b0e7e3d46ece4ea5fc1cec59fa32"
+    },
+    "paper/budget-source-map.json": {
+      "bytes": 29417,
+      "sha256": "6cae1a2cf765a277935e5b36d2e89e9505dcd6644a84ae81efc4fd72bce548ad"
+    },
+    "paper/edit-record-scheduling.json": {
+      "bytes": 3263,
+      "sha256": "9aef49caea2a03582d90471740bba9bc783ba385115988411625d1a4fca8ca77"
+    },
+    "paper/edit-record.json": {
+      "bytes": 4476,
+      "sha256": "5b9f98d2703ab8b5ee11afd529e9bdece195c5d6ce7c6335242d5876e25346ba"
+    },
+    "paper/images/censoring-distribution.png": {
+      "bytes": 74245,
+      "sha256": "27eef3f968b62ca78e53fbc3573ba2bac3f59a16995e15299ae6b911fb0645ce"
+    },
+    "paper/images/cleanup-freeze-perimeter.png": {
+      "bytes": 107401,
+      "sha256": "38cb653dc9c4f126ec864859e88f26f5629f6862410c8d0fbfcbd3962d888232"
+    },
+    "paper/images/corner-deletion-bypass.png": {
+      "bytes": 53747,
+      "sha256": "bf48a8fd0d63d07578b410b5b0fd2134645e1a138463d758fd055b467cb7c02b"
+    },
+    "paper/images/corner-valley-weight-payment.png": {
+      "bytes": 116275,
+      "sha256": "3fcc2f1632ac6bc6abb63b110a529c1c46ca0d58fc62f590ba38ef93ff1e273c"
+    },
+    "paper/images/staircase-particle-hop.png": {
+      "bytes": 73244,
+      "sha256": "7b8a405f3d319a6f94ebca407d28e60708b90e962b850554edb04285802f73bf"
+    },
+    "paper/images/static-protected-geometry.png": {
+      "bytes": 129933,
+      "sha256": "703439b342f499542ec237f4960cad07d025e8427270d786f733a0aff0ba2049"
+    },
+    "paper/output/pdf/quadratic-recovery-v6.pdf": {
+      "bytes": 884499,
+      "sha256": "926d5af679ec9f1b4a89bd56228bb4787dcb573ccd109098ccc878b9b5db4414"
+    },
+    "paper/paper.md": {
+      "bytes": 182932,
+      "sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb"
+    },
+    "paper/raw-source-map.json": {
+      "bytes": 28220,
+      "sha256": "97c176c2575c9fafb9eeeafc4faf6e63d58fd2cc4e1d0f1126e1d3f600b42070"
+    },
+    "paper/review/compile_paper.py": {
+      "bytes": 5121,
+      "sha256": "9f835b7277e7233b956780ef741dfbf83000971f7d97017acf5d072c9b237c70"
+    },
+    "paper/review/conversion.md": {
+      "bytes": 182854,
+      "sha256": "897af123aa77ea88861e8119eebb64502526628cdc789c5ee9662220e897c3d8"
+    },
+    "paper/review/distribution-integration.json": {
+      "bytes": 382,
+      "sha256": "c0515698257a909bb232a425d81d999c5bcffc13cc068784f6a6162199beedbe"
+    },
+    "paper/review/final_edit_checks.py": {
+      "bytes": 6994,
+      "sha256": "25c27ed12089e6c38ca94c63a3fd28031ae911d77d369d60a206f34f55d12409"
+    },
+    "paper/review/finalize_pdf_validation.py": {
+      "bytes": 4017,
+      "sha256": "72ae83cb7c5877af1fc6cb34e0d6bcb114de38db03921223943bac500895bf59"
+    },
+    "paper/review/math-and-reference-checks.json": {
+      "bytes": 820,
+      "sha256": "63fb09604bfd4e29927dbe59c1f8b62934316ba574797d2307f64c824baf7c5c"
+    },
+    "paper/review/native-build.json": {
+      "bytes": 4099,
+      "sha256": "7dbf66089f2aa7335b7aee5e15c641df4aaa8f6d227fdd91e7a4732c35a199cb"
+    },
+    "paper/review/pandoc.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "paper/review/paper-change-map.json": {
+      "bytes": 4682,
+      "sha256": "3f4ee38e53a9116ecdd223f2ad0e044b5e509a00a0d77b0c8583e06dcec58018"
+    },
+    "paper/review/pdf-links.lua": {
+      "bytes": 129,
+      "sha256": "a2ad81beb7fc5cd3b37fce403d5a52501d0e6ef7a686d04be76e6bb4ec699eb2"
+    },
+    "paper/review/pdf-text.txt": {
+      "bytes": 189383,
+      "sha256": "c511346c46d5e6694dd2e9ce029ce4699fb6837808ac99f0fea2d0a8f218f711"
+    },
+    "paper/review/pdf-validation.json": {
+      "bytes": 13270,
+      "sha256": "b8528f8499ca0207e86008d7aab5492a6febe7598922f0356256db18081b722d"
+    },
+    "paper/review/previous-inspected-render.json": {
+      "bytes": 8521,
+      "sha256": "94d12f052eb8c3a61ec5b76b3ca864ae98911e13f3df2fe9f53de5b23c85f989"
+    },
+    "paper/review/render-validation.json": {
+      "bytes": 8624,
+      "sha256": "1f91b7ab781f75acf4aacb8bc0aa2dc15d060010bb9d9d6a2d5d0d63998d1633"
+    },
+    "paper/review/render.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "paper/review/render_pdf.py": {
+      "bytes": 3313,
+      "sha256": "e24cddcef71f883b8c806d5a11a846f8f0fe76a86b1fc87858b0f679801c39c4"
+    },
+    "paper/review/render_static.py": {
+      "bytes": 3985,
+      "sha256": "5f85382b8a1133386b660ebaa86319d00f32526345eb12118342d8d350909bff"
+    },
+    "paper/review/revise_paper.py": {
+      "bytes": 23755,
+      "sha256": "724f1ee78520a5a1a9514d11bd2b456b7013da1e201fa2d8d95c14adda129e20"
+    },
+    "paper/review/root-edit-pass.json": {
+      "bytes": 887,
+      "sha256": "c227cb02786e2bec0a1708f7c97ab81c9d4b977bea7cf7c5083cf9c6d181467f"
+    },
+    "paper/review/static-figure-data.json": {
+      "bytes": 512,
+      "sha256": "eb7b51ae0a3cefce7b253ef6d0b08c2b7a16e44ce69f6b7bc466eb7dc85fc3c5"
+    },
+    "paper/review/update_revision_map.py": {
+      "bytes": 3549,
+      "sha256": "420d4cd87ec23401a23895fbc08b8f275b22534b2bdee08d4d37665bd439f17b"
+    },
+    "paper/review/xelatex-pass-1.log": {
+      "bytes": 7932,
+      "sha256": "6cee0c2fade1a1fe4eefe5d64d01e9b6ec0904f39390c8bbe3f836b59c17b223"
+    },
+    "paper/review/xelatex-pass-2.log": {
+      "bytes": 7932,
+      "sha256": "6cee0c2fade1a1fe4eefe5d64d01e9b6ec0904f39390c8bbe3f836b59c17b223"
+    },
+    "paper/revision-source-map.json": {
+      "bytes": 26327,
+      "sha256": "7fbfe1360e2b66bcd285b05814db62941a2e53a480fb2ca2b81f35368a5bb5d6"
+    },
+    "paper/scheduling-source-map.json": {
+      "bytes": 13243,
+      "sha256": "9edbd462ecf0a53583530b5b15f2d934e52dc4c1975b22598cfdfb355f95644f"
+    },
+    "paper/shape-source-map.json": {
+      "bytes": 41200,
+      "sha256": "29bfd142bf2bdaf3cdf7614f371b1d73339fa8414552e6c7b26e6fb1496a52fe"
+    },
+    "paper/source-map.json": {
+      "bytes": 314606,
+      "sha256": "34c00a58b9ea28b54444f8c35bacba49a36bb7baf0452cf0152162f3ec58158a"
+    },
+    "paper/tex/images/censoring-distribution.png": {
+      "bytes": 74245,
+      "sha256": "27eef3f968b62ca78e53fbc3573ba2bac3f59a16995e15299ae6b911fb0645ce"
+    },
+    "paper/tex/images/cleanup-freeze-perimeter.png": {
+      "bytes": 107401,
+      "sha256": "38cb653dc9c4f126ec864859e88f26f5629f6862410c8d0fbfcbd3962d888232"
+    },
+    "paper/tex/images/corner-deletion-bypass.png": {
+      "bytes": 53747,
+      "sha256": "bf48a8fd0d63d07578b410b5b0fd2134645e1a138463d758fd055b467cb7c02b"
+    },
+    "paper/tex/images/corner-valley-weight-payment.png": {
+      "bytes": 116275,
+      "sha256": "3fcc2f1632ac6bc6abb63b110a529c1c46ca0d58fc62f590ba38ef93ff1e273c"
+    },
+    "paper/tex/images/staircase-particle-hop.png": {
+      "bytes": 73244,
+      "sha256": "7b8a405f3d319a6f94ebca407d28e60708b90e962b850554edb04285802f73bf"
+    },
+    "paper/tex/images/static-protected-geometry.png": {
+      "bytes": 129933,
+      "sha256": "703439b342f499542ec237f4960cad07d025e8427270d786f733a0aff0ba2049"
+    },
+    "paper/tex/main.tex": {
+      "bytes": 196628,
+      "sha256": "6e7d7eaa23ab9c94b15afdf327153bd555e23056538c05b40168e5aea63079f2"
+    },
+    "persist_revision.py": {
+      "bytes": 1154,
+      "sha256": "d4659e1e21d7138cdca06cf52a522ede3619cb6ed1261289ed342b25fb2ff2c1"
+    },
+    "README.md": {
+      "bytes": 4224,
+      "sha256": "9c4e717b3ee5594a0be5e21dbdb987069d74935178ccbcd61af9bd9fce2e2a27"
+    },
+    "rebuild_base.py": {
+      "bytes": 4571,
+      "sha256": "85226567c327eea578cae9363c02c98e5c7ca2d94ed87c764e27278a0de22432"
+    },
+    "resume_base_audit.py": {
+      "bytes": 2838,
+      "sha256": "2f21412f9582cf8b2a83da32b707ccb6bd247ea052670b8cdc97c216188acfa3"
+    },
+    "run_lean.py": {
+      "bytes": 2257,
+      "sha256": "f8355b7ca9502e6aaea462e45dfe1761c0a13debc33ae90a8da0231c092bb7c8"
+    },
+    "validate_revision.py": {
+      "bytes": 6271,
+      "sha256": "a4373d8b104e5a8bb66291f36874406de359f7537ab978fbd1ba491d6f3894b0"
+    },
+    "validation.json": {
+      "bytes": 10747,
+      "sha256": "6a4161e3a95fe0388b8514a82d39302b8d00286a64ef79c88feb1983566dd50f"
+    },
+    "write_completion.py": {
+      "bytes": 5556,
+      "sha256": "f279bc7a2a7e87c6d6fc1ded9fd5095378f820f05fc6937b385d0e6f3030c20f"
+    }
+  },
+  "compiled_caches_included": false,
+  "rendered_page_pngs_included": false
+}

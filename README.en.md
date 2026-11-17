@@ -34,6 +34,10 @@ $$
 
 This result is in [ImprovedOriginalLower.lean](research/exploration/phase2/lean/ImprovedOriginalLower.lean) and is retained separately from the original main theorem.
 
+## Revision of 17 November 2026
+
+A1–A3 and B1–B3 are complete. The revision integrates the strengthened lower bound and formalizes the full-square extremizer, retained block failure rate, positive moments and exponential integrability for the original model. See the [60-page manuscript](research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf) and [revision and audit records](research/revision-ab-2026-11-17/README.md). C1 and C2 remain [reserved for collaborators](docs/collaborator-handoff-2026-11-14/TASKS.md).
+
 ## Related results and materials
 
 The repository also contains an independent stochastic waiting network, studied through a probabilistic representation of its output response, parameter comparisons and the effect of the observed variables on binary discrimination. Its model, assumptions and theorems are given in [Research results](docs/RESEARCH_RESULTS.md). It is a different mathematical object from the cellular automaton above.

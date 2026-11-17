@@ -1,0 +1,90 @@
+{
+  "component": "lower-tail-assembly",
+  "manuscript": "lower-tail-assembly.md",
+  "manuscript_sha256": "ed026ad982bf4d85e53a3766b7047453596cc22959e9a7c52ef20009c5593a3c",
+  "sources": [
+    {
+      "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+      "sha256": "c32f0479af732c2521068c115b72a3e176c5bc6d01c1c14ebd10fe485ba66d48",
+      "line_count": 165,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.stoppedWord_shape",
+          "line": 29
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.beforeState_shape_all_times_ae",
+          "line": 43
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.rawContribution_le_linear_all_times_ae",
+          "line": 55
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.expected_raw_le_linear",
+          "line": 71
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.raw_integral_le_linear_time",
+          "line": 88
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.actual_mean_weighted_area_le",
+          "line": 101
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.actual_exit_probability_le_linear_time",
+          "line": 107
+        },
+        {
+          "name": "MathResearchAnalysis.PhysicalWeightedDrift.original_clock_extinction_le_linear_time",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/WeightedAreaTail.lean",
+      "sha256": "4545edb300ec1c8a22fbbb0a0e928fde54aa4b19d68feb2f566673604f5bf2df",
+      "line_count": 237,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.meanArea_le_raw_integral_add_budget",
+          "line": 177
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.threshold_pos",
+          "line": 195
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.exit_probability_mul_le_mean",
+          "line": 199
+        },
+        {
+          "name": "MathResearchAnalysis.WeightedAreaTail.exit_probability_le_mean",
+          "line": 210
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/FrozenPhysicalExit.lean",
+      "sha256": "ee4882cce8654dca8d4207d4b20e6169a14f26e7adb80d331755ab216c5b4805",
+      "line_count": 176,
+      "declarations": [
+        {
+          "name": "MathResearchAnalysis.FrozenPhysicalExit.original_extinction_measure_le_physical_exit",
+          "line": 99
+        }
+      ]
+    }
+  ],
+  "proof_inputs_in_paper": [
+    "actual Shape section6.4",
+    "actual rawweighted estimate section6.5",
+    "accepted v4 PB21/WB5/MM9/MM10",
+    "accepted v3 SG5"
+  ],
+  "not_external_core_assumptions": true,
+  "no_new_Lean_build": true,
+  "status": "Draft awaiting independent review and reader acceptance",
+  "event_representation": "E_T measurable endpoint=P notsubset U(T), agrees on common regular set with theta<=T"
+}

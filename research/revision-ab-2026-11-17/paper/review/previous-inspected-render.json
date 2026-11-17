@@ -1,0 +1,158 @@
+{
+  "pdf_sha256": "62ca8a88bdf4142a5b509735482792e2760cb2c7013b286c4370a473785cbcef",
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "pages": 60,
+  "render_command": [
+    "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\poppler\\Library\\bin\\pdftoppm.exe",
+    "-r",
+    "96",
+    "-png",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\output\\pdf\\quadratic-recovery-v6.pdf",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\review\\rendered\\page"
+  ],
+  "render_exit_code": 0,
+  "render_dpi": 96,
+  "page_images": {
+    "review/rendered/page-01.png": "a4bdc3007dbb6bbfef0ad0a62d3132715425ebdffa8dd5829f75741922d0118e",
+    "review/rendered/page-02.png": "300a35b5761177624e7621fe95c59280a96b51c6baabf561319ef54096d1f299",
+    "review/rendered/page-03.png": "29897a60810934d045c09e244f3d23248ebf735a16be35f7bc3633f0bbc5d371",
+    "review/rendered/page-04.png": "f31f1e54f3bf700dd5681d89990fbafc46df569667d635042006c401e6fefce2",
+    "review/rendered/page-05.png": "9f44738f79bb3c4bed4410b2726ea336126e324729f33a2cf0d0b3258ae21618",
+    "review/rendered/page-06.png": "4c32f289979c3bf3040f77d09bd6989ab76a5e4a20dc5b6e31af22dd5f3f939c",
+    "review/rendered/page-07.png": "43e0098988631c9612494723e02e62edf6b2a137038ffa2f08fdfc99134d16b0",
+    "review/rendered/page-08.png": "9acaf4d74ca97813d7a5752a91c177edfad94fd95f028d32a276c64db6c98021",
+    "review/rendered/page-09.png": "9a478037e8b01a5d14e6a1896150d9ab2cf7cba811319bfdc2654bd8d0ed5563",
+    "review/rendered/page-10.png": "9c4fa43fdd616ec3c7e727eaf72a0bdf170a95b425ff51105589c7f1a1b75c1a",
+    "review/rendered/page-11.png": "a4f225cfaddc31db6d5c1b0958114b2697cc9ac2401b20a9efa7bd3ee95b3b9e",
+    "review/rendered/page-12.png": "80af5a511de221b1f78a8a90989f1209a25b04dbad013642a8c30e5f04b38f9b",
+    "review/rendered/page-13.png": "db7a344d3a6115a52648f96626f6f3c8f16f5d277ed52434fba04df8d1830581",
+    "review/rendered/page-14.png": "816481bc0c34c8d1bbe84b63ca40dc49ca40d7d2284edae315e705317de59c68",
+    "review/rendered/page-15.png": "1c73914e4f25073a0ff03364ab43b8daf0316b576f1373e7417d06b64575f9d9",
+    "review/rendered/page-16.png": "ed8ff3a48fa7900d7bc78fdb9aafa6342fea608f5f6a3a681d7f3626dbd001c4",
+    "review/rendered/page-17.png": "7fb2e0a66b77b49133c61865bd70b88c84bb6f8ae090f75b76905e32eb883672",
+    "review/rendered/page-18.png": "78bdb4fe72e42f6280ce15833d2a70a30208d191e477d04dd2dadba6db72c230",
+    "review/rendered/page-19.png": "c9f09e943d59a9596003f55b7b42aa8fd9a50667c67848245055e7a74c918d5f",
+    "review/rendered/page-20.png": "f81acdccf683ed63c7124eb4d65f0a8737e3e2f00be99cf02368e8081caad97c",
+    "review/rendered/page-21.png": "d641c9d96d0ce944c12522f6f74fd10665cb24e27c507ba5de0854aebf86ec97",
+    "review/rendered/page-22.png": "700470ed8145e8207e1e089b4af25b9df3491a3fdb20af7e6a9356f037e098fe",
+    "review/rendered/page-23.png": "d0f2576855a304a8a7da5857694bb3275614c68c6d128d928e1b6625779de06d",
+    "review/rendered/page-24.png": "a16cb57672a0593e003a6a315f7669ec26bc40fbfabc7927c5d879292651f156",
+    "review/rendered/page-25.png": "2194cd334e38a5f40c534978e54d4f8581f1bb718f54f1f12743aaf4c5f4b148",
+    "review/rendered/page-26.png": "b3715722177d95dfa50520543c89ca6cb67c850634c1e3edf5193b7bcfd94886",
+    "review/rendered/page-27.png": "b3f39b9f13b31a1d3c3106eae7b9c4a0a0207c99db276631e82374f0d2402138",
+    "review/rendered/page-28.png": "cdccf6995507b4ec6e0cca63aa00910f53b601c52e73eb336461fc939b12c142",
+    "review/rendered/page-29.png": "e3f841b098e03ff34093a0f04e5269e488cb9bf7c5f140d4f783a1f16c98b6cd",
+    "review/rendered/page-30.png": "74916bd77d654f297e1ddbdcf04f4ef0abfa35ca5c7e8b2db511157a04fa168d",
+    "review/rendered/page-31.png": "6c38f04f59841ffa4c4d3740c0cdbc705730840e1b70e860fad3d3a05c995036",
+    "review/rendered/page-32.png": "5b53229930517783d266ab8ce6b90ff3bad0a5732c70e9f6f3ddf7adfcb94feb",
+    "review/rendered/page-33.png": "08f1f29e08eee0d64d309df522a7c91074b08e219332337c5251b9d15638c867",
+    "review/rendered/page-34.png": "c2a1368d21d10b4d8f028a588b51425a61b145efe2109e57b7110ba1e675b91c",
+    "review/rendered/page-35.png": "d98faa24d396e286ab264302c0720e19195bf6e31bcdb0f66bbafdd5e366ae65",
+    "review/rendered/page-36.png": "b633bc5ab3b0535426522adbee49adc274c40827de39dd0d3a9229160aad465d",
+    "review/rendered/page-37.png": "1606f11fa521058ce5033e00728603f52c184028eed3dedd030a3eae962d5404",
+    "review/rendered/page-38.png": "30727047f1823f70f83a8a6d5d3193924a5d5d75b5df6409bce348788f141ffa",
+    "review/rendered/page-39.png": "b6e606141403650224ab7cb329d73570ff16b61cf81443a6933d3986d2c59d83",
+    "review/rendered/page-40.png": "de6d70172f34d2be7d2da4bbda78d3531d69076696513d40d0c7950f9050f7b1",
+    "review/rendered/page-41.png": "9e9e411569999118e818ca8b9d50562c052357e75e91ec074010fcaa9c9733d2",
+    "review/rendered/page-42.png": "c2974394f6ee40d6fb4166190eafd8bc6397af7270b86a04fc072f52d6bdf8a9",
+    "review/rendered/page-43.png": "993dc8e64b41c021a71b01527c28377c319600012ee1a015d020a41f705d710f",
+    "review/rendered/page-44.png": "ab2ea7012540f5488ee5129f636cde9f0beba1a6c3cdf72239fb73e367c44802",
+    "review/rendered/page-45.png": "498d1d6e1bf38e405a8c0404a7e0c426233b0bf4d7de5171605b700b12d41684",
+    "review/rendered/page-46.png": "e6c61a441f7f346ea35ed061fa942e746efebf8032fdcc748171f9a7e5922d1f",
+    "review/rendered/page-47.png": "1d9db0c4e0c992cc1589e1d826692f3bc4e3246f4666cac32c008f423cdde36b",
+    "review/rendered/page-48.png": "718608b77ba15e84ffa27f423a6862f09ea053bd8e9b7439541c610d9db32240",
+    "review/rendered/page-49.png": "c2d14e6618443e63a16415d1231b1c4844e8fdac6b4482f4e71d1dc3fc10310b",
+    "review/rendered/page-50.png": "c0529234a59e81b82a20e869a74874c310988250ee4b15b50845e7a4d67360dd",
+    "review/rendered/page-51.png": "458b8a958ff9387250f27e5124fc8a55ea2a240d395bde71f1af15b475c7a9de",
+    "review/rendered/page-52.png": "bc5dd700ece3435ff127fa8847d6df4dd89e92925d64265c2fede27badb0a8ab",
+    "review/rendered/page-53.png": "94e5084ab4724c46d93dde19af6124aa7dde92fe948150e8f5073624f684493d",
+    "review/rendered/page-54.png": "99729859b9670ccf98236201047a3fdb39b81a5f5db029aa2be423d11effc14a",
+    "review/rendered/page-55.png": "79fd47d7c4703e94e4e8bb3639c95d91ea79e6678bb3fd669f9d5afbc24eb9da",
+    "review/rendered/page-56.png": "8481e5bfc0161e8766107b84515f1b560cd27f08b99c1d18011ae885b620e93d",
+    "review/rendered/page-57.png": "d464d7f49a619cf22632f8c68be33d3f44b9903928c6b82cc53ccabad7803121",
+    "review/rendered/page-58.png": "e36fc907e24b095026de15da36da2c68001f699c547c5f2022ac859aa6b87d48",
+    "review/rendered/page-59.png": "85d77ee84e6988755547bbb392089c49ee6d5becd30407cd1133583b0d57c24d",
+    "review/rendered/page-60.png": "b332735a21e352e796d75ad31766e1db71dfc6148a3bc36546a1135b3a5ff3f6"
+  },
+  "contact_sheets": {
+    "review/rendered/contact-01.png": "6e6d943874432489725a8ce04c0c5ff340e4fafc146eccb26bd4b13dd714826a",
+    "review/rendered/contact-02.png": "980a9dd4b13b850a24eb33b4798ebbe10ddd46338a7dad264ca130d3f4e2ad76",
+    "review/rendered/contact-03.png": "539d209caa411fe2da3da5d5bd2e78c713f955217c12b0da0a7960b743488a83"
+  },
+  "important_pages_by_text": {
+    "Theorem 1": [
+      2,
+      3
+    ],
+    "Theorem 4": [
+      3,
+      9,
+      58
+    ],
+    "retained failure": [
+      8,
+      58
+    ],
+    "finite-state observable": [
+      21,
+      28,
+      59
+    ],
+    "Sixteen": [
+      33,
+      35
+    ],
+    "Formal artifact": [
+      3,
+      58
+    ]
+  },
+  "external_link_annotations": [
+    {
+      "page": 60,
+      "uri": "https://marcovici.perso.math.cnrs.fr/Publications/Fates_Marcovici_Taati_FI2022.pdf"
+    },
+    {
+      "page": 60,
+      "uri": "https://doi.org/10.3233/FI-222103"
+    },
+    {
+      "page": 60,
+      "uri": "https://arxiv.org/abs/2101.12682"
+    },
+    {
+      "page": 60,
+      "uri": "https://arxiv.org/html/1007.3599v2"
+    },
+    {
+      "page": 60,
+      "uri": "https://arxiv.org/html/1112.0603v1"
+    },
+    {
+      "page": 60,
+      "uri": "https://arxiv.org/html/2111.04044v2"
+    }
+  ],
+  "all_pages_rendered": true,
+  "visual_inspection": "pending",
+  "figure_caption_pages": {
+    "1": [
+      6
+    ],
+    "2": [
+      13
+    ],
+    "3": [
+      33
+    ],
+    "4": [
+      39
+    ],
+    "5": [
+      50
+    ],
+    "6": [
+      54
+    ]
+  }
+}

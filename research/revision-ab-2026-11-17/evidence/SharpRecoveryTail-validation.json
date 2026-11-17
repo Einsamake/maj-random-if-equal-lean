@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-11-17T09:50:07.641414+08:00",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpRecoveryTail.lean",
+  "source_sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+  "log": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\evidence\\SharpRecoveryTail-kernel.log",
+  "log_sha256": "57b5f45e9e00d1a3019ba5f9d16ace62998668149ba2856707d545bbc9e86c80",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\build\\SharpRecoveryTail.olean",
+  "olean_sha256": "9ea6df2a7b79c15978c2aa43b41120a742855469e1e8ca18c5e21775cf4b4c44",
+  "actual_exit_code": 0,
+  "trust_level": 0,
+  "named_declarations": 14,
+  "theorems": 13,
+  "actual_axiom_outputs": [
+    "MathResearchRevision.SharpRecoveryTail.failure",
+    "MathResearchRevision.SharpRecoveryTail.failure_nonneg",
+    "MathResearchRevision.SharpRecoveryTail.block_eq",
+    "MathResearchRevision.SharpRecoveryTail.clock_survival_le",
+    "MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le",
+    "MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le",
+    "MathResearchRevision.SharpRecoveryTail.failure_le_half",
+    "MathResearchRevision.SharpRecoveryTail.failure_lt_one",
+    "MathResearchRevision.SharpRecoveryTail.recovery_block_tail",
+    "MathResearchRevision.SharpRecoveryTail.expectation_le_geometric",
+    "MathResearchRevision.SharpRecoveryTail.finiteExpected_le",
+    "MathResearchRevision.SharpRecoveryTail.tau_le",
+    "MathResearchRevision.SharpRecoveryTail.scheduling_majorant",
+    "MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unexpected_axioms": [],
+  "command": "lean.exe --trust=0 --root=C:/Users/Lenovo/Desktop/Project/Math/revision-ab-2026-11-17/lean -o .../build/SharpRecoveryTail.olean .../lean/SharpRecoveryTail.lean",
+  "lean_executable": "D:/MyWorks/Math/formal/.tools/lean-4.35.0-rc4-windows/bin/lean.exe",
+  "working_directory": "D:/MyWorks/Math/formal/analysis",
+  "LEAN_PATH": "revision sharedbuild plus original analysis .lake/build/lib/lean and all locked dependency .lake/build/lib/lean",
+  "scope": [
+    "original finite-square true clock comparison",
+    "sharp actual synchronous restart power tail",
+    "retained infinity with extended expectation bound",
+    "original exact-N tau upper bound",
+    "failure nonnegative, <=1/2 for N>=16, tends to zero",
+    "exact block=331776*N^2+257"
+  ],
+  "original_sources_changed": false,
+  "fresh_full_dependency_rebuild": false,
+  "independent_semantic_review": "pending root coordination"
+}

@@ -1,0 +1,6 @@
+'MathResearchRevision.SharpFailureRate.layers_succ_ge_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpFailureRate.scheduling_le_inv_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpFailureRate.failure_le_five_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpFailureRate.failure_isBigO_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
