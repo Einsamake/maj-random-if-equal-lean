@@ -1,0 +1,37 @@
+{
+  "module": "SharpRecoveryTail",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lean.exe",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\SharpRecoveryTail.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpRecoveryTail.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 11.2007155418396,
+  "source_sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+  "log_sha256": "3527429074498f3a47409120d7a09fb94ed58b1f55cfe6a10f848bc9576b7b39",
+  "trust_level": 0,
+  "fresh_project_base": true,
+  "lean_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\fresh-base\\analysis;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+  "actual_axiom_outputs": [
+    "MathResearchRevision.SharpRecoveryTail.failure",
+    "MathResearchRevision.SharpRecoveryTail.failure_nonneg",
+    "MathResearchRevision.SharpRecoveryTail.block_eq",
+    "MathResearchRevision.SharpRecoveryTail.clock_survival_le",
+    "MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le",
+    "MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le",
+    "MathResearchRevision.SharpRecoveryTail.failure_le_half",
+    "MathResearchRevision.SharpRecoveryTail.failure_lt_one",
+    "MathResearchRevision.SharpRecoveryTail.recovery_block_tail",
+    "MathResearchRevision.SharpRecoveryTail.expectation_le_geometric",
+    "MathResearchRevision.SharpRecoveryTail.finiteExpected_le",
+    "MathResearchRevision.SharpRecoveryTail.tau_le",
+    "MathResearchRevision.SharpRecoveryTail.scheduling_majorant",
+    "MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero"
+  ],
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpRecoveryTail.lean",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\SharpRecoveryTail.olean",
+  "olean_sha256": "9ea6df2a7b79c15978c2aa43b41120a742855469e1e8ca18c5e21775cf4b4c44"
+}

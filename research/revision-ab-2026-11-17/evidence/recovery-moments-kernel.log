@@ -1,0 +1,43 @@
+'MathResearchRevision.RecoveryMoments.nat_le_block_successor' depends on axioms: [propext, Quot.sound]
+'MathResearchRevision.RecoveryMoments.block_predecessor_lt' depends on axioms: [propext, Quot.sound]
+'MathResearchRevision.RecoveryMoments.monotone_weight_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_monotone_weight_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomialConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomial_series_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomialConstant_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.momentConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.momentConstant_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_rpow_le_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.extendedExp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expRatio_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expConstant_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.exponential_weight_series' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_extendedExp_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_exponential_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.positive_exponential_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_ae_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_rpow_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_exponential_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

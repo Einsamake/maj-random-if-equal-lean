@@ -1,0 +1,31 @@
+{
+  "module": "OriginalRecoveryResults",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lean.exe",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\OriginalRecoveryResults.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalRecoveryResults.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 10.152745485305786,
+  "source_sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+  "log_sha256": "a66b1f690f6410f92d102ca2ee9cda8e37d6468c006f4cb4e7a86ef3d4e9b422",
+  "trust_level": 0,
+  "fresh_project_base": true,
+  "lean_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\fresh-base\\analysis;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+  "actual_axiom_outputs": [
+    "MathResearchRevision.OriginalRecoveryResults.finiteExpected_le_top",
+    "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square_finite",
+    "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square",
+    "MathResearchRevision.OriginalRecoveryResults.homogeneous_finite_square_map",
+    "MathResearchRevision.OriginalRecoveryResults.exists_finite_recovery_law",
+    "MathResearchRevision.OriginalRecoveryResults.exists_finite_tail",
+    "MathResearchRevision.OriginalRecoveryResults.exists_finite_observable_integrals",
+    "MathResearchRevision.OriginalRecoveryResults.original_recovery_block_tail"
+  ],
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalRecoveryResults.lean",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\OriginalRecoveryResults.olean",
+  "olean_sha256": "21ed1407d8b2126fe13a882c08d58f9a593a2cf0797b70beb212527725d1d7a0"
+}

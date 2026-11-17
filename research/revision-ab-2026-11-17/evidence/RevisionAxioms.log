@@ -1,0 +1,235 @@
+'MathResearchExploration.FullBlockThreshold.directedPoint' does not depend on any axioms
+'MathResearchExploration.FullBlockThreshold.directedPoint_injective' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.directedBlock_eq_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.sum_positive_offsets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.sum_affine_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.directedPoint_weight_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.fullBlock_exact_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.fullBlock_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.cubic_weight_of_physical_exit_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.physical_exit_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.original_extinction_measure_le_cubic_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.threshold_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.exit_probability_mul_le_mean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.actual_exit_probability_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.original_clock_extinction_le_linear_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.quadraticHorizon' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchExploration.FullBlockThreshold.quadratic_mean_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.quadratic_bound_le_half_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.actual_exit_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.quotient' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.rounds' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.quotient_ge_thirtytwo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.quotient_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.quotient_mul_le_square' depends on axioms: [propext]
+'MathResearchExploration.ImprovedOriginalLower.square_lt_quotient_succ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.side_le_sixtyfour_quotient_sub_twelve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.square_exponential_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.scheduling_time_le_horizon' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.scheduling_error_le_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.original_clock_survival_at_horizon_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.original_clock_survival_ge_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.synchronous_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.halfSide_large' depends on axioms: [propext, Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.halfSide_ge_third' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.rounds_quarter_ge_original_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.synchronous_square_tail_ge_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.square_expectedRecovery_quadratic_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.translated_square_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_quadratic_lower_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_quadratic_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchExploration.ImprovedOriginalLower.tau_theta_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.finiteExpected_le_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.homogeneous_finite_square_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_recovery_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_observable_integrals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.original_recovery_block_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.block_eq' depends on axioms: [propext]
+'MathResearchRevision.SharpRecoveryTail.clock_survival_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.recovery_block_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.expectation_le_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.finiteExpected_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.tau_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.scheduling_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpFailureRate.layers_succ_ge_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpFailureRate.scheduling_le_inv_side' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpFailureRate.failure_le_five_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpFailureRate.failure_isBigO_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.nat_le_block_successor' depends on axioms: [propext, Quot.sound]
+'MathResearchRevision.RecoveryMoments.block_predecessor_lt' depends on axioms: [propext, Quot.sound]
+'MathResearchRevision.RecoveryMoments.monotone_weight_envelope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_monotone_weight_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomialConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomial_series_summable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.polynomialConstant_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.momentConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.momentConstant_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_rpow_le_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.extendedExp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expRatio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expRatio_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.expConstant_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.exponential_weight_series' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.lintegral_extendedExp_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_exponential_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.positive_exponential_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_ae_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_rpow_lt_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.RecoveryMoments.recovery_exponential_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.quadratic_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_sharp_block_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_sharp_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_ae_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_rpow_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_exponential_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.original_exponential_lt_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalConsequences.finite_machine_dynkin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

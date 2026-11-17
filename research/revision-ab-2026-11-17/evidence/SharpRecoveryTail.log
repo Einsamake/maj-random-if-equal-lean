@@ -1,0 +1,20 @@
+'MathResearchRevision.SharpRecoveryTail.failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.block_eq' depends on axioms: [propext]
+'MathResearchRevision.SharpRecoveryTail.clock_survival_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.recovery_block_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.expectation_le_geometric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.finiteExpected_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.tau_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.scheduling_majorant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

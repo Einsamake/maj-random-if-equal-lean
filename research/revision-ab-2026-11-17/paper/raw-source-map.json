@@ -1,0 +1,841 @@
+{
+  "schema_version": 1,
+  "author": "/root/v5_raw_author",
+  "authoritative_workspace": "D:/MyWorks/Math",
+  "chapter": "research/manuscript/quadratic-recovery-v5/raw-weighted-boundary.md",
+  "chapter_sha256": "f71d52aff1475844cb4fa967a571a4a4dc1da368a3c529eee394b75775e7268b",
+  "scope": "Human exposition of existing frozen formal interfaces; no new theorem, Lean declaration, build or novelty certification.",
+  "formal_manifest": [
+    {
+      "module": "ForbiddenBirthControl",
+      "path": "formal/analysis/MathResearchAnalysis/ForbiddenBirthControl.lean",
+      "sha256": "7ED911A408DDCDA06065DC1EF31269CBF377C70858DDB95ADC14CFE18BF23CC2",
+      "line_count": 224,
+      "bytes": 10259,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "WeightedRawContour",
+      "path": "formal/analysis/MathResearchAnalysis/WeightedRawContour.lean",
+      "sha256": "BF5E16C0051B71234DBE5AFC50934BA286F3E0BFAAB30E7F7B7FACCFF5AAE653",
+      "line_count": 348,
+      "bytes": 17522,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "WeightedRawRate",
+      "path": "formal/analysis/MathResearchAnalysis/WeightedRawRate.lean",
+      "sha256": "152CFB27D13E5A64F5257A5356339CBB38773C0FA15BCEAF0446BC0A81970C12",
+      "line_count": 258,
+      "bytes": 14671,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "WeightedReflection",
+      "path": "formal/analysis/MathResearchAnalysis/WeightedReflection.lean",
+      "sha256": "10C982D8F07F8F2A6296DFA36791B73AB5E5DFF27F4D7A9521F0DC2753986A4A",
+      "line_count": 146,
+      "bytes": 7999,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "OrthogonalPerimeter",
+      "path": "formal/analysis/MathResearchAnalysis/OrthogonalPerimeter.lean",
+      "sha256": "D94E95FF29EF1BA606CFA7DF1D3F0C62BE94D58804793EA19AD1089B87AA2638",
+      "line_count": 205,
+      "bytes": 10309,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "OrthogonalVacantQuadrant",
+      "path": "formal/analysis/MathResearchAnalysis/OrthogonalVacantQuadrant.lean",
+      "sha256": "A0C0C9F29ACB1E764D7DB8F689DEEAA09339746E83A5703F488C9F022ED989AB",
+      "line_count": 182,
+      "bytes": 8922,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ConvexLocalUpdate",
+      "path": "formal/analysis/MathResearchAnalysis/ConvexLocalUpdate.lean",
+      "sha256": "E113E6D0769162918A4EB9D13688E27CAE26B169879815FBC73F2E257E7D9FC6",
+      "line_count": 148,
+      "bytes": 7773,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedColumnGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedColumnGeometry.lean",
+      "sha256": "9617C2E2F9E2CCF4962707D740B3579B46E0C4D82315430182449D3039F10DDC",
+      "line_count": 324,
+      "bytes": 16775,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ClippedProtectedGeometry",
+      "path": "formal/analysis/MathResearchAnalysis/ClippedProtectedGeometry.lean",
+      "sha256": "D809D52A894B9ADEBD1CA33A2DB3EA26489D9A4A31F13B643947C70FFD2980EA",
+      "line_count": 222,
+      "bytes": 9357,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "DropletModifiedWord",
+      "path": "formal/analysis/MathResearchAnalysis/DropletModifiedWord.lean",
+      "sha256": "3CF40BEF3BB6E11DA17D9B7D1806B2C77CE5E68ACF16A81879CAD5FA0F6F9A37",
+      "line_count": 231,
+      "bytes": 9775,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "PhysicalWeightedDrift",
+      "path": "formal/analysis/MathResearchAnalysis/PhysicalWeightedDrift.lean",
+      "sha256": "C32F0479AF732C2521068C115B72A3E176C5BC6D01C1C14EBD10FE485BA66D48",
+      "line_count": 165,
+      "bytes": 8479,
+      "matches_plan_snapshot": true
+    },
+    {
+      "module": "ProtectedEvolution",
+      "path": "formal/analysis/MathResearchAnalysis/ProtectedEvolution.lean",
+      "sha256": "24579CF99BE9781083789E9D8D66F6D4DEB2387E471ADC40870C12BC15B37D8F",
+      "line_count": 108,
+      "bytes": 6276,
+      "matches_plan_snapshot": true
+    }
+  ],
+  "immutable_v4_interfaces": [
+    {
+      "path": "research/manuscript/quadratic-recovery-v4/weighted-balance.md",
+      "sha256": "158D7749DE739A04198359BBFC515E6BB53A58AC3A23E88522E84B3483EEA260"
+    },
+    {
+      "path": "research/manuscript/quadratic-recovery-v4/modified-cleanup.md",
+      "sha256": "B4865DF06438FAE2B84CC675E903FF0044B6A2652CD28E95B64BB288A53DBDE2"
+    },
+    {
+      "path": "research/manuscript/quadratic-recovery-v4/perimeter-budget.md",
+      "sha256": "A6831578E18E1982D7B61D7D3FE403227ECC72612C6AB1F0A7B6AB31F32B2FBD"
+    }
+  ],
+  "claims": [
+    {
+      "paper_label": "R1",
+      "paper_tag_line": 6,
+      "claim": "Signed masked raw rate at a supported protected Shape is bounded by 18L+12.",
+      "formal_references": [
+        {
+          "module": "WeightedRawRate",
+          "declaration": "MathResearchAnalysis.WeightedRawRate.actual_raw_le_linear",
+          "declaration_line": 249,
+          "inspection_lines": [
+            249,
+            256
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.actual_rawWeightedRate_eq_square",
+          "declaration_line": 212,
+          "inspection_lines": [
+            212,
+            217
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R2",
+      "paper_tag_line": 18,
+      "claim": "Exact domain, square, protected inner core, literal signed weight, and finite signed mass.",
+      "formal_references": [
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.weight",
+          "declaration_line": 26,
+          "inspection_lines": [
+            26,
+            27
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.mass",
+          "declaration_line": 154,
+          "inspection_lines": [
+            154,
+            154
+          ]
+        },
+        {
+          "module": "ClippedProtectedGeometry",
+          "declaration": "MathResearchAnalysis.ClippedProtectedGeometry.innerDiamond",
+          "declaration_line": 27,
+          "inspection_lines": [
+            27,
+            29
+          ]
+        }
+      ],
+      "definition_interfaces": [
+        "The D and E coordinate definitions already occur in PB1 and section 6.1."
+      ]
+    },
+    {
+      "paper_label": "R3",
+      "paper_tag_line": 29,
+      "claim": "True fair-mark average of the unmasked raw majority loss; its D-sum is the actual masked raw part.",
+      "formal_references": [
+        {
+          "module": "DropletModifiedWord",
+          "declaration": "MathResearchAnalysis.DropletModifiedWord.localRule",
+          "declaration_line": 27,
+          "inspection_lines": [
+            27,
+            29
+          ]
+        },
+        {
+          "module": "DropletModifiedWord",
+          "declaration": "MathResearchAnalysis.DropletModifiedWord.rawStep",
+          "declaration_line": 31,
+          "inspection_lines": [
+            31,
+            32
+          ]
+        },
+        {
+          "module": "DropletModifiedWord",
+          "declaration": "MathResearchAnalysis.DropletModifiedWord.maskedRawStep",
+          "declaration_line": 34,
+          "inspection_lines": [
+            34,
+            35
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate",
+          "declaration_line": 156,
+          "inspection_lines": [
+            156,
+            158
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_local",
+          "declaration_line": 173,
+          "inspection_lines": [
+            173,
+            179
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R4",
+      "paper_tag_line": 45,
+      "claim": "Any forbidden site with at least two occupied neighbours lies in E on norm layer L+2 and has weight zero.",
+      "formal_references": [
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.two_neighbours_in_centered_square",
+          "declaration_line": 34,
+          "inspection_lines": [
+            34,
+            85
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.positive_degree_diamond_bound",
+          "declaration_line": 87,
+          "inspection_lines": [
+            87,
+            116
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.outside_birth_layer",
+          "declaration_line": 118,
+          "inspection_lines": [
+            118,
+            126
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.weight_zero_at_outside_birth",
+          "declaration_line": 135,
+          "inspection_lines": [
+            135,
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R5",
+      "paper_tag_line": 61,
+      "claim": "Exact weighted mask correction vanishes; exterior births need not be impossible.",
+      "formal_references": [
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.weighted_forbidden_birth_zero",
+          "declaration_line": 144,
+          "inspection_lines": [
+            144,
+            151
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.rawWeightedRate_mask_correction",
+          "declaration_line": 181,
+          "inspection_lines": [
+            181,
+            200
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.clipped_rawWeightedRate_eq_expanded",
+          "declaration_line": 202,
+          "inspection_lines": [
+            202,
+            210
+          ]
+        },
+        {
+          "module": "ForbiddenBirthControl",
+          "declaration": "MathResearchAnalysis.ForbiddenBirthControl.actual_rawWeightedRate_eq_square",
+          "declaration_line": 212,
+          "inspection_lines": [
+            212,
+            217
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R6",
+      "paper_tag_line": 75,
+      "claim": "Actual corner/valley sets and signed NW charge, with valley set restricted to E.",
+      "formal_references": [
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwestCorners",
+          "declaration_line": 159,
+          "inspection_lines": [
+            159,
+            160
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwestValleys",
+          "declaration_line": 162,
+          "inspection_lines": [
+            162,
+            163
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwestCharge",
+          "declaration_line": 165,
+          "inspection_lines": [
+            165,
+            167
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R7",
+      "paper_tag_line": 102,
+      "claim": "The four signed charges equal twice the true fair-mark raw rate.",
+      "formal_references": [
+        {
+          "module": "ConvexLocalUpdate",
+          "declaration": "MathResearchAnalysis.ConvexLocalUpdate.vacant_no_east_west",
+          "declaration_line": 28,
+          "inspection_lines": [
+            28,
+            30
+          ]
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "declaration": "MathResearchAnalysis.ConvexLocalUpdate.vacant_no_north_south",
+          "declaration_line": 32,
+          "inspection_lines": [
+            32,
+            34
+          ]
+        },
+        {
+          "module": "ConvexLocalUpdate",
+          "declaration": "MathResearchAnalysis.ConvexLocalUpdate.vacant_degree4_le_two",
+          "declaration_line": 35,
+          "inspection_lines": [
+            35,
+            42
+          ]
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "declaration": "MathResearchAnalysis.ProtectedColumnGeometry.protected_no_horizontal_opposites",
+          "declaration_line": 206,
+          "inspection_lines": [
+            206,
+            233
+          ]
+        },
+        {
+          "module": "ProtectedColumnGeometry",
+          "declaration": "MathResearchAnalysis.ProtectedColumnGeometry.protected_no_vertical_opposites",
+          "declaration_line": 283,
+          "inspection_lines": [
+            283,
+            301
+          ]
+        },
+        {
+          "module": "WeightedRawRate",
+          "declaration": "MathResearchAnalysis.WeightedRawRate.raw_local_four_orientations",
+          "declaration_line": 108,
+          "inspection_lines": [
+            108,
+            150
+          ]
+        },
+        {
+          "module": "WeightedRawRate",
+          "declaration": "MathResearchAnalysis.WeightedRawRate.actual_raw_four_charges",
+          "declaration_line": 176,
+          "inspection_lines": [
+            176,
+            203
+          ]
+        }
+      ],
+      "human_proof_dependencies": [
+        "Preceding v5 Shape subsection ordinary proofs G1 and G4, not a new premise at the final stochastic endpoint."
+      ]
+    },
+    {
+      "paper_label": "R8",
+      "paper_tag_line": 122,
+      "claim": "Actual adjacent-column pairing: rise, vacant valley membership, injection and at most one orphan.",
+      "formal_references": [
+        {
+          "module": "OrthogonalPerimeter",
+          "declaration": "MathResearchAnalysis.OrthogonalPerimeter.fst_projection_interval",
+          "declaration_line": 148,
+          "inspection_lines": [
+            148,
+            157
+          ]
+        },
+        {
+          "module": "OrthogonalVacantQuadrant",
+          "declaration": "MathResearchAnalysis.OrthogonalVacantQuadrant.path_crosses_vertical_cut",
+          "declaration_line": 52,
+          "inspection_lines": [
+            52,
+            57
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwest_previous_top_lower",
+          "declaration_line": 27,
+          "inspection_lines": [
+            27,
+            41
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.rising_tops_valley",
+          "declaration_line": 44,
+          "inspection_lines": [
+            44,
+            57
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.pairedValley_mem_actual",
+          "declaration_line": 216,
+          "inspection_lines": [
+            216,
+            226
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.pairedValley_injOn",
+          "declaration_line": 228,
+          "inspection_lines": [
+            228,
+            234
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwest_unpaired_card_le_one",
+          "declaration_line": 238,
+          "inspection_lines": [
+            238,
+            257
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwest_unpaired_weight_le",
+          "declaration_line": 259,
+          "inspection_lines": [
+            259,
+            268
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R9",
+      "paper_tag_line": 141,
+      "claim": "Literal absolute-value weight difference is no larger than the positive column rise.",
+      "formal_references": [
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.rising_tops_weight_difference",
+          "declaration_line": 99,
+          "inspection_lines": [
+            99,
+            117
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R10",
+      "paper_tag_line": 154,
+      "claim": "Every rise unit is paid by a genuine west-exposed unit edge; paid segments for one orientation are disjoint.",
+      "formal_references": [
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.rising_tops_west_edges",
+          "declaration_line": 78,
+          "inspection_lines": [
+            78,
+            96
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.westSegment",
+          "declaration_line": 119,
+          "inspection_lines": [
+            119,
+            120
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.westSegment_card",
+          "declaration_line": 122,
+          "inspection_lines": [
+            122,
+            128
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.paired_segments_disjoint",
+          "declaration_line": 270,
+          "inspection_lines": [
+            270,
+            281
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.paired_segments_card_le",
+          "declaration_line": 284,
+          "inspection_lines": [
+            284,
+            295
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.paired_weight_difference_le",
+          "declaration_line": 297,
+          "inspection_lines": [
+            297,
+            308
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R11",
+      "paper_tag_line": 166,
+      "claim": "Actual valley weights are nonnegative; subtracting unused valleys can only lower the charge.",
+      "formal_references": [
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.valley_weight_nonnegative",
+          "declaration_line": 310,
+          "inspection_lines": [
+            310,
+            316
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.paired_valley_weight_sum_le",
+          "declaration_line": 318,
+          "inspection_lines": [
+            318,
+            330
+          ]
+        },
+        {
+          "module": "WeightedRawContour",
+          "declaration": "MathResearchAnalysis.WeightedRawContour.northwestCharge_le",
+          "declaration_line": 334,
+          "inspection_lines": [
+            334,
+            346
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R12",
+      "paper_tag_line": 173,
+      "claim": "Exact finite protected Shape example with w(v)=6, w(z)=3 and five exposed west edges.",
+      "formal_references": [],
+      "evidence": "Independently enumerated directly from the displayed formula in this author run; checks in review/raw-figure-spec.json. No Lean theorem about this example and no reachability claim.",
+      "checks": {
+        "L": 80,
+        "D_cardinality": 13281,
+        "S_cardinality": 13243,
+        "P_cardinality": 10805,
+        "contains_P": true,
+        "row_interval_convex": true,
+        "column_interval_convex": true,
+        "four_connected": true,
+        "stable": true,
+        "perimeter": 636,
+        "previous_column_top": -4,
+        "corner_column_top": 1,
+        "corner_is_NW": true,
+        "valley_is_NW": true,
+        "corner_weight": 6,
+        "valley_weight": 3,
+        "rise": 5,
+        "paid_edge_count": 5,
+        "all_paid_edges_exposed": true,
+        "NW_corner_count": 76,
+        "NW_valley_count": 75,
+        "NW_charge": 74,
+        "one_charge_bound": 718,
+        "site_rate_at_corner": 3.0,
+        "site_rate_at_valley": -1.5,
+        "four_orientation_charges": [
+          74,
+          80,
+          76,
+          80
+        ],
+        "twice_Q_E": 310,
+        "twice_Q_D": 310,
+        "four_charge_identity": true,
+        "mask_cancellation": true
+      }
+    },
+    {
+      "paper_label": "R13",
+      "paper_tag_line": 184,
+      "claim": "Reflections preserve all hypotheses and perimeter; four independent Per upper bounds yield 2(L+2)+2Per.",
+      "formal_references": [
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.degree4_mirror",
+          "declaration_line": 17,
+          "inspection_lines": [
+            17,
+            36
+          ]
+        },
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.perimeter_mirror",
+          "declaration_line": 55,
+          "inspection_lines": [
+            55,
+            69
+          ]
+        },
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.shape_mirror",
+          "declaration_line": 71,
+          "inspection_lines": [
+            71,
+            76
+          ]
+        },
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.weight_reflect",
+          "declaration_line": 78,
+          "inspection_lines": [
+            78,
+            80
+          ]
+        },
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.innerDiamond_subset_mirror",
+          "declaration_line": 110,
+          "inspection_lines": [
+            110,
+            115
+          ]
+        },
+        {
+          "module": "WeightedReflection",
+          "declaration": "MathResearchAnalysis.WeightedReflection.mirror_subset_clippedDomain",
+          "declaration_line": 117,
+          "inspection_lines": [
+            117,
+            123
+          ]
+        },
+        {
+          "module": "WeightedRawRate",
+          "declaration": "MathResearchAnalysis.WeightedRawRate.actual_raw_le_perimeter",
+          "declaration_line": 228,
+          "inspection_lines": [
+            228,
+            246
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R14",
+      "paper_tag_line": 195,
+      "claim": "The physical exposed-edge perimeter is twice the occupied projection counts, hence at most 8L+4.",
+      "formal_references": [
+        {
+          "module": "OrthogonalPerimeter",
+          "declaration": "MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_directional_cells",
+          "declaration_line": 133,
+          "inspection_lines": [
+            133,
+            140
+          ]
+        },
+        {
+          "module": "OrthogonalPerimeter",
+          "declaration": "MathResearchAnalysis.OrthogonalPerimeter.perimeter_eq_projection_cards",
+          "declaration_line": 142,
+          "inspection_lines": [
+            142,
+            145
+          ]
+        },
+        {
+          "module": "WeightedRawRate",
+          "declaration": "MathResearchAnalysis.WeightedRawRate.perimeter_le_clipped_square",
+          "declaration_line": 207,
+          "inspection_lines": [
+            207,
+            225
+          ]
+        }
+      ]
+    },
+    {
+      "paper_label": "R15",
+      "paper_tag_line": 202,
+      "claim": "The actual frozen raw rate is 1_{P subset S} Q_D and is <=18L+12, including after loss.",
+      "formal_references": [
+        {
+          "module": "PhysicalWeightedDrift",
+          "declaration": "MathResearchAnalysis.PhysicalWeightedDrift.rawContribution_le_linear_all_times_ae",
+          "declaration_line": 55,
+          "inspection_lines": [
+            55,
+            69
+          ]
+        }
+      ],
+      "baseline_interface": "v4 weighted-balance.md (WB3)",
+      "human_proof_dependencies": [
+        "Actual Shape finite-word induction in the preceding v5 subsection, including the retained first-losing output."
+      ]
+    },
+    {
+      "paper_label": "R16",
+      "paper_tag_line": 207,
+      "claim": "Insert the proved actual raw bound into the original-law weighted balance, retaining cleanup.",
+      "formal_references": [
+        {
+          "module": "PhysicalWeightedDrift",
+          "declaration": "MathResearchAnalysis.PhysicalWeightedDrift.raw_integral_le_linear_time",
+          "declaration_line": 88,
+          "inspection_lines": [
+            88,
+            99
+          ]
+        },
+        {
+          "module": "PhysicalWeightedDrift",
+          "declaration": "MathResearchAnalysis.PhysicalWeightedDrift.actual_mean_weighted_area_le",
+          "declaration_line": 101,
+          "inspection_lines": [
+            101,
+            105
+          ]
+        }
+      ],
+      "baseline_interface": "v4 weighted-balance.md (WB5); v5 has not changed the formal compensation route."
+    }
+  ],
+  "figure_spec": "review/raw-figure-spec.json",
+  "figure_spec_sha256": "2E1CFF6AC097C1B4E07AB04F363D759E80A0B888EFE15A0C683D201CA256750C",
+  "separate_validation": {
+    "formal_source_plan_hashes": "all 12 referenced source files match the pre-existing plan manifest",
+    "mathematical_author_checks": "done, including cut crossing, sign/factor accounting and finite example",
+    "three_author_editing_passes": "recorded in edit-record-raw.json",
+    "independent_semantic_review": "pending root",
+    "simulated_undergraduate_reader": "pending root, with prose and actual figures only",
+    "full_pdf_visual_QA": "pending root",
+    "document_tag_checks": "R1-R16 are unique and all local R references resolve.",
+    "author_edit_record_chain": "Three distinct successive before/after SHA pairs match the final paper fingerprint.",
+    "document_link_check": "The linked Figure 6 PNG exists.",
+    "figure_author_visual_correspondence": {
+      "status": "Author viewed rendered PNG and checked lattice membership, five orange edge locations, u/v/z coordinates and 6/3/0 weights against the exact formulas. Not full-paper visual QA or reader acceptance.",
+      "path": "images/corner-valley-weight-payment.png",
+      "sha256": "3FCC2F1632AC6BC6ABB63B110A529C1C46CA0D58FC62F590BA38EF93FF1E273C"
+    }
+  },
+  "prohibited_shortcuts_avoided": [
+    "No raw bound left as a final assumption",
+    "No assertion w is nonnegative on all E",
+    "No impossibility claim for exterior births",
+    "No omitted negative birth or cleanup term",
+    "No abstract matching or Jordan-curve argument",
+    "No disjoint-edge claim across orientations",
+    "No stronger 6L+6 candidate bound",
+    "No modification of frozen sources or v4"
+  ]
+}

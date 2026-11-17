@@ -1,0 +1,25 @@
+{
+  "paper_sha256": "d33b01d8a8e4a6f4bbfc0351337b72e80d83ea73af9194b45f7cfdd7ff43731b",
+  "checks": [
+    {
+      "kind": "exact rational full-block floor/sum inequalities",
+      "L": "80..10000",
+      "pass": true
+    },
+    {
+      "kind": "exact rational horizon and integer-round inequalities",
+      "L": "250000..260000 plus large samples",
+      "pass": true
+    },
+    {
+      "kind": "exact-size floor and final constant inequalities",
+      "N": "500001..510000",
+      "pass": true
+    },
+    {
+      "kind": "unique equation tags, six actual figures, obsolete constants/references absent, old v5 fingerprint",
+      "pass": true
+    }
+  ],
+  "meaning": "Finite arithmetic checks and source-location checks do not replace Lean verification or an independent mathematical review."
+}

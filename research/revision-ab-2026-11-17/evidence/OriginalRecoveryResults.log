@@ -1,0 +1,24 @@
+'MathResearchRevision.OriginalRecoveryResults.finiteExpected_le_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.homogeneous_finite_square_map' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_recovery_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.exists_finite_observable_integrals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathResearchRevision.OriginalRecoveryResults.original_recovery_block_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

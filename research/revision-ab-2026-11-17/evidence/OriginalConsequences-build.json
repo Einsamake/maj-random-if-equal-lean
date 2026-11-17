@@ -1,0 +1,32 @@
+{
+  "module": "OriginalConsequences",
+  "command": [
+    "D:\\MyWorks\\Math\\formal\\.tools\\lean-4.35.0-rc4-windows\\bin\\lean.exe",
+    "--trust=0",
+    "--root=C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean",
+    "-o",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\OriginalConsequences.olean",
+    "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalConsequences.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 10.278234958648682,
+  "source_sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+  "log_sha256": "adadcf24e88db8f9e1f44e0991fe7c3f1a431106b257bd7ecc76f9459ff6f841",
+  "trust_level": 0,
+  "fresh_project_base": true,
+  "lean_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build;C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\fresh-base\\analysis;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;D:\\MyWorks\\Math\\formal\\analysis\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean",
+  "actual_axiom_outputs": [
+    "MathResearchRevision.OriginalConsequences.quadratic_bounds",
+    "MathResearchRevision.OriginalConsequences.original_sharp_block_tail",
+    "MathResearchRevision.OriginalConsequences.original_sharp_expectation",
+    "MathResearchRevision.OriginalConsequences.original_ae_finite",
+    "MathResearchRevision.OriginalConsequences.original_rpow_le",
+    "MathResearchRevision.OriginalConsequences.original_rpow_lt_top",
+    "MathResearchRevision.OriginalConsequences.original_exponential_le",
+    "MathResearchRevision.OriginalConsequences.original_exponential_lt_top",
+    "MathResearchRevision.OriginalConsequences.finite_machine_dynkin"
+  ],
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\OriginalConsequences.lean",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\final-build\\OriginalConsequences.olean",
+  "olean_sha256": "ac6f6d814e728544eeeb6b4650cdb5405c9d3f7a742ee40f682fcc250c8504a5"
+}

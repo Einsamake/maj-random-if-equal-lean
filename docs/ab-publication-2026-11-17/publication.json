@@ -1,0 +1,18 @@
+{
+  "issue": 5,
+  "accepted_snapshot_files": 372,
+  "accepted_snapshot_byte_identical": true,
+  "local_package_sha256": "bdbe199fe7aa4e00c942b34d1fca6b240b5783e0faf54320c5f4519066d48cc3",
+  "manuscript_pages": 60,
+  "new_modules": 5,
+  "new_named_declarations": 58,
+  "aggregate_axiom_outputs": 105,
+  "publication_does_not_rerun_lean": true,
+  "snapshot_provenance": "README and CHECKPOINT preserve the local acceptance state before publication; GitHub issue/PR records the subsequent publication.",
+  "simulated_reader": "waived by user",
+  "excluded": [
+    "C1/C2 implementation",
+    "compiler caches",
+    "other unpublished exploration phases"
+  ]
+}

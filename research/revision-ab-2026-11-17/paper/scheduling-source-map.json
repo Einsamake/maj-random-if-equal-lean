@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-28",
+  "workspace": "D:/MyWorks/Math",
+  "manuscript": "research/manuscript/quadratic-recovery-v1/scheduling.md",
+  "manuscript_sha256": "956e1e93cc578bbffb80e0a9ed842502809af8c9d7846779da15e26d32f46d8b",
+  "status": "Complete scheduling exposition; final endpoint deductions use the separately proved finite censoring lemma; independent integrated reader review pending root record.",
+  "notation": {
+    "m": "Actual square side; source n=m-2.",
+    "selected_layers": "k+1 positive layers, indexed j=0,...,k.",
+    "task_path": "k+1 vertices/waits and k nearest-neighbour edges.",
+    "rank_path": "q vertices/waits and q-1 stay-or-neighbour steps, q>=1.",
+    "rank_event": "At least q, not strictly greater than q.",
+    "infinity": "Completion/readiness extended until a.s. finiteness is proved; no null-set representative used as a new law."
+  },
+  "claims": [
+    {
+      "sections": "1-2",
+      "equations": "S2-S4",
+      "claim": "Common history, fixed-time gap integration, countable stopping slices and upper dyadic approximation prove true residual Exp(1) law and stopped-history independence.",
+      "sources": [
+        "ArrivalFiltration",
+        "ClockReadiness",
+        "ClockDeterministicResidual",
+        "CountableClockSurvival",
+        "UpperStoppingApprox",
+        "ClockWaitingLimit",
+        "ClockStoppedResidual"
+      ]
+    },
+    {
+      "sections": "3-4",
+      "equations": "S5-S11",
+      "claim": "Actual readiness recurrence; fixed-path history factorization; m^2*4^k paths times 2^(k+1) moment, bounded by m^2*8^(k+1).",
+      "sources": [
+        "SquareTasks",
+        "TaskPaths",
+        "TaskClockBridge",
+        "FixedClockPath",
+        "ActualClockTail",
+        "ClockMaximum"
+      ]
+    },
+    {
+      "section": "5",
+      "equations": "S12",
+      "claim": "Distinct actual site/ring identities and same conflict order allow commuting rearrangement to fixed layer word.",
+      "sources": [
+        "ClockEventOrder",
+        "ClockSelectedWord"
+      ]
+    },
+    {
+      "section": "6",
+      "equations": "S13-S16",
+      "claim": "Computed rank gives chronological actual sublist; greedy chain domination; a=9 gives 10^-q; count m^2*5^(q-1) yields (m^2/5)*exp(9t)*2^-q for q>=1.",
+      "sources": [
+        "FiniteRankWitness",
+        "GreedyClockChain",
+        "SquareGreedyPaths",
+        "ClockRankTail"
+      ]
+    },
+    {
+      "section": "7",
+      "equation": "S17",
+      "claim": "Rank/color slots 2r-1 or 2r preserve every conflicting pair; duplicate-free slot prefixes completed by missing sites give actual 2q full scans.",
+      "sources": [
+        "RankSlotEmbedding",
+        "RankScanEmbedding"
+      ]
+    },
+    {
+      "section": "9",
+      "equations": "S18-S20",
+      "claim": "Condition on original gaps and integrate original independent identity marks; finite censoring gives both endpoint inequalities; scales give 6/5 error.",
+      "dependency": "Separate finite censoring proof of S18 required; not re-proved here.",
+      "sources": [
+        "ClockCensoringKernel",
+        "RankClockCensoring",
+        "SchedulingFailure"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ArrivalFiltration.lean",
+      "sha256": "3fde5a613cb7985a75b0422cc4cb2a7b5e0100af56a3005bd5fe34d23b7a93db",
+      "declarations": [
+        {
+          "name": "history",
+          "line": 26
+        },
+        {
+          "name": "chronologicalArrival_eq_raw_ae",
+          "line": 96
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockReadiness.lean",
+      "sha256": "a006efe43958c4c27a9b836f77aa8aa1576013de94ce6d9af41fbcc12b187703",
+      "declarations": [
+        {
+          "name": "completion",
+          "line": 60
+        },
+        {
+          "name": "ready",
+          "line": 68
+        },
+        {
+          "name": "completion_isStoppingTime",
+          "line": 85
+        },
+        {
+          "name": "all_times_finite_ae",
+          "line": 174
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockDeterministicResidual.lean",
+      "sha256": "743e9375fd27a18132f4d0e87c4c1976e9964d13415116c9ca8f4faf52db1594",
+      "declarations": [
+        {
+          "name": "candidate_history_factorization",
+          "line": 110
+        },
+        {
+          "name": "clock_next_joint_survival",
+          "line": 144
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/CountableClockSurvival.lean",
+      "sha256": "c0234dade3b14c0cae5ea58d3abaebddb4f187357646e0e450c114526847b0b9",
+      "declarations": [
+        {
+          "name": "countable_clock_jointSurvival",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/UpperStoppingApprox.lean",
+      "sha256": "0003415fea73059c1988935a3ed1679697974db42ef6397e9bdd1d750fbdf0c4",
+      "declarations": [
+        {
+          "name": "approx_isStoppingTime",
+          "line": 104
+        },
+        {
+          "name": "representative_error",
+          "line": 152
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockWaitingLimit.lean",
+      "sha256": "e62c1afd714f92adf330a127409da378fa644a7339eac9a93c2d95ef6b79d1cb",
+      "declarations": [
+        {
+          "name": "waiting_survival_eventually_iff",
+          "line": 140
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockStoppedResidual.lean",
+      "sha256": "a1f0616e341d91354abc408bca771a48718dbb8776073fa5d8e5610cba0e246d",
+      "declarations": [
+        {
+          "name": "clock_wait_jointSurvival",
+          "line": 38
+        },
+        {
+          "name": "task_delay_hasLaw",
+          "line": 125
+        },
+        {
+          "name": "task_delay_indep",
+          "line": 132
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/SquareTasks.lean",
+      "sha256": "6fa19cd27ac6581a44615fa1a3807934c6667d8f532ea480c8accf3c5a6e6f8b",
+      "declarations": [
+        {
+          "name": "system",
+          "line": 233
+        },
+        {
+          "name": "terminalPaths_card_le",
+          "line": 263
+        },
+        {
+          "name": "prefixMaximum_eq_last",
+          "line": 268
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/TaskPaths.lean",
+      "sha256": "648fbb8437a5ed3bb02d8f8f9cba1adb5ab7be123a53ebb4db400a29b0f40ace",
+      "declarations": [
+        {
+          "name": "completion_eq_path_max",
+          "line": 159
+        },
+        {
+          "name": "terminalPaths_card_le",
+          "line": 226
+        },
+        {
+          "name": "prefixMaximum_eq_last",
+          "line": 272
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/TaskClockBridge.lean",
+      "sha256": "5cd40c9ebd3e80fdf1a9b8bf0410196ac6c37b27caf3121fe3ec742f5e6dd1c8",
+      "declarations": [
+        {
+          "name": "delay",
+          "line": 55
+        },
+        {
+          "name": "realCompletion_eq_pathCompletion",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/FixedClockPath.lean",
+      "sha256": "c8b6eb1ff93b2724a45294340a81ff981cca60c17cb577162c387e031b6f6cfd",
+      "declarations": [
+        {
+          "name": "complete_le_next_ready",
+          "line": 66
+        },
+        {
+          "name": "delay_known",
+          "line": 98
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ActualClockTail.lean",
+      "sha256": "d72c4e93af41d817eac704f3f2b266f004b0a2c4a9ba1e22a59cfea6e11f840f",
+      "declarations": [
+        {
+          "name": "fixed_path_exponential_moment",
+          "line": 128
+        },
+        {
+          "name": "actual_square_eight_tail",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockMaximum.lean",
+      "sha256": "d4c3c9a3c6f21f406ec0db8d4c09cb3cac93215d0ccb0e6e3cdfd384b47a3d7c",
+      "declarations": [
+        {
+          "name": "squareMaximum",
+          "line": 29
+        },
+        {
+          "name": "real_squareMaximum_eq",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockEventOrder.lean",
+      "sha256": "7a2a3a2e8ed626ec420794d859986ed192905a96b3bf969849c24625ae66bbd6",
+      "declarations": [
+        {
+          "name": "selected_conflict_order",
+          "line": 117
+        },
+        {
+          "name": "distinct_selected_eventId",
+          "line": 245
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockSelectedWord.lean",
+      "sha256": "072b3c618980494ed9d2388a2e3665e2c816bc4bcd1bbb7a177196f0f7884b52",
+      "declarations": [
+        {
+          "name": "selectedChrono_sublist",
+          "line": 139
+        },
+        {
+          "name": "execute_selectedChrono_eq_layerWord",
+          "line": 242
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/FiniteRankWitness.lean",
+      "sha256": "6638b02a8c4d3eb7885c98cc2c369599fe9041ed8f76c6e18b7eca3a4581152a",
+      "declarations": [
+        {
+          "name": "annotate",
+          "line": 105
+        },
+        {
+          "name": "annotated_truncated_chain_witness",
+          "line": 263
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/GreedyClockChain.lean",
+      "sha256": "f51c7eecc38278ba1b8e73b2667206f3e7ebe686d6d19eefa9960fbc566b5004",
+      "declarations": [
+        {
+          "name": "exponential_moment",
+          "line": 128
+        },
+        {
+          "name": "lower_tail_nine",
+          "line": 170
+        },
+        {
+          "name": "chainTime_le_witness",
+          "line": 190
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/SquareGreedyPaths.lean",
+      "sha256": "16d0a6d1d65e3ef1b5190322286c743b3fa2ba0f256ff4524b9ba59577211682",
+      "declarations": [
+        {
+          "name": "family_card_le",
+          "line": 108
+        },
+        {
+          "name": "decay_factor_eq",
+          "line": 235
+        },
+        {
+          "name": "fastEvent_half_tail",
+          "line": 248
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockRankTail.lean",
+      "sha256": "e24de872aa04e1b812d0acd8dd7afd45977cd2d9121653ce2f68c1871de364bc",
+      "declarations": [
+        {
+          "name": "rankLarge",
+          "line": 41
+        },
+        {
+          "name": "rankLarge_half_tail",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/RankSlotEmbedding.lean",
+      "sha256": "65d2b9b2d920977edf3274e0c3d9efaf5d6eaa1500657d0734eba933421f6eee",
+      "declarations": [
+        {
+          "name": "slot",
+          "line": 24
+        },
+        {
+          "name": "executeClockWord_eq_target",
+          "line": 236
+        },
+        {
+          "name": "slotBatch_sites_nodup",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/RankScanEmbedding.lean",
+      "sha256": "f7d5e7866607dc565e2eb9113e73a33ead052e7eca48194c29c4f4eb1ccf1cb5",
+      "declarations": [
+        {
+          "name": "completionBatch",
+          "line": 31
+        },
+        {
+          "name": "target_sites_sublist_scanWord",
+          "line": 200
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/RankClockCensoring.lean",
+      "sha256": "a3070c55c63a97a746740b9da7ed9cedba6adf18bfe8846fcc232826917cd395",
+      "declarations": [
+        {
+          "name": "scanMean_le_wordMean",
+          "line": 56
+        },
+        {
+          "name": "clockMean_le_scanMean_of_completed",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/ClockCensoringKernel.lean",
+      "sha256": "ed6374523bf05a13f6345043403446a82a5a2c07b091e413824404f0bafc8779",
+      "declarations": [
+        {
+          "name": "coldWord_clock_le_layerSites",
+          "line": 78
+        }
+      ]
+    },
+    {
+      "path": "formal/analysis/MathResearchAnalysis/SchedulingFailure.lean",
+      "sha256": "e2dcf88cbc905335e846f6157d1363142b804fe719f664039a3fa2a1e15617ad",
+      "declarations": [
+        {
+          "name": "clock_scale_identity",
+          "line": 40
+        },
+        {
+          "name": "rank_scale_identity",
+          "line": 50
+        },
+        {
+          "name": "bad_tail",
+          "line": 62
+        }
+      ]
+    }
+  ],
+  "formal_sources_mutated": false,
+  "kernel_audit_rerun": false,
+  "simulated_reader_is_human_test": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "recorded_at": "2026-11-17T09:55:17.880793+08:00",
+  "source": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\lean\\SharpFailureRate.lean",
+  "source_sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+  "log": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\evidence\\SharpFailureRate-kernel.log",
+  "log_sha256": "f674643a860aae3570c42e84f67de1c1642ab567bc784b622db8e49ac461f4a7",
+  "olean": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\build\\SharpFailureRate.olean",
+  "olean_sha256": "e8ef25dd98882f63f2a2a4aa66e95af8a7bc790c919f328bb42783aadd3404f5",
+  "actual_exit_code": 0,
+  "trust_level": 0,
+  "named_declarations": 4,
+  "theorems": 4,
+  "actual_axiom_outputs": [
+    "MathResearchRevision.SharpFailureRate.layers_succ_ge_twice",
+    "MathResearchRevision.SharpFailureRate.scheduling_le_inv_side",
+    "MathResearchRevision.SharpFailureRate.failure_le_five_div",
+    "MathResearchRevision.SharpFailureRate.failure_isBigO_inv"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "unexpected_axioms": [],
+  "command": [
+    "D:/MyWorks/Math/formal/.tools/lean-4.35.0-rc4-windows/bin/lean.exe",
+    "--trust=0",
+    "--root=C:/Users/Lenovo/Desktop/Project/Math/revision-ab-2026-11-17/lean",
+    "-o",
+    "C:/Users/Lenovo/Desktop/Project/Math/revision-ab-2026-11-17/build/SharpFailureRate.olean",
+    "C:/Users/Lenovo/Desktop/Project/Math/revision-ab-2026-11-17/lean/SharpFailureRate.lean"
+  ],
+  "working_directory": "D:/MyWorks/Math/formal/analysis",
+  "dependency_source_sha256": {
+    "SharpRecoveryTail.lean": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c"
+  },
+  "scope": [
+    "actual sharp failure<=5/N for every N>=16",
+    "explicit scheduling term<=1/N",
+    "Asymptotics.IsBigO atTop failure (fun N=>1/N)"
+  ],
+  "original_sources_changed": false,
+  "fresh_full_dependency_rebuild": false,
+  "independent_semantic_review": "pending root coordination"
+}

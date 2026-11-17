@@ -1,0 +1,502 @@
+{
+  "status": "PASS_WITHIN_BOUNDED_SCOPE_NO_BLOCKING_GAP_FOUND",
+  "review_kind": "independent AI mathematical and Lean-semantic source review",
+  "reviewer_agent": "ab_independent_audit",
+  "recorded_at": "2026-11-17T10:00:32.075644+08:00",
+  "task_scope": [
+    "A1",
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "excluded_tasks": [
+    "C1",
+    "C2"
+  ],
+  "paper": {
+    "staging_path": "C:\\Users\\Lenovo\\Desktop\\Project\\Math\\revision-ab-2026-11-17\\paper\\paper.md",
+    "final_intended_path": "D:/MyWorks/Math/research/revision-ab-2026-11-17/paper/paper.md",
+    "sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb"
+  },
+  "modules": [
+    {
+      "module": "OriginalRecoveryResults",
+      "source": "lean/OriginalRecoveryResults.lean",
+      "source_sha256": "c58f3326e60bbc88ed4e09fabfdfb77ea7952ed5a572635b681089a8244ea647",
+      "build_record": "OriginalRecoveryResults-build.json",
+      "build_record_sha256": "a9a879d7481e322c86599a9ea1c67b44cde3eaf0c41a15e6304a0a5f1b95913e",
+      "log": "OriginalRecoveryResults.log",
+      "log_sha256": "a66b1f690f6410f92d102ca2ee9cda8e37d6468c006f4cb4e7a86ef3d4e9b422",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchRevision.OriginalRecoveryResults.finiteExpected_le_top",
+        "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square_finite",
+        "MathResearchRevision.OriginalRecoveryResults.tau_eq_full_square",
+        "MathResearchRevision.OriginalRecoveryResults.homogeneous_finite_square_map",
+        "MathResearchRevision.OriginalRecoveryResults.exists_finite_recovery_law",
+        "MathResearchRevision.OriginalRecoveryResults.exists_finite_tail",
+        "MathResearchRevision.OriginalRecoveryResults.exists_finite_observable_integrals",
+        "MathResearchRevision.OriginalRecoveryResults.original_recovery_block_tail"
+      ],
+      "actual_axiom_output_count": 8,
+      "source_print_axioms_count": 8,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "21ed1407d8b2126fe13a882c08d58f9a593a2cf0797b70beb212527725d1d7a0",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "SharpRecoveryTail",
+      "source": "lean/SharpRecoveryTail.lean",
+      "source_sha256": "bc27d1d4b5499ab411857d4b88039c10c555dffc0502e4f54dcef6b84982ed0c",
+      "build_record": "SharpRecoveryTail-validation.json",
+      "build_record_sha256": "64b9e08af43a84b76e9dcdac43985384cab45a8b873c13f842cd35aeb568245c",
+      "log": "SharpRecoveryTail-kernel.log",
+      "log_sha256": "57b5f45e9e00d1a3019ba5f9d16ace62998668149ba2856707d545bbc9e86c80",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchRevision.SharpRecoveryTail.failure",
+        "MathResearchRevision.SharpRecoveryTail.failure_nonneg",
+        "MathResearchRevision.SharpRecoveryTail.block_eq",
+        "MathResearchRevision.SharpRecoveryTail.clock_survival_le",
+        "MathResearchRevision.SharpRecoveryTail.clock_at_scheduling_le",
+        "MathResearchRevision.SharpRecoveryTail.synchronous_block_tail_le",
+        "MathResearchRevision.SharpRecoveryTail.failure_le_half",
+        "MathResearchRevision.SharpRecoveryTail.failure_lt_one",
+        "MathResearchRevision.SharpRecoveryTail.recovery_block_tail",
+        "MathResearchRevision.SharpRecoveryTail.expectation_le_geometric",
+        "MathResearchRevision.SharpRecoveryTail.finiteExpected_le",
+        "MathResearchRevision.SharpRecoveryTail.tau_le",
+        "MathResearchRevision.SharpRecoveryTail.scheduling_majorant",
+        "MathResearchRevision.SharpRecoveryTail.failure_tendsto_zero"
+      ],
+      "actual_axiom_output_count": 14,
+      "source_print_axioms_count": 14,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "9ea6df2a7b79c15978c2aa43b41120a742855469e1e8ca18c5e21775cf4b4c44",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "SharpFailureRate",
+      "source": "lean/SharpFailureRate.lean",
+      "source_sha256": "072b1e506efefa0ed8510127b18a8011fa04b1caf025298785e0cd7b4082c571",
+      "build_record": "SharpFailureRate-validation.json",
+      "build_record_sha256": "c50ceb799df9130077fb01f670bc49bb3de8da704d71b89776f64732bf2ac81e",
+      "log": "SharpFailureRate-kernel.log",
+      "log_sha256": "f674643a860aae3570c42e84f67de1c1642ab567bc784b622db8e49ac461f4a7",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchRevision.SharpFailureRate.layers_succ_ge_twice",
+        "MathResearchRevision.SharpFailureRate.scheduling_le_inv_side",
+        "MathResearchRevision.SharpFailureRate.failure_le_five_div",
+        "MathResearchRevision.SharpFailureRate.failure_isBigO_inv"
+      ],
+      "actual_axiom_output_count": 4,
+      "source_print_axioms_count": 4,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "e8ef25dd98882f63f2a2a4aa66e95af8a7bc790c919f328bb42783aadd3404f5",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "RecoveryMoments",
+      "source": "lean/RecoveryMoments.lean",
+      "source_sha256": "3085d1f060a4b7d9e329bec4c9d931535cd003e2bffa5709f2d5695b3ddc200f",
+      "build_record": "recovery-moments-validation.json",
+      "build_record_sha256": "330be206370553f20c14bdb4d18d6afa9bb70a621e41aa5005bcced627924541",
+      "log": "recovery-moments-kernel.log",
+      "log_sha256": "b3c8563ed640f2b66e190369b0b075bb2e9140519f92ca0e50f1d83d60811fe9",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchRevision.RecoveryMoments.nat_le_block_successor",
+        "MathResearchRevision.RecoveryMoments.block_predecessor_lt",
+        "MathResearchRevision.RecoveryMoments.monotone_weight_envelope",
+        "MathResearchRevision.RecoveryMoments.lintegral_monotone_weight_le",
+        "MathResearchRevision.RecoveryMoments.polynomialConstant",
+        "MathResearchRevision.RecoveryMoments.polynomial_series_summable",
+        "MathResearchRevision.RecoveryMoments.polynomialConstant_lt_top",
+        "MathResearchRevision.RecoveryMoments.momentConstant",
+        "MathResearchRevision.RecoveryMoments.momentConstant_lt_top",
+        "MathResearchRevision.RecoveryMoments.lintegral_rpow_le_blocks",
+        "MathResearchRevision.RecoveryMoments.recovery_rpow_le",
+        "MathResearchRevision.RecoveryMoments.extendedExp",
+        "MathResearchRevision.RecoveryMoments.expRatio",
+        "MathResearchRevision.RecoveryMoments.expConstant",
+        "MathResearchRevision.RecoveryMoments.expRatio_lt_one",
+        "MathResearchRevision.RecoveryMoments.expConstant_lt_top",
+        "MathResearchRevision.RecoveryMoments.exponential_weight_series",
+        "MathResearchRevision.RecoveryMoments.lintegral_extendedExp_le",
+        "MathResearchRevision.RecoveryMoments.recovery_exponential_le",
+        "MathResearchRevision.RecoveryMoments.positive_exponential_interval",
+        "MathResearchRevision.RecoveryMoments.recovery_ae_finite",
+        "MathResearchRevision.RecoveryMoments.recovery_rpow_lt_top",
+        "MathResearchRevision.RecoveryMoments.recovery_exponential_lt_top"
+      ],
+      "actual_axiom_output_count": 23,
+      "source_print_axioms_count": 23,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "e745fa3f9eaa4663b72ae7e14fb4c5d44d8e1194ceec6d851ffabbc412c56b66",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "OriginalConsequences",
+      "source": "lean/OriginalConsequences.lean",
+      "source_sha256": "7fd73974af90de5b93f590232ec725917bc95f017d89d340cc060f24ac279135",
+      "build_record": "OriginalConsequences-build.json",
+      "build_record_sha256": "623aa5c919e6507f4db28cf4f9f33c45d0117e65da905d322855655cb1aa9ab4",
+      "log": "OriginalConsequences.log",
+      "log_sha256": "adadcf24e88db8f9e1f44e0991fe7c3f1a431106b257bd7ecc76f9459ff6f841",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchRevision.OriginalConsequences.quadratic_bounds",
+        "MathResearchRevision.OriginalConsequences.original_sharp_block_tail",
+        "MathResearchRevision.OriginalConsequences.original_sharp_expectation",
+        "MathResearchRevision.OriginalConsequences.original_ae_finite",
+        "MathResearchRevision.OriginalConsequences.original_rpow_le",
+        "MathResearchRevision.OriginalConsequences.original_rpow_lt_top",
+        "MathResearchRevision.OriginalConsequences.original_exponential_le",
+        "MathResearchRevision.OriginalConsequences.original_exponential_lt_top",
+        "MathResearchRevision.OriginalConsequences.finite_machine_dynkin"
+      ],
+      "actual_axiom_output_count": 9,
+      "source_print_axioms_count": 9,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "ac6f6d814e728544eeeb6b4650cdb5405c9d3f7a742ee40f682fcc250c8504a5",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "FullBlockThreshold",
+      "source": "lean/dependencies/FullBlockThreshold.lean",
+      "source_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "build_record": "FullBlockThreshold-build.json",
+      "build_record_sha256": "e59015dcf22ddd05f50e6015c3ade2cd231708fad452129c012112ee9cc51baa",
+      "log": "FullBlockThreshold.log",
+      "log_sha256": "6096aada397ee29836824cf0b11b1c3687b468c2dadc8002b4fd48db5730488e",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchExploration.FullBlockThreshold.directedPoint",
+        "MathResearchExploration.FullBlockThreshold.directedPoint_injective",
+        "MathResearchExploration.FullBlockThreshold.directedBlock_eq_image",
+        "MathResearchExploration.FullBlockThreshold.sum_positive_offsets",
+        "MathResearchExploration.FullBlockThreshold.sum_affine_block",
+        "MathResearchExploration.FullBlockThreshold.directedPoint_weight_lower",
+        "MathResearchExploration.FullBlockThreshold.fullBlock_exact_lower_bound",
+        "MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty",
+        "MathResearchExploration.FullBlockThreshold.fullBlock_cubic_weight",
+        "MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing",
+        "MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit",
+        "MathResearchExploration.FullBlockThreshold.cubic_weight_of_physical_exit_le",
+        "MathResearchExploration.FullBlockThreshold.physical_exit_measure_le_cubic_weight",
+        "MathResearchExploration.FullBlockThreshold.original_extinction_measure_le_cubic_weight",
+        "MathResearchExploration.FullBlockThreshold.threshold_pos",
+        "MathResearchExploration.FullBlockThreshold.exit_probability_mul_le_mean",
+        "MathResearchExploration.FullBlockThreshold.actual_exit_probability_le_linear_time",
+        "MathResearchExploration.FullBlockThreshold.original_clock_extinction_le_linear_time",
+        "MathResearchExploration.FullBlockThreshold.quadraticHorizon",
+        "MathResearchExploration.FullBlockThreshold.quadratic_mean_bound",
+        "MathResearchExploration.FullBlockThreshold.quadratic_bound_le_half_threshold",
+        "MathResearchExploration.FullBlockThreshold.actual_exit_at_quadraticHorizon_le_half",
+        "MathResearchExploration.FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half"
+      ],
+      "actual_axiom_output_count": 23,
+      "source_print_axioms_count": 23,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "21a5b5f046126ebebca173024bb0b347f1014529fd49c2e6fd158bafe1b7dad4",
+      "olean_hash_matches_record": true
+    },
+    {
+      "module": "ImprovedOriginalLower",
+      "source": "lean/dependencies/ImprovedOriginalLower.lean",
+      "source_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "build_record": "ImprovedOriginalLower-build.json",
+      "build_record_sha256": "53f75d115fffaa0e8691eec6f39e753981eb49d0e7e0aee33ce9ec5b3e9d387c",
+      "log": "ImprovedOriginalLower.log",
+      "log_sha256": "00af4f8c33abf768613f6b231b9af88287a73ad0f3ada127465e9c4926753988",
+      "recorded_exit_code": 0,
+      "recorded_trust_level": 0,
+      "source_hash_matches_build_record": true,
+      "log_hash_matches_build_record": true,
+      "actual_axiom_output_names": [
+        "MathResearchExploration.ImprovedOriginalLower.quotient",
+        "MathResearchExploration.ImprovedOriginalLower.rounds",
+        "MathResearchExploration.ImprovedOriginalLower.quotient_ge_thirtytwo",
+        "MathResearchExploration.ImprovedOriginalLower.quotient_positive",
+        "MathResearchExploration.ImprovedOriginalLower.rounds_succ",
+        "MathResearchExploration.ImprovedOriginalLower.quotient_mul_le_square",
+        "MathResearchExploration.ImprovedOriginalLower.square_lt_quotient_succ",
+        "MathResearchExploration.ImprovedOriginalLower.side_le_sixtyfour_quotient_sub_twelve",
+        "MathResearchExploration.ImprovedOriginalLower.square_exponential_bound",
+        "MathResearchExploration.ImprovedOriginalLower.scheduling_time_le_horizon",
+        "MathResearchExploration.ImprovedOriginalLower.scheduling_error_le_quarter",
+        "MathResearchExploration.ImprovedOriginalLower.rounds_lower_bound",
+        "MathResearchExploration.ImprovedOriginalLower.original_clock_survival_at_horizon_ge_half",
+        "MathResearchExploration.ImprovedOriginalLower.original_clock_survival_ge_half",
+        "MathResearchExploration.ImprovedOriginalLower.synchronous_tail_ge_quarter",
+        "MathResearchExploration.ImprovedOriginalLower.halfSide_large",
+        "MathResearchExploration.ImprovedOriginalLower.halfSide_ge_third",
+        "MathResearchExploration.ImprovedOriginalLower.rounds_quarter_ge_original_square",
+        "MathResearchExploration.ImprovedOriginalLower.synchronous_square_tail_ge_quarter",
+        "MathResearchExploration.ImprovedOriginalLower.square_expectedRecovery_quadratic_lower",
+        "MathResearchExploration.ImprovedOriginalLower.translated_square_witness",
+        "MathResearchExploration.ImprovedOriginalLower.tau_quadratic_lower_bound",
+        "MathResearchExploration.ImprovedOriginalLower.tau_quadratic_bounds",
+        "MathResearchExploration.ImprovedOriginalLower.tau_theta_quadratic"
+      ],
+      "actual_axiom_output_count": 24,
+      "source_print_axioms_count": 24,
+      "actual_axioms_seen": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": [],
+      "source_forbidden_tokens": [],
+      "names_match_build_record": true,
+      "print_count_matches_actual_output": true,
+      "olean_sha256": "83ad6e7d37c6a279e49cc98b5a68ccfcb6ac15a6d0617773a92d21dca75b1a1d",
+      "olean_hash_matches_record": true
+    }
+  ],
+  "copied_dependency_identity": [
+    {
+      "copy": "lean\\dependencies\\FullBlockThreshold.lean",
+      "original": "D:\\MyWorks\\Math\\research\\exploration\\lean\\FullBlockThreshold.lean",
+      "copy_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "original_sha256": "1910b52305e593410d0c190f17e2fafa9f47cfb24acf9b08ad45bce2aeec8d79",
+      "byte_identical": true
+    },
+    {
+      "copy": "lean\\dependencies\\ImprovedOriginalLower.lean",
+      "original": "D:\\MyWorks\\Math\\research\\exploration\\phase2\\lean\\ImprovedOriginalLower.lean",
+      "copy_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "original_sha256": "f8334255c3889b31528634c6dde9c97b7bbd9a3763ad04f00f69aa0152dd9c27",
+      "byte_identical": true
+    }
+  ],
+  "semantic_checks": [
+    {
+      "id": "original-model",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "OriginalRecoveryResults.lean:49-103",
+        "OriginalConsequences.lean:24-83",
+        "paper/paper.md:20-106"
+      ],
+      "checked": "exact enclosing-square N, both finite-perturbation backgrounds, original infinite-grid fair product measure, full ENat first-hit law, and infinity-valued observables survive the finite reduction"
+    },
+    {
+      "id": "A1",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:164-228",
+        "paper/paper.md:321-333",
+        "paper/paper.md:1468-1513",
+        "lean/dependencies/FullBlockThreshold.lean:53-147",
+        "lean/dependencies/ImprovedOriginalLower.lean:23-201"
+      ],
+      "checked": "full affine block sum, floor m>=L/25, cubic threshold L^3/12500, clock survival, q=floor(L^2/8000000), r=q-1, scheduling error, exact-N scale conversion, threshold N>=500001, unchanged upper constant"
+    },
+    {
+      "id": "A2",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:63-72",
+        "OriginalRecoveryResults.lean:105-112"
+      ],
+      "checked": "uniform N>=16 block tail under actual original law; j>=0; almost-sure finiteness is a conclusion; lower waiting bound remains for a slow witness"
+    },
+    {
+      "id": "A3",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:915-996",
+        "paper/paper.md:1148-1164",
+        "paper/paper.md:1822-1899",
+        "OriginalConsequences.lean:85-94"
+      ],
+      "checked": "common finite-square finite-state Dynkin statement, original clocks, deterministic-time joint residual law, measurable representatives, O(h^2) error, finite reachable augmented counter and closure, separate staircase encoding, strict-before/current interchange only inside time integrals"
+    },
+    {
+      "id": "B1",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:130-145",
+        "OriginalRecoveryResults.lean:18-47"
+      ],
+      "checked": "both inequalities for exact extremizer, extended expectation, filled square exact-N admissibility, no uniqueness or prior finiteness claim"
+    },
+    {
+      "id": "B2",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:74-86",
+        "paper/paper.md:335-378",
+        "SharpRecoveryTail.lean:12-157",
+        "SharpFailureRate.lean:8-55",
+        "OriginalConsequences.lean:24-37"
+      ],
+      "checked": "factor 2 retained for clock term and scheduling term; exact a_N and b_N with +257; conditional restart and uniform top domination; 0<=a_N<=1/2; a_N<=5/N and tends to zero; extended expectation bound b_N/(1-a_N)"
+    },
+    {
+      "id": "B3",
+      "outcome": "no_blocking_gap_found",
+      "locations": [
+        "paper/paper.md:88-104",
+        "paper/paper.md:380-414",
+        "RecoveryMoments.lean:25-326",
+        "OriginalConsequences.lean:39-83"
+      ],
+      "checked": "all fixed real r>0, ceiling exponent majorant, half-open block endpoints, nonnegative Tonelli before finite moments, AE finite before toNat, infinity preserved in rpow and exp, common finite exponential bound only for 0<lambda<log(2)/332033; concrete nonempty domain"
+    }
+  ],
+  "blocking_findings": [],
+  "observations": [
+    {
+      "severity": "informational",
+      "status": "resolved",
+      "location": "RecoveryMoments.lean:275-326; OriginalConsequences.lean:67-83",
+      "finding": "The <= exponential bound alone permits a vacuous infinite constant outside the convergence domain. Separate lt_top interfaces and Theorem 4 explicitly impose lambda>0 and 332033*lambda<log 2; this closes the finite-integrability claim."
+    },
+    {
+      "severity": "informational",
+      "status": "resolved",
+      "location": "OriginalConsequences.lean:24-83",
+      "finding": "Finite-square B2/B3 conclusions are explicitly transported to original infinite-grid exact-N statements, retaining both backgrounds and top."
+    },
+    {
+      "severity": "informational",
+      "status": "parent_final_check",
+      "location": "paper/paper.md:source dictionary",
+      "finding": "Relative formal-source links are intended for the final D:/MyWorks/Math/research/revision-ab-2026-11-17/paper location; link checking and final copy verification are separate root tasks."
+    }
+  ],
+  "numerical_checks": {
+    "L": 250000,
+    "q": 7812,
+    "r": 7811,
+    "clock_mean_le_half_threshold": true,
+    "rounds_lower_bound": true,
+    "64L_squared_le_2_pow_q": true,
+    "N": 500001,
+    "half_side": 250000,
+    "static_L80_weight_rows": [
+      [
+        11,
+        12,
+        13,
+        14
+      ],
+      [
+        10,
+        11,
+        12,
+        13
+      ],
+      [
+        9,
+        10,
+        11,
+        12
+      ],
+      [
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "static_weight_row_sums": [
+      50,
+      46,
+      42,
+      38
+    ],
+    "static_weight_total": 176,
+    "lambda_example": "1/1328132",
+    "332033_times_lambda": "1/4",
+    "lambda_in_domain": true
+  },
+  "validation_observation": {
+    "new_module_actual_axiom_outputs": 58,
+    "copied_dependency_actual_axiom_outputs": 47,
+    "all_seven_source_log_olean_bindings_match": true,
+    "all_seven_reported_trust_zero_exit_zero": true,
+    "unexpected_axioms": [],
+    "full_base_dependency_rebuild_reviewed": false,
+    "note": "Auditor actually read the current source, actual emitted logs, and build records and independently recomputed source/log/olean SHA256 bindings. The build processes were run by task agents. This audit does not claim to have independently rerun those builds or rebuilt the entire old dependency tree."
+  },
+  "limitations": [
+    "not human specialist review",
+    "not human learner testing",
+    "not a global novelty or priority certificate",
+    "not a claim to have freshly rebuilt all old dependencies",
+    "not PDF/image visual QA or document-link validation",
+    "user cancelled undergraduate-reader simulation for this revision; no reader simulation claimed"
+  ]
+}

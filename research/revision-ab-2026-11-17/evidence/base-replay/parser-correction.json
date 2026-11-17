@@ -1,0 +1,4 @@
+{
+  "failed_record_sha256": "fa6922c03c93bcc74ace9c47efd62b58b72fca1ea550ae7bc0141c27b60462a7",
+  "reason": "Postprocessor used a regex that excluded apostrophes in Lean declaration names; all 267 source compilations and the Lean audit itself succeeded. No mathematical source or kernel setting was changed."
+}

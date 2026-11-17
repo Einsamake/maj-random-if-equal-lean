@@ -1,0 +1,86 @@
+{
+  "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+  "passes": [
+    {
+      "pass": 1,
+      "before_sha256": "5aa959c0cc83437948261f7f0547a011a64fce6b7ec735ab3bafb5ac54e6398f",
+      "after_sha256": "5dadd19b573eb62f40a5df571d243b083c8198f9888c59f1c50dd9b65073b03b",
+      "purpose": "Check conditions, infinity, and floor arithmetic. Make the almost-sure-finiteness consequence explicit before any finite representative or moments are used."
+    },
+    {
+      "pass": 2,
+      "before_sha256": "5dadd19b573eb62f40a5df571d243b083c8198f9888c59f1c50dd9b65073b03b",
+      "after_sha256": "4602c0592eb0f018f8d1973a4d3f9f9801e1538bcc5b30f88b88ebfe2f0d8fad",
+      "purpose": "Simplify the lower-proof narrative and connect the numerical improvement directly to its calculation instead of contrasting with an abandoned smaller-block estimate."
+    },
+    {
+      "pass": 3,
+      "before_sha256": "4602c0592eb0f018f8d1973a4d3f9f9801e1538bcc5b30f88b88ebfe2f0d8fad",
+      "after_sha256": "df99c75c47d7bbf475bc9c9bffdabd77f278bd3b4c3fa391488435198fb416d1",
+      "purpose": "Check symbols, references and figure correspondence. Separate the current revision map from inherited source maps and preserve provenance."
+    }
+  ],
+  "reader_acceptance": "waived by explicit user instruction on 2026-11-17",
+  "independent_mathematical_review": "See revision validation; no new independent review is asserted by this metadata update.",
+  "new_Lean_build": "See revision validation and individual actual logs; this file is an editing record.",
+  "old_v5_mutated": false,
+  "post_pass_source_precision": "Add current-state MachineClockGenerator identity after checking its actual definition; preserve strict-past base interface.",
+  "initial_prose_revision": {
+    "paper_sha256": "d33b01d8a8e4a6f4bbfc0351337b72e80d83ea73af9194b45f7cfdd7ff43731b",
+    "passes": [
+      {
+        "pass": 1,
+        "before_sha256": "5aa959c0cc83437948261f7f0547a011a64fce6b7ec735ab3bafb5ac54e6398f",
+        "after_sha256": "5dadd19b573eb62f40a5df571d243b083c8198f9888c59f1c50dd9b65073b03b",
+        "purpose": "Check conditions, infinity, and floor arithmetic. Make the almost-sure-finiteness consequence explicit before any finite representative or moments are used."
+      },
+      {
+        "pass": 2,
+        "before_sha256": "5dadd19b573eb62f40a5df571d243b083c8198f9888c59f1c50dd9b65073b03b",
+        "after_sha256": "4602c0592eb0f018f8d1973a4d3f9f9801e1538bcc5b30f88b88ebfe2f0d8fad",
+        "purpose": "Simplify the lower-proof narrative and connect the numerical improvement directly to its calculation instead of contrasting with an abandoned smaller-block estimate."
+      },
+      {
+        "pass": 3,
+        "before_sha256": "4602c0592eb0f018f8d1973a4d3f9f9801e1538bcc5b30f88b88ebfe2f0d8fad",
+        "after_sha256": "df99c75c47d7bbf475bc9c9bffdabd77f278bd3b4c3fa391488435198fb416d1",
+        "purpose": "Check symbols, references and figure correspondence. Separate the current revision map from inherited source maps and preserve provenance."
+      }
+    ],
+    "reader_acceptance": "pending",
+    "independent_mathematical_review": "pending",
+    "new_Lean_build": false,
+    "old_v5_mutated": false,
+    "post_pass_source_precision": "Add current-state MachineClockGenerator identity after checking its actual definition; preserve strict-past base interface."
+  },
+  "final_integration": {
+    "paper_sha256": "88eb33dea7af3ca495d3c7dc1a0f78e4a75aa5d14d1e5e471d1a39ae1d9dffcb",
+    "passes": [
+      {
+        "purpose": "mathematical conditions and endpoints",
+        "changes": [
+          "Theorems3/4 with full proofs",
+          "0<=a<=min(1/2,5/N)",
+          "extended-valued powers/exponentials and AE finiteness before representatives"
+        ]
+      },
+      {
+        "purpose": "remove stale workflow prose",
+        "changes": [
+          "remove unperformed simulated-reader promises",
+          "separate old proof provenance from new replay"
+        ]
+      },
+      {
+        "purpose": "scope and source dictionary",
+        "changes": [
+          "original-model aggregate interfaces mapped",
+          "C1/C2 excluded",
+          "external dependency reuse explicitly retained"
+        ]
+      }
+    ],
+    "source": "review/root-edit-pass.json",
+    "source_sha256": "c227cb02786e2bec0a1708f7c97ab81c9d4b977bea7cf7c5083cf9c6d181467f"
+  }
+}
