@@ -1,43 +1,73 @@
 # 研究结果
 
-## 同步随机多数规则的二次恢复时间
+## 同步随机多数规则的恢复时间
 
-考虑 $\mathbb Z^2$ 上的同步四邻多数规则，平票在所有格点、所有轮次间独立地以公平概率取色。初态为任一纯色背景上的有限扰动。记 $s(x)$ 为初始异色集合的最小平移轴平行格点方形边长，$T_x$ 为首达常值构形的轮数，永不恢复时取 $\infty$。定义
+考虑 $\mathbb Z^2$ 上的同步四邻多数规则，平票在格点和轮次之间独立公平取色。确定初态 $x$ 是任一纯色背景上的有限扰动，$s(x)$ 为其最小平移轴平行包围方形的边长，按格点列数计。$T_x\in\mathbb N_0\cup\{\infty\}$ 为恢复原背景的轮数，
 
-$$\tau(N)=\sup_{s(x)=N}\mathbb E[T_x]\in[0,\infty],\qquad N\in\mathbb N_0.$$
+$$\tau(N)=\sup_{s(x)=N}\mathbb ET_x.$$
 
-初态 $x$ 确定，期望对平票标记取值；优化限制为尺寸恰为 $N$。该上确界由某个初态达到，完整定义与有限图形归约见[模型与记号](NOTATION.md)。
+完整定义见[模型与记号](NOTATION.md)。以下为 2026 年 11 月 17 日修订中已形式化的原模型结果。
 
-### 定理 1（二次上下界）
+### 定理 1（二次上下界与极值）
 
-对所有整数 $N\ge786432000$，
+对整数 $N\ge500001$，
 
-$$
-\frac{N^2}{56623104000}\le\tau(N)\le664066N^2.
-$$
+$$\frac{N^2}{576000000}\le\tau(N)\le664066N^2.$$
 
-其中上界对所有 $N\ge16$ 成立。因此有渐近结论
+上界对所有 $N\ge16$ 成立，故 $\tau(N)=\Theta(N^2)$。对 $N\ge2$，零背景上填满的方形 $Q_N=\{0,\ldots,N-1\}^2$ 实现最坏期望：
 
-$$
-\exists c,C>0\ \exists N_0\in\mathbb N_0\ \forall N\ge N_0,
-\qquad cN^2\le\tau(N)\le CN^2.
-$$
+$$\tau(N)=\mathbb E T_{Q_N}.$$
 
-定理分别由 [OriginalQuadraticLower.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticLower.lean) 的 `tau_quadratic_lower_bound` 和 [OriginalQuadraticUpper.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticUpper.lean) 的 `tau_quadratic_upper_bound` 组成；合并结果为 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) 的 `tau_quadratic_bounds` 与 `tau_theta_quadratic`。
+极值等式在非负扩展期望中成立；有限性由上界推出。共同标记下的单调性控制同一方形内的任意初态，平移不变性及颜色对称性还原两种背景。
 
-下界用实心 $N\times N$ 方块构形见证，断言存在恢复较慢的初态。上界对所有同尺寸初态成立，并推出 $N\ge16$ 时每个此类初态都有有限期望，因而几乎必然恢复。证明在取得尾界之前保留 $T_x=\infty$ 的可能性。上下界的主要约减见[证明纲要](PROOF_GUIDE.md)。
+显示上下界见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `quadratic_bounds`，方形极值见 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean) 的 `tau_eq_full_square`。
 
-文献 [1] 的 §4.2 给出同步规则的三次期望上界，并在 Question 7.4 提出相应二次量级问题；此处的数学对象与该同步规则对应。连续时间多数过程是证明中的辅助对象，不能用其结论直接替代同步定理。文献条目及定位见[参考文献](REFERENCES.md#fates-marcovici-taati-2022)。
+### 定理 2（块尾与期望）
 
-### 命题 2（另行保存的显示下界改进）
-
-对所有整数 $N\ge500001$，
+令
 
 $$
-\tau(N)\ge\frac{N^2}{576000000}.
+b_N=331776N^2+257,\qquad
+a_N=\frac{32}{8N+1}+\frac{12}{5}N^2\,2^{-(1296N^2+1)}.
 $$
 
-上界仍取定理 1 中的 $664066N^2$。此结果的实心方块见证也覆盖任意平移与黑白互换，见 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 的 `translated_square_witness`、`tau_quadratic_lower_bound`、`tau_quadratic_bounds`。该证明位于独立的 phase2 材料中；原主定理及其常数保持原版本。
+对每个整数 $N\ge16$、每个尺寸恰为 $N$ 的允许确定初态 $x$ 和每个整数 $j\ge0$，
+
+$$
+\mathbb P(T_x>jb_N)\le a_N^j\le2^{-j},\qquad
+0\le a_N\le\min\{1/2,5/N\},
+$$
+
+$$\mathbb ET_x\le\tau(N)\le\frac{b_N}{1-a_N}.$$
+
+因此 $T_x<\infty$ 几乎必然，且 $\inf_{s(x)=N}\mathbb P(T_x\le b_N)\to1$。块尾由给定过去后的重启与单调支配得到。源码为 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `original_sharp_block_tail`、`original_sharp_expectation` 及 [SharpRecoveryTail.lean](../research/revision-ab-2026-11-17/lean/SharpRecoveryTail.lean) 的 `tau_le`；$5/N$ 界与 $O(N^{-1})$ 见 [SharpFailureRate.lean](../research/revision-ab-2026-11-17/lean/SharpFailureRate.lean)。
+
+### 推论（正阶矩与指数矩）
+
+取 $c_0=332033$。对固定实数 $r>0$，令
+
+$$C_r=c_0^r\sum_{j=0}^{\infty}(j+1)^{\lceil r\rceil}2^{-j}<\infty.$$
+
+对 $N\ge16$ 和上述所有初态，
+
+$$\mathbb E T_x^r\le C_rN^{2r}.$$
+
+对 $0<\lambda<\log(2)/c_0$，还有
+
+$$
+\mathbb E\exp(\lambda T_x/N^2)
+\le1+\frac{e^{c_0\lambda}}{1-e^{c_0\lambda}/2}<\infty.
+$$
+
+常数对 $N$ 和初态一致。幂与指数在 $T_x=\infty$ 时均取 $\infty$；证明从真实块尾先推出几乎必然有限性。见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `original_rpow_le`、`original_exponential_le`、`original_exponential_lt_top`，及 [RecoveryMoments.lean](../research/revision-ab-2026-11-17/lean/RecoveryMoments.lean)。
+
+### 证明与版本
+
+当前[英文论文](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)将几何下界、粒子表示上界、时钟比较和重启组成完整论证；[证明纲要](PROOF_GUIDE.md)概述这些连接。修订还将两处时钟可观测量计算统一为有限状态 Dynkin 公式，适用于有限方形上的每点速率 $1$、公平标记机器，见 `finite_machine_dynkin`。
+
+原 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) 保留 2026-10-26 版本：下界 $N^2/56623104000$、门槛 $786432000$，上界同上。强化下界先由 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 证明，现进入本轮论文与统一原模型声明。版本对应及构建记录见[验证方法](VERIFICATION.md)。
+
+文献 [1] 的 §4.2 给出同步规则的三次期望上界，Question 7.4 提出二次量级问题；出处见[参考文献](REFERENCES.md#fates-marcovici-taati-2022)。
 
 ## 随机等待网络
 

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "comparison_commit": "2270f1b764bd238405ae4934251f809f68f03b2a",
+  "all_other_tracked_files_unchanged": 2450,
+  "accepted_snapshot_files_unchanged": 372,
+  "bilingual_display_equations_identical": 7,
+  "referenced_declarations_found": {
+    "quadratic_bounds": "OriginalConsequences.lean",
+    "tau_eq_full_square": "OriginalRecoveryResults.lean",
+    "original_sharp_block_tail": "OriginalConsequences.lean",
+    "original_sharp_expectation": "OriginalConsequences.lean",
+    "original_rpow_le": "OriginalConsequences.lean",
+    "original_exponential_le": "OriginalConsequences.lean",
+    "original_exponential_lt_top": "OriginalConsequences.lean",
+    "finite_machine_dynkin": "OriginalConsequences.lean",
+    "tau_le": "SharpRecoveryTail.lean",
+    "failure_isBigO_inv": "SharpFailureRate.lean"
+  },
+  "waiting_network_section_unchanged": true,
+  "accepted_validation_status": "PASS",
+  "current_document_sha256": {
+    "README.md": "5df75d77e3ec75bb91245ef916744d2b270c54ac1ce14caee575e78523156334",
+    "README.en.md": "d9cc6ef11cfe5b2721ea263b03cbe3da3f5f6087c69e02e1916f5e74cd6c6f22",
+    "STATUS.md": "f8253e579432b3d58c40f523e42a3f27fa97998d7b7bab31b176851fc49865aa",
+    "docs/INDEX.md": "8cc0fabf9058e7cec5506e24b58ccb59e0702b5947608384f3473ed3a9f7a0ca",
+    "docs/NOTATION.md": "9a9abf50ee5bf0de74af4bdc7f9113b81a34ba05bb2d562f78e276fd757e7782",
+    "docs/PROOF_GUIDE.md": "5a99e8946be94fc5ad90f97d5c2fdc96313fa65ff0e4bba47a2cf9a822c438c8",
+    "docs/RESEARCH_RESULTS.md": "5155ccd12379462cdd3d2bdfa88ee2c20de8a205d19a2eb03fc6a954442676f4",
+    "docs/VERIFICATION.md": "8cbc36f8944f46077287d4d8052e623ded1cb88baa4ce751d16c7b6a4d34a9d1"
+  },
+  "mathematical_check_scope": "Manual statement-to-source and manuscript comparison by the editing agent, plus mechanical declaration/formula/fingerprint checks; no new Lean build",
+  "new_lean_build_performed": false
+}

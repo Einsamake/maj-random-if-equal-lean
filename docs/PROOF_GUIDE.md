@@ -1,6 +1,22 @@
 # 二次恢复时间的证明纲要
 
-本节给出原显示上下界的主要约减、概率估计与常数。基本模型、恢复时间和尺寸按[模型与记号](NOTATION.md)定义。下文列出的几何引理、时钟耦合和排斥过程矩估计均作为已证引理使用，其完整证明由相应形式数学源给出；本文展开它们如何组成原同步模型的结论。
+本节保留 2026-10-26 原显示上下界的详细约减、概率估计与常数。当前修订采用更强的下界，并保留上界证明中的实际失败率；二者与下文的关系先说明如下。
+
+## 当前修订的改进
+
+[revision 6 英文论文](../research/revision-ab-2026-11-17/paper/paper.md)给出完整纸面论证。下界仍用保护失守的加权面积，但对边长 $\lfloor L/20\rfloor$ 的缺失方块逐点求和，将静态损失阈值强化为 $L^3/12500$。结合原始加权漂移与清理预算，得到 $N\ge500001$ 时的 $\tau(N)\ge N^2/576000000$，见论文 Lemma 3、§5–6。
+
+上界保留第 3 节的局部清空失败概率 $16/(8N+1)$，经时钟比较中的因子 $2$ 和两项调度误差，得到
+
+$$a_N=32/(8N+1)+(12/5)N^2 2^{-(1296N^2+1)}.$$
+
+对长度 $b_N=331776N^2+257$ 的同步块条件重启，给出 $\mathbb P(T_x>jb_N)\le a_N^j$ 及 $\tau(N)\le b_N/(1-a_N)$。$a_N\le\min(1/2,5/N)$，从而既有几何尾界也有随尺寸改善的失败率。正阶矩和指数矩由分块尾和推出，常数见[当前结果](RESEARCH_RESULTS.md)。
+
+单调性还把第 1 节的全异色支配写成精确极值等式 $\tau(N)=\mathbb ET_{Q_N}$（$N\ge2$）。这些新增结论位于 [A/B 修订源码](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean)，原版本的常数推导以下仍按原样列出。
+
+## 原版本的详细推导
+
+本节以下给出原显示上下界的主要约减、概率估计与常数。基本模型、恢复时间和尺寸按[模型与记号](NOTATION.md)定义。下文列出的几何引理、时钟耦合和排斥过程矩估计均作为已证引理使用，其完整证明由相应形式数学源给出；本文展开它们如何组成原同步模型的结论。
 
 ## 1. 有限方形归约与时钟比较
 
@@ -127,7 +143,11 @@ $$
 
 ### 3.1 阶梯边界的粒子表示
 
-取 $M=8N+1$ 的辅助方形，南、西外边界固定为 $0$，北、东外边界固定为 $1$，初态全 $1$。该时钟过程保持坐标单调的阶梯形，即两坐标都增大时颜色值不减。边界编码为长度 $2M$ 的路径上的 $M$ 个粒子；一次角点变化对应邻位粒子与空位的交换，总粒子数保持为 $M$。
+取 $M=8N+1$ 的辅助方形，南、西外边界固定为 $0$，北、东外边界固定为 $1$，初态全 $1$。该时钟过程保持坐标单调的阶梯形，即两坐标都增大时颜色值不减。令 $\lambda_y$ 为第 $y$ 行从西侧起的白格数，行号自南向北为 $y=0,\ldots,M-1$。阶梯形使 $\lambda_0\ge\cdots\ge\lambda_{M-1}$。在路径 $\{0,\ldots,2M-1\}$ 上放置 $M$ 个粒子，位置为
+
+$$p_r=r+\lambda_{M-1-r},\qquad r=0,\ldots,M-1.$$
+
+这些位置严格递增；全 $1$ 方形对应左半路径全占据，全 $0$ 方形对应右半路径全占据。一次角点变化对应邻位粒子与空位以速率 $1/2$ 交换，总粒子数保持为 $M$。
 
 ![混合边界方形的阶梯边界与粒子编码](images/06-particle-encoding.png)
 
@@ -172,7 +192,7 @@ $$
 \qquad(N\ge16).
 $$
 
-阶梯构形的几何关系保证：$J_{t_0}\ge N$ 时，辅助方形西南角的 $N\times N$ 区域全为 $0$。均值、方差、清空事件的连接分别见 [MixedRightCountHeat.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountHeat.lean)、[MixedRightCountMoments.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountMoments.lean)、[MixedLocalClearing.lean](../formal/analysis/MathResearchAnalysis/MixedLocalClearing.lean) 与 [MixedClearingProbability.lean](../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean)。
+若 $J_{t_0}\ge N$，则最右侧的 $N$ 个粒子均位于右半路径，故 $p_{M-N}\ge M$。编码公式给出 $\lambda_{N-1}\ge N$；其下方各行的白格数至少同样多，因此西南角的 $N\times N$ 区域全为 $0$。均值、方差、清空事件的连接分别见 [MixedRightCountHeat.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountHeat.lean)、[MixedRightCountMoments.lean](../formal/analysis/MathResearchAnalysis/MixedRightCountMoments.lean)、[MixedLocalClearing.lean](../formal/analysis/MathResearchAnalysis/MixedLocalClearing.lean) 与 [MixedClearingProbability.lean](../formal/analysis/MathResearchAnalysis/MixedClearingProbability.lean)。
 
 ### 3.3 跨尺寸比较、同步尾界与重启
 
