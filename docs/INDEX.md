@@ -4,6 +4,7 @@
 
 | 主题 | 入口 |
 | --- | --- |
+| 当前英文论文 | [revision 6 PDF](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)、[正文与配图](../research/revision-ab-2026-11-17/paper/paper.md) |
 | 原模型及恢复时间二次界 | [定理与结果](RESEARCH_RESULTS.md)、[符号](NOTATION.md) |
 | 两侧估计的证明 | [证明纲要](PROOF_GUIDE.md)、[形式化结构](../formal/FORMALIZATION_MAP.md) |
 | 加权面积、比较与重启 | [证明方法说明](proof-discovery/README.md) |

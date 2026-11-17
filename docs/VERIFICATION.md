@@ -1,6 +1,14 @@
 # 形式化验证与复现
 
-## 已归档的内核检查
+## 当前修订的验证入口
+
+2026-11-17 A/B 修订的[验收记录](../research/revision-ab-2026-11-17/validation.json)涵盖原 267 份项目源的重新编译，以及 5 个新模块的 58 个命名声明和 2 份强化下界依赖的 47 项声明。统一检查使用标准 Lean `--trust=0`；公理输出属于 `propext`、`Classical.choice`、`Quot.sound` 及其子集。外部锁定的 Lean/mathlib 依赖沿用已安装版本。
+
+当前上下界、块尾和矩结论的原模型入口为 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean)，方形极值为 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean)。[统一构建记录](../research/revision-ab-2026-11-17/evidence/unified-build.json)、[原工程重建记录](../research/revision-ab-2026-11-17/evidence/base-replay/replay.json)和[独立最终绑定](../research/revision-ab-2026-11-17/evidence/independent-final-binding.json)保存实际命令、输出和文件指纹。记录中的本机绝对路径属于历史运行环境，复现时须按安装布局调整。
+
+首页及配套说明的本轮修改只运行文档、链接及字节一致性检查，不重新运行 Lean。下面区分原封存版本与本轮新增结果的复现入口。
+
+## 原封存版本的内核检查
 
 主定理声明为 `MathResearchAnalysis.OriginalQuadraticRecovery.tau_theta_quadratic`。2026-10-26的[分析验证记录](../formal/audit/analysis-validation.json)记载：259份分析源统一构建成功，`lake env lean --trust=0 AnalysisAxioms.lean` 退出码为0，检查的3280条分析定理所输出的公理依赖属于 `propext`、`Classical.choice` 和 `Quot.sound`。
 
@@ -37,9 +45,9 @@ lake env lean --trust=0 audit/CoreAxioms.lean
 
 ## 文档与历史证据
 
-本次修订仅改变说明文稿与其配图。源指纹检查和链接检查与重新运行 Lean 是不同操作，本次只核对文档与源指纹，未重新构建数学工程。旧验证 JSON 中的文稿指纹对应旧稿，详见[版本约定](ARCHIVAL_RECORD.md)。
+各轮文档修订与数学构建分别记录。旧验证 JSON 中的文稿指纹对应当时版本；当前文稿按新的清单检查，历史记录保持不变，详见[版本约定](ARCHIVAL_RECORD.md)。
 
-内核检查约束的是具体形式声明及其依赖。原模型对应关系另有[独立 AI 语义复核](../formal/audit/original-theta-independent-review.md)；模拟本科读者反馈用于核查解释的可理解性。这两项均不属于独立人类专家评审。仓库不以这些检查代替文献优先权判断。
+内核检查约束的是具体形式声明及其依赖。原模型对应关系另有[独立 AI 语义复核](../formal/audit/original-theta-independent-review.md)；原版本的模拟本科读者反馈用于核查当时文稿的可理解性；本轮说明另由模拟的概率论与随机过程研究者阅读复核，反馈及指纹见[本轮记录](mathematical-introduction-2026-11-17/README.md)。这些 AI 复核与人类专家评审分别记录，文献出处见[参考文献](REFERENCES.md)。
 
 ## 当前文稿的只读检查
 
@@ -49,7 +57,7 @@ lake env lean --trust=0 audit/CoreAxioms.lean
 python scripts/check_documentation.py
 ```
 
-该命令按[当前清单](readme-bilingual-2026-11-16/manifest.json)核对当前文稿（含中英文 README）、链接、267份正式源、54份研究 Lean 源文件及保留归档的字节一致性，并复算所列有限算例；它不调用 Lean。2026-11-16的双语入口修订仅更新 README、本文的清单入口及校验配置；[2026-11-07清单](academic-revision-2026-11-07/manifest.json)作为历史记录保留。数学正文与资料入口见[文稿索引](INDEX.md)。
+该命令按[当前清单](mathematical-introduction-2026-11-17/documentation-manifest.json)核对现行文档、链接、267 份正式源、54 份研究 Lean 源及原归档字节，并复算所列有限算例；它不调用 Lean。本轮另核对 A/B 已验收快照的全部 372 个文件，检查结果与独立模拟数学读者反馈见[本轮记录](mathematical-introduction-2026-11-17/README.md)。[上一版发布清单](ab-publication-2026-11-17/documentation-manifest.json)及更早清单作为历史版本保留。数学正文与资料入口见[文稿索引](INDEX.md)。
 
 ## 2026-11-17 A/B修订审计
 
