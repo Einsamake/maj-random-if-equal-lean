@@ -1,6 +1,6 @@
 # C1 and C2 verification record
 
-The proof drafts were prepared on `paper/c1-c2` at baseline `fe0da72171bacfbafe097bd018e6b9ffa46c0c43`. They are English Markdown addenda for the v5 manuscript. Both results are paper proofs. The Lean references identify existing inputs and restart patterns at the existing scale.
+The proof drafts were prepared on `paper/c1-c2` at baseline `fe0da72171bacfbafe097bd018e6b9ffa46c0c43`. They are English Markdown addenda for the v5 manuscript. Both addenda give paper proofs; the final Lean proofs are recorded below. The correspondence tables in the addenda identify the existing inputs and restart patterns.
 
 ## Independent reader on 17 November 2026
 
@@ -93,4 +93,8 @@ On 18 November 2026, the two addenda's local v5 links were replaced by a pinned 
 | Current addendum | SHA-256 |
 | --- | --- |
 | C1-clock-literature.md | `215bde022a8d5e85f4ace751a30161a9f7f708a123b3181f553cfae38d559cc5` |
-| C2-first-moment-upper.md | `3325caa0fd0d5f4e2d417ff040b63f474a161f9e090ba7d0ae850375ec46861e` |
+| C2-first-moment-upper.md | `86b236ba00e16e39e7eb60236ae3639e1d3a4cb55c7dbadb6553ceaa3f2a063a` |
+
+On 18 November 2026, pre-merge review corrected two missing `\ge` commands in the C2 example at $N=16$. The previous C2 publication fingerprint was `3325caa0fd0d5f4e2d417ff040b63f474a161f9e090ba7d0ae850375ec46861e`; the table gives the corrected version. A fresh independent AI undergraduate-reader simulation checked both addenda, recomputed the stated examples, and reread the correction. It found no blocking clarity issue conditional on the explicitly cited inputs. This is not human expert review.
+
+The pre-merge replay separately rebuilt all three new modules with the pinned standard Lean executable and `--trust=0`, then ran `C1C2Axioms.lean` with the same setting. All four checks returned exit code `0`. An additional environment audit checked all 179 constants belonging to the three new modules, including private and automatically generated auxiliary declarations: each axiom set was a subset of `{propext, Classical.choice, Quot.sound}`, and none of these constants was unsafe. The existing pinned dependency cache was reused, with project dependency sources checked byte-for-byte against the reviewed checkout; this was not a clean rebuild of all dependencies. The separate documentation check confirmed that the original 267 formal source fingerprints and sealed archive were unchanged.

@@ -59,7 +59,7 @@ E_N(k_N)\le \frac65 N^2\,2^{-N}\le \frac3{160}<\frac18.
 $$
 Consequently $p_N(b_N)\le1/2$. The same inequality holds from every $g$ by order preservation under common synchronous bits and domination by the filled square. At each multiple of $b_N$, condition on all rounds seen so far. The fresh bits and uniform bound imply a conditional chance of survival at the next multiple of at most $1/2$ on survival so far, and zero after absorption. Iteration gives the claimed geometric tail. The extended tail-sum formula groups the integers $r\ge0$ into intervals $jb_N\le r<(j+1)b_N$ and yields $\mathbb E T_g=\sum_{r\ge0}\mathbb P(T_g>r)\le b_N\sum_{j\ge0}2^{-j}=2b_N$.
 
-At $N=16$, $M=129$, $h=266{,}256$, $14h=3{,}727{,}584$, and $k_N=1{,}161{,}216$. The lower bound $4(k_N+1)=4{,}644{,}868$ on $t_{k_N}$ covers the 14 intervals. Here $E_N(k_N)\le (6/5)16^2\,2^{-16}=3/640<1/8$, and $b_N=297{,}271{,}553$ rounds. At this size $M/8=16.125$, so the event used in the first-moment bound is $J(h)ge17$, which implies $J(h)ge16$ as needed.
+At $N=16$, $M=129$, $h=266{,}256$, $14h=3{,}727{,}584$, and $k_N=1{,}161{,}216$. The lower bound $4(k_N+1)=4{,}644{,}868$ on $t_{k_N}$ covers the 14 intervals. Here $E_N(k_N)\le (6/5)16^2\,2^{-16}=3/640<1/8$, and $b_N=297{,}271{,}553$ rounds. At this size $M/8=16.125$, so the event used in the first-moment bound is $J(h)\ge17$, which implies $J(h)\ge16$ as needed.
 
 ## Sources and proof dependencies
 
