@@ -1,0 +1,238 @@
+AUDIT MathResearchExploration.FullBlockThreshold.quadratic_bound_le_half_threshold: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.actual_exit_at_quadraticHorizon_le_half._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.exit_probability_mul_le_mean: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedPoint_injective._proof_1_4: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.quadraticHorizon._proof_1: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedPoint_injective._proof_1_2: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedBlock_eq_image._simp_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedPoint_injective._proof_1_3: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedPoint_weight_lower._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.quadratic_mean_bound: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.threshold_pos: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty._proof_1_2: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedBlock_eq_image._simp_1_2: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.physical_exit_measure_le_cubic_weight: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.actual_exit_probability_le_linear_time._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.fullBlock_cubic_weight: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.directedPoint: []
+AUDIT MathResearchExploration.FullBlockThreshold.sum_affine_block: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.original_clock_extinction_le_linear_time: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.actual_exit_probability_le_linear_time: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.fullBlock_exact_lower_bound: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.directedBlock_eq_image: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit._proof_1_1: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.directedPoint_injective._proof_1_1: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.cubic_weight_of_protected_missing._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.actual_stopped_weight_after_exit: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.quadraticHorizon: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.original_extinction_measure_le_cubic_weight: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.directedPoint_injective: [propext, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.directedPoint_weight_lower: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.sum_positive_offsets: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.original_clock_extinction_le_linear_time._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.actual_exit_at_quadraticHorizon_le_half: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.original_clock_extinction_at_quadraticHorizon_le_half._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.quadraticHorizon._proof_2: [propext]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.threshold_pos._proof_1_1: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.original_extinction_measure_le_cubic_weight._proof_1_1: [propext,
+ Quot.sound]
+AUDIT _private.FullBlockThreshold.0.MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty._proof_1_1: [propext,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.cubic_weight_of_physical_exit_le: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchExploration.FullBlockThreshold.side_le_twentyfive_mul_div_twenty: [propext, Quot.sound]
+AUDIT_COUNT FullBlockThreshold 42
+AUDIT _private.DirectionalDrift.0.MathResearchLower.charge_le_rows._proof_1_1: [propext, Classical.choice, Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.raw_drift_le_six._proof_1_2: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.paired_rises_le_rows: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.clock_extinction_bound: [propext, Classical.choice, Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.clock_extinction_bound._proof_1_2: [propext, Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.clock_extinction_bound._proof_1_4: [propext, Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.raw_drift_le_six._proof_1_1: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.raw_drift_le_six: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.charge_le_rows: [propext, Classical.choice, Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.paired_rises_le_rows._proof_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.DirectionalDrift.0.MathResearchLower.clock_extinction_bound._proof_1_1: [propext, Quot.sound]
+AUDIT_COUNT DirectionalDrift 11
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_5: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_1: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_6: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.pathwise_survival._proof_1_1: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.finite_tail_sum_le._simp_1_1: [propext, Classical.choice, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_9: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_8: [propext, Quot.sound]
+AUDIT MathResearchLower.square_expected_ge_half: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.finite_tail_sum_le: [propext, Classical.choice, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_10: [propext, Quot.sound]
+AUDIT MathResearchLower.pathwise_survival: [propext, Classical.choice, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_12: [propext, Quot.sound]
+AUDIT MathResearchLower.interior_survives: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_3: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.square_expected_ge_half._proof_1_2: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_7: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_11: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_4: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.square_expected_ge_half._proof_1_1: [propext, Quot.sound]
+AUDIT _private.SquareSurvival.0.MathResearchLower.interior_survives._proof_1_2: [propext, Quot.sound]
+AUDIT_COUNT SquareSurvival 20
+AUDIT _private.UniformLower.0.MathResearchLower.square_expected_uniform_lower._proof_1_1: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_survival_envelope._proof_1_1: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_expected_large._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.square_survival_envelope: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.scheduling_error_small: [propext, Classical.choice, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.scheduling_error_small._proof_1_4: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.scheduling_error_small._proof_1_1: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_expected_large._proof_1_2: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.scheduling_error_small._proof_1_3: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.scheduling_error_small._proof_1_2: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.inner_tail_le_outer._proof_1_3: [propext, Quot.sound]
+AUDIT MathResearchLower.square_expected_uniform_lower: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.square_expected_large: [propext, Classical.choice, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.inner_tail_le_outer._proof_1_2: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_survival_envelope._proof_1_2: [propext, Quot.sound]
+AUDIT MathResearchLower.clock_bound_numeric: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.tau_uniform_quadratic_lower: [propext, Classical.choice, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_survival_envelope._proof_1_3: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.sum_succ: [propext, Classical.choice, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.inner_tail_le_outer._proof_1_1: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_survival_envelope._proof_1_5: [propext, Quot.sound]
+AUDIT MathResearchLower.survival: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.inner_tail_le_outer: [propext, Classical.choice, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_expected_large._proof_1_3: [propext, Quot.sound]
+AUDIT _private.UniformLower.0.MathResearchLower.square_survival_envelope._proof_1_4: [propext, Quot.sound]
+AUDIT_COUNT UniformLower 25
+AUDIT _private.Packing.0.MathResearchLower.Packing.restricted_time_le: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.packed_cdf: [propext, Classical.choice, Quot.sound]
+AUDIT _private.Packing.0.MathResearchLower.Packing.restricted_time_le._proof_1_1: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT MathResearchLower.Packing.blocks_measurable: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.cdf: [propext, Classical.choice, Quot.sound]
+AUDIT _private.Packing.0.MathResearchLower.Packing.grid_state_mono: [propext, Quot.sound]
+AUDIT _private.Packing.0.MathResearchLower.Packing.event_injective._simp_1_2: [propext]
+AUDIT _private.Packing.0.MathResearchLower.Packing.digits._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Packing.blocks: []
+AUDIT _private.Packing.0.MathResearchLower.Packing.digits: [propext, Quot.sound]
+AUDIT MathResearchLower.Packing.event_injective: [propext, Quot.sound]
+AUDIT MathResearchLower.Packing.cdf_add_survival: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.event: []
+AUDIT MathResearchAnalysis.InfiniteGridRandomDynamics.measure.eq_1: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.event.eq_1: []
+AUDIT MathResearchLower.Packing.blocks_map: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.Block: []
+AUDIT_COUNT Packing 17
+AUDIT MathResearchLower.Packing.blockSide: []
+AUDIT MathResearchLower.Packing.finite_lower_tail: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Packing.exponential_fast_tail: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.side_sq_le: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.small_square_cdf._proof_1_5: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.exponential_fast_tail._proof_1_1: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.small_square_cdf._proof_1_4: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.finite_lower_tail._proof_1_2: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.finite_lower_tail._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Packing.small_square_cdf: [propext, Classical.choice, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.small_square_cdf._proof_1_2: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.small_square_cdf._proof_1_1: [propext, Quot.sound]
+AUDIT _private.FastTail.0.MathResearchLower.Packing.small_square_cdf._proof_1_3: [propext, Quot.sound]
+AUDIT_COUNT FastTail 13
+AUDIT MathResearchLower.Triangle.shape_loss: [propext, Classical.choice, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds._proof_1_2: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds._proof_1_4: [propext,
+ Classical.choice,
+ Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.cubic_cost._proof_1_2: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.shape_loss._proof_1_2: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.point: []
+AUDIT MathResearchLower.Triangle.cubic_cost: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.radius: []
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds._proof_1_3: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_injective._proof_1_1: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.weighted_count: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.Index: []
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.shape_loss._proof_1_4: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_injective._proof_1_4: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_injective._proof_1_3: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.cubic_cost._proof_1_1: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_injective._proof_1_2: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.point_injective: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.shape_loss._proof_1_1: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds._proof_1_5: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.abs_signed: [propext]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.shape_loss._proof_1_3: [propext, Quot.sound]
+AUDIT _private.TriangleLoss.0.MathResearchLower.Triangle.point_bounds: [propext, Classical.choice, Quot.sound]
+AUDIT_COUNT TriangleLoss 24
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.square_improved._proof_1_4: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.numerical_cost: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.integrate_envelope: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.clock_cost_bound._proof_1_2: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.square_improved._proof_1_2: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.affine_tail._proof_1_2: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.scheduling._proof_1_3: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.clock_cost_bound._proof_1_3: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.round_sum: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.extinction_budget._proof_1_1: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.scheduling: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.clock_cost_bound: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.extinction_budget: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.physical_loss._proof_1_1: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.affine_tail._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.tau_improved: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.affine_tail._proof_1_5: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.scheduling._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.square_improved: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.scheduling._proof_1_4: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.extinction_budget._proof_1_2: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.affine_tail: [propext, Classical.choice, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.scheduling._proof_1_2: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.numerical_cost._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.cost._proof_1: [propext]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.affine_tail._proof_1_4: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.affine_tail._proof_1_3: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.square_improved._proof_1_1: [propext, Quot.sound]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.clock_cost_bound._proof_1_1: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.cost: [propext, Classical.choice, Quot.sound]
+AUDIT MathResearchLower.Triangle.cost._proof_2: [propext]
+AUDIT _private.ImprovedMean.0.MathResearchLower.Triangle.square_improved._proof_1_3: [propext, Quot.sound]
+AUDIT MathResearchLower.Triangle.physical_loss: [propext, Classical.choice, Quot.sound]
+AUDIT_COUNT ImprovedMean 33

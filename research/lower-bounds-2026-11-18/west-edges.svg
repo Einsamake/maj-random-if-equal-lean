@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 230" role="img" aria-labelledby="title desc">
+  <title id="title">Occupied intervals in four columns</title>
+  <desc id="desc">From left to right the occupied heights are 0 to 1, 0 to 3, 1 to 3, and 1 to 4. The west edges charged by two northwest corners lie in rows 2, 3, and 4.</desc>
+  <defs><pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse" x="65" y="10"><rect width="34" height="34" fill="#d7e1e8" stroke="#586a78"/></pattern></defs>
+  <rect width="370" height="230" fill="white"/>
+  <g fill="url(#grid)" stroke="#586a78"><path d="M65 112h34v68H65z M99 44h34v136H99z M133 44h34v102h-34z M167 10h34v136h-34z"/></g>
+  <g fill="none" stroke="#006a9c" stroke-width="5"><path d="M99 44v34m0 2v32 M167 10v34"/></g>
+  <g font-family="sans-serif" font-size="14" fill="#243746" text-anchor="middle">
+    <text x="82" y="201">0</text><text x="116" y="201">1</text><text x="150" y="201">2</text><text x="184" y="201">3</text><text x="218" y="201">x</text>
+    <text x="44" y="166">0</text><text x="44" y="132">1</text><text x="44" y="98">2</text><text x="44" y="64">3</text><text x="44" y="30">4</text>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#005580"><text x="226" y="43">row 4</text><text x="226" y="89">rows 2 and 3</text></g>
+  <g fill="none" stroke="#477789"><path d="M170 26l46 13 M101 77l115 7"/></g>
+</svg>
