@@ -1,0 +1,17 @@
+{
+  "role": "Independent simulated undergraduate reader, no project history; text and figure only",
+  "initial_text_sha256": "4038170a3c67e6400a6bd8d333f9b5deeb09f06923d7fec2229a22b74a7baa12",
+  "text_sha256": "4349899a5662f792c53f112fcacd5c7c22093b7be59535ff0c9e522bbf6cf057",
+  "figure_sha256": "5d220efc17587104e2666f59f42bc4003f04a5b9f230faaa7ec9498b9e0137eb",
+  "issues_addressed": [
+    "Defined the northwest corner and the matching valley and proved the two required occupied neighbours using the common row.",
+    "Expanded the finite weight difference, the indicator inequality on protected loss and the reference to previous inputs.",
+    "Changed the alternative text of the figure to refer explicitly to row coordinates."
+  ],
+  "reread": {
+    "status": "PASS",
+    "pairs": "The two pairs charge rows {2,3} and {4}.",
+    "examples": "N=5 survives at least 3 rounds. For N=2000002, L=1000000 and K=2222222, the tail sum gives 1044443.87, exceeding 1000002.000001.",
+    "scope": "Readability, independent of the Lean audit."
+  }
+}

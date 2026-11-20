@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 285" width="650" height="285" role="img" aria-labelledby="t d">
+<title id="t">Weighted vacant triangle and disjoint square restrictions</title><desc id="d">The strict northeast quadrant of (19,18) contains six sites of certified weights 3,2,2,1,1,1. The other panel partitions a square into nine disjoint subdomains each of side m.</desc>
+<rect width="650" height="285" fill="#fff"/>
+<g fill="#172c3a" font-family="Georgia,serif" font-size="16">
+<text x="40" y="38" font-size="21">Vacant quadrant, L = 40</text>
+<text x="371" y="38" font-size="21">Square restrictions, N = 3m</text>
+<rect x="73" y="179" width="52" height="47" fill="#609cad" stroke="white"/><text x="99" y="207" text-anchor="middle">3</text><rect x="126" y="179" width="52" height="47" fill="#9ccbd7" stroke="white"/><text x="152" y="207" text-anchor="middle">2</text><rect x="179" y="179" width="52" height="47" fill="#d6e9ee" stroke="white"/><text x="205" y="207" text-anchor="middle">1</text><rect x="73" y="131" width="52" height="47" fill="#9ccbd7" stroke="white"/><text x="99" y="159" text-anchor="middle">2</text><rect x="126" y="131" width="52" height="47" fill="#d6e9ee" stroke="white"/><text x="152" y="159" text-anchor="middle">1</text><rect x="179" y="131" width="52" height="47" fill="#f5f5f5" stroke="white"/><rect x="73" y="83" width="52" height="47" fill="#d6e9ee" stroke="white"/><text x="99" y="111" text-anchor="middle">1</text><rect x="126" y="83" width="52" height="47" fill="#f5f5f5" stroke="white"/><rect x="179" y="83" width="52" height="47" fill="#f5f5f5" stroke="white"/>
+<text x="50" y="207">19</text><text x="50" y="159">20</text><text x="50" y="111">21</text>
+<text x="92" y="248">20</text><text x="145" y="248">21</text><text x="198" y="248">22</text>
+<text x="243" y="248" font-style="italic">x</text><text x="55" y="73" font-style="italic">y</text>
+<rect x="399" y="85" width="45" height="45" fill="#e0eaf0" stroke="#354f60"/><rect x="444" y="85" width="45" height="45" fill="#c4dae4" stroke="#354f60"/><rect x="489" y="85" width="45" height="45" fill="#e0eaf0" stroke="#354f60"/><rect x="399" y="130" width="45" height="45" fill="#c4dae4" stroke="#354f60"/><rect x="444" y="130" width="45" height="45" fill="#e0eaf0" stroke="#354f60"/><rect x="489" y="130" width="45" height="45" fill="#c4dae4" stroke="#354f60"/><rect x="399" y="175" width="45" height="45" fill="#e0eaf0" stroke="#354f60"/><rect x="444" y="175" width="45" height="45" fill="#c4dae4" stroke="#354f60"/><rect x="489" y="175" width="45" height="45" fill="#e0eaf0" stroke="#354f60"/><text x="411" y="247" font-style="italic">m</text>
+<path d="M399 230h45m-45 -4v8m45 -8v8" stroke="#354f60" fill="none"/>
+<text x="560" y="158" font-style="italic">3m</text><path d="M548 85v135m-4 -135h8m-8 135h8" stroke="#354f60" fill="none"/>
+</g></svg>

@@ -1,0 +1,28 @@
+{
+  "kind": "Simulated mathematical reader, undergraduate background. Text and rendered figures only.",
+  "reader": "/root/earliest_reader",
+  "initial": {
+    "text_sha256": "33ff1d826f5f0c63de2aeba33029e1dbbe49b78f10b38e3948219cf4faff692b",
+    "comments": [
+      "Justify removal of the factor four in the odd-side uniform bound.",
+      "Restate the occupation inequality and explain the numerical coefficients 0.99999 and 66.56."
+    ]
+  },
+  "changes": [
+    "Displayed the integer exponent calculation for h >= 3.",
+    "Restated the stopped occupation certificate, identified each numerical estimate and indicated normalization by L^3."
+  ],
+  "reread": {
+    "status": "PASS",
+    "sha256": {
+      "earliest.md": "4cda73aeabd738a8cac9651d502348e0d07fb8f4c04d4c7de36435df3343ed0c",
+      "earliest.svg": "c532a8ac9691bc2ee34f497dcc35c10d5419d4e4cc5e72a9167f3b9be357dbfe",
+      "forcing.svg": "6a16e54484eb7985262c46bfd924176dafc762dbab457a1fec433f3fffcc722d"
+    },
+    "checks": [
+      "N=3 disappearance counts 4,4,1. N=4 counts 4,8,4.",
+      "N=7 odd upper bound 4/512 = 1/128.",
+      "L=419999: normalized lower minus upper is approximately 0.00000045339138701."
+    ]
+  }
+}

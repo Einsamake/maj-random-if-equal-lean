@@ -1,0 +1,17 @@
+{
+  "review": "Independent simulated undergraduate reader; README only, with no project history or Lean source.",
+  "first_read_sha256": "1be9f9c3bf321ce2f39ff0b592f5a0246423a722974863c49540bbaa7fbb39eb",
+  "first_read": {
+    "blocking": "Line 7 asserted a probability bound of 1/2 for one square without deriving it. The expectation bound alone does not imply this.",
+    "optional": "Make the fixed-tie monotonicity and the white exterior explicit.",
+    "example": "The side is 6,002,000, giving four disjoint squares and probability at most 1/16."
+  },
+  "revision": "Derive the single-square estimate separately for r below 1,000 and r at least 1,000. State the survival estimate used in the second case and give the monotonicity argument.",
+  "reread_sha256": "1ebb07419633b309642937f348b580307ffe0274acD75da7a8ffecb217046e34",
+  "reread": {
+    "status": "PASS",
+    "small_square": "For r < 1000, 2k < 2000r. For r >= 1000, the survival estimate is at least 47/50 - 420000/998001 > 1/2.",
+    "example": "k = 9,000,000 yields r = 3001 and m = 6,002,000. N/m = 2 gives (1/2)^4 = 1/16.",
+    "scope": "Readability and ability to reproduce the stated calculation."
+  }
+}

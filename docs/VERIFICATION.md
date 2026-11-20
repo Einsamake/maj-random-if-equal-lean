@@ -4,9 +4,13 @@
 
 2026-11-17 A/B 修订的[验收记录](../research/revision-ab-2026-11-17/validation.json)涵盖原 267 份项目源的重新编译，以及 5 个新模块的 58 个命名声明和 2 份强化下界依赖的 47 项声明。统一检查使用标准 Lean `--trust=0`；公理输出属于 `propext`、`Classical.choice`、`Quot.sound` 及其子集。外部锁定的 Lean/mathlib 依赖沿用已安装版本。
 
-当前上下界、块尾和矩结论的原模型入口为 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean)，方形极值为 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean)。[统一构建记录](../research/revision-ab-2026-11-17/evidence/unified-build.json)、[原工程重建记录](../research/revision-ab-2026-11-17/evidence/base-replay/replay.json)和[独立最终绑定](../research/revision-ab-2026-11-17/evidence/independent-final-binding.json)保存实际命令、输出和文件指纹。记录中的本机绝对路径属于历史运行环境，复现时须按安装布局调整。
+11 月 17 日版本的上下界、块尾和矩结论的原模型入口为 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean)，方形极值为 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean)。[统一构建记录](../research/revision-ab-2026-11-17/evidence/unified-build.json)、[原工程重建记录](../research/revision-ab-2026-11-17/evidence/base-replay/replay.json)和[独立最终绑定](../research/revision-ab-2026-11-17/evidence/independent-final-binding.json)保存实际命令、输出和文件指纹。记录中的本机绝对路径属于历史运行环境，复现时须按安装布局调整。
 
-首页及配套说明的本轮修改只运行文档、链接及字节一致性检查，不重新运行 Lean。下面区分原封存版本与本轮新增结果的复现入口。
+以下按版本列出构建与审计入口。
+
+## 11 月 19 日下界补充
+
+[复现脚本](../research/lower-bounds-2026-11-19/replay.py) 使用锁定的 Lean 4.35.0-rc4。先按本页说明构建 `formal/analysis`，再在仓库根目录运行 `python research/lower-bounds-2026-11-19/replay.py`，并用 `--lean` 指向该版本的编译器。脚本重编四个前置模块、十五个本次审计的数学模块及审计入口，复用已构建的分析库与 mathlib。[逐项公理输出](../research/lower-bounds-2026-11-19/evidence/LowerAudit.log) 共 377 项，详见[验证记录](../research/lower-bounds-2026-11-19/evidence/validation.json)。
 
 ## 原封存版本的内核检查
 
