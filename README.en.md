@@ -25,13 +25,13 @@ The expectation is over the tie-breaking coins. The supremum includes both backg
 
 ## Main results
 
-For every integer $N\ge500001$,
+For every integer $N\ge16$,
 
 $$
-\frac{N^2}{576000000}\le\tau(N)\le664066N^2.
+\frac{N^2}{850000}\le\tau(N)\le664066N^2.
 $$
 
-The upper bound holds for every $N\ge16$. Thus the worst expected recovery time has quadratic order. For $N\ge2$, the filled square attains the extremum:
+Thus the worst expected recovery time has quadratic order. For $N\ge2$, the filled square attains the extremum:
 
 $$
 \tau(N)=\mathbb E T_{Q_N}.
@@ -39,7 +39,13 @@ $$
 
 Here $T_{Q_N}$ is the recovery time of the filled $N\times N$ perturbation in a zero background; colour symmetry gives the same conclusion for the other background.
 
-The distributional bounds hold uniformly over the permitted initial states of size $s(A)=N$. Put
+Write $T_N=T_{Q_N}$ and $m_N=1+2\lfloor(N-1)/2\rfloor$. For every $N\ge1$, $\mathbb E T_N\ge\max\{m_N,N^2/850000\}$. The first possible extinction round is $m_N$, equal to $N$ for odd side lengths and $N-1$ for even ones. Its probability $q_N=\mathbb P(T_N=m_N)$ satisfies
+
+$$2^{-2N^2}\le q_N\le 2^{-\lfloor N^2/8\rfloor}\qquad(N\ge7).$$
+
+Thus the minimum recovery time is linear in the side length, and the probability of attaining it decays exponentially in the area. [Proof and diagrams](research/lower-bounds-2026-11-19/earliest.md) · [Asymptotic expectation and early-extinction bounds](research/lower-bounds-2026-11-19/lower-tail.md) (both in Chinese).
+
+The following late-recovery bounds hold uniformly over the permitted initial states of size $s(A)=N$. Put
 
 $$
 b_N=331776N^2+257,\qquad
@@ -61,7 +67,7 @@ $$
 \mathbb E\exp(\lambda T_A/N^2)<\infty.
 $$
 
-See [Research results](docs/RESEARCH_RESULTS.md) for constants and formal declarations. These are the results of the revision dated 17 November 2026. The original archived theorem has a weaker explicit lower bound; both versions are retained.
+See [Research results](docs/RESEARCH_RESULTS.md) for constants and formal declarations. The manuscript of 17 November establishes quadratic order, block tails and moment estimates. The supplement of 19 November gives the all-scale expectation lower bound and the minimum extinction round with its probability bounds.
 
 ## Proof strategy
 
@@ -71,7 +77,7 @@ Both estimates use a continuous-time auxiliary process in which sites update sin
 
 For the upper bound, an auxiliary square has zero south and west boundary values and unit north and east boundary values, starting from the filled state. Its interface remains a staircase. Corner flips correspond to adjacent particle exchanges at rate $1/2$ on a finite one-dimensional path. The discrete heat equation controls the particle density, and nonpositive covariances at distinct sites control count fluctuations. Together they give a lower bound on the probability that a specified corner region is empty after $O(N^2)$ physical time. A monotone coupling transfers this event to the target zero-boundary square.
 
-Censoring comparisons and probability bounds for the random update schedule transfer these continuous-time estimates to synchronous rounds. Conditional restart from the state observed at the end of each block then gives the geometric tail above. The [proof outline](docs/PROOF_GUIDE.md) explains how the estimates connect; the [English manuscript](research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf) gives the full argument.
+Censoring comparisons and probability bounds for the random update schedule transfer these continuous-time estimates to synchronous rounds. Conditional restart from the state observed at the end of each block then gives the geometric tail above. The [proof outline](docs/PROOF_GUIDE.md) explains how the estimates connect; the [English manuscript](research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf) proves quadratic order and the late-recovery estimates.
 
 ## Reading and reproduction
 

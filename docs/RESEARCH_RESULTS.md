@@ -6,13 +6,13 @@
 
 $$\tau(N)=\sup_{s(x)=N}\mathbb ET_x.$$
 
-完整定义见[模型与记号](NOTATION.md)。以下为 2026 年 11 月 17 日修订中已形式化的原模型结果。
+完整定义见[模型与记号](NOTATION.md)。以下给出原模型结果，包括 11 月 19 日完成的方形下界。
 
 ### 定理 1（二次上下界与极值）
 
-对整数 $N\ge500001$，
+对整数 $N\ge16$，
 
-$$\frac{N^2}{576000000}\le\tau(N)\le664066N^2.$$
+$$\frac{N^2}{850000}\le\tau(N)\le664066N^2.$$
 
 上界对所有 $N\ge16$ 成立，故 $\tau(N)=\Theta(N^2)$。对 $N\ge2$，零背景上填满的方形 $Q_N=\{0,\ldots,N-1\}^2$ 实现最坏期望：
 
@@ -20,7 +20,15 @@ $$\tau(N)=\mathbb E T_{Q_N}.$$
 
 极值等式在非负扩展期望中成立；有限性由上界推出。共同标记下的单调性控制同一方形内的任意初态，平移不变性及颜色对称性还原两种背景。
 
-显示上下界见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `quadratic_bounds`，方形极值见 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean) 的 `tau_eq_full_square`。
+11 月 17 日版本的二次上下界见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `quadratic_bounds`，方形极值见 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean) 的 `tau_eq_full_square`。
+
+令 $T_N=T_{Q_N}$，$m_N=1+2\lfloor(N-1)/2\rfloor$。对每个 $N\ge1$，有 $\mathbb E T_N\ge\max\{m_N,N^2/850000\}$。$m_N$ 是可能消亡的第一轮，奇数边长时为 $N$，偶数边长时为 $N-1$。若 $q_N=\mathbb P(T_N=m_N)$，则
+
+$$2^{-2N^2}\le q_N\le 2^{-\lfloor N^2/8\rfloor}\qquad(N\ge7).$$
+
+因此，方形可以在线性时间内消亡，而恰在最早一轮消亡的概率随面积指数衰减。[最早消亡的证明与配图](../research/lower-bounds-2026-11-19/earliest.md) · [渐近期望与早消亡尾界](../research/lower-bounds-2026-11-19/lower-tail.md)
+
+此外，$\liminf_{N\to\infty}\mathbb E T_N/N^2\ge(1152000\log 2)^{-1}$。对整数 $k\ge0$，方形的早消亡概率满足 $\mathbb P(T_N\le k)\le2\exp[-(\log 2)N^2/(64000000(k+1))]$。特别地，对任意非负整数序列 $k_N=o(N^2)$，有 $\mathbb P(T_N\le k_N)\to0$。[全尺度下界](../research/lower-bounds-2026-11-19/AllScaleLower.lean) · [最早消亡原子](../research/lower-bounds-2026-11-19/MinimumAtomUpper.lean) · [审计记录](../research/lower-bounds-2026-11-19/evidence/validation.json)
 
 ### 定理 2（块尾与期望）
 
@@ -63,9 +71,9 @@ $$
 
 ### 证明与版本
 
-当前[英文论文](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)将几何下界、粒子表示上界、时钟比较和重启组成完整论证；[证明纲要](PROOF_GUIDE.md)概述这些连接。修订还将两处时钟可观测量计算统一为有限状态 Dynkin 公式，适用于有限方形上的每点速率 $1$、公平标记机器，见 `finite_machine_dynkin`。
+当前[英文论文](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)将几何下界、粒子表示上界、时钟比较和重启组成二次阶与晚恢复估计的论证；[证明纲要](PROOF_GUIDE.md)概述这些连接。修订还将两处时钟可观测量计算统一为有限状态 Dynkin 公式，适用于有限方形上的每点速率 $1$、公平标记机器，见 `finite_machine_dynkin`。
 
-原 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) 保留 2026-10-26 版本：下界 $N^2/56623104000$、门槛 $786432000$，上界同上。强化下界先由 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 证明，现进入本轮论文与统一原模型声明。版本对应及构建记录见[验证方法](VERIFICATION.md)。
+原 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) 保留 2026-10-26 版本：下界 $N^2/56623104000$、门槛 $786432000$，上界同上。11 月 17 日论文中的下界先由 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 证明，随后收入 revision 6。版本对应及构建记录见[验证方法](VERIFICATION.md)。
 
 文献 [1] 的 §4.2 给出同步规则的三次期望上界，Question 7.4 提出二次量级问题；出处见[参考文献](REFERENCES.md#fates-marcovici-taati-2022)。
 
