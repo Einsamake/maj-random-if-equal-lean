@@ -1,26 +1,34 @@
-# 版本与归档约定
+# Versions and archival records
 
-本仓库的数学源、机器检查记录与数学说明分别按其版本解释。2026年11月的文档修订不改变正式 Lean 源、既有审计日志、验证 JSON 或封存 ZIP。
+[简体中文](ARCHIVAL_RECORD.zh-CN.md)
 
-## 数学源与说明文稿
+<a id="版本与归档约定"></a>
 
-原主定理的正式源为 `formal/` 下的267份文件。研究说明和图注属于对这些定理的自然语言表述，不构成额外的形式化声明。网络研究另有各阶段的数学源和验证记录；其模型与原元胞自动机不同。
+The mathematical sources, machine-check records and explanatory documents each apply to their recorded versions. The November 2026 documentation revisions retained the Lean sources, existing audit logs, verification JSON files and sealed ZIP archives.
 
-当前学术文稿以仓库所含源码为依据；各阶段记录的通过状态不扩张为新稿的审稿状态。原文稿及其读者反馈可在[修订前版本](https://github.com/Einsamake/maj-random-if-equal-lean/tree/f3dc0ba5495c78e238c2e58a1f6b040a936df0c0)查阅。旧验证文件中的文稿或图像指纹对应其被检查时的版本，不能用来宣称本次新稿也具有相同字节或已通过同一次审读。
+<a id="数学源与说明文稿"></a>
 
-[SNAPSHOT_MANIFEST.json](../SNAPSHOT_MANIFEST.json)是既有发布快照的清单。其中部分文稿、JSON与日志在发布时做过本机路径脱敏：`workspace_sha256` 标识原本地证据，`sha256` 标识发布快照，二者不必相同。数学源保留原字节；已修订文稿的旧指纹保留历史含义。该清单不是本次新稿或当前整仓库的指纹证书。本轮文档检查与数学源不变性检查另见[验证说明](VERIFICATION.md)。
+## Mathematical sources and expository documents
 
-## 历史材料
+The original main theorem's formal sources are the 267 files under `formal/`. Research summaries and figure captions describe the theorems in prose. The waiting-network research studies a different model from the cellular automaton and has its own mathematical sources and verification records for each phase.
 
-下列材料保留原文，其阶段性判断按所载日期理解。
+The current manuscript draws on the sources in this repository. Checks recorded for earlier versions apply to those versions. The [pre-revision snapshot](https://github.com/Einsamake/maj-random-if-equal-lean/tree/f3dc0ba5495c78e238c2e58a1f6b040a936df0c0) contains the original text and its reader feedback. Hashes of documents and figures in earlier verification files identify the exact versions checked in those reviews.
 
-| 材料 | 解释范围 |
+[SNAPSHOT_MANIFEST.json](../SNAPSHOT_MANIFEST.json) inventories a previous release snapshot. Some documents, JSON files and logs had local machine paths redacted for publication. The `workspace_sha256` field identifies the original local file, and `sha256` identifies the published file. The digests may differ. The mathematical sources were preserved byte for byte. The document digests in the manifest still refer to the archived versions. See [verification and reproduction](VERIFICATION.md) for the documentation checks and the mathematical source comparison.
+
+<a id="历史材料"></a>
+
+## Historical material
+
+These records retain their original wording and language. Interpret phase-specific conclusions as of the dates recorded.
+
+| Material | Scope |
 | --- | --- |
-| `formal/PROGRESS_*.md` | 各阶段的证明进展，早期未证接口不代表最终定理仍缺该接口 |
-| `formal/audit/` | 构建、公理输出、源指纹和独立 AI 复核；其中 `history/` 为更早版本 |
-| `research/followup/` | 方法记录、候选路线与截至当时的文献检索 |
-| 各阶段 `notes/`、`evidence/` 及读者反馈 | 原稿、算例、实际输出和所读版本；不作为当前说明的新增审稿结论 |
-| `research/exploration/phase1-overview.md` | 首轮研究记录 |
-| `deliverables/` 中的封存包 | 以随包清单为准的固定交付物 |
+| `formal/PROGRESS_*.md` | Proof progress by phase, including intermediate dependencies that were still open at the time |
+| `formal/audit/` | Builds, axiom outputs, source hashes and independent AI reviews. The `history/` directory contains earlier versions. |
+| `research/followup/` | Method notes, proposed approaches and literature searches as of the recorded dates |
+| Phase-specific `notes/`, `evidence/` and reader feedback | Drafts, worked examples, actual outputs and the versions read |
+| `research/exploration/phase1-overview.md` | Record of the first research phase |
+| Sealed archives in `deliverables/` | Fixed deliverables identified by their accompanying inventories |
 
-[当前定理](RESEARCH_RESULTS.md)、[证明纲要](PROOF_GUIDE.md)和[验证说明](VERIFICATION.md)给出当前阅读入口。历史材料保留用于追溯，不与当前定理陈述并列为另一套状态报告。
+For the current exposition, see the [theorems](RESEARCH_RESULTS.md), [proof outline](PROOF_GUIDE.md) and [verification records](VERIFICATION.md). The historical material traces how the results and their verification developed.

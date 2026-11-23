@@ -1,9 +1,14 @@
-# Lean 工程说明
+# Lean project guide
 
-本目录包含二维同步四邻 Maj-Random-If-Equal 模型的形式化。完整渐近结论位于 [OriginalQuadraticRecovery](analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean)，原尺寸的最坏扩展期望定义位于 [OriginalRecoveryProfile](analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean)。
+[中文](LEAN_README.zh-CN.md) · [Formalization and audits](README.md)
 
-工程分为核心确定性部分和概率分析部分，分别使用 Lean `4.35.0` 与 `4.35.0-rc4`。正式源共267份，其中分析源259份、核心源8份。2026-10-26的最终阶段重新构建并审计分析工程；核心工程仅重核原源指纹与既有审计。
+This directory formalizes the two-dimensional synchronous four-neighbour majority rule with independent fair tie breaking. The original quadratic-order theorem is in [OriginalQuadraticRecovery](analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean). [OriginalRecoveryProfile](analysis/MathResearchAnalysis/OriginalRecoveryProfile.lean) defines the worst extended expected recovery time over deterministic initial perturbations of exact size, measured by their smallest enclosing square.
 
-数学陈述见[结果](../docs/RESEARCH_RESULTS.md)，主要依赖关系见[形式化结构](FORMALIZATION_MAP.md)，构建命令与验证范围见[复现说明](../docs/VERIFICATION.md)。固定工具链及 mathlib 提交由工程文件指定，不应以当前默认版本替代。
+The October 26 development contains 267 project Lean source files, with 8 in the deterministic core and 259 in the probability analysis project. The final October 26 check rebuilt and audited the analysis project. It verified the core source fingerprints against the existing core audit. Later results have their own build records. [Build and audit guide](../docs/VERIFICATION.md)
 
-`PROGRESS_*.md` 和 `audit/history/` 为按日期保存的历史记录；其中未闭合的接口应结合最终版本理解。当前说明与既有文稿审读指纹的关系见[版本约定](../docs/ARCHIVAL_RECORD.md)。
+| Project | Lean version | Pinned configuration |
+| --- | --- | --- |
+| Deterministic core in `formal/` | `4.35.0` | [Toolchain](lean-toolchain) · [Lake configuration](lakefile.toml) · [Dependency lock](lake-manifest.json) |
+| Probability analysis in `formal/analysis/` | `4.35.0-rc4` | [Toolchain](analysis/lean-toolchain) · [Dependency lock](analysis/lake-manifest.json) |
+
+Use the pinned compiler and dependency versions for each project. For the mathematical statements, proof dependencies and historical records, see [research results](../docs/RESEARCH_RESULTS.md), [formalization map](FORMALIZATION_MAP.md) and [archival record](../docs/ARCHIVAL_RECORD.md).

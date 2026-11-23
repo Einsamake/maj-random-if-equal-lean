@@ -1,45 +1,47 @@
-# 研究结果
+# Research results
 
-## 同步随机多数规则的恢复时间
+**English** · [简体中文](RESEARCH_RESULTS.zh-CN.md)
 
-考虑 $\mathbb Z^2$ 上的同步四邻多数规则，平票在格点和轮次之间独立公平取色。确定初态 $x$ 是任一纯色背景上的有限扰动，$s(x)$ 为其最小平移轴平行包围方形的边长，按格点列数计。$T_x\in\mathbb N_0\cup\{\infty\}$ 为恢复原背景的轮数，
+## Recovery time for the synchronous random majority rule
+
+Consider the synchronous four-neighbour majority rule on $\mathbb Z^2$. Ties are broken by fair coins that are independent across sites and rounds. A deterministic initial configuration $x$ is a finite perturbation of either constant background. Its size $s(x)$ is the side length of the smallest axis-aligned square containing the perturbation, counted in lattice sites along a side. The number of rounds until the original background is restored is $T_x\in\mathbb N_0\cup\{\infty\}$, and its worst expected value at size $N$ is
 
 $$\tau(N)=\sup_{s(x)=N}\mathbb ET_x.$$
 
-完整定义见[模型与记号](NOTATION.md)。以下给出原模型结果，包括 11 月 19 日完成的方形下界。
+See [Model and notation](NOTATION.md) for the full definitions. The results below include the filled-square lower bounds established on 19 November 2026.
 
-### 定理 1（二次上下界与极值）
+### Theorem 1 (quadratic bounds and extremizer)
 
-对整数 $N\ge16$，
+For every integer $N\ge16$,
 
 $$\frac{N^2}{850000}\le\tau(N)\le664066N^2.$$
 
-上界对所有 $N\ge16$ 成立，故 $\tau(N)=\Theta(N^2)$。对 $N\ge2$，零背景上填满的方形 $Q_N=\{0,\ldots,N-1\}^2$ 实现最坏期望：
+In particular, $\tau(N)=\Theta(N^2)$. For $N\ge2$, the filled square $Q_N=\{0,\ldots,N-1\}^2$ in a zero background attains the worst expected recovery time,
 
 $$\tau(N)=\mathbb E T_{Q_N}.$$
 
-极值等式在非负扩展期望中成立；有限性由上界推出。共同标记下的单调性控制同一方形内的任意初态，平移不变性及颜色对称性还原两种背景。
+The extremizer identity holds for nonnegative extended expectations. With common tie-breaking marks, the filled square dominates every pattern inside the same square. Translation and colour symmetry extend the result to all locations and either background. These same comparisons bound the recovery time for $2\le N<16$ by that of the filled square of size $16$, so the upper bound at size $16$ also gives finiteness at those sizes.
 
-11 月 17 日版本的二次上下界见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `quadratic_bounds`，方形极值见 [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean) 的 `tau_eq_full_square`。
+For the quadratic bounds in the 17 November version, see `quadratic_bounds` in [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean). For the extremizer identity, see `tau_eq_full_square` in [OriginalRecoveryResults.lean](../research/revision-ab-2026-11-17/lean/OriginalRecoveryResults.lean).
 
-令 $T_N=T_{Q_N}$，$m_N=1+2\lfloor(N-1)/2\rfloor$。对每个 $N\ge1$，有 $\mathbb E T_N\ge\max\{m_N,N^2/850000\}$。$m_N$ 是可能消亡的第一轮，奇数边长时为 $N$，偶数边长时为 $N-1$。若 $q_N=\mathbb P(T_N=m_N)$，则
+Write $T_N=T_{Q_N}$ and $m_N=1+2\lfloor(N-1)/2\rfloor$. For every $N\ge1$, $\mathbb E T_N\ge\max\{m_N,N^2/850000\}$. The first possible extinction round is $m_N$, which equals $N$ for odd side lengths and $N-1$ for even ones. If $q_N=\mathbb P(T_N=m_N)$, then
 
 $$2^{-2N^2}\le q_N\le 2^{-\lfloor N^2/8\rfloor}\qquad(N\ge7).$$
 
-因此，方形可以在线性时间内消亡，而恰在最早一轮消亡的概率随面积指数衰减。[最早消亡的证明与配图](../research/lower-bounds-2026-11-19/earliest.md) · [渐近期望与早消亡尾界](../research/lower-bounds-2026-11-19/lower-tail.md)
+The filled square can therefore disappear in time linear in its side length, and the probability of disappearing in the first possible round decays exponentially in its area. [Proof and diagrams for the first possible round (Chinese)](../research/lower-bounds-2026-11-19/earliest.md) · [Asymptotic expectation and early-extinction bounds (Chinese)](../research/lower-bounds-2026-11-19/lower-tail.md)
 
-此外，$\liminf_{N\to\infty}\mathbb E T_N/N^2\ge(1152000\log 2)^{-1}$。对整数 $k\ge0$，方形的早消亡概率满足 $\mathbb P(T_N\le k)\le2\exp[-(\log 2)N^2/(64000000(k+1))]$。特别地，对任意非负整数序列 $k_N=o(N^2)$，有 $\mathbb P(T_N\le k_N)\to0$。[全尺度下界](../research/lower-bounds-2026-11-19/AllScaleLower.lean) · [最早消亡原子](../research/lower-bounds-2026-11-19/MinimumAtomUpper.lean) · [审计记录](../research/lower-bounds-2026-11-19/evidence/validation.json)
+Moreover, $\liminf_{N\to\infty}\mathbb E T_N/N^2\ge(1152000\log 2)^{-1}$. For every integer $k\ge0$, the early-extinction probability satisfies $\mathbb P(T_N\le k)\le2\exp[-(\log 2)N^2/(64000000(k+1))]$. In particular, $\mathbb P(T_N\le k_N)\to0$ for any sequence of nonnegative integers $k_N=o(N^2)$. [All-scale lower bound](../research/lower-bounds-2026-11-19/AllScaleLower.lean) · [Upper bound on the probability of earliest extinction](../research/lower-bounds-2026-11-19/MinimumAtomUpper.lean) · [Audit record](../research/lower-bounds-2026-11-19/evidence/validation.json)
 
-### 定理 2（块尾与期望）
+### Theorem 2 (block tail and expectation)
 
-令
+Define
 
 $$
 b_N=331776N^2+257,\qquad
 a_N=\frac{32}{8N+1}+\frac{12}{5}N^2\,2^{-(1296N^2+1)}.
 $$
 
-对每个整数 $N\ge16$、每个尺寸恰为 $N$ 的允许确定初态 $x$ 和每个整数 $j\ge0$，
+For every integer $N\ge16$, every admissible deterministic initial state $x$ of size exactly $N$ and every integer $j\ge0$,
 
 $$
 \mathbb P(T_x>jb_N)\le a_N^j\le2^{-j},\qquad
@@ -48,46 +50,48 @@ $$
 
 $$\mathbb ET_x\le\tau(N)\le\frac{b_N}{1-a_N}.$$
 
-因此 $T_x<\infty$ 几乎必然，且 $\inf_{s(x)=N}\mathbb P(T_x\le b_N)\to1$。块尾由给定过去后的重启与单调支配得到。源码为 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `original_sharp_block_tail`、`original_sharp_expectation` 及 [SharpRecoveryTail.lean](../research/revision-ab-2026-11-17/lean/SharpRecoveryTail.lean) 的 `tau_le`；$5/N$ 界与 $O(N^{-1})$ 见 [SharpFailureRate.lean](../research/revision-ab-2026-11-17/lean/SharpFailureRate.lean)。
+It follows that $T_x<\infty$ almost surely and $\inf_{s(x)=N}\mathbb P(T_x\le b_N)\to1$ as $N\to\infty$. The block tail follows by restarting from the configuration at the end of each block, conditional on its history, and using monotonicity to compare with a filled square. See `original_sharp_block_tail` and `original_sharp_expectation` in [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) and `tau_le` in [SharpRecoveryTail.lean](../research/revision-ab-2026-11-17/lean/SharpRecoveryTail.lean). The $5/N$ bound and the $O(N^{-1})$ rate appear in [SharpFailureRate.lean](../research/revision-ab-2026-11-17/lean/SharpFailureRate.lean).
 
-### 推论（正阶矩与指数矩）
+### Corollary (positive-order and exponential moments)
 
-取 $c_0=332033$。对固定实数 $r>0$，令
+Set $c_0=332033$. For a fixed real $r>0$, define
 
 $$C_r=c_0^r\sum_{j=0}^{\infty}(j+1)^{\lceil r\rceil}2^{-j}<\infty.$$
 
-对 $N\ge16$ 和上述所有初态，
+For $N\ge16$ and all admissible initial states of size exactly $N$,
 
 $$\mathbb E T_x^r\le C_rN^{2r}.$$
 
-对 $0<\lambda<\log(2)/c_0$，还有
+For $0<\lambda<\log(2)/c_0$, we also have
 
 $$
 \mathbb E\exp(\lambda T_x/N^2)
 \le1+\frac{e^{c_0\lambda}}{1-e^{c_0\lambda}/2}<\infty.
 $$
 
-常数对 $N$ 和初态一致。幂与指数在 $T_x=\infty$ 时均取 $\infty$；证明从真实块尾先推出几乎必然有限性。见 [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) 的 `original_rpow_le`、`original_exponential_le`、`original_exponential_lt_top`，及 [RecoveryMoments.lean](../research/revision-ab-2026-11-17/lean/RecoveryMoments.lean)。
+The constants are uniform in $N$ and the initial state. Powers and exponentials take the value $\infty$ at $T_x=\infty$. The block tail gives almost sure finiteness before either moment estimate is applied. See `original_rpow_le`, `original_exponential_le` and `original_exponential_lt_top` in [OriginalConsequences.lean](../research/revision-ab-2026-11-17/lean/OriginalConsequences.lean) and the estimates in [RecoveryMoments.lean](../research/revision-ab-2026-11-17/lean/RecoveryMoments.lean).
 
-### 证明与版本
+### Proof and versions
 
-当前[英文论文](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)将几何下界、粒子表示上界、时钟比较和重启组成二次阶与晚恢复估计的论证；[证明纲要](PROOF_GUIDE.md)概述这些连接。修订还将两处时钟可观测量计算统一为有限状态 Dynkin 公式，适用于有限方形上的每点速率 $1$、公平标记机器，见 `finite_machine_dynkin`。
+The [English manuscript](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf) combines the geometric lower bound, the particle representation for the upper bound, the clock comparison and the restart argument to prove quadratic order and bound late recovery. The [proof outline](PROOF_GUIDE.md) explains how the estimates fit together. The revision also unifies two calculations of observables of the clock process through a finite-state Dynkin formula, `finite_machine_dynkin`, for a finite square with rate-$1$ clocks and fair marks at each site.
 
-原 [OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) 保留 2026-10-26 版本：下界 $N^2/56623104000$、门槛 $786432000$，上界同上。11 月 17 日论文中的下界先由 [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) 证明，随后收入 revision 6。版本对应及构建记录见[验证方法](VERIFICATION.md)。
+[OriginalQuadraticRecovery.lean](../formal/analysis/MathResearchAnalysis/OriginalQuadraticRecovery.lean) preserves the version of 26 October 2026, with lower bound $N^2/56623104000$ for $N\ge786432000$ and the same upper bound as above. The lower bound in the 17 November manuscript was first proved in [ImprovedOriginalLower.lean](../research/exploration/phase2/lean/ImprovedOriginalLower.lean) and then incorporated into revision 6. The version mapping and build records are in [Verification](VERIFICATION.md).
 
-文献 [1] 的 §4.2 给出同步规则的三次期望上界，Question 7.4 提出二次量级问题；出处见[参考文献](REFERENCES.md#fates-marcovici-taati-2022)。
+Section 4.2 of reference [1] gives a cubic upper bound for the expected recovery time of the synchronous rule, and Question 7.4 asks whether the correct order is quadratic. See [References](REFERENCES.md#fates-marcovici-taati-2022).
 
-## 随机等待网络
+<a id="随机等待网络"></a>
 
-下述结果属于独立的有向等待网络。其参数、状态和观测均不等同于二维自动机的对应对象。
+## Stochastic waiting network
 
-### 定义 3（等待表示与三箱系统）
+The following results concern a separate directed waiting network, with its own parameters, states and observations.
 
-设
+### Definition 3 (waiting-time representation and three-tank system)
+
+Assume
 
 $$a,b>0,\qquad e,f\ge0,\qquad e+f>0.$$
 
-取相互独立的随机变量
+Take the following random variables to be mutually independent,
 
 $$
 W_a\sim\operatorname{Exp}(a),\quad
@@ -96,9 +100,9 @@ W_c\sim\operatorname{Exp}(e+f),\quad
 J\sim\operatorname{Bernoulli}\!\left(\frac f{e+f}\right),
 $$
 
-并令 $S=W_c+W_a+JW_b$。$\operatorname{Exp}(r)$ 表示速率为 $r$、均值为 $1/r$ 的指数分布；$J=1$ 表示选取额外等待 $W_b$ 的路线。
+and set $S=W_c+W_a+JW_b$. Here $\operatorname{Exp}(r)$ denotes the exponential distribution of rate $r$ and mean $1/r$. The route with $J=1$ incurs the extra waiting time $W_b$.
 
-相应三箱系统在持续单位输入下，对 $t>0$ 满足
+Under a constant unit input, the corresponding three-tank system satisfies the following equations for $t>0$,
 
 $$
 \begin{aligned}
@@ -109,31 +113,31 @@ x_2'&=e(x_0-x_2)+f(x_1-x_2),
 \qquad x_0(0)=x_1(0)=x_2(0)=0.
 $$
 
-### 命题 4（出口分布与均值）
+### Proposition 4 (outlet distribution and mean)
 
-对 $t\ge0$，
+For $t\ge0$,
 
 $$
 x_2(t)=\mathbb P(S\le t),\qquad
 \mathbb E[S]=\frac1a+\frac{b+f}{b(e+f)}.
 $$
 
-负时间的分布函数为零。概率表示来自指数等待的卷积及按 $J$ 分支的混合；该表示在 $t\ge0$ 与出口响应相等，在 $t>0$ 满足上述微分方程，并在 $t=0$ 取所列零初值。相应证明见 [ActualTankCdf.lean](../research/exploration/phase5/lean/ActualTankCdf.lean) 及一般参数版本 [GeneralTankCdf.lean](../research/exploration/phase6/lean/GeneralTankCdf.lean)。
+The cumulative distribution function is zero for negative times. The representation comes from convolving the exponential waiting times for each route and mixing the results according to $J$. For $t\ge0$, it gives the outlet response, satisfies the differential equations for $t>0$ and has the stated initial values at $t=0$. See [ActualTankCdf.lean](../research/exploration/phase5/lean/ActualTankCdf.lean) and the general-parameter version in [GeneralTankCdf.lean](../research/exploration/phase6/lean/GeneralTankCdf.lean).
 
-### 命题 5（参数比较与辨识）
+### Proposition 5 (comparison and identification of rates)
 
-固定 $a,b,e$，在允许的 $f\ge0$ 且 $e+f>0$ 范围内：若 $e<b$，则每个时刻的完成概率随 $f$ 单调不减；若 $e>b$，则单调不增；若 $e=b$，则整个完成时间分布与 $f$ 无关。
+Fix $a,b,e$ and vary $f$ over the allowed range $f\ge0$, $e+f>0$. At each time, the completion probability is nondecreasing in $f$ if $e<b$ and nonincreasing in $f$ if $e>b$. If $e=b$, the entire completion-time distribution is independent of $f$.
 
-当 $a,b,e$ 已知且 $b\ne e$ 时，均值唯一确定 $f$。在 $a,b,e$ 固定时，两组允许参数 $f_1,f_2$ 的完成时间分布相同，当且仅当 $f_1=f_2$ 或 $b=e$。分布辨识结论见 [LawIdentifiability.lean](../research/exploration/phase7/lean/LawIdentifiability.lean) 的 `totalMeasure_eq_iff`。
+When $a,b,e$ are known and $b\ne e$, the mean uniquely determines $f$. With $a,b,e$ fixed, two admissible rates $f_1,f_2$ give the same completion-time distribution if and only if $f_1=f_2$ or $b=e$. See `totalMeasure_eq_iff` in [LawIdentifiability.lean](../research/exploration/phase7/lean/LawIdentifiability.lean).
 
-进一步设四个参数分别属于可独立组合的非空闭区间
+Suppose in addition that the four rates can vary independently over nonempty closed intervals,
 
 $$
 a\in[a_-,A],\quad b\in[b_-,B],\quad
 e\in[e_-,E],\quad f\in[f_-,F],
 $$
 
-其中 $a_-,b_->0$，$e_-,f_-\ge0$，$e_-+f_->0$。取
+with $a_-,b_->0$, $e_-,f_-\ge0$ and $e_-+f_->0$. Choose
 
 $$
 (a_*,b_*,e_*)=(A,B,E),\qquad
@@ -141,48 +145,48 @@ f_*=
 \begin{cases}F,&E\le B,\\f_-,&E>B.\end{cases}
 $$
 
-则这一角点同时最大化所有 $t\ge0$ 的完成概率。证明见 [RateBoxMaximum.lean](../research/exploration/phase8/lean/RateBoxMaximum.lean) 的 `selected_maximizes_all_times`。区间可独立组合是该角点结论的条件。
+This corner of the parameter box maximizes the completion probability simultaneously for all $t\ge0$. The conclusion uses the assumption that all combinations of values in the four intervals are admissible. See `selected_maximizes_all_times` in [RateBoxMaximum.lean](../research/exploration/phase8/lean/RateBoxMaximum.lean).
 
-## 完成时间与路线标记的辨识界
+## Identification bounds from completion times and route marks
 
-固定 $a=e=1$、$b=1+\varepsilon$，其中 $\varepsilon>0$，比较低模型 $f=1/2$ 与高模型 $f=1$。先以各 $1/2$ 的概率选定一次模型，再在该模型条件下独立生成 $n$ 次任务。每次任务同时产生完成时间 $S_i$ 与路线标记 $J_i$。以下规则均为由观测唯一决定结果的可测二元规则；条件独立性指给定已选模型后的独立性。
+Fix $a=e=1$ and $b=1+\varepsilon$ with $\varepsilon>0$. Compare the low model $f=1/2$ with the high model $f=1$. Select one model with probability $1/2$ each, then generate $n$ independent tasks conditional on that selected model. Each task produces both a completion time $S_i$ and a route mark $J_i$. The decision rules below are measurable deterministic functions of their observations with two possible outputs, one per model.
 
-### 命题 6（完成时间观测的统一上界）
+### Proposition 6 (uniform upper bound for completion-time observations)
 
-令
+Let
 
 $$\delta=\frac{\varepsilon}{6(1+\varepsilon)}.$$
 
-两个单次完成时间分布具有质量 $1-\delta$ 的共同子测度，即存在一个总质量为 $1-\delta$、在所有可测集上均不超过两分布的有限测度。该子测度的 $n$ 重乘积给出质量为 $(1-\delta)^n$ 的样本共同子测度。因此，任意仅依赖 $(S_1,\ldots,S_n)$ 的上述规则，其等先验平均成功率满足
+The two single-task completion-time distributions admit a common submeasure of mass $1-\delta$. This is a finite measure of total mass $1-\delta$ whose value on each measurable set is at most that of either distribution. Its $n$-fold product is a common submeasure for the samples, of mass $(1-\delta)^n$. Thus any rule that uses only $(S_1,\ldots,S_n)$ has average success probability under the equal prior bounded by
 
 $$
 p_{\mathrm{time}}\le1-\frac{(1-\delta)^n}{2}
 \le\frac12+\frac{n\delta}{2}.
 $$
 
-共同部分在两模型下不能被区分，对该部分的等先验错误率至少为其质量的一半；第二步使用 $(1-\delta)^n\ge1-n\delta$。共同子测度的构造见 [ActualCompletionEventBound.lean](../research/exploration/phase10/lean/ActualCompletionEventBound.lean)，样本与规则的统一界见 [ActualCompletionTesting.lean](../research/exploration/phase11/lean/ActualCompletionTesting.lean) 的 `testSuccess_le_common_power`、`testSuccess_le_linear`。
+Let $\nu$ be the common sample submeasure and $B$ the set of observations on which the rule chooses the high model. The error events are $B$ under the low model and $B^c$ under the high model. Their prior-weighted probability is at least $(\nu(B)+\nu(B^c))/2=(1-\delta)^n/2$. The second inequality uses $(1-\delta)^n\ge1-n\delta$. The common submeasure is constructed in [ActualCompletionEventBound.lean](../research/exploration/phase10/lean/ActualCompletionEventBound.lean). For the uniform bound over samples and rules, see `testSuccess_le_common_power` and `testSuccess_le_linear` in [ActualCompletionTesting.lean](../research/exploration/phase11/lean/ActualCompletionTesting.lean).
 
-### 命题 7（路线标记规则的下界）
+### Proposition 7 (lower bound for a rule using route marks)
 
-两模型的路线概率分别为 $1/3$ 与 $1/2$。对 $n>0$，令 $K_n=\sum_{i=1}^nJ_i$，以
+The probabilities of $J_i=1$ are $1/3$ and $1/2$ for the low and high models, respectively. For $n>0$, let $K_n=\sum_{i=1}^nJ_i$. Select the high model if
 
 $$K_n\ge5n/12$$
 
-判定高模型，其余情形判定低模型。条件均值与方差分别为
+and the low model otherwise. The means and variances conditional on the model are
 
 $$
 \begin{array}{c|cc}
 &\mathbb E[K_n]&\operatorname{Var}(K_n)\\\hline
-\text{低模型}&n/3&2n/9\\
-\text{高模型}&n/2&n/4.
+\text{Low model}&n/3&2n/9\\
+\text{High model}&n/2&n/4.
 \end{array}
 $$
 
-阈值距两均值均为 $n/12$。切比雪夫不等式分别给出误判概率至多 $32/n$ 和 $36/n$，故该规则的等先验平均成功率满足
+The threshold is $n/12$ away from either mean. Chebyshev's inequality bounds the two error probabilities by $32/n$ and $36/n$, respectively, so the rule's average success probability under the equal prior satisfies
 
 $$p_{\mathrm{branch}}\ge1-34/n.$$
 
-当 $\varepsilon=1/100$、$n=100$ 时，命题 6、7 给出
+For $\varepsilon=1/100$ and $n=100$, Propositions 6 and 7 give
 
 $$
 p_{\mathrm{time}}\le\frac{353}{606},\qquad
@@ -190,10 +194,10 @@ p_{\mathrm{branch}}\ge\frac{33}{50},\qquad
 p_{\mathrm{branch}}-p_{\mathrm{time}}\ge\frac{587}{7575}.
 $$
 
-这些是不等式方向不同的理论保证；并未给出两种观测的最优成功率。两观测均从同一随机任务中取得，分布连接及差值结论见 [ObservationContrast.lean](../research/exploration/phase12/lean/ObservationContrast.lean) 的 `branchSuccess_ge`、`timeSuccess_le`、`advantage_ge`。
+The upper bound applies to every rule using completion times, and the lower bound applies to the stated rule using route marks. Both observations come from the same random task. See `branchSuccess_ge`, `timeSuccess_le` and `advantage_ge` in [ObservationContrast.lean](../research/exploration/phase12/lean/ObservationContrast.lean) for the link between the distributions and the bound on the difference.
 
-[图：完成时间与路线标记的辨识保证](../research/exploration/phase12/images/observation-choice.png)。图中 $353/606\approx58.25\%$ 为全部完成时间规则的上界，$33/50=66\%$ 为指定路线规则的下界；差值至少约 $7.749$ 个百分点。
+The [comparison figure (Chinese labels)](../research/exploration/phase12/images/observation-choice.png) shows the upper bound $353/606\approx58.25\%$ for all rules using completion times and the lower bound $33/50=66\%$ for the specified rule using route marks. Their difference is approximately $7.749$ percentage points, a lower bound on the advantage over any completion-time rule.
 
-## 证明与版本记录
+## Proof and version records
 
-原主定理的形式数学源、标准内核审计、工具链和指纹绑定见[验证方法](VERIFICATION.md)。等待网络及下界改进分别保留各阶段的验证记录，公开范围截至 phase12；版本范围见[版本状态](../STATUS.md)。既有审计与独立复核的结论均按其对应文件和日期理解。
+The [verification page](VERIFICATION.md) records the formal sources, standard kernel audits, toolchains and source fingerprints for the original main theorem. The waiting-network results and successive lower-bound improvements retain their own validation records. The public waiting-network material runs through phase 12. See [Version status](../STATUS.md) for the scope of the public versions. Each audit and independent review applies to its recorded files and date.
