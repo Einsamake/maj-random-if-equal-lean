@@ -1,17 +1,21 @@
-# 数学文稿与资料目录
+# Mathematics documentation index
 
-现行数学说明按对象与论证组织；按日期形成的进展、审计与读者草稿按对应版本原样归档。
+[简体中文](INDEX.zh-CN.md)
 
-| 主题 | 入口 |
+<a id="数学文稿与资料目录"></a>
+
+The current documentation is organized by mathematical topic and proof. Progress notes, audits and reader drafts are archived with their respective versions.
+
+| Topic | Where to start |
 | --- | --- |
-| 当前英文论文 | [revision 6 PDF](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf)、[正文与配图](../research/revision-ab-2026-11-17/paper/paper.md) |
-| 原模型及恢复时间二次界 | [定理与结果](RESEARCH_RESULTS.md)、[符号](NOTATION.md) |
-| 两侧估计的证明 | [证明纲要](PROOF_GUIDE.md)、[形式化结构](../formal/FORMALIZATION_MAP.md) |
-| 加权面积、比较与重启 | [证明方法说明](proof-discovery/README.md) |
-| 独立等待网络与统计辨识 | [网络研究](../research/exploration/README.md) |
-| 工具链与内核检查 | [复现](VERIFICATION.md)、[Lean工程](../formal/LEAN_README.md) |
-| 问题的文献出处 | [参考文献](REFERENCES.md) |
-| 版本、原始记录与封存 | [归档约定](ARCHIVAL_RECORD.md)、[固定材料包](../deliverables/README.md) |
-| 图像与数据 | [原图说明](images/README.md)、[当前方法配图](academic-figures/README.md) |
+| Current English manuscript | [Revision 6 PDF](../research/revision-ab-2026-11-17/paper/output/pdf/quadratic-recovery-v6.pdf) · [Text and figures](../research/revision-ab-2026-11-17/paper/paper.md) |
+| Original model and quadratic recovery bounds | [Theorems and results](RESEARCH_RESULTS.md) · [Model and notation](NOTATION.md) |
+| Proofs of the lower and upper bounds | [Proof outline](PROOF_GUIDE.md) · [Formalization map](../formal/FORMALIZATION_MAP.md) |
+| Weighted area, comparison and restart | [Proof methods](PROOF_METHODS.md) |
+| Independent waiting network and statistical identification | [Waiting-network research](../research/README.md#stochastic-waiting-network) |
+| Toolchains and kernel checks | [Verification and reproduction](VERIFICATION.md) · [Lean projects](../formal/LEAN_README.md) |
+| Source of the original question | [References](REFERENCES.md) |
+| Versions, original records and archives | [Archival record](ARCHIVAL_RECORD.md) · [Frozen deliverables](../deliverables/README.md) |
+| Figures and data | [Figures and data](FIGURES.md) |
 
-源码、验证输出和文稿审读分别对应数学声明、机器输出和阅读版本。文稿更新不改变其所引用数学声明的量词和参数，也不重写已归档的构建或审读结论。
+Lean sources state the mathematics. Verification outputs record machine checks, and reader feedback applies to the specific version reviewed. The statements, including their quantifiers and parameters, and the archived build and review records are tied to their respective source versions.
